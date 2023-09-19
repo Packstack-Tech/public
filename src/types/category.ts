@@ -1,5 +1,5 @@
-import { Item } from "./item"
-import { PackItem } from "./pack"
+import type { Item } from "./item"
+import type { PackItem } from "./pack"
 
 export type Category = {
   id: number

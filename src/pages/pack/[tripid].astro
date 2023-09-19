@@ -1,5 +1,6 @@
 ---
 import PackingLists from "../../components/PackingLists"
+import "../../styles/global.css"
 const { tripid } = Astro.params
 const resp = await fetch(`http://127.0.0.1/trip/info/${tripid}`)
 const data = await resp.json()

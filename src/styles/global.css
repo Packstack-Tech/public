@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-background text-white;
+    }
+
+    h1 {
+        color: red;
+        font-size: 48px;
+    }
+
+    h2 {
+        @apply text-2xl text-white;
+    }
+
+    table {
+
+    }
+
+    th {
+        @apply text-left text-label py-1.5 px-1 font-normal;
+    }
+
+    tr {
+        @apply border-t border-surface;
+    }
+
+    td {
+        @apply py-2 px-1;
+    }
+}

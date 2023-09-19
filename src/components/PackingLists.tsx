@@ -12,7 +12,9 @@ export default function PackingLists({ trip }: Props) {
       <ul>
         {trip.packs.map((pack, index) => (
           <div key={pack.id}>
-            <h2 key={index}>{pack.title}</h2>
+            <h2 key={index} className="font-bold">
+              {pack.title}
+            </h2>
             <List items={pack.items} />
           </div>
         ))}
