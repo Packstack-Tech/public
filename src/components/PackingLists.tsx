@@ -1,16 +1,15 @@
-import type { TripInfo } from "../types/trip"
+import type { Pack } from "../types/pack"
 import List from "./List"
 
 interface Props {
-  trip: TripInfo
+  packs: Pack[]
 }
 
-export default function PackingLists({ trip }: Props) {
+export default function PackingLists({ packs }: Props) {
   return (
     <div className="packing-list">
-      <h2>Packing List</h2>
       <ul>
-        {trip.packs.map((pack, index) => (
+        {packs.map((pack, index) => (
           <div key={pack.id}>
             <h2 key={index} className="font-bold">
               {pack.title}

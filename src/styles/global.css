@@ -9,16 +9,11 @@
     }
 
     h1 {
-        color: red;
-        font-size: 48px;
+        @apply text-white;
     }
 
     h2 {
         @apply text-2xl text-white;
-    }
-
-    table {
-
     }
 
     th {
