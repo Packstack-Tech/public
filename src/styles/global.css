@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @layer base {
     body {
@@ -9,11 +7,11 @@
     }
 
     h1 {
-        @apply text-white;
+        @apply text-white font-bold text-xl;
     }
 
     h2 {
-        @apply text-2xl text-white;
+        @apply text-primary font-bold;
     }
 
     th {
@@ -27,4 +25,16 @@
     td {
         @apply py-2 px-1;
     }
+
+    p {
+        @apply text-softwhite;
+    }
+
+    a {
+        @apply text-primary;
+    }
 }
+
+
+@tailwind components;
+@tailwind utilities;

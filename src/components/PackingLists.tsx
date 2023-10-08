@@ -7,17 +7,15 @@ interface Props {
 
 export default function PackingLists({ packs }: Props) {
   return (
-    <div className="packing-list">
-      <ul>
-        {packs.map((pack, index) => (
-          <div key={pack.id}>
-            <h2 key={index} className="font-bold">
-              {pack.title}
-            </h2>
-            <List items={pack.items} />
-          </div>
-        ))}
-      </ul>
+    <div>
+      {packs.map((pack, index) => (
+        <div key={pack.id} className="mb-8">
+          <h2 key={index} className="border-b pb-2">
+            {pack.title}
+          </h2>
+          <List items={pack.items} />
+        </div>
+      ))}
     </div>
   )
 }

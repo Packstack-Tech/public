@@ -5,8 +5,10 @@ module.exports = {
     colors: {
       primary: "#6a82fb",
       white: "#e5e5e8",
+      softwhite: "#8096B6",
       label: "#64748b",
       surface: "#111622",
+      border: "#1D2C42",
       background: "#030711",
     },
     extend: {

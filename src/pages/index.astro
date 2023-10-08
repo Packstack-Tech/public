@@ -1,16 +1,47 @@
 ---
-
+import { Image } from "astro:assets"
+import "../styles/global.css"
+import screenshot from "../assets/list-builder-screenshot.png"
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body class="bg-background mx-4 md:mx-12">
+    <header
+      class="flex justify-center relative m-4 flex-col md:flex-row items-center"
+    >
+      <img src="/packstack_logo_white.png" alt="Packstack Logo" class="w-40" />
+      <div
+        class="flex items-center gap-8 md:absolute mt-4 md:mt-0 right-0 top-2"
+      >
+        <a href="https://app.packstack.io/auth/login" class="font-bold">Login</a
+        >
+        <a
+          href="https://app.packstack.io/auth/register"
+          class="border border-primary rounded-sm py-1 px-3 font-bold"
+          >Sign up</a
+        >
+      </div>
+    </header>
+    <section class="my-12">
+      <h1 class="text-3xl text-center font-light">
+        The Ultimate Packing List Builder for Backpackers
+      </h1>
+      <p class="my-4 mx-auto max-w-lg text-center font-light leading-7">
+        Packstack gives you all the tools you need to create detailed packing
+        lists, track your gear and share your packs.
+      </p>
+      <Image
+        src={screenshot}
+        alt="Packstack list builder screenshot"
+        class="mx-auto my-8 max-w-6xl w-full border border-border rounded-lg"
+      />
+    </section>
+  </body>
 </html>

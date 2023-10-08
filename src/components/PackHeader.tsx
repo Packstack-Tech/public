@@ -11,9 +11,8 @@ export const PackHeader = ({ trip }: Props) => (
         <img src="/packstack_logo_white.png" title="Packstack logo" />
       </div>
     </div>
-    <div className="border-2 border-surface rounded-md p-4">
-      <h1 className="font-bold text-lg">{trip.location || trip.title}</h1>
-      <h2></h2>
+    <div className="my-8">
+      <h1>{trip.location || trip.title}</h1>
     </div>
   </div>
 )

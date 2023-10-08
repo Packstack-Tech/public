@@ -58,7 +58,7 @@ export default function List({ items }: Props) {
                   </tr>
                 ))}
               </tbody>
-              <tfoot className="text-xs text-primary">
+              <tfoot className="text-sm text-primary">
                 <tr>
                   <td>Total</td>
                   <td />
