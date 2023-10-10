@@ -1,0 +1,35 @@
+---
+const { title } = Astro.props
+import "../styles/global.css"
+---
+
+<>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta property="og:title" content="Packing Lists for Backpackers" />
+    <meta
+      property="og:description"
+      content="Create detailed backpacking lists, track your gear and share your packs."
+    />
+    <meta
+      name="description"
+      content="Create detailed backpacking lists, track your gear and share your packs."
+    />
+    <title>{title}</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RZW65JD9N"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag("js", new Date())
+
+    gtag("config", "G-3RZW65JD9N")
+  </script>
+</>
