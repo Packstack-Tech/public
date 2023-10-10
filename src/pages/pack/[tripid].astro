@@ -7,7 +7,19 @@ const resp = await fetch(`http://127.0.0.1/trip/info/${tripid}`)
 const data = await resp.json()
 ---
 
-<div class="mx-auto mt-4 max-w-4xl px-4">
-  <PackHeader trip={data.trip} />
-  <PackingLists packs={data.packs} />
-</div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta property="og:title" content="Packing Lists for Backpackers" />
+    <title>{data.trip.location} Packstack</title>
+  </head>
+  <body>
+    <div class="mx-auto mt-4 max-w-4xl px-4">
+      <PackHeader trip={data.trip} />
+      <PackingLists packs={data.packs} />
+    </div>
+  </body>
+</html>
