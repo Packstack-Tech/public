@@ -2,6 +2,7 @@
 import { Image } from "astro:assets"
 import screenshot from "../assets/list-builder-screenshot.png"
 import PageHead from "../components/PageHead.astro"
+import PageFooter from "../components/PageFooter.astro"
 ---
 
 <html lang="en">
@@ -37,5 +38,49 @@ import PageHead from "../components/PageHead.astro"
         class="mx-auto my-8 max-w-6xl w-full border border-border rounded-lg"
       />
     </section>
+
+    <section class="mx-auto max-w-4xl">
+      <div class="flex flex-col md:flex-row md:gap-12">
+        <div class="md:w-1/2 mb-8">
+          <h3>Track your gear</h3>
+          <p>
+            The Gear Inventory system enables you to meticulously track all your
+            equipment. You can input details such as weight, manufacturer info,
+            price, and other relevant item specifics. Additionally, you can
+            categorize your gear to keep things organized.
+          </p>
+        </div>
+        <div class="md:w-1/2 mb-8">
+          <h3>Create packing lists</h3>
+          <p>
+            Sorry folks, it's time to retire the spreadsheets. Packstack helps
+            you create incredibly detailed, well-organized packing lists without
+            copying and pasting. Our modular system lets you easily add items
+            from your inventory and experiment with different pack
+            configurations.
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row md:gap-12">
+        <div class="md:w-1/2 mb-8">
+          <h3>Weight Breakdowns</h3>
+          <p>
+            Get a detailed, categorized weight breakdown of everything in your
+            pack. A weight breakdown allows you to quickly review your weight
+            distribution by category.
+          </p>
+        </div>
+        <div class="md:w-1/2 mb-8">
+          <h3>Share packing lists</h3>
+          <p>
+            Each pack has a dedicated "view only" page that allows you to
+            privately share with whomever you want. This is convenient when you
+            want to share your packing list with a specific person or audience
+            but you don't want it to be public.
+          </p>
+        </div>
+      </div>
+    </section>
+    <PageFooter />
   </body>
 </html>

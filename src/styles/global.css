@@ -14,6 +14,10 @@
         @apply text-primary font-bold;
     }
 
+    h3 {
+        @apply text-white font-bold mb-2;
+    }
+
     th {
         @apply text-left text-label py-1.5 px-1 font-normal;
     }
@@ -27,7 +31,7 @@
     }
 
     p {
-        @apply text-softwhite;
+        @apply text-softwhite leading-6;
     }
 
     a {
