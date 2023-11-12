@@ -1,7 +1,7 @@
 import { Flame, Shirt } from "lucide-react"
 import type { PackItem } from "../types/pack"
 import { useCategorizedPackItems } from "../hooks/useCategorizedPackItems"
-import { getCategoryWeight } from "../utils/getCategoryWeight"
+import { convertWeight, getAggregateUnit } from "../utils/weight"
 
 interface Props {
   items: PackItem[]
@@ -10,18 +10,33 @@ interface Props {
 export default function List({ items }: Props) {
   const categorizedItems = useCategorizedPackItems(items)
 
+  const weightTotals = (items: PackItem[]) => {
+    const baseUnit = items[0].item.unit
+    const aggregateUnit = getAggregateUnit(baseUnit)
+    const total = items.reduce((acc, { item, quantity }) => {
+      const weight = convertWeight(item.weight || 0, item.unit, aggregateUnit)
+      return acc + weight.weight * quantity
+    }, 0)
+    return `${total.toFixed(2)} ${aggregateUnit}`
+  }
+
   return (
     <div>
       {categorizedItems.map(({ category, items }) => {
-        const categoryTotals = getCategoryWeight(items)
+        const categoryWeight = weightTotals(items)
         return (
           <div
             key={category?.id}
             className="mb-4 border border-surface rounded-sm"
           >
-            <h4 className="bg-surface text-primary p-1.5 font-bold text-xs">
-              {category?.category.name || "Uncategorized"}
-            </h4>
+            <div className="flex justify-between items-center bg-surface  p-1.5">
+              <h4 className="font-bold text-primary text-xs">
+                {category?.category.name || "Uncategorized"}
+              </h4>
+              <p className="text-right text-primary text-xs">
+                {categoryWeight}
+              </p>
+            </div>
             <table className="table-auto w-full">
               <thead className="text-xs">
                 <tr>
@@ -58,15 +73,6 @@ export default function List({ items }: Props) {
                   </tr>
                 ))}
               </tbody>
-              <tfoot className="text-sm text-primary">
-                <tr>
-                  <td>Total</td>
-                  <td />
-                  <td />
-                  <td className="text-right">{categoryTotals.weight} kg</td>
-                  <td className="text-right">{categoryTotals.quantity}</td>
-                </tr>
-              </tfoot>
             </table>
           </div>
         )
