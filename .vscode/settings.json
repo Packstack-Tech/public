@@ -13,7 +13,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode" 
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": true
   },
   "editor.formatOnSave": true,
   "typescript.tsdk": "node_modules/typescript/lib"
