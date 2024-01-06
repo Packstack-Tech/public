@@ -10,12 +10,14 @@ interface Props {
   user: UserInfo
 }
 
-export const PackHeader = ({ trip }: Props) => {
+export const PackHeader = ({ trip, user }: Props) => {
   const start = trip.start_date
     ? format(new Date(trip.start_date), DATE_FORMAT)
     : '-'
   const end = trip.end_date ? format(new Date(trip.end_date), DATE_FORMAT) : '-'
   const dayTrip = start === end
+
+  console.log(user)
 
   return (
     <div className="mb-4">
@@ -35,7 +37,7 @@ export const PackHeader = ({ trip }: Props) => {
         {trip.distance > 0 && (
           <p className="flex items-center text-sm">
             <RouteIcon className="inline-block mr-2 h-4 w-4" />
-            {trip.distance}km
+            {`${trip.distance} ${user.unit_distance}`}
           </p>
         )}
       </div>
