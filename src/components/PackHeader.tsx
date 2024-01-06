@@ -1,7 +1,9 @@
 import type { Trip } from "../types/trip"
+import type { UserInfo } from "../types/user"
 
 interface Props {
   trip: Trip
+  user: UserInfo
 }
 
 export const PackHeader = ({ trip }: Props) => (
