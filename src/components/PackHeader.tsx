@@ -1,4 +1,5 @@
 import type { Trip } from "../types/trip"
+import type { UserInfo } from "../types/user"
 import { Calendar as CalendarIcon, Route as RouteIcon } from 'lucide-react'
 import { format } from 'date-fns'
 
@@ -6,6 +7,7 @@ const DATE_FORMAT = 'MMM dd, yyyy'
 
 interface Props {
   trip: Trip
+  user: UserInfo
 }
 
 export const PackHeader = ({ trip }: Props) => {
