@@ -1,4 +1,5 @@
 import type { Pack } from "./pack"
+import type { UserInfo } from "./user"
 
 export type Trip = {
   id: number
@@ -15,11 +16,10 @@ export type Trip = {
   removed: boolean
   created_at: string
   updated_at: string
-
-  user: object // todo: update type
 }
 
 export type TripInfo = {
   trip: Trip
   packs: Pack[]
+  user: UserInfo
 }

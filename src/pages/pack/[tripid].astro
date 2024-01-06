@@ -11,7 +11,7 @@ const data = await resp.json()
   <PageHead title={`${data.trip.location} :: Packstack`} />
   <body>
     <div class="mx-auto mt-4 max-w-4xl px-4">
-      <PackHeader trip={data.trip} />
+      <PackHeader trip={data.trip} user={data.user} />
       <PackingLists packs={data.packs} />
     </div>
   </body>
