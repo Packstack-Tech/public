@@ -1,9 +1,10 @@
 import type { Trip } from "../types/trip"
 import type { UserInfo } from "../types/user"
-import { Calendar as CalendarIcon, Route as RouteIcon } from 'lucide-react'
-import { format } from 'date-fns'
+import { DISTANCE_LABEL } from "../types/consts"
+import { Calendar as CalendarIcon, Route as RouteIcon } from "lucide-react"
+import { format } from "date-fns"
 
-const DATE_FORMAT = 'MMM dd, yyyy'
+const DATE_FORMAT = "MMM dd, yyyy"
 
 interface Props {
   trip: Trip
@@ -13,8 +14,8 @@ interface Props {
 export const PackHeader = ({ trip, user }: Props) => {
   const start = trip.start_date
     ? format(new Date(trip.start_date), DATE_FORMAT)
-    : '-'
-  const end = trip.end_date ? format(new Date(trip.end_date), DATE_FORMAT) : '-'
+    : "-"
+  const end = trip.end_date ? format(new Date(trip.end_date), DATE_FORMAT) : "-"
   const dayTrip = start === end
 
   return (
@@ -32,13 +33,13 @@ export const PackHeader = ({ trip, user }: Props) => {
             {dayTrip ? start : `${start} - ${end}`}
           </p>
         )}
-        {trip.distance > 0 && (
+        {trip.distance && trip.distance > 0 && (
           <p className="flex items-center text-sm">
             <RouteIcon className="inline-block mr-2 h-4 w-4" />
-            ${trip.distance} ${user.unit_distance}
+            {trip.distance} {DISTANCE_LABEL[user.unit_distance]}
           </p>
         )}
       </div>
-    </div> 
+    </div>
   )
 }
