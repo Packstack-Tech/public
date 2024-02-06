@@ -1,5 +1,5 @@
 import type { ItemCategory } from "./category"
-import type { Brand, Product } from "./resources"
+import type { Brand, Product, ProductVariant } from "./resources"
 
 export type Unit = "g" | "kg" | "oz" | "lb"
 
@@ -45,4 +45,5 @@ export type Item = {
   category?: ItemCategory
   brand?: Brand
   product?: Product
+  product_variant?: ProductVariant
 }

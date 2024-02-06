@@ -41,6 +41,12 @@ export type Product = {
   removed: boolean
 }
 
+export type ProductVariant = {
+  id: number
+  product_id: number
+  name: string
+}
+
 export type BrandProducts = Brand & {
   products: Product[]
 }

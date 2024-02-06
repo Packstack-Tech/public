@@ -1,13 +1,15 @@
+import type { FC } from "react"
 import { Flame, Shirt } from "lucide-react"
 import type { PackItem } from "../types/pack"
 import { useCategorizedPackItems } from "../hooks/useCategorizedPackItems"
 import { convertWeight, getAggregateUnit } from "../utils/weight"
+import { ProductName } from "./ProductName"
 
 interface Props {
   items: PackItem[]
 }
 
-export default function List({ items }: Props) {
+export const List: FC<Props> = ({ items }) => {
   const categorizedItems = useCategorizedPackItems(items)
 
   const weightTotals = (items: PackItem[]) => {
@@ -52,7 +54,7 @@ export default function List({ items }: Props) {
                   <tr key={item_id}>
                     <td>{item.name}</td>
                     <td>
-                      {item.brand?.name} {item.product?.name}
+                      <ProductName item={item} />
                     </td>
                     <td className="text-center">
                       {worn && (

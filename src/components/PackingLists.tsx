@@ -1,5 +1,5 @@
 import type { Pack } from "../types/pack"
-import List from "./List"
+import { List } from "./List"
 
 interface Props {
   packs: Pack[]
