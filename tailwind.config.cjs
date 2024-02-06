@@ -10,10 +10,12 @@ module.exports = {
       surface: "#111622",
       border: "#1D2C42",
       background: "#030711",
+      text: "#A4B4CB",
     },
     extend: {
       fontFamily: {
         sans: ["Open Sans", "sans-serif"],
+        heading: ["Rubik", "sans-serif"],
       },
     },
   },

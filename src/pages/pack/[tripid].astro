@@ -2,6 +2,8 @@
 import PackingLists from "../../components/PackingLists"
 import { PackHeader } from "../../components/PackHeader"
 import PageHead from "../../components/PageHead.astro"
+import "../../styles/global.css"
+
 const { tripid } = Astro.params
 const resp = await fetch(`https://api.packstack.io/trip/info/${tripid}`)
 const data = await resp.json()

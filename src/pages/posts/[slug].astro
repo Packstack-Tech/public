@@ -1,0 +1,40 @@
+---
+import { documentToHtmlString } from "@contentful/rich-text-html-renderer"
+import { contentfulClient } from "../../lib/contentful"
+import type { BlogPost } from "../../lib/contentful"
+import PageHead from "../../components/PageHead.astro"
+import PageHeader from "../../components/PageHeader.astro"
+import { renderOptions } from "../../utils/renderOptions"
+import "../../styles/blog.css"
+
+const { slug } = Astro.params
+
+let post
+try {
+  const data = await contentfulClient.getEntries<BlogPost>({
+    content_type: "blogPost",
+    "fields.slug": slug,
+  })
+  const { title, publishDate, postContent } = data.items[0].fields
+  post = {
+    title,
+    date: new Date(publishDate).toLocaleDateString(),
+    content: documentToHtmlString(postContent, renderOptions),
+  }
+} catch (error) {
+  return Astro.redirect("/404")
+}
+---
+
+<html lang="en">
+  <PageHead title={post?.title} />
+
+  <body>
+    <PageHeader />
+    <div class="max-w-3xl mx-auto">
+      <h1>{post?.title}</h1>
+      <time class="block my-4 text-softwhite">{post?.date}</time>
+      <article set:html={post?.content} />
+    </div>
+  </body>
+</html>
