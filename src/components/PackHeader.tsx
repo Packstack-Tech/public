@@ -33,7 +33,7 @@ export const PackHeader = ({ trip, user }: Props) => {
             {dayTrip ? start : `${start} - ${end}`}
           </p>
         )}
-        {(trip.distance ?? 0 > 0) && (
+        {!!(trip.distance ?? 0) && (
           <p className="flex items-center text-sm">
             <RouteIcon className="inline-block mr-2 h-4 w-4" />
             {trip.distance} {DISTANCE_LABEL[user.unit_distance]}
