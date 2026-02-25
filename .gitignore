@@ -4,6 +4,8 @@ dist/
 # generated types
 .astro/
 
+.nvmrc
+
 # dependencies
 node_modules/
 

@@ -1,16 +1,14 @@
-<footer class="mt-16 border-t items-center border-border">
-  <div class="flex justify-between mx-auto py-12">
-    <img
-      src="/packstack_logo_white.png"
-      alt="Packstack Logo"
-      class="w-24 h-6"
-    />
+<footer class="border-t border-border mt-8">
+  <div class="max-w-6xl mx-auto px-4 md:px-8 py-10 flex flex-col md:flex-row justify-between items-center gap-6">
     <div class="flex items-center gap-6">
-      <a href="https://app.packstack.io/auth/login" class="font-bold">Login</a>
-      <a
-        href="https://app.packstack.io/auth/register"
-        class="border border-primary rounded-sm py-1 px-3 font-bold">Sign up</a
-      >
+      <a href="/">
+        <img src="/packstack_logo_white.png" alt="Packstack" class="w-24" />
+      </a>
+      <span class="text-label text-xs">&copy; {new Date().getFullYear()} Packstack</span>
+    </div>
+    <div class="flex items-center gap-6 text-sm">
+      <a href="https://app.packstack.io/auth/login" class="text-softwhite hover:text-white transition-colors no-underline">Login</a>
+      <a href="https://app.packstack.io/auth/register" class="text-softwhite hover:text-white transition-colors no-underline">Sign Up</a>
     </div>
   </div>
 </footer>

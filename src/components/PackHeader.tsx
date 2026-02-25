@@ -19,25 +19,20 @@ export const PackHeader = ({ trip, user }: Props) => {
   const dayTrip = start === end
 
   return (
-    <div className="mb-4">
-      <div className="flex justify-between mb-4">
-        <div className="logo w-32">
-          <img src="/packstack_logo_white.png" title="Packstack logo" />
-        </div>
-      </div>
-      <div className="my-4 space-y-1">
-        <h1>{trip.location || trip.title}</h1>
+    <div className="mb-8">
+      <h1 className="text-2xl">{trip.location || trip.title}</h1>
+      <div className="mt-2 flex flex-wrap items-center gap-x-5 gap-y-1 text-softwhite">
         {trip.start_date && (
-          <p className="flex items-center text-sm">
-            <CalendarIcon className="inline-block mr-2 h-4 w-4" />
+          <span className="flex items-center text-sm">
+            <CalendarIcon className="mr-2 h-4 w-4 text-label" />
             {dayTrip ? start : `${start} - ${end}`}
-          </p>
+          </span>
         )}
         {!!(trip.distance ?? 0) && (
-          <p className="flex items-center text-sm">
-            <RouteIcon className="inline-block mr-2 h-4 w-4" />
+          <span className="flex items-center text-sm">
+            <RouteIcon className="mr-2 h-4 w-4 text-label" />
             {trip.distance} {DISTANCE_LABEL[user.unit_distance]}
-          </p>
+          </span>
         )}
       </div>
     </div>

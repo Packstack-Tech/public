@@ -10,7 +10,7 @@ export const ProductName: FC<Props> = ({
 }) => {
   const displayName = () => {
     if (!brand && !product_variant && !product) {
-      return "Not specified"
+      return null
     }
 
     if (!product_variant && !product) {
@@ -24,13 +24,16 @@ export const ProductName: FC<Props> = ({
     return `${brand?.name} ${product?.name} ${product_variant?.name}`
   }
 
+  const name = displayName()
+  if (!name) return null
+
   if (product_url) {
     return (
       <a href={product_url} target="_blank" rel="noreferrer">
-        {displayName()}
+        {name}
       </a>
     )
   }
 
-  return <>{displayName()}</>
+  return <>{name}</>
 }

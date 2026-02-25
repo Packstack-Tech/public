@@ -1,0 +1,33 @@
+---
+import "../styles/global.css"
+
+interface Props {
+  title: string
+  description?: string
+}
+
+const { title, description = "Plan your backpacking trips with Packstack — the free packing list builder and gear tracker for ultralight hikers. Track every ounce, organize by category, and share your setup." } = Astro.props
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta property="og:title" content="Packstack — Free Backpacking Packing List & Gear Tracker" />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta name="description" content={description} />
+    <meta name="keywords" content="backpacking packing list, ultralight hiking, gear tracker, pack weight, base weight, gear inventory, hiking gear list, lighterpack alternative" />
+    <title>{title}</title>
+    <script async src="https://plausible.io/js/pa-nj_3h0ADLXhz02-M6THrT.js"></script>
+    <script>
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
