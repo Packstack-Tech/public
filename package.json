@@ -10,7 +10,7 @@
     "astro": "astro"
   },
   "engines": {
-    "node": "^22.x.x"
+    "node": "^24.x.x"
   },
   "dependencies": {
     "@astrojs/react": "^4",

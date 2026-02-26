@@ -4,7 +4,7 @@ import { jsx, Fragment, jsxs } from 'react/jsx-runtime';
 import { Shirt, Flame, Calendar, Route } from 'lucide-react';
 import { useMemo } from 'react';
 import { format } from 'date-fns';
-import { $ as $$BaseLayout, a as $$PageFooter } from '../../chunks/PageFooter_xmzug3kz.mjs';
+import { $ as $$BaseLayout, a as $$PageFooter } from '../../chunks/PageFooter_2CHiteX6.mjs';
 export { renderers } from '../../renderers.mjs';
 
 function convertWeight(weight, fromUnit, toUnit) {
