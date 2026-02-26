@@ -1,7 +1,7 @@
 import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_CNM23SAc.mjs';
 import 'piccolore';
 import { $ as $$Image } from '../chunks/_astro_assets_CAlHwlOU.mjs';
-import { $ as $$BaseLayout, a as $$PageFooter } from '../chunks/PageFooter_2CHiteX6.mjs';
+import { $ as $$BaseLayout, a as $$PageFooter } from '../chunks/PageFooter_xmzug3kz.mjs';
 export { renderers } from '../renderers.mjs';
 
 const dashboardImg = new Proxy({"src":"/_astro/packstack-dashboard.fNYCRm9c.png","width":2796,"height":1916,"format":"png"}, {
