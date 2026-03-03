@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://packstack.io/sitemap-index.xml

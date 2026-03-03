@@ -1,0 +1,60 @@
+---
+import { getCollection } from "astro:content"
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import PageFooter from "../../components/PageFooter.astro"
+
+export const prerender = true
+
+const reviews = await getCollection("reviews")
+const sorted = reviews.sort(
+  (a, b) => new Date(b.data.published_at).getTime() - new Date(a.data.published_at).getTime()
+)
+---
+
+<BaseLayout title="Gear Reviews | Packstack" description="In-depth backpacking gear reviews — weights, specs, and honest takes on the gear that matters.">
+  <div class="bg-background min-h-screen">
+    <header class="border-b border-border/50">
+      <nav class="max-w-5xl mx-auto flex items-center justify-between px-4 md:px-8 py-3">
+        <a href="/" class="flex items-center">
+          <img src="/packstack_logo_white.png" alt="Packstack" class="w-32" />
+        </a>
+        <div class="flex items-center gap-4 md:gap-6">
+          <a href="https://app.packstack.io/auth/login" class="text-softwhite hover:text-white transition-colors text-sm font-semibold">Login</a>
+          <a href="https://app.packstack.io/auth/register" class="bg-primary hover:bg-primary-dark text-white rounded-md py-1.5 px-4 text-sm font-semibold transition-colors no-underline">Sign Up</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 md:px-8 py-12">
+      <h1 class="text-3xl md:text-4xl font-bold mb-2">Gear Reviews</h1>
+      <p class="text-lg mb-10">Honest, spec-driven reviews of backpacking and hiking gear.</p>
+
+      {sorted.length === 0 && (
+        <p class="text-label">No reviews yet. Check back soon.</p>
+      )}
+
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {sorted.map((review) => (
+          <a href={`/reviews/${review.id}`} class="group block bg-surface rounded-lg border border-border hover:border-primary/50 transition-colors no-underline overflow-hidden">
+            {review.data.image_url && (
+              <div class="aspect-4/3 bg-surface-light overflow-hidden">
+                <img src={review.data.image_url} alt={review.data.title} class="w-full h-full object-contain p-4" />
+              </div>
+            )}
+            <div class="p-4">
+              <span class="text-xs text-primary font-semibold uppercase tracking-wide">{review.data.category}</span>
+              <h3 class="text-white font-semibold mt-1 group-hover:text-primary transition-colors">{review.data.title}</h3>
+              <p class="text-sm text-softwhite mt-1 line-clamp-2">{review.data.description}</p>
+              <div class="flex items-center gap-3 mt-3 text-xs text-label">
+                <span>{review.data.brand}</span>
+                {review.data.weight_grams && <span>{review.data.weight_grams}g</span>}
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </main>
+
+    <PageFooter />
+  </div>
+</BaseLayout>
