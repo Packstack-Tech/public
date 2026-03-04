@@ -12,29 +12,28 @@ published_at: "2026-03-03"
 description: "The Nitecore NB10000 packs 10,000 mAh into a 150g carbon-fiber slab — a compelling choice for ultralight backpackers who refuse to compromise on device power."
 ---
 
-
 ## Overview
 
 The Nitecore NB10000 is a 10,000 mAh power bank built around a carbon-fiber reinforced polymer frame — a deliberate engineering choice that sheds serious weight without sacrificing durability. At 150g (5.29 oz), it weighs roughly what a typical 5,000 mAh bank does, making it a standout option for ultralight backpackers and thru-hikers who need multi-day charging capacity without the brick-in-your-pack penalty. This is not a budget buy; it's a weight-weenie premium, and whether that trade-off makes sense depends on how hard you count grams.
 
 ## Key Specs
 
-| Spec | Value |
-|---|---|
-| **Weight** | 150g (5.29 oz) |
-| **Dimensions** | 121.9 × 59 × 10.6 mm |
-| **Nominal Capacity** | 10,000 mAh |
-| **Rated/Usable Energy** | 6,400 mAh (38.5 Wh) |
-| **Max Output** | 20W |
-| **USB-C Output** | 5V⎓3A / 9V⎓2.22A / 12V⎓1.68A (20W max) |
-| **USB-A Output** | 5V⎓3A / 9V⎓2A / 12V⎓1.5A (18W max) |
-| **Dual-Port Output** | 5V⎓3A (15W max) |
-| **Input** | USB-C: 5V⎓2.4A / 9V⎓2A (18W max) |
-| **Water Resistance** | IPX5 |
-| **Cell Type** | Li-ion (flat, single-cell) |
-| **Low Current Mode** | Yes |
-| **Airline Approved** | Yes |
-| **Operating Temp** | -10–40°C (14–104°F) |
+| Spec                    | Value                                  |
+| ----------------------- | -------------------------------------- |
+| **Weight**              | 150g (5.29 oz)                         |
+| **Dimensions**          | 121.9 × 59 × 10.6 mm                   |
+| **Nominal Capacity**    | 10,000 mAh                             |
+| **Rated/Usable Energy** | 6,400 mAh (38.5 Wh)                    |
+| **Max Output**          | 20W                                    |
+| **USB-C Output**        | 5V⎓3A / 9V⎓2.22A / 12V⎓1.68A (20W max) |
+| **USB-A Output**        | 5V⎓3A / 9V⎓2A / 12V⎓1.5A (18W max)     |
+| **Dual-Port Output**    | 5V⎓3A (15W max)                        |
+| **Input**               | USB-C: 5V⎓2.4A / 9V⎓2A (18W max)       |
+| **Water Resistance**    | IPX5                                   |
+| **Cell Type**           | Li-ion (flat, single-cell)             |
+| **Low Current Mode**    | Yes                                    |
+| **Airline Approved**    | Yes                                    |
+| **Operating Temp**      | -10–40°C (14–104°F)                    |
 
 A note on that 6,400 mAh rated energy figure: most manufacturers bury conversion losses in fine print. <cite index="9-13,9-14">Nitecore is refreshingly transparent about it — they actually engrave the usable capacity right on the side of the bank, where usually it's not listed anywhere and you just have to guess.</cite> Respect for that.
 
@@ -75,6 +74,7 @@ Three status LEDs is genuinely thin for a 10,000 mAh bank — you're reading cha
 ## Pros & Cons
 
 **Pros**
+
 - Best-in-class weight for 10,000 mAh capacity — 150g is genuinely remarkable
 - Slim, flat form factor fits easily in a hip belt pocket or shirt pocket
 - IPX5 water resistance handles rain and splashes confidently
@@ -85,6 +85,7 @@ Three status LEDs is genuinely thin for a 10,000 mAh bank — you're reading cha
 - Quick Charge 3.0 support on both ports
 
 **Cons**
+
 - Recharge time is slow — ~4+ hours to refill from empty at 18W max input
 - Cold-weather efficiency drop (~8.9%) is the largest among competing banks tested
 - Only 3 LEDs for charge status — coarse granularity for trip rationing
@@ -101,4 +102,3 @@ This is a near-perfect power bank for the ultralight backpacker or thru-hiker wh
 The Nitecore NB10000 does exactly what it promises: it packs a serious amount of energy into a format that almost disappears in your pack. The cold-weather efficiency penalty and slow recharge time are real trade-offs, not deal-breakers — most of the workarounds are simple and practical. If weight is a priority and you're willing to pay the price premium, this remains one of the most sensible power banks for serious backcountry use.
 
 **Rating: 8/10**
-

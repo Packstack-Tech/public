@@ -12,28 +12,27 @@ published_at: "2026-03-03"
 description: "An in-depth review of the Sawyer Squeeze Water Filter — the ultralight, versatile hollow-fiber squeeze filter that's become the default choice for thru-hikers on the PCT and CDT."
 ---
 
-
 ## Overview
 
 <cite index="2-4,2-5">The Sawyer Squeeze is a 3 oz / 85 g hollow-fiber membrane water filter that removes bacteria and protozoa — and it's become the default water treatment system for hikers on the Pacific Crest Trail and the Continental Divide Trail.</cite> <cite index="1-3,1-4">It's designed for one or two people and features a 3-in-1 design: you can drink water directly from the source through the filter, connect it to your hydration bladder, or squeeze water into another bottle.</cite> If you've spent any time on a long-distance trail in the U.S., you've almost certainly seen one clipped to a pack or screwed onto a SmartWater bottle — and there's a reason for that.
 
 ## Key Specs
 
-| Spec | Detail |
-|---|---|
-| **Weight** | 85 g / 3 oz (filter only); ~164 g / 5.8 oz with bags |
-| **Filtration Rating** | 0.1 micron absolute |
-| **Filter Life** | 100,000 gallons |
-| **Flow Rate (rated)** | 1.7 L/min |
-| **Removes** | 99.99999% bacteria, 99.9999% protozoa, 100% microplastics |
-| **Does NOT Remove** | Viruses, heavy metals, pesticides, simple compounds |
-| **Filter Medium** | Hollow fiber membrane |
-| **Housing Material** | Polypropylene/polyethylene |
-| **Thread Compatibility** | 28mm standard |
-| **Backflushable** | Yes |
-| **Warranty** | Lifetime limited |
-| **Includes** | Two 32 oz pouches, backflush syringe, inline adapters, cleaning coupling |
-| **Price (MSRP)** | ~$40 |
+| Spec                     | Detail                                                                   |
+| ------------------------ | ------------------------------------------------------------------------ |
+| **Weight**               | 85 g / 3 oz (filter only); ~164 g / 5.8 oz with bags                     |
+| **Filtration Rating**    | 0.1 micron absolute                                                      |
+| **Filter Life**          | 100,000 gallons                                                          |
+| **Flow Rate (rated)**    | 1.7 L/min                                                                |
+| **Removes**              | 99.99999% bacteria, 99.9999% protozoa, 100% microplastics                |
+| **Does NOT Remove**      | Viruses, heavy metals, pesticides, simple compounds                      |
+| **Filter Medium**        | Hollow fiber membrane                                                    |
+| **Housing Material**     | Polypropylene/polyethylene                                               |
+| **Thread Compatibility** | 28mm standard                                                            |
+| **Backflushable**        | Yes                                                                      |
+| **Warranty**             | Lifetime limited                                                         |
+| **Includes**             | Two 32 oz pouches, backflush syringe, inline adapters, cleaning coupling |
+| **Price (MSRP)**         | ~$40                                                                     |
 
 ## Performance
 
@@ -68,6 +67,7 @@ This is the Squeeze's single most serious limitation. <cite index="2-25,2-27,2-2
 ## Pros & Cons
 
 **Pros**
+
 - Proven reliability across thousands of trail miles from PCT to AZ Trail
 - Best flow rate in the Sawyer lineup; noticeably faster than the Mini or Micro
 - Three modes: squeeze, gravity, and inline — genuinely useful versatility
@@ -78,6 +78,7 @@ This is the Squeeze's single most serious limitation. <cite index="2-25,2-27,2-2
 - Affordable at ~$40 with a lifetime limited warranty
 
 **Cons**
+
 - Does not remove viruses — a meaningful limitation for international travel
 - Flow rate degrades with use and silt exposure; demands disciplined maintenance
 - Freezing can silently and permanently damage the membrane with no visual indicator
@@ -96,4 +97,3 @@ This is the Squeeze's single most serious limitation. <cite index="2-25,2-27,2-2
 The Sawyer Squeeze has earned its dominant position on trail — not through marketing, but through a genuinely excellent balance of weight, filtration performance, versatility, and long-term reliability. <cite index="14-23,14-24">Its biggest badge of honor is that it's the most popular filter on the PCT, trusted by thru-hikers because it's the most reliable, long-lasting unit in a crowded field, and fits onto more desirable bottles than any other.</cite> The caveats are real — it needs consistent maintenance, the stock pouches are expendable, and a single freezing night can take it out of commission — but none of those are surprises if you go in with eyes open. Buy one, ditch the included pouches for a CNOC or SmartWater bottle setup, backflush religiously, and it will likely outlast several pairs of trail shoes.
 
 **Rating: 8.5 / 10**
-

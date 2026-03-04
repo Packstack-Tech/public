@@ -12,24 +12,23 @@ published_at: "2026-03-03"
 description: "The Helinox Chair Zero is the ultralight backpacking chair benchmark: 17 oz, sub-liter packed size, and genuinely comfortable — at a price."
 ---
 
-
 ## Overview
 
 The Helinox Chair Zero is the chair that most ultralight backpackers eventually measure everything else against. It's a four-legged, sling-style seat built on shock-corded DAC aluminum poles — the same pole technology that goes into high-end expedition tents — wrapped in a lightweight aramid ripstop polyester seat. At 482 g (about 17 oz) and packing into a 14" × 4" × 4" stuff sack, it's purpose-built for weight-conscious hikers who still want to sit like a human being at camp. This isn't a chair you bring to a tailgate; it's a chair you bring to a summit.
 
 ## Key Specs
 
-| Spec | Value |
-|---|---|
-| Weight | 482 g / ~17 oz (18 oz with stuff sack on some scales) |
-| Packed Size | 14" × 4" × 4" |
-| Assembled Dimensions (W × D × H) | 20.5" × 19" × 25" |
-| Seat Height | 8.5" |
-| Weight Capacity | 265 lb |
-| Frame Material | DAC TH72M aluminum alloy |
-| Seat Material | Aramid ripstop polyester |
-| Warranty | 5 years |
-| MSRP | ~$149 |
+| Spec                             | Value                                                 |
+| -------------------------------- | ----------------------------------------------------- |
+| Weight                           | 482 g / ~17 oz (18 oz with stuff sack on some scales) |
+| Packed Size                      | 14" × 4" × 4"                                         |
+| Assembled Dimensions (W × D × H) | 20.5" × 19" × 25"                                     |
+| Seat Height                      | 8.5"                                                  |
+| Weight Capacity                  | 265 lb                                                |
+| Frame Material                   | DAC TH72M aluminum alloy                              |
+| Seat Material                    | Aramid ripstop polyester                              |
+| Warranty                         | 5 years                                               |
+| MSRP                             | ~$149                                                 |
 
 ## Performance
 
@@ -60,6 +59,7 @@ The achilles heel is soft ground. <cite index="1-37,1-38,1-39">The feet have rub
 ## Pros & Cons
 
 **Pros**
+
 - Exceptional weight-to-comfort ratio for the category
 - Compact packed size fits in most pack side pockets
 - Lateral stability beats most competitors at this weight
@@ -69,6 +69,7 @@ The achilles heel is soft ground. <cite index="1-37,1-38,1-39">The feet have rub
 - 265 lb capacity is generous for such a light chair
 
 **Cons**
+
 - Premium price (~$149) is a real barrier
 - 8.5" seat height is low — getting in and out takes more effort, especially for those with bad knees
 - Small feet sink into soft sand and soil without the optional (and extra-cost) Ground Sheet accessory
@@ -84,4 +85,3 @@ The Chair Zero is the right call for weight-conscious backpackers who do multi-d
 ## Verdict
 
 The Chair Zero is the benchmark ultralight camp chair for good reason: it's the rare piece of gear that actually delivers on its promise without major asterisks. The price stings, and it's not a chair you'll recline in all evening, but <cite index="11-5">for backpackers used to crouching on rocks or sitting on foam pads, it feels like a luxury hotel amenity delivered to your tent.</cite> If you're going to carry a chair into the backcountry, carry this one. **Rating: 8.5/10.**
-
