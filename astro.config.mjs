@@ -6,6 +6,7 @@ import vercel from "@astrojs/vercel"
 
 export default defineConfig({
   site: "https://packstack.io",
+  trailingSlash: "never",
   integrations: [react(), sitemap()],
   output: "server",
   adapter: vercel(),

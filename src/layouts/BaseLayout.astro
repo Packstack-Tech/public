@@ -15,9 +15,17 @@ const { title, description = "Plan your backpacking trips with Packstack — the
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <meta property="og:title" content="Packstack — Free Backpacking Packing List & Gear Tracker" />
+    <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta property="og:image" content="https://packstack.io/packstack-social-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://packstack.io/packstack-social-image.png" />
     <meta name="description" content={description} />
     <meta name="keywords" content="backpacking packing list, ultralight hiking, gear tracker, pack weight, base weight, gear inventory, hiking gear list, lighterpack alternative" />
     <title>{title}</title>

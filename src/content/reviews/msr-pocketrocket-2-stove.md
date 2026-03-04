@@ -1,0 +1,96 @@
+---
+title: "MSR PocketRocket 2 Stove Review"
+brand: "MSR"
+product_name: "PocketRocket 2 Stove"
+catalog_product_id: 15
+category: "Cookware"
+weight_grams: 73.0
+product_url: "https://cascadedesigns.com/products/pocketrocket-2-stove"
+image_url: "https://www.rei.com/media/7746a739-615e-44e9-a99c-3eaebd8b3116?size=2000"
+rating: 8.5
+published_at: "2026-03-03"
+description: "The MSR PocketRocket 2 is a 73g canister stove that's fast, packable, and surprisingly capable — a near-consensus pick for three-season backpacking."
+---
+
+## Overview
+
+<cite index="2-1,2-2">The PocketRocket 2 is a time-tested classic backpacking stove that simmers well and is super lightweight, compact, and durable.</cite> <cite index="18-1,18-2">First released in 2017, it remains unchanged — and that's a good thing, because it's still one of the best lightweight canister stoves for backpacking: compact, fast-boiling, and dependable.</cite> It sits squarely in the "do-everything" canister stove category — not the absolute lightest option on the market, but one of the best-balanced combinations of weight, stability, simmer control, and build quality you'll find at this price point.
+
+---
+
+## Key Specs
+
+| Spec                | Value                                    |
+| ------------------- | ---------------------------------------- |
+| **Weight**          | 73 g (2.6 oz)                            |
+| **Boil Time (1L)**  | 3.5 min                                  |
+| **Heat Output**     | 8,000 BTU/hr                             |
+| **Burn Time**       | ~60 min (per 227g / 8 oz canister)       |
+| **Fuel Type**       | Isobutane-propane, threaded Lindal valve |
+| **Ignition**        | None (external lighter/matches required) |
+| **Wind Protection** | WindClip® windshield                     |
+| **Includes**        | Stove, hard-shell carry case             |
+| **Warranty**        | 3 years                                  |
+
+---
+
+## Performance
+
+**Boil Speed & Fuel Efficiency**
+
+The numbers hold up in practice. <cite index="1-26,1-27">Without wind, the stove has no trouble bringing a liter of water to a boil in under three and a half minutes, burning just 0.4 ounces of fuel in the process.</cite> <cite index="1-28">It's not uncommon to get 10 meals or more worth of hot dinners out of a single 100-gram isobutane fuel can.</cite> <cite index="15-14">In a controlled environment, the PocketRocket 2 lived up to MSR's fuel efficiency claim, requiring just 1 ounce of fuel to boil 2 liters of water.</cite> One independent test even beat the spec: <cite index="18-14,18-15,18-16">in a backyard test with a lid on and the valve turned up full, a liter boiled in 2:48 — about 10 seconds quicker than MSR's claimed time, at sea level with no wind.</cite>
+
+**Simmer Control**
+
+This is where the PocketRocket 2 quietly earns a lot of respect. <cite index="10-21,10-22,10-23">One of its key advantages is simmer control — unlike many ultralight stoves that are only suitable for boiling water, the PocketRocket 2 lets you fine-tune the flame for simmering, which matters if you prefer cooking real food over just rehydrating freeze-dried meals.</cite> <cite index="15-15,15-16,15-17">The flame adjuster is user-friendly and extends far enough past the pot supports to safely adjust output without the risk of burning your fingers. It's responsive without being too touchy, making it possible to maintain a low flame for simmering — and while stoves with built-in temperature regulators like the Jetboil MiniMo are more fine-tunable, the PocketRocket 2 is surprisingly capable and versatile.</cite>
+
+**Wind Resistance**
+
+Wind is the honest weak spot, and multiple reviewers flag it consistently. <cite index="1-30">The burner head is not recessed and there's no screen to help protect the flame from wind like that on integrated stoves.</cite> <cite index="15-18,15-19,15-20,15-21">The burner head is divided into three sections to help keep the flame burning in windy conditions — in theory, if one or two sections are extinguished, the remaining one should reignite the flame. In light breezes this system worked well, but it struggled in gustier conditions, with the wind repeatedly extinguishing the flame entirely.</cite> The included WindClip helps at the margins, but if you regularly cook in sustained wind, look at the PocketRocket Deluxe or an integrated system like the MSR WindBurner. The practical workaround: <cite index="16-20,16-21">strategic positioning behind natural windbreaks — rocks, your backpack, your body — can dramatically improve performance, and a DIY aluminum foil windscreen placed carefully to avoid overheating the canister makes a substantial difference.</cite>
+
+**Cold & High-Altitude Performance**
+
+<cite index="3-29">As a canister stove, you can expect performance issues if you plan to use it for extended periods at high altitudes or in temperatures below freezing, as the propane and butane will vaporize at different rates and the canister will eventually fail.</cite> <cite index="16-16">During a winter test at 11,000 feet with temperatures around 20°F, the standard PocketRocket 2 dropped to about 65% of its sea-level performance</cite> — a meaningful hit for winter camping. For sub-freezing use, the PocketRocket Deluxe's pressure regulator is worth the upgrade.
+
+**Packability & Stability**
+
+<cite index="20-9,20-10">The PocketRocket 2 folds down small enough to fit in the palm of your hand and can easily nest into most cook pots — one reviewer fit it into a 550ml pot along with an 8-ounce fuel canister and a mini Bic lighter.</cite> <cite index="11-26,11-27">Tabs anchor the arms so they have a very sturdy feel when locked in place, and MSR designed the serrated ends of each arm to be on a slight angle, ensuring pots of varying diameters remain in place on the stand.</cite> <cite index="13-22">The control valve is also generously sized, making it easy to adjust whether bare-handed or rocking a pair of winter gloves.</cite>
+
+**Durability**
+
+<cite index="4-3,4-4,4-5,4-6,4-7">The stove has held up impressively well across varied use — from backpacking in Wyoming and ski touring on Mount Rainier to bikepacking trips. The one recurring issue reported is a screw at the base of the stem that loosens over time, causing some wobbling when boiling water on the trail. A quick tightening with a pocket knife usually does the trick. Aside from that minor issue, there are no serious concerns about long-term durability, and MSR backs it with a 3-year warranty.</cite> A small note: <cite index="5-32,5-33">after heavy use over several years, some users have reported pot support arms beginning to fail by swinging out of place.</cite> Worth keeping an eye on if you're putting serious miles on the stove.
+
+---
+
+## Pros & Cons
+
+**Pros**
+
+- <cite index="14-8">Weighs just 73g (2.6 oz)</cite> — excellent weight-to-performance ratio
+- <cite index="1-26">Boils a liter in under 3.5 minutes in calm conditions</cite>
+- <cite index="10-21,10-22">Genuine simmer control — not just a water-boiler</cite>
+- <cite index="20-9">Folds small enough to nest in most cook pots</cite>
+- <cite index="3-21">Fuel is easy to find in the United States and abroad</cite>
+- Solid build quality with a 3-year warranty
+- Simple, reliable operation — no priming, no preheating
+
+**Cons**
+
+- <cite index="10-18">No built-in igniter — you'll need to carry matches, a lighter, or a fire steel</cite>
+- <cite index="1-29,1-30">Noticeably slower to boil in wind; burner head is not recessed and there's no protective screen</cite>
+- <cite index="3-29">Performance degrades meaningfully at high altitude and below freezing</cite>
+- <cite index="19-14,19-15,19-16">The stove is loud — not ideal if you're trying to quietly make coffee without waking campsite neighbors</cite>
+- <cite index="20-11,20-12">The included hard carry case adds bulk — you likely can't nest it alongside a fuel canister in smaller pots</cite>
+- <cite index="2-12,2-13,2-14">Fuel efficiency is around average for the class — it burned about 0.25 oz of isobutane to raise 0.5L to a boil, which is on par with but not better than comparable stoves</cite>
+
+---
+
+## Who Should Buy This
+
+<cite index="20-30,20-31">For the lightweight or ultralight backpacker who wants a high-performing stove with good efficiency and simmer control that allows for more than just boiling water, the PocketRocket 2 is hard to beat. Most stoves this size are inefficient, lack stability, or can't do much more than boil water.</cite> It's particularly well-suited to three-season solo or two-person trips where conditions are reasonably calm. It also makes an excellent backup stove for hikers who primarily use an integrated system. If you're regularly cooking in harsh wind or sub-freezing temperatures, step up to the PocketRocket Deluxe or the MSR WindBurner. If you're a true gram-counter and only ever boil water, the BRS-3000T at under 30g will tempt you — but you'll be trading away stability and simmer capability.
+
+---
+
+## Verdict
+
+<cite index="1-14">After testing over about 500 miles on the Colorado Trail and thousands of miles before that, CleverHiker ranked it the best overall backpacking stove out of 40 tested over a decade</cite> — and having dug into the full picture across multiple long-distance users and lab testers, that ranking is hard to argue with for most three-season use. It's not perfect: carry a windscreen and keep your lighter handy. But at 73g with genuine simmer control, reliable boil times, and a track record that spans thousands of PCT and CDT miles, the PocketRocket 2 is about as proven as a backpacking stove gets. **Rating: 8.5/10.**
