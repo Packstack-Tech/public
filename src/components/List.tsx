@@ -3,7 +3,7 @@ import { Flame, Shirt } from "lucide-react"
 import type { PackItem } from "../types/pack"
 import type { Unit } from "../types/item"
 import { useCategorizedPackItems } from "../hooks/useCategorizedPackItems"
-import { convertWeight } from "../utils/weight"
+import { convertWeight, formatItemWeight } from "../utils/weight"
 import { ProductName } from "./ProductName"
 
 interface Props {
@@ -76,7 +76,7 @@ export const List: FC<Props> = ({ items, aggregateUnit, itemUnit }) => {
                         <ProductName item={item} />
                       </td>
                       <td className="py-3 px-4 text-right tabular-nums whitespace-nowrap">
-                        {convertWeight(item.weight || 0, item.unit, itemUnit).display}
+                        {formatItemWeight(item.weight || 0, item.unit, itemUnit)}
                         {quantity > 1 && (
                           <span className="ml-2 text-xs text-label bg-surface rounded px-1.5 py-0.5">
                             &times;{quantity}

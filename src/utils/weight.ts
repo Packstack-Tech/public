@@ -31,3 +31,33 @@ export function getAggregateUnit(unit: Unit) {
 
   return aggregateUnits[unit]
 }
+
+const PROMOTE_THRESHOLDS: Partial<Record<Unit, { threshold: number; to: Unit }>> = {
+  g: { threshold: 1000, to: "kg" },
+  oz: { threshold: 16, to: "lb" },
+}
+
+/**
+ * Formats an item weight for display, promoting to the larger unit
+ * (g -> kg, oz -> lb) when the value exceeds a natural threshold.
+ * Uses 2 decimal places for the larger unit; strips trailing zeros
+ * for the smaller unit.
+ */
+export function formatItemWeight(
+  weight: number,
+  fromUnit: Unit,
+  targetItemUnit: Unit
+): string {
+  const converted = convertWeight(weight, fromUnit, targetItemUnit)
+  const promo = PROMOTE_THRESHOLDS[targetItemUnit]
+
+  if (promo && converted.weight >= promo.threshold) {
+    const promoted = convertWeight(weight, fromUnit, promo.to)
+    return `${promoted.weight.toFixed(2)} ${promo.to}`
+  }
+
+  const rounded = targetItemUnit === "g"
+    ? Math.round(converted.weight)
+    : parseFloat(converted.weight.toFixed(2))
+  return `${rounded} ${targetItemUnit}`
+}
