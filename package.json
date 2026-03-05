@@ -16,6 +16,7 @@
     "@astrojs/react": "^4",
     "@astrojs/sitemap": "^3.7.0",
     "@astrojs/vercel": "^9",
+    "@nivo/pie": "^0.99.0",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4",
     "@types/react": "^19",
