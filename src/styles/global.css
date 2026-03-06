@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
 @theme {
   --color-*: initial;
-  --color-primary: #6a82fb;
-  --color-primary-dark: #5a6ed4;
-  --color-primary-glow: rgba(106, 130, 251, 0.12);
-  --color-white: #e5e5e8;
-  --color-softwhite: #8096B6;
-  --color-label: #64748b;
-  --color-surface: #111622;
-  --color-surface-light: #182031;
-  --color-border: #1D2C42;
-  --color-background: #030711;
+  --color-primary: rgb(224 96 46);
+  --color-primary-dark: rgb(190 78 35);
+  --color-primary-glow: rgba(224, 96, 46, 0.12);
+  --color-white: rgb(237 236 236);
+  --color-softwhite: rgb(173 171 169);
+  --color-label: rgb(120 118 115);
+  --color-surface: rgb(27 25 19);
+  --color-surface-light: rgb(32 30 24);
+  --color-border: rgb(38 36 30);
+  --color-background: rgb(20 18 11);
   --color-accent-green: #34d399;
   --color-accent-orange: #fb923c;
   --color-accent-red: #f87171;
 
-  --font-sans: "Open Sans", sans-serif;
+  --font-sans: "Inter", sans-serif;
 }
 
 @layer base {
