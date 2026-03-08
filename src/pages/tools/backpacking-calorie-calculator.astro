@@ -1,0 +1,93 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import PageFooter from "../../components/PageFooter.astro"
+import CalorieCalculator from "../../components/CalorieCalculator"
+
+export const prerender = true
+---
+
+<BaseLayout title="Backpacking Calorie Calculator | Packstack" description="Estimate your daily calorie needs on the trail using the Pandolf Load Carriage Equation and Mifflin-St Jeor BMR formula. Factor in pack weight, terrain, pace, and more.">
+  <div class="bg-background min-h-screen">
+    <header class="border-b border-border/50">
+      <nav class="max-w-5xl mx-auto flex items-center justify-between px-4 md:px-8 py-3">
+        <a href="/" class="flex items-center">
+          <img src="/packstack_logo_white.png" alt="Packstack" class="w-32" />
+        </a>
+        <div class="flex items-center gap-4 md:gap-6">
+          <a href="/tools" class="text-softwhite hover:text-white transition-colors text-sm font-semibold no-underline">Tools</a>
+          <a href="/learn" class="text-softwhite hover:text-white transition-colors text-sm font-semibold no-underline">Learn</a>
+          <a href="https://app.packstack.io/auth/login" class="text-softwhite hover:text-white transition-colors text-sm font-semibold">Login</a>
+          <a href="https://app.packstack.io/auth/register" class="bg-primary hover:bg-primary-dark text-white rounded-md py-1.5 px-4 text-sm font-semibold transition-colors no-underline">Sign Up</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 md:px-8 py-12">
+      <a href="/tools" class="text-sm text-label hover:text-softwhite transition-colors no-underline mb-4 inline-block">&larr; All Tools</a>
+      <h1 class="text-3xl md:text-4xl font-bold mb-2">Backpacking Calorie Calculator</h1>
+      <p class="text-lg mb-8 max-w-2xl">Estimate your daily calorie needs on the trail using the Pandolf Load Carriage Equation, factoring in body weight, pack load, terrain, pace, and elevation.</p>
+
+      <CalorieCalculator client:load />
+
+      <div class="mt-16 prose prose-invert max-w-none prose-headings:text-white prose-headings:font-bold prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:text-primary prose-h3:text-lg prose-h3:mt-8 prose-h3:mb-3 prose-p:text-softwhite prose-p:leading-7 prose-li:text-softwhite prose-ul:text-softwhite prose-a:text-primary hover:prose-a:text-white prose-strong:text-white prose-blockquote:border-primary prose-blockquote:text-label">
+
+        <h2>Why Calorie Estimation Matters on the Trail</h2>
+        <p>I've been on trips where I packed "roughly enough" food and ended up rationing crackers by day three. I've also hauled six days of food for a four-day trip and cursed the extra weight with every switchback. Neither is fun. The difference between those experiences came down to one thing: having a reasonable calorie target before I packed my bear canister.</p>
+        <p>Backpacking burns significantly more calories than most people expect. A 160 lb hiker carrying a 25 lb pack over moderate terrain at 3 mph can easily burn 400–600 kcal/hr while moving — and that's before you add steep grades or rough trail surface. Multiply that across 6–8 hours of hiking, add in the calories your body burns at rest, and you're looking at 3,000–4,500+ kcal per day. Undershoot that by 1,000 calories a day for a week and you'll feel it: fatigue, slower pace, worse decision-making, and a miserable final push to the trailhead.</p>
+        <p>This calculator gives you a science-backed starting point so you can plan food weight with actual numbers instead of guesswork.</p>
+
+        <h2>How to Use This Calculator</h2>
+        <p>Fill in the four input sections — Hiker Profile, Trip Details, Gear, and Environment — and results update instantly. There's no submit button; just adjust values and watch the numbers change.</p>
+        <ul>
+          <li><strong>Hiker Profile:</strong> Your sex, age, height, and body weight drive the BMR calculation, which determines your baseline calorie burn at rest. Be accurate here — a 20 lb difference in body weight meaningfully shifts the output. The <strong>Body Type</strong> selector adjusts your BMR: "High Muscle Mass" adds 10% to your resting metabolic rate, since muscle tissue burns more energy than fat even when you're sleeping.</li>
+          <li><strong>Trip Details:</strong> Daily distance and elevation gain are the biggest levers for active calories. If your route gains 4,000 ft over 12 miles, enter those numbers directly. The calculator derives average grade from the ratio of gain to distance.</li>
+          <li><strong>Gear:</strong> Pack weight includes everything you're carrying — pack, shelter, sleep system, food, water, all of it. The Pandolf equation is sensitive to load: adding 10 lbs to your pack doesn't increase burn by a fixed amount, it compounds with body weight and terrain.</li>
+          <li><strong>Environment:</strong> Terrain type, pace, and temperature each apply modifiers. Loose rock or sand dramatically increases energy cost compared to a groomed dirt trail. Cold weather adds roughly 10% for thermoregulation; hot conditions add about 5% for the extra cooling effort your body puts in.</li>
+        </ul>
+        <p>Use the <strong>Imperial/Metric toggle</strong> in the top-right to switch units — your values convert automatically. The <strong>+10% Safety Margin</strong> toggle applies a blanket 10% increase to the total, which I'd recommend for most trip planning. It's better to carry an extra half-pound of food than to bonk on a climb.</p>
+        <p>The <strong>food weight estimate</strong> uses a density of 130 kcal/oz, which is a reasonable average for typical backpacking food (trail mix, bars, dehydrated meals, nut butters). If you're packing calorie-dense foods like olive oil or peanut butter at 160–240 kcal/oz, you'll need less weight. If your menu leans toward fresh or canned items, you'll need more.</p>
+
+        <h2>The Math Behind the Numbers</h2>
+        <p>The calculator combines two peer-reviewed formulas that have been validated in field research:</p>
+        <h3>Pandolf Load Carriage Equation (Active Calories)</h3>
+        <p>Developed by researchers at the U.S. Army Research Institute of Environmental Medicine, the Pandolf equation models the metabolic cost of walking with a load. It accounts for body weight, pack weight, walking speed, terrain surface, and slope grade — outputting metabolic power in Watts, which gets converted to kcal/hr. This isn't a rough heuristic; it's the standard model used in military and exercise physiology research for predicting energy expenditure during load carriage.</p>
+        <h3>Mifflin-St Jeor Equation (Baseline Calories)</h3>
+        <p>For the hours you're not hiking — setting up camp, cooking, resting, sleeping — the calculator estimates your energy burn using the Mifflin-St Jeor BMR formula, widely considered the most accurate BMR predictor for healthy adults. It factors in sex, age, height, and weight. That raw BMR is then multiplied by a 1.2 "sedentary" activity factor to account for the light movement you do around camp, which is more active than lying in bed but less than actual hiking. If you select "High Muscle Mass," the BMR is further increased by 10% — research consistently shows that lean muscle tissue has a higher resting metabolic rate than adipose tissue, so a muscular 180 lb hiker burns meaningfully more at rest than a sedentary 180 lb hiker.</p>
+        <p>The two figures — active hiking calories and rest-of-day calories — are combined proportionally based on how many hours you spend moving versus resting to produce a total daily estimate.</p>
+
+        <h2>Macronutrient Breakdown: Fueling for Endurance</h2>
+        <p>Knowing your total calorie target is half the battle. The other half is what those calories are made of. The calculator uses a 50/30/20 split — 50% carbohydrates, 30% fat, 20% protein — which is a well-supported ratio for sustained endurance activity.</p>
+        <p><strong>Carbohydrates (50%)</strong> are your primary fuel source while hiking. Glycogen stores deplete fast under load, and carbs replenish them most efficiently. On the trail, this means oatmeal, rice, tortillas, dried fruit, and energy bars. A 3,500 kcal/day target translates to roughly 438g of carbs — that's the equivalent of about 8 cups of cooked rice spread across the day.</p>
+        <p><strong>Fats (30%)</strong> are the most calorie-dense macronutrient at 9 kcal per gram, making them ideal for weight-conscious backpackers. Nuts, nut butters, cheese, olive oil, and chocolate are trail staples precisely because they pack maximum energy per ounce. At 3,500 kcal/day, you're looking at about 117g of fat.</p>
+        <p><strong>Protein (20%)</strong> supports muscle recovery overnight and between hard days. Jerky, powdered milk, cheese, tuna packets, and protein-fortified bars all travel well. At 3,500 kcal/day, aim for roughly 175g of protein. On multi-day trips, adequate protein is the difference between waking up strong and waking up wrecked.</p>
+        <p>These ratios are a starting framework, not a rigid prescription. Some hikers do well with higher fat percentages on cold-weather trips (fat generates more metabolic heat), while others prefer more carbs for high-intensity mountain days. Experiment on shorter trips and adjust to what your body responds to.</p>
+
+        <h2>Staying Hydrated on the Trail</h2>
+        <p>The calculator estimates daily water intake based on hiking duration, temperature, and terrain difficulty. The baseline formula assumes roughly half a liter per hour of hiking — a figure consistent with general sports hydration guidelines — scaled up for hot conditions (where sweat rate can double) and for difficult terrain that demands more exertion per mile. An additional 1.5 liters covers rest-of-day hydration at camp.</p>
+        <p>A few things the formula can't capture: individual sweat rates vary enormously, altitude increases respiratory water loss, and dry desert air pulls moisture faster than humid forest. Treat the estimate as a floor, not a ceiling.</p>
+        <ul>
+          <li><strong>Plan around water sources.</strong> Water weighs 2.2 lbs per liter. On a well-watered trail, carry only what you need to reach the next source — typically 1–2 liters at a time. On dry stretches, you may need to carry 3–4 liters or more.</li>
+          <li><strong>Monitor your urine color.</strong> Pale yellow means you're on track. Dark yellow or infrequent urination means you're behind. It's the simplest real-time hydration check available.</li>
+          <li><strong>Add electrolytes in heat.</strong> Plain water isn't enough when you're sweating heavily. Sodium, potassium, and magnesium losses need replacing — especially above 85°F or during sustained climbs. Pack electrolyte tablets or powder mixes.</li>
+          <li><strong>Don't wait until you're thirsty.</strong> By the time you feel thirsty, you're already mildly dehydrated. Sip consistently throughout the day, especially on morning climbs when it's easy to forget.</li>
+        </ul>
+
+        <h2>Practical Tips for Food Planning</h2>
+        <ul>
+          <li><strong>Run the numbers for your hardest day.</strong> If day two has 5,000 ft of gain and 15 miles, use those figures — not your trip average. Pack for the peak, not the mean.</li>
+          <li><strong>Calorie needs increase over multi-day trips.</strong> By day four or five, accumulated energy deficit compounds. If you're out for a week, consider bumping the safety margin or adding 200–300 kcal/day to the estimate for later days.</li>
+          <li><strong>Weigh your food at home.</strong> After the calculator gives you a target food weight, actually weigh your packed food on a kitchen scale. It's the single best check against under- or over-packing.</li>
+          <li><strong>Account for altitude.</strong> The calculator adds 5% for elevations above 10,000 ft, but individual responses to altitude vary widely. If you know you tend to lose appetite at elevation, pack calorie-dense snacks you'll actually want to eat — nuts, chocolate, cheese.</li>
+          <li><strong>Don't forget electrolytes.</strong> This calculator estimates energy needs, not hydration or mineral loss. In hot weather or at high exertion, supplement with electrolyte mixes.</li>
+        </ul>
+
+        <h2>Important Disclaimers</h2>
+        <p>Any calorie calculator is an estimate — including this one. The Pandolf equation was developed and validated under controlled conditions that don't perfectly mirror every trail scenario. Real-world variables like wind, altitude acclimatization, individual fitness, pack fit, and trail obstacles all introduce variance. Individual metabolic rates can differ by 10–15% from formula predictions even under lab conditions.</p>
+        <p>Use this tool as a planning baseline, not a prescription. If you're new to backpacking, start with the +10% safety margin enabled and adjust based on how you actually feel and eat on the trail. After a few trips, you'll develop a personal sense of how much food your body needs per day — and that lived experience will always be more accurate than any equation.</p>
+
+      </div>
+    </main>
+
+    <PageFooter />
+  </div>
+</BaseLayout>
