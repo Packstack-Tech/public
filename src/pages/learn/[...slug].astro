@@ -1,0 +1,81 @@
+---
+import { getCollection, render } from "astro:content"
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import PageFooter from "../../components/PageFooter.astro"
+
+export const prerender = true
+
+export async function getStaticPaths() {
+  const articles = await getCollection("articles")
+  return articles.map((article) => ({
+    params: { slug: article.id },
+    props: { article },
+  }))
+}
+
+const { article } = Astro.props
+const { Content } = await render(article)
+const { title, description, published_at, image, image_alt } = article.data
+const formattedDate = new Date(published_at).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })
+---
+
+<BaseLayout title={`${title} | Packstack`} description={description}>
+  <div class="bg-background min-h-screen">
+    <header class="border-b border-border/50">
+      <nav class="max-w-3xl mx-auto flex items-center justify-between px-4 md:px-8 py-3">
+        <a href="/" class="flex items-center">
+          <img src="/packstack_logo_white.png" alt="Packstack" class="w-32" />
+        </a>
+        <div class="flex items-center gap-4 md:gap-6">
+          <a href="/learn" class="text-softwhite hover:text-white transition-colors text-sm">All Articles</a>
+          <a href="https://app.packstack.io/auth/register" class="bg-primary hover:bg-primary-dark text-white rounded-md py-1.5 px-4 text-sm font-semibold transition-colors no-underline">Sign Up</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-4 md:px-8 py-12">
+      <div class="mb-8">
+        <a href="/learn" class="text-sm text-label hover:text-primary transition-colors no-underline">&larr; All Articles</a>
+      </div>
+
+      <article>
+        <header class="mb-8">
+          <h1 class="text-3xl md:text-4xl font-bold mt-2 mb-3">{title}</h1>
+          <p class="text-softwhite text-lg">{description}</p>
+
+          <div class="flex flex-wrap items-center gap-4 mt-4 text-sm text-label">
+            <span>{formattedDate}</span>
+          </div>
+        </header>
+
+        {image && (
+          <div class="mb-10 bg-surface rounded-lg border border-border p-6">
+            <img src={image} alt={image_alt || title} class="max-h-96 mx-auto object-contain" />
+          </div>
+        )}
+
+        <div class="prose prose-invert max-w-none
+          prose-headings:text-white prose-headings:font-bold
+          prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:text-primary
+          prose-h3:text-lg prose-h3:mt-8 prose-h3:mb-3
+          prose-p:text-softwhite prose-p:leading-7
+          prose-a:text-primary hover:prose-a:text-white
+          prose-strong:text-white
+          prose-li:text-softwhite
+          prose-ul:text-softwhite
+          prose-ol:text-softwhite
+          prose-blockquote:border-primary prose-blockquote:text-label
+          prose-code:text-accent-green prose-code:bg-surface prose-code:px-1 prose-code:rounded
+        ">
+          <Content />
+        </div>
+      </article>
+
+      <div class="mt-16 pt-8 border-t border-border">
+        <a href="/learn" class="text-sm text-label hover:text-primary transition-colors no-underline">&larr; Back to all articles</a>
+      </div>
+    </main>
+
+    <PageFooter />
+  </div>
+</BaseLayout>

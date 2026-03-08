@@ -18,4 +18,15 @@ const reviews = defineCollection({
   }),
 })
 
-export const collections = { reviews }
+const articles = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/articles" }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    published_at: z.string(),
+    image: z.string().nullable(),
+    image_alt: z.string().nullable(),
+  }),
+})
+
+export const collections = { reviews, articles }

@@ -1,0 +1,92 @@
+---
+title: "Decathlon Simond MT500 2-in-1 Zip-Off Hiking Pants Review"
+brand: "Decathlon"
+product_name: "MT500 2-in-1 Zip-Off Hiking Pants"
+catalog_product_id: 20
+category: "Clothing"
+weight_grams: null
+product_url: "https://www.decathlon.com/products/simond-mens-mt500-2-in-1-zip-off-hiking-pants-351289"
+image_url: "https://www.decathlon.com/cdn/shop/files/8853743-product_image-p2660246_c7097075-aecc-4272-b7fa-fdc2534ef1db.jpg?v=1748664414&width=990"
+rating: 7.5
+published_at: "2026-03-06"
+description: "An honest review of Decathlon's Simond MT500 2-in-1 Zip-Off Hiking Pants — a feature-rich convertible for hikers who want serious versatility without the premium price tag."
+---
+
+## Overview
+
+The Simond MT500 2-in-1 Zip-Off is Decathlon's attempt to pack trail-ready versatility into an accessibly priced hiking pant. It converts from full-length trousers to shorts without removing your shoes, uses a body-mapped, multi-fabric construction, and ships with a belt included — at a price point that undercuts most name-brand competitors by a wide margin. It's aimed squarely at hikers who move through variable conditions and don't want to pack both a pair of pants and shorts.
+
+## Key Specs
+
+| Spec                  | Detail                                                                                                                             |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| **Weight**            | ~480 g (16.9 oz) in size M (approx.; confirm for your size at checkout)                                                            |
+| **Fit**               | Regular                                                                                                                            |
+| **Conversion**        | Zip-off to shorts (no shoe removal required)                                                                                       |
+| **Main Fabric**       | 100% polyester, 145 g/m² (lightweight/breathable zones)                                                                            |
+| **Reinforced Panels** | 88% polyamide / 12% elastane, 198 g/m² (seat, knees, lower legs)                                                                   |
+| **Stretch Gusset**    | 85% polyamide / 15% elastane (crotch/gusset)                                                                                       |
+| **Pockets**           | 5 total: 2 zipped hand, 2 zipped thigh (right includes mesh phone sleeve), 1 zipped rear                                           |
+| **Water Repellency**  | DWR-treated panels at front ankle and buttocks; not waterproof                                                                     |
+| **Ankle Closure**     | Elasticated drawcord                                                                                                               |
+| **Includes**          | Belt                                                                                                                               |
+| **Price**             | Check [Decathlon.com](https://www.decathlon.com/products/simond-mens-mt500-2-in-1-zip-off-hiking-pants-351289) for current pricing |
+
+> **Note on weight:** The ~480 g figure comes from Decathlon's own product listings for the MT500 2-in-1 zip-off line in size M. The non-convertible MT500 trousers weigh around 391 g (13.8 oz) in a comparable size — so the extra zippers and convertible panels add roughly 90 g. That's worth keeping in mind if you're gram-counting.
+
+## Performance
+
+**Fabric & Construction**
+
+The MT500's hybrid construction is one of its more thoughtful design choices. Three distinct fabrics are used depending on where they're needed most: a lightweight 145 g/m² polyester in low-friction areas for breathability, a tougher 198 g/m² polyamide/elastane blend across the seat, knees, and lower legs for abrasion resistance, and an ultra-stretchy 15%-elastane insert in the crotch for unrestricted hip flexion. In practice, this means you're not sacrificing mobility for durability or vice versa — the pants genuinely move well.
+
+**Comfort & Fit**
+
+Multiple reviewers confirm the fit is true to size with a slightly relaxed, easy-wearing cut. One reviewer from _Live for the Outdoors_ described it as "a touch baggier than some more technical or slim-fitting designs, but not excessively so" — an honest summary. The included belt handles waist fine-tuning well, and the ankle drawcords let you cinch the hem snugly over boots, which matters on brushy terrain. The regular cut won't win any style points in town, but it's unrestrictive on the trail.
+
+**Zip-Off Functionality**
+
+The conversion is genuinely convenient: the zip runs along the side of the leg, so you can go from pants to shorts mid-hike without sitting down or pulling your boots off. Users report the leg sections reattach easily and the zippers operate with light, smooth action. It's a simple feature done right.
+
+**Water Repellency**
+
+The DWR-treated panels at the front ankles and seat deflect light brush-contact moisture and brief splashes, which is more than most synthetic pants offer. That said, Decathlon is upfront about the limitations: the treatment will not keep you dry in sustained rain, and you'll need over-pants for that. One user noted that the heavier-weight fabric in those reinforced zones does take a bit longer to dry when fully wet — worth factoring in on back-to-back wet days.
+
+**Durability**
+
+One long-term reviewer reported that after three years of heavy use across hiking and climbing — including contact with thorny brush and rocks — the pants had only developed one broken pocket zipper and some minor fabric fuzz on the legs, with no holes or tears. That's a reasonable durability story for the price. A smaller number of users mentioned picking up occasional snag holes on rough vegetation, which suggests the lighter polyester panels aren't bulletproof. Decathlon reinforces the seams with ultra-durable COATS yarn, and the double-stitched construction in high-stress areas seems to hold up.
+
+**Pocket System**
+
+Five secured pockets is genuinely useful. The right thigh pocket includes an integrated mesh phone sleeve that fits large smartphones comfortably. All five are zippered (the thigh pockets on the 2-in-1 version differ slightly from the standard MT500 — both are zipped, vs. one flap-and-stud on the non-convertible), so nothing comes loose while scrambling. Users consistently call out the pockets as a highlight, particularly for travel days and multi-day trips where keeping small items secure and accessible matters.
+
+## Pros & Cons
+
+**Pros**
+
+- Excellent value for the feature set — convertible pants with 5 secured pockets and a belt included
+- Hybrid construction puts the right fabric in the right place (stretch where needed, abrasion resistance where it counts)
+- Converts to shorts without removing shoes — zip runs the full side seam
+- True-to-size fit; comfortable, unrestrictive regular cut
+- Ankle drawcords allow a clean fit over boots
+- Quick-drying synthetic materials hold up across a range of activity intensities
+- DWR panels at front ankle and seat offer meaningful splash resistance
+
+**Cons**
+
+- At ~480 g in size M, noticeably heavier than minimalist convertible options
+- DWR is limited to reinforced zones only; lighter panels soak through quickly in rain
+- The lighter polyester panels are susceptible to snags from sharp vegetation
+- Slightly relaxed cut may not appeal to hikers who prefer a trimmer silhouette
+- Long-term zipper reliability is a minor question mark at heavy-use cadences
+- Limited availability in some sizes, per user reports
+
+## Who Should Buy This
+
+This pant is well-suited to three-season hikers and weekend backpackers who move through variable temperatures and want one item that handles both pants and shorts duty without carrying two. It's also a strong pick for budget-conscious hikers who don't want to compromise much on functionality, and for travellers who want trail-ready versatility that works equally well through airports. It's probably not the right call if you're ultralighting hard (the weight penalty is real), hiking in sustained wet weather without over-pants, or prioritising a trim, athletic silhouette.
+
+## Verdict
+
+The MT500 2-in-1 zip-off delivers a lot of trail-ready functionality at a price that makes most of the competition look overpriced. The multi-fabric construction, convenient zip-off system, and generous pocket layout are all executed well. The meaningful trade-offs — moderate weight, limited waterproofing, and fabric that doesn't love hard vegetation — are real but unsurprising at this price point and are things Decathlon is transparent about. If you go in with clear expectations, there's a lot to like here.
+
+**Rating: 7.5 / 10**
