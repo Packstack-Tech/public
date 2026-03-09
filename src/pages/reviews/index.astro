@@ -5,10 +5,38 @@ import PageFooter from "../../components/PageFooter.astro"
 
 export const prerender = true
 
+const CATEGORY_ORDER = [
+  "Pack",
+  "Shelter",
+  "Sleep System",
+  "Cookware",
+  "Water System",
+  "Clothing",
+  "Electronics",
+  "Tools",
+  "Miscellaneous",
+]
+
 const reviews = await getCollection("reviews")
 const sorted = reviews.sort(
   (a, b) => new Date(b.data.published_at).getTime() - new Date(a.data.published_at).getTime()
 )
+
+const grouped = sorted.reduce((acc, review) => {
+  const cat = review.data.category
+  if (!acc[cat]) acc[cat] = []
+  acc[cat].push(review)
+  return acc
+}, {} as Record<string, typeof sorted>)
+
+const categories = [
+  ...CATEGORY_ORDER.filter((c) => grouped[c]),
+  ...Object.keys(grouped).filter((c) => !CATEGORY_ORDER.includes(c)),
+]
+
+function toSlug(category: string) {
+  return category.toLowerCase().replace(/\s+/g, "-")
+}
 ---
 
 <BaseLayout title="Gear Reviews | Packstack" description="In-depth backpacking gear reviews — weights, specs, and honest takes on the gear that matters.">
@@ -27,32 +55,50 @@ const sorted = reviews.sort(
 
     <main class="max-w-5xl mx-auto px-4 md:px-8 py-12">
       <h1 class="text-3xl md:text-4xl font-bold mb-2">Gear Reviews</h1>
-      <p class="text-lg mb-10">Honest, spec-driven reviews of backpacking and hiking gear.</p>
+      <p class="text-lg mb-8">Honest, spec-driven reviews of backpacking and hiking gear.</p>
 
-      {sorted.length === 0 && (
+      {categories.length > 0 && (
+        <nav class="flex flex-wrap gap-2 mb-10">
+          {categories.map((cat) => (
+            <a
+              href={`#${toSlug(cat)}`}
+              class="text-sm px-3 py-1.5 rounded-full border border-border text-softwhite hover:border-primary hover:text-primary transition-colors no-underline"
+            >
+              {cat}
+              <span class="ml-1 text-label">{grouped[cat].length}</span>
+            </a>
+          ))}
+        </nav>
+      )}
+
+      {categories.length === 0 && (
         <p class="text-label">No reviews yet. Check back soon.</p>
       )}
 
-      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {sorted.map((review) => (
-          <a href={`/reviews/${review.id}`} class="group block bg-surface rounded-lg border border-border hover:border-primary/50 transition-colors no-underline overflow-hidden">
-            {review.data.image_url && (
-              <div class="aspect-4/3 bg-surface-light overflow-hidden">
-                <img src={review.data.image_url} alt={review.data.title} class="w-full h-full object-contain p-4" />
-              </div>
-            )}
-            <div class="p-4">
-              <span class="text-xs text-primary font-semibold uppercase tracking-wide">{review.data.category}</span>
-              <h3 class="text-white font-semibold mt-1 group-hover:text-primary transition-colors">{review.data.title}</h3>
-              <p class="text-sm text-softwhite mt-1 line-clamp-2">{review.data.description}</p>
-              <div class="flex items-center gap-3 mt-3 text-xs text-label">
-                <span>{review.data.brand}</span>
-                {review.data.weight_grams && <span>{review.data.weight_grams}g</span>}
-              </div>
-            </div>
-          </a>
-        ))}
-      </div>
+      {categories.map((cat) => (
+        <section id={toSlug(cat)} class="mb-14 scroll-mt-6">
+          <h2 class="text-xl font-semibold text-white mb-5 border-b border-border/50 pb-2">{cat}</h2>
+          <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {grouped[cat].map((review) => (
+              <a href={`/reviews/${review.id}`} class="group block bg-surface rounded-lg border border-border hover:border-primary/50 transition-colors no-underline overflow-hidden">
+                {review.data.image_url && (
+                  <div class="aspect-4/3 bg-surface-light overflow-hidden">
+                    <img src={review.data.image_url} alt={review.data.title} class="w-full h-full object-contain p-4" />
+                  </div>
+                )}
+                <div class="p-4">
+                  <h3 class="text-white font-semibold group-hover:text-primary transition-colors">{review.data.title}</h3>
+                  <p class="text-sm text-softwhite mt-1 line-clamp-2">{review.data.description}</p>
+                  <div class="flex items-center gap-3 mt-3 text-xs text-label">
+                    <span>{review.data.brand}</span>
+                    {review.data.weight_grams && <span>{review.data.weight_grams}g</span>}
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
     </main>
 
     <PageFooter />

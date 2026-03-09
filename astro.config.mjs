@@ -5,7 +5,7 @@ import tailwindcss from "@tailwindcss/vite"
 import vercel from "@astrojs/vercel"
 
 export default defineConfig({
-  site: "https://packstack.io",
+  site: "https://www.packstack.io",
   trailingSlash: "never",
   integrations: [react(), sitemap()],
   output: "server",
