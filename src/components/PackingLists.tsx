@@ -1,3 +1,4 @@
+import { Flame } from "lucide-react"
 import type { Pack, PackItem } from "../types/pack"
 import type { Unit } from "../types/item"
 import { convertWeight } from "../utils/weight"
@@ -29,8 +30,13 @@ function computeWeightSummary(items: PackItem[], aggregateUnit: Unit) {
     }
   }
 
+  let totalCalories = 0
+  for (const { item, quantity } of items) {
+    totalCalories += (item.calories || 0) * quantity
+  }
+
   const fmt = (v: number) => `${v.toFixed(2)} ${aggregateUnit}`
-  return { base: fmt(base), worn: fmt(worn), consumable: fmt(consumable), total: fmt(total) }
+  return { base: fmt(base), worn: fmt(worn), consumable: fmt(consumable), total: fmt(total), totalCalories: Math.round(totalCalories) }
 }
 
 export default function PackingLists({ packs }: Props) {
@@ -87,6 +93,13 @@ export default function PackingLists({ packs }: Props) {
                     <span className="text-label">Total</span>
                     <span className="text-primary font-bold ml-1.5">{summary.total}</span>
                   </span>
+                  {summary.totalCalories > 0 && (
+                    <span className="inline-flex items-center gap-1">
+                      <Flame size={13} className="text-orange-400" />
+                      <span className="text-label">Calories</span>
+                      <span className="text-orange-400 font-bold ml-0.5">{summary.totalCalories.toLocaleString()} kcal</span>
+                    </span>
+                  )}
                 </div>
                 <WeightBreakdownDialog items={pack.items} aggregateUnit={aggregateUnit} />
               </div>

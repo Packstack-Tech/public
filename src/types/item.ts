@@ -33,6 +33,7 @@ export type Item = {
   created_at: string
   notes: string
   price?: number
+  calories?: number | null
   product_id?: number
   product_url: string
   removed: boolean

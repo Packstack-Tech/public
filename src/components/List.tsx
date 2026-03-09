@@ -23,10 +23,19 @@ export const List: FC<Props> = ({ items, aggregateUnit, itemUnit }) => {
     return `${total.toFixed(2)} ${aggregateUnit}`
   }
 
+  const calorieTotals = (items: PackItem[]) =>
+    items.reduce(
+      (acc, { item, quantity }) => acc + (item.calories || 0) * quantity,
+      0
+    )
+
+  const hasAnyCalories = items.some(({ item }) => !!item.calories)
+
   return (
     <div>
       {categorizedItems.map(({ category, items }) => {
         const categoryWeight = weightTotals(items)
+        const categoryCals = calorieTotals(items)
         return (
           <div
             key={category?.id}
@@ -36,63 +45,93 @@ export const List: FC<Props> = ({ items, aggregateUnit, itemUnit }) => {
               <h4 className="font-bold text-primary text-sm">
                 {category?.category.name || "Uncategorized"}
               </h4>
-              <p className="text-right text-primary text-sm font-semibold">
-                {categoryWeight}
-              </p>
+              <div className="flex items-center gap-4">
+                {categoryCals > 0 && (
+                  <p className="text-right text-accent-orange text-sm font-semibold inline-flex items-center gap-1">
+                    <Flame size={13} />
+                    {Math.round(categoryCals).toLocaleString()} kcal
+                  </p>
+                )}
+                <p className="text-right text-primary text-sm font-semibold">
+                  {categoryWeight}
+                </p>
+              </div>
             </div>
             <table className="table-fixed w-full">
               <colgroup>
-                <col className="w-[35%]" />
-                <col className="w-[45%]" />
+                <col className={hasAnyCalories ? "w-[30%]" : "w-[35%]"} />
+                <col className={hasAnyCalories ? "w-[35%]" : "w-[45%]"} />
+                {hasAnyCalories && <col className="w-[15%]" />}
                 <col className="w-[20%]" />
               </colgroup>
               <thead className="text-xs">
                 <tr>
                   <th className="py-2.5 px-4">Item</th>
                   <th className="py-2.5 px-4">Product</th>
+                  {hasAnyCalories && (
+                    <th className="py-2.5 px-4 text-right">kcal</th>
+                  )}
                   <th className="py-2.5 px-4 text-right">Weight</th>
                 </tr>
               </thead>
               <tbody className="text-sm">
-                {items.map(({ item, item_id, quantity, worn }) => (
-                  <Fragment key={item_id}>
-                    <tr>
-                      <td className="py-3 px-4">
-                        <span className="inline-flex items-center gap-2">
-                          {item.name}
-                          {worn && (
-                            <span title="Worn">
-                              <Shirt size={14} className="text-primary" />
-                            </span>
-                          )}
-                          {item.consumable && (
-                            <span title="Consumable">
-                              <Flame size={14} className="text-accent-orange" />
-                            </span>
-                          )}
-                        </span>
-                      </td>
-                      <td className="py-3 px-4">
-                        <ProductName item={item} />
-                      </td>
-                      <td className="py-3 px-4 text-right tabular-nums whitespace-nowrap">
-                        {formatItemWeight(item.weight || 0, item.unit, itemUnit)}
-                        {quantity > 1 && (
-                          <span className="ml-2 text-xs text-label bg-surface rounded px-1.5 py-0.5">
-                            &times;{quantity}
+                {items.map(({ item, item_id, quantity, worn }) => {
+                  const rowCals = (item.calories || 0) * quantity
+                  return (
+                    <Fragment key={item_id}>
+                      <tr>
+                        <td className="py-3 px-4">
+                          <span className="inline-flex items-center gap-2">
+                            {item.name}
+                            {worn && (
+                              <span title="Worn">
+                                <Shirt size={14} className="text-primary" />
+                              </span>
+                            )}
+                            {item.consumable && (
+                              <span title="Consumable">
+                                <Flame
+                                  size={14}
+                                  className="text-accent-orange"
+                                />
+                              </span>
+                            )}
                           </span>
+                        </td>
+                        <td className="py-3 px-4">
+                          <ProductName item={item} />
+                        </td>
+                        {hasAnyCalories && (
+                          <td className="py-3 px-4 text-right tabular-nums whitespace-nowrap">
+                            {rowCals > 0 ? Math.round(rowCals).toLocaleString() : ""}
+                          </td>
                         )}
-                      </td>
-                    </tr>
-                    {item.notes && (
-                      <tr className="border-none">
-                        <td colSpan={3} className="px-4 pb-3 pt-0 text-xs text-softwhite">
-                          {item.notes}
+                        <td className="py-3 px-4 text-right tabular-nums whitespace-nowrap">
+                          {formatItemWeight(
+                            item.weight || 0,
+                            item.unit,
+                            itemUnit
+                          )}
+                          {quantity > 1 && (
+                            <span className="ml-2 text-xs text-label bg-surface rounded px-1.5 py-0.5">
+                              &times;{quantity}
+                            </span>
+                          )}
                         </td>
                       </tr>
-                    )}
-                  </Fragment>
-                ))}
+                      {item.notes && (
+                        <tr className="border-none">
+                          <td
+                            colSpan={hasAnyCalories ? 4 : 3}
+                            className="px-4 pb-3 pt-0 text-xs text-softwhite"
+                          >
+                            {item.notes}
+                          </td>
+                        </tr>
+                      )}
+                    </Fragment>
+                  )
+                })}
               </tbody>
             </table>
           </div>
