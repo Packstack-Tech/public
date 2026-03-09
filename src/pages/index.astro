@@ -345,13 +345,159 @@ export const prerender = true
           </div>
         </div>
       </section>
+      <!-- Feature: Gear Kits -->
+      <section class="py-16 md:py-24 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
+          <div class="md:w-5/12">
+            <h2 class="text-xs uppercase tracking-widest mb-3 font-semibold">Gear Kits</h2>
+            <h3 class="text-2xl md:text-3xl leading-snug mb-4">Bundle once, load anywhere</h3>
+            <p class="mb-5">
+              Group the items you always carry together into reusable kits &mdash;
+              a first aid kit, cook system, or shelter setup. When building a
+              packing list, load an entire kit with one click and every item
+              lands in your pack with the right quantities.
+            </p>
+            <ul class="space-y-2.5 text-softwhite text-sm">
+              <li class="flex items-start gap-2.5">
+                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
+                Set per-item quantities (e.g. stakes &times;6)
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
+                One-click loading into any packing list
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
+                Reuse across trips without rebuilding
+              </li>
+            </ul>
+          </div>
+          <div class="md:w-7/12">
+            <!-- CSS-only kit mock -->
+            <div class="rounded-xl border border-border bg-background overflow-hidden select-none" aria-hidden="true">
+              <div class="bg-surface px-5 py-3 border-b border-border flex items-center justify-between">
+                <div class="flex items-center gap-2.5">
+                  <svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" /></svg>
+                  <span class="font-semibold text-white text-sm">First Aid Kit</span>
+                </div>
+                <span class="text-xs text-label">6 items</span>
+              </div>
+              <div class="divide-y divide-border/40">
+                <div class="flex items-center justify-between px-5 py-2.5 text-sm">
+                  <span class="text-white">Adhesive bandages</span>
+                  <span class="text-label tabular-nums">&times;10</span>
+                </div>
+                <div class="flex items-center justify-between px-5 py-2.5 text-sm">
+                  <span class="text-white">Gauze roll</span>
+                  <span class="text-label tabular-nums">&times;2</span>
+                </div>
+                <div class="flex items-center justify-between px-5 py-2.5 text-sm">
+                  <span class="text-white">Medical tape</span>
+                  <span class="text-label tabular-nums">&times;1</span>
+                </div>
+                <div class="flex items-center justify-between px-5 py-2.5 text-sm">
+                  <span class="text-white">Antiseptic wipes</span>
+                  <span class="text-label tabular-nums">&times;8</span>
+                </div>
+                <div class="flex items-center justify-between px-5 py-2.5 text-sm">
+                  <span class="text-white">Ibuprofen</span>
+                  <span class="text-label tabular-nums">&times;12</span>
+                </div>
+                <div class="flex items-center justify-between px-5 py-2.5 text-sm">
+                  <span class="text-white">Blister gel</span>
+                  <span class="text-label tabular-nums">&times;1</span>
+                </div>
+              </div>
+              <div class="bg-surface/60 px-5 py-3 border-t border-border flex justify-end">
+                <div class="bg-primary text-white text-xs font-semibold rounded-md px-4 py-2">Load Kit</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature: Calorie Tracking -->
+      <section class="py-16 md:py-24 px-4 bg-surface/30">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+          <div class="md:w-5/12">
+            <h2 class="text-xs uppercase tracking-widest mb-3 font-semibold">Calorie Tracking</h2>
+            <h3 class="text-2xl md:text-3xl leading-snug mb-4">Fuel your miles</h3>
+            <p class="mb-5">
+              Add calorie counts to your food and consumable items, then see
+              the total calories packed across your entire trip at a glance.
+              Plan your resupply strategy knowing exactly how many calories
+              you&rsquo;re carrying per day.
+            </p>
+            <ul class="space-y-2.5 text-softwhite text-sm">
+              <li class="flex items-start gap-2.5">
+                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
+                Per-item calorie tracking
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
+                Automatic pack-level calorie totals
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
+                Plan food carries and resupply points
+              </li>
+            </ul>
+          </div>
+          <div class="md:w-7/12 flex justify-center md:justify-start">
+            <!-- CSS-only calorie summary mock -->
+            <div class="rounded-xl border border-border bg-background overflow-hidden w-full max-w-md select-none" aria-hidden="true">
+              <div class="bg-surface px-5 py-3 border-b border-border">
+                <div class="font-semibold text-white text-sm">Food &amp; Consumables</div>
+                <div class="text-xs text-label mt-0.5">5-day carry &mdash; Yosemite to Tuolumne</div>
+              </div>
+              <div class="divide-y divide-border/40">
+                <div class="flex items-center justify-between px-5 py-2.5 text-sm">
+                  <div>
+                    <span class="text-white">Mountain House (x5)</span>
+                    <span class="text-label text-xs ml-2">Biscuits &amp; Gravy</span>
+                  </div>
+                  <span class="text-softwhite tabular-nums">3,350 cal</span>
+                </div>
+                <div class="flex items-center justify-between px-5 py-2.5 text-sm">
+                  <div>
+                    <span class="text-white">Clif Bars (x10)</span>
+                  </div>
+                  <span class="text-softwhite tabular-nums">2,500 cal</span>
+                </div>
+                <div class="flex items-center justify-between px-5 py-2.5 text-sm">
+                  <div>
+                    <span class="text-white">Trail mix (x3)</span>
+                  </div>
+                  <span class="text-softwhite tabular-nums">2,100 cal</span>
+                </div>
+                <div class="flex items-center justify-between px-5 py-2.5 text-sm">
+                  <div>
+                    <span class="text-white">Instant oatmeal (x5)</span>
+                  </div>
+                  <span class="text-softwhite tabular-nums">1,500 cal</span>
+                </div>
+                <div class="flex items-center justify-between px-5 py-2.5 text-sm">
+                  <div>
+                    <span class="text-white">Electrolyte packets (x10)</span>
+                  </div>
+                  <span class="text-softwhite tabular-nums">200 cal</span>
+                </div>
+              </div>
+              <div class="bg-surface/60 px-5 py-3 border-t border-border flex items-center justify-between">
+                <span class="text-label text-xs">Total</span>
+                <span class="text-primary font-bold text-sm tabular-nums">9,650 cal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- Highlights Strip -->
     <section class="py-16 md:py-20 px-4">
       <div class="max-w-5xl mx-auto">
         <h2 class="text-center text-white text-2xl md:text-3xl font-bold mb-10">Built for the trail</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
           <div class="rounded-xl border border-border bg-surface/40 p-5 md:p-6 text-center">
             <div class="w-10 h-10 mx-auto mb-3 rounded-lg bg-primary/10 flex items-center justify-center">
               <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" /></svg>
@@ -361,10 +507,24 @@ export const prerender = true
           </div>
           <div class="rounded-xl border border-border bg-surface/40 p-5 md:p-6 text-center">
             <div class="w-10 h-10 mx-auto mb-3 rounded-lg bg-primary/10 flex items-center justify-center">
+              <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" /></svg>
+            </div>
+            <div class="text-white font-semibold text-sm">Gear Kits</div>
+            <p class="text-label text-xs mt-1 leading-snug">Bundle &amp; reuse item groups</p>
+          </div>
+          <div class="rounded-xl border border-border bg-surface/40 p-5 md:p-6 text-center">
+            <div class="w-10 h-10 mx-auto mb-3 rounded-lg bg-primary/10 flex items-center justify-center">
               <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12" /></svg>
             </div>
             <div class="text-white font-semibold text-sm">Easy Import</div>
             <p class="text-label text-xs mt-1 leading-snug">LighterPack &amp; CSV support</p>
+          </div>
+          <div class="rounded-xl border border-border bg-surface/40 p-5 md:p-6 text-center">
+            <div class="w-10 h-10 mx-auto mb-3 rounded-lg bg-primary/10 flex items-center justify-center">
+              <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6" /></svg>
+            </div>
+            <div class="text-white font-semibold text-sm">Calorie Totals</div>
+            <p class="text-label text-xs mt-1 leading-snug">Track food calories per trip</p>
           </div>
           <div class="rounded-xl border border-border bg-surface/40 p-5 md:p-6 text-center">
             <div class="w-10 h-10 mx-auto mb-3 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -378,7 +538,7 @@ export const prerender = true
               <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 000-7.78z" /></svg>
             </div>
             <div class="text-white font-semibold text-sm">Export Your Gear</div>
-            <p class="text-label text-xs mt-1 leading-snug">No lock-in. Export your gear as needed.</p>
+            <p class="text-label text-xs mt-1 leading-snug">No lock-in. Export anytime.</p>
           </div>
         </div>
       </div>
