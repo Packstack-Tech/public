@@ -1,0 +1,66 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import PageFooter from "../../components/PageFooter.astro"
+import WaterCarryTool from "../../components/WaterCarryEstimator"
+
+export const prerender = true
+---
+
+<BaseLayout title="Water Carry Estimator | Packstack" description="Calculate exactly how much water to carry between sources on a backpacking trip. Factor in distance, elevation, temperature, pack weight, and sweat rate.">
+  <div class="bg-background min-h-screen">
+    <header class="border-b border-border/50">
+      <nav class="max-w-5xl mx-auto flex items-center justify-between px-4 md:px-8 py-3">
+        <a href="/" class="flex items-center">
+          <img src="/packstack_logo_white.png" alt="Packstack" class="w-32" />
+        </a>
+        <div class="flex items-center gap-4 md:gap-6">
+          <a href="/tools" class="text-softwhite hover:text-white transition-colors text-sm font-semibold no-underline">Tools</a>
+          <a href="/learn" class="text-softwhite hover:text-white transition-colors text-sm font-semibold no-underline">Learn</a>
+          <a href="https://app.packstack.io/auth/login" class="text-softwhite hover:text-white transition-colors text-sm font-semibold">Login</a>
+          <a href="https://app.packstack.io/auth/register" class="bg-primary hover:bg-primary-dark text-white rounded-md py-1.5 px-4 text-sm font-semibold transition-colors no-underline">Sign Up</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 md:px-8 py-12">
+      <a href="/tools" class="text-sm text-label hover:text-softwhite transition-colors no-underline mb-4 inline-block">&larr; All Tools</a>
+      <h1 class="text-3xl md:text-4xl font-bold mb-2">Water Carry Estimator</h1>
+      <p class="text-lg mb-8 max-w-2xl">Calculate how much water to carry between sources based on distance, elevation, temperature, and your personal sweat rate.</p>
+
+      <WaterCarryTool client:load />
+
+      <div class="mt-16 prose prose-invert max-w-none prose-headings:text-white prose-headings:font-bold prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:text-primary prose-h3:text-lg prose-h3:mt-8 prose-h3:mb-3 prose-p:text-softwhite prose-p:leading-7 prose-li:text-softwhite prose-ul:text-softwhite prose-a:text-primary hover:prose-a:text-white prose-strong:text-white prose-blockquote:border-primary prose-blockquote:text-label">
+
+        <h2>Why Water Planning Matters More Than You Think</h2>
+        <p>Water is the heaviest consumable you'll carry. At 2.2 lbs per liter, a 4-liter carry adds almost 9 pounds to your pack — more than most tents weigh. Carry too little and you risk dehydration, heat exhaustion, and impaired judgment at exactly the moments when you need clear thinking. Carry too much and you're hauling dead weight up every climb, burning more calories and — ironically — needing more water to cool down.</p>
+        <p>The difference between a dialed water carry and a guess can easily be 2–3 pounds. Over a full day of hiking, that weight compounds into real fatigue. This estimator helps you find the sweet spot: enough water to stay safe and hydrated, without a drop more than necessary.</p>
+
+        <h2>How the Estimator Works</h2>
+        <p>The calculation starts with a <strong>baseline consumption rate of 0.5 liters per hour of hiking</strong> — a well-supported average for moderate conditions. From there, it applies a series of multipliers based on the conditions you'll actually face:</p>
+        <ul>
+          <li><strong>Temperature</strong> is the single biggest variable. Below 60°F, your body needs less cooling and the multiplier drops to 0.8x. Between 80–90°F it jumps to 1.5x, and above 90°F it doubles. These aren't linear increases — heat stress causes sweat rates to accelerate, not just rise gradually.</li>
+          <li><strong>Elevation gain</strong> adds a fixed penalty of 0.1 liters for every 1,000 feet of climbing. Ascending generates significant metabolic heat regardless of air temperature, and the heavier breathing at altitude increases respiratory water loss.</li>
+          <li><strong>Pack weight</strong> over 30 lbs triggers a 10% increase. Moving a heavier load requires more muscular effort and more cooling. If you're carrying a loaded bear canister on a resupply day, this matters.</li>
+          <li><strong>Sweat rate</strong> accounts for individual physiology. Some people barely glisten on a 90°F climb; others are drenched after a flat mile. If you know you're a heavy sweater, the +25% adjustment prevents you from chronically under-carrying.</li>
+        </ul>
+        <p>If you toggle <strong>Dry Camp</strong>, the estimator adds 2 liters to cover dinner prep, drinking through the evening, breakfast the next morning, and a small amount for cleanup. This is separate from your hiking water — it's your overnight supply when there's no source at camp.</p>
+        <p>A hard-coded <strong>0.3 liter safety buffer</strong> is always included. Running completely dry, even briefly, is a risk not worth taking. Those last few sips can be the difference between a manageable mile and a dangerous one.</p>
+
+        <h2>Practical Tips for Water Carries</h2>
+        <ul>
+          <li><strong>Camel up at every source.</strong> Before you leave a stream or spring, drink 0.5 liters on the spot. This water rides inside you — zero pack weight — and gives you a head start on the next stretch. Most experienced thru-hikers do this reflexively.</li>
+          <li><strong>Know your sources before you go.</strong> Download water reports from apps like FarOut or Guthook, and cross-reference with recent trip reports. Springs dry up, seasonal creeks vanish by late summer, and cattle tanks aren't always reliable. Plan for the worst-case source, not the best.</li>
+          <li><strong>Match your containers to the carry.</strong> Don't bring a 3-liter bladder if you're only carrying 1.5 liters between frequent sources. Two 1-liter SmartWater bottles (1.5 oz each) are the ultralight standard — they're cheap, durable, and you can see exactly how much you have left.</li>
+          <li><strong>Add electrolytes on long carries.</strong> Plain water won't fully rehydrate you if you're sweating hard. Sodium and potassium losses need replacing. Electrolyte tablets or drink mixes weigh almost nothing and make a real difference on hot days.</li>
+          <li><strong>Monitor yourself, not just the numbers.</strong> Dark urine, headache, dizziness, or a sudden drop in energy are all warning signs. If your body is telling you something different from what the calculator estimated, trust your body.</li>
+        </ul>
+
+        <h2>A Note on Accuracy</h2>
+        <p>Any water estimator is a planning tool, not a guarantee. Humidity, wind, shade cover, fitness level, and acclimatization all affect your actual needs in ways no formula can fully capture. Desert hikers in particular should pad generously — dry heat masks sweat evaporation, making it easy to underestimate losses. Use this estimator as a starting point, calibrate it against your own experience over a few trips, and always err on the side of carrying slightly more when you're uncertain about the next source.</p>
+
+      </div>
+    </main>
+
+    <PageFooter />
+  </div>
+</BaseLayout>
