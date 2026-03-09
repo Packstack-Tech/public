@@ -2,8 +2,8 @@
 title: "Packstack vs. Packwizard: Which Packing App Should You Choose?"
 description: "A detailed comparison of Packstack and Packwizard — two popular backpacking gear list apps — to help ultralight hikers choose the right tool for trip planning."
 published_at: "2026-03-09"
-image: "/images/learn/backpacking-packing-list-tool.png"
-image_alt: "Screenshot of Packstack's advanced backpacking packing list tool"
+image: "/images/learn/gear-inventory-screenshot.png"
+image_alt: "Screenshot of Packstack's gear inventory management tool"
 ---
 
 If you've spent any time in the ultralight backpacking world, you know the pre-trip ritual: weigh everything, second-guess your sleeping pad choice, rebuild the list three times, and finally arrive at a setup you're reasonably proud of. The right packing app is the backbone of that process. Get it wrong and you're fighting a tool that should be helping you.
