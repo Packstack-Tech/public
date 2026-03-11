@@ -1,0 +1,85 @@
+---
+title: "MSR IsoPro Fuel Canister Review"
+brand: "MSR"
+product_name: "IsoPro Fuel Canister"
+catalog_product_id: 31
+category: "Cookware"
+weight_grams: 371.0
+product_url: "https://www.rei.com/product/651555/msr-isopro-fuel-canister-8-oz-227-g"
+image_url: "https://www.rei.com/media/53837920-e8cc-4988-8114-c4d7438b0d38?size=2000"
+rating: 8
+published_at: "2026-03-11"
+description: "A thorough look at MSR's 8 oz IsoPro canister — its 80/20 isobutane/propane blend, cold-weather reliability, float gauge, and how it stacks up against competing brands."
+---
+
+## Overview
+
+The MSR IsoPro 227g (8 oz) canister is the workhorse size in MSR's three-canister lineup, slotting between the 113g weekend option and the 450g basecamp brick. It's designed for backpackers who run canister stoves — the PocketRocket, WindPro, WindBurner, and virtually any other stove with a standard Lindal valve — and need a fuel source that won't embarrass them when temperatures drop. The 80/20 isobutane/propane blend is a genuine performance formulation, and the 8 oz size hits a reasonable sweet spot between weight and longevity for 3-5 day solo trips or 2-3 day trips for two.
+
+## Key Specs
+
+| Spec                    | Value                     |
+| ----------------------- | ------------------------- |
+| Fuel content            | 227 g / 8 oz              |
+| Canister weight (full)  | 371 g / 13.1 oz           |
+| Canister weight (empty) | ~144 g / ~5.1 oz          |
+| Fuel blend              | 80/20 isobutane/propane   |
+| N-butane content        | ≤5%                       |
+| Dimensions              | 4.3 × 4.3 × 3.7 in        |
+| Valve type              | Lindal (EN 417)           |
+| Fuel gauge              | Yes — printed float gauge |
+| Self-sealing valve      | Yes                       |
+| Recyclable              | Yes (conditions apply)    |
+
+## Performance
+
+### Fuel Quality and Cold-Weather Reliability
+
+<cite index="5-1,5-2">MSR claims IsoPro uses the purest isobutane — 5% or less n-butane — of any canister fuel, and that the clean-burning formulation maintains higher internal pressure at lower temperatures than standard butane/propane mixtures.</cite> That's not just marketing copy. <cite index="4-1,4-2">Isobutane has a higher vapor pressure than n-butane, meaning canisters using it will perform more consistently throughout the life of the canister.</cite> In practice, <cite index="2-4">users have reported the fuel performing well in 19°F snowy mountain conditions without affecting the ability to boil water efficiently.</cite> One REI reviewer recounted a scenario where a competitor's canister failed to stay lit in the low 20s°F while their friend's MSR canister kept cooking without issue.
+
+That said, be realistic: all unregulated canister stoves lose output as the canister cools and empties. <cite index="18-25,18-26">IsoPro intentionally balances propane's volatility with 80% isobutane to take the action inside the canister to a simmer, keeping it safely contained in a lightweight vessel while still delivering excellent performance across the widest range of conditions possible.</cite> If you're routinely camping well below 20°F, you'll still want to warm the canister in a vest pocket before use or consider a stove with a pressure regulator.
+
+### Burn Efficiency and Trip Planning
+
+<cite index="4-8,4-9,4-10">In general, one 8 oz canister of MSR IsoPro will suffice for two people over four days in summer, though wind, low temperatures, and longer cooking times will increase fuel consumption.</cite> At the upper end, <cite index="13-18,13-19">an 8 oz (net) canister can boil approximately 16 liters of water — based on intelligent use of a windscreen, running below full blast, and lidding your pot.</cite> One REI reviewer confirmed this in a real-world test, <cite index="2-37,2-38,2-39,2-40">using the 8 oz canister with a Jetboil stove for an 8-day trip, boiling 0.4–0.8L per meal for two people at 7,600–8,900 ft elevation, with the canister lasting all 7 full days but pressure getting noticeably low by the end.</cite>
+
+### Head-to-Head vs. Competitors
+
+I'll be blunt: in warm-to-moderate conditions, the fuel brand matters a lot less than the canister size. <cite index="20-14,20-18,20-19,20-20,20-21">In a four-brand comparison using a Soto Amicus stove at 72°F and 5,280 ft elevation, all canisters — MSR IsoPro, Snow Peak GigaPower, OLicamp, and Jetboil JetPower — boiled 2 cups of water in about 1 minute and 50 seconds, consuming around 8 grams of fuel per boil.</cite> <cite index="20-1,20-2">MSR performed on average one second better, a difference under 1%. The biggest decision in selecting a canister is determining the size, not the brand.</cite>
+
+Where MSR does differentiate itself is in n-butane purity. <cite index="17-21,17-22">Budget big-box brands often use 100% n-butane, and if you only camp in warm weather for short periods, you can likely get by with that.</cite> But if you're regularly camping in shoulder-season or winter conditions, the higher-grade isobutane blend pays dividends.
+
+### Float Gauge
+
+<cite index="17-13,17-14">MSR IsoPro cans are bright red for visibility, and they feature a float gauge printed on the side that allows you to float the canister in still water to measure the approximate amount of fuel remaining.</cite> This is genuinely useful for trip planning. <cite index="11-11,11-12,11-13">The float gauge feature is included on the 4 oz and 8 oz canisters</cite> but not on the 16 oz. In practice, one user noted it was helpful but difficult to read precisely when the fuel level was getting low — worth knowing that it's an approximation, not a readout.
+
+### Compatibility
+
+<cite index="18-17">The majority of canisters worldwide, including MSR's, use an EN Standard screw mount (EN 417) that will work with virtually any canister stove on the market.</cite> Jetboil, Snow Peak, Primus, and others all thread on cleanly. The self-sealing valve also means you can detach the canister mid-trip without wasting fuel — a small but practical feature if you're swapping stoves or stuffing the canister inside a pot to save pack volume.
+
+## Pros & Cons
+
+**Pros**
+
+- Premium 80/20 isobutane/propane blend with ≤5% n-butane for consistent cold-weather output
+- Self-sealing Lindal valve is universal across virtually all canister stoves
+- Printed float gauge (4 and 8 oz sizes) is a genuinely useful trip-planning tool
+- Bright red canister is easy to spot in a dark stuff sack or at camp
+- Recyclable; MSR Seattle offers free drop-off recycling
+- 8 oz size is well-suited to multi-day solo or 2-person trips without carrying excess weight
+
+**Cons**
+
+- Meaningfully more expensive than budget brands — premium you may not notice in mild conditions
+- Cannot be shipped by air; a planning headache for fly-in or international trips
+- Float gauge is an approximation and harder to read accurately at low fuel levels
+- Not refillable, which means accumulating empty canisters unless you're disciplined about recycling
+- 16 oz size lacks the float gauge, which is an odd omission for the size most likely to see partial use
+
+## Who Should Buy This
+
+This canister is the right call for backpackers who want a reliable, widely available fuel that performs across seasons and pairs cleanly with any standard canister stove. <cite index="4-36,4-37">MSR recommends 4 oz of liquid fuel per person per day for cooking</cite>, making the 227g canister a natural fit for a solo hiker on a 4-5 day trip or a pair on a weekend. If you consistently cook in temperatures below freezing or at high altitude, the quality of the isobutane blend is worth the price premium. Casual warm-weather campers who only boil water a few times a season could save money with a budget brand, but for anyone treating cooking fuel as a real system dependency, IsoPro is the safer default.
+
+## Verdict
+
+The MSR IsoPro 227g is a thoroughly solid, no-drama canister fuel — not exciting, but reliable in exactly the conditions where lesser blends start to sputter. The float gauge is a practical differentiator that other brands have been slow to copy, and the purity of the isobutane formulation matters more as temperatures drop. It won't outperform Jetboil or Snow Peak by any meaningful margin in ideal conditions, but it earns its price in shoulder season and winter use. **8/10.**
