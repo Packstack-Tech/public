@@ -1,17 +1,48 @@
 <footer class="border-t border-border mt-8">
-  <div class="max-w-6xl mx-auto px-4 md:px-8 py-10 flex flex-col md:flex-row justify-between items-center gap-6">
-    <div class="flex items-center gap-6">
+  <div class="max-w-6xl mx-auto px-4 md:px-8 py-10">
+    <div class="flex items-center gap-6 mb-10">
       <a href="/">
         <img src="/packstack_logo_white.png" alt="Packstack" class="w-24" />
       </a>
       <span class="text-label text-xs">&copy; {new Date().getFullYear()} Packstack</span>
     </div>
-    <div class="flex items-center gap-6 text-sm">
-      <a href="/tools" class="text-softwhite hover:text-white transition-colors no-underline">Free Tools</a>
-      <a href="/learn" class="text-softwhite hover:text-white transition-colors no-underline">Learn</a>
-      <a href="/reviews" class="text-softwhite hover:text-white transition-colors no-underline">Gear Reviews</a>
-      <a href="https://app.packstack.io/auth/login" class="text-softwhite hover:text-white transition-colors no-underline">Login</a>
-      <a href="https://app.packstack.io/auth/register" class="text-softwhite hover:text-white transition-colors no-underline">Sign Up</a>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="flex flex-col gap-3">
+        <h4 class="text-white text-xs uppercase tracking-wider font-semibold">Reviews</h4>
+        <div class="flex flex-col gap-2">
+          <a href="/reviews/nitecore-nb10000" class="text-softwhite text-sm hover:text-white transition-colors no-underline">Nitecore NB10000</a>
+          <a href="/reviews/decathlon-mt500-2-in-1-zip-off-hiking-pants" class="text-softwhite text-sm hover:text-white transition-colors no-underline">MT500 Zip-Off Hiking Pants</a>
+          <a href="/reviews/durston-gear-kakwa-55" class="text-softwhite text-sm hover:text-white transition-colors no-underline">Durston Kakwa 55</a>
+          <a href="/reviews/forclaz-mt500-merino-wool-long-sleeve-shirt" class="text-softwhite text-sm hover:text-white transition-colors no-underline">MT500 Merino Wool Shirt</a>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <h4 class="text-white text-xs uppercase tracking-wider font-semibold">Tools</h4>
+        <div class="flex flex-col gap-2">
+          <a href="/tools/backpacking-calorie-calculator" class="text-softwhite text-sm hover:text-white transition-colors no-underline">Calorie Calculator</a>
+          <a href="/tools/water-carry-estimator" class="text-softwhite text-sm hover:text-white transition-colors no-underline">Water Carry Estimator</a>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <h4 class="text-white text-xs uppercase tracking-wider font-semibold">Learn</h4>
+        <div class="flex flex-col gap-2">
+          <a href="/learn/how-to-pack-a-backpacking-pack" class="text-softwhite text-sm hover:text-white transition-colors no-underline">How to Pack a Backpack</a>
+          <a href="/learn/ultralight-backpacking-overnight-hiking-essentials" class="text-softwhite text-sm hover:text-white transition-colors no-underline">Ultralight Overnight Essentials</a>
+          <a href="/learn/packstack-the-modern-alternative-to-lighterpack" class="text-softwhite text-sm hover:text-white transition-colors no-underline">Alternative to Lighterpack</a>
+          <a href="/learn/packstack-vs-packwizard" class="text-softwhite text-sm hover:text-white transition-colors no-underline">Packstack vs. Packwizard</a>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <h4 class="text-white text-xs uppercase tracking-wider font-semibold">Contact</h4>
+        <div class="flex flex-col gap-2">
+          <a href="mailto:jerad@packstack.io" class="text-softwhite text-sm hover:text-white transition-colors no-underline">jerad@packstack.io</a>
+          <a href="https://x.com/maplethorpej" class="text-softwhite text-sm hover:text-white transition-colors no-underline">@maplethorpej on X</a>
+        </div>
+      </div>
     </div>
   </div>
 </footer>
