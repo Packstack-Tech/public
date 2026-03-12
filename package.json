@@ -13,6 +13,7 @@
     "node": "^24.x.x"
   },
   "dependencies": {
+    "@astrojs/mdx": "^4.3.14",
     "@astrojs/react": "^4",
     "@astrojs/sitemap": "^3.7.0",
     "@astrojs/vercel": "^9",

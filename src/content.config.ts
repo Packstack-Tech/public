@@ -2,7 +2,7 @@ import { defineCollection, z } from "astro:content"
 import { glob } from "astro/loaders"
 
 const reviews = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/reviews" }),
+  loader: glob({ pattern: "**/*.mdx", base: "./src/content/reviews" }),
   schema: z.object({
     title: z.string(),
     brand: z.string(),
