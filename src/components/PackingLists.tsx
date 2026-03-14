@@ -1,4 +1,5 @@
-import { Flame } from "lucide-react"
+import { useEffect, useState } from "react"
+import { Flame, Loader2 } from "lucide-react"
 import type { Pack, PackItem } from "../types/pack"
 import type { Unit } from "../types/item"
 import { convertWeight } from "../utils/weight"
@@ -7,7 +8,7 @@ import { List } from "./List"
 import { WeightBreakdownDialog } from "./WeightBreakdownDialog"
 
 interface Props {
-  packs: Pack[]
+  tripId: number
 }
 
 function computeWeightSummary(items: PackItem[], aggregateUnit: Unit) {
@@ -39,8 +40,42 @@ function computeWeightSummary(items: PackItem[], aggregateUnit: Unit) {
   return { base: fmt(base), worn: fmt(worn), consumable: fmt(consumable), total: fmt(total), totalCalories: Math.round(totalCalories) }
 }
 
-export default function PackingLists({ packs }: Props) {
+export default function PackingLists({ tripId }: Props) {
   const { system, aggregateUnit, itemUnit, toggleSystem } = useUnitPreference()
+  const [packs, setPacks] = useState<Pack[] | null>(null)
+  const [error, setError] = useState(false)
+
+  useEffect(() => {
+    let cancelled = false
+    fetch(`https://api.packstack.io/pack/trip/${tripId}`)
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to load packs")
+        return res.json()
+      })
+      .then((data) => {
+        if (!cancelled) setPacks(data)
+      })
+      .catch(() => {
+        if (!cancelled) setError(true)
+      })
+    return () => { cancelled = true }
+  }, [tripId])
+
+  if (error) {
+    return (
+      <p className="text-center text-label py-12">
+        Unable to load pack items. Please try refreshing the page.
+      </p>
+    )
+  }
+
+  if (!packs) {
+    return (
+      <div className="flex items-center justify-center py-16">
+        <Loader2 className="h-6 w-6 animate-spin text-primary" />
+      </div>
+    )
+  }
 
   return (
     <div>

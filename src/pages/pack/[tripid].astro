@@ -4,7 +4,7 @@ import { PackHeader } from "../../components/PackHeader"
 import BaseLayout from "../../layouts/BaseLayout.astro"
 import PageFooter from "../../components/PageFooter.astro"
 const { tripid } = Astro.params
-const resp = await fetch(`https://api.packstack.io/trip/info/${tripid}`)
+const resp = await fetch(`https://api.packstack.io/trip/meta/${tripid}`)
 const data = await resp.json()
 ---
 
@@ -24,7 +24,7 @@ const data = await resp.json()
 
     <div class="mx-auto mt-8 max-w-6xl px-4 md:px-8 pb-8">
       <PackHeader trip={data.trip} user={data.user} />
-      <PackingLists packs={data.packs} client:load />
+      <PackingLists tripId={data.trip.id} client:load />
     </div>
 
     <PageFooter />

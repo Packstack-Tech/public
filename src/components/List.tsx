@@ -107,15 +107,15 @@ export const List: FC<Props> = ({ items, aggregateUnit, itemUnit }) => {
                           </td>
                         )}
                         <td className="py-3 px-4 text-right tabular-nums whitespace-nowrap">
+                          {quantity > 1 && (
+                            <span className="mr-2 text-xs text-label bg-surface rounded px-1.5 py-0.5">
+                              &times;{quantity}
+                            </span>
+                          )}
                           {formatItemWeight(
                             item.weight || 0,
                             item.unit,
                             itemUnit
-                          )}
-                          {quantity > 1 && (
-                            <span className="ml-2 text-xs text-label bg-surface rounded px-1.5 py-0.5">
-                              &times;{quantity}
-                            </span>
                           )}
                         </td>
                       </tr>
