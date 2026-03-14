@@ -120,7 +120,7 @@ export default function PackingLists({ tripId }: Props) {
           <div key={pack.id} className="mb-10">
             <h2 className="border-b border-border pb-2">{pack.title}</h2>
             {summary && (
-              <div className="flex items-center justify-between py-3 text-xs">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between py-3 text-xs gap-2">
                 <div className="flex flex-wrap items-center gap-x-6 gap-y-1">
                   <span>
                     <span className="text-label">Base</span>

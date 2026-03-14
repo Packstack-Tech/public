@@ -6,6 +6,18 @@ import type { Unit } from "../types/item"
 import { useCategorizedPackItems } from "../hooks/useCategorizedPackItems"
 import { convertWeight } from "../utils/weight"
 
+const SM_BREAKPOINT = 640
+function useIsSmallScreen() {
+  const [isSmall, setIsSmall] = useState(false)
+  useEffect(() => {
+    const check = () => setIsSmall(window.innerWidth < SM_BREAKPOINT)
+    check()
+    window.addEventListener("resize", check)
+    return () => window.removeEventListener("resize", check)
+  }, [])
+  return isSmall
+}
+
 const CHART_COLORS = [
   "#3366CC",
   "#DC3912",
@@ -36,6 +48,7 @@ interface Props {
 
 export const WeightBreakdownDialog: FC<Props> = ({ items, aggregateUnit }) => {
   const [open, setOpen] = useState(false)
+  const isSmall = useIsSmallScreen()
   const categorized = useCategorizedPackItems(items)
 
   const categoryWeights = useMemo(
@@ -116,16 +129,19 @@ export const WeightBreakdownDialog: FC<Props> = ({ items, aggregateUnit }) => {
             </div>
 
             <div className="flex flex-col sm:flex-row px-6 py-6 gap-4" style={{ color: '#0f172a' }}>
-              <div className="flex-1 h-96 min-w-0">
+              <div className="min-w-0 h-64 w-full sm:h-96 sm:w-auto sm:flex-1">
                 <ResponsivePie
                   data={chartData}
-                  margin={{ top: 40, right: 100, bottom: 40, left: 100 }}
+                  margin={isSmall
+                    ? { top: 20, right: 20, bottom: 20, left: 20 }
+                    : { top: 40, right: 100, bottom: 40, left: 100 }
+                  }
                   valueFormat={valueFormat}
                   activeOuterRadiusOffset={8}
                   colors={CHART_COLORS}
                   borderWidth={1}
                   borderColor="#ffffff"
-                  enableArcLinkLabels={true}
+                  enableArcLinkLabels={!isSmall}
                   arcLinkLabelsSkipAngle={8}
                   arcLinkLabelsTextColor="#334155"
                   arcLinkLabelsThickness={1}
