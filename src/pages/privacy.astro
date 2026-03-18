@@ -1,0 +1,213 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+import PageFooter from "../components/PageFooter.astro"
+
+export const prerender = true
+---
+
+<BaseLayout title="Privacy Policy | Packstack" description="Privacy Policy for Packstack — how we collect, use, and protect your information.">
+  <div class="bg-background min-h-screen">
+    <header class="border-b border-border/50">
+      <nav class="max-w-5xl mx-auto flex items-center justify-between px-4 md:px-8 py-3">
+        <a href="/" class="flex items-center">
+          <img src="/packstack_logo_white.png" alt="Packstack" class="w-32" />
+        </a>
+        <div class="flex items-center gap-4 md:gap-6">
+          <a href="/tools" class="text-softwhite hover:text-white transition-colors text-sm font-semibold no-underline">Tools</a>
+          <a href="/learn" class="text-softwhite hover:text-white transition-colors text-sm font-semibold no-underline">Learn</a>
+          <a href="https://app.packstack.io/auth/login" class="text-softwhite hover:text-white transition-colors text-sm font-semibold">Login</a>
+          <a href="https://app.packstack.io/auth/register" class="bg-primary hover:bg-primary-dark text-white rounded-md py-1.5 px-4 text-sm font-semibold transition-colors no-underline">Sign Up</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-4 md:px-8 py-12 prose prose-invert prose-sm">
+      <h1 class="text-3xl font-bold mb-1">Privacy Policy</h1>
+      <p class="text-label text-sm mt-0 mb-10">Effective Date: March 17, 2026</p>
+
+      <p>
+        Packstack, LLC ("Packstack," "we," "us," or "our") operates the website
+        <a href="https://www.packstack.io">www.packstack.io</a>, the web application at
+        <a href="https://app.packstack.io">app.packstack.io</a>, and the Packstack mobile
+        application (collectively, the "Service"). This Privacy Policy explains how we collect,
+        use, disclose, and safeguard your information when you use the Service.
+      </p>
+
+      <p>
+        By accessing or using the Service, you agree to this Privacy Policy. If you do not agree
+        with the terms of this Privacy Policy, please do not use the Service.
+      </p>
+
+      <h2>1. Information We Collect</h2>
+
+      <h3>Account Information</h3>
+      <p>
+        When you create an account using a social login provider (such as Google or Apple), we
+        receive your <strong>name</strong> and <strong>email address</strong> from that provider.
+        We do not collect or store your social login password.
+      </p>
+
+      <h3>User-Generated Content</h3>
+      <p>
+        We collect the packing lists, gear inventories, trip plans, and other content you create
+        within the Service. This data is stored to provide the core functionality of Packstack.
+      </p>
+
+      <h3>Device and Usage Information</h3>
+      <p>We collect limited analytics data to understand how the Service is used:</p>
+      <ul>
+        <li>
+          <strong>Plausible Analytics</strong> — a privacy-friendly, cookie-free analytics tool
+          that collects aggregate page view and visitor data without personally identifying you.
+        </li>
+        <li>
+          <strong>Ahrefs Web Analytics</strong> — collects aggregate website traffic data.
+        </li>
+        <li>
+          <strong>Mixpanel</strong> — used within the application to track feature usage events
+          (e.g., creating a packing list, sharing a trip). Events may be associated with your
+          account to help us improve the product.
+        </li>
+      </ul>
+
+      <h3>Mobile App Permissions</h3>
+      <p>The Packstack mobile app may request the following device permissions:</p>
+      <ul>
+        <li>
+          <strong>Camera</strong> — to photograph gear items for your inventory.
+        </li>
+        <li>
+          <strong>Photo Library / Storage</strong> — to select existing photos for gear items.
+        </li>
+        <li>
+          <strong>Push Notifications</strong> — to send you trip reminders and important updates.
+        </li>
+      </ul>
+      <p>You can revoke any of these permissions at any time through your device settings.</p>
+
+      <h2>2. How We Use Your Information</h2>
+      <p>We use the information we collect to:</p>
+      <ul>
+        <li>Provide, operate, and maintain the Service</li>
+        <li>Create and manage your account</li>
+        <li>Send transactional emails (e.g., account verification, password resets)</li>
+        <li>Analyze usage trends to improve and develop new features</li>
+        <li>Respond to your inquiries and support requests</li>
+        <li>Detect and prevent fraud, abuse, or security incidents</li>
+      </ul>
+
+      <h2>3. Cookies and Tracking</h2>
+      <p>
+        We use <strong>session and authentication cookies only</strong>. These cookies are
+        strictly necessary to keep you logged in and to maintain your session. We do not use
+        advertising cookies, third-party tracking cookies, or cross-site tracking technologies.
+      </p>
+
+      <h2>4. Data Sharing and Disclosure</h2>
+      <p>
+        <strong>We do not sell, rent, or share your personal information with third parties for
+        their marketing purposes.</strong>
+      </p>
+      <p>We may share information only in the following limited circumstances:</p>
+      <ul>
+        <li>
+          <strong>Service Providers</strong> — We use trusted third-party services to operate the
+          Service, including DigitalOcean (hosting and infrastructure) and Resend (transactional
+          email delivery). These providers only process data as necessary to provide their services
+          to us.
+        </li>
+        <li>
+          <strong>Legal Requirements</strong> — We may disclose your information if required to do
+          so by law or in response to valid legal process (e.g., a court order or subpoena).
+        </li>
+        <li>
+          <strong>Business Transfers</strong> — If Packstack is involved in a merger, acquisition,
+          or sale of assets, your information may be transferred as part of that transaction.
+        </li>
+      </ul>
+
+      <h2>5. Data Storage and Security</h2>
+      <p>
+        Your data is stored on servers hosted by DigitalOcean in the United States. We implement
+        industry-standard technical and organizational measures to protect your data, including
+        encryption in transit (TLS/SSL) and access controls. However, no method of transmission
+        over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute
+        security.
+      </p>
+
+      <h2>6. Data Retention</h2>
+      <p>
+        We retain your personal information for as long as your account is active or as needed to
+        provide the Service. If you request deletion of your account, we will delete your personal
+        data within 30 days, except where we are required to retain it by law.
+      </p>
+
+      <h2>7. Your Rights and Choices</h2>
+      <p>Depending on your jurisdiction, you may have the right to:</p>
+      <ul>
+        <li>Access the personal information we hold about you</li>
+        <li>Correct inaccurate or incomplete information</li>
+        <li>Request deletion of your account and associated data</li>
+        <li>Object to or restrict certain processing of your data</li>
+        <li>Request a portable copy of your data</li>
+      </ul>
+      <p>
+        To exercise any of these rights, please contact us at
+        <a href="mailto:support@packstack.io">support@packstack.io</a>.
+      </p>
+
+      <h3>Account Deletion</h3>
+      <p>
+        You may request deletion of your account and all associated data by emailing
+        <a href="mailto:support@packstack.io">support@packstack.io</a>. We will process your
+        request within 30 days.
+      </p>
+
+      <h2>8. Children's Privacy</h2>
+      <p>
+        The Service is not intended for children under the age of 13. We do not knowingly collect
+        personal information from children under 13. If we learn that we have collected personal
+        information from a child under 13, we will take steps to delete that information promptly.
+        If you believe a child under 13 has provided us with personal information, please contact
+        us at <a href="mailto:support@packstack.io">support@packstack.io</a>.
+      </p>
+
+      <h2>9. California Privacy Rights</h2>
+      <p>
+        If you are a California resident, you have additional rights under the California Consumer
+        Privacy Act (CCPA), including the right to know what personal information we collect, the
+        right to request deletion, and the right to opt out of the sale of personal information.
+        As stated above, <strong>we do not sell your personal information</strong>.
+      </p>
+      <p>
+        To exercise your California privacy rights, contact us at
+        <a href="mailto:support@packstack.io">support@packstack.io</a>.
+      </p>
+
+      <h2>10. International Users</h2>
+      <p>
+        If you are accessing the Service from outside the United States, please be aware that your
+        information is transferred to, stored, and processed in the United States. By using the
+        Service, you consent to the transfer of your information to the United States, which may
+        have different data protection laws than your country of residence.
+      </p>
+
+      <h2>11. Changes to This Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. If we make material changes, we will
+        notify you by updating the "Effective Date" at the top of this page and, where appropriate,
+        through a notice within the Service. Your continued use of the Service after any changes
+        constitutes your acceptance of the updated Privacy Policy.
+      </p>
+
+      <h2>12. Contact Us</h2>
+      <p>If you have questions or concerns about this Privacy Policy, please contact us at:</p>
+      <p>
+        Packstack, LLC<br />
+        Email: <a href="mailto:support@packstack.io">support@packstack.io</a>
+      </p>
+    </main>
+
+    <PageFooter />
+  </div>
+</BaseLayout>
