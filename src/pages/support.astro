@@ -1,0 +1,101 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+import PageFooter from "../components/PageFooter.astro"
+
+export const prerender = true
+---
+
+<BaseLayout title="Support | Packstack" description="Get help with Packstack — contact support and find answers to frequently asked questions.">
+  <div class="bg-background min-h-screen">
+    <header class="border-b border-border/50">
+      <nav class="max-w-5xl mx-auto flex items-center justify-between px-4 md:px-8 py-3">
+        <a href="/" class="flex items-center">
+          <img src="/packstack_logo_white.png" alt="Packstack" class="w-32" />
+        </a>
+        <div class="flex items-center gap-4 md:gap-6">
+          <a href="/tools" class="text-softwhite hover:text-white transition-colors text-sm font-semibold no-underline">Tools</a>
+          <a href="/learn" class="text-softwhite hover:text-white transition-colors text-sm font-semibold no-underline">Learn</a>
+          <a href="https://app.packstack.io/auth/login" class="text-softwhite hover:text-white transition-colors text-sm font-semibold">Login</a>
+          <a href="https://app.packstack.io/auth/register" class="bg-primary hover:bg-primary-dark text-white rounded-md py-1.5 px-4 text-sm font-semibold transition-colors no-underline">Sign Up</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-4 md:px-8 py-12 prose prose-invert prose-sm">
+      <h1 class="text-3xl font-bold mb-1">Support</h1>
+      <p class="text-label text-sm mt-0 mb-10">We're here to help you get the most out of Packstack.</p>
+
+      <p>
+        If you need help, have a feature request, or want to report a bug, send us an email at
+        <a href="mailto:jerad@packstack.io">jerad@packstack.io</a>. We typically respond within 24 hours.
+      </p>
+
+      <h2 class="mt-12">Frequently Asked Questions</h2>
+
+      <h3>What is Packstack?</h3>
+      <p>
+        Packstack is a free gear tracking and packing list tool for backpackers and hikers.
+        It helps you organize your inventory, build packing lists, and track your pack weight
+        down to the ounce (or gram).
+      </p>
+
+      <h3>Is Packstack free?</h3>
+      <p>
+        Yes. Packstack is completely free to use. We may introduce optional premium features
+        in the future, but the core gear tracking and packing list functionality will always
+        be free.
+      </p>
+
+      <h3>How do I create an account?</h3>
+      <p>
+        You can sign up with your email address (we'll send you a one-time verification code),
+        or sign in instantly with Google or Apple.
+      </p>
+
+      <h3>Can I import my gear from Lighterpack or a spreadsheet?</h3>
+      <p>
+        Yes. Packstack supports importing from Lighterpack CSV exports and generic CSV files.
+        Go to your Inventory and look for the Import option.
+      </p>
+
+      <h3>How do I change my weight units?</h3>
+      <p>
+        Head to Settings in the app and you can switch between imperial (oz/lb) and metric (g/kg)
+        units. All weights across the app will update automatically.
+      </p>
+
+      <h3>Can I share my packing list with others?</h3>
+      <p>
+        Yes. Each trip has a shareable link that anyone can view — no account required. You can
+        find the share option on your trip's pack page.
+      </p>
+
+      <h3>What are Kits?</h3>
+      <p>
+        Kits are reusable groups of gear that you can quickly add to any packing list. For example,
+        you might create a "Cook Kit" or "Sleep System" kit and add it to multiple trips without
+        rebuilding the list each time.
+      </p>
+
+      <h3>Is my data backed up?</h3>
+      <p>
+        Yes. All your data is stored securely on our servers and is backed up regularly. You can also
+        export your inventory as a CSV at any time for your own records.
+      </p>
+
+      <h3>How do I delete my account?</h3>
+      <p>
+        Send us an email at <a href="mailto:jerad@packstack.io">jerad@packstack.io</a> and
+        we'll process your account deletion within 30 days. All associated data will be permanently removed.
+      </p>
+
+      <h3>I found a bug. How do I report it?</h3>
+      <p>
+        Email us at <a href="mailto:jerad@packstack.io">jerad@packstack.io</a> with a description
+        of the issue and any screenshots if possible. We appreciate the help!
+      </p>
+    </main>
+
+    <PageFooter />
+  </div>
+</BaseLayout>
