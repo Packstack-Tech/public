@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro"
+import PageHeader from "../../components/PageHeader.astro"
 import PageFooter from "../../components/PageFooter.astro"
 
 export const prerender = true
@@ -20,19 +21,7 @@ const tools = [
 
 <BaseLayout title="Backpacking Tools | Packstack" description="Free backpacking calculators and planning tools — calorie estimators, gear weight analysis, and more.">
   <div class="bg-background min-h-screen">
-    <header class="border-b border-border/50">
-      <nav class="max-w-5xl mx-auto flex items-center justify-between px-4 md:px-8 py-3">
-        <a href="/" class="flex items-center">
-          <img src="/packstack_logo_white.png" alt="Packstack" class="w-32" />
-        </a>
-        <div class="flex items-center gap-4 md:gap-6">
-          <a href="/tools" class="text-white hover:text-white transition-colors text-sm font-semibold no-underline">Tools</a>
-          <a href="/learn" class="text-softwhite hover:text-white transition-colors text-sm font-semibold no-underline">Learn</a>
-          <a href="https://app.packstack.io/auth/login" class="text-softwhite hover:text-white transition-colors text-sm font-semibold">Login</a>
-          <a href="https://app.packstack.io/auth/register" class="bg-primary hover:bg-primary-dark text-white rounded-md py-1.5 px-4 text-sm font-semibold transition-colors no-underline">Sign Up</a>
-        </div>
-      </nav>
-    </header>
+    <PageHeader />
 
     <main class="max-w-5xl mx-auto px-4 md:px-8 py-12">
       <h1 class="text-3xl md:text-4xl font-bold mb-2">Backpacking Tools</h1>

@@ -1,0 +1,28 @@
+---
+interface Props {
+  maxWidth?: "3xl" | "5xl" | "6xl"
+}
+
+const { maxWidth = "5xl" } = Astro.props
+const maxWidthClasses: Record<string, string> = {
+  "3xl": "max-w-3xl",
+  "5xl": "max-w-5xl",
+  "6xl": "max-w-6xl",
+}
+const maxWidthClass = maxWidthClasses[maxWidth]
+---
+
+<header class="sticky top-0 z-50 backdrop-blur-lg bg-background/80 border-b border-border/50">
+  <nav class={`${maxWidthClass} mx-auto flex items-center justify-between px-4 md:px-8 py-3`}>
+    <a href="/" class="flex items-center">
+      <img src="/packstack_logo_white.png" alt="Packstack" class="w-32" />
+    </a>
+    <div class="flex items-center gap-4 md:gap-6">
+      <a href="https://app.packstack.io/auth/login" class="text-softwhite hover:text-white transition-colors text-sm font-semibold">Login</a>
+      <a href="https://app.packstack.io/auth/register" class="bg-primary hover:bg-primary-dark text-white rounded-md py-1.5 px-4 text-sm font-semibold transition-colors no-underline">Sign Up</a>
+      <a href="https://apps.apple.com/us/app/packstack-app/id6760873801?itscg=30200&itsct=apps_box_badge&mttnsubad=6760873801" class="hidden md:inline-block">
+        <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1774396800" alt="Download on the App Store" style="width: 120px; height: 40px; vertical-align: middle; object-fit: contain;" />
+      </a>
+    </div>
+  </nav>
+</header>

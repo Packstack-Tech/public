@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from "astro:content"
 import BaseLayout from "../../../layouts/BaseLayout.astro"
+import PageHeader from "../../../components/PageHeader.astro"
 import PageFooter from "../../../components/PageFooter.astro"
 
 export const prerender = true
@@ -25,17 +26,7 @@ const formattedDate = new Date(published_at).toLocaleDateString("en-US", { year:
 
 <BaseLayout title={`${title} | Packstack`} description={description}>
   <div class="bg-background min-h-screen">
-    <header class="border-b border-border/50">
-      <nav class="max-w-3xl mx-auto flex items-center justify-between px-4 md:px-8 py-3">
-        <a href="/" class="flex items-center">
-          <img src="/packstack_logo_white.png" alt="Packstack" class="w-32" />
-        </a>
-        <div class="flex items-center gap-4 md:gap-6">
-          <a href="/reviews" class="text-softwhite hover:text-white transition-colors text-sm">All Reviews</a>
-          <a href="https://app.packstack.io/auth/register" class="bg-primary hover:bg-primary-dark text-white rounded-md py-1.5 px-4 text-sm font-semibold transition-colors no-underline">Sign Up</a>
-        </div>
-      </nav>
-    </header>
+    <PageHeader maxWidth="3xl" />
 
     <main class="max-w-3xl mx-auto px-4 md:px-8 py-12">
       <div class="mb-8 flex items-center gap-2 text-sm text-label">
