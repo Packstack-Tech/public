@@ -46,7 +46,7 @@ export default function PackingLists({ tripId }: Props) {
   const [error, setError] = useState(false)
   const [copied, setCopied] = useState(false)
 
-  const apiUrl = `https://api.packstack.io/pack/trip/${tripId}`
+  const apiUrl = `https://api.packstack.io/pack/trip/${tripId}/public`
 
   const copyUrl = useCallback(() => {
     navigator.clipboard.writeText(apiUrl).then(() => {
@@ -57,7 +57,7 @@ export default function PackingLists({ tripId }: Props) {
 
   useEffect(() => {
     let cancelled = false
-    fetch(`https://api.packstack.io/pack/trip/${tripId}`)
+    fetch(`https://api.packstack.io/pack/trip/${tripId}/public`)
       .then((res) => {
         if (!res.ok) throw new Error("Failed to load packs")
         return res.json()
