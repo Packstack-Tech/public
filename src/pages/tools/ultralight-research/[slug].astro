@@ -10,13 +10,13 @@ export const prerender = true
 export function getStaticPaths() {
   return getAllSubcategories().map((entry) => ({
     params: { slug: entry.slug },
-    props: { subcategory: entry.subcategory, displayName: entry.displayName, category: entry.category },
+    props: { subcategory: entry.subcategory, displayName: entry.displayName, pluralName: entry.pluralName, category: entry.category },
   }))
 }
 
 const { slug } = Astro.params
-const { subcategory, displayName, category } = Astro.props
-const title = `${displayName} — Ultralight Gear Research | Packstack`
+const { subcategory, displayName, pluralName, category } = Astro.props
+const title = `${pluralName} — Ultralight Gear Research | Packstack`
 const description = `Compare ultralight backpacking products categorized as ${category} > ${displayName} sorted by weight. Find the lightest options with detailed specs.`
 ---
 
@@ -33,7 +33,7 @@ const description = `Compare ultralight backpacking products categorized as ${ca
         <span class="text-softwhite">{displayName}</span>
       </nav>
 
-      <h1 class="text-3xl md:text-4xl font-bold mb-2">{displayName}</h1>
+      <h1 class="text-3xl md:text-4xl font-bold mb-2">{pluralName}</h1>
       <p class="text-lg mb-8 max-w-2xl">
         Compare ultralight backpacking products categorized as {category} &gt; {displayName} sorted by weight.
       </p>

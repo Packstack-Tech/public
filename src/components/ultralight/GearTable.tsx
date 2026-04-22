@@ -176,7 +176,7 @@ const GearTable: FC<Props> = ({ slug, subcategory }) => {
     <div>
       {/* Header bar */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
-        <div className="flex flex-wrap items-center gap-x-6 gap-y-1 text-xs">
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-1 text-sm">
           <span className="text-label">
             {sortedProducts.length}
             {hasActiveFilters ? ` of ${data.product_count}` : ""} products
@@ -272,11 +272,11 @@ const GearTable: FC<Props> = ({ slug, subcategory }) => {
               </th>
               <th className="py-2.5 px-3 w-[80px] hidden sm:table-cell text-right">
                 <span
-                  className="inline-flex items-center gap-1 text-xs text-label font-normal"
+                  className="inline-flex items-center gap-1 text-xs text-label font-normal whitespace-nowrap"
                   title="How much lighter this product is compared to the median weight in this category"
                 >
                   vs Median
-                  <Info size={11} />
+                  <Info size={13} />
                 </span>
               </th>
               <th className="py-2.5 px-3 w-[40px]" />
