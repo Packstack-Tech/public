@@ -35,9 +35,18 @@ export const SUBCATEGORIES: Record<string, string[]> = {
   Climbing: ["Personal", "Hardware", "Protection", "Soft Good"],
 }
 
+const DISPLAY_NAMES: Record<string, string> = {
+  "Main Pack": "Backpack",
+}
+
+export function displayName(subcategory: string): string {
+  return DISPLAY_NAMES[subcategory] ?? subcategory
+}
+
 export type SubcategoryEntry = {
   category: string
   subcategory: string
+  displayName: string
   slug: string
 }
 
@@ -45,7 +54,7 @@ export function getAllSubcategories(): SubcategoryEntry[] {
   const entries: SubcategoryEntry[] = []
   for (const [category, subs] of Object.entries(SUBCATEGORIES)) {
     for (const sub of subs) {
-      entries.push({ category, subcategory: sub, slug: slugify(sub) })
+      entries.push({ category, subcategory: sub, displayName: displayName(sub), slug: slugify(sub) })
     }
   }
   return entries

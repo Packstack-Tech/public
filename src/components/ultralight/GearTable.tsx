@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo, type FC } from "react"
-import { ArrowUpDown, Loader2 } from "lucide-react"
+import { ArrowUpDown, Info, Loader2 } from "lucide-react"
 import type { CatalogProduct, SubcategoryResponse } from "../../types/catalog"
 import type { Unit } from "../../types/item"
 import { useUnitPreference } from "../../hooks/useUnitPreference"
@@ -270,7 +270,15 @@ const GearTable: FC<Props> = ({ slug, subcategory }) => {
                   <ArrowUpDown size={12} className={sortField === "weight" ? "text-primary" : ""} />
                 </button>
               </th>
-              <th className="py-2.5 px-3 w-[80px] hidden sm:table-cell" />
+              <th className="py-2.5 px-3 w-[80px] hidden sm:table-cell text-right">
+                <span
+                  className="inline-flex items-center gap-1 text-xs text-label font-normal"
+                  title="How much lighter this product is compared to the median weight in this category"
+                >
+                  vs Median
+                  <Info size={11} />
+                </span>
+              </th>
               <th className="py-2.5 px-3 w-[40px]" />
               <th className="py-2.5 px-3 w-[40px]" />
             </tr>

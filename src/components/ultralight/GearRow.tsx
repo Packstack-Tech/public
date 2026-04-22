@@ -27,7 +27,7 @@ function deltaLabel(lightestG: number | null, medianG: number | null): string | 
   if (lightestG == null || medianG == null || medianG === 0) return null
   const pct = ((medianG - lightestG) / medianG) * 100
   if (pct < 10) return null
-  return `${Math.round(pct)}% lighter`
+  return `-${Math.round(pct)}%`
 }
 
 export const GearRow: FC<Props> = ({
@@ -147,7 +147,7 @@ export const GearRow: FC<Props> = ({
                   <img
                     src={primaryImage}
                     alt={product.product_name}
-                    className="w-28 h-28 rounded-lg object-cover bg-surface"
+                    className="w-40 h-40 rounded-lg object-cover bg-surface"
                     loading="lazy"
                   />
                 </div>

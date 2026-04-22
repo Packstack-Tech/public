@@ -19,6 +19,27 @@ export const prerender = true
 
       <SubcategorySearch client:load />
 
+      <div class="mt-10">
+        <h2 class="text-xl font-bold mb-4">Popular Categories</h2>
+        <div class="flex flex-wrap gap-2">
+          {[
+            { label: "Backpacks", slug: "main-pack" },
+            { label: "Tents", slug: "tent" },
+            { label: "Sleeping Bags", slug: "sleeping-bag" },
+            { label: "Sleeping Pads", slug: "sleeping-pad" },
+            { label: "Jackets", slug: "insulation" },
+            { label: "Stoves", slug: "stove" },
+          ].map((link) => (
+            <a
+              href={`/tools/ultralight-research/${link.slug}`}
+              class="px-4 py-2 rounded-lg border border-border bg-surface text-sm text-softwhite hover:text-white hover:border-primary/50 transition-colors no-underline"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+      </div>
+
       <div class="mt-12">
         <h2 class="text-xl font-bold mb-6">Browse by Category</h2>
         <CategoryToc client:load />
