@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro"
+import PageHeader from "../../../components/PageHeader.astro"
+import PageFooter from "../../../components/PageFooter.astro"
+import GearTable from "../../../components/ultralight/GearTable"
+import { getAllSubcategories } from "../../../utils/catalog"
+
+export const prerender = true
+
+export function getStaticPaths() {
+  return getAllSubcategories().map((entry) => ({
+    params: { slug: entry.slug },
+    props: { subcategory: entry.subcategory, category: entry.category },
+  }))
+}
+
+const { slug } = Astro.params
+const { subcategory, category } = Astro.props
+const title = `Lightest ${subcategory} for Backpacking | Packstack`
+const description = `Compare ${subcategory.toLowerCase()} products sorted by weight. Find the lightest options for ultralight backpacking with detailed specs and comparisons.`
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="bg-background min-h-screen">
+    <PageHeader maxWidth="6xl" />
+
+    <main class="max-w-6xl mx-auto px-4 md:px-8 py-12">
+      <nav class="flex items-center gap-2 text-sm text-label mb-6">
+        <a href="/tools" class="hover:text-softwhite transition-colors no-underline">Tools</a>
+        <span>/</span>
+        <a href="/tools/ultralight-research" class="hover:text-softwhite transition-colors no-underline">Ultralight Research</a>
+        <span>/</span>
+        <span class="text-softwhite">{subcategory}</span>
+      </nav>
+
+      <h1 class="text-3xl md:text-4xl font-bold mb-2">Lightest {subcategory} Gear</h1>
+      <p class="text-lg mb-8 max-w-2xl">
+        Compare {subcategory.toLowerCase()} products sorted by weight to find the lightest options for your pack.
+      </p>
+
+      <GearTable client:load slug={slug!} subcategory={subcategory} category={category} />
+    </main>
+
+    <PageFooter />
+  </div>
+</BaseLayout>

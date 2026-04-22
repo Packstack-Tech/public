@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro"
+import PageHeader from "../../../components/PageHeader.astro"
+import PageFooter from "../../../components/PageFooter.astro"
+import SubcategorySearch from "../../../components/ultralight/SubcategorySearch"
+import CategoryToc from "../../../components/ultralight/CategoryToc"
+
+export const prerender = true
+---
+
+<BaseLayout title="Ultralight Gear Research — Compare Backpacking Gear by Weight | Packstack" description="Browse thousands of backpacking products sorted by weight. Find the lightest tents, sleeping bags, stoves, and more with detailed specs and comparisons.">
+  <div class="bg-background min-h-screen">
+    <PageHeader />
+
+    <main class="max-w-5xl mx-auto px-4 md:px-8 py-12">
+      <a href="/tools" class="text-sm text-label hover:text-softwhite transition-colors no-underline mb-4 inline-block">&larr; All Tools</a>
+      <h1 class="text-3xl md:text-4xl font-bold mb-2">Ultralight Gear Research</h1>
+      <p class="text-lg mb-8 max-w-2xl">Browse and compare backpacking gear by weight. Search for a gear category or browse below to find the lightest options with detailed specs.</p>
+
+      <SubcategorySearch client:load />
+
+      <div class="mt-12">
+        <h2 class="text-xl font-bold mb-6">Browse by Category</h2>
+        <CategoryToc client:load />
+      </div>
+    </main>
+
+    <PageFooter />
+  </div>
+</BaseLayout>
