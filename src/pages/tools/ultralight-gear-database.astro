@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import PageHeader from "../../components/PageHeader.astro"
+import PageFooter from "../../components/PageFooter.astro"
+import { SUBCATEGORIES, slugify, displayName, pluralDisplayName } from "../../utils/catalog"
+
+export const prerender = true
+
+const categories = Object.entries(SUBCATEGORIES).map(([category, subs]) => ({
+  category,
+  subcategories: subs.map((sub) => ({
+    name: sub,
+    displayName: displayName(sub),
+    pluralName: pluralDisplayName(sub),
+    slug: slugify(sub),
+  })),
+}))
+---
+
+<BaseLayout title="Ultralight Gear Database — Browse All Backpacking Gear Categories | Packstack" description="Browse every category and subcategory in the Packstack ultralight gear database. Compare backpacking gear by weight across clothing, shelter, sleep systems, cookware, and more.">
+  <div class="bg-background min-h-screen">
+    <PageHeader />
+
+    <main class="max-w-5xl mx-auto px-4 md:px-8 py-12">
+      <a href="/tools" class="text-sm text-label hover:text-softwhite transition-colors no-underline mb-4 inline-block">&larr; All Tools</a>
+      <h1 class="text-3xl md:text-4xl font-bold mb-2">Ultralight Gear Database</h1>
+      <p class="text-lg mb-8 max-w-2xl">Browse every gear category in our database. Compare ultralight backpacking products by weight to find the lightest options for your next trip.</p>
+
+      <div class="grid gap-8">
+        {categories.map(({ category, subcategories }) => (
+          <section>
+            <h2 class="text-xl font-bold mb-3 text-white">{category}</h2>
+            <div class="flex flex-wrap gap-2">
+              {subcategories.map((sub) => (
+                <a
+                  href={`/tools/ultralight-research/${sub.slug}`}
+                  class="px-4 py-2 rounded-lg border border-border bg-surface text-sm text-softwhite hover:text-white hover:border-primary/50 transition-colors no-underline"
+                >
+                  {sub.pluralName}
+                </a>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </main>
+
+    <PageFooter />
+  </div>
+</BaseLayout>
