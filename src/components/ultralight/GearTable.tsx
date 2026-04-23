@@ -206,10 +206,10 @@ const GearTable: FC<Props> = ({ slug, subcategory }) => {
         </div>
 
         {/* Unit toggle */}
-        <div className="inline-flex rounded-md border border-border text-xs">
+        <div className="flex w-full sm:w-auto rounded-md border border-border text-xs">
           <button
             onClick={toggleSystem}
-            className={`px-3 py-1.5 rounded-l-md transition-colors cursor-pointer ${
+            className={`flex-1 sm:flex-initial px-3 py-1.5 rounded-l-md transition-colors cursor-pointer ${
               system === "metric"
                 ? "bg-primary text-white"
                 : "text-label hover:text-white"
@@ -219,7 +219,7 @@ const GearTable: FC<Props> = ({ slug, subcategory }) => {
           </button>
           <button
             onClick={toggleSystem}
-            className={`px-3 py-1.5 rounded-r-md transition-colors cursor-pointer ${
+            className={`flex-1 sm:flex-initial px-3 py-1.5 rounded-r-md transition-colors cursor-pointer ${
               system === "imperial"
                 ? "bg-primary text-white"
                 : "text-label hover:text-white"
