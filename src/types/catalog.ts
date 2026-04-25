@@ -13,6 +13,7 @@ export type CatalogProduct = {
   brand_name: string
   product_name: string
   product_url: string | null
+  catalog_url_slug: string | null
   lightest_weight_g: number | null
   variants: CatalogVariant[]
 }

@@ -1,5 +1,5 @@
 import { Fragment, type FC } from "react"
-import { ChevronDown, ExternalLink, Package } from "lucide-react"
+import { BookOpen, ChevronDown, ExternalLink, Package } from "lucide-react"
 import type { CatalogProduct, CatalogVariant } from "../../types/catalog"
 import type { Unit } from "../../types/item"
 import { formatItemWeight } from "../../utils/weight"
@@ -108,20 +108,32 @@ export const GearRow: FC<Props> = ({
           )}
         </td>
 
-        {/* Link */}
+        {/* Links */}
         <td className="py-2.5 px-3 text-center">
-          {product.product_url && (
-            <a
-              href={product.product_url}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
-              className="text-label hover:text-primary transition-colors"
-              title="View product"
-            >
-              <ExternalLink size={14} />
-            </a>
-          )}
+          <span className="inline-flex items-center gap-2">
+            {product.catalog_url_slug && (
+              <a
+                href={`/reviews/${product.catalog_url_slug}`}
+                onClick={(e) => e.stopPropagation()}
+                className="text-primary hover:text-white transition-colors"
+                title="Read our review"
+              >
+                <BookOpen size={14} />
+              </a>
+            )}
+            {product.product_url && (
+              <a
+                href={product.product_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="text-label hover:text-primary transition-colors"
+                title="View product"
+              >
+                <ExternalLink size={14} />
+              </a>
+            )}
+          </span>
         </td>
 
         {/* Expand */}
@@ -211,18 +223,29 @@ export const GearRow: FC<Props> = ({
                   </div>
                 )}
 
-                {/* Product link */}
-                {product.product_url && (
-                  <a
-                    href={product.product_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs text-primary hover:text-white transition-colors"
-                  >
-                    View product
-                    <ExternalLink size={12} />
-                  </a>
-                )}
+                {/* Product / review links */}
+                <div className="flex items-center gap-4">
+                  {product.catalog_url_slug && (
+                    <a
+                      href={`/reviews/${product.catalog_url_slug}`}
+                      className="inline-flex items-center gap-1.5 text-xs text-primary hover:text-white transition-colors"
+                    >
+                      Read our review
+                      <BookOpen size={12} />
+                    </a>
+                  )}
+                  {product.product_url && (
+                    <a
+                      href={product.product_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs text-primary hover:text-white transition-colors"
+                    >
+                      View product
+                      <ExternalLink size={12} />
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           </td>
