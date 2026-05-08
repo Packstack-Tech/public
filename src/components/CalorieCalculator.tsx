@@ -305,20 +305,25 @@ export default function CalorieCalculator() {
             <NumberInput label="Total Days on Trail" value={form.totalDays} onChange={(v) => update("totalDays", v)} min={1} max={365} unit="days" />
             <NumberInput label="Daily Distance" value={form.dailyDistance} onChange={(v) => update("dailyDistance", v)} min={0.1} unit={distanceUnit} step={0.1} />
             <NumberInput label="Daily Elevation Gain" value={form.dailyElevationGain} onChange={(v) => update("dailyElevationGain", v)} min={0} unit={elevationUnit} />
+            <NumberInput label="Pack Weight" value={form.packWeight} onChange={(v) => update("packWeight", v)} min={0} unit={weightUnit} step={0.1} />
           </SectionCard>
 
-          <SectionCard title="Gear">
-            <NumberInput label="Pack Weight" value={form.packWeight} onChange={(v) => update("packWeight", v)} min={0} unit={weightUnit} step={0.1} />
+          <div className="bg-linear-to-br from-primary/10 to-primary/5 border border-primary/30 rounded-lg p-5 flex flex-col justify-between">
+            <div>
+              <h3 className="text-base font-semibold text-white mb-2">Skip the guesswork</h3>
+              <p className="text-sm text-softwhite leading-relaxed">
+                Packstack automatically estimates your calorie needs using your body profile, pack weight, terrain data, and forecasted conditions &mdash; so you can focus on the trail, not the math.
+              </p>
+            </div>
             <a
               href="https://app.packstack.io"
               target="_blank"
               rel="noopener noreferrer"
-              className="block mt-1 text-xs text-label hover:text-primary transition-colors no-underline"
+              className="inline-flex items-center justify-center mt-4 px-4 py-2.5 bg-primary hover:bg-primary/90 text-white text-sm font-semibold rounded-md transition-colors no-underline"
             >
-              Know your exact pack weight &mdash;{" "}
-              <span className="text-primary font-semibold">try Packstack free &rarr;</span>
+              Try Packstack free &rarr;
             </a>
-          </SectionCard>
+          </div>
 
           <SectionCard title="Environment">
             <SelectInput label="Terrain Type" value={form.terrain} onChange={(v) => update("terrain", v)} options={TERRAIN_LABELS} />
