@@ -41,6 +41,7 @@ const formattedDate = new Date(published_at).toLocaleDateString("en-US", { year:
         <header class="mb-8">
           <a href={`/reviews/${category}`} class="text-xs text-primary font-semibold uppercase tracking-wide no-underline hover:text-white transition-colors">{displayCategory}</a>
           <h1 class="text-3xl md:text-4xl font-bold mt-2 mb-3">{title}</h1>
+          <AffiliateDisclaimer />
           <p class="text-softwhite text-lg">{description}</p>
 
           <div class="flex flex-wrap items-center gap-4 mt-4 text-sm text-label">
@@ -52,10 +53,9 @@ const formattedDate = new Date(published_at).toLocaleDateString("en-US", { year:
 
           {product_url && (
             <a href={product_url} target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-sm text-primary hover:text-white transition-colors">
-              View on manufacturer's site &rarr;
+              Buy {product_name} &rarr;
             </a>
           )}
-          <AffiliateDisclaimer />
         </header>
 
         {image_url && (
@@ -79,6 +79,12 @@ const formattedDate = new Date(published_at).toLocaleDateString("en-US", { year:
         ">
           <Content />
         </div>
+
+        {product_url && (
+          <a href={product_url} target="_blank" rel="noopener noreferrer" class="inline-block mt-10 text-sm text-primary hover:text-white transition-colors">
+            Buy {product_name} &rarr;
+          </a>
+        )}
       </article>
 
       <div class="mt-16 pt-8 border-t border-border">
