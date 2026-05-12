@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets"
-import dashboardImg from "../assets/packstack-pack-dashboard.png"
-import inventoryImg from "../assets/gear-inventory-screenshot.png"
+import dashboardImg from "../assets/ultralight-backpacking-list-tool.png"
+import inventoryImg from "../assets/ultralight-gear-closet.png"
 import weightImg from "../assets/pack-weight-breakdown.png"
 import BaseLayout from "../layouts/BaseLayout.astro"
 import PageHeader from "../components/PageHeader.astro"
@@ -10,7 +10,7 @@ import PageFooter from "../components/PageFooter.astro"
 export const prerender = true
 ---
 
-<BaseLayout title="Packstack | The Backpacking Packing App">
+<BaseLayout title="Packstack | The Backpacking Planning App">
   <div class="bg-background">
     <PageHeader maxWidth="6xl" />
 
@@ -50,11 +50,13 @@ export const prerender = true
             <span class="w-3 h-3 rounded-full bg-accent-green/60"></span>
             <span class="ml-4 text-label text-xs font-mono">app.packstack.io</span>
           </div>
-          <Image
-            src={dashboardImg}
-            alt="Packstack dashboard showing a packing list with categorized gear, weights, and trip details"
-            class="w-full block"
-          />
+          <button type="button" class="img-preview w-full cursor-pointer">
+            <Image
+              src={dashboardImg}
+              alt="Packstack dashboard showing a packing list with categorized gear, weights, and trip details"
+              class="w-full block"
+            />
+          </button>
         </div>
       </div>
     </section>
@@ -93,20 +95,103 @@ export const prerender = true
             </ul>
           </div>
           <div class="md:w-7/12">
-            <div class="rounded-xl border border-border overflow-hidden">
+            <button type="button" class="img-preview rounded-xl border border-border overflow-hidden cursor-pointer block w-full">
               <Image
                 src={inventoryImg}
                 alt="Packstack gear inventory showing categorized backpacking equipment with weights and product details"
                 class="w-full block"
               />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature: Gear Lifecycle -->
+      <section class="py-16 md:py-24 px-4 bg-surface/30">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+          <div class="md:w-5/12">
+            <h2 class="text-xs uppercase tracking-widest mb-3 font-semibold">Gear Lifecycle</h2>
+            <h3 class="text-2xl md:text-3xl leading-snug mb-4">Know when it&rsquo;s time to replace</h3>
+            <p class="mb-5">
+              Track the condition of every item from day one. Packstack
+              calculates a replacement score based on age, expected lifespan,
+              and current condition &mdash; so you always know which gear is
+              trail-ready and which is due for an upgrade.
+            </p>
+            <ul class="space-y-2.5 text-softwhite text-sm">
+              <li class="flex items-start gap-2.5">
+                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
+                Condition tracking: New, Good, Fair, Worn
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
+                Replacement score with category benchmarks
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
+                Activity log for repairs, condition changes, and notes
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
+                Dashboard alerts when gear needs attention
+              </li>
+            </ul>
+          </div>
+          <div class="md:w-7/12 flex justify-center md:justify-start">
+            <!-- CSS-only lifecycle mock -->
+            <div class="rounded-xl border border-border bg-background overflow-hidden w-full max-w-md select-none" aria-hidden="true">
+              <div class="bg-surface px-5 py-3 border-b border-border flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M23 4v6h-6M1 20v-6h6" /><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15" /></svg>
+                <span class="font-semibold text-white text-sm">Trail Runner Pro</span>
+                <span class="ml-auto text-[10px] text-accent-orange font-semibold uppercase tracking-wide bg-accent-orange/10 rounded-full px-2 py-0.5">Replace Soon</span>
+              </div>
+              <!-- Replacement score -->
+              <div class="px-5 py-4 border-b border-border">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="text-xs text-label">Replacement Score</span>
+                  <span class="text-sm font-bold text-accent-orange tabular-nums">72%</span>
+                </div>
+                <div class="w-full h-2 bg-surface rounded-full overflow-hidden">
+                  <div class="h-full bg-accent-orange rounded-full" style="width: 72%"></div>
+                </div>
+              </div>
+              <!-- Stats grid -->
+              <div class="px-5 py-3 grid grid-cols-3 gap-3 border-b border-border">
+                <div>
+                  <div class="text-[10px] text-label uppercase tracking-wide">Condition</div>
+                  <div class="text-white font-semibold text-sm">Fair</div>
+                </div>
+                <div>
+                  <div class="text-[10px] text-label uppercase tracking-wide">Age</div>
+                  <div class="text-white font-semibold text-sm">2.4 yrs</div>
+                </div>
+                <div>
+                  <div class="text-[10px] text-label uppercase tracking-wide">Lifespan</div>
+                  <div class="text-white font-semibold text-sm">3 yrs</div>
+                </div>
+              </div>
+              <!-- Activity log -->
+              <div class="px-5 py-3">
+                <div class="text-[10px] text-label uppercase tracking-wide mb-2">Activity Log</div>
+                <div class="space-y-2">
+                  <div class="flex items-start gap-2.5 text-xs">
+                    <span class="text-label tabular-nums shrink-0">Apr 8</span>
+                    <span class="text-white">Condition changed from Good &rarr; Fair</span>
+                  </div>
+                  <div class="flex items-start gap-2.5 text-xs">
+                    <span class="text-label tabular-nums shrink-0">Jan 12</span>
+                    <span class="text-white">Repaired &mdash; patched toe box delamination</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Feature: Pack List Builder -->
-      <section class="py-16 md:py-24 px-4 bg-surface/30">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+      <section class="py-16 md:py-24 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div class="md:w-5/12">
             <h2 class="text-xs uppercase tracking-widest mb-3 font-semibold">Pack List Builder</h2>
             <h3 class="text-2xl md:text-3xl leading-snug mb-4">Build the perfect pack</h3>
@@ -224,8 +309,8 @@ export const prerender = true
       </section>
 
       <!-- Feature: Weight Analysis -->
-      <section class="py-16 md:py-24 px-4">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
+      <section class="py-16 md:py-24 px-4 bg-surface/30">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
           <div class="md:w-5/12">
             <h2 class="text-xs uppercase tracking-widest mb-3 font-semibold">Weight Analysis</h2>
             <h3 class="text-2xl md:text-3xl leading-snug mb-4">Know your base weight</h3>
@@ -250,20 +335,20 @@ export const prerender = true
             </ul>
           </div>
           <div class="md:w-7/12">
-            <div class="rounded-xl border border-border overflow-hidden">
+            <button type="button" class="img-preview rounded-xl border border-border overflow-hidden cursor-pointer block w-full">
               <Image
                 src={weightImg}
                 alt="Weight breakdown pie chart showing pack weight distribution by category with totals"
                 class="w-full block"
               />
-            </div>
+            </button>
           </div>
         </div>
       </section>
 
       <!-- Feature: Trip Planning -->
-      <section class="py-16 md:py-24 px-4 bg-surface/30">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+      <section class="py-16 md:py-24 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div class="md:w-5/12">
             <h2 class="text-xs uppercase tracking-widest mb-3 font-semibold">Trip Planning</h2>
             <h3 class="text-2xl md:text-3xl leading-snug mb-4">Plan beyond the packing list</h3>
@@ -341,8 +426,8 @@ export const prerender = true
       </section>
 
       <!-- Feature: Hiker Profiles -->
-      <section class="py-16 md:py-24 px-4">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
+      <section class="py-16 md:py-24 px-4 bg-surface/30">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
           <div class="md:w-5/12">
             <h2 class="text-xs uppercase tracking-widest mb-3 font-semibold">Hiker Profiles</h2>
             <h3 class="text-2xl md:text-3xl leading-snug mb-4">Your stats, your estimate</h3>
@@ -402,8 +487,8 @@ export const prerender = true
       </section>
 
       <!-- Feature: Calorie Calculator -->
-      <section class="py-16 md:py-24 px-4 bg-surface/30">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+      <section class="py-16 md:py-24 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div class="md:w-5/12">
             <h2 class="text-xs uppercase tracking-widest mb-3 font-semibold">Calorie Calculator</h2>
             <h3 class="text-2xl md:text-3xl leading-snug mb-4">Know how much fuel you need</h3>
@@ -505,8 +590,8 @@ export const prerender = true
       </section>
 
       <!-- Feature: Gear Kits -->
-      <section class="py-16 md:py-24 px-4">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
+      <section class="py-16 md:py-24 px-4 bg-surface/30">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
           <div class="md:w-5/12">
             <h2 class="text-xs uppercase tracking-widest mb-3 font-semibold">Gear Kits</h2>
             <h3 class="text-2xl md:text-3xl leading-snug mb-4">Bundle once, load anywhere</h3>
@@ -576,8 +661,8 @@ export const prerender = true
       </section>
 
       <!-- Feature: Share Your Packs -->
-      <section class="py-16 md:py-24 px-4 bg-surface/30">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+      <section class="py-16 md:py-24 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div class="md:w-5/12">
             <h2 class="text-xs uppercase tracking-widest mb-3 font-semibold">Sharing</h2>
             <h3 class="text-2xl md:text-3xl leading-snug mb-4">Share your setup</h3>
@@ -652,15 +737,8 @@ export const prerender = true
     <!-- Highlights Strip -->
     <section class="py-16 md:py-20 px-4">
       <div class="max-w-5xl mx-auto">
-        <h2 class="text-center text-white text-2xl md:text-3xl font-bold mb-10">Built for the trail</h2>
+        <h2 class="text-center text-white text-2xl md:text-3xl font-bold mb-10">Be prepared to hit the trail</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-          <div class="rounded-xl border border-border bg-surface/40 p-5 md:p-6 text-center">
-            <div class="w-10 h-10 mx-auto mb-3 rounded-lg bg-primary/10 flex items-center justify-center">
-              <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" /></svg>
-            </div>
-            <div class="text-white font-semibold text-sm">Multi-Pack</div>
-            <p class="text-label text-xs mt-1 leading-snug">Multiple packs per trip</p>
-          </div>
           <div class="rounded-xl border border-border bg-surface/40 p-5 md:p-6 text-center">
             <div class="w-10 h-10 mx-auto mb-3 rounded-lg bg-primary/10 flex items-center justify-center">
               <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" /></svg>
@@ -696,6 +774,13 @@ export const prerender = true
             <div class="text-white font-semibold text-sm">Trip Details</div>
             <p class="text-label text-xs mt-1 leading-snug">Distance, elevation, terrain &amp; more</p>
           </div>
+          <div class="rounded-xl border border-border bg-surface/40 p-5 md:p-6 text-center">
+            <div class="w-10 h-10 mx-auto mb-3 rounded-lg bg-primary/10 flex items-center justify-center">
+              <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M23 4v6h-6M1 20v-6h6" /><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15" /></svg>
+            </div>
+            <div class="text-white font-semibold text-sm">Gear Lifecycle</div>
+            <p class="text-label text-xs mt-1 leading-snug">Track condition &amp; replacement</p>
+          </div>
         </div>
       </div>
     </section>
@@ -706,7 +791,7 @@ export const prerender = true
         <h2 class="text-3xl md:text-4xl text-white font-bold mb-4">Ready to lighten your load?</h2>
         <p class="text-lg mb-8 leading-relaxed">
           Join backpackers and ultralight hikers who plan smarter with
-          Packstack. Free to use, no credit card required.
+          Packstack.
         </p>
         <a
           href="https://app.packstack.io/auth/register"
@@ -719,4 +804,34 @@ export const prerender = true
 
     <PageFooter />
   </div>
+
+  <dialog id="img-modal" class="bg-transparent p-0 m-auto max-w-6xl w-[calc(100%-2rem)] backdrop:bg-black/80 backdrop:backdrop-blur-sm open:animate-[fade-in_150ms_ease-out]">
+    <div class="relative">
+      <button type="button" id="img-modal-close" class="absolute -top-10 right-0 text-white/70 hover:text-white text-sm font-medium cursor-pointer transition-colors">
+        Close <span class="ml-1 text-xs text-white/40">ESC</span>
+      </button>
+      <img id="img-modal-src" class="w-full rounded-xl" src="" alt="" />
+    </div>
+  </dialog>
+
+  <script>
+    const dialog = document.getElementById('img-modal') as HTMLDialogElement;
+    const modalImg = document.getElementById('img-modal-src') as HTMLImageElement;
+    const closeBtn = document.getElementById('img-modal-close')!;
+
+    document.querySelectorAll('.img-preview').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const img = btn.querySelector('img');
+        if (!img) return;
+        modalImg.src = img.currentSrc || img.src;
+        modalImg.alt = img.alt;
+        dialog.showModal();
+      });
+    });
+
+    closeBtn.addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', (e) => {
+      if (e.target === dialog) dialog.close();
+    });
+  </script>
 </BaseLayout>
