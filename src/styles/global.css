@@ -61,4 +61,8 @@
   a {
     @apply text-primary;
   }
+
+  cite {
+    font-style: normal;
+  }
 }

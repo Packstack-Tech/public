@@ -15,6 +15,7 @@ interface Props {
   slug: string
   subcategory: string
   category: string
+  initialData?: SubcategoryResponse | null
 }
 
 function weightToUserUnit(grams: number | null, targetUnit: Unit): number | null {
@@ -31,11 +32,11 @@ function computeMedian(values: number[]): number | null {
     : sorted[mid]
 }
 
-const GearTable: FC<Props> = ({ slug, subcategory }) => {
+const GearTable: FC<Props> = ({ slug, subcategory, initialData }) => {
   const { system, itemUnit, toggleSystem } = useUnitPreference()
 
-  const [data, setData] = useState<SubcategoryResponse | null>(null)
-  const [loading, setLoading] = useState(true)
+  const [data, setData] = useState<SubcategoryResponse | null>(initialData ?? null)
+  const [loading, setLoading] = useState(!initialData)
   const [error, setError] = useState(false)
 
   const [sortField, setSortField] = useState<SortField>("weight")
@@ -47,6 +48,7 @@ const GearTable: FC<Props> = ({ slug, subcategory }) => {
   const [weightMax, setWeightMax] = useState("")
 
   useEffect(() => {
+    if (initialData) return
     setLoading(true)
     setError(false)
     fetch(`${API_BASE}/resources/catalog/browse/${slug}`)
@@ -57,7 +59,7 @@ const GearTable: FC<Props> = ({ slug, subcategory }) => {
       .then((d) => setData(d))
       .catch(() => setError(true))
       .finally(() => setLoading(false))
-  }, [slug])
+  }, [slug, initialData])
 
   const allBrands = useMemo(() => {
     if (!data) return []

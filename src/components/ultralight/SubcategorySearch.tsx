@@ -10,19 +10,24 @@ type FlatEntry = {
   product_count: number
 }
 
-export default function SubcategorySearch() {
-  const [categories, setCategories] = useState<CategoryGroup[]>([])
+interface Props {
+  initialCategories?: CategoryGroup[]
+}
+
+export default function SubcategorySearch({ initialCategories }: Props) {
+  const [categories, setCategories] = useState<CategoryGroup[]>(initialCategories ?? [])
   const [query, setQuery] = useState("")
   const [open, setOpen] = useState(false)
   const [activeIdx, setActiveIdx] = useState(-1)
   const wrapperRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    if (initialCategories && initialCategories.length > 0) return
     fetch(`${API_BASE}/resources/catalog/categories`)
       .then((r) => r.json())
       .then(setCategories)
       .catch(() => {})
-  }, [])
+  }, [initialCategories])
 
   const flat = useMemo<FlatEntry[]>(() => {
     const entries: FlatEntry[] = []

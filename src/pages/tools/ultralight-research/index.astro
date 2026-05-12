@@ -3,9 +3,21 @@ import BaseLayout from "../../../layouts/BaseLayout.astro"
 import PageHeader from "../../../components/PageHeader.astro"
 import PageFooter from "../../../components/PageFooter.astro"
 import SubcategorySearch from "../../../components/ultralight/SubcategorySearch"
-import CategoryToc from "../../../components/ultralight/CategoryToc"
+import { API_BASE } from "../../../utils/catalog"
+import type { CategoryGroup } from "../../../types/catalog"
 
 export const prerender = true
+
+let categories: CategoryGroup[] = []
+try {
+  const res = await fetch(`${API_BASE}/resources/catalog/categories`)
+  if (res.ok) categories = await res.json()
+} catch {}
+
+const totalProducts = categories.reduce(
+  (sum, g) => sum + g.subcategories.reduce((s, sub) => s + sub.product_count, 0),
+  0,
+)
 ---
 
 <BaseLayout title="Ultralight Gear Research — Compare Backpacking Gear by Weight | Packstack" description="Browse thousands of backpacking products sorted by weight. Find the lightest tents, sleeping bags, stoves, and more with detailed specs and comparisons.">
@@ -17,7 +29,7 @@ export const prerender = true
       <h1 class="text-3xl md:text-4xl font-bold mb-2">Ultralight Gear Research</h1>
       <p class="text-lg mb-8 max-w-2xl">Browse and compare backpacking gear by weight. Search for a gear category or browse below to find the lightest options with detailed specs.</p>
 
-      <SubcategorySearch client:load />
+      <SubcategorySearch client:load initialCategories={categories} />
 
       <div class="mt-10">
         <h2 class="text-xl font-bold mb-4">Popular Categories</h2>
@@ -42,8 +54,62 @@ export const prerender = true
 
       <div class="mt-12">
         <h2 class="text-xl font-bold mb-6">Browse by Category</h2>
-        <CategoryToc client:load />
+        <div class="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+          {categories.map((group) => {
+            const groupTotal = group.subcategories.reduce((sum, s) => sum + s.product_count, 0)
+            return (
+              <div class="bg-surface border border-border rounded-lg overflow-hidden">
+                <div class="flex items-center justify-between px-4 py-3">
+                  <span class="flex items-center gap-2">
+                    <span class="text-white font-semibold text-sm">{group.category}</span>
+                    <span class="text-xs text-label tabular-nums">{groupTotal}</span>
+                  </span>
+                </div>
+                <div class="border-t border-border">
+                  {group.subcategories.map((sub) => (
+                    <a
+                      href={`/tools/ultralight-research/${sub.slug}`}
+                      class="flex items-center justify-between px-4 py-2 text-sm text-softwhite hover:text-white hover:bg-surface-light transition-colors no-underline"
+                    >
+                      <span>{sub.name}</span>
+                      <span class="text-xs text-label tabular-nums">{sub.product_count}</span>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )
+          })}
+        </div>
       </div>
+
+      <section class="mt-16">
+        <h2 class="text-2xl font-bold mb-4">Methodology</h2>
+        <div class="prose prose-invert prose-sm max-w-none">
+          <p>
+            The products in our database aren't selected at random. Every item is sourced from real ultralight
+            backpackers' packing lists built on Packstack. When hikers add gear to their loadouts, those products
+            feed into our catalog — so the database reflects what the community actually carries on trail, not
+            just what's available on store shelves.
+          </p>
+          <p>
+            Our ultralight gear database aggregates product specifications directly from manufacturer listings,
+            covering {totalProducts.toLocaleString()}+ products across {categories.length} categories. Each product's weight
+            is sourced from official specs and normalized to a consistent unit for accurate comparison.
+          </p>
+          <p>
+            When a product has multiple variants (e.g. different sizes or colorways), the <strong>lightest variant weight</strong> is
+            displayed in the comparison table. You can expand any product row to see individual variant weights and specifications.
+            The "vs Median" column shows how each product compares to the median weight in its subcategory, making it easy to
+            identify genuinely ultralight options at a glance.
+          </p>
+          <p>
+            Products are organized using the same category system as Packstack's
+            <a href="/" class="text-primary hover:text-primary/80">packing list builder</a>, so categories map directly to
+            how you think about your gear loadout. Our database is updated regularly as new products are added and existing
+            specs are verified.
+          </p>
+        </div>
+      </section>
     </main>
 
     <PageFooter />
