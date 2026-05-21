@@ -1,14 +1,14 @@
-import { useEffect, useState, useCallback } from "react"
-import { Flame, Loader2, Copy, Check } from "lucide-react"
+import { Flame } from "lucide-react"
 import type { Pack, PackItem } from "../types/pack"
 import type { Unit } from "../types/item"
 import { convertWeight } from "../utils/weight"
-import { useUnitPreference } from "../hooks/useUnitPreference"
 import { List } from "./List"
 import { WeightBreakdownDialog } from "./WeightBreakdownDialog"
 
 interface Props {
-  tripId: number
+  packs: Pack[]
+  aggregateUnit: Unit
+  itemUnit: Unit
 }
 
 function computeWeightSummary(items: PackItem[], aggregateUnit: Unit) {
@@ -20,7 +20,9 @@ function computeWeightSummary(items: PackItem[], aggregateUnit: Unit) {
   let total = 0
 
   for (const { item, quantity, worn: isWorn } of items) {
-    const w = convertWeight(item.weight || 0, item.unit, aggregateUnit).weight * quantity
+    const w =
+      convertWeight(item.weight || 0, item.unit, aggregateUnit).weight *
+      quantity
     total += w
     if (isWorn) {
       worn += w
@@ -37,83 +39,18 @@ function computeWeightSummary(items: PackItem[], aggregateUnit: Unit) {
   }
 
   const fmt = (v: number) => `${v.toFixed(2)} ${aggregateUnit}`
-  return { base: fmt(base), worn: fmt(worn), consumable: fmt(consumable), total: fmt(total), totalCalories: Math.round(totalCalories) }
+  return {
+    base: fmt(base),
+    worn: fmt(worn),
+    consumable: fmt(consumable),
+    total: fmt(total),
+    totalCalories: Math.round(totalCalories),
+  }
 }
 
-export default function PackingLists({ tripId }: Props) {
-  const { system, aggregateUnit, itemUnit, toggleSystem } = useUnitPreference()
-  const [packs, setPacks] = useState<Pack[] | null>(null)
-  const [error, setError] = useState(false)
-  const [copied, setCopied] = useState(false)
-
-  const apiUrl = `https://api.packstack.io/pack/trip/${tripId}/public`
-
-  const copyUrl = useCallback(() => {
-    navigator.clipboard.writeText(apiUrl).then(() => {
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
-    })
-  }, [apiUrl])
-
-  useEffect(() => {
-    let cancelled = false
-    fetch(`https://api.packstack.io/pack/trip/${tripId}/public`)
-      .then((res) => {
-        if (!res.ok) throw new Error("Failed to load packs")
-        return res.json()
-      })
-      .then((data) => {
-        if (!cancelled) setPacks(data)
-      })
-      .catch(() => {
-        if (!cancelled) setError(true)
-      })
-    return () => { cancelled = true }
-  }, [tripId])
-
-  if (error) {
-    return (
-      <p className="text-center text-label py-12">
-        Unable to load pack items. Please try refreshing the page.
-      </p>
-    )
-  }
-
-  if (!packs) {
-    return (
-      <div className="flex items-center justify-center py-16">
-        <Loader2 className="h-6 w-6 animate-spin text-primary" />
-      </div>
-    )
-  }
-
+export function PackingLists({ packs, aggregateUnit, itemUnit }: Props) {
   return (
     <div>
-      <div className="flex justify-end mb-4">
-        <div className="inline-flex rounded-md border border-border text-xs">
-          <button
-            onClick={toggleSystem}
-            className={`px-3 py-1.5 rounded-l-md transition-colors cursor-pointer ${
-              system === "metric"
-                ? "bg-primary text-white"
-                : "text-label hover:text-white"
-            }`}
-          >
-            Metric
-          </button>
-          <button
-            onClick={toggleSystem}
-            className={`px-3 py-1.5 rounded-r-md transition-colors cursor-pointer ${
-              system === "imperial"
-                ? "bg-primary text-white"
-                : "text-label hover:text-white"
-            }`}
-          >
-            Imperial
-          </button>
-        </div>
-      </div>
-
       {packs.map((pack) => {
         const summary = computeWeightSummary(pack.items, aggregateUnit)
         return (
@@ -124,56 +61,52 @@ export default function PackingLists({ tripId }: Props) {
                 <div className="flex flex-wrap items-center gap-x-6 gap-y-1">
                   <span>
                     <span className="text-label">Base</span>
-                    <span className="text-white font-semibold ml-1.5">{summary.base}</span>
+                    <span className="text-white font-semibold ml-1.5">
+                      {summary.base}
+                    </span>
                   </span>
                   <span>
                     <span className="text-label">Worn</span>
-                    <span className="text-white font-semibold ml-1.5">{summary.worn}</span>
+                    <span className="text-white font-semibold ml-1.5">
+                      {summary.worn}
+                    </span>
                   </span>
                   <span>
                     <span className="text-label">Consumable</span>
-                    <span className="text-white font-semibold ml-1.5">{summary.consumable}</span>
+                    <span className="text-white font-semibold ml-1.5">
+                      {summary.consumable}
+                    </span>
                   </span>
                   <span>
                     <span className="text-label">Total</span>
-                    <span className="text-primary font-bold ml-1.5">{summary.total}</span>
+                    <span className="text-primary font-bold ml-1.5">
+                      {summary.total}
+                    </span>
                   </span>
                   {summary.totalCalories > 0 && (
                     <span className="inline-flex items-center gap-1">
                       <Flame size={13} className="text-orange-400" />
                       <span className="text-label">Calories</span>
-                      <span className="text-orange-400 font-bold ml-0.5">{summary.totalCalories.toLocaleString()} kcal</span>
+                      <span className="text-orange-400 font-bold ml-0.5">
+                        {summary.totalCalories.toLocaleString()} kcal
+                      </span>
                     </span>
                   )}
                 </div>
-                <WeightBreakdownDialog items={pack.items} aggregateUnit={aggregateUnit} />
+                <WeightBreakdownDialog
+                  items={pack.items}
+                  aggregateUnit={aggregateUnit}
+                />
               </div>
             )}
-            <List items={pack.items} aggregateUnit={aggregateUnit} itemUnit={itemUnit} />
+            <List
+              items={pack.items}
+              aggregateUnit={aggregateUnit}
+              itemUnit={itemUnit}
+            />
           </div>
         )
       })}
-
-      <div className="mt-4 border-t border-border pt-6 pb-2">
-        <p className="text-xs text-label mb-2">
-          Want the raw data? Retrieve this packing list from the endpoint below.
-        </p>
-        <div className="flex items-stretch">
-          <input
-            type="text"
-            readOnly
-            value={apiUrl}
-            className="flex-1 bg-surface border border-border rounded-l-md px-3 py-2 text-xs text-softwhite font-mono select-all focus:outline-none"
-          />
-          <button
-            onClick={copyUrl}
-            className="flex items-center gap-1.5 bg-surface border border-l-0 border-border rounded-r-md px-3 text-xs text-label hover:text-white transition-colors cursor-pointer"
-          >
-            {copied ? <Check size={14} className="text-green-400" /> : <Copy size={14} />}
-            {copied ? "Copied!" : "Copy"}
-          </button>
-        </div>
-      </div>
     </div>
   )
 }

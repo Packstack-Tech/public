@@ -101,9 +101,9 @@ export const WeightBreakdownDialog: FC<Props> = ({ items, aggregateUnit }) => {
     <>
       <button
         onClick={() => setOpen(true)}
-        className="flex gap-1 items-center text-primary hover:text-primary-light transition-colors whitespace-nowrap cursor-pointer"
+        className="flex gap-1 items-center text-xs text-primary hover:text-primary-light transition-colors whitespace-nowrap cursor-pointer"
       >
-        <PieChart size={12} /> View Weight Breakdown
+        <PieChart size={11} /> Weight Breakdown
       </button>
 
       {open && (

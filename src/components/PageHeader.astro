@@ -1,6 +1,6 @@
 ---
 interface Props {
-  maxWidth?: "3xl" | "5xl" | "6xl"
+  maxWidth?: "3xl" | "5xl" | "6xl" | "full"
 }
 
 const { maxWidth = "5xl" } = Astro.props
@@ -8,6 +8,7 @@ const maxWidthClasses: Record<string, string> = {
   "3xl": "max-w-3xl",
   "5xl": "max-w-5xl",
   "6xl": "max-w-6xl",
+  "full": "",
 }
 const maxWidthClass = maxWidthClasses[maxWidth]
 ---
