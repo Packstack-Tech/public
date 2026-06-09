@@ -4,6 +4,7 @@ import PageHeader from "../../../components/PageHeader.astro"
 import PageFooter from "../../../components/PageFooter.astro"
 import GearTable from "../../../components/ultralight/GearTable"
 import { API_BASE, getAllSubcategories } from "../../../utils/catalog"
+import VigLinkScript from "../../../components/VigLinkScript.astro"
 
 export const prerender = true
 
@@ -64,4 +65,5 @@ const jsonLd = initialData ? JSON.stringify({
     <PageFooter />
   </div>
   {jsonLd && <script type="application/ld+json" set:html={jsonLd} slot="head" />}
+  <VigLinkScript slot="body-scripts" />
 </BaseLayout>
