@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets"
+import googlePlayBadge from "../assets/GetItOnGooglePlay_Badge_Web_color_English.png"
 import dashboardImg from "../assets/ultralight-backpacking-list-tool.png"
 import inventoryImg from "../assets/ultralight-gear-closet.png"
 import weightImg from "../assets/pack-weight-breakdown.png"
@@ -8,41 +9,161 @@ import PageHeader from "../components/PageHeader.astro"
 import PageFooter from "../components/PageFooter.astro"
 
 export const prerender = true
+
+// --- Generative mountain ridge -------------------------------------------
+// Rendered at build time: layered value noise traces a main ridge line,
+// then repeats it downward with re-noised trajectories and fading opacity,
+// like elevation contours falling away from the ridge.
+
+function mulberry32(seed: number) {
+  return () => {
+    seed |= 0
+    seed = (seed + 0x6d2b79f5) | 0
+    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed)
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296
+  }
+}
+
+function makeNoise(seed: number) {
+  const rand = mulberry32(seed)
+  const grid = Array.from({ length: 256 }, () => rand())
+  return (x: number) => {
+    const i = Math.floor(x)
+    const f = x - i
+    const u = f * f * (3 - 2 * f) // smoothstep
+    return grid[i & 255] * (1 - u) + grid[(i + 1) & 255] * u
+  }
+}
+
+const RIDGE_W = 1600
+const RIDGE_H = 460
+const RIDGE_LINES = 26
+const noise = makeNoise(42)
+
+const ridgeLines = Array.from({ length: RIDGE_LINES }, (_, line) => {
+  const baseY = 165 + line * 11
+  // The ridge crest is brightest; lines fade as they descend
+  const opacity = line === 0 ? 0.5 : 0.3 * (1 - line / RIDGE_LINES)
+  const pts: string[] = []
+  for (let x = 0; x <= RIDGE_W; x += 8) {
+    // fBm: broad hills + medium ridges + fine jitter, with a per-line
+    // offset so each contour drifts slightly off the one above it
+    const y =
+      baseY -
+      noise(x * 0.0035 + line * 0.16) * 105 -
+      noise(x * 0.014 + line * 0.42) * 32 -
+      noise(x * 0.055 + line * 1.1) * 9
+    pts.push(`${x},${y.toFixed(1)}`)
+  }
+  return { points: pts.join(" "), opacity: Number(opacity.toFixed(3)) }
+})
+
+// --- FAQ -------------------------------------------------------------------
+
+const faqs = [
+  {
+    q: "Is Packstack free?",
+    a: "Packstack is free to start. Create an account and begin building your gear inventory and packing lists, no credit card required. Packstack Pro unlocks additional features like Kits, the Calorie Calculator, and unlimited trip planning.",
+  },
+  {
+    q: "Can I import my gear list from LighterPack?",
+    a: "Yes. Export your LighterPack list as a CSV and import it into Packstack in seconds. Your items, categories, and weights come along with it.",
+  },
+  {
+    q: "Is there a mobile app?",
+    a: "Yes. Packstack is available on iOS and Android, and the web app works on any device. Build your list at home, then check items off from your phone as you pack.",
+  },
+  {
+    q: "How is the calorie estimate calculated?",
+    a: "Packstack combines your body stats (weight, height, age, sex, body type) with your trip details (distance, elevation gain, terrain, pace, temperature, and pack weight) to estimate your daily calorie burn, food weight, and water needs.",
+  },
+  {
+    q: "What's the difference between base weight, worn weight, and consumables?",
+    a: "Base weight is everything in your pack excluding food, water, and fuel. Worn weight covers items you wear or carry on your body, like shoes and trekking poles. Consumables are things you use up along the way. Packstack tracks all three separately so you know exactly what you're hauling.",
+  },
+]
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map(({ q, a }) => ({
+    "@type": "Question",
+    name: q,
+    acceptedAnswer: { "@type": "Answer", text: a },
+  })),
+}
 ---
 
 <BaseLayout title="Packstack | The Backpacking Planning App">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
   <div class="bg-background">
     <PageHeader maxWidth="6xl" />
 
     <!-- Hero -->
-    <section class="pt-16 pb-8 md:pt-24 md:pb-16 px-4">
-      <div class="max-w-4xl mx-auto text-center">
+    <section class="relative pt-16 pb-8 md:pt-24 md:pb-16 px-4 overflow-hidden">
+      <!-- Generative ridge backdrop -->
+      <div class="absolute inset-x-0 top-0 h-[300px] md:h-[460px] pointer-events-none" aria-hidden="true">
+        <svg
+          viewBox={`0 0 ${RIDGE_W} ${RIDGE_H}`}
+          preserveAspectRatio="xMidYMin slice"
+          class="w-full h-full text-primary"
+        >
+          {ridgeLines.map(({ points, opacity }) => (
+            <polyline
+              points={points}
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              opacity={opacity}
+            />
+          ))}
+        </svg>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/30 to-background"></div>
+      </div>
+
+      <div class="relative max-w-4xl mx-auto text-center">
+        <p class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-softwhite border border-border rounded-full px-4 py-1.5 mb-6 bg-background/60 backdrop-blur-sm">
+          Free
+          <span class="text-label">&middot;</span>
+          Web
+          <span class="text-label">&middot;</span>
+          iOS
+          <span class="text-label">&middot;</span>
+          Android
+        </p>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-          Plan Lighter. Pack Smarter.<br class="hidden sm:block" />
+          Pack Lighter. Plan Smarter.<br class="hidden sm:block" />
           Hike Further.
         </h1>
-        <p class="mt-6 text-lg md:text-xl max-w-lg mx-auto leading-relaxed">
-          The packing list and gear management app built for backpackers
-          and ultralight hikers.
+        <p class="mt-6 text-lg md:text-xl max-w-xl mx-auto leading-relaxed">
+          Track every gram of gear, build packing lists in minutes, and know
+          exactly how much food and water to carry. No spreadsheets required.
         </p>
         <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="https://app.packstack.io/auth/register"
             class="bg-primary hover:bg-primary-dark text-white rounded-md py-3 px-8 font-bold text-lg transition-colors no-underline w-full sm:w-auto text-center"
           >
-            Get Started
+            Get Started for Free
           </a>
           <a
             href="/tools/ultralight-research"
-            class="border border-border hover:border-softwhite text-softwhite hover:text-white rounded-md py-3 px-8 font-semibold text-lg transition-colors no-underline w-full sm:w-auto text-center"
+            class="border border-border hover:border-softwhite text-softwhite hover:text-white rounded-md py-3 px-8 font-semibold text-lg transition-colors no-underline w-full sm:w-auto text-center bg-background/60 backdrop-blur-sm"
           >
-            Research Gear <svg class="w-4 h-4 inline-block ml-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7" /></svg>
+            Browse the Gear Database <svg class="w-4 h-4 inline-block ml-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7" /></svg>
           </a>
         </div>
+        <p class="mt-4 text-sm text-label">
+          Free to start &middot; No credit card required
+        </p>
       </div>
 
       <!-- Dashboard screenshot in browser frame -->
-      <div class="max-w-6xl mx-auto mt-12 md:mt-16">
+      <div class="relative max-w-6xl mx-auto mt-12 md:mt-16">
         <div class="rounded-xl border border-border overflow-hidden shadow-2xl shadow-primary-glow">
           <div class="bg-surface flex items-center gap-2 px-4 py-2.5">
             <span class="w-3 h-3 rounded-full bg-accent-red/60"></span>
@@ -50,7 +171,7 @@ export const prerender = true
             <span class="w-3 h-3 rounded-full bg-accent-green/60"></span>
             <span class="ml-4 text-label text-xs font-mono">app.packstack.io</span>
           </div>
-          <button type="button" class="img-preview w-full cursor-pointer">
+          <button type="button" class="img-preview w-full cursor-pointer" aria-label="Enlarge dashboard screenshot">
             <Image
               src={dashboardImg}
               alt="Packstack dashboard showing a packing list with categorized gear, weights, and trip details"
@@ -61,6 +182,17 @@ export const prerender = true
       </div>
     </section>
 
+    <!-- Social proof -->
+    <section class="py-8 md:py-10 px-4 border-y border-border/60 bg-surface/20">
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="text-lg md:text-xl text-softwhite">
+          Trusted by <span class="text-white font-bold">3,000+ backpackers</span>,
+          from weekend warriors to thru-hikers, to plan lighter,
+          better-organized packs.
+        </p>
+      </div>
+    </section>
+
     <!-- Features -->
     <div id="features" class="scroll-mt-20">
 
@@ -68,11 +200,11 @@ export const prerender = true
       <section class="py-16 md:py-24 px-4">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div class="md:w-5/12">
-            <h2 class="text-xs uppercase tracking-widest mb-3 font-semibold">Gear Inventory</h2>
-            <h3 class="text-2xl md:text-3xl leading-snug mb-4">Every gram accounted for</h3>
+            <p class="text-primary text-xs uppercase tracking-widest mb-3 font-semibold">Gear Inventory</p>
+            <h2 class="text-white text-2xl md:text-3xl leading-snug mb-4">Every gram accounted for</h2>
             <p class="mb-5">
               Build a comprehensive gear inventory with detailed specs for every
-              item — weight, brand, product, price, and category. Your inventory
+              item: weight, brand, product, price, and category. Your inventory
               is always at your fingertips when building packing lists.
             </p>
             <ul class="space-y-2.5 text-softwhite text-sm">
@@ -95,7 +227,7 @@ export const prerender = true
             </ul>
           </div>
           <div class="md:w-7/12">
-            <button type="button" class="img-preview rounded-xl border border-border overflow-hidden cursor-pointer block w-full">
+            <button type="button" class="img-preview rounded-xl border border-border overflow-hidden cursor-pointer block w-full" aria-label="Enlarge gear inventory screenshot">
               <Image
                 src={inventoryImg}
                 alt="Packstack gear inventory showing categorized backpacking equipment with weights and product details"
@@ -106,98 +238,15 @@ export const prerender = true
         </div>
       </section>
 
-      <!-- Feature: Gear Lifecycle -->
+      <!-- Feature: Pack List Builder -->
       <section class="py-16 md:py-24 px-4 bg-surface/30">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
           <div class="md:w-5/12">
-            <h2 class="text-xs uppercase tracking-widest mb-3 font-semibold">Gear Lifecycle</h2>
-            <h3 class="text-2xl md:text-3xl leading-snug mb-4">Know when it&rsquo;s time to replace</h3>
-            <p class="mb-5">
-              Track the condition of every item from day one. Packstack
-              calculates a replacement score based on age, expected lifespan,
-              and current condition &mdash; so you always know which gear is
-              trail-ready and which is due for an upgrade.
-            </p>
-            <ul class="space-y-2.5 text-softwhite text-sm">
-              <li class="flex items-start gap-2.5">
-                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
-                Condition tracking: New, Good, Fair, Worn
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
-                Replacement score with category benchmarks
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
-                Activity log for repairs, condition changes, and notes
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
-                Dashboard alerts when gear needs attention
-              </li>
-            </ul>
-          </div>
-          <div class="md:w-7/12 flex justify-center md:justify-start">
-            <!-- CSS-only lifecycle mock -->
-            <div class="rounded-xl border border-border bg-background overflow-hidden w-full max-w-md select-none" aria-hidden="true">
-              <div class="bg-surface px-5 py-3 border-b border-border flex items-center gap-2.5">
-                <svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M23 4v6h-6M1 20v-6h6" /><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15" /></svg>
-                <span class="font-semibold text-white text-sm">Trail Runner Pro</span>
-                <span class="ml-auto text-[10px] text-accent-orange font-semibold uppercase tracking-wide bg-accent-orange/10 rounded-full px-2 py-0.5">Replace Soon</span>
-              </div>
-              <!-- Replacement score -->
-              <div class="px-5 py-4 border-b border-border">
-                <div class="flex items-center justify-between mb-2">
-                  <span class="text-xs text-label">Replacement Score</span>
-                  <span class="text-sm font-bold text-accent-orange tabular-nums">72%</span>
-                </div>
-                <div class="w-full h-2 bg-surface rounded-full overflow-hidden">
-                  <div class="h-full bg-accent-orange rounded-full" style="width: 72%"></div>
-                </div>
-              </div>
-              <!-- Stats grid -->
-              <div class="px-5 py-3 grid grid-cols-3 gap-3 border-b border-border">
-                <div>
-                  <div class="text-[10px] text-label uppercase tracking-wide">Condition</div>
-                  <div class="text-white font-semibold text-sm">Fair</div>
-                </div>
-                <div>
-                  <div class="text-[10px] text-label uppercase tracking-wide">Age</div>
-                  <div class="text-white font-semibold text-sm">2.4 yrs</div>
-                </div>
-                <div>
-                  <div class="text-[10px] text-label uppercase tracking-wide">Lifespan</div>
-                  <div class="text-white font-semibold text-sm">3 yrs</div>
-                </div>
-              </div>
-              <!-- Activity log -->
-              <div class="px-5 py-3">
-                <div class="text-[10px] text-label uppercase tracking-wide mb-2">Activity Log</div>
-                <div class="space-y-2">
-                  <div class="flex items-start gap-2.5 text-xs">
-                    <span class="text-label tabular-nums shrink-0">Apr 8</span>
-                    <span class="text-white">Condition changed from Good &rarr; Fair</span>
-                  </div>
-                  <div class="flex items-start gap-2.5 text-xs">
-                    <span class="text-label tabular-nums shrink-0">Jan 12</span>
-                    <span class="text-white">Repaired &mdash; patched toe box delamination</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Feature: Pack List Builder -->
-      <section class="py-16 md:py-24 px-4">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
-          <div class="md:w-5/12">
-            <h2 class="text-xs uppercase tracking-widest mb-3 font-semibold">Pack List Builder</h2>
-            <h3 class="text-2xl md:text-3xl leading-snug mb-4">Build the perfect pack</h3>
+            <p class="text-primary text-xs uppercase tracking-widest mb-3 font-semibold">Pack List Builder</p>
+            <h2 class="text-white text-2xl md:text-3xl leading-snug mb-4">Build the perfect pack</h2>
             <p class="mb-5">
               Ditch the spreadsheets. Drag items from your inventory, organize
-              by category, and fine-tune quantities — all in a clean,
+              by category, and fine-tune quantities, all in a clean,
               purpose-built interface. Create multiple packs per trip for base
               camp and day hike setups.
             </p>
@@ -309,11 +358,11 @@ export const prerender = true
       </section>
 
       <!-- Feature: Weight Analysis -->
-      <section class="py-16 md:py-24 px-4 bg-surface/30">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+      <section class="py-16 md:py-24 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div class="md:w-5/12">
-            <h2 class="text-xs uppercase tracking-widest mb-3 font-semibold">Weight Analysis</h2>
-            <h3 class="text-2xl md:text-3xl leading-snug mb-4">Know your base weight</h3>
+            <p class="text-primary text-xs uppercase tracking-widest mb-3 font-semibold">Weight Analysis</p>
+            <h2 class="text-white text-2xl md:text-3xl leading-snug mb-4">Know your base weight</h2>
             <p class="mb-5">
               Instantly see how your weight is distributed across categories.
               Packstack separates base weight, worn weight, and consumables so
@@ -335,7 +384,7 @@ export const prerender = true
             </ul>
           </div>
           <div class="md:w-7/12">
-            <button type="button" class="img-preview rounded-xl border border-border overflow-hidden cursor-pointer block w-full">
+            <button type="button" class="img-preview rounded-xl border border-border overflow-hidden cursor-pointer block w-full" aria-label="Enlarge weight breakdown screenshot">
               <Image
                 src={weightImg}
                 alt="Weight breakdown pie chart showing pack weight distribution by category with totals"
@@ -346,152 +395,29 @@ export const prerender = true
         </div>
       </section>
 
-      <!-- Feature: Trip Planning -->
-      <section class="py-16 md:py-24 px-4">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
-          <div class="md:w-5/12">
-            <h2 class="text-xs uppercase tracking-widest mb-3 font-semibold">Trip Planning</h2>
-            <h3 class="text-2xl md:text-3xl leading-snug mb-4">Plan beyond the packing list</h3>
-            <p class="mb-5">
-              Capture everything about your trip &mdash; location, dates, distance,
-              daily elevation gain, terrain type, pace, and expected temperatures.
-              These details power the calorie calculator so your food plan matches
-              the trail ahead.
-            </p>
-            <ul class="space-y-2.5 text-softwhite text-sm">
-              <li class="flex items-start gap-2.5">
-                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
-                Distance, elevation gain, and terrain
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
-                Pace and temperature range
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
-                Multi-day date ranges
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
-                Notes for trail conditions and tips
-              </li>
-            </ul>
-          </div>
-          <div class="md:w-7/12 flex justify-center md:justify-start">
-            <!-- CSS-only trip details mock -->
-            <div class="rounded-xl border border-border bg-background overflow-hidden w-full max-w-md select-none" aria-hidden="true">
-              <div class="bg-surface px-5 py-4 border-b border-border">
-                <div class="flex items-center gap-3">
-                  <svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" /></svg>
-                  <div class="min-w-0">
-                    <div class="font-semibold text-white text-sm truncate">John Muir Trail &mdash; Southbound</div>
-                    <div class="text-label text-xs mt-0.5">Jul 15 &ndash; Aug 2, 2026 &middot; 19 days</div>
-                  </div>
-                </div>
-              </div>
-              <div class="px-5 py-4">
-                <div class="grid grid-cols-2 gap-x-6 gap-y-3">
-                  <div>
-                    <div class="text-[10px] text-label uppercase tracking-wide">Distance</div>
-                    <div class="text-white font-semibold text-sm">211 mi</div>
-                  </div>
-                  <div>
-                    <div class="text-[10px] text-label uppercase tracking-wide">Elev. Gain</div>
-                    <div class="text-white font-semibold text-sm">2,400 ft/day</div>
-                  </div>
-                  <div>
-                    <div class="text-[10px] text-label uppercase tracking-wide">Terrain</div>
-                    <div class="text-white font-semibold text-sm">Rugged</div>
-                  </div>
-                  <div>
-                    <div class="text-[10px] text-label uppercase tracking-wide">Pace</div>
-                    <div class="text-white font-semibold text-sm">Moderate (3 mph)</div>
-                  </div>
-                  <div>
-                    <div class="text-[10px] text-label uppercase tracking-wide">Temperature</div>
-                    <div class="text-white font-semibold text-sm">32&ndash;75&deg;F</div>
-                  </div>
-                  <div>
-                    <div class="text-[10px] text-label uppercase tracking-wide">Temp Category</div>
-                    <div class="text-white font-semibold text-sm">Moderate</div>
-                  </div>
-                </div>
-              </div>
-              <div class="bg-surface/60 px-5 py-3 border-t border-border">
-                <div class="text-xs text-label italic">High passes may hold snow through mid-July. Bring microspikes.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Feature: Hiker Profiles -->
-      <section class="py-16 md:py-24 px-4 bg-surface/30">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
-          <div class="md:w-5/12">
-            <h2 class="text-xs uppercase tracking-widest mb-3 font-semibold">Hiker Profiles</h2>
-            <h3 class="text-2xl md:text-3xl leading-snug mb-4">Your stats, your estimate</h3>
-            <p class="mb-5">
-              Create hiker profiles with your weight, height, age, sex, and body
-              type. Assign a profile to any pack &mdash; perfect for couples or
-              groups. Your stats feed directly into the calorie calculator for
-              personalized daily estimates.
-            </p>
-            <ul class="space-y-2.5 text-softwhite text-sm">
-              <li class="flex items-start gap-2.5">
-                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
-                Weight, height, age, sex, and body type
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
-                Assign profiles to individual packs
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
-                Powers personalized calorie estimates
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
-                Set a default profile
-              </li>
-            </ul>
-          </div>
-          <div class="md:w-7/12">
-            <!-- CSS-only hiker profiles mock -->
-            <div class="rounded-xl border border-border bg-background overflow-hidden select-none" aria-hidden="true">
-              <div class="bg-surface px-5 py-3 border-b border-border flex items-center gap-2.5">
-                <svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" /></svg>
-                <span class="font-semibold text-white text-sm">Hiker Profiles</span>
-              </div>
-              <div class="divide-y divide-border/40">
-                <div class="px-5 py-3">
-                  <div class="flex items-center justify-between mb-1">
-                    <span class="text-white font-semibold text-sm">Sarah</span>
-                    <span class="text-[10px] text-primary font-semibold uppercase tracking-wide bg-primary/10 rounded-full px-2 py-0.5">Default</span>
-                  </div>
-                  <div class="text-label text-xs">135 lb &middot; 5&rsquo;6&rdquo; &middot; Age 32 &middot; Female &middot; Average</div>
-                </div>
-                <div class="px-5 py-3">
-                  <div class="flex items-center justify-between mb-1">
-                    <span class="text-white font-semibold text-sm">Mike</span>
-                  </div>
-                  <div class="text-label text-xs">185 lb &middot; 5&rsquo;11&rdquo; &middot; Age 34 &middot; Male &middot; High Muscle</div>
-                </div>
-              </div>
-              <div class="bg-surface/60 px-5 py-3 border-t border-border flex justify-end">
-                <div class="bg-primary text-white text-xs font-semibold rounded-md px-4 py-2">+ Add Profile</div>
-              </div>
-            </div>
-          </div>
+      <!-- Mid-page CTA -->
+      <section class="py-14 md:py-16 px-4 bg-primary/5 border-y border-border">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2 class="text-white text-2xl md:text-3xl font-bold mb-3">Ready to see what your pack really weighs?</h2>
+          <p class="mb-6">
+            Import your gear or start from scratch. You&rsquo;ll have a
+            packing list in minutes.
+          </p>
+          <a
+            href="https://app.packstack.io/auth/register"
+            class="inline-block bg-primary hover:bg-primary-dark text-white rounded-md py-3 px-8 font-bold transition-colors no-underline"
+          >
+            Start for Free
+          </a>
         </div>
       </section>
 
       <!-- Feature: Calorie Calculator -->
-      <section class="py-16 md:py-24 px-4">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
+      <section class="py-16 md:py-24 px-4 bg-surface/30">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
           <div class="md:w-5/12">
-            <h2 class="text-xs uppercase tracking-widest mb-3 font-semibold">Calorie Calculator</h2>
-            <h3 class="text-2xl md:text-3xl leading-snug mb-4">Know how much fuel you need</h3>
+            <p class="text-primary text-xs uppercase tracking-widest mb-3 font-semibold">Calorie Calculator</p>
+            <h2 class="text-white text-2xl md:text-3xl leading-snug mb-4">Know how much fuel you need</h2>
             <p class="mb-5">
               Packstack estimates your daily calorie needs based on your body
               stats, pack weight, trail distance, elevation gain, terrain, pace,
@@ -517,7 +443,7 @@ export const prerender = true
               </li>
             </ul>
           </div>
-          <div class="md:w-7/12 flex justify-center md:justify-start">
+          <div class="md:w-7/12 flex justify-center">
             <!-- CSS-only calorie estimate mock -->
             <div class="rounded-xl border border-border bg-background overflow-hidden w-full max-w-md select-none" aria-hidden="true">
               <div class="bg-surface px-5 py-3 border-b border-border flex items-center gap-2">
@@ -525,7 +451,7 @@ export const prerender = true
                 <span class="font-semibold text-white text-sm">Calorie Estimate</span>
               </div>
               <div class="px-5 py-2 border-b border-border bg-surface/50">
-                <div class="text-xs text-label">Sarah &mdash; JMT Southbound</div>
+                <div class="text-xs text-label">Sarah &middot; JMT Southbound</div>
               </div>
               <div class="px-5 py-3 space-y-1">
                 <div class="flex justify-between py-0.5 border-b border-border pb-2 mb-1">
@@ -589,143 +515,175 @@ export const prerender = true
         </div>
       </section>
 
-      <!-- Feature: Gear Kits -->
-      <section class="py-16 md:py-24 px-4 bg-surface/30">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
-          <div class="md:w-5/12">
-            <h2 class="text-xs uppercase tracking-widest mb-3 font-semibold">Gear Kits</h2>
-            <h3 class="text-2xl md:text-3xl leading-snug mb-4">Bundle once, load anywhere</h3>
-            <p class="mb-5">
-              Group the items you always carry together into reusable kits &mdash;
-              a first aid kit, cook system, or shelter setup. When building a
-              packing list, load an entire kit with one click and every item
-              lands in your pack with the right quantities.
+      <!-- LighterPack migration callout -->
+      <section class="py-16 md:py-20 px-4">
+        <div class="max-w-4xl mx-auto rounded-2xl border border-border bg-surface/40 p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10">
+          <div class="flex-1">
+            <p class="text-primary text-xs uppercase tracking-widest mb-3 font-semibold">Switching from LighterPack?</p>
+            <h2 class="text-white text-2xl md:text-3xl leading-snug mb-3">Bring your entire gear list with you</h2>
+            <p>
+              Export your LighterPack list as a CSV and import it into Packstack
+              in under a minute, with items, categories, and weights included.
+              Then pick up everything LighterPack doesn&rsquo;t do: gear condition
+              tracking, calorie planning, kits, and a mobile app.
             </p>
-            <ul class="space-y-2.5 text-softwhite text-sm">
-              <li class="flex items-start gap-2.5">
-                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
-                Set per-item quantities (e.g. stakes &times;6)
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
-                One-click loading into any packing list
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
-                Reuse across trips without rebuilding
-              </li>
-            </ul>
           </div>
-          <div class="md:w-7/12">
-            <!-- CSS-only kit mock -->
-            <div class="rounded-xl border border-border bg-background overflow-hidden select-none" aria-hidden="true">
-              <div class="bg-surface px-5 py-3 border-b border-border flex items-center justify-between">
-                <div class="flex items-center gap-2.5">
-                  <svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" /></svg>
-                  <span class="font-semibold text-white text-sm">First Aid Kit</span>
-                </div>
-                <span class="text-xs text-label">6 items</span>
+          <div class="flex flex-col gap-3 w-full md:w-auto shrink-0">
+            <a
+              href="https://app.packstack.io/auth/register"
+              class="bg-primary hover:bg-primary-dark text-white rounded-md py-2.5 px-6 font-bold transition-colors no-underline text-center"
+            >
+              Import Your Gear List
+            </a>
+            <a
+              href="/learn/packstack-the-modern-alternative-to-lighterpack"
+              class="text-softwhite hover:text-white text-sm font-semibold text-center transition-colors"
+            >
+              See how Packstack compares &rarr;
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secondary features grid -->
+      <section class="py-16 md:py-24 px-4 bg-surface/30">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-center text-white text-2xl md:text-3xl font-bold mb-3">Everything else you need to hit the trail</h2>
+          <p class="text-center max-w-xl mx-auto mb-12">
+            Beyond the packing list, Packstack helps you manage the full life of
+            your gear and every detail of your trip.
+          </p>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            <div class="rounded-xl border border-border bg-background/60 p-6">
+              <div class="w-10 h-10 mb-4 rounded-lg bg-primary/10 flex items-center justify-center">
+                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M23 4v6h-6M1 20v-6h6" /><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15" /></svg>
               </div>
-              <div class="divide-y divide-border/40">
-                <div class="flex items-center justify-between px-5 py-2.5 text-sm">
-                  <span class="text-white">Adhesive bandages</span>
-                  <span class="text-label tabular-nums">&times;10</span>
-                </div>
-                <div class="flex items-center justify-between px-5 py-2.5 text-sm">
-                  <span class="text-white">Gauze roll</span>
-                  <span class="text-label tabular-nums">&times;2</span>
-                </div>
-                <div class="flex items-center justify-between px-5 py-2.5 text-sm">
-                  <span class="text-white">Medical tape</span>
-                  <span class="text-label tabular-nums">&times;1</span>
-                </div>
-                <div class="flex items-center justify-between px-5 py-2.5 text-sm">
-                  <span class="text-white">Antiseptic wipes</span>
-                  <span class="text-label tabular-nums">&times;8</span>
-                </div>
-                <div class="flex items-center justify-between px-5 py-2.5 text-sm">
-                  <span class="text-white">Ibuprofen</span>
-                  <span class="text-label tabular-nums">&times;12</span>
-                </div>
-                <div class="flex items-center justify-between px-5 py-2.5 text-sm">
-                  <span class="text-white">Blister gel</span>
-                  <span class="text-label tabular-nums">&times;1</span>
-                </div>
+              <h3 class="text-base">Gear Lifecycle</h3>
+              <p class="text-sm leading-relaxed">
+                Track condition from day one. A replacement score based on age,
+                lifespan, and wear tells you when gear is due for an upgrade.
+              </p>
+            </div>
+            <div class="rounded-xl border border-border bg-background/60 p-6">
+              <div class="w-10 h-10 mb-4 rounded-lg bg-primary/10 flex items-center justify-center">
+                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21" /><line x1="9" y1="3" x2="9" y2="18" /><line x1="15" y1="6" x2="15" y2="21" /></svg>
               </div>
-              <div class="bg-surface/60 px-5 py-3 border-t border-border flex justify-end">
-                <div class="bg-primary text-white text-xs font-semibold rounded-md px-4 py-2">Load Kit</div>
+              <h3 class="text-base">Trip Planning</h3>
+              <p class="text-sm leading-relaxed">
+                Capture distance, elevation gain, terrain, pace, and expected
+                temperatures: the details that power your calorie estimates.
+              </p>
+            </div>
+            <div class="rounded-xl border border-border bg-background/60 p-6">
+              <div class="w-10 h-10 mb-4 rounded-lg bg-primary/10 flex items-center justify-center">
+                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" /></svg>
               </div>
+              <h3 class="text-base">Hiker Profiles</h3>
+              <p class="text-sm leading-relaxed">
+                Set body stats for each hiker and assign profiles to individual
+                packs. Perfect for couples and groups.
+              </p>
+            </div>
+            <div class="rounded-xl border border-border bg-background/60 p-6">
+              <div class="w-10 h-10 mb-4 rounded-lg bg-primary/10 flex items-center justify-center">
+                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" /></svg>
+              </div>
+              <h3 class="text-base">Gear Kits</h3>
+              <p class="text-sm leading-relaxed">
+                Bundle items you always carry together, like a first aid kit or
+                cook system, and load them into any list with one click.
+              </p>
+            </div>
+            <div class="rounded-xl border border-border bg-background/60 p-6">
+              <div class="w-10 h-10 mb-4 rounded-lg bg-primary/10 flex items-center justify-center">
+                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3" /><circle cx="6" cy="12" r="3" /><circle cx="18" cy="19" r="3" /><line x1="8.59" y1="13.51" x2="15.42" y2="17.49" /><line x1="15.41" y1="6.51" x2="8.59" y2="10.49" /></svg>
+              </div>
+              <h3 class="text-base">Share Your Setup</h3>
+              <p class="text-sm leading-relaxed">
+                Generate a link to any trip and share a clean, read-only view of
+                your packing list with full weight breakdowns.
+              </p>
+            </div>
+            <div class="rounded-xl border border-border bg-background/60 p-6">
+              <div class="w-10 h-10 mb-4 rounded-lg bg-primary/10 flex items-center justify-center">
+                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4" /><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" /></svg>
+              </div>
+              <h3 class="text-base">Checklist Mode</h3>
+              <p class="text-sm leading-relaxed">
+                Turn any packing list into a checklist and tick items off as
+                they go into the pack. Nothing gets left behind.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Feature: Share Your Packs -->
+      <!-- Mobile apps -->
       <section class="py-16 md:py-24 px-4">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
-          <div class="md:w-5/12">
-            <h2 class="text-xs uppercase tracking-widest mb-3 font-semibold">Sharing</h2>
-            <h3 class="text-2xl md:text-3xl leading-snug mb-4">Share your setup</h3>
-            <p class="mb-5">
-              Generate a shareable link for any trip and send it to friends,
-              post it on Reddit, or embed it in your trail journal. Recipients
-              see a clean, read-only view of your complete packing list with
-              weight breakdowns included.
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-12">
+          <div class="md:w-6/12">
+            <p class="text-primary text-xs uppercase tracking-widest mb-3 font-semibold">Mobile Apps</p>
+            <h2 class="text-white text-2xl md:text-3xl leading-snug mb-4">Take your checklist to the trailhead</h2>
+            <p class="mb-6">
+              Packstack is on iOS and Android, synced with the web app. Build
+              your list on the big screen at home, then check items off from
+              your phone as you pack. Your gear specs are always in your
+              pocket.
             </p>
-            <ul class="space-y-2.5 text-softwhite text-sm">
-              <li class="flex items-start gap-2.5">
-                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
-                One-click shareable links
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
-                Clean, read-only public view
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
-                Full weight breakdown included
-              </li>
-            </ul>
+            <div class="flex flex-wrap items-center gap-4">
+              <a href="https://apps.apple.com/us/app/packstack-app/id6760873801?itscg=30200&itsct=apps_box_badge&mttnsubad=6760873801" class="inline-block">
+                <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1774396800" alt="Download on the App Store" style="width: 140px; height: 47px; vertical-align: middle; object-fit: contain;" />
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=io.packstack.mobile" class="inline-block">
+                <img src={googlePlayBadge.src} alt="Get it on Google Play" style="width: auto; height: 47px; vertical-align: middle; object-fit: contain;" />
+              </a>
+            </div>
           </div>
-          <div class="md:w-7/12 flex justify-center md:justify-start">
-            <!-- CSS-only share card mock -->
-            <div class="rounded-xl border border-border bg-background overflow-hidden w-full max-w-md select-none" aria-hidden="true">
-              <div class="bg-surface px-5 py-4 border-b border-border">
-                <div class="flex items-center gap-3">
-                  <svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" /></svg>
-                  <div class="min-w-0">
-                    <div class="font-semibold text-white text-sm truncate">John Muir Trail &mdash; Southbound</div>
-                    <div class="text-label text-xs mt-0.5">Jul 15 &ndash; Aug 2, 2026 &middot; 211 mi</div>
-                  </div>
+          <div class="md:w-6/12 flex justify-center">
+            <!-- CSS-only phone mock -->
+            <div class="w-72 rounded-[2.5rem] border-4 border-border bg-background overflow-hidden shadow-2xl shadow-primary-glow select-none" aria-hidden="true">
+              <div class="bg-surface px-6 pt-3 pb-2 flex items-center justify-between">
+                <span class="text-[10px] text-label font-semibold tabular-nums">9:41</span>
+                <span class="w-16 h-4 rounded-full bg-background"></span>
+                <span class="text-[10px] text-label">100%</span>
+              </div>
+              <div class="bg-surface px-6 py-3 border-b border-border">
+                <div class="font-semibold text-white text-sm">Base Pack</div>
+                <div class="text-label text-xs mt-0.5">14 of 18 items packed</div>
+                <div class="w-full h-1.5 bg-background rounded-full overflow-hidden mt-2">
+                  <div class="h-full bg-accent-green rounded-full" style="width: 78%"></div>
                 </div>
               </div>
-              <div class="px-5 py-4 space-y-4">
-                <div class="grid grid-cols-4 gap-2">
-                  <div class="bg-surface rounded-lg px-2 py-2 text-center">
-                    <div class="text-[10px] text-label uppercase tracking-wide">Base</div>
-                    <div class="text-white font-bold text-sm">8.4 lb</div>
-                  </div>
-                  <div class="bg-surface rounded-lg px-2 py-2 text-center">
-                    <div class="text-[10px] text-label uppercase tracking-wide">Worn</div>
-                    <div class="text-white font-bold text-sm">2.1 lb</div>
-                  </div>
-                  <div class="bg-surface rounded-lg px-2 py-2 text-center">
-                    <div class="text-[10px] text-label uppercase tracking-wide">Cons.</div>
-                    <div class="text-white font-bold text-sm">3.2 lb</div>
-                  </div>
-                  <div class="bg-surface rounded-lg px-2 py-2 text-center">
-                    <div class="text-[10px] text-label uppercase tracking-wide">Total</div>
-                    <div class="text-primary font-bold text-sm">13.7 lb</div>
-                  </div>
+              <div class="divide-y divide-border/40">
+                <div class="flex items-center gap-3 px-6 py-3 text-sm">
+                  <span class="w-4 h-4 shrink-0 rounded border-2 border-accent-green bg-accent-green/20 flex items-center justify-center text-[10px] text-accent-green leading-none">&#10003;</span>
+                  <span class="text-white">Tent</span>
+                  <span class="text-label text-xs ml-auto tabular-nums">42 oz</span>
                 </div>
-                <div class="text-xs text-label">2 packs &middot; 24 items</div>
-                <div class="flex items-center gap-2">
-                  <div class="flex-1 bg-surface rounded-md px-3 py-2 text-xs text-label truncate font-mono">
-                    packstack.io/pack/a1b2c3d4
-                  </div>
-                  <div class="bg-primary text-white text-xs font-semibold rounded-md px-4 py-2 whitespace-nowrap">
-                    Copy Link
-                  </div>
+                <div class="flex items-center gap-3 px-6 py-3 text-sm">
+                  <span class="w-4 h-4 shrink-0 rounded border-2 border-accent-green bg-accent-green/20 flex items-center justify-center text-[10px] text-accent-green leading-none">&#10003;</span>
+                  <span class="text-white">Quilt</span>
+                  <span class="text-label text-xs ml-auto tabular-nums">24 oz</span>
+                </div>
+                <div class="flex items-center gap-3 px-6 py-3 text-sm">
+                  <span class="w-4 h-4 shrink-0 rounded border-2 border-accent-green bg-accent-green/20 flex items-center justify-center text-[10px] text-accent-green leading-none">&#10003;</span>
+                  <span class="text-white">Sleeping Pad</span>
+                  <span class="text-label text-xs ml-auto tabular-nums">12 oz</span>
+                </div>
+                <div class="flex items-center gap-3 px-6 py-3 text-sm">
+                  <span class="w-4 h-4 shrink-0 rounded border border-border/60"></span>
+                  <span class="text-white">Stove</span>
+                  <span class="text-label text-xs ml-auto tabular-nums">0.9 oz</span>
+                </div>
+                <div class="flex items-center gap-3 px-6 py-3 text-sm">
+                  <span class="w-4 h-4 shrink-0 rounded border border-border/60"></span>
+                  <span class="text-white">Water Filter</span>
+                  <span class="text-label text-xs ml-auto tabular-nums">2.4 oz</span>
+                </div>
+                <div class="flex items-center gap-3 px-6 py-3 text-sm">
+                  <span class="w-4 h-4 shrink-0 rounded border border-border/60"></span>
+                  <span class="text-white">Headlamp</span>
+                  <span class="text-label text-xs ml-auto tabular-nums">1.8 oz</span>
                 </div>
               </div>
             </div>
@@ -734,53 +692,20 @@ export const prerender = true
       </section>
     </div>
 
-    <!-- Highlights Strip -->
-    <section class="py-16 md:py-20 px-4">
-      <div class="max-w-5xl mx-auto">
-        <h2 class="text-center text-white text-2xl md:text-3xl font-bold mb-10">Be prepared to hit the trail</h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-          <div class="rounded-xl border border-border bg-surface/40 p-5 md:p-6 text-center">
-            <div class="w-10 h-10 mx-auto mb-3 rounded-lg bg-primary/10 flex items-center justify-center">
-              <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" /></svg>
-            </div>
-            <div class="text-white font-semibold text-sm">Gear Kits</div>
-            <p class="text-label text-xs mt-1 leading-snug">Bundle &amp; reuse item groups</p>
-          </div>
-          <div class="rounded-xl border border-border bg-surface/40 p-5 md:p-6 text-center">
-            <div class="w-10 h-10 mx-auto mb-3 rounded-lg bg-primary/10 flex items-center justify-center">
-              <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12" /></svg>
-            </div>
-            <div class="text-white font-semibold text-sm">Easy Import</div>
-            <p class="text-label text-xs mt-1 leading-snug">LighterPack &amp; CSV support</p>
-          </div>
-          <div class="rounded-xl border border-border bg-surface/40 p-5 md:p-6 text-center">
-            <div class="w-10 h-10 mx-auto mb-3 rounded-lg bg-primary/10 flex items-center justify-center">
-              <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22c-4.97 0-9-2.69-9-6v-.5C3 9.5 8 3 12 2c4 1 9 7.5 9 13.5v.5c0 3.31-4.03 6-9 6z" /></svg>
-            </div>
-            <div class="text-white font-semibold text-sm">Calorie Calculator</div>
-            <p class="text-label text-xs mt-1 leading-snug">Personalized daily estimates</p>
-          </div>
-          <div class="rounded-xl border border-border bg-surface/40 p-5 md:p-6 text-center">
-            <div class="w-10 h-10 mx-auto mb-3 rounded-lg bg-primary/10 flex items-center justify-center">
-              <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" /></svg>
-            </div>
-            <div class="text-white font-semibold text-sm">Hiker Profiles</div>
-            <p class="text-label text-xs mt-1 leading-snug">Body stats for accurate estimates</p>
-          </div>
-          <div class="rounded-xl border border-border bg-surface/40 p-5 md:p-6 text-center">
-            <div class="w-10 h-10 mx-auto mb-3 rounded-lg bg-primary/10 flex items-center justify-center">
-              <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21" /><line x1="9" y1="3" x2="9" y2="18" /><line x1="15" y1="6" x2="15" y2="21" /></svg>
-            </div>
-            <div class="text-white font-semibold text-sm">Trip Details</div>
-            <p class="text-label text-xs mt-1 leading-snug">Distance, elevation, terrain &amp; more</p>
-          </div>
-          <div class="rounded-xl border border-border bg-surface/40 p-5 md:p-6 text-center">
-            <div class="w-10 h-10 mx-auto mb-3 rounded-lg bg-primary/10 flex items-center justify-center">
-              <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M23 4v6h-6M1 20v-6h6" /><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15" /></svg>
-            </div>
-            <div class="text-white font-semibold text-sm">Gear Lifecycle</div>
-            <p class="text-label text-xs mt-1 leading-snug">Track condition &amp; replacement</p>
-          </div>
+    <!-- FAQ -->
+    <section class="py-16 md:py-24 px-4 bg-surface/30">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-center text-white text-2xl md:text-3xl font-bold mb-10">Frequently asked questions</h2>
+        <div class="divide-y divide-border border-y border-border">
+          {faqs.map(({ q, a }) => (
+            <details class="group py-5">
+              <summary class="cursor-pointer list-none flex items-center justify-between gap-4 text-white font-semibold [&::-webkit-details-marker]:hidden">
+                {q}
+                <svg class="w-4 h-4 shrink-0 text-label transition-transform group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9" /></svg>
+              </summary>
+              <p class="mt-3 text-sm leading-relaxed">{a}</p>
+            </details>
+          ))}
         </div>
       </div>
     </section>
@@ -788,9 +713,9 @@ export const prerender = true
     <!-- Final CTA -->
     <section class="py-16 md:py-24 px-4">
       <div class="max-w-2xl mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl text-white font-bold mb-4">Ready to lighten your load?</h2>
+        <h2 class="text-3xl md:text-4xl text-white font-bold mb-4">Start planning your next trip</h2>
         <p class="text-lg mb-8 leading-relaxed">
-          Join backpackers and ultralight hikers who plan smarter with
+          Join 3,000+ backpackers and ultralight hikers who plan smarter with
           Packstack.
         </p>
         <a
