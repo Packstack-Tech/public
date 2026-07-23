@@ -1,9 +1,9 @@
 ---
-title: "Packstack: The Modern Alternative to Lighterpack"
-description: "Thinking about switching from LighterPack? Here's an honest look at Packstack — what it does better, where LighterPack still holds its ground, and how to decide which tool fits your planning style."
-published_at: "2026-04-22"
+title: "Packstack: The Modern LighterPack Alternative"
+description: "Thinking about switching from LighterPack? Here's an honest look at Packstack — a gear list builder with a real gear closet, calorie planning, and native mobile apps — plus where LighterPack still holds its ground."
+published_at: "2026-07-23"
 image: "/images/learn/backpacking-packing-list-tool.png"
-image_alt: "Screenshot of Packstack's advanced backpacking packing list tool"
+image_alt: "Screenshot of Packstack's backpacking gear list builder"
 ---
 
 If you've spent any time in the ultralight backpacking community, you've almost certainly seen a LighterPack link. Drop into any Reddit shakedown thread, browse the Backpacking Light forums, or read a thru-hiker's trail journal, and there it is — that tidy spreadsheet-style list with the pie chart at the top, quietly doing its job. When every gram counts, ultralight backpackers often rely on crowdsourced gear databases, expert blogs, and online communities to optimize their base weight, and LighterPack has established itself as the preferred tool for tracking and visualizing pack weight.
@@ -26,7 +26,7 @@ For many users of LighterPack, the simplicity of the interface is a big part of 
 
 ## What Packstack Actually Is
 
-Packstack is a free gear management and packing list app built for backpackers and ultralight hikers — designed to track every ounce, build detailed lists, and share your setup. It's available on the web and as a **native iOS app** on the App Store, and it's free to use with no credit card required.
+Packstack is a free gear list builder and gear management app for backpackers and ultralight hikers — designed to track every ounce, build detailed gear lists, and share your setup. It's available on the web and as **native iOS and Android apps**, and it's free to use with no credit card required.
 
 Packstack is open source software for planning backpacking expeditions. That matters for two reasons: the code is publicly auditable (no mystery about what data it handles), and community contributions can drive ongoing development.
 
@@ -38,11 +38,13 @@ In the broader community, Packstack is described as a "supercharged tool for pla
 
 ## Core Features: Where Packstack Goes Further
 
-### A Real Gear Inventory — Not Just a List
+### A Real Gear Closet — Not Just a List
 
-The biggest conceptual difference between Packstack and LighterPack is the inventory model. Packstack lets you build a comprehensive gear inventory with detailed specs for every item — weight, brand, product, price, and category — and that inventory is always at your fingertips when building packing lists.
+The biggest conceptual difference between Packstack and LighterPack is the gear closet model. Packstack lets you build a comprehensive gear closet with detailed specs for every item you own — weight, brand, product, price, and category — and that closet is always at your fingertips when building gear lists.
 
-In LighterPack, your "gear" section is essentially a byproduct of your lists. Items accumulate as you create lists, but there's no real inventory management layer. In Packstack, the inventory is the foundation. You build it once, and then every packing list draws from it. That makes a meaningful difference if you own 30+ pieces of gear and swap items between trips based on season or terrain.
+In LighterPack, your "gear" section is essentially a byproduct of your lists. Items accumulate as you create lists, but there's no real inventory management layer. In Packstack, the gear closet is the foundation. You build it once, and then every gear list draws from it. That makes a meaningful difference if you own 30+ pieces of gear and swap items between trips based on season or terrain.
+
+Packstack also lets you group gear into reusable **Kits** — bundles like a cook kit, first aid kit, or camera setup that you always pack together. Instead of dragging eight items into every new list, you drop in the kit. It's a small feature that compounds: the more trips you plan, the more time it saves.
 
 ### Weight Tracking That's Actually Granular
 
@@ -76,7 +78,7 @@ Packstack lets you create **hiker profiles** with your body stats — weight, he
 
 Those profiles feed into a **calorie calculator** that uses the Pandolf load carriage equation and Mifflin-St Jeor BMR model to estimate daily calorie burn based on your body, pack weight, terrain, elevation, pace, and temperature. The output gives you total daily calories, a macro breakdown, and a practical food-weight estimate (~130 kcal per ounce of typical backpacking food). That's the kind of number that turns vague food planning into a real weight calculation. The calculator is also available as a [free public tool](/tools/backpacking-calorie-calculator) even if you don't have an account.
 
-The other piece is **AI-enhanced trip information**. When you create a trip and set a location — say "John Muir Trail" or "Roan Highlands" — Packstack automatically researches and fills in trail distance, daily elevation gain, terrain type, expected temperature ranges, and route notes. It only fills fields you haven't already set, so it won't overwrite your local knowledge. The practical effect is that your calorie and water estimates start with real data instead of guesses.
+The other piece is **AI-enhanced trip information**. When you create a trip and set a location — say "John Muir Trail" or "Roan Highlands" — Packstack automatically researches and fills in trail distance, daily elevation gain, terrain type, and expected temperature ranges for your trip dates. It only fills fields you haven't already set, so it won't overwrite your local knowledge. The practical effect is that your calorie and water estimates start with real data instead of guesses.
 
 LighterPack has no calorie estimation, no body profiles, and no trip intelligence. It's a packing list. That's fine if all you need is a packing list — but if you want your gear tool to actually help you plan the trip, Packstack operates on a different level.
 
@@ -86,9 +88,11 @@ Packstack recently launched an [Ultralight Gear Research tool](/tools/ultralight
 
 LighterPack doesn't do gear research at all — it's a list tool, not a catalog tool. If you've ever spent an hour cross-referencing REI, manufacturer pages, and Reddit threads to find the lightest option in a category, Packstack's research tool replaces that workflow with a single sortable table.
 
-### Native iOS App
+The research tool also lives inside the mobile app as a dedicated **Research tab**: search the entire catalog by brand or product name, browse by subcategory with lightest/median/heaviest stats, open any product for its full specs and image, and add it to your gear closet with one tap. Researching a new sleeping pad and adding it to your kit happens in the same place.
 
-One of LighterPack's most persistent complaints from users is its clunky mobile experience. Packstack now has a **native iOS app** on the App Store — a full React Native app with gear inventory, trip planning, calorie estimates, hiker profiles, and the same weight breakdown tools available on the web. It syncs with your web account, it's fast, and the interface is built for a phone screen. For the many hikers who do last-minute gear checks and list tweaks on their phone, this is a major practical advantage.
+### Native Mobile Apps
+
+One of LighterPack's most persistent complaints from users is its clunky mobile experience. Packstack has **native iOS and Android apps** — full mobile apps with your gear closet, gear lists, kits, calorie estimates, hiker profiles, gear research, and the same weight breakdown tools available on the web. They sync with your web account, they're fast, and the interface is built for a phone screen. Checklist mode turns any gear list into a tap-to-check packing checklist at the trailhead, and a **shareable trip summary card** — trip stats, weight breakdown, and category chart sized for Instagram Stories — exports straight from the app. For the many hikers who do last-minute gear checks and list tweaks on their phone, this is a major practical advantage.
 
 ---
 
@@ -108,7 +112,8 @@ Each of these tools has a slightly different personality and feature set. The br
 ## Practical Tips for Getting Started with Packstack
 
 - **Import your LighterPack first.** Don't rebuild your inventory from scratch. Packstack supports LighterPack import in seconds. Export your LighterPack as a CSV, import it into Packstack, and you're working from a real starting point.
-- **Build the inventory before the lists.** Resist the urge to jump straight into building a trip list. Spend 20 minutes populating your gear inventory with proper categories, brands, and weights — you'll save time on every list you build afterward.
+- **Build the gear closet before the lists.** Resist the urge to jump straight into building a trip list. Spend 20 minutes populating your gear closet with proper categories, brands, and weights — you'll save time on every gear list you build afterward.
+- **Bundle repeat gear into Kits.** If the same stove, pot, and fuel go on every trip, make them a cook kit once and drop the whole bundle into future lists.
 - **Set up a hiker profile immediately.** It takes thirty seconds to enter your body stats, and it feeds directly into calorie estimates for every trip you create. Do it once and forget about it.
 - **Let the AI fill in trip details.** When creating a trip, enter the location and dates and let Packstack auto-populate distance, elevation, and temperature. You can always override the values, but it's a better starting point than guessing.
 - **Use the gear research tool before buying.** Before you drop $400 on a tent, check the [Ultralight Gear Research tool](/tools/ultralight-research) to see how it stacks up against everything else in the category by weight. You might find a lighter option you hadn't considered.
@@ -122,6 +127,6 @@ Each of these tools has a slightly different personality and feature set. The br
 
 Packstack won't replace LighterPack for everyone, and it doesn't need to. If your workflow is simple — build a list, share it, get feedback — LighterPack still does that job efficiently.
 
-But the gap between the two tools has grown significantly. Packstack now offers calorie estimation tied to your actual body and trip details, AI-powered trip research that fills in distance and elevation and temperature ranges automatically, a [gear research tool](/tools/ultralight-research) for comparing thousands of products by weight across every category, and a native iOS app that LighterPack still doesn't have. It's not just a better list builder — it's a trip planning system.
+But the gap between the two tools has grown significantly. Packstack now offers calorie estimation tied to your actual body and trip details, AI-powered trip research that fills in distance and elevation and temperature ranges automatically, a [gear research tool](/tools/ultralight-research) for comparing thousands of products by weight across every category — on the web and inside the app — and native iOS and Android apps that LighterPack still doesn't have. It's not just a better gear list builder — it's a trip planning system.
 
-If you're managing a serious gear inventory across multiple trip types, want to plan food around real calorie numbers instead of guesswork, or simply want a modern app that works as well on your phone as it does on a laptop, Packstack is worth the hour it takes to set up. Start by importing your existing LighterPack, set up a hiker profile, and see whether having a tool that actually understands your trip — not just your gear list — changes how you prepare.
+If you're managing a serious gear closet across multiple trip types, want to plan food around real calorie numbers instead of guesswork, or simply want a modern app that works as well on your phone as it does on a laptop, Packstack is worth the hour it takes to set up. Start by importing your existing LighterPack, set up a hiker profile, and see whether having a tool that actually understands your trip — not just your gear list — changes how you prepare.

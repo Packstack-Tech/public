@@ -64,7 +64,7 @@ const ridgeLines = Array.from({ length: RIDGE_LINES }, (_, line) => {
 const faqs = [
   {
     q: "Is Packstack free?",
-    a: "Packstack is free to start. Create an account and begin building your gear inventory and packing lists, no credit card required. Packstack Pro unlocks additional features like Kits, the Calorie Calculator, and unlimited trip planning.",
+    a: "Packstack is free to start. Create an account and begin building your gear closet and gear lists, no credit card required. Packstack Pro unlocks additional features like the Calorie Calculator and unlimited trip planning.",
   },
   {
     q: "Can I import my gear list from LighterPack?",
@@ -95,7 +95,10 @@ const faqSchema = {
 }
 ---
 
-<BaseLayout title="Packstack | The Backpacking Planning App">
+<BaseLayout
+  title="Packstack | Backpacking Gear List Builder & Pack Weight Tracker"
+  description="Build your backpacking gear list, track base weight down to the gram, and plan food and water with Packstack — the free gear list app for backpackers and ultralight hikers. Import from LighterPack in seconds."
+>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   </Fragment>
@@ -136,12 +139,13 @@ const faqSchema = {
           Android
         </p>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-          Pack Lighter. Plan Smarter.<br class="hidden sm:block" />
-          Hike Further.
+          Your Backpacking Gear List,<br class="hidden sm:block" />
+          Down to the Gram
         </h1>
         <p class="mt-6 text-lg md:text-xl max-w-xl mx-auto leading-relaxed">
-          Track every gram of gear, build packing lists in minutes, and know
-          exactly how much food and water to carry. No spreadsheets required.
+          Build your gear closet once, spin up a gear list for any trip in
+          minutes, and know exactly what your pack weighs — and how much food
+          and water to carry. No spreadsheets required.
         </p>
         <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
@@ -174,7 +178,7 @@ const faqSchema = {
           <button type="button" class="img-preview w-full cursor-pointer" aria-label="Enlarge dashboard screenshot">
             <Image
               src={dashboardImg}
-              alt="Packstack dashboard showing a packing list with categorized gear, weights, and trip details"
+              alt="Packstack dashboard showing a backpacking gear list with categorized gear, weights, and trip details"
               class="w-full block"
             />
           </button>
@@ -200,12 +204,12 @@ const faqSchema = {
       <section class="py-16 md:py-24 px-4">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div class="md:w-5/12">
-            <p class="text-primary text-xs uppercase tracking-widest mb-3 font-semibold">Gear Inventory</p>
+            <p class="text-primary text-xs uppercase tracking-widest mb-3 font-semibold">Gear Closet</p>
             <h2 class="text-white text-2xl md:text-3xl leading-snug mb-4">Every gram accounted for</h2>
             <p class="mb-5">
-              Build a comprehensive gear inventory with detailed specs for every
-              item: weight, brand, product, price, and category. Your inventory
-              is always at your fingertips when building packing lists.
+              Build a gear closet with detailed specs for every item you own:
+              weight, brand, product, price, and category. Your gear is always
+              at your fingertips when building gear lists.
             </p>
             <ul class="space-y-2.5 text-softwhite text-sm">
               <li class="flex items-start gap-2.5">
@@ -401,7 +405,7 @@ const faqSchema = {
           <h2 class="text-white text-2xl md:text-3xl font-bold mb-3">Ready to see what your pack really weighs?</h2>
           <p class="mb-6">
             Import your gear or start from scratch. You&rsquo;ll have a
-            packing list in minutes.
+            complete gear list in minutes.
           </p>
           <a
             href="https://app.packstack.io/auth/register"
@@ -550,7 +554,7 @@ const faqSchema = {
         <div class="max-w-5xl mx-auto">
           <h2 class="text-center text-white text-2xl md:text-3xl font-bold mb-3">Everything else you need to hit the trail</h2>
           <p class="text-center max-w-xl mx-auto mb-12">
-            Beyond the packing list, Packstack helps you manage the full life of
+            Beyond the gear list, Packstack helps you manage the full life of
             your gear and every detail of your trip.
           </p>
           <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
@@ -601,7 +605,7 @@ const faqSchema = {
               <h3 class="text-base">Share Your Setup</h3>
               <p class="text-sm leading-relaxed">
                 Generate a link to any trip and share a clean, read-only view of
-                your packing list with full weight breakdowns.
+                your gear list with full weight breakdowns.
               </p>
             </div>
             <div class="rounded-xl border border-border bg-background/60 p-6">
@@ -610,7 +614,7 @@ const faqSchema = {
               </div>
               <h3 class="text-base">Checklist Mode</h3>
               <p class="text-sm leading-relaxed">
-                Turn any packing list into a checklist and tick items off as
+                Turn any gear list into a checklist and tick items off as
                 they go into the pack. Nothing gets left behind.
               </p>
             </div>
