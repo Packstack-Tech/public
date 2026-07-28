@@ -1,12 +1,85 @@
+---
+/**
+ * In-article CTA. When product context is passed (review pages), the copy
+ * continues the reader's purchase-research thought instead of changing the
+ * subject — "what does this item do to my pack?" — which converts better
+ * than a generic pitch. Falls back to a generic version for how-to articles.
+ */
+type Props = {
+  product?: string
+  brand?: string
+  weightGrams?: number | null
+  category?: string
+}
+
+const { product, brand, weightGrams, category } = Astro.props
+
+const contextual = !!product
+const weightLabel = weightGrams
+  ? `${Math.round(weightGrams)} g · ${(weightGrams / 28.3495).toFixed(1)} oz`
+  : null
+const categoryLabel = category ? category.toLowerCase() : "gear"
+---
+
 <div class="not-prose my-8 rounded-xl border border-primary/25 bg-primary/[0.06] px-6 py-5">
-  <p class="text-white font-semibold text-base mb-1">Organize your gear</p>
-  <p class="text-softwhite text-sm leading-relaxed mb-3">
-    Packstack helps you track your gear, create packing lists, share your setup, estimate calorie requirements, and a whole lot more—all for free.
-  </p>
-  <a
-    href="https://app.packstack.io/auth/register"
-    class="inline-block bg-primary hover:bg-primary-dark text-white text-sm font-semibold rounded-md py-2 px-5 no-underline transition-colors"
-  >
-    Get Started
-  </a>
+  {
+    contextual ? (
+      <>
+        <div class="flex items-start justify-between gap-4 mb-1">
+          <p class="text-white font-semibold text-base">
+            Would the {product} earn its spot in your pack?
+          </p>
+          {weightLabel && (
+            <span class="shrink-0 rounded-full border border-primary/40 bg-primary/10 px-2.5 py-1 text-[11px] font-semibold text-primary whitespace-nowrap">
+              {weightLabel}
+            </span>
+          )}
+        </div>
+        <p class="text-softwhite text-sm leading-relaxed mb-4">
+          Add the {brand ? `${brand} ${product}` : product} to your gear closet
+          and see exactly what it does to your base weight — then build your
+          next packing list around it. Free, in about two minutes.
+        </p>
+        <div class="flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href="https://app.packstack.io/auth/register"
+            class="inline-block bg-primary hover:bg-primary-dark text-white text-sm font-semibold rounded-md py-2 px-5 no-underline transition-colors"
+          >
+            Track it in your gear closet
+          </a>
+          <a
+            href="/tools/ultralight-research"
+            class="text-sm font-medium text-softwhite hover:text-white no-underline transition-colors"
+          >
+            Compare {categoryLabel} by weight &rarr;
+          </a>
+        </div>
+        <p class="mt-3 text-xs text-label">
+          Free &middot; No credit card &middot; iOS &amp; Android &middot;
+          Trusted by 3,000+ backpackers
+        </p>
+      </>
+    ) : (
+      <>
+        <p class="text-white font-semibold text-base mb-1">
+          Know exactly what your pack weighs
+        </p>
+        <p class="text-softwhite text-sm leading-relaxed mb-4">
+          Build your gear closet once, spin up a gear list for any trip in
+          minutes, and plan food and water with real numbers — no spreadsheets
+          required.
+        </p>
+        <a
+          href="https://app.packstack.io/auth/register"
+          class="inline-block bg-primary hover:bg-primary-dark text-white text-sm font-semibold rounded-md py-2 px-5 no-underline transition-colors"
+        >
+          Start your gear list
+        </a>
+        <p class="mt-3 text-xs text-label">
+          Free &middot; No credit card &middot; iOS &amp; Android &middot;
+          Trusted by 3,000+ backpackers
+        </p>
+      </>
+    )
+  }
 </div>
