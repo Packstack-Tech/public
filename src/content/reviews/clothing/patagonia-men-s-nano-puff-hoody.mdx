@@ -12,7 +12,7 @@ published_at: "2026-07-01"
 description: "A balanced review of the Patagonia Men's Nano Puff Hoody — a versatile 352g synthetic insulator built for shoulder-season layering, wet-weather resilience, and trail-to-town use."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -34,18 +34,23 @@ in a travel kit.
 
 ## Key Specs
 
-| Spec              | Detail                                                                                     |
-| ----------------- | ------------------------------------------------------------------------------------------ |
-| **Weight**        | 352 g (12.4 oz)                                                                            |
-| **Insulation**    | 60-g PrimaLoft® Gold Insulation Eco with P.U.R.E.™ technology                              |
-| **Shell Fabric**  | 1.4-oz 20-denier 100% recycled polyester ripstop                                           |
-| **Lining Fabric** | 1.3-oz 22-denier 100% recycled polyester ripstop                                           |
-| **DWR**           | PFAS-free                                                                                  |
-| **Certification** | Fair Trade Certified™                                                                      |
-| **Price**         | $299                                                                                       |
-| **Comparison**    | See how [Nano Puff® Hoody compares](/tools/ultralight-research/insulation) to similar gear |
+| Spec              | Detail                                                        |
+| ----------------- | ------------------------------------------------------------- |
+| **Weight**        | 352 g (12.4 oz)                                               |
+| **Insulation**    | 60-g PrimaLoft® Gold Insulation Eco with P.U.R.E.™ technology |
+| **Shell Fabric**  | 1.4-oz 20-denier 100% recycled polyester ripstop              |
+| **Lining Fabric** | 1.3-oz 22-denier 100% recycled polyester ripstop              |
+| **DWR**           | PFAS-free                                                     |
+| **Certification** | Fair Trade Certified™                                         |
+| **Price**         | $299                                                          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="insulation"
+/>
 
 ## Performance
 

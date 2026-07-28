@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A Dyneema SK75 bear-bagging throw line that glides over branches and holds knots better than typical Zing-It style cords."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The Ultraglide Bear Line is a purpose-built throw line for hanging your food bag
 
 ## Key Specs
 
-| Spec              | Value                                                                                          |
-| ----------------- | ---------------------------------------------------------------------------------------------- |
-| Material          | Dyneema SK75                                                                                   |
-| Diameter          | 2.3 mm (3/32")                                                                                 |
-| Weight            | 57 g (2.0 oz) per 50 ft                                                                        |
-| Reflective tracer | 3M reflective tracer, integrated with color fleck for abrasion protection                      |
-| Coating           | None (uncoated fiber, no vinyl/urethane)                                                       |
-| Available lengths | 50', 100', spool (availability varies)                                                         |
-| **Comparison**    | See how [Ultraglide Bear Line compares](/tools/ultralight-research/protection) to similar gear |
+| Spec              | Value                                                                     |
+| ----------------- | ------------------------------------------------------------------------- |
+| Material          | Dyneema SK75                                                              |
+| Diameter          | 2.3 mm (3/32")                                                            |
+| Weight            | 57 g (2.0 oz) per 50 ft                                                   |
+| Reflective tracer | 3M reflective tracer, integrated with color fleck for abrasion protection |
+| Coating           | None (uncoated fiber, no vinyl/urethane)                                  |
+| Available lengths | 50', 100', spool (availability varies)                                    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="protection"
+/>
 
 ## Performance
 

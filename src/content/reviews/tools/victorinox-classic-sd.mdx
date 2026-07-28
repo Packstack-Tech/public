@@ -12,7 +12,7 @@ published_at: "2026-05-14"
 description: "The Victorinox Classic SD packs 7 tools into just 21g, making it the definitive ultralight multitool — if you understand what it can and can't do."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,21 +32,26 @@ number of trail tasks without you ever noticing it's in your pocket.
 
 ## Key Specs
 
-| Spec                    | Value                                                                           |
-| ----------------------- | ------------------------------------------------------------------------------- |
-| **Weight**              | 21g (0.74 oz)                                                                   |
-| **Length**              | 58mm (2.25 in)                                                                  |
-| **Width**               | 18mm                                                                            |
-| **Height**              | 9mm                                                                             |
-| **Number of Functions** | 7                                                                               |
-| **Functions**           | Blade, scissors, nail file/screwdriver, toothpick, tweezers, key ring           |
-| **Blade Style**         | Non-locking, smooth-edge drop-point                                             |
-| **One-Hand Opening**    | No                                                                              |
-| **Handle Material**     | ABS/Cellidor                                                                    |
-| **Country of Origin**   | Switzerland                                                                     |
-| **Comparison**          | See how [Classic SD compares](/tools/ultralight-research/knife) to similar gear |
+| Spec                    | Value                                                                 |
+| ----------------------- | --------------------------------------------------------------------- |
+| **Weight**              | 21g (0.74 oz)                                                         |
+| **Length**              | 58mm (2.25 in)                                                        |
+| **Width**               | 18mm                                                                  |
+| **Height**              | 9mm                                                                   |
+| **Number of Functions** | 7                                                                     |
+| **Functions**           | Blade, scissors, nail file/screwdriver, toothpick, tweezers, key ring |
+| **Blade Style**         | Non-locking, smooth-edge drop-point                                   |
+| **One-Hand Opening**    | No                                                                    |
+| **Handle Material**     | ABS/Cellidor                                                          |
+| **Country of Origin**   | Switzerland                                                           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="knife"
+/>
 
 ## Performance
 

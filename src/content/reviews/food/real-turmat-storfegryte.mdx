@@ -12,7 +12,7 @@ published_at: "2026-07-12"
 description: "A review of REAL Turmat's freeze-dried Beef Stew — 602 kcal of Norwegian-sourced beef, rice, and vegetables in a vacuum-packed pouch. Solid taste, steep price."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,23 +20,28 @@ The Storfegryte — Norwegian for "beef stew" — is one of the original meals i
 
 ## Key Specs
 
-| Spec                  | Value                                                                           |
-| --------------------- | ------------------------------------------------------------------------------- |
-| **Weight**            | 128 g                                                                           |
-| **Energy**            | 602 kcal                                                                        |
-| **Calorie Density**   | ~4.7 kcal/g                                                                     |
-| **Protein**           | ~21.5 g                                                                         |
-| **Carbohydrates**     | ~64 g                                                                           |
-| **Fat**               | ~25 g                                                                           |
-| **Salt**              | ~4.7 g                                                                          |
-| **Prep (hot water)**  | 8–10 min                                                                        |
-| **Prep (cold water)** | 30 min                                                                          |
-| **Lactose-free**      | Yes                                                                             |
-| **Gluten-free**       | No (contains wheat)                                                             |
-| **Shelf Life**        | 5 years                                                                         |
-| **Comparison**        | See how [Storfegryte compares](/tools/ultralight-research/meal) to similar gear |
+| Spec                  | Value               |
+| --------------------- | ------------------- |
+| **Weight**            | 128 g               |
+| **Energy**            | 602 kcal            |
+| **Calorie Density**   | ~4.7 kcal/g         |
+| **Protein**           | ~21.5 g             |
+| **Carbohydrates**     | ~64 g               |
+| **Fat**               | ~25 g               |
+| **Salt**              | ~4.7 g              |
+| **Prep (hot water)**  | 8–10 min            |
+| **Prep (cold water)** | 30 min              |
+| **Lactose-free**      | Yes                 |
+| **Gluten-free**       | No (contains wheat) |
+| **Shelf Life**        | 5 years             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="meal"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-15"
 description: "The HydraPak Seeker 4L is a durable, collapsible water storage bag with a 42mm filter-compatible opening, built for backpackers who need serious camp water capacity."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The HydraPak Seeker 4L is a collapsible, soft-sided water storage bag aimed at b
 
 ## Key Specs
 
-| Spec              | Value                                                                         |
-| ----------------- | ----------------------------------------------------------------------------- |
-| Weight            | 147g (5.2 oz)                                                                 |
-| Capacity          | 4L / 140 fl oz                                                                |
-| Opening Diameter  | 42mm                                                                          |
-| Material          | TPU, RF-welded seams                                                          |
-| In-Use Dimensions | 310 × 220mm (12.1" × 8.6")                                                    |
-| Max Temperature   | 60°C / 140°F                                                                  |
-| Filter Compatible | Yes (42mm threaded)                                                           |
-| BPA / PVC Free    | Yes                                                                           |
-| Warranty          | Beyond Lifetime Guarantee                                                     |
-| Price (MSRP)      | ~$33                                                                          |
-| **Comparison**    | See how [Seeker compares](/tools/ultralight-research/storage) to similar gear |
+| Spec              | Value                      |
+| ----------------- | -------------------------- |
+| Weight            | 147g (5.2 oz)              |
+| Capacity          | 4L / 140 fl oz             |
+| Opening Diameter  | 42mm                       |
+| Material          | TPU, RF-welded seams       |
+| In-Use Dimensions | 310 × 220mm (12.1" × 8.6") |
+| Max Temperature   | 60°C / 140°F               |
+| Filter Compatible | Yes (42mm threaded)        |
+| BPA / PVC Free    | Yes                        |
+| Warranty          | Beyond Lifetime Guarantee  |
+| Price (MSRP)      | ~$33                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="storage"
+/>
 
 ## Performance
 

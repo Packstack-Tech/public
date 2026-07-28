@@ -12,7 +12,7 @@ published_at: "2026-05-29"
 description: "The Therm-a-Rest NeoAir XTherm NXT delivers a benchmark-setting R-7.3 in a 15.5 oz package — the best warmth-to-weight ratio of any sleeping pad reviewed."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -33,23 +33,28 @@ this is the one.
 
 ## Key Specs
 
-| Spec                       | Value                                                                                         |
-| -------------------------- | --------------------------------------------------------------------------------------------- |
-| **Weight**                 | 15.5 oz (440 g) — Regular                                                                     |
-| **R-Value**                | 7.3                                                                                           |
-| **Thickness**              | 3 in (7.6 cm)                                                                                 |
-| **Dimensions (Regular)**   | 72 × 20 in (183 × 51 cm)                                                                      |
-| **Dimensions (Reg. Wide)** | 72 × 25 in (183 × 64 cm)                                                                      |
-| **Dimensions (Large)**     | 77 × 25 in (196 × 64 cm)                                                                      |
-| **Top Fabric**             | 30D ripstop nylon                                                                             |
-| **Bottom Fabric**          | 70D nylon                                                                                     |
-| **Valve**                  | WingLock™                                                                                     |
-| **Packed Size**            | ~9 × 4.5 in (Nalgene-sized)                                                                   |
-| **Sizes Available**        | 3 (Regular, Regular Wide, Large)                                                              |
-| **Includes**               | Pump sack, stuff sack, field repair kit                                                       |
-| **Comparison**             | See how [NeoAir XTherm NXT compares](/tools/ultralight-research/sleeping-pad) to similar gear |
+| Spec                       | Value                                   |
+| -------------------------- | --------------------------------------- |
+| **Weight**                 | 15.5 oz (440 g) — Regular               |
+| **R-Value**                | 7.3                                     |
+| **Thickness**              | 3 in (7.6 cm)                           |
+| **Dimensions (Regular)**   | 72 × 20 in (183 × 51 cm)                |
+| **Dimensions (Reg. Wide)** | 72 × 25 in (183 × 64 cm)                |
+| **Dimensions (Large)**     | 77 × 25 in (196 × 64 cm)                |
+| **Top Fabric**             | 30D ripstop nylon                       |
+| **Bottom Fabric**          | 70D nylon                               |
+| **Valve**                  | WingLock™                               |
+| **Packed Size**            | ~9 × 4.5 in (Nalgene-sized)             |
+| **Sizes Available**        | 3 (Regular, Regular Wide, Large)        |
+| **Includes**               | Pump sack, stuff sack, field repair kit |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sleeping-pad"
+/>
 
 ## Performance
 

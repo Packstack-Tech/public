@@ -12,7 +12,7 @@ published_at: "2026-06-08"
 description: "The Sea to Summit Alpha Pot 2.7L is a hard-anodized aluminum camp pot packed with thoughtful features — but is the weight premium over titanium worth it?"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Sea to Summit Alpha Pot 2.7L is a hard-anodized aluminum cook pot aimed squa
 
 ## Key Specs
 
-| Spec                | Value                                                                                          |
-| ------------------- | ---------------------------------------------------------------------------------------------- |
-| **Weight**          | 281 g (9.9 oz)                                                                                 |
-| **Volume**          | 2.7 L                                                                                          |
-| **Dimensions**      | Ø19 × 13 cm (7.2" × 4.7")                                                                      |
-| **Material**        | Hard-anodized aluminum with stainless steel / silicone handle                                  |
-| **Lid**             | Included — integrated dual-hole strainer pattern                                               |
-| **Handle**          | Pivot-Lock (patent-pending)                                                                    |
-| **Dishwasher Safe** | No                                                                                             |
-| **Open Fire Use**   | No                                                                                             |
-| **Comparison**      | See how [Sea to Summit Alpha Pot compares](/tools/ultralight-research/pot-pan) to similar gear |
+| Spec                | Value                                                         |
+| ------------------- | ------------------------------------------------------------- |
+| **Weight**          | 281 g (9.9 oz)                                                |
+| **Volume**          | 2.7 L                                                         |
+| **Dimensions**      | Ø19 × 13 cm (7.2" × 4.7")                                     |
+| **Material**        | Hard-anodized aluminum with stainless steel / silicone handle |
+| **Lid**             | Included — integrated dual-hole strainer pattern              |
+| **Handle**          | Pivot-Lock (patent-pending)                                   |
+| **Dishwasher Safe** | No                                                            |
+| **Open Fire Use**   | No                                                            |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="pot-pan"
+/>
 
 ## Performance
 

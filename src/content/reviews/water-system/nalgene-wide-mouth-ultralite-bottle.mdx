@@ -12,7 +12,7 @@ published_at: "2026-07-06"
 description: "The Nalgene 32oz Wide Mouth Ultralite cuts nearly half the weight of a standard Nalgene using HDPE, making it a compelling pick for cold-weather and UV-purification setups."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Nalgene Wide Mouth Ultralite is the lightweight sibling of the ubiquitous cl
 
 ## Key Specs
 
-| Spec            | Value                                                                                             |
-| --------------- | ------------------------------------------------------------------------------------------------- |
-| Weight          | 106 g (3.7 oz)                                                                                    |
-| Capacity        | 32 oz / 946 mL                                                                                    |
-| Material        | HDPE                                                                                              |
-| Body Diameter   | 3.5 in                                                                                            |
-| Cap Diameter    | 2.5 in (63mm wide mouth)                                                                          |
-| BPA/BPS Free    | Yes                                                                                               |
-| Dishwasher Safe | Yes                                                                                               |
-| Freeze Safe     | Yes                                                                                               |
-| Origin          | Manufactured in USA (resin sourced from Canada)                                                   |
-| **Comparison**  | See how [Wide Mouth Ultralite Bottle compares](/tools/ultralight-research/bottle) to similar gear |
+| Spec            | Value                                           |
+| --------------- | ----------------------------------------------- |
+| Weight          | 106 g (3.7 oz)                                  |
+| Capacity        | 32 oz / 946 mL                                  |
+| Material        | HDPE                                            |
+| Body Diameter   | 3.5 in                                          |
+| Cap Diameter    | 2.5 in (63mm wide mouth)                        |
+| BPA/BPS Free    | Yes                                             |
+| Dishwasher Safe | Yes                                             |
+| Freeze Safe     | Yes                                             |
+| Origin          | Manufactured in USA (resin sourced from Canada) |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="bottle"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A compact, bombproof 12.5L pannier pair from Ortlieb, built for front racks but flexible enough for rear use on shorter tours or commutes."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Sport-Roller Classic is Ortlieb's smaller, front-rack-oriented pannier (it u
 
 ## Key Specs
 
-| Spec              | Detail                                                                                     |
-| ----------------- | ------------------------------------------------------------------------------------------ |
-| Weight            | 795 g (pair)                                                                               |
-| Volume            | 12.5 L per bag (25 L pair)                                                                 |
-| Dimensions        | 30H x 25W x 14D cm per bag                                                                 |
-| Material          | PVC-coated polyester (PD620 front/back panels, PS490 sides)                                |
-| Mounting system   | QL2.1 (hook-and-latch, tool-free)                                                          |
-| Weatherproofing   | IP64 (roll-top closure, fully submersible seams)                                           |
-| Sold as           | Pair (single also available)                                                               |
-| Formerly known as | Front-Roller Classic                                                                       |
-| **Comparison**    | See how [Sport-Roller Classic compares](/tools/ultralight-research/add-on) to similar gear |
+| Spec              | Detail                                                      |
+| ----------------- | ----------------------------------------------------------- |
+| Weight            | 795 g (pair)                                                |
+| Volume            | 12.5 L per bag (25 L pair)                                  |
+| Dimensions        | 30H x 25W x 14D cm per bag                                  |
+| Material          | PVC-coated polyester (PD620 front/back panels, PS490 sides) |
+| Mounting system   | QL2.1 (hook-and-latch, tool-free)                           |
+| Weatherproofing   | IP64 (roll-top closure, fully submersible seams)            |
+| Sold as           | Pair (single also available)                                |
+| Formerly known as | Front-Roller Classic                                        |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="add-on"
+/>
 
 ## Performance
 

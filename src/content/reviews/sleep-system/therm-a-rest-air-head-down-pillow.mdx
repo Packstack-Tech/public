@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A down-topped inflatable camp pillow that trades a bit of weight and packability for genuinely plush, at-home comfort."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Air Head Down is Therm-a-Rest's answer to the "inflatable pillows feel like 
 
 ## Key Specs
 
-| Spec            | Regular                                                                                     | Large            |
-| --------------- | ------------------------------------------------------------------------------------------- | ---------------- |
-| Weight          | 4.9 oz / 139 g                                                                              | 7.3 oz / 207 g   |
-| Dimensions      | 11 x 15.5 x 4 in                                                                            | 12.5 x 18 x 4 in |
-| Packed size     | 3.5 x 4.25 in                                                                               | 3.75 x 4.75 in   |
-| Loft            | 4 in                                                                                        | 4 in             |
-| Fill            | 650-fill Nikwax Hydrophobic Duck Down                                                       | same             |
-| Cover material  | Partially recycled brushed polyester                                                        | same             |
-| Insert material | Urethane (inflatable)                                                                       | same             |
-| **Comparison**  | See how [Air Head™ Down Pillow compares](/tools/ultralight-research/pillow) to similar gear |
+| Spec            | Regular                               | Large            |
+| --------------- | ------------------------------------- | ---------------- |
+| Weight          | 4.9 oz / 139 g                        | 7.3 oz / 207 g   |
+| Dimensions      | 11 x 15.5 x 4 in                      | 12.5 x 18 x 4 in |
+| Packed size     | 3.5 x 4.25 in                         | 3.75 x 4.75 in   |
+| Loft            | 4 in                                  | 4 in             |
+| Fill            | 650-fill Nikwax Hydrophobic Duck Down | same             |
+| Cover material  | Partially recycled brushed polyester  | same             |
+| Insert material | Urethane (inflatable)                 | same             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="pillow"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The Hilleberg Enan is a premium 3-season solo tunnel tent weighing 906g — tough, fast to pitch, and roomy for its footprint, but expensive and not freestanding."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -29,24 +29,29 @@ serious look.
 
 ## Key Specs
 
-| Spec                               | Detail                                                                   |
-| ---------------------------------- | ------------------------------------------------------------------------ |
-| **Capacity**                       | 1 person                                                                 |
-| **Season Rating**                  | 3-season (Yellow Label)                                                  |
-| **Min Weight**                     | 906 g (poles, fly, inner)                                                |
-| **Packed Weight**                  | 1,200 g (with pegs, stuff sack)                                          |
-| **Outer Fabric**                   | Kerlon 1000 — 10D silicone nylon                                         |
-| **Hydrostatic Head (outer)**       | 5,000 mm                                                                 |
-| **Inner Fabric**                   | 10D ripstop nylon / mesh                                                 |
-| **Groundsheet Fabric**             | 70D PU coated nylon                                                      |
-| **Hydrostatic Head (groundsheet)** | 15,000 mm                                                                |
-| **Poles**                          | 9 mm DAC NSL                                                             |
-| **Inner Dimensions**               | 215 cm L × 95 cm W × 93 cm H                                             |
-| **Vestibule Depth**                | 75 cm                                                                    |
-| **Freestanding**                   | No                                                                       |
-| **Comparison**                     | See how [Enan compares](/tools/ultralight-research/tent) to similar gear |
+| Spec                               | Detail                           |
+| ---------------------------------- | -------------------------------- |
+| **Capacity**                       | 1 person                         |
+| **Season Rating**                  | 3-season (Yellow Label)          |
+| **Min Weight**                     | 906 g (poles, fly, inner)        |
+| **Packed Weight**                  | 1,200 g (with pegs, stuff sack)  |
+| **Outer Fabric**                   | Kerlon 1000 — 10D silicone nylon |
+| **Hydrostatic Head (outer)**       | 5,000 mm                         |
+| **Inner Fabric**                   | 10D ripstop nylon / mesh         |
+| **Groundsheet Fabric**             | 70D PU coated nylon              |
+| **Hydrostatic Head (groundsheet)** | 15,000 mm                        |
+| **Poles**                          | 9 mm DAC NSL                     |
+| **Inner Dimensions**               | 215 cm L × 95 cm W × 93 cm H     |
+| **Vestibule Depth**                | 75 cm                            |
+| **Freestanding**                   | No                               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="tent"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A budget-friendly 89% merino neck gaiter that punches above its price, with a few caveats around softness and wool sourcing transparency."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The MT500 is Decathlon's budget merino neck warmer, sold under its Simond mounta
 
 ## Key Specs
 
-| Spec              | Detail                                                                                                         |
-| ----------------- | -------------------------------------------------------------------------------------------------------------- |
-| Weight            | 54.0 g                                                                                                         |
-| Material          | 89% Merino Wool, 11% Polyamide                                                                                 |
-| Merino fineness   | 18.5 microns                                                                                                   |
-| Fabric grammage   | 155 g/m²                                                                                                       |
-| Wearing positions | 10                                                                                                             |
-| Sub-brand         | Simond                                                                                                         |
-| Warranty          | 2 years                                                                                                        |
-| **Comparison**    | See how [Merino Wool Trekking Neck Warmer MT500 compares](/tools/ultralight-research/headwear) to similar gear |
+| Spec              | Detail                         |
+| ----------------- | ------------------------------ |
+| Weight            | 54.0 g                         |
+| Material          | 89% Merino Wool, 11% Polyamide |
+| Merino fineness   | 18.5 microns                   |
+| Fabric grammage   | 155 g/m²                       |
+| Wearing positions | 10                             |
+| Sub-brand         | Simond                         |
+| Warranty          | 2 years                        |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="headwear"
+/>
 
 ## Performance
 

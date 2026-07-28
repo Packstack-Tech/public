@@ -12,7 +12,7 @@ published_at: "2026-05-12"
 description: "The Platypus GravityWorks 4L is the gold standard gravity filter for groups and base camp use — hands-off, high-capacity, and surprisingly durable over thousands of miles."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,19 +30,24 @@ import PackstackCTA from "../../../components/PackstackCTA.astro"
 
 ## Key Specs
 
-| Spec                      | Value                                                                                  |
-| ------------------------- | -------------------------------------------------------------------------------------- |
-| **Weight**                | 305 g (10.75 oz)                                                                       |
-| **Packed Size**           | 3 in × 9.5 in                                                                          |
-| **Per-Bag Capacity**      | 4 L                                                                                    |
-| **Total System Capacity** | 8 L (dirty + clean)                                                                    |
-| **Flow Rate**             | 1.75 L/min (advertised)                                                                |
-| **Filter Life**           | 1,500 L                                                                                |
-| **Filtration Rating**     | 0.2 microns                                                                            |
-| **Removes**               | Bacteria, protozoa (not viruses)                                                       |
-| **Comparison**            | See how [GravityWorks compares](/tools/ultralight-research/filtration) to similar gear |
+| Spec                      | Value                            |
+| ------------------------- | -------------------------------- |
+| **Weight**                | 305 g (10.75 oz)                 |
+| **Packed Size**           | 3 in × 9.5 in                    |
+| **Per-Bag Capacity**      | 4 L                              |
+| **Total System Capacity** | 8 L (dirty + clean)              |
+| **Flow Rate**             | 1.75 L/min (advertised)          |
+| **Filter Life**           | 1,500 L                          |
+| **Filtration Rating**     | 0.2 microns                      |
+| **Removes**               | Bacteria, protozoa (not viruses) |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="filtration"
+/>
 
 ## Performance
 

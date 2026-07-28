@@ -12,7 +12,7 @@ published_at: "2026-07-19"
 description: "The Campingaz CV 300 Plus is a 240g butane/propane valve cartridge with a resealable Easy Clic Plus valve — solid for 3-season European camping, but with real limitations for cold weather and ultralight use."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Campingaz CV 300 Plus is a 240g valve-type gas cartridge filled with an 80/2
 
 ## Key Specs
 
-| Spec                          | Value                                                                                         |
-| ----------------------------- | --------------------------------------------------------------------------------------------- |
-| Gas Content                   | 240g                                                                                          |
-| Total Weight                  | 410g                                                                                          |
-| Empty Canister Weight         | ~170g                                                                                         |
-| Gas Mix                       | 80% Butane / 20% Propane                                                                      |
-| Valve Type                    | Easy Clic Plus (self-sealing, resealable)                                                     |
-| Dimensions                    | ø 9 × 10.5 cm                                                                                 |
-| Minimum Operating Temperature | ~−5°C                                                                                         |
-| Shelf Life                    | Unlimited (when stored properly)                                                              |
-| Made In                       | Lyon, France                                                                                  |
-| **Comparison**                | See how [CV 300 Plus Gas Cartridge compares](/tools/ultralight-research/fuel) to similar gear |
+| Spec                          | Value                                     |
+| ----------------------------- | ----------------------------------------- |
+| Gas Content                   | 240g                                      |
+| Total Weight                  | 410g                                      |
+| Empty Canister Weight         | ~170g                                     |
+| Gas Mix                       | 80% Butane / 20% Propane                  |
+| Valve Type                    | Easy Clic Plus (self-sealing, resealable) |
+| Dimensions                    | ø 9 × 10.5 cm                             |
+| Minimum Operating Temperature | ~−5°C                                     |
+| Shelf Life                    | Unlimited (when stored properly)          |
+| Made In                       | Lyon, France                              |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="fuel"
+/>
 
 ## Performance
 

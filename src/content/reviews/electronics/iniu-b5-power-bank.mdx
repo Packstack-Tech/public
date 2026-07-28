@@ -12,7 +12,7 @@ published_at: "2026-05-13"
 description: "The INIU B5 is a 20,000mAh, 22.5W power bank that punches above its price for multi-day backpacking trips — with real trade-offs in weight and weatherproofing."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,22 +20,27 @@ The INIU B5 is a 20,000mAh power bank aimed squarely at travelers and outdoor us
 
 ## Key Specs
 
-| Spec                   | Value                                                                          |
-| ---------------------- | ------------------------------------------------------------------------------ |
-| **Capacity**           | 20,000 mAh (74 Wh)                                                             |
-| **Weight**             | 365 g (12.8 oz)                                                                |
-| **Dimensions**         | 13.4 × 7.1 × 2.5 cm                                                            |
-| **Max Output**         | 22.5W                                                                          |
-| **Ports**              | 1× USB-C (in/out), 2× USB-A                                                    |
-| **Charging Protocols** | PD 3.0, PD 2.0, QC 4.0+, QC 3.0, QC 2.0, PPS, AFC                              |
-| **Recharge Time**      | ~3 hrs (20W), ~6 hrs (18W), ~10 hrs (5V/2A)                                    |
-| **Display**            | LCD percentage readout                                                         |
-| **Extras**             | Built-in LED flashlight, trickle-charge mode, protective sleeve                |
-| **Warranty**           | 3 years                                                                        |
-| **Price**              | ~$33                                                                           |
-| **Comparison**         | See how [INIU B5 compares](/tools/ultralight-research/battery) to similar gear |
+| Spec                   | Value                                                           |
+| ---------------------- | --------------------------------------------------------------- |
+| **Capacity**           | 20,000 mAh (74 Wh)                                              |
+| **Weight**             | 365 g (12.8 oz)                                                 |
+| **Dimensions**         | 13.4 × 7.1 × 2.5 cm                                             |
+| **Max Output**         | 22.5W                                                           |
+| **Ports**              | 1× USB-C (in/out), 2× USB-A                                     |
+| **Charging Protocols** | PD 3.0, PD 2.0, QC 4.0+, QC 3.0, QC 2.0, PPS, AFC               |
+| **Recharge Time**      | ~3 hrs (20W), ~6 hrs (18W), ~10 hrs (5V/2A)                     |
+| **Display**            | LCD percentage readout                                          |
+| **Extras**             | Built-in LED flashlight, trickle-charge mode, protective sleeve |
+| **Warranty**           | 3 years                                                         |
+| **Price**              | ~$33                                                            |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="battery"
+/>
 
 ## Performance
 

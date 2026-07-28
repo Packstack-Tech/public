@@ -12,7 +12,7 @@ published_at: "2026-06-01"
 description: "A near-indestructible, featherlight titanium spork with an extended handle built for freeze-dried pouch meals. An iconic piece of backcountry kit at a hard-to-beat price."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Snow Peak Long Titanium Spork (SCT-014) is the extended-handle sibling of Sn
 
 ## Key Specs
 
-| Spec                       | Details                                                                                              |
-| -------------------------- | ---------------------------------------------------------------------------------------------------- |
-| **Weight**                 | 0.8 oz (22.6 g)                                                                                      |
-| **Dimensions**             | 8.3" x 1.5" (21.1 x 3.8 cm)                                                                          |
-| **Material**               | Titanium                                                                                             |
-| **SKU**                    | SCT-014                                                                                              |
-| **Price**                  | $10.95                                                                                               |
-| **Color Options**          | Standard titanium, anodized blue, purple, green                                                      |
-| **Country of Manufacture** | Japan                                                                                                |
-| **Comparison**             | See how [Snow Peak Long Titanium Spork compares](/tools/ultralight-research/utensil) to similar gear |
+| Spec                       | Details                                         |
+| -------------------------- | ----------------------------------------------- |
+| **Weight**                 | 0.8 oz (22.6 g)                                 |
+| **Dimensions**             | 8.3" x 1.5" (21.1 x 3.8 cm)                     |
+| **Material**               | Titanium                                        |
+| **SKU**                    | SCT-014                                         |
+| **Price**                  | $10.95                                          |
+| **Color Options**          | Standard titanium, anodized blue, purple, green |
+| **Country of Manufacture** | Japan                                           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="utensil"
+/>
 
 ## Performance
 

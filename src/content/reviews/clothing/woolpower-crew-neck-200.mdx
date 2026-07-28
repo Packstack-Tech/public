@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A deep dive into Woolpower's Ullfrotté 200 crew — a Swedish-made merino base layer built for durability and warmth-when-wet, not for ultralight base weights."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Woolpower Crew Neck 200 is a long-sleeve merino base layer built from the br
 
 ## Key Specs
 
-| Spec           | Detail                                                                                  |
-| -------------- | --------------------------------------------------------------------------------------- |
-| Weight         | 440 g (size-dependent)                                                                  |
-| Fabric weight  | 200 g/m² (Ullfrotté Original)                                                           |
-| Material       | ~60% merino wool / 25% polyester / 13% polyamide / 2% elastane                          |
-| Construction   | Circular knit, no longitudinal seams                                                    |
-| Neck style     | Crew neck, knitted-in cuffs                                                             |
-| Made in        | Östersund, Sweden                                                                       |
-| Care           | Machine washable, dryer-safe (per manufacturer)                                         |
-| **Comparison** | See how [Crew Neck 200 compares](/tools/ultralight-research/base-layer) to similar gear |
+| Spec          | Detail                                                         |
+| ------------- | -------------------------------------------------------------- |
+| Weight        | 440 g (size-dependent)                                         |
+| Fabric weight | 200 g/m² (Ullfrotté Original)                                  |
+| Material      | ~60% merino wool / 25% polyester / 13% polyamide / 2% elastane |
+| Construction  | Circular knit, no longitudinal seams                           |
+| Neck style    | Crew neck, knitted-in cuffs                                    |
+| Made in       | Östersund, Sweden                                              |
+| Care          | Machine washable, dryer-safe (per manufacturer)                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="base-layer"
+/>
 
 ## Performance
 

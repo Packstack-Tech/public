@@ -12,7 +12,7 @@ published_at: "2026-07-13"
 description: "The Nordisk Lofoten 1 ULW is a 490g double-wall solo tent with an 11×22cm packed size — a race-bred shelter that blurs the line between tent and bivy."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The Nordisk Lofoten 1 ULW is a double-wall solo shelter built around a single ob
 
 ## Key Specs
 
-| Spec                | Value                                                                             |
-| ------------------- | --------------------------------------------------------------------------------- |
-| **Weight (race)**   | 490g                                                                              |
-| **Weight (total)**  | 565g (incl. packsacks, foot-end pole, bonus pack)                                 |
-| **Packed Size**     | 11 × 22 cm                                                                        |
-| **Capacity**        | 1 person (convertible to 2P)                                                      |
-| **Peak Headroom**   | 70 cm                                                                             |
-| **Flysheet**        | 100% nylon ripstop, 7D, 26 g/m², silicone (3-layer, both sides), 1600mm HH        |
-| **Groundsheet**     | 100% nylon ripstop, 15D, PU, 3600mm HH                                            |
-| **Poles**           | 7.5mm aluminium, 3 poles                                                          |
-| **Guy Lines**       | 1.2mm Dyneema                                                                     |
-| **Pegs (included)** | 5× Nordisk tooth peg + 5× triple twister (bonus pack)                             |
-| **Comparison**      | See how [Lofoten 1 ULW compares](/tools/ultralight-research/tent) to similar gear |
+| Spec                | Value                                                                      |
+| ------------------- | -------------------------------------------------------------------------- |
+| **Weight (race)**   | 490g                                                                       |
+| **Weight (total)**  | 565g (incl. packsacks, foot-end pole, bonus pack)                          |
+| **Packed Size**     | 11 × 22 cm                                                                 |
+| **Capacity**        | 1 person (convertible to 2P)                                               |
+| **Peak Headroom**   | 70 cm                                                                      |
+| **Flysheet**        | 100% nylon ripstop, 7D, 26 g/m², silicone (3-layer, both sides), 1600mm HH |
+| **Groundsheet**     | 100% nylon ripstop, 15D, PU, 3600mm HH                                     |
+| **Poles**           | 7.5mm aluminium, 3 poles                                                   |
+| **Guy Lines**       | 1.2mm Dyneema                                                              |
+| **Pegs (included)** | 5× Nordisk tooth peg + 5× triple twister (bonus pack)                      |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="tent"
+/>
 
 ## Performance
 

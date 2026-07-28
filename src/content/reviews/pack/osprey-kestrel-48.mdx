@@ -12,7 +12,7 @@ published_at: "2026-05-04"
 description: "A feature-rich, rugged mid-weight pack for weekend backpackers and heavy-duty day hikers who want Osprey quality without the premium price tag."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,24 +20,29 @@ The Osprey Kestrel 48 is a mid-weight, full-featured rucksack aimed at weekend b
 
 ## Key Specs
 
-| Spec                  | Detail                                                                                     |
-| --------------------- | ------------------------------------------------------------------------------------------ |
-| **Weight**            | 2,090 g (4 lbs 10 oz)                                                                      |
-| **Volume (S/M)**      | 46 L                                                                                       |
-| **Volume (L/XL)**     | 48 L                                                                                       |
-| **Dimensions (S/M)**  | 74h × 40w × 30d cm                                                                         |
-| **Dimensions (L/XL)** | 79h × 40w × 30d cm                                                                         |
-| **Torso Fit (S/M)**   | 16″–20″                                                                                    |
-| **Torso Fit (L/XL)**  | 19″–23″                                                                                    |
-| **Frame**             | 3.5 mm LightWire peripheral + Atilon framesheet                                            |
-| **Back Panel**        | AirScape™ injection-molded framesheet, ridged mesh foam                                    |
-| **Main Fabric**       | 420D recycled nylon (body) / 500D recycled HT nylon (bottom)                               |
-| **DWR**               | PFAS-free, bluesign®-approved                                                              |
-| **Rain Cover**        | Included, stores in bottom zippered pocket                                                 |
-| **MSRP**              | ~$200 USD                                                                                  |
-| **Comparison**        | See how [Osprey Kestrel 48 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                  | Detail                                                       |
+| --------------------- | ------------------------------------------------------------ |
+| **Weight**            | 2,090 g (4 lbs 10 oz)                                        |
+| **Volume (S/M)**      | 46 L                                                         |
+| **Volume (L/XL)**     | 48 L                                                         |
+| **Dimensions (S/M)**  | 74h × 40w × 30d cm                                           |
+| **Dimensions (L/XL)** | 79h × 40w × 30d cm                                           |
+| **Torso Fit (S/M)**   | 16″–20″                                                      |
+| **Torso Fit (L/XL)**  | 19″–23″                                                      |
+| **Frame**             | 3.5 mm LightWire peripheral + Atilon framesheet              |
+| **Back Panel**        | AirScape™ injection-molded framesheet, ridged mesh foam      |
+| **Main Fabric**       | 420D recycled nylon (body) / 500D recycled HT nylon (bottom) |
+| **DWR**               | PFAS-free, bluesign®-approved                                |
+| **Rain Cover**        | Included, stores in bottom zippered pocket                   |
+| **MSRP**              | ~$200 USD                                                    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

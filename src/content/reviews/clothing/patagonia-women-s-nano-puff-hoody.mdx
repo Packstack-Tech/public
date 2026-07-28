@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "A trusted synthetic insulator that's warm and packable enough for most three-season use, though it's not built for the ultralight crowd."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Nano Puff Hoody is Patagonia's flagship synthetic insulated jacket — the p
 
 ## Key Specs
 
-| Spec           | Detail                                                                                             |
-| -------------- | -------------------------------------------------------------------------------------------------- |
-| Weight         | 306 g (10.8 oz) per listed spec; independent tests report 11.6–12.3 oz depending on size           |
-| Insulation     | 60-g PrimaLoft® Gold Insulation Eco (100% postconsumer recycled polyester, P.U.R.E.™ technology)   |
-| Shell          | 1.4-oz 20-denier 100% recycled polyester ripstop                                                   |
-| Lining         | 1.3-oz 100% recycled polyester ripstop                                                             |
-| DWR            | PFAS-free DWR finish                                                                               |
-| Packability    | Stuffs into its own chest pocket with carabiner clip-in loop                                       |
-| Pockets        | Two zippered handwarmer pockets, one zippered chest pocket                                         |
-| Certification  | Fair Trade Certified™ sewn                                                                         |
-| Style No.      | 84228                                                                                              |
-| **Comparison** | See how [Women's Nano Puff® Hoody compares](/tools/ultralight-research/insulation) to similar gear |
+| Spec          | Detail                                                                                           |
+| ------------- | ------------------------------------------------------------------------------------------------ |
+| Weight        | 306 g (10.8 oz) per listed spec; independent tests report 11.6–12.3 oz depending on size         |
+| Insulation    | 60-g PrimaLoft® Gold Insulation Eco (100% postconsumer recycled polyester, P.U.R.E.™ technology) |
+| Shell         | 1.4-oz 20-denier 100% recycled polyester ripstop                                                 |
+| Lining        | 1.3-oz 100% recycled polyester ripstop                                                           |
+| DWR           | PFAS-free DWR finish                                                                             |
+| Packability   | Stuffs into its own chest pocket with carabiner clip-in loop                                     |
+| Pockets       | Two zippered handwarmer pockets, one zippered chest pocket                                       |
+| Certification | Fair Trade Certified™ sewn                                                                       |
+| Style No.     | 84228                                                                                            |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="insulation"
+/>
 
 ## Performance
 

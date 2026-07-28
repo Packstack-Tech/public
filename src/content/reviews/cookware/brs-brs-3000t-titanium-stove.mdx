@@ -12,7 +12,7 @@ published_at: "2026-05-20"
 description: "The BRS-3000T is a 26g titanium canister stove that costs under $20. Here's an honest look at where it delivers and where it falls short."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The BRS-3000T is a micro canister stove from Chinese outdoor brand BRS that has 
 
 ## Key Specs
 
-| Spec                      | Value                                                                          |
-| ------------------------- | ------------------------------------------------------------------------------ |
-| **Weight**                | 26 g (0.9 oz)                                                                  |
-| **Power Output**          | 2,700 W                                                                        |
-| **Gas Consumption**       | 140 g/hr                                                                       |
-| **Fuel Type**             | Threaded isobutane canister (Lindal valve)                                     |
-| **Ignition**              | Manual (no integrated igniter)                                                 |
-| **Material**              | Titanium alloy, copper, stainless steel                                        |
-| **Dimensions (Folded)**   | 4 × 4 × 5 cm                                                                   |
-| **Dimensions (Unfolded)** | 8.5 × 8.5 × 7 cm                                                               |
-| **Price**                 | ~$15–20 USD                                                                    |
-| **Comparison**            | See how [BRS-3000T compares](/tools/ultralight-research/stove) to similar gear |
+| Spec                      | Value                                      |
+| ------------------------- | ------------------------------------------ |
+| **Weight**                | 26 g (0.9 oz)                              |
+| **Power Output**          | 2,700 W                                    |
+| **Gas Consumption**       | 140 g/hr                                   |
+| **Fuel Type**             | Threaded isobutane canister (Lindal valve) |
+| **Ignition**              | Manual (no integrated igniter)             |
+| **Material**              | Titanium alloy, copper, stainless steel    |
+| **Dimensions (Folded)**   | 4 × 4 × 5 cm                               |
+| **Dimensions (Unfolded)** | 8.5 × 8.5 × 7 cm                           |
+| **Price**                 | ~$15–20 USD                                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A pocket-sized repair kit of peel-and-stick nylon patches that's cheap insurance against down leaks and tent tears on trail."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ Tenacious Tape Mini Patches are pre-cut, peel-and-stick repair patches sized for
 
 ## Key Specs
 
-| Spec           | Detail                                                                                            |
-| -------------- | ------------------------------------------------------------------------------------------------- |
-| Weight         | 17.0 g (0.6 oz) for the full kit                                                                  |
-| Patch size     | 1.5" x 2.5" each                                                                                  |
-| Quantity       | 6 patches (3 clear, 3 black)                                                                      |
-| Material       | Nylon backing with PVC-based adhesive                                                             |
-| Colors         | Clear and Black                                                                                   |
-| Application    | Peel and stick, no heat or sewing                                                                 |
-| Washable       | Yes                                                                                               |
-| Removable      | Yes (clean removal, no sticky residue)                                                            |
-| **Comparison** | See how [Tenacious Tape Mini Patches compares](/tools/ultralight-research/repair) to similar gear |
+| Spec        | Detail                                 |
+| ----------- | -------------------------------------- |
+| Weight      | 17.0 g (0.6 oz) for the full kit       |
+| Patch size  | 1.5" x 2.5" each                       |
+| Quantity    | 6 patches (3 clear, 3 black)           |
+| Material    | Nylon backing with PVC-based adhesive  |
+| Colors      | Clear and Black                        |
+| Application | Peel and stick, no heat or sewing      |
+| Washable    | Yes                                    |
+| Removable   | Yes (clean removal, no sticky residue) |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="repair"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-08"
 description: "The Trangia 25-3 UL is a complete, self-contained alcohol cooking system for 3–4 people—durable, wind-resistant, and genuinely cookable, but heavy for solo gram-counters."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -33,20 +33,25 @@ just pour boiling water into a freeze-dried pouch.
 
 ## Key Specs
 
-| Spec            | Value                                                                                      |
-| --------------- | ------------------------------------------------------------------------------------------ |
-| Weight          | 895 g (31.6 oz)                                                                            |
-| Packed Size     | 22 × 10.5 cm                                                                               |
-| Capacity        | 3–4 persons                                                                                |
-| Burner Type     | Spirit (alcohol)                                                                           |
-| Output          | 1,000 W                                                                                    |
-| Boil Time (1 L) | ~8 min                                                                                     |
-| Saucepans       | 1.75 L + 1.5 L                                                                             |
-| Frying Pan      | 22 cm (non-stick)                                                                          |
-| Material        | Ultralight aluminium                                                                       |
-| **Comparison**  | See how [Trangia Stove 25-3 UL compares](/tools/ultralight-research/stove) to similar gear |
+| Spec            | Value                |
+| --------------- | -------------------- |
+| Weight          | 895 g (31.6 oz)      |
+| Packed Size     | 22 × 10.5 cm         |
+| Capacity        | 3–4 persons          |
+| Burner Type     | Spirit (alcohol)     |
+| Output          | 1,000 W              |
+| Boil Time (1 L) | ~8 min               |
+| Saucepans       | 1.75 L + 1.5 L       |
+| Frying Pan      | 22 cm (non-stick)    |
+| Material        | Ultralight aluminium |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

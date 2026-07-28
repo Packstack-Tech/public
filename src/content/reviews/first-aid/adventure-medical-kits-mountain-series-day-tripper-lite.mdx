@@ -12,7 +12,7 @@ published_at: "2026-07-08"
 description: "A compact, well-organized 59-piece first aid kit weighing 96g, built for 1–2 people on a single day hike. Solid value, but thin on a few supplies."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The Adventure Medical Kits Mountain Series Day Tripper Lite is a compact, 59-pie
 
 ## Key Specs
 
-| Spec              | Value                                                                                                   |
-| ----------------- | ------------------------------------------------------------------------------------------------------- |
-| Weight            | 96 g (3.4 oz)                                                                                           |
-| Piece Count       | 59                                                                                                      |
-| Designed For      | 1–2 people, 1 day                                                                                       |
-| Bag Material      | Water-resistant Cordura nylon                                                                           |
-| Country of Origin | USA                                                                                                     |
-| MSRP              | ~$22                                                                                                    |
-| **Comparison**    | See how [Mountain Series Day Tripper Lite compares](/tools/ultralight-research/bandage) to similar gear |
+| Spec              | Value                         |
+| ----------------- | ----------------------------- |
+| Weight            | 96 g (3.4 oz)                 |
+| Piece Count       | 59                            |
+| Designed For      | 1–2 people, 1 day             |
+| Bag Material      | Water-resistant Cordura nylon |
+| Country of Origin | USA                           |
+| MSRP              | ~$22                          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="bandage"
+/>
 
 ## Performance
 

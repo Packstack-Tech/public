@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "A full-featured GPS multisport watch in a compact 42mm form factor — with onboard topo maps, music, and multi-constellation GPS, but battery life that demands careful management."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,23 +30,28 @@ their wrist.
 
 ## Key Specs
 
-| Spec                        | Value                                                                                |
-| --------------------------- | ------------------------------------------------------------------------------------ |
-| **Weight**                  | 61 g                                                                                 |
-| **Case Diameter**           | 42 mm                                                                                |
-| **Case Thickness**          | 13.8 mm                                                                              |
-| **Display**                 | 1.2 in, 240 × 240 px Color MIP                                                       |
-| **Water Rating**            | 10 ATM                                                                               |
-| **Battery — Smartwatch**    | 9 days                                                                               |
-| **Battery — GPS Mode**      | 20 hrs                                                                               |
-| **Battery — Expedition**    | 20 days                                                                              |
-| **Battery — Battery Saver** | 34 days                                                                              |
-| **GPS Systems**             | GPS, GLONASS, Galileo                                                                |
-| **Internal Storage**        | 32 GB                                                                                |
-| **Music Capacity**          | Up to 2,000 songs                                                                    |
-| **Comparison**              | See how [fēnix 6S Pro compares](/tools/ultralight-research/wearable) to similar gear |
+| Spec                        | Value                          |
+| --------------------------- | ------------------------------ |
+| **Weight**                  | 61 g                           |
+| **Case Diameter**           | 42 mm                          |
+| **Case Thickness**          | 13.8 mm                        |
+| **Display**                 | 1.2 in, 240 × 240 px Color MIP |
+| **Water Rating**            | 10 ATM                         |
+| **Battery — Smartwatch**    | 9 days                         |
+| **Battery — GPS Mode**      | 20 hrs                         |
+| **Battery — Expedition**    | 20 days                        |
+| **Battery — Battery Saver** | 34 days                        |
+| **GPS Systems**             | GPS, GLONASS, Galileo          |
+| **Internal Storage**        | 32 GB                          |
+| **Music Capacity**          | Up to 2,000 songs              |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="wearable"
+/>
 
 ## Performance
 

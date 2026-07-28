@@ -12,7 +12,7 @@ published_at: "2026-05-07"
 description: "The Opinel No.08 Inox is a 45g French-made folding knife with a Sandvik 12C27 blade — an unbeatable camp kitchen tool at a sub-$20 price point."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Opinel No.08 has been made in the French Alps since 1890 and is about as clo
 
 ## Key Specs
 
-| Spec                      | Value                                                                             |
-| ------------------------- | --------------------------------------------------------------------------------- |
-| **Weight**                | 45 g (1.6 oz)                                                                     |
-| **Blade Length**          | 8.5 cm (3.35 in)                                                                  |
-| **Overall Length (Open)** | 19.5 cm (7.68 in)                                                                 |
-| **Blade Steel**           | Sandvik 12C27 Modified Stainless                                                  |
-| **Handle Material**       | Varnished Beech Wood                                                              |
-| **Locking Mechanism**     | Virobloc Safety Ring                                                              |
-| **Origin**                | Chambéry, France                                                                  |
-| **Price**                 | ~$19 USD                                                                          |
-| **Comparison**            | See how [Opinel No.08 compares](/tools/ultralight-research/knife) to similar gear |
+| Spec                      | Value                            |
+| ------------------------- | -------------------------------- |
+| **Weight**                | 45 g (1.6 oz)                    |
+| **Blade Length**          | 8.5 cm (3.35 in)                 |
+| **Overall Length (Open)** | 19.5 cm (7.68 in)                |
+| **Blade Steel**           | Sandvik 12C27 Modified Stainless |
+| **Handle Material**       | Varnished Beech Wood             |
+| **Locking Mechanism**     | Virobloc Safety Ring             |
+| **Origin**                | Chambéry, France                 |
+| **Price**                 | ~$19 USD                         |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="knife"
+/>
 
 ## Performance
 

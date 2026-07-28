@@ -12,7 +12,7 @@ published_at: "2026-06-06"
 description: "A 30g waterproof overmitt built from OMM's signature Kamleika stretch fabric — an ultralight hand shell for mountain runners and fastpackers who need layerable foul-weather protection."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The OMM Kamleika Overmitt is a 30g-per-pair waterproof hand shell built from the
 
 ## Key Specs
 
-| Spec                  | Detail                                                                                 |
-| --------------------- | -------------------------------------------------------------------------------------- |
-| **Weight**            | 30g (per pair)                                                                         |
-| **Waterproof Rating** | 20,000mm hydrostatic head                                                              |
-| **Breathability**     | 20,000 gsm/24hr                                                                        |
-| **Fabric**            | Kamleika — stretch-knitted Nylon with PU membrane                                      |
-| **Technology**        | 37.5 Technology (vapour management micro-particles)                                    |
-| **Sizes**             | S / M / L                                                                              |
-| **Features**          | Extended cuffs, low bulk construction, reflective logo, stretch fit                    |
-| **Comparison**        | See how [Kamleika Overmitt compares](/tools/ultralight-research/glove) to similar gear |
+| Spec                  | Detail                                                              |
+| --------------------- | ------------------------------------------------------------------- |
+| **Weight**            | 30g (per pair)                                                      |
+| **Waterproof Rating** | 20,000mm hydrostatic head                                           |
+| **Breathability**     | 20,000 gsm/24hr                                                     |
+| **Fabric**            | Kamleika — stretch-knitted Nylon with PU membrane                   |
+| **Technology**        | 37.5 Technology (vapour management micro-particles)                 |
+| **Sizes**             | S / M / L                                                           |
+| **Features**          | Extended cuffs, low bulk construction, reflective logo, stretch fit |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="glove"
+/>
 
 ## Performance
 

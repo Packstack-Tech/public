@@ -12,7 +12,7 @@ published_at: "2026-05-04"
 description: "A budget-friendly French freeze-dried trail dinner with solid calories and clean sourcing — but inconsistent rehydration keeps it from greatness."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,24 +20,29 @@ The Forclaz Freeze-Dried Mashed Potato & Minced Beef (Purée de Pomme de Terre �
 
 ## Key Specs
 
-| Spec                              | Value                                                                                            |
-| --------------------------------- | ------------------------------------------------------------------------------------------------ |
-| **Dry Weight**                    | 120 g                                                                                            |
-| **Total Weight (with packaging)** | 140 g                                                                                            |
-| **Rehydrated Weight**             | 510 g                                                                                            |
-| **Calories (per portion)**        | 534 kcal                                                                                         |
-| **Calories per 100 g (dry)**      | 445 kcal                                                                                         |
-| **Protein (per portion)**         | 30 g                                                                                             |
-| **Fat (per portion)**             | 22 g                                                                                             |
-| **Carbohydrates (per portion)**   | 53 g                                                                                             |
-| **Salt (per portion)**            | 3.2 g                                                                                            |
-| **Packed Dimensions**             | 17.5 × 18.5 × 5.5 cm                                                                             |
-| **Water Required**                | 400 ml (simmering)                                                                               |
-| **Rehydration Time**              | 5–8 minutes                                                                                      |
-| **Origin**                        | France (Origine France Garantie certified)                                                       |
-| **Comparison**                    | See how [Forclaz Mashed Potato & Beef compares](/tools/ultralight-research/meal) to similar gear |
+| Spec                              | Value                                      |
+| --------------------------------- | ------------------------------------------ |
+| **Dry Weight**                    | 120 g                                      |
+| **Total Weight (with packaging)** | 140 g                                      |
+| **Rehydrated Weight**             | 510 g                                      |
+| **Calories (per portion)**        | 534 kcal                                   |
+| **Calories per 100 g (dry)**      | 445 kcal                                   |
+| **Protein (per portion)**         | 30 g                                       |
+| **Fat (per portion)**             | 22 g                                       |
+| **Carbohydrates (per portion)**   | 53 g                                       |
+| **Salt (per portion)**            | 3.2 g                                      |
+| **Packed Dimensions**             | 17.5 × 18.5 × 5.5 cm                       |
+| **Water Required**                | 400 ml (simmering)                         |
+| **Rehydration Time**              | 5–8 minutes                                |
+| **Origin**                        | France (Origine France Garantie certified) |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="meal"
+/>
 
 ## Performance
 

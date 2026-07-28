@@ -12,7 +12,7 @@ published_at: "2026-07-06"
 description: "The BearVault BV475 Trek is a 9.3L, IGBC-certified polycarbonate bear canister that fills the gap between the Jaunt and Journey — a solid pick for 5-6 day solo trips or short group outings."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -34,20 +34,25 @@ canisters on the market.
 
 ## Key Specs
 
-| Spec               | Value                                                                                |
-| ------------------ | ------------------------------------------------------------------------------------ |
-| Weight             | 1,030 g / 36.3 oz                                                                    |
-| Volume             | 9.3 L / 565 cu in / 2.5 gal                                                          |
-| Diameter           | 8.7 in / 22.1 cm                                                                     |
-| Height             | 10.5 in / 26.7 cm                                                                    |
-| Material           | Specialty rugged polycarbonate and other durable resins                              |
-| Capacity           | 5–6 days (solo)                                                                      |
-| IGBC Certification | #5423                                                                                |
-| Price (MSRP)       | ~$86.95                                                                              |
-| Made In            | USA                                                                                  |
-| **Comparison**     | See how [BV475 Trek compares](/tools/ultralight-research/protection) to similar gear |
+| Spec               | Value                                                   |
+| ------------------ | ------------------------------------------------------- |
+| Weight             | 1,030 g / 36.3 oz                                       |
+| Volume             | 9.3 L / 565 cu in / 2.5 gal                             |
+| Diameter           | 8.7 in / 22.1 cm                                        |
+| Height             | 10.5 in / 26.7 cm                                       |
+| Material           | Specialty rugged polycarbonate and other durable resins |
+| Capacity           | 5–6 days (solo)                                         |
+| IGBC Certification | #5423                                                   |
+| Price (MSRP)       | ~$86.95                                                 |
+| Made In            | USA                                                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="protection"
+/>
 
 ## Performance
 

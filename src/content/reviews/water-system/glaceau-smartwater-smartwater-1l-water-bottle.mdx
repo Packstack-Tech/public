@@ -12,7 +12,7 @@ published_at: "2026-07-08"
 description: "The smartwater 1L is the go-to ultralight water bottle for thru-hikers: 34g, Sawyer-compatible, and available at nearly every trailhead gas station."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The Glaceau smartwater 1L is about as close to a "free" piece of gear as you'll 
 
 ## Key Specs
 
-| Spec                 | Value                                                                                            |
-| -------------------- | ------------------------------------------------------------------------------------------------ |
-| Weight               | 34 g (1.2 oz)                                                                                    |
-| Volume               | 1 L                                                                                              |
-| Material             | PET1 plastic                                                                                     |
-| Thread Size          | 28mm                                                                                             |
-| Filter Compatibility | Sawyer Squeeze, Sawyer Mini                                                                      |
-| Price                | ~$2–3 at retail                                                                                  |
-| **Comparison**       | See how [smartwater 1L Water Bottle compares](/tools/ultralight-research/bottle) to similar gear |
+| Spec                 | Value                       |
+| -------------------- | --------------------------- |
+| Weight               | 34 g (1.2 oz)               |
+| Volume               | 1 L                         |
+| Material             | PET1 plastic                |
+| Thread Size          | 28mm                        |
+| Filter Compatibility | Sawyer Squeeze, Sawyer Mini |
+| Price                | ~$2–3 at retail             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="bottle"
+/>
 
 ## Performance
 

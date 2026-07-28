@@ -12,7 +12,7 @@ published_at: "2026-07-01"
 description: "A featherweight 26g roll-top dry sack for pack organization — great for rain protection, but know its limits before you ford a river."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Sea to Summit Ultra-Sil Dry Sack is a roll-top, seam-taped dry bag built for
 
 ## Key Specs
 
-| Spec                  | Value                                                                                          |
-| --------------------- | ---------------------------------------------------------------------------------------------- |
-| **Weight**            | 26 g / 0.92 oz                                                                                 |
-| **Volume**            | 4 L                                                                                            |
-| **Material**          | 30D Ultra-Sil CORDURA® Nylon                                                                   |
-| **Waterproof Rating** | 2000mm hydrostatic head                                                                        |
-| **Dimensions**        | 5.9 × 13 in / 15 × 33 cm                                                                       |
-| **Closure**           | Hypalon roll-top with buckle                                                                   |
-| **Warranty**          | Lifetime guarantee                                                                             |
-| **Comparison**        | See how [Ultra-Sil Dry Sack compares](/tools/ultralight-research/organization) to similar gear |
+| Spec                  | Value                        |
+| --------------------- | ---------------------------- |
+| **Weight**            | 26 g / 0.92 oz               |
+| **Volume**            | 4 L                          |
+| **Material**          | 30D Ultra-Sil CORDURA® Nylon |
+| **Waterproof Rating** | 2000mm hydrostatic head      |
+| **Dimensions**        | 5.9 × 13 in / 15 × 33 cm     |
+| **Closure**           | Hypalon roll-top with buckle |
+| **Warranty**          | Lifetime guarantee           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="organization"
+/>
 
 ## Performance
 

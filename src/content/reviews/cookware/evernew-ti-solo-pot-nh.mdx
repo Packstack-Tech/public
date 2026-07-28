@@ -12,7 +12,7 @@ published_at: "2026-06-06"
 description: "The Evernew Ti SOLO Pot NH (ECA624) is a 76g, 550ml pure-titanium, no-handle pot from Japan with a signature flame-proof silicone ring — built for weight-obsessed solo hikers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Evernew Ti SOLO Pot NH (ECA624) is a 550ml pure-titanium pot from Evernew, a
 
 ## Key Specs
 
-| Spec                       | Value                                                                                 |
-| -------------------------- | ------------------------------------------------------------------------------------- |
-| **SKU**                    | ECA624                                                                                |
-| **Weight**                 | 76g (silicone ring included) / 67g bare pot                                           |
-| **Capacity**               | 550ml (with internal scale markings)                                                  |
-| **Dimensions**             | Diameter 97mm × Depth 100mm                                                           |
-| **Material**               | Pure Titanium                                                                         |
-| **Country of Origin**      | Japan                                                                                 |
-| **Compatible Accessories** | NABETSUCAM pot lifter (EBY168)                                                        |
-| **Comparison**             | See how [Ti SOLO Pot NH compares](/tools/ultralight-research/pot-pan) to similar gear |
+| Spec                       | Value                                       |
+| -------------------------- | ------------------------------------------- |
+| **SKU**                    | ECA624                                      |
+| **Weight**                 | 76g (silicone ring included) / 67g bare pot |
+| **Capacity**               | 550ml (with internal scale markings)        |
+| **Dimensions**             | Diameter 97mm × Depth 100mm                 |
+| **Material**               | Pure Titanium                               |
+| **Country of Origin**      | Japan                                       |
+| **Compatible Accessories** | NABETSUCAM pot lifter (EBY168)              |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="pot-pan"
+/>
 
 ## Performance
 

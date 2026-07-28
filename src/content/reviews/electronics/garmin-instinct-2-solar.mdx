@@ -12,7 +12,7 @@ published_at: "2026-06-28"
 description: "The Garmin Instinct 2 Solar is a rugged, solar-charging GPS smartwatch built for multi-day adventures — strong on durability and battery life, but skips topo maps and a color screen."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,23 +20,28 @@ The Garmin Instinct 2 Solar is a rugged, solar-charging GPS smartwatch aimed squ
 
 ## Key Specs
 
-| Spec                     | Value                                                                                    |
-| ------------------------ | ---------------------------------------------------------------------------------------- |
-| **Weight**               | 53 g                                                                                     |
-| **Case Size**            | 45 mm × 45 mm                                                                            |
-| **Thickness**            | 14.5 mm                                                                                  |
-| **Display**              | 0.9 in (23 mm) monochrome transflective MIP                                              |
-| **Battery — Smartwatch** | Unlimited w/ solar (3 hrs/day @ 50,000 lux); 28 days w/o solar                           |
-| **Battery — GPS**        | Up to 48 hrs w/ solar; 30 hrs w/o solar                                                  |
-| **Battery — Max GPS**    | Up to 370 hrs w/ solar (UltraTrac)                                                       |
-| **Water Rating**         | 100 m (10 ATM)                                                                           |
-| **GNSS**                 | GPS, GLONASS, Galileo                                                                    |
-| **ABC Sensors**          | Barometric altimeter, 3-axis compass                                                     |
-| **Build Standard**       | MIL-STD-810                                                                              |
-| **Connectivity**         | Bluetooth, ANT+                                                                          |
-| **Comparison**           | See how [Instinct 2 Solar compares](/tools/ultralight-research/wearable) to similar gear |
+| Spec                     | Value                                                          |
+| ------------------------ | -------------------------------------------------------------- |
+| **Weight**               | 53 g                                                           |
+| **Case Size**            | 45 mm × 45 mm                                                  |
+| **Thickness**            | 14.5 mm                                                        |
+| **Display**              | 0.9 in (23 mm) monochrome transflective MIP                    |
+| **Battery — Smartwatch** | Unlimited w/ solar (3 hrs/day @ 50,000 lux); 28 days w/o solar |
+| **Battery — GPS**        | Up to 48 hrs w/ solar; 30 hrs w/o solar                        |
+| **Battery — Max GPS**    | Up to 370 hrs w/ solar (UltraTrac)                             |
+| **Water Rating**         | 100 m (10 ATM)                                                 |
+| **GNSS**                 | GPS, GLONASS, Galileo                                          |
+| **ABC Sensors**          | Barometric altimeter, 3-axis compass                           |
+| **Build Standard**       | MIL-STD-810                                                    |
+| **Connectivity**         | Bluetooth, ANT+                                                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="wearable"
+/>
 
 ## Performance
 

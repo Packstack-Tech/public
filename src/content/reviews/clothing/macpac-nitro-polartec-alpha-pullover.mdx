@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "A 140g Polartec Alpha Direct pullover built for high-output alpine and thru-hiking use—warm on the move, but wind cuts right through it."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Nitro is Macpac's minimalist take on an active-insulation midlayer, built fr
 
 ## Key Specs
 
-| Spec             | Detail                                                                                                    |
-| ---------------- | --------------------------------------------------------------------------------------------------------- |
-| Weight           | 140g (men's); ~110g (women's)                                                                             |
-| Fabric           | Polartec® Alpha® Direct                                                                                   |
-| Fabric weight    | 90 gsm                                                                                                    |
-| Recycled content | 78%                                                                                                       |
-| Closure          | Pullover, no zip                                                                                          |
-| Features         | Stuff-into-hood, thumb loops, elasticated hem, Napoleon chest pocket (men's)                              |
-| Sleeve style     | Raglan                                                                                                    |
-| **Comparison**   | See how [Nitro Polartec® Alpha® Pullover compares](/tools/ultralight-research/insulation) to similar gear |
+| Spec             | Detail                                                                       |
+| ---------------- | ---------------------------------------------------------------------------- |
+| Weight           | 140g (men's); ~110g (women's)                                                |
+| Fabric           | Polartec® Alpha® Direct                                                      |
+| Fabric weight    | 90 gsm                                                                       |
+| Recycled content | 78%                                                                          |
+| Closure          | Pullover, no zip                                                             |
+| Features         | Stuff-into-hood, thumb loops, elasticated hem, Napoleon chest pocket (men's) |
+| Sleeve style     | Raglan                                                                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="insulation"
+/>
 
 ## Performance
 

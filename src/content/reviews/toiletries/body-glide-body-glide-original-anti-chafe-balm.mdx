@@ -12,7 +12,7 @@ published_at: "2026-05-19"
 description: "An honest look at Body Glide Original Anti-Chafe Balm — the trail-proven, plant-based stick that's become a staple in hikers' and thru-hikers' kits."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -38,9 +38,14 @@ by backpackers.
 | **Vegan**                         | Yes — plant-derived, not tested on animals                                                                                           |
 | **Fragrance-Free**                | Yes                                                                                                                                  |
 | **Contains Petroleum / Parabens** | No                                                                                                                                   |
-| **Comparison**                    | See how [Body Glide Original compares](/tools/ultralight-research/personal-care) to similar gear                                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="personal-care"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-05-20"
 description: "The Nitecore CARBO 10000 packs 10,000mAh into a 5.54 oz unibody carbon fiber shell — a compelling ultralight power bank for thru-hikers, with a few real-world caveats."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,25 +30,30 @@ carry, this is the category of power bank worth paying attention to.
 
 ## Key Specs
 
-| Spec                   | Value                                                                                  |
-| ---------------------- | -------------------------------------------------------------------------------------- |
-| **Weight**             | 157 g (5.54 oz)                                                                        |
-| **Capacity (nominal)** | 10,000 mAh / 38.5 Wh                                                                   |
-| **Rated Energy**       | 6,400 mAh at 5V                                                                        |
-| **Max Output**         | 20W (USB-C PD)                                                                         |
-| **USB-C Output**       | 5V⎓3A / 9V⎓2.22A / 12V⎓1.68A                                                           |
-| **USB-A Output**       | 5V⎓3A / 9V⎓2A / 12V⎓1.5A                                                               |
-| **Dual-Port Output**   | 5V⎓3A max (15W combined)                                                               |
-| **USB-C Input**        | 5V⎓2.4A / 9V⎓2A (up to 18W)                                                            |
-| **Dimensions**         | 124 × 59 × 11.5 mm                                                                     |
-| **Waterproofing**      | IPX5                                                                                   |
-| **Cell Type**          | Li-ion                                                                                 |
-| **Shell**              | Unibody carbon fiber (CFRP)                                                            |
-| **Special Modes**      | Low Current Mode                                                                       |
-| **In the Box**         | USB-C charging cable                                                                   |
-| **Comparison**         | See how [CARBO 10000 compares](/tools/ultralight-research/power-cable) to similar gear |
+| Spec                   | Value                        |
+| ---------------------- | ---------------------------- |
+| **Weight**             | 157 g (5.54 oz)              |
+| **Capacity (nominal)** | 10,000 mAh / 38.5 Wh         |
+| **Rated Energy**       | 6,400 mAh at 5V              |
+| **Max Output**         | 20W (USB-C PD)               |
+| **USB-C Output**       | 5V⎓3A / 9V⎓2.22A / 12V⎓1.68A |
+| **USB-A Output**       | 5V⎓3A / 9V⎓2A / 12V⎓1.5A     |
+| **Dual-Port Output**   | 5V⎓3A max (15W combined)     |
+| **USB-C Input**        | 5V⎓2.4A / 9V⎓2A (up to 18W)  |
+| **Dimensions**         | 124 × 59 × 11.5 mm           |
+| **Waterproofing**      | IPX5                         |
+| **Cell Type**          | Li-ion                       |
+| **Shell**              | Unibody carbon fiber (CFRP)  |
+| **Special Modes**      | Low Current Mode             |
+| **In the Box**         | USB-C charging cable         |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="power-cable"
+/>
 
 ## Performance
 

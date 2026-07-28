@@ -12,7 +12,7 @@ published_at: "2026-07-15"
 description: "At 14g and ~$11, the TOAKS WSC-01 titanium windscreen is hard to beat for alcohol stove setups — if you can live with its sharp edges and modest 110mm height."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The TOAKS WSC-01 is a flat-pack titanium windscreen aimed squarely at ultralight
 
 ## Key Specs
 
-| Spec           | Value                                                                                    |
-| -------------- | ---------------------------------------------------------------------------------------- |
-| Model          | WSC-01                                                                                   |
-| Weight         | 0.5 oz (14 g)                                                                            |
-| Dimensions     | 22 7/8" × 4 3/8" (580 × 110 mm)                                                          |
-| Material       | Titanium                                                                                 |
-| Price          | ~$10.95 USD                                                                              |
-| Includes       | Nylon storage bag                                                                        |
-| **Comparison** | See how [Titanium Windscreen compares](/tools/ultralight-research/stove) to similar gear |
+| Spec       | Value                           |
+| ---------- | ------------------------------- |
+| Model      | WSC-01                          |
+| Weight     | 0.5 oz (14 g)                   |
+| Dimensions | 22 7/8" × 4 3/8" (580 × 110 mm) |
+| Material   | Titanium                        |
+| Price      | ~$10.95 USD                     |
+| Includes   | Nylon storage bag               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

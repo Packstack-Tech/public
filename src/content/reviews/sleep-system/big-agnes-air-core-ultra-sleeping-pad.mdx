@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A budget-friendly, warm-weather air pad that trades R-value and a bit of comfort for a genuinely low price and reasonable pack size."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Air Core Ultra is Big Agnes's entry-level, non-insulated air pad — basical
 
 ## Key Specs
 
-| Spec                    | Value                                                                                                   |
-| ----------------------- | ------------------------------------------------------------------------------------------------------- |
-| Weight                  | 623 g (22 oz), Regular                                                                                  |
-| Packed size             | 4" x 8" (Regular)                                                                                       |
-| Center thickness        | 3.25 in                                                                                                 |
-| Outer chamber thickness | 3.5 in                                                                                                  |
-| Season rating           | Warm weather                                                                                            |
-| R-value                 | ~1.0 (third-party tested)                                                                               |
-| Construction            | Vertical I-beam baffles                                                                                 |
-| Valve                   | High-volume valve with micro-adjust                                                                     |
-| **Comparison**          | See how [Air Core Ultra Sleeping Pad compares](/tools/ultralight-research/sleeping-pad) to similar gear |
+| Spec                    | Value                               |
+| ----------------------- | ----------------------------------- |
+| Weight                  | 623 g (22 oz), Regular              |
+| Packed size             | 4" x 8" (Regular)                   |
+| Center thickness        | 3.25 in                             |
+| Outer chamber thickness | 3.5 in                              |
+| Season rating           | Warm weather                        |
+| R-value                 | ~1.0 (third-party tested)           |
+| Construction            | Vertical I-beam baffles             |
+| Valve                   | High-volume valve with micro-adjust |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sleeping-pad"
+/>
 
 ## Performance
 

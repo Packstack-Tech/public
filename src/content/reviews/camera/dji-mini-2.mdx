@@ -12,7 +12,7 @@ published_at: "2026-06-08"
 description: "The DJI Mini 2 is a sub-250g folding drone with 4K video, OcuSync 2.0 transmission, and a 3-axis gimbal — a capable travel and beginner camera platform."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,27 +20,32 @@ The DJI Mini 2 is a compact, sub-250g folding drone that packs genuine 4K video 
 
 ## Key Specs
 
-| Spec                          | Value                                                                               |
-| ----------------------------- | ----------------------------------------------------------------------------------- |
-| **Weight**                    | 242 g (incl. battery, propellers, microSD)                                          |
-| **Folded Dimensions**         | 138 × 81 × 58 mm                                                                    |
-| **Unfolded Dimensions**       | 159 × 203 × 56 mm                                                                   |
-| **Max Flight Time**           | 31 min (advertised)                                                                 |
-| **Max Transmission Distance** | 10 km (FCC) / 6 km (CE)                                                             |
-| **Camera Sensor**             | 1/2.3" CMOS                                                                         |
-| **Photo Resolution**          | 12 MP (JPEG + RAW/DNG)                                                              |
-| **Video Resolution**          | 4K @ 24/25/30fps; 2.7K & 1080p up to 60fps                                          |
-| **Max Video Bitrate**         | 100 Mbps (H.264/MP4)                                                                |
-| **Aperture / Focal Length**   | f/2.8 / 24mm equiv. (83° FOV)                                                       |
-| **Gimbal**                    | 3-axis                                                                              |
-| **Wind Resistance**           | Level 5 (up to ~38 kph / 24 mph)                                                    |
-| **Transmission System**       | OcuSync 2.0 (2.4 GHz / 5.8 GHz dual-band)                                           |
-| **Obstacle Avoidance**        | Downward only (no forward/side/rear)                                                |
-| **Internal Storage**          | None (microSD required)                                                             |
-| **Charging**                  | USB-C, up to 29W (QC / USB PD)                                                      |
-| **Comparison**                | See how [DJI Mini 2 compares](/tools/ultralight-research/body-lens) to similar gear |
+| Spec                          | Value                                      |
+| ----------------------------- | ------------------------------------------ |
+| **Weight**                    | 242 g (incl. battery, propellers, microSD) |
+| **Folded Dimensions**         | 138 × 81 × 58 mm                           |
+| **Unfolded Dimensions**       | 159 × 203 × 56 mm                          |
+| **Max Flight Time**           | 31 min (advertised)                        |
+| **Max Transmission Distance** | 10 km (FCC) / 6 km (CE)                    |
+| **Camera Sensor**             | 1/2.3" CMOS                                |
+| **Photo Resolution**          | 12 MP (JPEG + RAW/DNG)                     |
+| **Video Resolution**          | 4K @ 24/25/30fps; 2.7K & 1080p up to 60fps |
+| **Max Video Bitrate**         | 100 Mbps (H.264/MP4)                       |
+| **Aperture / Focal Length**   | f/2.8 / 24mm equiv. (83° FOV)              |
+| **Gimbal**                    | 3-axis                                     |
+| **Wind Resistance**           | Level 5 (up to ~38 kph / 24 mph)           |
+| **Transmission System**       | OcuSync 2.0 (2.4 GHz / 5.8 GHz dual-band)  |
+| **Obstacle Avoidance**        | Downward only (no forward/side/rear)       |
+| **Internal Storage**          | None (microSD required)                    |
+| **Charging**                  | USB-C, up to 29W (QC / USB PD)             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="body-lens"
+/>
 
 ## Performance
 

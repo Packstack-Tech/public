@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "A balanced review of the Sea to Summit Nylon 66 Pocket Trowel — a 87g collapsible cathole trowel with hollow handle storage and LNT depth gauge markings."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -29,18 +29,23 @@ look.
 
 ## Key Specs
 
-| Spec                 | Value                                                                                       |
-| -------------------- | ------------------------------------------------------------------------------------------- |
-| **Weight**           | 87g / 3 oz                                                                                  |
-| **Material**         | Glass-reinforced Nylon 66                                                                   |
-| **Collapsed Length** | 14 cm / 5.5 in                                                                              |
-| **Extended Length**  | 24 cm / 9.5 in                                                                              |
-| **Handle Storage**   | Yes (hollow — fits TP or lighter)                                                           |
-| **Depth Gauge**      | Yes                                                                                         |
-| **Lock Mechanism**   | Push-button spring lock                                                                     |
-| **Comparison**       | See how [Nylon 66 Pocket Trowel compares](/tools/ultralight-research/bathroom) to similar gear |
+| Spec                 | Value                             |
+| -------------------- | --------------------------------- |
+| **Weight**           | 87g / 3 oz                        |
+| **Material**         | Glass-reinforced Nylon 66         |
+| **Collapsed Length** | 14 cm / 5.5 in                    |
+| **Extended Length**  | 24 cm / 9.5 in                    |
+| **Handle Storage**   | Yes (hollow — fits TP or lighter) |
+| **Depth Gauge**      | Yes                               |
+| **Lock Mechanism**   | Push-button spring lock           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="bathroom"
+/>
 
 ## Performance
 

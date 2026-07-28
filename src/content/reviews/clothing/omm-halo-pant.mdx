@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "OMM's 80g Halo Pant is one of the lightest waterproof overtrousers you can buy — here's how they hold up on trail."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -22,20 +22,25 @@ Quick heads-up before you shop: <cite index="13-3,13-4,13-5">OMM has changed the
 
 ## Key Specs
 
-| Spec                          | Detail                                                                             |
-| ----------------------------- | ---------------------------------------------------------------------------------- |
-| Weight                        | 80g (men's; women's runs ~70–85g depending on size)                                |
-| Fabric                        | PointZero H2O 2-layer waterproof                                                   |
-| Waterproof rating             | 10,000mm hydrostatic head                                                          |
-| Breathability                 | 10,000 g/m²/24hr                                                                   |
-| Seams                         | Fully taped                                                                        |
-| Packed size                   | Tennis ball                                                                        |
-| Combined weight w/ Halo Smock | 190g                                                                               |
-| Closures                      | Elasticated waist, Velcro ankle tabs                                               |
-| Storage                       | Internal stuff pocket                                                              |
-| **Comparison**                | See how [Halo Pant compares](/tools/ultralight-research/rain-gear) to similar gear |
+| Spec                          | Detail                                              |
+| ----------------------------- | --------------------------------------------------- |
+| Weight                        | 80g (men's; women's runs ~70–85g depending on size) |
+| Fabric                        | PointZero H2O 2-layer waterproof                    |
+| Waterproof rating             | 10,000mm hydrostatic head                           |
+| Breathability                 | 10,000 g/m²/24hr                                    |
+| Seams                         | Fully taped                                         |
+| Packed size                   | Tennis ball                                         |
+| Combined weight w/ Halo Smock | 190g                                                |
+| Closures                      | Elasticated waist, Velcro ankle tabs                |
+| Storage                       | Internal stuff pocket                               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="rain-gear"
+/>
 
 ## Performance
 

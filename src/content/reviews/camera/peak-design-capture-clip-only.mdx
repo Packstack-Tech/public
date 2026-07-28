@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A compact, rock-solid camera clip that mounts to pack straps or belts for quick-draw access — just remember to budget for a plate."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Peak Design Capture Clip (V3, clip-only) is a metal quick-release mount that
 
 ## Key Specs
 
-| Spec                             | Value                                                                                      |
-| -------------------------------- | ------------------------------------------------------------------------------------------ |
-| Weight (clip only)               | 70 g (2.5 oz)                                                                              |
-| Length                           | 3.3 in                                                                                     |
-| Max load                         | 200 lbs / 90 kg                                                                            |
-| Max strap width                  | 2.5 in                                                                                     |
-| Max strap thickness (thumbscrew) | 0.6 in                                                                                     |
-| Max strap thickness (hex bolt)   | 0.88 in                                                                                    |
-| Material                         | Weatherproof, rust-resistant aluminum                                                      |
-| Plate included                   | No — sold separately                                                                       |
-| Generation                       | V3                                                                                         |
-| **Comparison**                   | See how [Capture (Clip Only) compares](/tools/ultralight-research/support) to similar gear |
+| Spec                             | Value                                 |
+| -------------------------------- | ------------------------------------- |
+| Weight (clip only)               | 70 g (2.5 oz)                         |
+| Length                           | 3.3 in                                |
+| Max load                         | 200 lbs / 90 kg                       |
+| Max strap width                  | 2.5 in                                |
+| Max strap thickness (thumbscrew) | 0.6 in                                |
+| Max strap thickness (hex bolt)   | 0.88 in                               |
+| Material                         | Weatherproof, rust-resistant aluminum |
+| Plate included                   | No — sold separately                  |
+| Generation                       | V3                                    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="support"
+/>
 
 ## Performance
 

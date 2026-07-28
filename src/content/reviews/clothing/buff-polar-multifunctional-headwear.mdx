@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A tube-style neck gaiter with a PrimaLoft fleece panel sewn onto standard Buff microfiber — versatile and warm, though the two-material design has some quirks."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Buff Polar Multifunctional Headwear is a hybrid tube: one end is the classic
 
 ## Key Specs
 
-| Spec           | Detail                                                                                                 |
-| -------------- | ------------------------------------------------------------------------------------------------------ |
-| Weight         | 65.0 g (~2.3 oz)                                                                                       |
-| Dimensions     | 29.5 in (L) x 9.5 in (W)                                                                               |
-| Upper material | 95% REPREVE® Recycled Polyester, 5% Elastane                                                           |
-| Lower material | PrimaLoft® Fleece — 85% Recycled Polyester, 15% Polyester                                              |
-| UPF Rating     | UPF 50                                                                                                 |
-| Wear styles    | 10+                                                                                                    |
-| Care           | Machine wash cold, no fabric softener                                                                  |
-| **Comparison** | See how [Polar Multifunctional Headwear compares](/tools/ultralight-research/headwear) to similar gear |
+| Spec           | Detail                                                    |
+| -------------- | --------------------------------------------------------- |
+| Weight         | 65.0 g (~2.3 oz)                                          |
+| Dimensions     | 29.5 in (L) x 9.5 in (W)                                  |
+| Upper material | 95% REPREVE® Recycled Polyester, 5% Elastane              |
+| Lower material | PrimaLoft® Fleece — 85% Recycled Polyester, 15% Polyester |
+| UPF Rating     | UPF 50                                                    |
+| Wear styles    | 10+                                                       |
+| Care           | Machine wash cold, no fabric softener                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="headwear"
+/>
 
 ## Performance
 

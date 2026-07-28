@@ -12,7 +12,7 @@ published_at: "2026-04-30"
 description: "The Jetboil MiniMo is a fuel-efficient integrated canister stove with genuine simmer control — ideal for solo backpackers who want to cook real food, not just boil water."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The Jetboil MiniMo is an all-in-one canister stove system aimed squarely at back
 
 ## Key Specs
 
-| Spec                   | Value                                                                                      |
-| ---------------------- | ------------------------------------------------------------------------------------------ |
-| **Weight**             | 14.6 oz / 415 g (excludes fuel stabilizer)                                                 |
-| **Volume**             | 1.0 L (short/wide profile)                                                                 |
-| **Packed Dimensions**  | 5 in × 5.5 in (127 mm × 140 mm)                                                            |
-| **Boil Time**          | 2 min 15 sec per 0.5 L (manufacturer avg.)                                                 |
-| **Output**             | 6,000 BTU/h (1.75 kW)                                                                      |
-| **Fuel Type**          | Isobutane-Propane                                                                          |
-| **Ignition**           | Push-button piezo                                                                          |
-| **Min Temp Rating**    | 20°F (-6°C)                                                                                |
-| **Fuel Efficiency**    | 12 L boiled per 100 g canister                                                             |
-| **Pressure Regulator** | Yes                                                                                        |
-| **Comparison**         | See how [MiniMo Cooking System compares](/tools/ultralight-research/stove) to similar gear |
+| Spec                   | Value                                      |
+| ---------------------- | ------------------------------------------ |
+| **Weight**             | 14.6 oz / 415 g (excludes fuel stabilizer) |
+| **Volume**             | 1.0 L (short/wide profile)                 |
+| **Packed Dimensions**  | 5 in × 5.5 in (127 mm × 140 mm)            |
+| **Boil Time**          | 2 min 15 sec per 0.5 L (manufacturer avg.) |
+| **Output**             | 6,000 BTU/h (1.75 kW)                      |
+| **Fuel Type**          | Isobutane-Propane                          |
+| **Ignition**           | Push-button piezo                          |
+| **Min Temp Rating**    | 20°F (-6°C)                                |
+| **Fuel Efficiency**    | 12 L boiled per 100 g canister             |
+| **Pressure Regulator** | Yes                                        |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

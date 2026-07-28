@@ -12,7 +12,7 @@ published_at: "2026-07-01"
 description: "A 38g fold-flat windscreen built for ultralight alcohol stove setups. Honest review covering real-world wind performance, fit, height limitations, and who it's really for."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The Vargo Aluminum Windscreen is a one-piece, fold-flat wind barrier aimed squar
 
 ## Key Specs
 
-| Spec                      | Value                                                                                          |
-| ------------------------- | ---------------------------------------------------------------------------------------------- |
-| **Weight**                | 38g (1.3 oz)                                                                                   |
-| **Dimensions (unfolded)** | 16.4" L × 3.2" H (416 × 81 mm)                                                                 |
-| **Material**              | Aluminum                                                                                       |
-| **Design**                | One-piece, fold-flat                                                                           |
-| **Colors**                | Natural, Black, Blue                                                                           |
-| **Secondary Use**         | Light-load pot support (DIY setups)                                                            |
-| **Comparison**            | See how [Vargo Aluminum Windscreen compares](/tools/ultralight-research/stove) to similar gear |
+| Spec                      | Value                               |
+| ------------------------- | ----------------------------------- |
+| **Weight**                | 38g (1.3 oz)                        |
+| **Dimensions (unfolded)** | 16.4" L × 3.2" H (416 × 81 mm)      |
+| **Material**              | Aluminum                            |
+| **Design**                | One-piece, fold-flat                |
+| **Colors**                | Natural, Black, Blue                |
+| **Secondary Use**         | Light-load pot support (DIY setups) |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

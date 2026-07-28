@@ -12,7 +12,7 @@ published_at: "2026-04-15"
 description: "The BearVault BV450 Jaunt is a 7.2L, tool-free polycarbonate bear canister built for 3–4 day solo trips. Broad regulatory approval, transparent walls, and a fair price make it a trail staple — but the weight is real."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The BearVault BV450 Jaunt is a mid-size, transparent polycarbonate bear canister
 
 ## Key Specs
 
-| Spec           | Value                                                                              |
-| -------------- | ---------------------------------------------------------------------------------- |
-| Weight         | 936 g (33 oz / 2 lb 1.6 oz)                                                        |
-| Volume         | 7.2 L / 440 cu in                                                                  |
-| Dimensions     | 8.7" diameter × 8.3" tall                                                          |
-| Material       | Polycarbonate (transparent)                                                        |
-| Capacity       | 3–4 days of food (solo)                                                            |
-| Approvals      | IGBC, Sierra Interagency Black Bear Group                                          |
-| Price          | $89.99                                                                             |
-| Made In        | USA                                                                                |
-| **Comparison** | See how [BV450 Jaunt compares](/tools/ultralight-research/storage) to similar gear |
+| Spec       | Value                                     |
+| ---------- | ----------------------------------------- |
+| Weight     | 936 g (33 oz / 2 lb 1.6 oz)               |
+| Volume     | 7.2 L / 440 cu in                         |
+| Dimensions | 8.7" diameter × 8.3" tall                 |
+| Material   | Polycarbonate (transparent)               |
+| Capacity   | 3–4 days of food (solo)                   |
+| Approvals  | IGBC, Sierra Interagency Black Bear Group |
+| Price      | $89.99                                    |
+| Made In    | USA                                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="storage"
+/>
 
 ## Performance
 

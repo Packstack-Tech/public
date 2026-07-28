@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "A compact, cylindrical power bank at 136g, the Anker PowerCore 5000 is a budget-friendly option for short trips — but dated Micro-USB and a weak mAh/oz ratio limit its appeal."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The Anker PowerCore 5000 (model A1109) is a lipstick-style cylindrical power ban
 
 ## Key Specs
 
-| Spec              | Detail                                                                                |
-| ----------------- | ------------------------------------------------------------------------------------- |
-| **Model**         | A1109                                                                                 |
-| **Weight**        | 136g (4.8 oz)                                                                         |
-| **Capacity**      | 5,000mAh                                                                              |
-| **Input**         | 5V/2A via Micro-USB                                                                   |
-| **Output**        | 5V/2A via 1× USB-A                                                                    |
-| **Ports**         | 1× Micro-USB input, 1× USB-A output                                                   |
-| **Dimensions**    | 4.21 × 1.3 × 1.3 in                                                                   |
-| **Charging Tech** | PowerIQ + VoltageBoost                                                                |
-| **Recharge Time** | ~2.5 hrs (with 2A adapter)                                                            |
-| **Warranty**      | 18-month limited                                                                      |
-| **Comparison**    | See how [PowerCore 5000 compares](/tools/ultralight-research/battery) to similar gear |
+| Spec              | Detail                              |
+| ----------------- | ----------------------------------- |
+| **Model**         | A1109                               |
+| **Weight**        | 136g (4.8 oz)                       |
+| **Capacity**      | 5,000mAh                            |
+| **Input**         | 5V/2A via Micro-USB                 |
+| **Output**        | 5V/2A via 1× USB-A                  |
+| **Ports**         | 1× Micro-USB input, 1× USB-A output |
+| **Dimensions**    | 4.21 × 1.3 × 1.3 in                 |
+| **Charging Tech** | PowerIQ + VoltageBoost              |
+| **Recharge Time** | ~2.5 hrs (with 2A adapter)          |
+| **Warranty**      | 18-month limited                    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="battery"
+/>
 
 ## Performance
 

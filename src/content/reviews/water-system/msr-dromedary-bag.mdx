@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The MSR Dromedary Bag is a legendary, near-indestructible water storage solution built for demanding backcountry use — but a persistent taste issue keeps it from a perfect score."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The MSR Dromedary Bag is one of the most battle-tested water storage vessels in 
 
 ## Key Specs
 
-| Spec                  | Value                                                                                    |
-| --------------------- | ---------------------------------------------------------------------------------------- |
-| **Weight**            | 284 g (10 oz)                                                                            |
-| **Capacity**          | 10L                                                                                      |
-| **Dimensions (flat)** | 31.75 cm × 58.4 cm (12.5" × 23")                                                         |
-| **Material**          | 1,000D PU-laminated Cordura                                                              |
-| **BPA-Free**          | Yes                                                                                      |
-| **Cap**               | 3-in-1 (fill / pour / drink)                                                             |
-| **Mouth Diameter**    | 63 mm (Nalgene-compatible)                                                               |
-| **Other Sizes**       | 4L (196 g), 6L (247 g)                                                                   |
-| **Price**             | ~$65 (10L, REI)                                                                          |
-| **Comparison**        | See how [MSR Dromedary Bag compares](/tools/ultralight-research/storage) to similar gear |
+| Spec                  | Value                            |
+| --------------------- | -------------------------------- |
+| **Weight**            | 284 g (10 oz)                    |
+| **Capacity**          | 10L                              |
+| **Dimensions (flat)** | 31.75 cm × 58.4 cm (12.5" × 23") |
+| **Material**          | 1,000D PU-laminated Cordura      |
+| **BPA-Free**          | Yes                              |
+| **Cap**               | 3-in-1 (fill / pour / drink)     |
+| **Mouth Diameter**    | 63 mm (Nalgene-compatible)       |
+| **Other Sizes**       | 4L (196 g), 6L (247 g)           |
+| **Price**             | ~$65 (10L, REI)                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="storage"
+/>
 
 ## Performance
 

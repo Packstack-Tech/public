@@ -12,7 +12,7 @@ published_at: "2026-07-06"
 description: "The OR Helium is a 179g ultralight emergency rain shell with Pertex Shield Diamond Fuse 2.5L fabric — packable to a chest pocket, best for brief showers and shoulder-season layering."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -39,17 +39,22 @@ discount.
 
 ## Key Specs
 
-| Spec           | Value                                                                                       |
-| -------------- | ------------------------------------------------------------------------------------------- |
-| Weight         | 179g (6.3 oz)                                                                               |
-| Shell Material | Pertex Shield Diamond Fuse 2.5L, 100% Nylon 30D Ripstop                                     |
-| Waterproofing  | 2.5-layer, fully taped seams                                                                |
-| Packed Size    | Stuffs into chest pocket (~7" × 7" × 2")                                                    |
-| Fit            | Athletic/trim                                                                               |
-| MSRP           | $180 (men's; final sale)                                                                    |
-| **Comparison** | See how [Helium Rain Jacket compares](/tools/ultralight-research/rain-gear) to similar gear |
+| Spec           | Value                                                   |
+| -------------- | ------------------------------------------------------- |
+| Weight         | 179g (6.3 oz)                                           |
+| Shell Material | Pertex Shield Diamond Fuse 2.5L, 100% Nylon 30D Ripstop |
+| Waterproofing  | 2.5-layer, fully taped seams                            |
+| Packed Size    | Stuffs into chest pocket (~7" × 7" × 2")                |
+| Fit            | Athletic/trim                                           |
+| MSRP           | $180 (men's; final sale)                                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="rain-gear"
+/>
 
 ## Performance
 

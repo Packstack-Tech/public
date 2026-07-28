@@ -12,7 +12,7 @@ published_at: "2026-07-05"
 description: "A deep dive into the Tarptent Double Rainbow — a roomy, single-wall 2-person shelter with 20 years of refinement, proven on the PCT, AT, and beyond."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -29,24 +29,29 @@ other at trailheads, and for good reason.
 
 ## Key Specs
 
-| Spec                 | Value                                                                              |
-| -------------------- | ---------------------------------------------------------------------------------- |
-| **Capacity**         | 2 person                                                                           |
-| **Weight**           | 1191 g / 42 oz (with aluminum poles)                                               |
-| **Wall Type**        | Single-wall (hybrid mesh/solid)                                                    |
-| **Floor Dimensions** | 88 × 50 in / 223 × 127 cm                                                          |
-| **Floor Area**       | 30.6 sq ft / 2.84 sq m                                                             |
-| **Fly Material**     | 20D silicone-coated high tenacity polyester (silpoly), 5000mm+ HH                  |
-| **Floor Material**   | 30D silicone-coated ripstop nylon 66 (silnylon), 5000mm+ HH                        |
-| **Max User Height**  | 6 ft 6 in / 1.98 m                                                                 |
-| **Freestanding**     | Optional with trekking poles (55 in / 140 cm minimum)                              |
-| **Vestibules**       | Dual, ~7.5 sq ft each                                                              |
-| **Packed Size**      | 16 × 4.5 in / 41 × 11.4 cm                                                         |
-| **Seasons**          | 3                                                                                  |
-| **Seam Sealed**      | No — seam sealing required before first use                                        |
-| **Comparison**       | See how [Double Rainbow compares](/tools/ultralight-research/tent) to similar gear |
+| Spec                 | Value                                                             |
+| -------------------- | ----------------------------------------------------------------- |
+| **Capacity**         | 2 person                                                          |
+| **Weight**           | 1191 g / 42 oz (with aluminum poles)                              |
+| **Wall Type**        | Single-wall (hybrid mesh/solid)                                   |
+| **Floor Dimensions** | 88 × 50 in / 223 × 127 cm                                         |
+| **Floor Area**       | 30.6 sq ft / 2.84 sq m                                            |
+| **Fly Material**     | 20D silicone-coated high tenacity polyester (silpoly), 5000mm+ HH |
+| **Floor Material**   | 30D silicone-coated ripstop nylon 66 (silnylon), 5000mm+ HH       |
+| **Max User Height**  | 6 ft 6 in / 1.98 m                                                |
+| **Freestanding**     | Optional with trekking poles (55 in / 140 cm minimum)             |
+| **Vestibules**       | Dual, ~7.5 sq ft each                                             |
+| **Packed Size**      | 16 × 4.5 in / 41 × 11.4 cm                                        |
+| **Seasons**          | 3                                                                 |
+| **Seam Sealed**      | No — seam sealing required before first use                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="tent"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A 19g titanium long-handled spork with a polished bowl and matte handle — TOAKS' answer to eating cleanly out of a freeze-dried food bag."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The TOAKS SLV-14 is a one-piece titanium spork built specifically for backpacker
 
 ## Key Specs
 
-| Spec            | Detail                                                                                                               |
-| --------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Weight          | 19.0 g (0.65 oz)                                                                                                     |
-| Length          | 220 mm (8 5/8")                                                                                                      |
-| Material        | Pure titanium, no coating                                                                                            |
-| Finish          | Polished bowl / matte handle                                                                                         |
-| SKU             | SLV-14                                                                                                               |
-| Dishwasher safe | Yes                                                                                                                  |
-| Origin          | Designed in USA, manufactured in China                                                                               |
-| **Comparison**  | See how [Titanium Long Handle Spork with Polished Bowl compares](/tools/ultralight-research/utensil) to similar gear |
+| Spec            | Detail                                 |
+| --------------- | -------------------------------------- |
+| Weight          | 19.0 g (0.65 oz)                       |
+| Length          | 220 mm (8 5/8")                        |
+| Material        | Pure titanium, no coating              |
+| Finish          | Polished bowl / matte handle           |
+| SKU             | SLV-14                                 |
+| Dishwasher safe | Yes                                    |
+| Origin          | Designed in USA, manufactured in China |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="utensil"
+/>
 
 ## Performance
 

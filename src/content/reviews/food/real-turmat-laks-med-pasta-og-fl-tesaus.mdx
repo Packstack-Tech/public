@@ -12,7 +12,7 @@ published_at: "2026-07-12"
 description: "A freeze-dried Norwegian salmon pasta from arctic-tested Drytech. Rich, creamy, and consistently praised by users — but watch the salt content."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,24 +31,29 @@ than a bland rice-and-chicken pouch at the end of a long day.
 
 ## Key Specs
 
-| Spec            | Value                                                                                           |
-| --------------- | ----------------------------------------------------------------------------------------------- |
-| Dry Weight      | 129 g (4.55 oz)                                                                                 |
-| Prepared Weight | ~500 g                                                                                          |
-| Calories        | 601 kcal                                                                                        |
-| Protein         | 20.3 g                                                                                          |
-| Carbohydrates   | 60.5 g                                                                                          |
-| Fat             | 29.2 g                                                                                          |
-| Salt            | 4.5 g                                                                                           |
-| Caloric Density | ~4.7 kcal/g                                                                                     |
-| Prep Time       | 8 min (hot water)                                                                               |
-| Water Required  | 370 ml                                                                                          |
-| Shelf Life      | 5 years                                                                                         |
-| Allergens       | Fish, gluten, lactose, milk, soy                                                                |
-| Serves          | 1                                                                                               |
-| **Comparison**  | See how [Laks med Pasta og Fløtesaus compares](/tools/ultralight-research/meal) to similar gear |
+| Spec            | Value                            |
+| --------------- | -------------------------------- |
+| Dry Weight      | 129 g (4.55 oz)                  |
+| Prepared Weight | ~500 g                           |
+| Calories        | 601 kcal                         |
+| Protein         | 20.3 g                           |
+| Carbohydrates   | 60.5 g                           |
+| Fat             | 29.2 g                           |
+| Salt            | 4.5 g                            |
+| Caloric Density | ~4.7 kcal/g                      |
+| Prep Time       | 8 min (hot water)                |
+| Water Required  | 370 ml                           |
+| Shelf Life      | 5 years                          |
+| Allergens       | Fish, gluten, lactose, milk, soy |
+| Serves          | 1                                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="meal"
+/>
 
 ## Performance
 

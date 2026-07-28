@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The Osprey Aura AG 65 is a women's-specific 65L backpacking pack praised for its AntiGravity suspension, exceptional ventilation, and highly customizable fit—but it comes at a weight cost."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,23 +31,28 @@ breathability over shaving every ounce.
 
 ## Key Specs
 
-| Spec           | Value                                                                                      |
-| -------------- | ------------------------------------------------------------------------------------------ |
-| **Weight**     | 2,086 g (4 lb 9.6 oz) — size M/L                                                           |
-| **Volume**     | 65L                                                                                        |
-| **Dimensions** | 32.28H × 15.35W × 14.17D in                                                                |
-| **Load Range** | 30–40 lbs                                                                                  |
-| **Suspension** | AntiGravity (AG) 3D-suspended mesh                                                         |
-| **Frame**      | Full peripheral metal                                                                      |
-| **Pockets**    | 9 total                                                                                    |
-| **Fabric**     | 100×630D recycled nylon body / 420D bottom                                                 |
-| **Includes**   | Integrated rain cover, hydration sleeve                                                    |
-| **Warranty**   | Osprey All Mighty Guarantee (lifetime)                                                     |
-| **Gender**     | Women's                                                                                    |
-| **Price**      | ~$270                                                                                      |
-| **Comparison** | See how [Osprey Aura AG 65 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec           | Value                                      |
+| -------------- | ------------------------------------------ |
+| **Weight**     | 2,086 g (4 lb 9.6 oz) — size M/L           |
+| **Volume**     | 65L                                        |
+| **Dimensions** | 32.28H × 15.35W × 14.17D in                |
+| **Load Range** | 30–40 lbs                                  |
+| **Suspension** | AntiGravity (AG) 3D-suspended mesh         |
+| **Frame**      | Full peripheral metal                      |
+| **Pockets**    | 9 total                                    |
+| **Fabric**     | 100×630D recycled nylon body / 420D bottom |
+| **Includes**   | Integrated rain cover, hydration sleeve    |
+| **Warranty**   | Osprey All Mighty Guarantee (lifetime)     |
+| **Gender**     | Women's                                    |
+| **Price**      | ~$270                                      |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-05-13"
 description: "A thorough review of the MSR PocketRocket Deluxe canister stove — 83g of regulated, igniter-equipped performance for backpackers who want more than just boiling water."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,21 +30,26 @@ experience rather than a bare-bones boil-water rig.
 
 ## Key Specs
 
-| Spec                   | Value                                                                                    |
-| ---------------------- | ---------------------------------------------------------------------------------------- |
-| **Weight**             | 83 g / 2.9 oz (stove only)                                                               |
-| **Packed Size**        | 1.5 × 2.2 × 3.3 in                                                                       |
-| **Boil Time (1L)**     | 3:30 (manufacturer)                                                                      |
-| **Output**             | ~10,400 BTU/hr                                                                           |
-| **Ignition**           | Push-start Piezo                                                                         |
-| **Fuel Type**          | Isobutane-propane canister (threaded)                                                    |
-| **Max Pot Diameter**   | 8 in                                                                                     |
-| **Pressure Regulator** | Yes                                                                                      |
-| **Burn Time**          | ~60 min per 8 oz canister                                                                |
-| **MSRP**               | $69.95                                                                                   |
-| **Comparison**         | See how [PocketRocket Deluxe compares](/tools/ultralight-research/stove) to similar gear |
+| Spec                   | Value                                 |
+| ---------------------- | ------------------------------------- |
+| **Weight**             | 83 g / 2.9 oz (stove only)            |
+| **Packed Size**        | 1.5 × 2.2 × 3.3 in                    |
+| **Boil Time (1L)**     | 3:30 (manufacturer)                   |
+| **Output**             | ~10,400 BTU/hr                        |
+| **Ignition**           | Push-start Piezo                      |
+| **Fuel Type**          | Isobutane-propane canister (threaded) |
+| **Max Pot Diameter**   | 8 in                                  |
+| **Pressure Regulator** | Yes                                   |
+| **Burn Time**          | ~60 min per 8 oz canister             |
+| **MSRP**               | $69.95                                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

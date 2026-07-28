@@ -12,7 +12,7 @@ published_at: "2026-06-02"
 description: "A 102g waterproof first aid kit for 1–2 people on short trips. Solid DryFlex waterproofing, trail-ready contents, but medication quantities run thin fast."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,9 +32,14 @@ The Adventure Medical Kits Ultralight/Watertight .5 is a pre-packaged first aid 
 | **Blister Care**  | Pre-cut moleskin (11 pieces)                                                                                                                                                                                   |
 | **Medications**   | (2) aspirin 325mg, (2) ibuprofen 200mg, (2) acetaminophen 500mg, (2) diphenhydramine 25mg, (2) After Bite wipes                                                                                                |
 | **Tools**         | Splinter/tick forceps, (3) safety pins, (1) cloth tape ½"×10 yd                                                                                                                                                |
-| **Comparison**    | See how [Ultralight/Watertight .5 compares](/tools/ultralight-research/bandage) to similar gear                                                                                                                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="bandage"
+/>
 
 ## Performance
 

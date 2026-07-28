@@ -12,7 +12,7 @@ published_at: "2026-07-08"
 description: "The Trail Designs Kojin is a 17g alcohol burner engineered for cone-style stove systems, offering fast boil times, spill-proof design, and a sealed lid for storing unused fuel."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Trail Designs Kojin (named, as it happens, after the Japanese god of fire, t
 
 ## Key Specs
 
-| Spec           | Value                                                                            |
-| -------------- | -------------------------------------------------------------------------------- |
-| Weight         | 17g (0.6 oz)                                                                     |
-| Material       | Aluminum                                                                         |
-| Diameter       | Just under 2.5 in                                                                |
-| Height         | 13/16 in                                                                         |
-| Fuel Type      | Denatured alcohol only                                                           |
-| Lid Seal       | Silicone-lined screw cap                                                         |
-| Price          | ~$12                                                                             |
-| **Comparison** | See how [Kojin Stove compares](/tools/ultralight-research/stove) to similar gear |
+| Spec      | Value                    |
+| --------- | ------------------------ |
+| Weight    | 17g (0.6 oz)             |
+| Material  | Aluminum                 |
+| Diameter  | Just under 2.5 in        |
+| Height    | 13/16 in                 |
+| Fuel Type | Denatured alcohol only   |
+| Lid Seal  | Silicone-lined screw cap |
+| Price     | ~$12                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

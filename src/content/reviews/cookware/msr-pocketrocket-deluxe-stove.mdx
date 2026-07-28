@@ -12,7 +12,7 @@ published_at: "2026-04-24"
 description: "The MSR PocketRocket Deluxe adds a pressure regulator, piezo igniter, and broader burner to the classic PocketRocket formula — all for just 10g more."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -35,22 +35,27 @@ It's also a stove that actual thru-hikers reach for:
 
 ## Key Specs
 
-| Spec                               | Value                                                                                    |
-| ---------------------------------- | ---------------------------------------------------------------------------------------- |
-| **Weight**                         | 83 g (2.9 oz)                                                                            |
-| **Dimensions (packed)**            | 2.2" W × 1.8" L × 3.3" H                                                                 |
-| **Fuel Type**                      | Isobutane-propane canister                                                               |
-| **Pressure Regulated**             | Yes                                                                                      |
-| **Boil Time (1L)**                 | 3:20 (manufacturer)                                                                      |
-| **Output**                         | 8,200–11,000 BTU                                                                         |
-| **Burn Time**                      | ~60 min per 227 g canister                                                               |
-| **Water Boiled per 8 oz Canister** | ~17 L                                                                                    |
-| **Ignition**                       | Push-start Piezo                                                                         |
-| **Pot Support**                    | 3 folding arms (up to 8" diameter)                                                       |
-| **MSRP**                           | $69.95                                                                                   |
-| **Comparison**                     | See how [PocketRocket Deluxe compares](/tools/ultralight-research/stove) to similar gear |
+| Spec                               | Value                              |
+| ---------------------------------- | ---------------------------------- |
+| **Weight**                         | 83 g (2.9 oz)                      |
+| **Dimensions (packed)**            | 2.2" W × 1.8" L × 3.3" H           |
+| **Fuel Type**                      | Isobutane-propane canister         |
+| **Pressure Regulated**             | Yes                                |
+| **Boil Time (1L)**                 | 3:20 (manufacturer)                |
+| **Output**                         | 8,200–11,000 BTU                   |
+| **Burn Time**                      | ~60 min per 227 g canister         |
+| **Water Boiled per 8 oz Canister** | ~17 L                              |
+| **Ignition**                       | Push-start Piezo                   |
+| **Pot Support**                    | 3 folding arms (up to 8" diameter) |
+| **MSRP**                           | $69.95                             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

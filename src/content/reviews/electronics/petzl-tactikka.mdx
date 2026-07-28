@@ -12,7 +12,7 @@ published_at: "2026-06-28"
 description: "The Petzl TACTIKKA+ is a compact, 350-lumen headlamp with a mixed beam, red lighting, and HYBRID CONCEPT battery system — solid value for casual backpackers and weekend hikers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,21 +32,26 @@ for longer trips, it checks a lot of boxes.
 
 ## Key Specs
 
-| Spec                      | Value                                                                             |
-| ------------------------- | --------------------------------------------------------------------------------- |
-| **Weight**                | 85 g (3 oz) with batteries                                                        |
-| **Max Output**            | 350 lumens                                                                        |
-| **Beam Distance (Max)**   | 90 m                                                                              |
-| **Beam Distance (Min)**   | 10 m                                                                              |
-| **Burn Time (Max / Min)** | 2 hrs (350 lm) / 160 hrs (6 lm)                                                   |
-| **Lighting Modes**        | 3 white (proximity, movement, distance) + red continuous & strobe                 |
-| **Battery Type**          | 3× AAA/LR03 or Petzl CORE rechargeable (HYBRID CONCEPT)                           |
-| **Water Resistance**      | IPX4                                                                              |
-| **Beam Type**             | Mixed (flood + spot)                                                              |
-| **Warranty**              | 5 years                                                                           |
-| **Comparison**            | See how [TACTIKKA+ compares](/tools/ultralight-research/lighting) to similar gear |
+| Spec                      | Value                                                             |
+| ------------------------- | ----------------------------------------------------------------- |
+| **Weight**                | 85 g (3 oz) with batteries                                        |
+| **Max Output**            | 350 lumens                                                        |
+| **Beam Distance (Max)**   | 90 m                                                              |
+| **Beam Distance (Min)**   | 10 m                                                              |
+| **Burn Time (Max / Min)** | 2 hrs (350 lm) / 160 hrs (6 lm)                                   |
+| **Lighting Modes**        | 3 white (proximity, movement, distance) + red continuous & strobe |
+| **Battery Type**          | 3× AAA/LR03 or Petzl CORE rechargeable (HYBRID CONCEPT)           |
+| **Water Resistance**      | IPX4                                                              |
+| **Beam Type**             | Mixed (flood + spot)                                              |
+| **Warranty**              | 5 years                                                           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="lighting"
+/>
 
 ## Performance
 

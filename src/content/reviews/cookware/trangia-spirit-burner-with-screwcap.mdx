@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "The classic Trangia B25 alcohol burner: no moving parts, no maintenance, and a simmer-capable design that's been the heart of backpacking stove systems for decades."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Trangia B25 is the burner at the center of every Trangia stove system — a 
 
 ## Key Specs
 
-| Spec           | Detail                                                                                           |
-| -------------- | ------------------------------------------------------------------------------------------------ |
-| Model          | Trangia B25                                                                                      |
-| Weight         | 110 g (3.9 oz)                                                                                   |
-| Fuel type      | Alcohol-based (denatured alcohol, HEET, methylated spirits)                                      |
-| Output         | ~1000 W                                                                                          |
-| Boil time      | ~10 min per liter                                                                                |
-| Burn time      | ~25 min per fill                                                                                 |
-| Fuel capacity  | 70 ml                                                                                            |
-| Dimensions     | Ø75 x 42 mm                                                                                      |
-| Material       | Brass body, 100% cotton wick                                                                     |
-| **Comparison** | See how [Spirit Burner with Screwcap compares](/tools/ultralight-research/stove) to similar gear |
+| Spec          | Detail                                                      |
+| ------------- | ----------------------------------------------------------- |
+| Model         | Trangia B25                                                 |
+| Weight        | 110 g (3.9 oz)                                              |
+| Fuel type     | Alcohol-based (denatured alcohol, HEET, methylated spirits) |
+| Output        | ~1000 W                                                     |
+| Boil time     | ~10 min per liter                                           |
+| Burn time     | ~25 min per fill                                            |
+| Fuel capacity | 70 ml                                                       |
+| Dimensions    | Ø75 x 42 mm                                                 |
+| Material      | Brass body, 100% cotton wick                                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

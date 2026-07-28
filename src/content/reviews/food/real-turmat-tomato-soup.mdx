@@ -12,7 +12,7 @@ published_at: "2026-07-12"
 description: "A freeze-dried vegan tomato soup from Norwegian brand REAL Turmat. Light, comforting, and easy to prepare — but 286 kcal makes it a lunch option, not a dinner."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,22 +32,27 @@ lunchtime or during a mid-day break.
 
 ## Key Specs
 
-| Spec                  | Value                                                                           |
-| --------------------- | ------------------------------------------------------------------------------- |
-| Net Weight (dry)      | 62 g                                                                            |
-| Package Weight        | 150 g                                                                           |
-| Prepared Weight       | 370 g                                                                           |
-| Calories              | 286 kcal                                                                        |
-| Calorie Density (dry) | ~4.6 kcal/g                                                                     |
-| Protein Source        | Soy                                                                             |
-| Allergens             | Gluten, Soy                                                                     |
-| Vegan                 | Yes                                                                             |
-| Shelf Life            | 5 years                                                                         |
-| Water Required        | ~310 ml hot                                                                     |
-| Rehydration Time      | 10 min                                                                          |
-| **Comparison**        | See how [Tomato Soup compares](/tools/ultralight-research/meal) to similar gear |
+| Spec                  | Value       |
+| --------------------- | ----------- |
+| Net Weight (dry)      | 62 g        |
+| Package Weight        | 150 g       |
+| Prepared Weight       | 370 g       |
+| Calories              | 286 kcal    |
+| Calorie Density (dry) | ~4.6 kcal/g |
+| Protein Source        | Soy         |
+| Allergens             | Gluten, Soy |
+| Vegan                 | Yes         |
+| Shelf Life            | 5 years     |
+| Water Required        | ~310 ml hot |
+| Rehydration Time      | 10 min      |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="meal"
+/>
 
 ## Performance
 

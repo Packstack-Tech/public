@@ -12,7 +12,7 @@ published_at: "2026-07-21"
 description: "An honest look at Snow Peak's 110g isobutane-propane canister — compact, reliable, and best suited to three-season backpacking with Snow Peak cooksets."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Snow Peak GigaPower Fuel 110 Gold is a compact 110g isobutane-propane fuel c
 
 ## Key Specs
 
-| Spec                | Value                                                                                       |
-| ------------------- | ------------------------------------------------------------------------------------------- |
-| Fuel Content        | 110g                                                                                        |
-| Total Weight (full) | 213g (7.5 oz)                                                                               |
-| Fuel Blend          | 85% isobutane / 15% propane                                                                 |
-| Lowest Working Temp | 15°F (-9°C)                                                                                 |
-| Dimensions          | 3.25 x 2.5 in                                                                               |
-| Valve Type          | Standard Lindal                                                                             |
-| SKU                 | GP-110G-US                                                                                  |
-| **Comparison**      | See how [GigaPower Fuel 110 Gold compares](/tools/ultralight-research/fuel) to similar gear |
+| Spec                | Value                       |
+| ------------------- | --------------------------- |
+| Fuel Content        | 110g                        |
+| Total Weight (full) | 213g (7.5 oz)               |
+| Fuel Blend          | 85% isobutane / 15% propane |
+| Lowest Working Temp | 15°F (-9°C)                 |
+| Dimensions          | 3.25 x 2.5 in               |
+| Valve Type          | Standard Lindal             |
+| SKU                 | GP-110G-US                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="fuel"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-04-24"
 description: "A detailed review of the Salomon Soft Flask line — covering specs, real-world performance, and how each size stacks up for trail running and hiking."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Salomon Soft Flask is one of the most ubiquitous pieces of hydration gear in
 
 ## Key Specs
 
-| Spec               | 250ml / 28mm                                                                                | 500ml / 42mm                   | 400ml Insulated / 42mm         |
-| ------------------ | ------------------------------------------------------------------------------------------- | ------------------------------ | ------------------------------ |
-| **Capacity**       | 250ml / 8 oz                                                                                | 500ml / 17 oz                  | 400ml / 13 oz                  |
-| **Cap Diameter**   | 28mm                                                                                        | 42mm                           | 42mm                           |
-| **Weight**         | ~28g (1 oz)                                                                                 | ~30g (just over 1 oz)          | ~57g (2 oz)                    |
-| **Material**       | 56% TPU, 23% PP, 16% Silicone, 5% POM                                                       | 55% TPU, 35% POM, 10% Silicone | 55% TPU, 35% POM, 10% Silicone |
-| **BPA / PVC Free** | Yes                                                                                         | Yes                            | Yes                            |
-| **Insulation**     | No                                                                                          | No                             | Yes (dual-skin)                |
-| **Price (MSRP)**   | ~$15                                                                                        | ~$25                           | ~$30                           |
-| **Comparison**     | See how [Salomon Soft Flask compares](/tools/ultralight-research/hydration) to similar gear |
+| Spec               | 250ml / 28mm                          | 500ml / 42mm                   | 400ml Insulated / 42mm         |
+| ------------------ | ------------------------------------- | ------------------------------ | ------------------------------ |
+| **Capacity**       | 250ml / 8 oz                          | 500ml / 17 oz                  | 400ml / 13 oz                  |
+| **Cap Diameter**   | 28mm                                  | 42mm                           | 42mm                           |
+| **Weight**         | ~28g (1 oz)                           | ~30g (just over 1 oz)          | ~57g (2 oz)                    |
+| **Material**       | 56% TPU, 23% PP, 16% Silicone, 5% POM | 55% TPU, 35% POM, 10% Silicone | 55% TPU, 35% POM, 10% Silicone |
+| **BPA / PVC Free** | Yes                                   | Yes                            | Yes                            |
+| **Insulation**     | No                                    | No                             | Yes (dual-skin)                |
+| **Price (MSRP)**   | ~$15                                  | ~$25                           | ~$30                           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hydration"
+/>
 
 ## Performance
 

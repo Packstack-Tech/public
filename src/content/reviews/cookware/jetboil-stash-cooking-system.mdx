@@ -12,7 +12,7 @@ published_at: "2026-06-06"
 description: "The Jetboil Stash is a 201g all-in-one canister stove system with legendary FluxRing fuel efficiency — ideal for boil-only ultralight backpackers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,20 +32,25 @@ you are on trail.
 
 ## Key Specs
 
-| Spec                   | Value                                                                              |
-| ---------------------- | ---------------------------------------------------------------------------------- |
-| **Weight**             | 201g (7.1 oz)                                                                      |
-| **Pot Capacity**       | 0.8L                                                                               |
-| **Output**             | 4,500 BTU                                                                          |
-| **Boil Time**          | 2.5 min (0.5L)                                                                     |
-| **Fuel Efficiency**    | 12L per 100g fuel                                                                  |
-| **Burner Material**    | Titanium                                                                           |
-| **Pressure Regulator** | No                                                                                 |
-| **Integrated Igniter** | No                                                                                 |
-| **Price**              | ~$129.95                                                                           |
-| **Comparison**         | See how [Jetboil Stash compares](/tools/ultralight-research/stove) to similar gear |
+| Spec                   | Value             |
+| ---------------------- | ----------------- |
+| **Weight**             | 201g (7.1 oz)     |
+| **Pot Capacity**       | 0.8L              |
+| **Output**             | 4,500 BTU         |
+| **Boil Time**          | 2.5 min (0.5L)    |
+| **Fuel Efficiency**    | 12L per 100g fuel |
+| **Burner Material**    | Titanium          |
+| **Pressure Regulator** | No                |
+| **Integrated Igniter** | No                |
+| **Price**              | ~$129.95          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

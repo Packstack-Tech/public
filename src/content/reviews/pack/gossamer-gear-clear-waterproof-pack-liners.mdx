@@ -12,7 +12,7 @@ published_at: "2026-07-08"
 description: "A lightweight, eco-conscious 2-pack of clear polyethylene pack liners that keeps your gear dry without the bulk or cost of a rain cover."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,20 +30,25 @@ the rain out than carry around a rain cover.
 
 ## Key Specs
 
-| Spec           | Value                                                                                                  |
-| -------------- | ------------------------------------------------------------------------------------------------------ |
-| Weight (each)  | 34 g / 1.2 oz                                                                                          |
-| Capacity       | 48 L                                                                                                   |
-| Dimensions     | 32" H × 12" W × 8" D                                                                                   |
-| Material       | PolyEarthylene® (biobased polyolefin)                                                                  |
-| Sold As        | 2-pack                                                                                                 |
-| Origin         | Made in USA                                                                                            |
-| Closure        | Open top (fold-over or twist-tie)                                                                      |
-| **Comparison** | See how [Clear Waterproof Pack Liners compares](/tools/ultralight-research/protection) to similar gear |
+| Spec          | Value                                 |
+| ------------- | ------------------------------------- |
+| Weight (each) | 34 g / 1.2 oz                         |
+| Capacity      | 48 L                                  |
+| Dimensions    | 32" H × 12" W × 8" D                  |
+| Material      | PolyEarthylene® (biobased polyolefin) |
+| Sold As       | 2-pack                                |
+| Origin        | Made in USA                           |
+| Closure       | Open top (fold-over or twist-tie)     |
 
 > **Note on weight:** The current Gossamer Gear product page lists each liner at 40 g / 1.4 oz, reflecting the updated PolyEarthylene® material. The 34 g figure corresponds to the previous polyethylene film version. If you're buying today, budget for the slightly heavier iteration.
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="protection"
+/>
 
 ## Performance
 

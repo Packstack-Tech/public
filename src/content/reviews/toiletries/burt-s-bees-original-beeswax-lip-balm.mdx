@@ -12,7 +12,7 @@ published_at: "2026-06-06"
 description: "A 4.25g, 100% natural-origin lip balm with beeswax, Vitamin E, and peppermint oil — affordable and widely available, but no SPF limits its trail utility in exposed conditions."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Burt's Bees Original Beeswax Lip Balm is about as close to a universal trail
 
 ## Key Specs
 
-| Spec              | Detail                                                                                                             |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **Weight**        | 4.25g / 0.15 oz                                                                                                    |
-| **Volume**        | 0.15 fl oz                                                                                                         |
-| **Finish**        | Matte                                                                                                              |
-| **Formulation**   | 100% Natural Origin                                                                                                |
-| **Free Of**       | Parabens, Phthalates, Petrolatum, SLS                                                                              |
-| **Tube Material** | 70% recycled and plant-based plastic                                                                               |
-| **SPF**           | None                                                                                                               |
-| **Comparison**    | See how [Burt's Bees Original Beeswax Lip Balm compares](/tools/ultralight-research/personal-care) to similar gear |
+| Spec              | Detail                                |
+| ----------------- | ------------------------------------- |
+| **Weight**        | 4.25g / 0.15 oz                       |
+| **Volume**        | 0.15 fl oz                            |
+| **Finish**        | Matte                                 |
+| **Formulation**   | 100% Natural Origin                   |
+| **Free Of**       | Parabens, Phthalates, Petrolatum, SLS |
+| **Tube Material** | 70% recycled and plant-based plastic  |
+| **SPF**           | None                                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="personal-care"
+/>
 
 ## Performance
 

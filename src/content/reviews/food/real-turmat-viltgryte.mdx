@@ -12,7 +12,7 @@ published_at: "2026-07-12"
 description: "A freeze-dried Norwegian reindeer stew with lingonberries and mushrooms — distinctive Nordic flavors in a compact vacuum-sealed pouch, at a price premium."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,23 +20,28 @@ The REAL Turmat Viltgryte is a freeze-dried reindeer stew drawing on Sami culina
 
 ## Key Specs
 
-| Spec            | Value                                                                         |
-| --------------- | ----------------------------------------------------------------------------- |
-| Dry Weight      | 111 g (3.9 oz)                                                                |
-| Prepared Weight | 460 g                                                                         |
-| Calories        | 578 kcal                                                                      |
-| Calorie Density | ~5.2 kcal/g                                                                   |
-| Protein         | 18 g                                                                          |
-| Fat             | 36 g                                                                          |
-| Carbohydrates   | 44 g                                                                          |
-| Salt            | 3.3 g                                                                         |
-| Prep Time       | ~8 min                                                                        |
-| Shelf Life      | 5 years                                                                       |
-| Allergens       | Gluten, lactose, milk, wheat                                                  |
-| Packaging       | Vacuum-sealed pouch                                                           |
-| **Comparison**  | See how [Viltgryte compares](/tools/ultralight-research/meal) to similar gear |
+| Spec            | Value                        |
+| --------------- | ---------------------------- |
+| Dry Weight      | 111 g (3.9 oz)               |
+| Prepared Weight | 460 g                        |
+| Calories        | 578 kcal                     |
+| Calorie Density | ~5.2 kcal/g                  |
+| Protein         | 18 g                         |
+| Fat             | 36 g                         |
+| Carbohydrates   | 44 g                         |
+| Salt            | 3.3 g                        |
+| Prep Time       | ~8 min                       |
+| Shelf Life      | 5 years                      |
+| Allergens       | Gluten, lactose, milk, wheat |
+| Packaging       | Vacuum-sealed pouch          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="meal"
+/>
 
 ## Performance
 

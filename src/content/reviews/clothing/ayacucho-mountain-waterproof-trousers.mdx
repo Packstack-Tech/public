@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A budget-friendly, 2.5-layer rain pant with a 15,000mm/15,000g breathability rating — solid for damp day hikes, but not built for UL thru-hiking abuse."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Ayacucho Mountain Waterproof Trousers are a 2.5-layer rain pant sold through
 
 ## Key Specs
 
-| Spec              | Detail                                                                                                |
-| ----------------- | ----------------------------------------------------------------------------------------------------- |
-| Construction      | 2.5-layer shell                                                                                       |
-| Waterproof rating | 15,000mm water column                                                                                 |
-| Breathability     | 15,000 g/m²/24hr                                                                                      |
-| Side zips         | 3/4 length                                                                                            |
-| Pockets           | 2 side pockets                                                                                        |
-| Waist/hem         | Elasticated                                                                                           |
-| Reinforcement     | Reinforced seat                                                                                       |
-| DWR               | PFC-free                                                                                              |
-| Materials         | Recycled fabric, Textile Exchange certified                                                           |
-| **Comparison**    | See how [Mountain Waterproof Trousers compares](/tools/ultralight-research/rain-gear) to similar gear |
+| Spec              | Detail                                      |
+| ----------------- | ------------------------------------------- |
+| Construction      | 2.5-layer shell                             |
+| Waterproof rating | 15,000mm water column                       |
+| Breathability     | 15,000 g/m²/24hr                            |
+| Side zips         | 3/4 length                                  |
+| Pockets           | 2 side pockets                              |
+| Waist/hem         | Elasticated                                 |
+| Reinforcement     | Reinforced seat                             |
+| DWR               | PFC-free                                    |
+| Materials         | Recycled fabric, Textile Exchange certified |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="rain-gear"
+/>
 
 ## Performance
 

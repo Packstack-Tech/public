@@ -12,7 +12,7 @@ published_at: "2026-05-09"
 description: "The SOTO Amicus is a 75g canister stove with 11,000 BTU output, solid simmer control, and better-than-average wind resistance — all at a price that's hard to argue with."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The SOTO Amicus is a top-mount canister stove from Japanese manufacturer SOTO Ou
 
 ## Key Specs
 
-| Spec                         | Value                                                                            |
-| ---------------------------- | -------------------------------------------------------------------------------- |
-| **Weight (without igniter)** | 75g (2.6 oz)                                                                     |
-| **Weight (with igniter)**    | 81g (2.9 oz)                                                                     |
-| **Heat Output**              | 11,000 BTU (2800 kcal/h, 3260W)                                                  |
-| **Burn Duration**            | ~1.5 hrs with 8 oz (250g) canister                                               |
-| **Dimensions (in use)**      | 3.0 x 4.0 x 3.4 in (7.6 x 10.0 x 8.6 cm)                                         |
-| **Dimensions (stowed)**      | 1.7 x 1.6 x 3.0 in (4.3 x 4.0 x 7.5 cm)                                          |
-| **Fuel Type**                | Isobutane-propane canister (Lindal valve)                                        |
-| **Pot Supports**             | 4 spring-loaded, folding arms (attached)                                         |
-| **Valve System**             | Triple O-ring + Metal Seal                                                       |
-| **Igniter Option**           | Available with or without piezo                                                  |
-| **Comparison**               | See how [SOTO Amicus compares](/tools/ultralight-research/stove) to similar gear |
+| Spec                         | Value                                     |
+| ---------------------------- | ----------------------------------------- |
+| **Weight (without igniter)** | 75g (2.6 oz)                              |
+| **Weight (with igniter)**    | 81g (2.9 oz)                              |
+| **Heat Output**              | 11,000 BTU (2800 kcal/h, 3260W)           |
+| **Burn Duration**            | ~1.5 hrs with 8 oz (250g) canister        |
+| **Dimensions (in use)**      | 3.0 x 4.0 x 3.4 in (7.6 x 10.0 x 8.6 cm)  |
+| **Dimensions (stowed)**      | 1.7 x 1.6 x 3.0 in (4.3 x 4.0 x 7.5 cm)   |
+| **Fuel Type**                | Isobutane-propane canister (Lindal valve) |
+| **Pot Supports**             | 4 spring-loaded, folding arms (attached)  |
+| **Valve System**             | Triple O-ring + Metal Seal                |
+| **Igniter Option**           | Available with or without piezo           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

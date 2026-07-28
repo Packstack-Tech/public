@@ -12,7 +12,7 @@ published_at: "2026-05-10"
 description: "A 12g cork-style backcountry bidet that turns any squeeze bottle into a high-pressure rinse — a simple, nearly weightless swap for toilet paper on trail."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The CuloClean is about as simple as backcountry hygiene gear gets: a small nozzl
 
 ## Key Specs
 
-| Spec                     | Detail                                                                                           |
-| ------------------------ | ------------------------------------------------------------------------------------------------ |
-| **Weight**               | 12g (0.42 oz)                                                                                    |
-| **Dimensions**           | 2.7"H × 1.3"D (7cm × 3cm)                                                                        |
-| **Bottle Compatibility** | 28mm or 30mm standard plastic bottle openings                                                    |
-| **Material**             | Recycled plastic                                                                                 |
-| **Origin**               | Made in Europe                                                                                   |
-| **Price**                | ~$10                                                                                             |
-| **Bottle Included**      | No                                                                                               |
-| **Comparison**           | See how [CuloClean Portable Bidet compares](/tools/ultralight-research/bathroom) to similar gear |
+| Spec                     | Detail                                        |
+| ------------------------ | --------------------------------------------- |
+| **Weight**               | 12g (0.42 oz)                                 |
+| **Dimensions**           | 2.7"H × 1.3"D (7cm × 3cm)                     |
+| **Bottle Compatibility** | 28mm or 30mm standard plastic bottle openings |
+| **Material**             | Recycled plastic                              |
+| **Origin**               | Made in Europe                                |
+| **Price**                | ~$10                                          |
+| **Bottle Included**      | No                                            |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="bathroom"
+/>
 
 ## Performance
 

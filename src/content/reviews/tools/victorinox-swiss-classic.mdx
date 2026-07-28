@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A closer look at the Victorinox Swiss Classic paring knife — an ultralight, budget-friendly Swiss-made blade that's a sneaky-good camp kitchen tool."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Victorinox Swiss Classic is a small, fixed-blade paring knife — the same b
 
 ## Key Specs
 
-| Spec              | Detail                                                                             |
-| ----------------- | ---------------------------------------------------------------------------------- |
-| Weight            | 21.3 g (0.75 oz)                                                                   |
-| Blade material    | High-carbon stainless steel                                                        |
-| Blade length      | 3.25 in or 4 in, depending on model                                                |
-| Handle material   | Thermoplastic elastomers (TPE) / Fibrox slip-resistant                             |
-| Edge              | ~15° per side, double bevel                                                        |
-| Country of origin | Switzerland                                                                        |
-| Dishwasher safe   | Yes                                                                                |
-| Warranty          | Lifetime against defects                                                           |
-| **Comparison**    | See how [Swiss Classic compares](/tools/ultralight-research/knife) to similar gear |
+| Spec              | Detail                                                 |
+| ----------------- | ------------------------------------------------------ |
+| Weight            | 21.3 g (0.75 oz)                                       |
+| Blade material    | High-carbon stainless steel                            |
+| Blade length      | 3.25 in or 4 in, depending on model                    |
+| Handle material   | Thermoplastic elastomers (TPE) / Fibrox slip-resistant |
+| Edge              | ~15° per side, double bevel                            |
+| Country of origin | Switzerland                                            |
+| Dishwasher safe   | Yes                                                    |
+| Warranty          | Lifetime against defects                               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="knife"
+/>
 
 ## Performance
 

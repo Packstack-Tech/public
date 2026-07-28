@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "A 3-gram DCF stake organizer that keeps sharp stakes from punching through your pack. Simple, purpose-built, and very light — but rivals offer reinforced bottoms for the same weight."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Zpacks Stake Sack is about as elemental as gear gets: a small Dyneema® Comp
 
 ## Key Specs
 
-| Spec                 | Detail                                                                                         |
-| -------------------- | ---------------------------------------------------------------------------------------------- |
-| **Weight**           | 3 g (0.11 oz)                                                                                  |
-| **Flat Dimensions**  | 7 cm × 23 cm (2.75" × 9")                                                                      |
-| **Material**         | 1.6 oz/sqyd Dyneema® Composite Fabric                                                          |
-| **Closure**          | Shock cord drawstring                                                                          |
-| **Water Resistance** | Highly water-resistant (not waterproof)                                                        |
-| **Capacity**         | Fits 12+ Zpacks ultralight stakes                                                              |
-| **Warranty**         | 2-year limited                                                                                 |
-| **Comparison**       | See how [Zpacks Stake Sack compares](/tools/ultralight-research/organization) to similar gear |
+| Spec                 | Detail                                  |
+| -------------------- | --------------------------------------- |
+| **Weight**           | 3 g (0.11 oz)                           |
+| **Flat Dimensions**  | 7 cm × 23 cm (2.75" × 9")               |
+| **Material**         | 1.6 oz/sqyd Dyneema® Composite Fabric   |
+| **Closure**          | Shock cord drawstring                   |
+| **Water Resistance** | Highly water-resistant (not waterproof) |
+| **Capacity**         | Fits 12+ Zpacks ultralight stakes       |
+| **Warranty**         | 2-year limited                          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="organization"
+/>
 
 ## Performance
 

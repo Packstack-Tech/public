@@ -12,7 +12,7 @@ published_at: "2026-07-12"
 description: "A detailed review of Real Turmat's Chicken Curry freeze-dried meal — Norwegian-made, vacuum-packed, and lactose-free, with 627 kcal in 132g."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,25 +31,30 @@ hot, satisfying dinner without hauling a kitchen.
 
 ## Key Specs
 
-| Spec            | Value                                                                             |
-| --------------- | --------------------------------------------------------------------------------- |
-| Dry Weight      | 132 g                                                                             |
-| Gross Weight    | 149 g                                                                             |
-| Prepared Weight | 500 g                                                                             |
-| Calories        | 627 kcal                                                                          |
-| Protein         | 15 g                                                                              |
-| Fat             | 30 g                                                                              |
-| Carbohydrates   | 70 g                                                                              |
-| Dietary Fibre   | 4.2 g                                                                             |
-| Salt            | 3.3 g                                                                             |
-| Water Required  | 370 ml (3.7 dl)                                                                   |
-| Prep Time       | 8 minutes                                                                         |
-| Shelf Life      | 5 years                                                                           |
-| Allergens       | Gluten, soy, mustard                                                              |
-| Lactose-Free    | Yes                                                                               |
-| **Comparison**  | See how [Kylling Karri compares](/tools/ultralight-research/meal) to similar gear |
+| Spec            | Value                |
+| --------------- | -------------------- |
+| Dry Weight      | 132 g                |
+| Gross Weight    | 149 g                |
+| Prepared Weight | 500 g                |
+| Calories        | 627 kcal             |
+| Protein         | 15 g                 |
+| Fat             | 30 g                 |
+| Carbohydrates   | 70 g                 |
+| Dietary Fibre   | 4.2 g                |
+| Salt            | 3.3 g                |
+| Water Required  | 370 ml (3.7 dl)      |
+| Prep Time       | 8 minutes            |
+| Shelf Life      | 5 years              |
+| Allergens       | Gluten, soy, mustard |
+| Lactose-Free    | Yes                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="meal"
+/>
 
 ## Performance
 

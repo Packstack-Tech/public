@@ -12,7 +12,7 @@ published_at: "2026-05-07"
 description: "A discontinued but beloved keychain multi-tool at just 56.4g, the Squirt PS4 packs spring-action pliers, scissors, and 7 more tools into a trail-ready package."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -33,9 +33,14 @@ The Leatherman Squirt PS4 is a keychain-sized, pliers-forward multi-tool that sq
 | **Warranty**        | 25 years                                                                                                                                                |
 | **Made In**         | Portland, Oregon, USA                                                                                                                                   |
 | **Status**          | Discontinued (Fall 2023)                                                                                                                                |
-| **Comparison**      | See how [Squirt PS4 compares](/tools/ultralight-research/repair) to similar gear                                                                        |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="repair"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-05-26"
 description: "An in-depth review of the Sea to Summit Alpha Cutlery Set — a 11g hard anodized aluminum knife, fork, and spoon with built-in hex tools for backpackers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Sea to Summit Alpha Cutlery Set is a three-piece hard anodized aluminum knif
 
 ## Key Specs
 
-| Spec                | Detail                                                                                   |
-| ------------------- | ---------------------------------------------------------------------------------------- |
-| **Weight**          | 11g (set)                                                                                |
-| **Material**        | Hard Anodized Aluminum Alloy (7075-T6 aircraft grade)                                    |
-| **Includes**        | Spoon, Fork, Knife, mini carabiner                                                       |
-| **Hex Tool**        | 3mm (spoon), 4mm (fork), 5mm (knife) — one per utensil                                   |
-| **Dishwasher Safe** | No                                                                                       |
-| **Food Safety**     | FDA compliant; no alloy leaching risk                                                    |
-| **Best Use**        | Backpacking, thru-hiking                                                                 |
-| **Comparison**      | See how [Alpha Cutlery Set compares](/tools/ultralight-research/utensil) to similar gear |
+| Spec                | Detail                                                 |
+| ------------------- | ------------------------------------------------------ |
+| **Weight**          | 11g (set)                                              |
+| **Material**        | Hard Anodized Aluminum Alloy (7075-T6 aircraft grade)  |
+| **Includes**        | Spoon, Fork, Knife, mini carabiner                     |
+| **Hex Tool**        | 3mm (spoon), 4mm (fork), 5mm (knife) — one per utensil |
+| **Dishwasher Safe** | No                                                     |
+| **Food Safety**     | FDA compliant; no alloy leaching risk                  |
+| **Best Use**        | Backpacking, thru-hiking                               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="utensil"
+/>
 
 ## Performance
 

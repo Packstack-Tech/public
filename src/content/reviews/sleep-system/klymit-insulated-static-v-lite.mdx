@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The Klymit Insulated Static V Lite is a budget-friendly, three-season insulated air pad with an R-value of 4.4 and signature V-chamber design—warm and packable, with real durability trade-offs."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,18 +30,23 @@ shoulder-season campers who want real insulation without spending $200.
 
 ## Key Specs
 
-| Spec                      | Value                                                                                                      |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| **Weight**                | 19.6 oz (556 g)                                                                                            |
-| **R-Value**               | 4.4                                                                                                        |
-| **Dimensions (inflated)** | 72" × 23" × 2.5"                                                                                           |
-| **Packed Size**           | 5" × 8"                                                                                                    |
-| **Material**              | 30D Polyester                                                                                              |
-| **Insulation**            | Klymalite™ Synthetic                                                                                       |
-| **Warranty**              | Limited Lifetime Guarantee                                                                                 |
-| **Comparison**            | See how [Klymit Insulated Static V Lite compares](/tools/ultralight-research/sleeping-pad) to similar gear |
+| Spec                      | Value                      |
+| ------------------------- | -------------------------- |
+| **Weight**                | 19.6 oz (556 g)            |
+| **R-Value**               | 4.4                        |
+| **Dimensions (inflated)** | 72" × 23" × 2.5"           |
+| **Packed Size**           | 5" × 8"                    |
+| **Material**              | 30D Polyester              |
+| **Insulation**            | Klymalite™ Synthetic       |
+| **Warranty**              | Limited Lifetime Guarantee |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sleeping-pad"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The Platypus Hoser 2L is an ultralight, taste-free hydration reservoir for backpackers who prioritize weight savings over feature-rich convenience."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The Platypus Hoser is what happens when you strip a hydration reservoir down to 
 
 ## Key Specs
 
-| Spec                           | Detail                                                                                  |
-| ------------------------------ | --------------------------------------------------------------------------------------- |
-| **Weight**                     | 102 g / 3.6 oz                                                                          |
-| **Capacity**                   | 2.0 L                                                                                   |
-| **Dimensions**                 | 6 x 16 in / 15 x 40.5 cm                                                                |
-| **Film Material**              | Polyurethane / Polyethylene                                                             |
-| **Bite Valve Material**        | Silicone (HyFLO™)                                                                       |
-| **BPA / BPS / Phthalate Free** | Yes                                                                                     |
-| **Silver-Ion Antimicrobial**   | Yes (embedded in film)                                                                  |
-| **Shutoff Valve**              | No (not included)                                                                       |
-| **Made in USA**                | Yes                                                                                     |
-| **Warranty**                   | Limited lifetime                                                                        |
-| **Comparison**                 | See how [Platypus Hoser compares](/tools/ultralight-research/hydration) to similar gear |
+| Spec                           | Detail                      |
+| ------------------------------ | --------------------------- |
+| **Weight**                     | 102 g / 3.6 oz              |
+| **Capacity**                   | 2.0 L                       |
+| **Dimensions**                 | 6 x 16 in / 15 x 40.5 cm    |
+| **Film Material**              | Polyurethane / Polyethylene |
+| **Bite Valve Material**        | Silicone (HyFLO™)           |
+| **BPA / BPS / Phthalate Free** | Yes                         |
+| **Silver-Ion Antimicrobial**   | Yes (embedded in film)      |
+| **Shutoff Valve**              | No (not included)           |
+| **Made in USA**                | Yes                         |
+| **Warranty**                   | Limited lifetime            |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hydration"
+/>
 
 ## Performance
 

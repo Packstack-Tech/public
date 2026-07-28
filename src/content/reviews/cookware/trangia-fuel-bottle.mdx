@@ -12,7 +12,7 @@ published_at: "2026-06-03"
 description: "A purpose-built HDPE fuel bottle with a spring-loaded safety valve, designed for alcohol stoves and compatible with most common liquid fuels."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The Trangia Fuel Bottle is a purpose-built HD PE container for carrying liquid f
 
 ## Key Specs
 
-| Spec                 | Value                                                                                   |
-| -------------------- | --------------------------------------------------------------------------------------- |
-| **Volume**           | 0.5L                                                                                    |
-| **Weight**           | 115g (4.06 oz)                                                                          |
-| **Dimensions**       | Ø63mm × H236mm                                                                          |
-| **Material**         | HD PE (High Density Polyethylene)                                                       |
-| **Compatible Fuels** | Spirits, kerosene, white gas, alkylate petrol                                           |
-| **Origin**           | Made in Sweden                                                                          |
-| **Comparison**       | See how [Trangia Fuel Bottle compares](/tools/ultralight-research/fuel) to similar gear |
+| Spec                 | Value                                         |
+| -------------------- | --------------------------------------------- |
+| **Volume**           | 0.5L                                          |
+| **Weight**           | 115g (4.06 oz)                                |
+| **Dimensions**       | Ø63mm × H236mm                                |
+| **Material**         | HD PE (High Density Polyethylene)             |
+| **Compatible Fuels** | Spirits, kerosene, white gas, alkylate petrol |
+| **Origin**           | Made in Sweden                                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="fuel"
+/>
 
 ## Performance
 

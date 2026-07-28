@@ -12,7 +12,7 @@ published_at: "2026-07-19"
 description: "A 158g, 150gsm 100% merino wool tee with strong odor resistance and temperature regulation — but durability questions at this weight class deserve serious attention."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The icebreaker Merino Tech Lite II Short Sleeve T-Shirt is a <cite index="9-1">v
 
 ## Key Specs
 
-| Spec           | Value                                                                                                             |
-| -------------- | ----------------------------------------------------------------------------------------------------------------- |
-| Weight         | 158g (5.6 oz)                                                                                                     |
-| Fabric Weight  | 150 gsm                                                                                                           |
-| Material       | 100% Pure Merino Wool                                                                                             |
-| Fit            | Regular                                                                                                           |
-| Key Features   | Offset shoulder seams, moisture-wicking, odor-resistant, temperature-regulating                                   |
-| Care           | Machine wash cold, gentle cycle; line dry in shade                                                                |
-| Price          | ~$80 USD                                                                                                          |
-| **Comparison** | See how [Merino Tech Lite II Short Sleeve T-Shirt compares](/tools/ultralight-research/shirt-top) to similar gear |
+| Spec          | Value                                                                           |
+| ------------- | ------------------------------------------------------------------------------- |
+| Weight        | 158g (5.6 oz)                                                                   |
+| Fabric Weight | 150 gsm                                                                         |
+| Material      | 100% Pure Merino Wool                                                           |
+| Fit           | Regular                                                                         |
+| Key Features  | Offset shoulder seams, moisture-wicking, odor-resistant, temperature-regulating |
+| Care          | Machine wash cold, gentle cycle; line dry in shade                              |
+| Price         | ~$80 USD                                                                        |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="shirt-top"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-05-21"
 description: "The AirPods Pro 3 deliver class-leading ANC, a genuinely accurate heart rate sensor, and 24-hour battery life — all at the same $249 price as their predecessor."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,25 +20,30 @@ The AirPods Pro 3, released in September 2025, represent Apple's most substantia
 
 ## Key Specs
 
-| Spec                             | Value                                                                              |
-| -------------------------------- | ---------------------------------------------------------------------------------- |
-| **Weight (each earbud)**         | 5.55g                                                                              |
-| **Weight (case)**                | 43.9g                                                                              |
-| **Total weight (w/ case)**       | 55.0g                                                                              |
-| **Charging Case**                | MagSafe (USB-C)                                                                    |
-| **Battery Life (ANC on)**        | 8 hr                                                                               |
-| **Battery Life (Spatial Audio)** | 7.5 hr                                                                             |
-| **Total Battery Life (w/ case)** | 24 hr                                                                              |
-| **Quick Charge**                 | 5 min → 1 hr listening                                                             |
-| **Water Resistance**             | IP57                                                                               |
-| **Chip**                         | Apple H2                                                                           |
-| **Connectivity**                 | Bluetooth 5.3                                                                      |
-| **Active Noise Cancellation**    | Yes                                                                                |
-| **Heart Rate Sensor**            | Yes (PPG, infrared, 256 Hz)                                                        |
-| **Price**                        | $249                                                                               |
-| **Comparison**                   | See how [AirPods Pro 3 compares](/tools/ultralight-research/audio) to similar gear |
+| Spec                             | Value                       |
+| -------------------------------- | --------------------------- |
+| **Weight (each earbud)**         | 5.55g                       |
+| **Weight (case)**                | 43.9g                       |
+| **Total weight (w/ case)**       | 55.0g                       |
+| **Charging Case**                | MagSafe (USB-C)             |
+| **Battery Life (ANC on)**        | 8 hr                        |
+| **Battery Life (Spatial Audio)** | 7.5 hr                      |
+| **Total Battery Life (w/ case)** | 24 hr                       |
+| **Quick Charge**                 | 5 min → 1 hr listening      |
+| **Water Resistance**             | IP57                        |
+| **Chip**                         | Apple H2                    |
+| **Connectivity**                 | Bluetooth 5.3               |
+| **Active Noise Cancellation**    | Yes                         |
+| **Heart Rate Sensor**            | Yes (PPG, infrared, 256 Hz) |
+| **Price**                        | $249                        |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="audio"
+/>
 
 ## Performance
 

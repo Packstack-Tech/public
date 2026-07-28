@@ -12,7 +12,7 @@ published_at: "2026-07-12"
 description: "A freeze-dried Norwegian chicken soup with coconut milk, ginger, and garlic — best as a lightweight trail lunch rather than a calorie-dense main meal."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -29,24 +29,29 @@ warm, genuinely flavored bowl that takes the edge off a mid-day stop.
 
 ## Key Specs
 
-| Spec             | Value                                                                            |
-| ---------------- | -------------------------------------------------------------------------------- |
-| Net Weight       | 59 g                                                                             |
-| Prepared Weight  | 370 g                                                                            |
-| Calories         | 331 kcal                                                                         |
-| Protein          | 10.5 g                                                                           |
-| Carbohydrates    | 17.2 g                                                                           |
-| Fat              | 24.1 g                                                                           |
-| Salt             | 2 g                                                                              |
-| Water Required   | 310 ml                                                                           |
-| Rehydration Time | 8 min (hot) / 30+ min (cold)                                                     |
-| Shelf Life       | 5 years                                                                          |
-| Allergens        | Gluten, Soy                                                                      |
-| Dietary Notes    | Lactose-free, dairy-free                                                         |
-| Made In          | Norway                                                                           |
-| **Comparison**   | See how [Kyllingsuppe compares](/tools/ultralight-research/meal) to similar gear |
+| Spec             | Value                        |
+| ---------------- | ---------------------------- |
+| Net Weight       | 59 g                         |
+| Prepared Weight  | 370 g                        |
+| Calories         | 331 kcal                     |
+| Protein          | 10.5 g                       |
+| Carbohydrates    | 17.2 g                       |
+| Fat              | 24.1 g                       |
+| Salt             | 2 g                          |
+| Water Required   | 310 ml                       |
+| Rehydration Time | 8 min (hot) / 30+ min (cold) |
+| Shelf Life       | 5 years                      |
+| Allergens        | Gluten, Soy                  |
+| Dietary Notes    | Lactose-free, dairy-free     |
+| Made In          | Norway                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="meal"
+/>
 
 ## Performance
 

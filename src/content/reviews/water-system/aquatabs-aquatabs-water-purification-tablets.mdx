@@ -12,7 +12,7 @@ published_at: "2026-07-07"
 description: "Aquatabs NaDCC tablets are the ultralight hiker's go-to chemical backup: near-zero weight, fast 30-min treatment, and a real Cryptosporidium blind spot you need to plan around."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,22 +20,27 @@ Aquatabs are NaDCC-based water purification tablets that have quietly become <ci
 
 ## Key Specs
 
-| Spec                     | Value                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------- |
-| Weight (30-tablet pack)  | 5.0 g (0.18 oz)                                                                                                 |
-| Active Ingredient        | NaDCC (sodium dichloroisocyanurate)                                                                             |
-| Available Sizes          | 49 mg, 397 mg                                                                                                   |
-| Treats per 49 mg Tablet  | Up to 2L (clear water) / 0.8L (turbid)                                                                          |
-| Treatment Time           | 30 minutes                                                                                                      |
-| Bacteria Efficacy        | 99.9999%                                                                                                        |
-| Virus Efficacy           | 99.99%                                                                                                          |
-| Giardia Cyst Efficacy    | 99.9%                                                                                                           |
-| Cryptosporidium Coverage | None                                                                                                            |
-| Certifications           | EPA Registered, NSF/ANSI 60                                                                                     |
-| Shelf Life               | ~5 years                                                                                                        |
-| **Comparison**           | See how [Aquatabs Water Purification Tablets compares](/tools/ultralight-research/purification) to similar gear |
+| Spec                     | Value                                  |
+| ------------------------ | -------------------------------------- |
+| Weight (30-tablet pack)  | 5.0 g (0.18 oz)                        |
+| Active Ingredient        | NaDCC (sodium dichloroisocyanurate)    |
+| Available Sizes          | 49 mg, 397 mg                          |
+| Treats per 49 mg Tablet  | Up to 2L (clear water) / 0.8L (turbid) |
+| Treatment Time           | 30 minutes                             |
+| Bacteria Efficacy        | 99.9999%                               |
+| Virus Efficacy           | 99.99%                                 |
+| Giardia Cyst Efficacy    | 99.9%                                  |
+| Cryptosporidium Coverage | None                                   |
+| Certifications           | EPA Registered, NSF/ANSI 60            |
+| Shelf Life               | ~5 years                               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="purification"
+/>
 
 ## Performance
 

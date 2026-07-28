@@ -12,7 +12,7 @@ published_at: "2026-07-13"
 description: "The Anker 533 PowerCore 30W is a reliable 10,000mAh power bank with fast 30W output and a useful LCD display, but a slow recharge rate and average weight hold it back for ultralight use."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Anker 533 PowerCore 30W (model A1256) is a 10,000mAh power bank aimed at tra
 
 ## Key Specs
 
-| Spec           | Value                                                                                                 |
-| -------------- | ----------------------------------------------------------------------------------------------------- |
-| Weight         | 220g (7.76 oz)                                                                                        |
-| Dimensions     | 98.5 × 52.3 × 26 mm                                                                                   |
-| Capacity       | 10,000 mAh                                                                                            |
-| Max Output     | 30W (USB-C PD)                                                                                        |
-| Ports          | 2× USB-C, 1× USB-A                                                                                    |
-| Input          | USB-C, max 18W                                                                                        |
-| Display        | LCD (% + time estimate)                                                                               |
-| Warranty       | 18 months                                                                                             |
-| **Comparison** | See how [533 Power Bank (PowerCore 30W) compares](/tools/ultralight-research/battery) to similar gear |
+| Spec       | Value                   |
+| ---------- | ----------------------- |
+| Weight     | 220g (7.76 oz)          |
+| Dimensions | 98.5 × 52.3 × 26 mm     |
+| Capacity   | 10,000 mAh              |
+| Max Output | 30W (USB-C PD)          |
+| Ports      | 2× USB-C, 1× USB-A      |
+| Input      | USB-C, max 18W          |
+| Display    | LCD (% + time estimate) |
+| Warranty   | 18 months               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="battery"
+/>
 
 ## Performance
 

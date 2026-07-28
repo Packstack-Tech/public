@@ -12,7 +12,7 @@ published_at: "2026-07-21"
 description: "The Victorinox Compact packs 15 functions — including scissors and a ballpoint pen — into a slim 2-layer, 64g Swiss Army Knife ideal for everyday carry and backcountry use."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -29,23 +29,28 @@ bulk of a 3-layer knife.
 
 ## Key Specs
 
-| Spec              | Value                                                                        |
-| ----------------- | ---------------------------------------------------------------------------- |
-| Weight            | 64g (2.3 oz)                                                                 |
-| Closed Length     | 91mm (3.58 in)                                                               |
-| Width             | 26mm                                                                         |
-| Height            | 16mm                                                                         |
-| Layers            | 2                                                                            |
-| Functions         | 15                                                                           |
-| Blade Lock        | No                                                                           |
-| One-Hand Blade    | No                                                                           |
-| Handle Material   | ABS/Cellidor (Plus scales)                                                   |
-| Country of Origin | Switzerland                                                                  |
-| Item Number       | 1.3405                                                                       |
-| Warranty          | Lifetime                                                                     |
-| **Comparison**    | See how [Compact compares](/tools/ultralight-research/knife) to similar gear |
+| Spec              | Value                      |
+| ----------------- | -------------------------- |
+| Weight            | 64g (2.3 oz)               |
+| Closed Length     | 91mm (3.58 in)             |
+| Width             | 26mm                       |
+| Height            | 16mm                       |
+| Layers            | 2                          |
+| Functions         | 15                         |
+| Blade Lock        | No                         |
+| One-Hand Blade    | No                         |
+| Handle Material   | ABS/Cellidor (Plus scales) |
+| Country of Origin | Switzerland                |
+| Item Number       | 1.3405                     |
+| Warranty          | Lifetime                   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="knife"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A staple of ultralight food storage and organization—cheap, tough enough for the trail, and nearly weightless at 12 grams."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ Ziploc Gallon Freezer Bags aren't a "backpacking product" in any marketed sense 
 
 ## Key Specs
 
-| Spec           | Value                                                                                      |
-| -------------- | ------------------------------------------------------------------------------------------ |
-| Weight         | 12.0 g per bag                                                                             |
-| Capacity       | 1 gallon (3.4 L)                                                                           |
-| Dimensions     | 10 9/16" x 10 3/4"                                                                         |
-| Closure        | Double zipper (Smart Zip seal)                                                             |
-| Material       | BPA-free plastic                                                                           |
-| Reusable       | Yes, hand-wash and air dry                                                                 |
-| Price          | ~$0.15–0.25 per bag depending on pack size                                                 |
-| **Comparison** | See how [Gallon Freezer Bags compares](/tools/ultralight-research/storage) to similar gear |
+| Spec       | Value                                      |
+| ---------- | ------------------------------------------ |
+| Weight     | 12.0 g per bag                             |
+| Capacity   | 1 gallon (3.4 L)                           |
+| Dimensions | 10 9/16" x 10 3/4"                         |
+| Closure    | Double zipper (Smart Zip seal)             |
+| Material   | BPA-free plastic                           |
+| Reusable   | Yes, hand-wash and air dry                 |
+| Price      | ~$0.15–0.25 per bag depending on pack size |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="storage"
+/>
 
 ## Performance
 

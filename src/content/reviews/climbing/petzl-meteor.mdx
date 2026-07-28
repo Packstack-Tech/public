@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "The Petzl Meteor is a 225-240g in-mold climbing helmet with excellent ventilation — here's how it performs on rock, ice, and ski tours."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Petzl Meteor is a lightweight in-mold climbing helmet built for anyone who w
 
 ## Key Specs
 
-| Spec                | Detail                                                                         |
-| ------------------- | ------------------------------------------------------------------------------ |
-| Weight (S/M)        | 225 g                                                                          |
-| Weight (M/L)        | 240 g                                                                          |
-| Construction        | In-Mold (EPS foam liner injected inside polycarbonate shell)                   |
-| Materials           | Polycarbonate shell, EPS foam liner, polyester webbing                         |
-| Certification       | CE EN 12492 (mountaineering)                                                   |
-| Headlamp compatible | Yes (front clips + rear elastic)                                               |
-| Adjustment          | Semi-rigid headband, glove-friendly                                            |
-| **Comparison**      | See how [Meteor compares](/tools/ultralight-research/personal) to similar gear |
+| Spec                | Detail                                                       |
+| ------------------- | ------------------------------------------------------------ |
+| Weight (S/M)        | 225 g                                                        |
+| Weight (M/L)        | 240 g                                                        |
+| Construction        | In-Mold (EPS foam liner injected inside polycarbonate shell) |
+| Materials           | Polycarbonate shell, EPS foam liner, polyester webbing       |
+| Certification       | CE EN 12492 (mountaineering)                                 |
+| Headlamp compatible | Yes (front clips + rear elastic)                             |
+| Adjustment          | Semi-rigid headband, glove-friendly                          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="personal"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-05-04"
 description: "The Sierra Designs Flex Capacitor 40-60 is a lightweight framed pack with a unique horizontal gusset system that expands volume from 40L to 60L — a genuine one-quiver option for most backpackers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -33,21 +33,26 @@ problem I've come across.
 
 ## Key Specs
 
-| Spec             | Detail                                                                                        |
-| ---------------- | --------------------------------------------------------------------------------------------- |
-| **Weight (S/M)** | 1,191 g (2 lbs 10 oz)                                                                         |
-| **Weight (M/L)** | 1,219 g (2 lbs 11 oz)                                                                         |
-| **Volume**       | 40–60L                                                                                        |
-| **Frame**        | Y-shaped DAC Pressfit aluminum (Y-Flex)                                                       |
-| **Body Fabric**  | 100D Nylon Honeycomb                                                                          |
-| **Base Fabric**  | 420D Oxford Nylon                                                                             |
-| **Torso Sizes**  | S/M (16–19 in), M/L (18–21 in)                                                                |
-| **Hip Belt**     | Padded, zippered pockets both sides                                                           |
-| **Access**       | U-shaped top zipper                                                                           |
-| **Rain Cover**   | Sold separately                                                                               |
-| **Comparison**   | See how [Flex Capacitor 40-60 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec             | Detail                                  |
+| ---------------- | --------------------------------------- |
+| **Weight (S/M)** | 1,191 g (2 lbs 10 oz)                   |
+| **Weight (M/L)** | 1,219 g (2 lbs 11 oz)                   |
+| **Volume**       | 40–60L                                  |
+| **Frame**        | Y-shaped DAC Pressfit aluminum (Y-Flex) |
+| **Body Fabric**  | 100D Nylon Honeycomb                    |
+| **Base Fabric**  | 420D Oxford Nylon                       |
+| **Torso Sizes**  | S/M (16–19 in), M/L (18–21 in)          |
+| **Hip Belt**     | Padded, zippered pockets both sides     |
+| **Access**       | U-shaped top zipper                     |
+| **Rain Cover**   | Sold separately                         |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

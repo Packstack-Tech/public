@@ -12,7 +12,7 @@ published_at: "2026-03-11"
 description: "A deep-dive review of the Garmin inReach Mini 2 satellite communicator — covering SOS performance, battery life, messaging, subscription costs, and who should carry one."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,23 +20,28 @@ The Garmin inReach Mini 2 is a two-way satellite communicator built around a sin
 
 ## Key Specs
 
-| Spec                  | Detail                                                                                 |
-| --------------------- | -------------------------------------------------------------------------------------- |
-| **Weight**            | 100 g (3.5 oz)                                                                         |
-| **Dimensions**        | 2.04" × 3.90" × 1.03" (5.2 × 9.9 × 2.6 cm)                                             |
-| **Display**           | 0.9" × 0.9", 176 × 176 px, monochrome transflective MIP                                |
-| **Battery Life**      | Up to 14 days (10-min tracking) / Up to 30 days (30-min tracking)                      |
-| **Battery Type**      | Rechargeable internal lithium-ion                                                      |
-| **Waterproofing**     | IPX7                                                                                   |
-| **Impact Rating**     | MIL-STD-810                                                                            |
-| **Satellite Network** | Iridium (global)                                                                       |
-| **GPS**               | Yes                                                                                    |
-| **Interface**         | USB-C                                                                                  |
-| **Retail Price**      | ~$400                                                                                  |
-| **Subscription**      | Required; starts ~$8/month (Enabled), plans up to ~$50/month (Premium)                 |
-| **Comparison**        | See how [inReach Mini 2 compares](/tools/ultralight-research/survival) to similar gear |
+| Spec                  | Detail                                                                 |
+| --------------------- | ---------------------------------------------------------------------- |
+| **Weight**            | 100 g (3.5 oz)                                                         |
+| **Dimensions**        | 2.04" × 3.90" × 1.03" (5.2 × 9.9 × 2.6 cm)                             |
+| **Display**           | 0.9" × 0.9", 176 × 176 px, monochrome transflective MIP                |
+| **Battery Life**      | Up to 14 days (10-min tracking) / Up to 30 days (30-min tracking)      |
+| **Battery Type**      | Rechargeable internal lithium-ion                                      |
+| **Waterproofing**     | IPX7                                                                   |
+| **Impact Rating**     | MIL-STD-810                                                            |
+| **Satellite Network** | Iridium (global)                                                       |
+| **GPS**               | Yes                                                                    |
+| **Interface**         | USB-C                                                                  |
+| **Retail Price**      | ~$400                                                                  |
+| **Subscription**      | Required; starts ~$8/month (Enabled), plans up to ~$50/month (Premium) |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="survival"
+/>
 
 ## Performance
 

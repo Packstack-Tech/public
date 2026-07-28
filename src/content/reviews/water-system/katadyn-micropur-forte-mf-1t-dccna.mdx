@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "A closer look at Katadyn's Swiss-made purification tablets — how they perform, what they miss, and who should actually carry them."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ Micropur Forte MF 1T is Katadyn's single-dose chemical purification tablet, buil
 
 ## Key Specs
 
-| Spec                                 | Detail                                                                                                 |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------ |
-| Weight                               | 2.7 g (per tablet, packaging included)                                                                 |
-| Active ingredients                   | Sodium dichloroisocyanurate (DCCNa) 4.5 mg + Silver ions (Ag+) 0.1 mg per tablet                       |
-| Treats                               | 1 litre per tablet                                                                                     |
-| Disinfection time (bacteria/viruses) | 30 minutes                                                                                             |
-| Disinfection time (Giardia/amoeba)   | 2 hours                                                                                                |
-| Water preservation                   | Up to 6 months (via silver ions)                                                                       |
-| Water clarity requirement            | Clear water only — use with a filter for turbid water                                                  |
-| Shelf life                           | ~5 years from manufacture date                                                                         |
-| Origin                               | Switzerland                                                                                            |
-| **Comparison**                       | See how [Micropur Forte MF 1T DCCNa compares](/tools/ultralight-research/purification) to similar gear |
+| Spec                                 | Detail                                                                           |
+| ------------------------------------ | -------------------------------------------------------------------------------- |
+| Weight                               | 2.7 g (per tablet, packaging included)                                           |
+| Active ingredients                   | Sodium dichloroisocyanurate (DCCNa) 4.5 mg + Silver ions (Ag+) 0.1 mg per tablet |
+| Treats                               | 1 litre per tablet                                                               |
+| Disinfection time (bacteria/viruses) | 30 minutes                                                                       |
+| Disinfection time (Giardia/amoeba)   | 2 hours                                                                          |
+| Water preservation                   | Up to 6 months (via silver ions)                                                 |
+| Water clarity requirement            | Clear water only — use with a filter for turbid water                            |
+| Shelf life                           | ~5 years from manufacture date                                                   |
+| Origin                               | Switzerland                                                                      |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="purification"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-17"
 description: "A feature-rich, lightweight hydration reservoir built for Osprey packs. Great closure and mid-hose quick-disconnect, with minor trade-offs in drying ease and taste break-in."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Osprey Hydraulics LT 2.5L is a co-designed product from Osprey and Hydrapak,
 
 ## Key Specs
 
-| Spec                        | Value                                                                                                  |
-| --------------------------- | ------------------------------------------------------------------------------------------------------ |
-| Weight                      | 168.1 g (5.93 oz)                                                                                      |
-| Capacity                    | 2.5 L                                                                                                  |
-| Closure Type                | Slide-Seal™                                                                                            |
-| Hose Diameter               | 6.35 mm (¼ in)                                                                                         |
-| Baffle Design               | Dual chevron baffles                                                                                   |
-| Hanger Compatibility        | HydraClip reservoir hanger                                                                             |
-| Dimensions                  | ~15" H × 8" W × 2" D                                                                                   |
-| BPA / Phthalate / Lead Free | Yes                                                                                                    |
-| Rigid Backer                | No                                                                                                     |
-| **Comparison**              | See how [Hydraulics LT 2.5 L Reservoir compares](/tools/ultralight-research/hydration) to similar gear |
+| Spec                        | Value                      |
+| --------------------------- | -------------------------- |
+| Weight                      | 168.1 g (5.93 oz)          |
+| Capacity                    | 2.5 L                      |
+| Closure Type                | Slide-Seal™                |
+| Hose Diameter               | 6.35 mm (¼ in)             |
+| Baffle Design               | Dual chevron baffles       |
+| Hanger Compatibility        | HydraClip reservoir hanger |
+| Dimensions                  | ~15" H × 8" W × 2" D       |
+| BPA / Phthalate / Lead Free | Yes                        |
+| Rigid Backer                | No                         |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hydration"
+/>
 
 ## Performance
 

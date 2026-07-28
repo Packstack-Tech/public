@@ -12,7 +12,7 @@ published_at: "2026-07-08"
 description: 'The Therm-a-Rest NeoLoft delivers best-in-class backcountry comfort with 4.6" of loft and a soft stretch-knit surface — at the cost of extra weight and a premium price.'
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,22 +32,27 @@ one, and it's priced accordingly at around $240.
 
 ## Key Specs
 
-| Spec                    | Value                                                                                            |
-| ----------------------- | ------------------------------------------------------------------------------------------------ |
-| **Weight**              | 1 lb 8.9 oz / ~709 g (Regular); 1 lb 14 oz / 850 g (Regular Wide)                                |
-| **Thickness**           | 4.6 in / 11.7 cm                                                                                 |
-| **R-Value**             | 4.7                                                                                              |
-| **Packed Size**         | 9.5 × 7.5 in (Regular)                                                                           |
-| **Inflated Dimensions** | 73 × 22 in (Regular); 73 × 26 in (Regular Wide)                                                  |
-| **Top Fabric**          | 50D polyester stretch knit                                                                       |
-| **Bottom Fabric**       | 75D polyester solution-dyed                                                                      |
-| **Valve System**        | TwinLock™ dual in/out                                                                            |
-| **Insulation Tech**     | ContourCore Matrix™ + ThermaCapture™                                                             |
-| **Sizes Available**     | Regular, Regular Wide, Large                                                                     |
-| **Price**               | ~$240                                                                                            |
-| **Comparison**          | See how [NeoLoft Sleeping Pad compares](/tools/ultralight-research/sleeping-pad) to similar gear |
+| Spec                    | Value                                                             |
+| ----------------------- | ----------------------------------------------------------------- |
+| **Weight**              | 1 lb 8.9 oz / ~709 g (Regular); 1 lb 14 oz / 850 g (Regular Wide) |
+| **Thickness**           | 4.6 in / 11.7 cm                                                  |
+| **R-Value**             | 4.7                                                               |
+| **Packed Size**         | 9.5 × 7.5 in (Regular)                                            |
+| **Inflated Dimensions** | 73 × 22 in (Regular); 73 × 26 in (Regular Wide)                   |
+| **Top Fabric**          | 50D polyester stretch knit                                        |
+| **Bottom Fabric**       | 75D polyester solution-dyed                                       |
+| **Valve System**        | TwinLock™ dual in/out                                             |
+| **Insulation Tech**     | ContourCore Matrix™ + ThermaCapture™                              |
+| **Sizes Available**     | Regular, Regular Wide, Large                                      |
+| **Price**               | ~$240                                                             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sleeping-pad"
+/>
 
 ## Performance
 

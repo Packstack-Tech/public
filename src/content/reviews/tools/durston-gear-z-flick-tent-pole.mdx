@@ -12,7 +12,7 @@ published_at: "2026-05-19"
 description: "The Durston Z-Flick is the world's lightest adjustable folding tent pole at 88g, designed for bikepackers and non-trekking-pole users who need a dedicated, compact pole for trekking-pole shelters."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Durston Z-Flick is a purpose-built carbon fiber folding pole designed for tr
 
 ## Key Specs
 
-| Spec                 | Value                                                                                              |
-| -------------------- | -------------------------------------------------------------------------------------------------- |
-| **Weight**           | 88 g (3.1 oz) per pole                                                                             |
-| **Material**         | Carbon fiber                                                                                       |
-| **Sections**         | 5                                                                                                  |
-| **Packed Length**    | 12 in (30.5 cm)                                                                                    |
-| **Adjustment Range** | 43.5 – 51.5 in (111 – 131 cm)                                                                      |
-| **Tube Diameter**    | 12 mm (upper sections) / 14 mm (lower section)                                                     |
-| **Adjuster Type**    | External flick-style (continuously adjustable)                                                     |
-| **Tip Styles**       | Pointed aluminum (grommet/tips-up) + blunt aluminum cap (handles-up)                               |
-| **Price**            | From $39 USD per pole                                                                              |
-| **Comparison**       | See how the [Z-Flick Tent Pole compares](/tools/ultralight-research/trekking-pole) to similar gear |
+| Spec                 | Value                                                                |
+| -------------------- | -------------------------------------------------------------------- |
+| **Weight**           | 88 g (3.1 oz) per pole                                               |
+| **Material**         | Carbon fiber                                                         |
+| **Sections**         | 5                                                                    |
+| **Packed Length**    | 12 in (30.5 cm)                                                      |
+| **Adjustment Range** | 43.5 – 51.5 in (111 – 131 cm)                                        |
+| **Tube Diameter**    | 12 mm (upper sections) / 14 mm (lower section)                       |
+| **Adjuster Type**    | External flick-style (continuously adjustable)                       |
+| **Tip Styles**       | Pointed aluminum (grommet/tips-up) + blunt aluminum cap (handles-up) |
+| **Price**            | From $39 USD per pole                                                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="trekking-pole"
+/>
 
 ## Performance
 

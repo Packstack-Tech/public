@@ -12,7 +12,7 @@ published_at: "2026-07-05"
 description: "The Sea to Summit Watercell X 4L is a durable, feature-rich water storage solution for backpackers and campers who need more than a basic soft flask."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Sea to Summit Watercell X is a structured soft-sided water reservoir aimed a
 
 ## Key Specs
 
-| Spec                  | Value                                                                              |
-| --------------------- | ---------------------------------------------------------------------------------- |
-| **Weight**            | 172 g (6.1 oz)                                                                     |
-| **Capacity**          | 4L                                                                                 |
-| **Packed Dimensions** | 28 × 21 × 10 cm                                                                    |
-| **Material**          | Certified recycled 400D nylon, RF-welded BPA/PVC/PFAS-free TPU laminate            |
-| **Cap Thread Size**   | 63mm (Nalgene-standard wide mouth)                                                 |
-| **Certification**     | bluesign APPROVED                                                                  |
-| **Available Sizes**   | 4L, 6L, 10L, 20L                                                                   |
-| **Comparison**        | See how [Watercell X compares](/tools/ultralight-research/storage) to similar gear |
+| Spec                  | Value                                                                   |
+| --------------------- | ----------------------------------------------------------------------- |
+| **Weight**            | 172 g (6.1 oz)                                                          |
+| **Capacity**          | 4L                                                                      |
+| **Packed Dimensions** | 28 × 21 × 10 cm                                                         |
+| **Material**          | Certified recycled 400D nylon, RF-welded BPA/PVC/PFAS-free TPU laminate |
+| **Cap Thread Size**   | 63mm (Nalgene-standard wide mouth)                                      |
+| **Certification**     | bluesign APPROVED                                                       |
+| **Available Sizes**   | 4L, 6L, 10L, 20L                                                        |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="storage"
+/>
 
 ## Performance
 

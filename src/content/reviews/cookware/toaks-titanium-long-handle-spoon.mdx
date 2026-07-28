@@ -12,7 +12,7 @@ published_at: "2026-05-13"
 description: "A no-nonsense 19g pure titanium spoon with a flat head and all-matte finish — ideal for freeze-dried meal eaters and ultralight backpackers who want one utensil that does everything."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The TOAKS SLV-03 is a pure titanium long-handle spoon built around a single, hon
 
 ## Key Specs
 
-| Spec           | Detail                                                                                                  |
-| -------------- | ------------------------------------------------------------------------------------------------------- |
-| **SKU**        | SLV-03                                                                                                  |
-| **Weight**     | 19.0 g (0.65 oz)                                                                                        |
-| **Length**     | 7.5 in (190 mm)                                                                                         |
-| **Material**   | Pure Titanium (no coating)                                                                              |
-| **Finish**     | Full Matte                                                                                              |
-| **Head Shape** | Flat / Squared                                                                                          |
-| **Comparison** | See how [TOAKS Titanium Long Handle Spoon compares](/tools/ultralight-research/utensil) to similar gear |
+| Spec           | Detail                     |
+| -------------- | -------------------------- |
+| **SKU**        | SLV-03                     |
+| **Weight**     | 19.0 g (0.65 oz)           |
+| **Length**     | 7.5 in (190 mm)            |
+| **Material**   | Pure Titanium (no coating) |
+| **Finish**     | Full Matte                 |
+| **Head Shape** | Flat / Squared             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="utensil"
+/>
 
 ## Performance
 

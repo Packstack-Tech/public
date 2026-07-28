@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A field-focused look at whether Google's IP68 foldable makes sense as a hiking companion, or whether it should stay in the glovebox."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,26 +20,31 @@ The Pixel 10 Pro Fold is Google's third-generation book-style foldable — an 8-
 
 ## Key Specs
 
-| Spec               | Detail                                                                                          |
-| ------------------ | ----------------------------------------------------------------------------------------------- |
-| Weight             | 258 g (9.1 oz)                                                                                  |
-| Chipset            | Google Tensor G5                                                                                |
-| RAM                | 16 GB                                                                                           |
-| Storage            | 256 / 512 / 1024 GB                                                                             |
-| Battery            | 5,015 mAh, 24+ hrs claimed                                                                      |
-| Inner display      | 8" Super Actua Flex OLED, 2076×2152, 1–120Hz LTPO                                               |
-| Outer display      | 6.4" Actua OLED, 1080×2364, 60–120Hz                                                            |
-| Ingress protection | IP68 (dust + water)                                                                             |
-| Main camera        | 48MP, OIS                                                                                       |
-| Ultrawide          | 10.5MP                                                                                          |
-| Telephoto          | 10.8MP, 5x optical / 20x Super Res                                                              |
-| Wired charging     | 30W (up to 39W in some tests)                                                                   |
-| Wireless charging  | Qi2 / Pixelsnap, 15W                                                                            |
-| OS                 | Android 16                                                                                      |
-| Colors             | Moonstone, Jade                                                                                 |
-| **Comparison**     | See how [Pixel 10 Pro Fold compares](/tools/ultralight-research/navigationcomm) to similar gear |
+| Spec               | Detail                                            |
+| ------------------ | ------------------------------------------------- |
+| Weight             | 258 g (9.1 oz)                                    |
+| Chipset            | Google Tensor G5                                  |
+| RAM                | 16 GB                                             |
+| Storage            | 256 / 512 / 1024 GB                               |
+| Battery            | 5,015 mAh, 24+ hrs claimed                        |
+| Inner display      | 8" Super Actua Flex OLED, 2076×2152, 1–120Hz LTPO |
+| Outer display      | 6.4" Actua OLED, 1080×2364, 60–120Hz              |
+| Ingress protection | IP68 (dust + water)                               |
+| Main camera        | 48MP, OIS                                         |
+| Ultrawide          | 10.5MP                                            |
+| Telephoto          | 10.8MP, 5x optical / 20x Super Res                |
+| Wired charging     | 30W (up to 39W in some tests)                     |
+| Wireless charging  | Qi2 / Pixelsnap, 15W                              |
+| OS                 | Android 16                                        |
+| Colors             | Moonstone, Jade                                   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="navigationcomm"
+/>
 
 ## Performance
 

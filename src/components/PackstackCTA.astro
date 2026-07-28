@@ -6,22 +6,32 @@
  * than a generic pitch. Falls back to a generic version for how-to articles.
  */
 type Props = {
-  product?: string
-  brand?: string
-  weightGrams?: number | null
-  category?: string
-}
+  product?: string;
+  brand?: string;
+  weightGrams?: number | null;
+  category?: string;
+  /** Ultralight-research subcategory slug for a direct comparison link. */
+  subcategorySlug?: string;
+};
 
-const { product, brand, weightGrams, category } = Astro.props
+const { product, brand, weightGrams, category, subcategorySlug } = Astro.props;
 
-const contextual = !!product
+const contextual = !!product;
 const weightLabel = weightGrams
   ? `${Math.round(weightGrams)} g · ${(weightGrams / 28.3495).toFixed(1)} oz`
-  : null
-const categoryLabel = category ? category.toLowerCase() : "gear"
+  : null;
+const categoryLabel = category ? category.toLowerCase() : "gear";
+const compareHref = subcategorySlug
+  ? `/tools/ultralight-research/${subcategorySlug}`
+  : "/tools/ultralight-research";
+const compareLabel = subcategorySlug
+  ? `See how the ${product} compares`
+  : `Compare ${categoryLabel} by weight`;
 ---
 
-<div class="not-prose my-8 rounded-xl border border-primary/25 bg-primary/[0.06] px-6 py-5">
+<div
+  class="not-prose my-8 rounded-xl border border-primary/25 bg-primary/[0.06] px-6 py-5"
+>
   {
     contextual ? (
       <>
@@ -48,10 +58,10 @@ const categoryLabel = category ? category.toLowerCase() : "gear"
             Track it in your gear closet
           </a>
           <a
-            href="/tools/ultralight-research"
+            href={compareHref}
             class="text-sm font-medium text-softwhite hover:text-white no-underline transition-colors"
           >
-            Compare {categoryLabel} by weight &rarr;
+            {compareLabel} &rarr;
           </a>
         </div>
         <p class="mt-3 text-xs text-label">

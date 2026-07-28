@@ -12,7 +12,7 @@ published_at: "2026-07-06"
 description: "A hammock-specific tarp with rollable side wings for 360° weather coverage — clever design, but 950g asks real questions about your weight budget."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The AMAZONAS Wing Tarp is a hammock-dedicated rain shelter built around a trapez
 
 ## Key Specs
 
-| Spec             | Value                                                                         |
-| ---------------- | ----------------------------------------------------------------------------- |
-| **Weight**       | 949.7 g (33.5 oz)                                                             |
-| **Dimensions**   | Trapezoidal: 150 × 320 × 150 × 225 cm                                         |
-| **Packed Size**  | 26 × 13 cm                                                                    |
-| **Water Column** | 3,000 mm                                                                      |
-| **Material**     | Nylon Ripstop with silicone coating                                           |
-| **Included**     | 4 aluminium Y-pegs, fastening ropes with adjustable carabiner, pack sack      |
-| **Comparison**   | See how [Wing Tarp compares](/tools/ultralight-research/tarp) to similar gear |
+| Spec             | Value                                                                    |
+| ---------------- | ------------------------------------------------------------------------ |
+| **Weight**       | 949.7 g (33.5 oz)                                                        |
+| **Dimensions**   | Trapezoidal: 150 × 320 × 150 × 225 cm                                    |
+| **Packed Size**  | 26 × 13 cm                                                               |
+| **Water Column** | 3,000 mm                                                                 |
+| **Material**     | Nylon Ripstop with silicone coating                                      |
+| **Included**     | 4 aluminium Y-pegs, fastening ropes with adjustable carabiner, pack sack |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="tarp"
+/>
 
 ## Performance
 

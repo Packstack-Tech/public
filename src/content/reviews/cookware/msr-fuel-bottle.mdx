@@ -12,7 +12,7 @@ published_at: "2026-05-12"
 description: "The MSR 11 oz Fuel Bottle is a rugged, seamless aluminum vessel built for liquid-fuel stove systems — dependable and durable, though its child-resistant cap divides opinion."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The MSR Fuel Bottle is the dedicated fuel-storage vessel for MSR's lineup of liq
 
 ## Key Specs
 
-| Spec                 | Value                                                                                   |
-| -------------------- | --------------------------------------------------------------------------------------- |
-| **Weight**           | 122 g (4.3 oz)                                                                          |
-| **Capacity**         | 325 ml / 11 fl oz                                                                       |
-| **Dimensions**       | 2.5 × 2.5 × 7 in                                                                        |
-| **Material**         | Impact-extruded aluminum                                                                |
-| **Cap**              | Child-resistant push-and-twist (CRP)                                                    |
-| **Compatible Fuels** | White gas, kerosene, unleaded gasoline, others                                          |
-| **Available Sizes**  | 11 oz (122 g), 20 oz (167 g), 30 oz (218 g)                                             |
-| **Made In**          | USA                                                                                     |
-| **Comparison**       | See how the [MSR Fuel Bottle compares](/tools/ultralight-research/fuel) to similar gear |
+| Spec                 | Value                                          |
+| -------------------- | ---------------------------------------------- |
+| **Weight**           | 122 g (4.3 oz)                                 |
+| **Capacity**         | 325 ml / 11 fl oz                              |
+| **Dimensions**       | 2.5 × 2.5 × 7 in                               |
+| **Material**         | Impact-extruded aluminum                       |
+| **Cap**              | Child-resistant push-and-twist (CRP)           |
+| **Compatible Fuels** | White gas, kerosene, unleaded gasoline, others |
+| **Available Sizes**  | 11 oz (122 g), 20 oz (167 g), 30 oz (218 g)    |
+| **Made In**          | USA                                            |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="fuel"
+/>
 
 ## Performance
 

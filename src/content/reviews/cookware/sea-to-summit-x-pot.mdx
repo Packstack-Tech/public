@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A collapsible silicone-and-aluminum pot that packs down to an inch tall — here's how it actually performs on trail."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The X-Pot is Sea to Summit's answer to the "why does my pot take up a third of m
 
 ## Key Specs
 
-| Spec            | Detail                                                                       |
-| --------------- | ---------------------------------------------------------------------------- |
-| Weight          | 269.3 g (9.5 oz) — varies slightly by size/source                            |
-| Available sizes | 1.4L, 2.8L, 4.0L                                                             |
-| Material        | BPA-free food-grade silicone walls + hard anodized 6063-T6 aluminum base     |
-| Lid             | Translucent, with built-in strainer                                          |
-| Rim             | Embedded stainless-steel ring for rigidity                                   |
-| Collapsible     | Yes — packs to roughly 1–1.5 in (2.5–3.8 cm) tall                            |
-| Cooking method  | Backpacking stove only — not fire-safe                                       |
-| **Comparison**  | See how [X-Pot compares](/tools/ultralight-research/pot-pan) to similar gear |
+| Spec            | Detail                                                                   |
+| --------------- | ------------------------------------------------------------------------ |
+| Weight          | 269.3 g (9.5 oz) — varies slightly by size/source                        |
+| Available sizes | 1.4L, 2.8L, 4.0L                                                         |
+| Material        | BPA-free food-grade silicone walls + hard anodized 6063-T6 aluminum base |
+| Lid             | Translucent, with built-in strainer                                      |
+| Rim             | Embedded stainless-steel ring for rigidity                               |
+| Collapsible     | Yes — packs to roughly 1–1.5 in (2.5–3.8 cm) tall                        |
+| Cooking method  | Backpacking stove only — not fire-safe                                   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="pot-pan"
+/>
 
 ## Performance
 

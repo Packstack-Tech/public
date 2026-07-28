@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The Ursack AllMitey is an IGBC-certified soft bear bag that combines UHMWP and Kevlar to resist both bears and small critters — a canister alternative worth serious consideration."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -28,18 +28,23 @@ persistent small critters on the same trip.
 
 ## Key Specs
 
-| Spec                | Value                                                                                  |
-| ------------------- | -------------------------------------------------------------------------------------- |
-| **Weight**          | 269 g (9.5 oz)                                                                         |
-| **Capacity**        | 10.65 L (~5 days of food for 1 person)                                                 |
-| **Material**        | Laminated UHMWP and Kevlar                                                             |
-| **Cord**            | 6 ft high-tensile-strength with reflective tracer                                      |
-| **Certification**   | IGBC Certified Bear-Resistant                                                          |
-| **Water Resistant** | Yes (seam sealing recommended)                                                         |
-| **Made In**         | USA                                                                                    |
-| **Comparison**      | See how [Ursack AllMitey compares](/tools/ultralight-research/hanging) to similar gear |
+| Spec                | Value                                             |
+| ------------------- | ------------------------------------------------- |
+| **Weight**          | 269 g (9.5 oz)                                    |
+| **Capacity**        | 10.65 L (~5 days of food for 1 person)            |
+| **Material**        | Laminated UHMWP and Kevlar                        |
+| **Cord**            | 6 ft high-tensile-strength with reflective tracer |
+| **Certification**   | IGBC Certified Bear-Resistant                     |
+| **Water Resistant** | Yes (seam sealing recommended)                    |
+| **Made In**         | USA                                               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hanging"
+/>
 
 ## Performance
 

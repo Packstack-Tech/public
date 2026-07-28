@@ -12,7 +12,7 @@ published_at: "2026-06-03"
 description: "The Nitecore NB20000 Gen3 is a 20,000mAh carbon fiber power bank weighing just 291g — one of the lightest 20K banks available, but with real-world capacity caveats worth understanding."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,25 +20,30 @@ The Nitecore NB20000 Gen3 is a 20,000mAh power bank built around a carbon fiber 
 
 ## Key Specs
 
-| Spec                   | Value                                                                                   |
-| ---------------------- | --------------------------------------------------------------------------------------- |
-| **Capacity**           | 20,000mAh (3.6V / 72Wh)                                                                 |
-| **Rated Energy**       | 11,220mAh at 5V (TYP 3A)                                                                |
-| **Weight**             | 291g ± 5g (10.26 oz)                                                                    |
-| **Dimensions**         | 118 × 69 × 21.5mm (4.65" × 2.72" × 0.85")                                               |
-| **Ports**              | 2× USB-C (+ USB-C to USB-A adapter)                                                     |
-| **Max Output**         | 22.5W (OUT1); 18W (OUT2)                                                                |
-| **Dual Port Output**   | 15W max total                                                                           |
-| **Max Input**          | 18W per port                                                                            |
-| **Charging Protocols** | PD 3.0, QC, FCP, SCP                                                                    |
-| **Waterproof Rating**  | IPX5                                                                                    |
-| **Shell Material**     | Carbon fiber reinforced polymer (CFRP)                                                  |
-| **Operating Temp**     | 14–104°F (-10–40°C)                                                                     |
-| **Airline Approved**   | Yes (under 100Wh)                                                                       |
-| **Price**              | ~$99.95                                                                                 |
-| **Comparison**         | See how [NB20000 Gen3 compares](/tools/ultralight-research/power-cable) to similar gear |
+| Spec                   | Value                                     |
+| ---------------------- | ----------------------------------------- |
+| **Capacity**           | 20,000mAh (3.6V / 72Wh)                   |
+| **Rated Energy**       | 11,220mAh at 5V (TYP 3A)                  |
+| **Weight**             | 291g ± 5g (10.26 oz)                      |
+| **Dimensions**         | 118 × 69 × 21.5mm (4.65" × 2.72" × 0.85") |
+| **Ports**              | 2× USB-C (+ USB-C to USB-A adapter)       |
+| **Max Output**         | 22.5W (OUT1); 18W (OUT2)                  |
+| **Dual Port Output**   | 15W max total                             |
+| **Max Input**          | 18W per port                              |
+| **Charging Protocols** | PD 3.0, QC, FCP, SCP                      |
+| **Waterproof Rating**  | IPX5                                      |
+| **Shell Material**     | Carbon fiber reinforced polymer (CFRP)    |
+| **Operating Temp**     | 14–104°F (-10–40°C)                       |
+| **Airline Approved**   | Yes (under 100Wh)                         |
+| **Price**              | ~$99.95                                   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="power-cable"
+/>
 
 ## Performance
 

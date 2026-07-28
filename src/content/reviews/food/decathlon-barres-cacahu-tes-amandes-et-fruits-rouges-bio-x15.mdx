@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A budget-friendly organic peanut, almond, and freeze-dried cherry bar built for hiking and moderate-effort snacking, tested on ingredients, nutrition, and value."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,23 +20,28 @@ This is Decathlon's organic nut-and-fruit bar aimed squarely at hikers, casual c
 
 ## Key Specs
 
-| Spec              | Value                                                                                                                    |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Bars per pack     | 15                                                                                                                       |
-| Serving size      | 30g per bar                                                                                                              |
-| Total pack weight | 450g                                                                                                                     |
-| Calories          | 510 kcal/100g (152 kcal per bar)                                                                                         |
-| Fat               | 33g/100g (9.9g per bar)                                                                                                  |
-| Carbs             | 34g/100g (10g per bar)                                                                                                   |
-| Sugars            | 18g/100g (5.5g per bar)                                                                                                  |
-| Fiber             | 6.4g/100g (1.9g per bar)                                                                                                 |
-| Protein           | 26g/100g (4.8g per bar)                                                                                                  |
-| Salt              | 0.02g/100g                                                                                                               |
-| Organic           | Yes                                                                                                                      |
-| Price             | ~10€ for the pack                                                                                                        |
-| **Comparison**    | See how [Barres Cacahuètes, Amandes et Fruits Rouges BIO x15 compares](/tools/ultralight-research/snack) to similar gear |
+| Spec              | Value                            |
+| ----------------- | -------------------------------- |
+| Bars per pack     | 15                               |
+| Serving size      | 30g per bar                      |
+| Total pack weight | 450g                             |
+| Calories          | 510 kcal/100g (152 kcal per bar) |
+| Fat               | 33g/100g (9.9g per bar)          |
+| Carbs             | 34g/100g (10g per bar)           |
+| Sugars            | 18g/100g (5.5g per bar)          |
+| Fiber             | 6.4g/100g (1.9g per bar)         |
+| Protein           | 26g/100g (4.8g per bar)          |
+| Salt              | 0.02g/100g                       |
+| Organic           | Yes                              |
+| Price             | ~10€ for the pack                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="snack"
+/>
 
 ## Performance
 

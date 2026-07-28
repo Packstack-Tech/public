@@ -12,7 +12,7 @@ published_at: "2026-03-15"
 description: "The Petzl Bindi is a 35g rechargeable headlamp with 200 lumens and a full feature set — ideal for ultralight backpackers, trail runners, and anyone needing a capable backup light."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,26 +20,31 @@ The Petzl Bindi is a minimalist, USB-rechargeable headlamp that packs 200 lumens
 
 ## Key Specs
 
-| Spec                 | Value                                                                         |
-| -------------------- | ----------------------------------------------------------------------------- |
-| Weight               | 35 g / 1.2 oz                                                                 |
-| Max Output           | 200 lm                                                                        |
-| Standard Output      | 100 lm                                                                        |
-| Low Output           | 6 lm                                                                          |
-| Beam Distance        | 36 m                                                                          |
-| Burn Time (Max)      | 2 hours                                                                       |
-| Burn Time (Standard) | 3 hours                                                                       |
-| Burn Time (Low)      | 50 hours                                                                      |
-| Red Light Burn Time  | 33 hours                                                                      |
-| Red Strobe           | 200 hours / visible 400 m                                                     |
-| Reserve Mode         | 3 lm for 90 min (auto-activates at low battery)                               |
-| Battery              | Li-Ion 680 mAh, built-in                                                      |
-| Charging             | Micro-USB                                                                     |
-| Water Resistance     | IPX4                                                                          |
-| Lock Modes           | 2 (digital + physical)                                                        |
-| **Comparison**       | See how [Bindi compares](/tools/ultralight-research/lighting) to similar gear |
+| Spec                 | Value                                           |
+| -------------------- | ----------------------------------------------- |
+| Weight               | 35 g / 1.2 oz                                   |
+| Max Output           | 200 lm                                          |
+| Standard Output      | 100 lm                                          |
+| Low Output           | 6 lm                                            |
+| Beam Distance        | 36 m                                            |
+| Burn Time (Max)      | 2 hours                                         |
+| Burn Time (Standard) | 3 hours                                         |
+| Burn Time (Low)      | 50 hours                                        |
+| Red Light Burn Time  | 33 hours                                        |
+| Red Strobe           | 200 hours / visible 400 m                       |
+| Reserve Mode         | 3 lm for 90 min (auto-activates at low battery) |
+| Battery              | Li-Ion 680 mAh, built-in                        |
+| Charging             | Micro-USB                                       |
+| Water Resistance     | IPX4                                            |
+| Lock Modes           | 2 (digital + physical)                          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="lighting"
+/>
 
 ## Performance
 

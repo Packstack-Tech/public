@@ -12,7 +12,7 @@ published_at: "2026-05-14"
 description: "The Anker PowerCore 10000 A1263 is a compact, affordable 10,000mAh power bank — but a CPSC recall and outdated ports limit its appeal for new buyers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,9 +31,14 @@ The Anker PowerCore 10000 (model A1263) is a single-port, 10,000mAh power bank t
 | **Recharge Time** | 6–7 hours (5V/2A wall charger)                                                                                                               |
 | **Warranty**      | 18 months                                                                                                                                    |
 | **⚠️ Recall**     | US units sold June 2016–Dec 2022 subject to CPSC recall — verify your serial at [anker.com/a1263-recall](https://www.anker.com/a1263-recall) |
-| **Comparison**    | See how [PowerCore 10000 compares](/tools/ultralight-research/battery) to similar gear                                                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="battery"
+/>
 
 ## Performance
 

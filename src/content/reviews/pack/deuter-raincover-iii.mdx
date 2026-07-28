@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "A no-frills, PU-coated rain cover for 45-90L packs that trades weight savings for durability and a genuinely tight seal."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Raincover III is Deuter's largest stock rain cover, built to stretch over 45
 
 ## Key Specs
 
-| Spec                   | Detail                                                                                  |
-| ---------------------- | --------------------------------------------------------------------------------------- |
-| Weight                 | 130 g (4.6 oz)                                                                          |
-| Compatible pack volume | 45–90 L                                                                                 |
-| Dimensions             | 97 x 37 x 30 cm (H x W x D)                                                             |
-| Material               | 70D Polyamide                                                                           |
-| Waterproofing          | PU coating, taped and welded seams                                                      |
-| Closure                | Drawcord hem                                                                            |
-| PFC-free               | Yes                                                                                     |
-| **Comparison**         | See how [Raincover III compares](/tools/ultralight-research/protection) to similar gear |
+| Spec                   | Detail                             |
+| ---------------------- | ---------------------------------- |
+| Weight                 | 130 g (4.6 oz)                     |
+| Compatible pack volume | 45–90 L                            |
+| Dimensions             | 97 x 37 x 30 cm (H x W x D)        |
+| Material               | 70D Polyamide                      |
+| Waterproofing          | PU coating, taped and welded seams |
+| Closure                | Drawcord hem                       |
+| PFC-free               | Yes                                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="protection"
+/>
 
 ## Performance
 

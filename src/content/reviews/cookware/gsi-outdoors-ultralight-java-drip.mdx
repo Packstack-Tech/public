@@ -12,7 +12,7 @@ published_at: "2026-06-02"
 description: "The GSI Outdoors Ultralight Java Drip is an 11g reusable pour-over dripper that nests under a fuel canister — the go-to backcountry coffee solution for weight-conscious hikers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -28,18 +28,23 @@ the taste-compromise of instant.
 
 ## Key Specs
 
-| Spec                  | Detail                                                                                                      |
-| --------------------- | ----------------------------------------------------------------------------------------------------------- |
-| **Weight**            | 11g (0.4 oz)                                                                                                |
-| **Packed Dimensions** | 4.2 × 4.2 × 0.5 in                                                                                          |
-| **Material**          | Nylon mesh filter, clear polypropylene legs                                                                 |
-| **Filter Type**       | Reusable (equivalent to #2/#4 paper filter)                                                                 |
-| **BPA-Free**          | Yes                                                                                                         |
-| **Price**             | ~$12.95                                                                                                     |
-| **Warranty**          | Lifetime (manufacturer defects)                                                                             |
-| **Comparison**        | See how [GSI Outdoors Ultralight Java Drip compares](/tools/ultralight-research/coffeetea) to similar gear |
+| Spec                  | Detail                                      |
+| --------------------- | ------------------------------------------- |
+| **Weight**            | 11g (0.4 oz)                                |
+| **Packed Dimensions** | 4.2 × 4.2 × 0.5 in                          |
+| **Material**          | Nylon mesh filter, clear polypropylene legs |
+| **Filter Type**       | Reusable (equivalent to #2/#4 paper filter) |
+| **BPA-Free**          | Yes                                         |
+| **Price**             | ~$12.95                                     |
+| **Warranty**          | Lifetime (manufacturer defects)             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="coffeetea"
+/>
 
 ## Performance
 

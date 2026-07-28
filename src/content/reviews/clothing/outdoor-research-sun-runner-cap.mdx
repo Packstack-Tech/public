@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "A lightweight, packable baseball cap with a removable neck cape—ideal for backpackers and thru-hikers who need serious sun protection without committing to a wide-brim hat."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Outdoor Research Sun Runner Cap is a six-panel baseball cap built around one
 
 ## Key Specs
 
-| Spec            | Detail                                                                                 |
-| --------------- | -------------------------------------------------------------------------------------- |
-| **Weight**      | 79 g / 2.8 oz                                                                          |
-| **UPF Rating**  | UPF 40                                                                                 |
-| **Brim Width**  | 2.75 in                                                                                |
-| **Cape Length** | 10.75 in                                                                               |
-| **Fabric**      | bluesign® approved 60% Recycled Nylon / 40% Nylon                                      |
-| **Closure**     | Hook/loop back                                                                         |
-| **Chin Cord**   | Removable                                                                              |
-| **Sizing**      | S / M / L / XL                                                                         |
-| **Comparison**  | See how [Sun Runner Cap compares](/tools/ultralight-research/headwear) to similar gear |
+| Spec            | Detail                                            |
+| --------------- | ------------------------------------------------- |
+| **Weight**      | 79 g / 2.8 oz                                     |
+| **UPF Rating**  | UPF 40                                            |
+| **Brim Width**  | 2.75 in                                           |
+| **Cape Length** | 10.75 in                                          |
+| **Fabric**      | bluesign® approved 60% Recycled Nylon / 40% Nylon |
+| **Closure**     | Hook/loop back                                    |
+| **Chin Cord**   | Removable                                         |
+| **Sizing**      | S / M / L / XL                                    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="headwear"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The Fjällräven Kajka 75 is a bombproof, feature-rich trekking pack with a one-of-a-kind birch wood frame — but at 3,390g, ultralight it is not."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The Fjällräven Kajka 75 is a premium, full-featured trekking pack built around
 
 ## Key Specs
 
-| Spec                     | Detail                                                                            |
-| ------------------------ | --------------------------------------------------------------------------------- |
-| **Weight**               | 3,390g (7 lbs 8 oz)                                                               |
-| **Volume**               | 75L                                                                               |
-| **Dimensions**           | 88 × 54 × 28 cm                                                                   |
-| **Frame Material**       | FSC-certified birch wood                                                          |
-| **Outer Material**       | Vinylon F / recycled 500D polyamide                                               |
-| **Lining Material**      | 210D polyamide (recycled)                                                         |
-| **PFAS-Free**            | Yes                                                                               |
-| **Hydration Compatible** | Yes                                                                               |
-| **Rain Cover**           | Included                                                                          |
-| **Sizing**               | S/M and M/L                                                                       |
-| **Comparison**           | See how [Kajka 75 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                     | Detail                              |
+| ------------------------ | ----------------------------------- |
+| **Weight**               | 3,390g (7 lbs 8 oz)                 |
+| **Volume**               | 75L                                 |
+| **Dimensions**           | 88 × 54 × 28 cm                     |
+| **Frame Material**       | FSC-certified birch wood            |
+| **Outer Material**       | Vinylon F / recycled 500D polyamide |
+| **Lining Material**      | 210D polyamide (recycled)           |
+| **PFAS-Free**            | Yes                                 |
+| **Hydration Compatible** | Yes                                 |
+| **Rain Cover**           | Included                            |
+| **Sizing**               | S/M and M/L                         |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

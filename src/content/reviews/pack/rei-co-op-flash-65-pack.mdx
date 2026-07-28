@@ -12,7 +12,7 @@ published_at: "2026-07-15"
 description: "A discontinued but still sought-after lightweight 65L pack that balances a full feature set with a sub-3.5 lb trail weight — ideal for multi-day trips with moderate loads."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The REI Co-op Flash 65 is a 65-liter internal-frame pack that sits squarely in t
 
 ## Key Specs
 
-| Spec                         | Detail                                                                                 |
-| ---------------------------- | -------------------------------------------------------------------------------------- |
-| **Volume**                   | 65 L                                                                                   |
-| **Weight**                   | 3 lb 8 oz – 3 lb 12 oz (size-dependent)                                                |
-| **Frame**                    | Internal — twin aluminum stays + removable HDPE framesheet                             |
-| **Minimalist Config Weight** | ~2 lb (lid, stays, and framesheet removed)                                             |
-| **Body Fabric**              | 100-denier nylon ripstop                                                               |
-| **Bottom Fabric**            | 420-denier nylon                                                                       |
-| **Torso Fit**                | Adjustable                                                                             |
-| **Hipbelt**                  | 3D contoured, zippered pocket on one side                                              |
-| **Hydration**                | Compatible (sleeve + shoulder strap tube clip)                                         |
-| **Status**                   | Discontinued (Fall 2018)                                                               |
-| **Comparison**               | See how [Flash 65 Pack compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                         | Detail                                                     |
+| ---------------------------- | ---------------------------------------------------------- |
+| **Volume**                   | 65 L                                                       |
+| **Weight**                   | 3 lb 8 oz – 3 lb 12 oz (size-dependent)                    |
+| **Frame**                    | Internal — twin aluminum stays + removable HDPE framesheet |
+| **Minimalist Config Weight** | ~2 lb (lid, stays, and framesheet removed)                 |
+| **Body Fabric**              | 100-denier nylon ripstop                                   |
+| **Bottom Fabric**            | 420-denier nylon                                           |
+| **Torso Fit**                | Adjustable                                                 |
+| **Hipbelt**                  | 3D contoured, zippered pocket on one side                  |
+| **Hydration**                | Compatible (sleeve + shoulder strap tube clip)             |
+| **Status**                   | Discontinued (Fall 2018)                                   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

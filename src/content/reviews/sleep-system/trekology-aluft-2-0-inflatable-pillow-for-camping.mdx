@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A budget inflatable camp pillow with a clever click-valve and ergonomic shape that punches above its price point, with a few caveats."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The Trekology ALUFT 2.0 is a budget-friendly inflatable camp pillow built for ba
 
 ## Key Specs
 
-| Spec           | Value                                                                                                         |
-| -------------- | ------------------------------------------------------------------------------------------------------------- |
-| Weight         | 120 g (manufacturer); ~105-108 g / 3.7-3.8 oz reported on reviewer scales for pillow alone                    |
-| Inflated size  | 16" x 12" x 4" (40.5 x 30.5 x 10.2 cm)                                                                        |
-| Packed size    | 5" x 2" (12.7 x 5.08 cm)                                                                                      |
-| Material       | TPU fabric                                                                                                    |
-| Valve type     | Proprietary click-button air valve                                                                            |
-| Extras         | Detachable pad strap, anti-slip rubber dots on underside, stuff sack                                          |
-| **Comparison** | See how [ALUFT 2.0 Inflatable Pillow for Camping compares](/tools/ultralight-research/pillow) to similar gear |
+| Spec          | Value                                                                                      |
+| ------------- | ------------------------------------------------------------------------------------------ |
+| Weight        | 120 g (manufacturer); ~105-108 g / 3.7-3.8 oz reported on reviewer scales for pillow alone |
+| Inflated size | 16" x 12" x 4" (40.5 x 30.5 x 10.2 cm)                                                     |
+| Packed size   | 5" x 2" (12.7 x 5.08 cm)                                                                   |
+| Material      | TPU fabric                                                                                 |
+| Valve type    | Proprietary click-button air valve                                                         |
+| Extras        | Detachable pad strap, anti-slip rubber dots on underside, stuff sack                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="pillow"
+/>
 
 ## Performance
 

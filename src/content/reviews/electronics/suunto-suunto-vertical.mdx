@@ -12,7 +12,7 @@ published_at: "2026-07-21"
 description: "The Suunto Vertical is a premium expedition GPS watch with dual-band GNSS, free offline topo maps, and class-leading battery life — built for backpackers and endurance athletes."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,24 +20,29 @@ The Suunto Vertical is Suunto's flagship adventure watch, squarely aimed at long
 
 ## Key Specs
 
-| Spec              | Value                                                                                   |
-| ----------------- | --------------------------------------------------------------------------------------- |
-| Weight            | 86 g (steel) / 74 g (titanium)                                                          |
-| Case Diameter     | 49 mm                                                                                   |
-| Case Thickness    | 13.6 mm                                                                                 |
-| Display           | 1.4" transflective MIP, 280×280 px                                                      |
-| GPS Battery Life  | 60 hrs (steel) / 85 hrs (solar/titanium)                                                |
-| Daily Use Battery | Up to 60 days (solar)                                                                   |
-| GPS               | Dual-band GNSS                                                                          |
-| Water Resistance  | 100 m                                                                                   |
-| Storage           | 32 GB                                                                                   |
-| Offline Maps      | Yes (free, global topo)                                                                 |
-| Sensors           | Altimeter, Barometer, Compass, OHR, SpO2                                                |
-| Solar Charging    | Solar/Titanium variants only                                                            |
-| Price (MSRP)      | $629 (steel) / $699 (steel solar) / $839 (titanium solar)                               |
-| **Comparison**    | See how [Suunto Vertical compares](/tools/ultralight-research/wearable) to similar gear |
+| Spec              | Value                                                     |
+| ----------------- | --------------------------------------------------------- |
+| Weight            | 86 g (steel) / 74 g (titanium)                            |
+| Case Diameter     | 49 mm                                                     |
+| Case Thickness    | 13.6 mm                                                   |
+| Display           | 1.4" transflective MIP, 280×280 px                        |
+| GPS Battery Life  | 60 hrs (steel) / 85 hrs (solar/titanium)                  |
+| Daily Use Battery | Up to 60 days (solar)                                     |
+| GPS               | Dual-band GNSS                                            |
+| Water Resistance  | 100 m                                                     |
+| Storage           | 32 GB                                                     |
+| Offline Maps      | Yes (free, global topo)                                   |
+| Sensors           | Altimeter, Barometer, Compass, OHR, SpO2                  |
+| Solar Charging    | Solar/Titanium variants only                              |
+| Price (MSRP)      | $629 (steel) / $699 (steel solar) / $839 (titanium solar) |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="wearable"
+/>
 
 ## Performance
 

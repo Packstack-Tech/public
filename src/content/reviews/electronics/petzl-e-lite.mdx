@@ -12,7 +12,7 @@ published_at: "2026-07-17"
 description: "The Petzl e+LITE is a 26g emergency headlamp with a 10-year battery shelf life — the definitive ultralight backup for backpackers and hikers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,25 +20,30 @@ The Petzl e+LITE is not trying to compete with your 300-lumen primary light — 
 
 ## Key Specs
 
-| Spec                   | Value                                                                          |
-| ---------------------- | ------------------------------------------------------------------------------ |
-| Weight                 | 26 g (0.92 oz), without case                                                   |
-| Max Output             | 40 lm (high white) / 15 lm (standard white)                                    |
-| Lighting Modes         | White continuous (15 lm & 40 lm), white strobe, red continuous, red strobe     |
-| Beam Distance (max)    | ~10 m                                                                          |
-| Battery Runtime (high) | ~9 hrs                                                                         |
-| Battery Runtime (low)  | ~12 hrs                                                                        |
-| Battery Runtime (red)  | ~15 hrs                                                                        |
-| Red Strobe Visibility  | 100 m for up to 70 hrs                                                         |
-| Battery Type           | 2× CR2032 lithium (included)                                                   |
-| Battery Shelf Life     | 10 years                                                                       |
-| Waterproof Rating      | IPX7 (1 m for 30 min)                                                          |
-| Temperature Range      | -30°C to +60°C                                                                 |
-| Integrated Whistle     | Yes                                                                            |
-| Includes               | Hard carry case, swivel stand                                                  |
-| **Comparison**         | See how [e+LITE compares](/tools/ultralight-research/lighting) to similar gear |
+| Spec                   | Value                                                                      |
+| ---------------------- | -------------------------------------------------------------------------- |
+| Weight                 | 26 g (0.92 oz), without case                                               |
+| Max Output             | 40 lm (high white) / 15 lm (standard white)                                |
+| Lighting Modes         | White continuous (15 lm & 40 lm), white strobe, red continuous, red strobe |
+| Beam Distance (max)    | ~10 m                                                                      |
+| Battery Runtime (high) | ~9 hrs                                                                     |
+| Battery Runtime (low)  | ~12 hrs                                                                    |
+| Battery Runtime (red)  | ~15 hrs                                                                    |
+| Red Strobe Visibility  | 100 m for up to 70 hrs                                                     |
+| Battery Type           | 2× CR2032 lithium (included)                                               |
+| Battery Shelf Life     | 10 years                                                                   |
+| Waterproof Rating      | IPX7 (1 m for 30 min)                                                      |
+| Temperature Range      | -30°C to +60°C                                                             |
+| Integrated Whistle     | Yes                                                                        |
+| Includes               | Hard carry case, swivel stand                                              |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="lighting"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-06-01"
 description: "An honest look at GEAR AID Tenacious Tape — the go-to field repair tape for backpackers — covering real-world performance, key limitations, and who should carry it."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ GEAR AID Tenacious Tape has become the default field repair tape for backpackers
 
 ## Key Specs
 
-| Spec                 | Detail                                                                               |
-| -------------------- | ------------------------------------------------------------------------------------ |
-| **Weight**           | 11.3g                                                                                |
-| **Formats**          | 3" × 20" strips; 1.5" × 60" roll (clear only)                                        |
-| **Materials**        | 70D Nylon, Clear Vinyl, Ripstop, Micro Ripstop 30D                                   |
-| **Colors**           | Black, Coyote, OD Green, Clear, Off-White, Green, Gray, Blue, Orange                 |
-| **Adhesive**         | Ultra-aggressive acrylic                                                             |
-| **Waterproof**       | Yes                                                                                  |
-| **Machine Washable** | Yes — after 24-hour cure time                                                        |
-| **Comparison**       | See how [Tenacious Tape compares](/tools/ultralight-research/repair) to similar gear |
+| Spec                 | Detail                                                               |
+| -------------------- | -------------------------------------------------------------------- |
+| **Weight**           | 11.3g                                                                |
+| **Formats**          | 3" × 20" strips; 1.5" × 60" roll (clear only)                        |
+| **Materials**        | 70D Nylon, Clear Vinyl, Ripstop, Micro Ripstop 30D                   |
+| **Colors**           | Black, Coyote, OD Green, Clear, Off-White, Green, Gray, Blue, Orange |
+| **Adhesive**         | Ultra-aggressive acrylic                                             |
+| **Waterproof**       | Yes                                                                  |
+| **Machine Washable** | Yes — after 24-hour cure time                                        |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="repair"
+/>
 
 ## Performance
 

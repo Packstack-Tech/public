@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A budget-friendly, IPX4-rated camping lantern with solid runtime, but its 315g weight puts it firmly in car-camping territory rather than backpacking gear."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Quechua BL 200 is Decathlon's entry-level rechargeable camping lantern — a
 
 ## Key Specs
 
-| Spec              | Value                                                                                                          |
-| ----------------- | -------------------------------------------------------------------------------------------------------------- |
-| Weight            | 315 g                                                                                                          |
-| Max output        | 200 lumens                                                                                                     |
-| Light modes       | 15 lm (red), 100 lm, 200 lm                                                                                    |
-| Battery life      | 7h @ 200 lm / 17h @ 100 lm / 28h @ 15 lm (red)                                                                 |
-| Battery capacity  | 2500 mAh                                                                                                       |
-| Charging port     | USB-C                                                                                                          |
-| Charge time       | 3.5 hours (220V socket)                                                                                        |
-| Waterproof rating | IPX4                                                                                                           |
-| Dimensions        | 15.3 cm H x 11 cm diameter                                                                                     |
-| **Comparison**    | See how [Camping Lamp BL 200 USB-C Rechargeable compares](/tools/ultralight-research/lighting) to similar gear |
+| Spec              | Value                                          |
+| ----------------- | ---------------------------------------------- |
+| Weight            | 315 g                                          |
+| Max output        | 200 lumens                                     |
+| Light modes       | 15 lm (red), 100 lm, 200 lm                    |
+| Battery life      | 7h @ 200 lm / 17h @ 100 lm / 28h @ 15 lm (red) |
+| Battery capacity  | 2500 mAh                                       |
+| Charging port     | USB-C                                          |
+| Charge time       | 3.5 hours (220V socket)                        |
+| Waterproof rating | IPX4                                           |
+| Dimensions        | 15.3 cm H x 11 cm diameter                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="lighting"
+/>
 
 ## Performance
 

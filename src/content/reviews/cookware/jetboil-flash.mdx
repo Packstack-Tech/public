@@ -12,7 +12,7 @@ published_at: "2026-05-21"
 description: "The Jetboil Flash is a fast, fuel-efficient integrated canister stove system built for backpackers who prioritize boiling water quickly over cooking versatility."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -33,20 +33,25 @@ at camp, keep reading before you buy.
 
 ## Key Specs
 
-| Spec                   | Value                                                                              |
-| ---------------------- | ---------------------------------------------------------------------------------- |
-| **Weight**             | 371g (13.1 oz), excluding fuel                                                     |
-| **Capacity**           | 1.0L                                                                               |
-| **Boil Time**          | 120 sec (0.5L avg); ~4 min (1.0L)                                                  |
-| **Power Output**       | 5,300 BTU/h (1.5 kW)                                                               |
-| **Packed Dimensions**  | 4.25 x 7.5 in (10.8 x 19.1 cm)                                                     |
-| **Fuel Type**          | Isobutane-propane canister                                                         |
-| **Ignition**           | Turn-and-click piezoelectric (integrated)                                          |
-| **Pressure Regulator** | No                                                                                 |
-| **MSRP**               | $129.99                                                                            |
-| **Comparison**         | See how [Jetboil Flash compares](/tools/ultralight-research/stove) to similar gear |
+| Spec                   | Value                                     |
+| ---------------------- | ----------------------------------------- |
+| **Weight**             | 371g (13.1 oz), excluding fuel            |
+| **Capacity**           | 1.0L                                      |
+| **Boil Time**          | 120 sec (0.5L avg); ~4 min (1.0L)         |
+| **Power Output**       | 5,300 BTU/h (1.5 kW)                      |
+| **Packed Dimensions**  | 4.25 x 7.5 in (10.8 x 19.1 cm)            |
+| **Fuel Type**          | Isobutane-propane canister                |
+| **Ignition**           | Turn-and-click piezoelectric (integrated) |
+| **Pressure Regulator** | No                                        |
+| **MSRP**               | $129.99                                   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

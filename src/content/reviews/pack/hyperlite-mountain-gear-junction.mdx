@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The HMG Junction 55 is a 907g Dyneema ultralight pack built for thru-hikers who want weatherproof durability, smart pocket design, and a comfortable carry under moderate loads."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -22,21 +22,26 @@ The Hyperlite Mountain Gear Junction 55 is a roll-top, Dyneema-body ultralight p
 
 ## Key Specs
 
-| Spec                       | Value                                                                                |
-| -------------------------- | ------------------------------------------------------------------------------------ |
-| **Weight**                 | 907g (32 oz)                                                                         |
-| **Main Volume**            | 55L (3,400 cu in)                                                                    |
-| **External Pocket Volume** | 9.8L (600 cu in)                                                                     |
-| **Total Volume**           | 65L                                                                                  |
-| **Max Load**               | 40 lbs (18 kg)                                                                       |
-| **Material**               | Dyneema® Woven Composite 3.9                                                         |
-| **Frame**                  | Two aluminum frame stays                                                             |
-| **Closure**                | Roll-top with Y-strap                                                                |
-| **Sizes**                  | S / M / L / Tall (torso-based sizing)                                                |
-| **Price**                  | $399 (white) / $429 (black)                                                          |
-| **Comparison**             | See how [Junction 55 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                       | Value                                 |
+| -------------------------- | ------------------------------------- |
+| **Weight**                 | 907g (32 oz)                          |
+| **Main Volume**            | 55L (3,400 cu in)                     |
+| **External Pocket Volume** | 9.8L (600 cu in)                      |
+| **Total Volume**           | 65L                                   |
+| **Max Load**               | 40 lbs (18 kg)                        |
+| **Material**               | Dyneema® Woven Composite 3.9          |
+| **Frame**                  | Two aluminum frame stays              |
+| **Closure**                | Roll-top with Y-strap                 |
+| **Sizes**                  | S / M / L / Tall (torso-based sizing) |
+| **Price**                  | $399 (white) / $429 (black)           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

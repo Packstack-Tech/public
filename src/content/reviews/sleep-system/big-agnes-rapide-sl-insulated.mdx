@@ -12,7 +12,7 @@ published_at: "2026-05-07"
 description: "The Big Agnes Rapide SL Insulated is a comfort-first three-season sleeping pad with a 4.8 R-value, 9 cm thick baffles, and an impressively small packed footprint."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The Big Agnes Rapide SL Insulated is the Steamboat Springs brand's best-selling 
 
 ## Key Specs
 
-| Spec                        | Value                                                                                           |
-| --------------------------- | ----------------------------------------------------------------------------------------------- |
-| **Weight**                  | 709 g (size-dependent; regular 20×72" is ~510 g / 18 oz)                                        |
-| **R-Value**                 | 4.8 (third-party verified)                                                                      |
-| **Center Thickness**        | 9 cm / 3.5 in                                                                                   |
-| **Outer Chamber Thickness** | 11 cm / 4.25 in                                                                                 |
-| **Packed Size**             | ~4 × 7 in (regular); ~1.9 L                                                                     |
-| **Fabric**                  | Nylon double ripstop                                                                            |
-| **Lamination**              | Aviation-grade TPU                                                                              |
-| **Insulation**              | 2 layers ultralight heat-reflective film                                                        |
-| **Sizes Available**         | Petite, Regular, Regular Wide, Long, Long Wide, Doublewide                                      |
-| **Price**                   | ~$150–$170 (regular sizes)                                                                      |
-| **Comparison**              | See how [Rapide SL Insulated compares](/tools/ultralight-research/sleeping-pad) to similar gear |
+| Spec                        | Value                                                      |
+| --------------------------- | ---------------------------------------------------------- |
+| **Weight**                  | 709 g (size-dependent; regular 20×72" is ~510 g / 18 oz)   |
+| **R-Value**                 | 4.8 (third-party verified)                                 |
+| **Center Thickness**        | 9 cm / 3.5 in                                              |
+| **Outer Chamber Thickness** | 11 cm / 4.25 in                                            |
+| **Packed Size**             | ~4 × 7 in (regular); ~1.9 L                                |
+| **Fabric**                  | Nylon double ripstop                                       |
+| **Lamination**              | Aviation-grade TPU                                         |
+| **Insulation**              | 2 layers ultralight heat-reflective film                   |
+| **Sizes Available**         | Petite, Regular, Regular Wide, Long, Long Wide, Doublewide |
+| **Price**                   | ~$150–$170 (regular sizes)                                 |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sleeping-pad"
+/>
 
 ## Performance
 

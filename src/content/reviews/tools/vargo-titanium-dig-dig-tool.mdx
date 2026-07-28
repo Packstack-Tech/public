@@ -12,7 +12,7 @@ published_at: "2026-05-11"
 description: "The Vargo Titanium Dig Dig Tool is a 36g dual-purpose trowel and tent stake that excels in hard, rooted soil — a smart upgrade from flimsy plastic trowels."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The Vargo Titanium Dig Dig Tool is a backcountry trowel with a second life as an
 
 ## Key Specs
 
-| Spec           | Value                                                                                            |
-| -------------- | ------------------------------------------------------------------------------------------------ |
-| **Weight**     | 36g (1.27 oz)                                                                                    |
-| **Length**     | 20.5 cm (8.1 in)                                                                                 |
-| **Width**      | 4.4 cm (1.7 in)                                                                                  |
-| **Material**   | Titanium                                                                                         |
-| **Dual-Use**   | Trowel + tent stake / deadman anchor                                                             |
-| **Price**      | ~$25                                                                                             |
-| **Comparison** | See how [Vargo Titanium Dig Dig Tool compares](/tools/ultralight-research/knife) to similar gear |
+| Spec         | Value                                |
+| ------------ | ------------------------------------ |
+| **Weight**   | 36g (1.27 oz)                        |
+| **Length**   | 20.5 cm (8.1 in)                     |
+| **Width**    | 4.4 cm (1.7 in)                      |
+| **Material** | Titanium                             |
+| **Dual-Use** | Trowel + tent stake / deadman anchor |
+| **Price**    | ~$25                                 |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="knife"
+/>
 
 ## Performance
 

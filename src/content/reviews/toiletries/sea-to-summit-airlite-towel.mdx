@@ -12,7 +12,7 @@ published_at: "2026-03-24"
 description: "The Sea to Summit Airlite Towel (Large) weighs just 67g and packs to the size of a lemon — but does it actually dry you off? An honest look at the trade-offs."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,20 +30,25 @@ the product that might finally change that calculus.
 
 ## Key Specs
 
-| Spec                     | Value                                                                                 |
-| ------------------------ | ------------------------------------------------------------------------------------- |
-| Weight (towel only)      | 67 g / 2.4 oz                                                                         |
-| Weight (with stuff sack) | ~76 g / 2.7 oz                                                                        |
-| Dimensions (in use)      | 60 × 120 cm (23.5 × 47 in)                                                            |
-| Packed Size              | 3.4 × 2.4 in                                                                          |
-| Material                 | 85% recycled polyester, 15% nylon                                                     |
-| Edges                    | Laser-cut (no overlock hem)                                                           |
-| Stuff Sack               | 15D nylon, included                                                                   |
-| Sizes Available          | S (30g), M (47g), L (67g)                                                             |
-| Price (Large)            | ~$19.95 USD                                                                           |
-| **Comparison**           | See how [Airlite Towel compares](/tools/ultralight-research/bathroom) to similar gear |
+| Spec                     | Value                             |
+| ------------------------ | --------------------------------- |
+| Weight (towel only)      | 67 g / 2.4 oz                     |
+| Weight (with stuff sack) | ~76 g / 2.7 oz                    |
+| Dimensions (in use)      | 60 × 120 cm (23.5 × 47 in)        |
+| Packed Size              | 3.4 × 2.4 in                      |
+| Material                 | 85% recycled polyester, 15% nylon |
+| Edges                    | Laser-cut (no overlock hem)       |
+| Stuff Sack               | 15D nylon, included               |
+| Sizes Available          | S (30g), M (47g), L (67g)         |
+| Price (Large)            | ~$19.95 USD                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="bathroom"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-08"
 description: "The Cnoc Vecto 2L is a collapsible TPU water container built for squeeze and gravity filter systems — a near-perfect dirty bag with a wide-mouth slider opening."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,17 +31,22 @@ filling and a standard 28mm screw neck for attaching your filter.
 
 ## Key Specs
 
-| Spec               | Value                                                                             |
-| ------------------ | --------------------------------------------------------------------------------- |
-| Weight             | 79 g (2.8 oz)                                                                     |
-| Capacity           | 2 L (68 oz)                                                                       |
-| Packed Size        | 17.5 × 5 × 3.75 cm                                                                |
-| Opening Thread     | 28 mm                                                                             |
-| Material           | FDA-approved TPU, BPA/BPF/BPS free                                                |
-| Temperature Rating | 20°F (-6°C) to 120°F (49°C)                                                       |
-| **Comparison**     | See how [Vecto 28mm compares](/tools/ultralight-research/storage) to similar gear |
+| Spec               | Value                              |
+| ------------------ | ---------------------------------- |
+| Weight             | 79 g (2.8 oz)                      |
+| Capacity           | 2 L (68 oz)                        |
+| Packed Size        | 17.5 × 5 × 3.75 cm                 |
+| Opening Thread     | 28 mm                              |
+| Material           | FDA-approved TPU, BPA/BPF/BPS free |
+| Temperature Rating | 20°F (-6°C) to 120°F (49°C)        |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="storage"
+/>
 
 ## Performance
 

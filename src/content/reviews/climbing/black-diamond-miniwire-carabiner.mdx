@@ -12,7 +12,7 @@ published_at: "2026-06-30"
 description: "The Black Diamond MiniWire is BD's lightest fully functional carabiner at 23g — a purpose-built wiregate for trad and alpine climbers counting every gram."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,20 +31,25 @@ certification" question.
 
 ## Key Specs
 
-| Spec                     | Value                                                                                      |
-| ------------------------ | ------------------------------------------------------------------------------------------ |
-| **Weight**               | 23 g (0.81 oz)                                                                             |
-| **Closed Gate Strength** | 20 kN                                                                                      |
-| **Open Gate Strength**   | 7 kN                                                                                       |
-| **Minor Axis Strength**  | 7 kN                                                                                       |
-| **Gate Opening**         | 21 mm                                                                                      |
-| **Gate Type**            | Wiregate                                                                                   |
-| **Construction**         | Hot-forged                                                                                 |
-| **Material**             | 7075 aluminum (25% pre-consumer recycled)                                                  |
-| **Warranty**             | 2 years                                                                                    |
-| **Comparison**           | See how [MiniWire Carabiner compares](/tools/ultralight-research/hardware) to similar gear |
+| Spec                     | Value                                     |
+| ------------------------ | ----------------------------------------- |
+| **Weight**               | 23 g (0.81 oz)                            |
+| **Closed Gate Strength** | 20 kN                                     |
+| **Open Gate Strength**   | 7 kN                                      |
+| **Minor Axis Strength**  | 7 kN                                      |
+| **Gate Opening**         | 21 mm                                     |
+| **Gate Type**            | Wiregate                                  |
+| **Construction**         | Hot-forged                                |
+| **Material**             | 7075 aluminum (25% pre-consumer recycled) |
+| **Warranty**             | 2 years                                   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hardware"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-08"
 description: "A 36g liner glove with exceptional warmth-to-weight ratio, moisture resistance, and touchscreen compatibility — held back only by durability questions."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,9 +27,14 @@ The Zpacks Conductive Brushtail Possum Gloves are a 36g (1.27 oz) knit liner glo
 | Origin                 | Made in New Zealand                                                                                        |
 | Touchscreen Compatible | Yes — index finger and thumb                                                                               |
 | Care                   | Hand wash or machine wash; line dry recommended                                                            |
-| **Comparison**         | See how [Conductive Brushtail Possum Gloves compares](/tools/ultralight-research/glove) to similar gear    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="glove"
+/>
 
 ## Performance
 

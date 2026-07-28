@@ -12,7 +12,7 @@ published_at: "2026-07-17"
 description: "A thoughtfully designed pack rain cover in PU-treated nylon with a guyline hook, taped seams, and PFAS-free construction — functional, but not featherlight."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Fjällräven Rain Cover 40-55 is a conventional external pack cover designed
 
 ## Key Specs
 
-| Spec               | Detail                                                                                     |
-| ------------------ | ------------------------------------------------------------------------------------------ |
-| Weight             | 135 g (4.8 oz)                                                                             |
-| Fit Range          | 40–55L backpacks                                                                           |
-| Material           | 70D PU-treated nylon                                                                       |
-| Seam Treatment     | Taped                                                                                      |
-| Color              | UN Blue (single option)                                                                    |
-| Chemical Treatment | Produced without PFAS/PFCs                                                                 |
-| Closure System     | Elastic lower + drawcord                                                                   |
-| Storage            | Integrated velcro pack bag                                                                 |
-| **Comparison**     | See how [Rain Cover 40-55 compares](/tools/ultralight-research/protection) to similar gear |
+| Spec               | Detail                     |
+| ------------------ | -------------------------- |
+| Weight             | 135 g (4.8 oz)             |
+| Fit Range          | 40–55L backpacks           |
+| Material           | 70D PU-treated nylon       |
+| Seam Treatment     | Taped                      |
+| Color              | UN Blue (single option)    |
+| Chemical Treatment | Produced without PFAS/PFCs |
+| Closure System     | Elastic lower + drawcord   |
+| Storage            | Integrated velcro pack bag |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="protection"
+/>
 
 ## Performance
 

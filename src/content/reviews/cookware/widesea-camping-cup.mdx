@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The Widesea 200ml titanium camping cup is an ultralight, budget-friendly espresso-sized drinkware option for gram-counters who need a small camp cup or measuring vessel."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Widesea Camping Cup is a compact, single-wall titanium cup aimed squarely at
 
 ## Key Specs
 
-| Spec                   | Value                                                                                        |
-| ---------------------- | -------------------------------------------------------------------------------------------- |
-| **Weight**             | 43g (1.51 oz)                                                                                |
-| **Material**           | Titanium                                                                                     |
-| **Capacity**           | 200ml (6.8 fl oz)                                                                            |
-| **Highest Scale Mark** | 150ml                                                                                        |
-| **Dimensions**         | 6cm × 7.3cm (dia × H)                                                                        |
-| **Lid Included**       | No                                                                                           |
-| **Handle**             | Dual foldable titanium                                                                       |
-| **Price**              | From ~$10.80 USD                                                                             |
-| **Comparison**         | See how [Widesea Camping Cup compares](/tools/ultralight-research/drinkware) to similar gear |
+| Spec                   | Value                  |
+| ---------------------- | ---------------------- |
+| **Weight**             | 43g (1.51 oz)          |
+| **Material**           | Titanium               |
+| **Capacity**           | 200ml (6.8 fl oz)      |
+| **Highest Scale Mark** | 150ml                  |
+| **Dimensions**         | 6cm × 7.3cm (dia × H)  |
+| **Lid Included**       | No                     |
+| **Handle**             | Dual foldable titanium |
+| **Price**              | From ~$10.80 USD       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="drinkware"
+/>
 
 ## Performance
 

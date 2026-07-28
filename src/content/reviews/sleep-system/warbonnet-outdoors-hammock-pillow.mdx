@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A tiny 4-oz down pillow purpose-built for hammock camping — here's how Warbonnet's take on neck support stacks up on the trail."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ Warbonnet Outdoors has been building hammocks, underquilts, and tarps out of Col
 
 ## Key Specs
 
-| Spec           | Detail                                                                               |
-| -------------- | ------------------------------------------------------------------------------------ |
-| Weight         | 113 g (4 oz) with stuff sack                                                         |
-| Dimensions     | 8" x 16"                                                                             |
-| Packed size    | 8" x 4" stuff sack                                                                   |
-| Fill           | 850 fill power Hyper-Dry goose down                                                  |
-| Fabric         | 20d quilt fabric                                                                     |
-| Down standard  | RDS (Responsible Down Standard) certified                                            |
-| Price          | ~$45 (check current pricing on Warbonnet's site)                                     |
-| **Comparison** | See how [Hammock Pillow compares](/tools/ultralight-research/pillow) to similar gear |
+| Spec          | Detail                                           |
+| ------------- | ------------------------------------------------ |
+| Weight        | 113 g (4 oz) with stuff sack                     |
+| Dimensions    | 8" x 16"                                         |
+| Packed size   | 8" x 4" stuff sack                               |
+| Fill          | 850 fill power Hyper-Dry goose down              |
+| Fabric        | 20d quilt fabric                                 |
+| Down standard | RDS (Responsible Down Standard) certified        |
+| Price         | ~$45 (check current pricing on Warbonnet's site) |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="pillow"
+/>
 
 ## Performance
 

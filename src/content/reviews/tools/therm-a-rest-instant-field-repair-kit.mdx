@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "A pocket-sized insurance policy for your sleeping pad — here's how well the glue dots and patches actually hold up on trail."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,16 +20,21 @@ The Instant Field Repair Kit is Therm-a-Rest's answer to the 2 a.m. "why am I on
 
 ## Key Specs
 
-| Spec           | Detail                                                                                             |
-| -------------- | -------------------------------------------------------------------------------------------------- |
-| Weight         | 57.0 g                                                                                             |
-| Includes       | Glue dots, cover patches, alcohol prep wipes, instructions                                         |
-| Compatibility  | All current Therm-a-Rest sleeping pads _except_ knit-fabric pads (MondoKing, LuxuryMap, Trail Pro) |
-| Repair type    | Self-adhesive, no cure time required                                                               |
-| Category       | Field repair / emergency kit                                                                       |
-| **Comparison** | See how [Instant Field Repair Kit compares](/tools/ultralight-research/repair) to similar gear     |
+| Spec          | Detail                                                                                             |
+| ------------- | -------------------------------------------------------------------------------------------------- |
+| Weight        | 57.0 g                                                                                             |
+| Includes      | Glue dots, cover patches, alcohol prep wipes, instructions                                         |
+| Compatibility | All current Therm-a-Rest sleeping pads _except_ knit-fabric pads (MondoKing, LuxuryMap, Trail Pro) |
+| Repair type   | Self-adhesive, no cure time required                                                               |
+| Category      | Field repair / emergency kit                                                                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="repair"
+/>
 
 ## Performance
 

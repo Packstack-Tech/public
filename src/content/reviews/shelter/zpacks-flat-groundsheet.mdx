@@ -12,7 +12,7 @@ published_at: "2026-06-28"
 description: "A purpose-built DCF footprint for Zpacks tents. At 107.7g and fully waterproof, it's the most durable ultralight groundsheet option — but the price demands honest scrutiny."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,22 +20,27 @@ The Zpacks Flat Groundsheet is a tent-matched footprint cut from 1.0 oz/sqyd Dyn
 
 ## Key Specs
 
-| Spec                     | Detail                                                                                      |
-| ------------------------ | ------------------------------------------------------------------------------------------- |
-| **Weight**               | 107.7 g (3.8 oz) — varies by size                                                           |
-| **Material**             | 1.0 oz/sqyd Dyneema® Composite Fabric (DCF)                                                 |
-| **Tensile Strength**     | 104 lb/in (911 N/5cm)                                                                       |
-| **Puncture Strength**    | 3.5 lb (15.5 N)                                                                             |
-| **Water Resistance**     | 20,000 mmH₂O                                                                                |
-| **Available Sizes**      | Plex Solo/Plexamid, Altaplex, Duplex, Triplex, Offset Duo                                   |
-| **Size Range (Weights)** | 67 g (Plex Solo) → 121 g (Triplex)                                                          |
-| **Edges**                | Hemmed perimeter                                                                            |
-| **Tie-Outs**             | Stake loops at corners and center of sides                                                  |
-| **Warranty**             | 2-year limited                                                                              |
-| **Made in**              | USA                                                                                         |
-| **Comparison**           | See how [Zpacks Flat Groundsheet compares](/tools/ultralight-research/tarp) to similar gear |
+| Spec                     | Detail                                                    |
+| ------------------------ | --------------------------------------------------------- |
+| **Weight**               | 107.7 g (3.8 oz) — varies by size                         |
+| **Material**             | 1.0 oz/sqyd Dyneema® Composite Fabric (DCF)               |
+| **Tensile Strength**     | 104 lb/in (911 N/5cm)                                     |
+| **Puncture Strength**    | 3.5 lb (15.5 N)                                           |
+| **Water Resistance**     | 20,000 mmH₂O                                              |
+| **Available Sizes**      | Plex Solo/Plexamid, Altaplex, Duplex, Triplex, Offset Duo |
+| **Size Range (Weights)** | 67 g (Plex Solo) → 121 g (Triplex)                        |
+| **Edges**                | Hemmed perimeter                                          |
+| **Tie-Outs**             | Stake loops at corners and center of sides                |
+| **Warranty**             | 2-year limited                                            |
+| **Made in**              | USA                                                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="tarp"
+/>
 
 ## Performance
 

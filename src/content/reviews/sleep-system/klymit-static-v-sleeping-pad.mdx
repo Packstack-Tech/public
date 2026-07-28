@@ -12,7 +12,7 @@ published_at: "2026-05-18"
 description: "The Klymit Static V is a budget-friendly, summer-season air pad with a patented V-chamber design—strong on comfort and value, but strictly a warm-weather tool."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Klymit Static V is the pad that arguably put affordable inflatable sleeping 
 
 ## Key Specs
 
-| Spec                      | Value                                                                                       |
-| ------------------------- | ------------------------------------------------------------------------------------------- |
-| **Weight**                | 513 g / 18.1 oz                                                                             |
-| **Dimensions (inflated)** | 72" × 23" × 2.5"                                                                            |
-| **Packed Size**           | 3" × 8"                                                                                     |
-| **R-Value**               | 1.3 (Klymit-rated; see note below)                                                          |
-| **Fabric**                | 75D polyester                                                                               |
-| **Inflation**             | 10–15 breaths (mouth inflation)                                                             |
-| **Insulation**            | None                                                                                        |
-| **Warranty**              | Limited Lifetime Guarantee                                                                  |
-| **Comparison**            | See how [Klymit Static V compares](/tools/ultralight-research/sleeping-pad) to similar gear |
+| Spec                      | Value                              |
+| ------------------------- | ---------------------------------- |
+| **Weight**                | 513 g / 18.1 oz                    |
+| **Dimensions (inflated)** | 72" × 23" × 2.5"                   |
+| **Packed Size**           | 3" × 8"                            |
+| **R-Value**               | 1.3 (Klymit-rated; see note below) |
+| **Fabric**                | 75D polyester                      |
+| **Inflation**             | 10–15 breaths (mouth inflation)    |
+| **Insulation**            | None                               |
+| **Warranty**              | Limited Lifetime Guarantee         |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sleeping-pad"
+/>
 
 ## Performance
 

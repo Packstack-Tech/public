@@ -12,7 +12,7 @@ published_at: "2026-07-13"
 description: "A thorough review of the Pa'lante Desert Pack, a 43L frameless ultralight pack built for long carries and thru-hiking, covering real-world performance, durability, and fit."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,20 +31,25 @@ carry a real load?" At 43L with a frameless build and a stashable hip belt,
 
 ## Key Specs
 
-| Spec                | Detail                                                                               |
-| ------------------- | ------------------------------------------------------------------------------------ |
-| Volume              | 37L (17") / 43L (19")                                                                |
-| Weight (Gridstop)   | 530g / 18.8 oz (17") · 540g / 19.2 oz (19")                                          |
-| Weight (UltraWeave) | 590g / 20.9 oz (17") · 610g / 21.6 oz (19")                                          |
-| Fabrics             | 210D UHMWPE Gridstop or 400D UltraWeave; 210D 2x2 UHMWPE Grid Mesh                   |
-| Torso Sizes         | 17" (43 cm) · 19" (48 cm)                                                            |
-| Frame               | Frameless (pad-supported)                                                            |
-| Hip Belt            | Stashable 40mm nylon webbing                                                         |
-| Closure             | Roll top + top compression G-hook                                                    |
-| Price               | $240                                                                                 |
-| **Comparison**      | See how [Desert Pack compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                | Detail                                                             |
+| ------------------- | ------------------------------------------------------------------ |
+| Volume              | 37L (17") / 43L (19")                                              |
+| Weight (Gridstop)   | 530g / 18.8 oz (17") · 540g / 19.2 oz (19")                        |
+| Weight (UltraWeave) | 590g / 20.9 oz (17") · 610g / 21.6 oz (19")                        |
+| Fabrics             | 210D UHMWPE Gridstop or 400D UltraWeave; 210D 2x2 UHMWPE Grid Mesh |
+| Torso Sizes         | 17" (43 cm) · 19" (48 cm)                                          |
+| Frame               | Frameless (pad-supported)                                          |
+| Hip Belt            | Stashable 40mm nylon webbing                                       |
+| Closure             | Roll top + top compression G-hook                                  |
+| Price               | $240                                                               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

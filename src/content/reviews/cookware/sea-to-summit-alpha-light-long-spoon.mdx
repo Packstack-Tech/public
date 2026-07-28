@@ -12,7 +12,7 @@ published_at: "2026-06-26"
 description: "A 11g hard-anodized aluminum spoon built for freeze-dried pouch meals — lightweight, durable, and surprisingly well-priced for thru-hikers and ultralight campers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,16 +20,21 @@ The Sea to Summit Alpha Light Long Spoon is a purpose-built backcountry utensil 
 
 ## Key Specs
 
-| Spec                | Detail                                                                                        |
-| ------------------- | --------------------------------------------------------------------------------------------- |
-| **Weight**          | 11g (0.39 oz)                                                                                 |
-| **Length**          | 8.5 in (21.6 cm)                                                                              |
-| **Material**        | Aircraft-grade 7075-T6 aluminum alloy, hard anodized                                          |
-| **Includes**        | Mini carabiner                                                                                |
-| **Dishwasher Safe** | No — hand wash only                                                                           |
-| **Comparison**      | See how [Alpha Light Long Spoon compares](/tools/ultralight-research/utensil) to similar gear |
+| Spec                | Detail                                               |
+| ------------------- | ---------------------------------------------------- |
+| **Weight**          | 11g (0.39 oz)                                        |
+| **Length**          | 8.5 in (21.6 cm)                                     |
+| **Material**        | Aircraft-grade 7075-T6 aluminum alloy, hard anodized |
+| **Includes**        | Mini carabiner                                       |
+| **Dishwasher Safe** | No — hand wash only                                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="utensil"
+/>
 
 ## Performance
 

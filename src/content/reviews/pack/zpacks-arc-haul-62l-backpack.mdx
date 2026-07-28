@@ -12,7 +12,7 @@ published_at: "2026-07-13"
 description: "A detailed review of the discontinued Zpacks Arc Haul 62L — a 682g ultralight pack with a patented arc frame, 62L capacity, and Gridstop fabric built for thru-hikers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Zpacks Arc Haul 62L is a now-discontinued ultralight framed backpack aimed s
 
 ## Key Specs
 
-| Spec            | Value                                                                                          |
-| --------------- | ---------------------------------------------------------------------------------------------- |
-| Weight          | 682 g (24.1 oz / 1 lb 8 oz)                                                                    |
-| Volume          | 62L (49L main, 2.5L × 2 side pockets, 8L front mesh pocket)                                    |
-| Fabric          | 4.85 oz/sqyd Gridstop                                                                          |
-| Frame Heights   | Short 19", Medium 21.5", Tall 24"                                                              |
-| Body Dimensions | 8" × 12.5" × 30"                                                                               |
-| Load Capacity   | 30–35 lbs comfortable, 40 lbs max                                                              |
-| Closure         | Roll-top with Velcro                                                                           |
-| Status          | Discontinued (replaced by Arc Haul Ultra)                                                      |
-| **Comparison**  | See how [Arc Haul 62L Backpack compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec            | Value                                                       |
+| --------------- | ----------------------------------------------------------- |
+| Weight          | 682 g (24.1 oz / 1 lb 8 oz)                                 |
+| Volume          | 62L (49L main, 2.5L × 2 side pockets, 8L front mesh pocket) |
+| Fabric          | 4.85 oz/sqyd Gridstop                                       |
+| Frame Heights   | Short 19", Medium 21.5", Tall 24"                           |
+| Body Dimensions | 8" × 12.5" × 30"                                            |
+| Load Capacity   | 30–35 lbs comfortable, 40 lbs max                           |
+| Closure         | Roll-top with Velcro                                        |
+| Status          | Discontinued (replaced by Arc Haul Ultra)                   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-08"
 description: "A thorough review of REAL Turmat's vegan Asian Curry freeze-dried meal: flavor, rehydration quality, caloric density, and who it's best suited for."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,24 +32,29 @@ who wants warm, plant-based dinners without compromise on dietary restrictions.
 
 ## Key Specs
 
-| Spec             | Value                                                                           |
-| ---------------- | ------------------------------------------------------------------------------- |
-| Dry Weight       | 115 g (4.1 oz)                                                                  |
-| Prepared Weight  | 480 g (16.9 oz)                                                                 |
-| Calories         | 537 kcal                                                                        |
-| Caloric Density  | ~4.7 kcal/g (~133 kcal/oz)                                                      |
-| Protein          | 16.8 g                                                                          |
-| Carbohydrates    | 55.9 g                                                                          |
-| Fat              | 25.8 g                                                                          |
-| Sodium           | ~975 mg (2.45 g salt)                                                           |
-| Water Required   | 350 ml                                                                          |
-| Rehydration Time | ~8 min (hot water)                                                              |
-| Shelf Life       | 5–7 years                                                                       |
-| Dietary          | Vegan, Vegetarian, Gluten-free, Lactose-free, Milk-free                         |
-| Allergens        | Soy                                                                             |
-| **Comparison**   | See how [Asian Curry compares](/tools/ultralight-research/meal) to similar gear |
+| Spec             | Value                                                   |
+| ---------------- | ------------------------------------------------------- |
+| Dry Weight       | 115 g (4.1 oz)                                          |
+| Prepared Weight  | 480 g (16.9 oz)                                         |
+| Calories         | 537 kcal                                                |
+| Caloric Density  | ~4.7 kcal/g (~133 kcal/oz)                              |
+| Protein          | 16.8 g                                                  |
+| Carbohydrates    | 55.9 g                                                  |
+| Fat              | 25.8 g                                                  |
+| Sodium           | ~975 mg (2.45 g salt)                                   |
+| Water Required   | 350 ml                                                  |
+| Rehydration Time | ~8 min (hot water)                                      |
+| Shelf Life       | 5–7 years                                               |
+| Dietary          | Vegan, Vegetarian, Gluten-free, Lactose-free, Milk-free |
+| Allergens        | Soy                                                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="meal"
+/>
 
 ## Performance
 

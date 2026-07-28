@@ -12,7 +12,7 @@ published_at: "2026-05-10"
 description: "The Ursack Major is an IGBC-certified, 10.65L bear-resistant food bag that weighs just 204g — a compelling canister alternative for most bear country."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,20 +31,25 @@ travel where canisters aren't explicitly required.
 
 ## Key Specs
 
-| Spec                      | Value                                                                               |
-| ------------------------- | ----------------------------------------------------------------------------------- |
-| **Weight**                | 204g (7.2 oz)                                                                       |
-| **Volume**                | 10.65 L (650 cu in)                                                                 |
-| **Material**              | UHMWP fabric                                                                        |
-| **Cord**                  | 6 ft high-tensile strength with reflective tracer                                   |
-| **Capacity**              | ~5 days of food for 1 person                                                        |
-| **Freeze-dried capacity** | 37 single servings                                                                  |
-| **Certification**         | IGBC (Interagency Grizzly Bear Committee)                                           |
-| **Reflective tag**        | Yes                                                                                 |
-| **Price**                 | ~$90                                                                                |
-| **Comparison**            | See how [Ursack Major compares](/tools/ultralight-research/storage) to similar gear |
+| Spec                      | Value                                             |
+| ------------------------- | ------------------------------------------------- |
+| **Weight**                | 204g (7.2 oz)                                     |
+| **Volume**                | 10.65 L (650 cu in)                               |
+| **Material**              | UHMWP fabric                                      |
+| **Cord**                  | 6 ft high-tensile strength with reflective tracer |
+| **Capacity**              | ~5 days of food for 1 person                      |
+| **Freeze-dried capacity** | 37 single servings                                |
+| **Certification**         | IGBC (Interagency Grizzly Bear Committee)         |
+| **Reflective tag**        | Yes                                               |
+| **Price**                 | ~$90                                              |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="storage"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-12"
 description: "A freeze-dried chili from Norwegian brand Real Turmat — solid flavor, good protein, and vacuum-packed convenience, but mild heat and moderate calorie density temper the enthusiasm."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,25 +20,30 @@ Real Turmat is a Norwegian outdoor food brand with a strong reputation in Europe
 
 ## Key Specs
 
-| Spec             | Value                                                                               |
-| ---------------- | ----------------------------------------------------------------------------------- |
-| Dry Weight       | 151 g (5.3 oz)                                                                      |
-| Calories         | 569 kcal                                                                            |
-| Calorie Density  | ~3.8 kcal/g (107 kcal/oz)                                                           |
-| Protein          | 24.1 g                                                                              |
-| Fat              | 25.9 g                                                                              |
-| Carbohydrates    | 52.4 g                                                                              |
-| Dietary Fiber    | 15.8 g                                                                              |
-| Sodium           | 4.7 g salt                                                                          |
-| Water Required   | 370 ml                                                                              |
-| Rehydration Time | 8 minutes                                                                           |
-| Shelf Life       | 5 years                                                                             |
-| Gluten Free      | Yes                                                                                 |
-| Lactose Free     | Yes                                                                                 |
-| Allergens        | Soy                                                                                 |
-| **Comparison**   | See how [Chili con Carne compares](/tools/ultralight-research/meal) to similar gear |
+| Spec             | Value                     |
+| ---------------- | ------------------------- |
+| Dry Weight       | 151 g (5.3 oz)            |
+| Calories         | 569 kcal                  |
+| Calorie Density  | ~3.8 kcal/g (107 kcal/oz) |
+| Protein          | 24.1 g                    |
+| Fat              | 25.9 g                    |
+| Carbohydrates    | 52.4 g                    |
+| Dietary Fiber    | 15.8 g                    |
+| Sodium           | 4.7 g salt                |
+| Water Required   | 370 ml                    |
+| Rehydration Time | 8 minutes                 |
+| Shelf Life       | 5 years                   |
+| Gluten Free      | Yes                       |
+| Lactose Free     | Yes                       |
+| Allergens        | Soy                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="meal"
+/>
 
 ## Performance
 

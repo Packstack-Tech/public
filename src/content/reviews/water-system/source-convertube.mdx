@@ -12,7 +12,7 @@ published_at: "2026-07-05"
 description: "The Source Convertube converts almost any water bottle into a hands-free hydration system via four included adaptors and a Helix bite valve — a clever alternative to a traditional bladder."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,17 +27,22 @@ and hauling around a dedicated reservoir.
 
 ## Key Specs
 
-| Spec                   | Detail                                                                              |
-| ---------------------- | ----------------------------------------------------------------------------------- |
-| **Weight**             | 75 g (2.6 oz)                                                                       |
-| **Tube Length**        | 90 cm                                                                               |
-| **Valve Type**         | Helix bite valve                                                                    |
-| **Valve Protector**    | Dirt Shield                                                                         |
-| **Included Adaptors**  | 4 (Evian 24mm, Standard PET 28mm, Sigg 42mm, Nalgene 63mm)                          |
-| **Compatible Bottles** | Sigg, Laken, Nalgene, Evian, Standard PET, Source Liquitainer                       |
-| **Comparison**         | See how [Convertube compares](/tools/ultralight-research/hydration) to similar gear |
+| Spec                   | Detail                                                        |
+| ---------------------- | ------------------------------------------------------------- |
+| **Weight**             | 75 g (2.6 oz)                                                 |
+| **Tube Length**        | 90 cm                                                         |
+| **Valve Type**         | Helix bite valve                                              |
+| **Valve Protector**    | Dirt Shield                                                   |
+| **Included Adaptors**  | 4 (Evian 24mm, Standard PET 28mm, Sigg 42mm, Nalgene 63mm)    |
+| **Compatible Bottles** | Sigg, Laken, Nalgene, Evian, Standard PET, Source Liquitainer |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hydration"
+/>
 
 ## Performance
 

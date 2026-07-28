@@ -12,7 +12,7 @@ published_at: "2026-05-14"
 description: "The Trail Designs Sidewinder Ti-Tri is a titanium multi-fuel stove system burning alcohol, Esbit, and wood — and the entire thing rolls up inside your pot."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,9 +30,14 @@ The Trail Designs Sidewinder Ti-Tri is a USA-made, titanium three-fuel cooking s
 | **Inferno Add-On**  | $45 ($40 when ordered with Sidewinder)                                                                                                     |
 | **Ti Floor Add-On** | $15 ($10 when ordered with Sidewinder)                                                                                                     |
 | **Made In**         | USA                                                                                                                                        |
-| **Comparison**      | See how [Sidewinder Ti-Tri compares](/tools/ultralight-research/stove) to similar gear                                                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

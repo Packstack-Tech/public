@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A durable, feature-packed 50L backpack that sits right at the edge of ultralight — here's how it performs on multi-day trips."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Banchee 50 is The North Face's do-it-all backpacking pack, sized for weekend
 
 ## Key Specs
 
-| Spec              | Detail                                                                                       |
-| ----------------- | -------------------------------------------------------------------------------------------- |
-| Weight            | 1,520 g (3 lb 5.6 oz)                                                                        |
-| Volume            | 50L (46L in S/M, 49L in L/XL)                                                                |
-| Fabric            | 210D Ripstop Weave Nylon                                                                     |
-| Frame             | T6 aluminum, wire perimeter with cross stay                                                  |
-| Dimensions (S/M)  | 13.8" x 12.2" x 25.6" (35 x 31 x 65 cm)                                                      |
-| Dimensions (L/XL) | 13.8" x 12.2" x 27.6" (35 x 31 x 70 cm)                                                      |
-| Style code        | NF0A3G9V                                                                                     |
-| Sizes             | Men's S/M, L/XL; Women's XS/S, M/L                                                           |
-| **Comparison**    | See how [Banchee 50 Backpack compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec              | Detail                                      |
+| ----------------- | ------------------------------------------- |
+| Weight            | 1,520 g (3 lb 5.6 oz)                       |
+| Volume            | 50L (46L in S/M, 49L in L/XL)               |
+| Fabric            | 210D Ripstop Weave Nylon                    |
+| Frame             | T6 aluminum, wire perimeter with cross stay |
+| Dimensions (S/M)  | 13.8" x 12.2" x 25.6" (35 x 31 x 65 cm)     |
+| Dimensions (L/XL) | 13.8" x 12.2" x 27.6" (35 x 31 x 70 cm)     |
+| Style code        | NF0A3G9V                                    |
+| Sizes             | Men's S/M, L/XL; Women's XS/S, M/L          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

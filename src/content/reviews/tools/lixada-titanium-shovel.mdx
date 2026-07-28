@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A budget titanium cathole trowel that's light and packable, but lacks the digging-specific design of dedicated trowels like the Deuce or QiWiz."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The Lixada Titanium Shovel is a bare-bones cathole trowel aimed at backpackers w
 
 ## Key Specs
 
-| Spec           | Value                                                                                     |
-| -------------- | ----------------------------------------------------------------------------------------- |
-| Weight         | 40.0 g (1.4 oz)                                                                           |
-| Material       | Pure titanium                                                                             |
-| Thickness      | 0.7 mm                                                                                    |
-| Dimensions     | 70 × 205 mm (2.8 × 8.1 in)                                                                |
-| Includes       | Storage sack, aluminum alloy clip                                                         |
-| Price          | Roughly $7–10                                                                             |
-| **Comparison** | See how [Titanium Shovel compares](/tools/ultralight-research/processing) to similar gear |
+| Spec       | Value                             |
+| ---------- | --------------------------------- |
+| Weight     | 40.0 g (1.4 oz)                   |
+| Material   | Pure titanium                     |
+| Thickness  | 0.7 mm                            |
+| Dimensions | 70 × 205 mm (2.8 × 8.1 in)        |
+| Includes   | Storage sack, aluminum alloy clip |
+| Price      | Roughly $7–10                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="processing"
+/>
 
 ## Performance
 

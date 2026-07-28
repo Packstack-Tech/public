@@ -12,7 +12,7 @@ published_at: "2026-07-12"
 description: "A well-seasoned, 579 kcal freeze-dried chicken tikka masala from Norwegian brand Real Turmat — fast to prep, vacuum-packed, and among the best-tasting pouches in the category."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,24 +20,29 @@ The Real Turmat Kylling Tikka Masala (Chicken Tikka Masala) is a <cite index="4-
 
 ## Key Specs
 
-| Spec            | Value                                                                                    |
-| --------------- | ---------------------------------------------------------------------------------------- |
-| Dry Weight      | 133g                                                                                     |
-| Prepared Weight | ~500g                                                                                    |
-| Calories        | 579 kcal                                                                                 |
-| Calorie Density | ~4.35 kcal/g (~123 kcal/oz)                                                              |
-| Protein         | 19g                                                                                      |
-| Carbohydrates   | 74g                                                                                      |
-| Fat             | 23g (8g saturated)                                                                       |
-| Dietary Fiber   | 5.7g                                                                                     |
-| Salt            | 3.7g                                                                                     |
-| Prep Time       | 8–10 min (hot water) / 30+ min (cold water)                                              |
-| Shelf Life      | 5 years                                                                                  |
-| Gluten-Free     | Yes                                                                                      |
-| Allergens       | Milk, Lactose, Soy                                                                       |
-| **Comparison**  | See how [Kylling Tikka Masala compares](/tools/ultralight-research/meal) to similar gear |
+| Spec            | Value                                       |
+| --------------- | ------------------------------------------- |
+| Dry Weight      | 133g                                        |
+| Prepared Weight | ~500g                                       |
+| Calories        | 579 kcal                                    |
+| Calorie Density | ~4.35 kcal/g (~123 kcal/oz)                 |
+| Protein         | 19g                                         |
+| Carbohydrates   | 74g                                         |
+| Fat             | 23g (8g saturated)                          |
+| Dietary Fiber   | 5.7g                                        |
+| Salt            | 3.7g                                        |
+| Prep Time       | 8–10 min (hot water) / 30+ min (cold water) |
+| Shelf Life      | 5 years                                     |
+| Gluten-Free     | Yes                                         |
+| Allergens       | Milk, Lactose, Soy                          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="meal"
+/>
 
 ## Performance
 

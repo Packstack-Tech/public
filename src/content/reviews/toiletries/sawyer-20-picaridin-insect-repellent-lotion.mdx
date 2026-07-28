@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The Sawyer 20% Picaridin Lotion is a gear-safe, DEET-free insect repellent offering up to 14-hour mosquito protection — a trail-proven staple for backpackers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The Sawyer 20% Picaridin Insect Repellent Lotion is a DEET-free skin repellent b
 
 ## Key Specs
 
-| Spec                                      | Detail                                                                                         |
-| ----------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| **Active Ingredient**                     | 20% Picaridin                                                                                  |
-| **Format**                                | Lotion                                                                                         |
-| **Net Weight (full bottle)**              | 136.1 g (4.8 oz)                                                                               |
-| **Volume**                                | 4 fl oz (118 mL)                                                                               |
-| **Mosquito & Tick Protection**            | Up to 14 hours                                                                                 |
-| **Biting Fly, Gnat & Chigger Protection** | Up to 8 hours                                                                                  |
-| **DEET-Free**                             | Yes                                                                                            |
-| **Fragrance-Free**                        | Yes                                                                                            |
-| **Gear-Safe**                             | Yes — won't damage plastics or synthetics                                                      |
-| **Safe For**                              | Children 6 months and older, use during pregnancy                                              |
-| **Comparison**                            | See how [Sawyer Picaridin Lotion compares](/tools/ultralight-research/sun-bug) to similar gear |
+| Spec                                      | Detail                                            |
+| ----------------------------------------- | ------------------------------------------------- |
+| **Active Ingredient**                     | 20% Picaridin                                     |
+| **Format**                                | Lotion                                            |
+| **Net Weight (full bottle)**              | 136.1 g (4.8 oz)                                  |
+| **Volume**                                | 4 fl oz (118 mL)                                  |
+| **Mosquito & Tick Protection**            | Up to 14 hours                                    |
+| **Biting Fly, Gnat & Chigger Protection** | Up to 8 hours                                     |
+| **DEET-Free**                             | Yes                                               |
+| **Fragrance-Free**                        | Yes                                               |
+| **Gear-Safe**                             | Yes — won't damage plastics or synthetics         |
+| **Safe For**                              | Children 6 months and older, use during pregnancy |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sun-bug"
+/>
 
 ## Performance
 

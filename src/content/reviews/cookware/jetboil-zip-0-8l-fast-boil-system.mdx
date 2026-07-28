@@ -12,7 +12,7 @@ published_at: "2026-05-14"
 description: "The Jetboil Zip is a compact, integrated canister stove built for one thing: boiling water fast. Here's who it's right for—and where it falls short."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,20 +32,25 @@ boil quickly.
 
 ## Key Specs
 
-| Spec                   | Value                                                                            |
-| ---------------------- | -------------------------------------------------------------------------------- |
-| **Weight**             | 324 g (11.4 oz)                                                                  |
-| **Pot Volume**         | 0.8 L (max recommended fill: 500 mL)                                             |
-| **Boil Time**          | 120 sec per 0.5 L (rated avg.)                                                   |
-| **Output**             | 5,300 BTU/h (1.5 kW)                                                             |
-| **Packed Size**        | 108 mm × 165 mm                                                                  |
-| **Fuel Type**          | Isobutane/Propane canister (Lindal B188)                                         |
-| **Ignition**           | Manual (match/lighter required)                                                  |
-| **Pressure Regulator** | No                                                                               |
-| **Piezo Igniter**      | No                                                                               |
-| **Comparison**         | See how [Jetboil Zip compares](/tools/ultralight-research/stove) to similar gear |
+| Spec                   | Value                                    |
+| ---------------------- | ---------------------------------------- |
+| **Weight**             | 324 g (11.4 oz)                          |
+| **Pot Volume**         | 0.8 L (max recommended fill: 500 mL)     |
+| **Boil Time**          | 120 sec per 0.5 L (rated avg.)           |
+| **Output**             | 5,300 BTU/h (1.5 kW)                     |
+| **Packed Size**        | 108 mm × 165 mm                          |
+| **Fuel Type**          | Isobutane/Propane canister (Lindal B188) |
+| **Ignition**           | Manual (match/lighter required)          |
+| **Pressure Regulator** | No                                       |
+| **Piezo Igniter**      | No                                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

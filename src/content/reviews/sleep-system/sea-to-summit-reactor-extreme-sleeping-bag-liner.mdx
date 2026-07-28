@@ -12,7 +12,7 @@ published_at: "2026-05-13"
 description: "An honest look at the Sea to Summit Reactor Extreme Liner — a warm, comfortable mummy liner with impressive fabric tech whose real-world temperature boost falls short of marketing claims."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Sea to Summit Reactor Extreme is the warmest liner in Sea to Summit's Reacto
 
 ## Key Specs
 
-| Spec                            | Detail                                                                                         |
-| ------------------------------- | ---------------------------------------------------------------------------------------------- |
-| **Weight (Compact/Regular)**    | 342 g / 364 g (12.1 / 12.8 oz)                                                                 |
-| **Packed Size**                 | 12 × 15 cm                                                                                     |
-| **Shape**                       | Mummy                                                                                          |
-| **Fabric**                      | Thermolite® Pro, 110 g/m²                                                                      |
-| **Temperature Boost (Claimed)** | Up to +25°F (+14°C)                                                                            |
-| **Odor Control**                | HeiQ Fresh FFL                                                                                 |
-| **Includes**                    | Ultra-Sil stuff sack                                                                           |
-| **Comparison**                  | See how the [Reactor Extreme Liner compares](/tools/ultralight-research/liner) to similar gear |
+| Spec                            | Detail                         |
+| ------------------------------- | ------------------------------ |
+| **Weight (Compact/Regular)**    | 342 g / 364 g (12.1 / 12.8 oz) |
+| **Packed Size**                 | 12 × 15 cm                     |
+| **Shape**                       | Mummy                          |
+| **Fabric**                      | Thermolite® Pro, 110 g/m²      |
+| **Temperature Boost (Claimed)** | Up to +25°F (+14°C)            |
+| **Odor Control**                | HeiQ Fresh FFL                 |
+| **Includes**                    | Ultra-Sil stuff sack           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="liner"
+/>
 
 ## Performance
 

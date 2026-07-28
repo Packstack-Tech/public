@@ -12,7 +12,7 @@ published_at: "2026-06-30"
 description: "A fast, lightweight gravity filter for backpackers and small groups — the Katadyn Gravity BeFree 3.0L impresses on speed and simplicity, with some durability caveats worth knowing."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,22 +20,27 @@ The Katadyn Gravity BeFree 3.0L is a collapsible, hollow-fiber gravity filter bu
 
 ## Key Specs
 
-| Spec                 | Value                                                                                                 |
-| -------------------- | ----------------------------------------------------------------------------------------------------- |
-| **Weight**           | 193 g (6.8 oz)                                                                                        |
-| **Reservoir Volume** | 3.0 L                                                                                                 |
-| **Filter Type**      | Hollow fiber                                                                                          |
-| **Micron Rating**    | 0.1 micron                                                                                            |
-| **Flow Rate**        | 2 L/min                                                                                               |
-| **Filter Life**      | 1,000 L                                                                                               |
-| **Removes Protozoa** | 99.99%                                                                                                |
-| **Removes Bacteria** | 99.9999%                                                                                              |
-| **Removes Viruses**  | No                                                                                                    |
-| **BPA-Free**         | Yes                                                                                                   |
-| **Field Cleanable**  | Yes                                                                                                   |
-| **Comparison**       | See how [Katadyn Gravity BeFree 3.0L compares](/tools/ultralight-research/filtration) to similar gear |
+| Spec                 | Value          |
+| -------------------- | -------------- |
+| **Weight**           | 193 g (6.8 oz) |
+| **Reservoir Volume** | 3.0 L          |
+| **Filter Type**      | Hollow fiber   |
+| **Micron Rating**    | 0.1 micron     |
+| **Flow Rate**        | 2 L/min        |
+| **Filter Life**      | 1,000 L        |
+| **Removes Protozoa** | 99.99%         |
+| **Removes Bacteria** | 99.9999%       |
+| **Removes Viruses**  | No             |
+| **BPA-Free**         | Yes            |
+| **Field Cleanable**  | Yes            |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="filtration"
+/>
 
 ## Performance
 

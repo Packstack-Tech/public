@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The Osprey Rook 65 is a budget-friendly, durably built 65L backpacking pack with solid ventilation — a capable starter pack with real trade-offs in comfort and features."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Osprey Rook 65 is Osprey's entry-level 65-liter backpacking pack, aimed squa
 
 ## Key Specs
 
-| Spec                | Value                                                                                   |
-| ------------------- | --------------------------------------------------------------------------------------- |
-| **Weight**          | 1,588 g (3 lb 8 oz)                                                                     |
-| **Volume**          | 65 L                                                                                    |
-| **Fabric**          | 600D / 1000D Polyester                                                                  |
-| **Frame**           | LightWire peripheral                                                                    |
-| **Back Panel**      | AirSpeed tensioned mesh                                                                 |
-| **Torso Fit Range** | 17–22 in (one size)                                                                     |
-| **Hydration**       | 3L reservoir sleeve                                                                     |
-| **Rain Cover**      | Integrated, removable                                                                   |
-| **Certification**   | bluesign®                                                                               |
-| **Comparison**      | See how [Osprey Rook 65 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                | Value                   |
+| ------------------- | ----------------------- |
+| **Weight**          | 1,588 g (3 lb 8 oz)     |
+| **Volume**          | 65 L                    |
+| **Fabric**          | 600D / 1000D Polyester  |
+| **Frame**           | LightWire peripheral    |
+| **Back Panel**      | AirSpeed tensioned mesh |
+| **Torso Fit Range** | 17–22 in (one size)     |
+| **Hydration**       | 3L reservoir sleeve     |
+| **Rain Cover**      | Integrated, removable   |
+| **Certification**   | bluesign®               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

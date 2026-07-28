@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A compact, no-frills 10,000mAh USB-C power bank that covers the basics well but won't wow anyone with charging speed."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The RAVPower RP-PB165 is a slim, single-port 10,000mAh power bank aimed at anyon
 
 ## Key Specs
 
-| Spec               | Value                                                                                      |
-| ------------------ | ------------------------------------------------------------------------------------------ |
-| Capacity           | 10,000mAh (~37Wh)                                                                          |
-| Weight             | 189g (6.7 oz)                                                                              |
-| Dimensions         | 4.4 x 2.0 x 1.0 in                                                                         |
-| Output             | USB-C, 20W max                                                                             |
-| Input              | USB-C (PD-compatible)                                                                      |
-| Recharge time      | ~2 hours (with USB-C PD wall charger, not included)                                        |
-| Ports              | 1x USB-C (in/out)                                                                          |
-| Safety protections | Over-current, over-voltage, short-circuit, fire-proof                                      |
-| Warranty           | 18 months                                                                                  |
-| **Comparison**     | See how [10000mAh Power Bank compares](/tools/ultralight-research/battery) to similar gear |
+| Spec               | Value                                                 |
+| ------------------ | ----------------------------------------------------- |
+| Capacity           | 10,000mAh (~37Wh)                                     |
+| Weight             | 189g (6.7 oz)                                         |
+| Dimensions         | 4.4 x 2.0 x 1.0 in                                    |
+| Output             | USB-C, 20W max                                        |
+| Input              | USB-C (PD-compatible)                                 |
+| Recharge time      | ~2 hours (with USB-C PD wall charger, not included)   |
+| Ports              | 1x USB-C (in/out)                                     |
+| Safety protections | Over-current, over-voltage, short-circuit, fire-proof |
+| Warranty           | 18 months                                             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="battery"
+/>
 
 ## Performance
 

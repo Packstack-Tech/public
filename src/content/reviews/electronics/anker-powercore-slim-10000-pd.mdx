@@ -12,7 +12,7 @@ published_at: "2026-07-08"
 description: "The Anker PowerCore Slim 10000 PD is a durable, affordable 10,000 mAh power bank with 18W USB-C PD, but it's the heaviest in its class and lacks pass-through charging."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,24 +20,29 @@ The Anker PowerCore Slim 10000 PD (model A1231) is a no-frills 10,000 mAh portab
 
 ## Key Specs
 
-| Spec                      | Value                                                                                          |
-| ------------------------- | ---------------------------------------------------------------------------------------------- |
-| Capacity                  | 10,000 mAh                                                                                     |
-| Weight                    | 213 g (7.5 oz)                                                                                 |
-| Dimensions                | 5.89 × 2.70 × 0.57 in                                                                          |
-| USB-C Output              | 18W PD (5V⎓3A / 9V⎓2A / 15V⎓1.2A)                                                              |
-| USB-A Output              | 12W max (5V⎓2.4A)                                                                              |
-| Total Simultaneous Output | 5V⎓3.6A                                                                                        |
-| Input                     | 5V⎓3A / 9V⎓2A / 15V⎓1.2A (USB-C PD)                                                            |
-| Recharge Time             | ~4.5 hr (PD wall charger) / ~10.2 hr (USB-A)                                                   |
-| Ports                     | 1× USB-C (in/out), 1× USB-A (out)                                                              |
-| Battery Indicator         | 4-LED light wheel                                                                              |
-| In the Box                | USB-C cable, travel pouch                                                                      |
-| Warranty                  | 18 months                                                                                      |
-| Model                     | A1231                                                                                          |
-| **Comparison**            | See how [PowerCore Slim 10000 PD compares](/tools/ultralight-research/battery) to similar gear |
+| Spec                      | Value                                        |
+| ------------------------- | -------------------------------------------- |
+| Capacity                  | 10,000 mAh                                   |
+| Weight                    | 213 g (7.5 oz)                               |
+| Dimensions                | 5.89 × 2.70 × 0.57 in                        |
+| USB-C Output              | 18W PD (5V⎓3A / 9V⎓2A / 15V⎓1.2A)            |
+| USB-A Output              | 12W max (5V⎓2.4A)                            |
+| Total Simultaneous Output | 5V⎓3.6A                                      |
+| Input                     | 5V⎓3A / 9V⎓2A / 15V⎓1.2A (USB-C PD)          |
+| Recharge Time             | ~4.5 hr (PD wall charger) / ~10.2 hr (USB-A) |
+| Ports                     | 1× USB-C (in/out), 1× USB-A (out)            |
+| Battery Indicator         | 4-LED light wheel                            |
+| In the Box                | USB-C cable, travel pouch                    |
+| Warranty                  | 18 months                                    |
+| Model                     | A1231                                        |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="battery"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-12"
 description: "The Salomon Soft Flask XA Filter is a 52g integrated squeeze-filter flask built for trail runners and fastpackers who want to drink on the move from natural water sources."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -33,18 +33,23 @@ front-mounts flasks will find it worth a look.
 
 ## Key Specs
 
-| Spec                    | Value                                                                                          |
-| ----------------------- | ---------------------------------------------------------------------------------------------- |
-| Weight                  | 52g (1.8 oz)                                                                                   |
-| Capacity                | 490ml / 16oz                                                                                   |
-| Cap Opening             | 42mm                                                                                           |
-| Filter Lifespan         | ~1,000 liters                                                                                  |
-| Filtration              | Bacteria & protozoa                                                                            |
-| Material                | TPU, BPA- & PVC-free                                                                           |
-| Filter Cartridge Weight | ~36g (standalone)                                                                              |
-| **Comparison**          | See how [Soft Flask XA Filter compares](/tools/ultralight-research/filtration) to similar gear |
+| Spec                    | Value                |
+| ----------------------- | -------------------- |
+| Weight                  | 52g (1.8 oz)         |
+| Capacity                | 490ml / 16oz         |
+| Cap Opening             | 42mm                 |
+| Filter Lifespan         | ~1,000 liters        |
+| Filtration              | Bacteria & protozoa  |
+| Material                | TPU, BPA- & PVC-free |
+| Filter Cartridge Weight | ~36g (standalone)    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="filtration"
+/>
 
 ## Performance
 

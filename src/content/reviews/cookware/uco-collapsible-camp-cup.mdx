@@ -12,7 +12,7 @@ published_at: "2026-07-01"
 description: "The UCO Collapsible Camp Cup is a 48g, 12 oz polypropylene cup that packs to 1.25 inches — a solid value pick for casual backpackers and car campers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The UCO Collapsible Camp Cup is a 12 oz polypropylene cup designed to collapse t
 
 ## Key Specs
 
-| Spec                     | Value                                                                                             |
-| ------------------------ | ------------------------------------------------------------------------------------------------- |
-| **Weight**               | 48 g (1.7 oz)                                                                                     |
-| **Capacity**             | 12 oz / 350 ml                                                                                    |
-| **Packed Height**        | 1.25 in                                                                                           |
-| **Material**             | BPA-free, phthalate-free polypropylene / TPE base                                                 |
-| **Dishwasher Safe**      | Yes                                                                                               |
-| **Microwave Safe**       | Yes                                                                                               |
-| **Carabiner Compatible** | Yes                                                                                               |
-| **Comparison**           | See how [UCO Collapsible Camp Cup compares](/tools/ultralight-research/drinkware) to similar gear |
+| Spec                     | Value                                             |
+| ------------------------ | ------------------------------------------------- |
+| **Weight**               | 48 g (1.7 oz)                                     |
+| **Capacity**             | 12 oz / 350 ml                                    |
+| **Packed Height**        | 1.25 in                                           |
+| **Material**             | BPA-free, phthalate-free polypropylene / TPE base |
+| **Dishwasher Safe**      | Yes                                               |
+| **Microwave Safe**       | Yes                                               |
+| **Carabiner Compatible** | Yes                                               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="drinkware"
+/>
 
 ## Performance
 

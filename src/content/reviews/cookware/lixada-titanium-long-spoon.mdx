@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "A 16g, 8.5-inch titanium long spoon that punches above its budget price point — but thin-handle ergonomics hold it back from perfection."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The Lixada Titanium Long Spoon is about as simple as backpacking gear gets: a si
 
 ## Key Specs
 
-| Spec                | Value                                                                                             |
-| ------------------- | ------------------------------------------------------------------------------------------------- |
-| **Weight**          | 16g / 0.56 oz                                                                                     |
-| **Length**          | 215mm / 8.5 in                                                                                    |
-| **Material**        | Full titanium                                                                                     |
-| **Bowl finish**     | Polished                                                                                          |
-| **Handle features** | Lanyard hole                                                                                      |
-| **Included**        | Drawstring storage sack                                                                           |
-| **Comparison**      | See how [Lixada Titanium Long Spoon compares](/tools/ultralight-research/utensil) to similar gear |
+| Spec                | Value                   |
+| ------------------- | ----------------------- |
+| **Weight**          | 16g / 0.56 oz           |
+| **Length**          | 215mm / 8.5 in          |
+| **Material**        | Full titanium           |
+| **Bowl finish**     | Polished                |
+| **Handle features** | Lanyard hole            |
+| **Included**        | Drawstring storage sack |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="utensil"
+/>
 
 ## Performance
 

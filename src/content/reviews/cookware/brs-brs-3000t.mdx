@@ -12,7 +12,7 @@ published_at: "2026-03-03"
 description: "An honest, research-backed review of the BRS-3000T: the sub-$20 titanium canister stove that weighs just 26g and challenges stoves costing five times as much."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The BRS-3000T is a Chinese-made titanium alloy canister stove that tips the scal
 
 ## Key Specs
 
-| Spec                | Value                                                  |
-| ------------------- | ------------------------------------------------------ |
-| Weight              | 26 g (0.92 oz)                                         |
-| Dimensions (in use) | 8.5 × 8.5 × 7 cm                                       |
-| Dimensions (stowed) | 4 × 4 × 5 cm                                           |
-| Output              | 2,700 W (~9,200 BTU/hr)                                |
-| Gas Consumption     | ~140 g/hr                                              |
-| Fuel Type           | Isobutane/Propane canister (EN417)                     |
-| Materials           | Titanium alloy, copper, stainless steel                |
-| Ignition            | None — external lighter required                       |
-| Pressure Regulator  | No                                                     |
-| Includes            | Drawstring stuff sack, spare O-ring                    |
-| **Comparison**          | See how [BRS-3000T compares](/tools/ultralight-research/stove) to similar gear |
+| Spec                | Value                                   |
+| ------------------- | --------------------------------------- |
+| Weight              | 26 g (0.92 oz)                          |
+| Dimensions (in use) | 8.5 × 8.5 × 7 cm                        |
+| Dimensions (stowed) | 4 × 4 × 5 cm                            |
+| Output              | 2,700 W (~9,200 BTU/hr)                 |
+| Gas Consumption     | ~140 g/hr                               |
+| Fuel Type           | Isobutane/Propane canister (EN417)      |
+| Materials           | Titanium alloy, copper, stainless steel |
+| Ignition            | None — external lighter required        |
+| Pressure Regulator  | No                                      |
+| Includes            | Drawstring stuff sack, spare O-ring     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

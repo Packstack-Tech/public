@@ -12,7 +12,7 @@ published_at: "2026-06-30"
 description: "The Leatherman Wave+ packs 18 tools into 241g — an honest look at whether it earns its weight in your pack."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Leatherman Wave+ is Leatherman's best-selling multitool: an 18-in-1 pliers-b
 
 ## Key Specs
 
-| Spec                     | Value                                                                      |
-| ------------------------ | -------------------------------------------------------------------------- |
-| **Weight**               | 241 g (8.5 oz)                                                             |
-| **Closed Length**        | 10 cm (4 in)                                                               |
-| **Open Length**          | 16 cm (6.3 in)                                                             |
-| **Primary Blade Length** | 7.37 cm (2.9 in)                                                           |
-| **Number of Tools**      | 18                                                                         |
-| **Blade Steel**          | 420HC Stainless Steel                                                      |
-| **Warranty**             | 25 years                                                                   |
-| **Origin**               | Portland, Oregon, USA                                                      |
-| **Comparison**           | See how [Wave+ compares](/tools/ultralight-research/knife) to similar gear |
+| Spec                     | Value                 |
+| ------------------------ | --------------------- |
+| **Weight**               | 241 g (8.5 oz)        |
+| **Closed Length**        | 10 cm (4 in)          |
+| **Open Length**          | 16 cm (6.3 in)        |
+| **Primary Blade Length** | 7.37 cm (2.9 in)      |
+| **Number of Tools**      | 18                    |
+| **Blade Steel**          | 420HC Stainless Steel |
+| **Warranty**             | 25 years              |
+| **Origin**               | Portland, Oregon, USA |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="knife"
+/>
 
 ## Performance
 

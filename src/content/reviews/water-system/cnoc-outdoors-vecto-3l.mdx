@@ -12,7 +12,7 @@ published_at: "2026-06-08"
 description: "The CNOC Vecto 3L is a collapsible soft-sided water container with a clever dual-opening design that makes filling and gravity filtering easier than nearly anything else on the market."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The CNOC Vecto 3L is a collapsible, filter-compatible soft water container built
 
 ## Key Specs
 
-| Spec                     | Detail                                                                          |
-| ------------------------ | ------------------------------------------------------------------------------- |
-| **Weight**               | 105g (3.7 oz)                                                                   |
-| **Capacity**             | 3L (100 oz)                                                                     |
-| **Material**             | FDA-approved TPU (BPA, BPF, and BPS free)                                       |
-| **Filter Compatibility** | 28mm thread (Sawyer Squeeze/Mini/Micro, HydroBlu Versa Flow, LifeStraw Flex)    |
-| **Packed Size**          | 7 × 2 × 2 inches                                                                |
-| **Colors**               | Blue, Orange                                                                    |
-| **Price**                | ~$20.99                                                                         |
-| **Comparison**           | See how [Vecto 3L compares](/tools/ultralight-research/storage) to similar gear |
+| Spec                     | Detail                                                                       |
+| ------------------------ | ---------------------------------------------------------------------------- |
+| **Weight**               | 105g (3.7 oz)                                                                |
+| **Capacity**             | 3L (100 oz)                                                                  |
+| **Material**             | FDA-approved TPU (BPA, BPF, and BPS free)                                    |
+| **Filter Compatibility** | 28mm thread (Sawyer Squeeze/Mini/Micro, HydroBlu Versa Flow, LifeStraw Flex) |
+| **Packed Size**          | 7 × 2 × 2 inches                                                             |
+| **Colors**               | Blue, Orange                                                                 |
+| **Price**                | ~$20.99                                                                      |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="storage"
+/>
 
 ## Performance
 

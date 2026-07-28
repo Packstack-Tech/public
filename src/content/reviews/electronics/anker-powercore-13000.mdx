@@ -12,7 +12,7 @@ published_at: "2026-06-06"
 description: "The Anker PowerCore 13000 packs solid dual-port capacity into a compact form, but its Micro-USB-only port setup and missing pass-through charging feel dated in 2026."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -28,24 +28,29 @@ most modern hikers expect.
 
 ## Key Specs
 
-| Spec              | Value                                                                                  |
-| ----------------- | -------------------------------------------------------------------------------------- |
-| **Capacity**      | 13,000mAh                                                                              |
-| **Weight**        | 255g (9 oz)                                                                            |
-| **Dimensions**    | 9.7 × 8 × 2.2 cm (3.8 × 3.1 × 0.9 in)                                                  |
-| **Output Ports**  | 2× USB-A                                                                               |
-| **Input Port**    | 1× Micro-USB                                                                           |
-| **Input**         | 5V / 2A                                                                                |
-| **Output**        | 5V / 3A max (total)                                                                    |
-| **Charging Tech** | PowerIQ + VoltageBoost                                                                 |
-| **Safety**        | MultiProtect (surge, short-circuit protection)                                         |
-| **Recharge Time** | ~7–10 hours (2A wall charger)                                                          |
-| **Pass-Through**  | No                                                                                     |
-| **Quick Charge**  | No                                                                                     |
-| **Warranty**      | 18 months                                                                              |
-| **Comparison**    | See how [PowerCore 13000 compares](/tools/ultralight-research/battery) to similar gear |
+| Spec              | Value                                          |
+| ----------------- | ---------------------------------------------- |
+| **Capacity**      | 13,000mAh                                      |
+| **Weight**        | 255g (9 oz)                                    |
+| **Dimensions**    | 9.7 × 8 × 2.2 cm (3.8 × 3.1 × 0.9 in)          |
+| **Output Ports**  | 2× USB-A                                       |
+| **Input Port**    | 1× Micro-USB                                   |
+| **Input**         | 5V / 2A                                        |
+| **Output**        | 5V / 3A max (total)                            |
+| **Charging Tech** | PowerIQ + VoltageBoost                         |
+| **Safety**        | MultiProtect (surge, short-circuit protection) |
+| **Recharge Time** | ~7–10 hours (2A wall charger)                  |
+| **Pass-Through**  | No                                             |
+| **Quick Charge**  | No                                             |
+| **Warranty**      | 18 months                                      |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="battery"
+/>
 
 ## Performance
 

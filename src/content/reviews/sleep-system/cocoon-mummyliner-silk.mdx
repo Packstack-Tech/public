@@ -12,7 +12,7 @@ published_at: "2026-06-02"
 description: "The COCOON MummyLiner Silk is a 4.7 oz, 100% silk bag liner that adds warmth, keeps your bag clean, and doubles as a standalone cover on warm nights."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The COCOON MummyLiner Silk is a 100% silk sleeping bag liner aimed at backpacker
 
 ## Key Specs
 
-| Spec             | Detail                                                                                      |
-| ---------------- | ------------------------------------------------------------------------------------------- |
-| **Weight**       | 133 g / 4.7 oz                                                                              |
-| **Material**     | 100% Silk                                                                                   |
-| **Dimensions**   | 95" × 35" (22" at tapered foot) / 241 × 90/56 cm                                            |
-| **Packed Size**  | ~3" × 6" stuff sack                                                                         |
-| **Added Warmth** | Up to 8.4°F (5.3°C)                                                                         |
-| **Features**     | Drawstring hood, wide top opening, boxed foot end, stuff sack, double-stitched              |
-| **Entry**        | Top-only (no side zip)                                                                      |
-| **Comparison**   | See how [COCOON MummyLiner Silk compares](/tools/ultralight-research/liner) to similar gear |
+| Spec             | Detail                                                                         |
+| ---------------- | ------------------------------------------------------------------------------ |
+| **Weight**       | 133 g / 4.7 oz                                                                 |
+| **Material**     | 100% Silk                                                                      |
+| **Dimensions**   | 95" × 35" (22" at tapered foot) / 241 × 90/56 cm                               |
+| **Packed Size**  | ~3" × 6" stuff sack                                                            |
+| **Added Warmth** | Up to 8.4°F (5.3°C)                                                            |
+| **Features**     | Drawstring hood, wide top opening, boxed foot end, stuff sack, double-stitched |
+| **Entry**        | Top-only (no side zip)                                                         |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="liner"
+/>
 
 ## Performance
 

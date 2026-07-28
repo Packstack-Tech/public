@@ -12,7 +12,7 @@ published_at: "2026-04-23"
 description: "The Katadyn BeFree 0.6L is an ultralight hollow fiber squeeze filter built for on-the-go hydration — blistering flow rate, real packability, and a few real trade-offs."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,22 +20,27 @@ The Katadyn BeFree 0.6L is a hollow fiber squeeze filter integrated directly int
 
 ## Key Specs
 
-| Spec                     | Value                                                                                    |
-| ------------------------ | ---------------------------------------------------------------------------------------- |
-| **Weight**               | 59 g (2.1 oz) filter only                                                                |
-| **Capacity**             | 0.6 L                                                                                    |
-| **Filter Type**          | Hollow fiber membrane                                                                    |
-| **Pore Size**            | 0.1 micron                                                                               |
-| **Flow Rate**            | 2 L/min (claimed)                                                                        |
-| **Filter Life**          | 1,000 L                                                                                  |
-| **Thread Compatibility** | 42 mm Hydrapak only                                                                      |
-| **Removes**              | Bacteria (99.9999%), Protozoa (99.99%)                                                   |
-| **Does Not Remove**      | Viruses                                                                                  |
-| **BPA Free**             | Yes                                                                                      |
-| **Field Cleanable**      | Yes (shake/swish method)                                                                 |
-| **Comparison**           | See how [Katadyn BeFree compares](/tools/ultralight-research/filtration) to similar gear |
+| Spec                     | Value                                  |
+| ------------------------ | -------------------------------------- |
+| **Weight**               | 59 g (2.1 oz) filter only              |
+| **Capacity**             | 0.6 L                                  |
+| **Filter Type**          | Hollow fiber membrane                  |
+| **Pore Size**            | 0.1 micron                             |
+| **Flow Rate**            | 2 L/min (claimed)                      |
+| **Filter Life**          | 1,000 L                                |
+| **Thread Compatibility** | 42 mm Hydrapak only                    |
+| **Removes**              | Bacteria (99.9999%), Protozoa (99.99%) |
+| **Does Not Remove**      | Viruses                                |
+| **BPA Free**             | Yes                                    |
+| **Field Cleanable**      | Yes (shake/swish method)               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="filtration"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-06-28"
 description: "The Outdoor Research Swift Cap is a 71g, UPF 40, bluesign-approved nylon trail cap built for warm-weather hiking and running — one of the most decorated everyday performance caps on the market."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,9 +30,14 @@ The Outdoor Research Swift Cap is a 71g (2.5 oz) performance ball cap aimed at t
 | **Key Features**     | TransAction™ Headband, Stiff Curved Brim, Dark Under-Brim, Mesh Panels, Quick-Release Buckle |
 | **Sizing**           | One size, adjustable                                                                         |
 | **Origin**           | Vietnam                                                                                      |
-| **Comparison**       | See how [Swift Cap compares](/tools/ultralight-research/headwear) to similar gear            |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="headwear"
+/>
 
 ## Performance
 

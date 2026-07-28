@@ -12,7 +12,7 @@ published_at: "2026-06-09"
 description: "A lightweight, affordable chlorine dioxide treatment that kills bacteria, viruses, and Cryptosporidium — ideal as a primary or backup backcountry water purifier."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ Aquamira Water Treatment Drops are a two-part chlorine dioxide chemical purifier
 
 ## Key Specs
 
-| Spec                     | Value                                                                                                     |
-| ------------------------ | --------------------------------------------------------------------------------------------------------- |
-| **Weight**               | 94 g (3.3 oz)                                                                                             |
-| **Volume**               | 2 fl oz combined (two 1 fl oz bottles)                                                                    |
-| **Active Ingredients**   | Chlorine Dioxide (Part A), Phosphoric Acid (Part B)                                                       |
-| **Treats**               | Up to 30 gallons                                                                                          |
-| **Shelf Life**           | 4 years from manufacturing date                                                                           |
-| **Wait Time**            | 15 min (standard), 30 min (cold water), 4 hrs (Cryptosporidium)                                           |
-| **Removes Particulates** | No                                                                                                        |
-| **Comparison**           | See how [Aquamira Water Treatment Drops compare](/tools/ultralight-research/purification) to similar gear |
+| Spec                     | Value                                                           |
+| ------------------------ | --------------------------------------------------------------- |
+| **Weight**               | 94 g (3.3 oz)                                                   |
+| **Volume**               | 2 fl oz combined (two 1 fl oz bottles)                          |
+| **Active Ingredients**   | Chlorine Dioxide (Part A), Phosphoric Acid (Part B)             |
+| **Treats**               | Up to 30 gallons                                                |
+| **Shelf Life**           | 4 years from manufacturing date                                 |
+| **Wait Time**            | 15 min (standard), 30 min (cold water), 4 hrs (Cryptosporidium) |
+| **Removes Particulates** | No                                                              |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="purification"
+/>
 
 ## Performance
 

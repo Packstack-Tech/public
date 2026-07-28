@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A budget-friendly freeze-dried trail meal with real veggie content, but chewy beef and potato hold it back from the top tier."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ Summit to Eat's Beef and Potato Stew is a freeze-dried backpacking meal from the
 
 ## Key Specs
 
-| Spec                         | Value                                                                                    |
-| ---------------------------- | ---------------------------------------------------------------------------------------- |
-| Weight (dry, single serving) | 118 g                                                                                    |
-| Big Pack weight (dry)        | 190 g                                                                                    |
-| Calories (single serving)    | 624 kcal                                                                                 |
-| Calories (Big Pack)          | 1,005 kcal                                                                               |
-| Water required               | 300 ml                                                                                   |
-| Servings                     | 1 (per standard pouch)                                                                   |
-| Shelf life                   | 7 years                                                                                  |
-| Main ingredients             | Diced potatoes, beef strips, carrots, green beans, onion, tomato puree                   |
-| **Comparison**               | See how [Beef and Potato Stew compares](/tools/ultralight-research/meal) to similar gear |
+| Spec                         | Value                                                                  |
+| ---------------------------- | ---------------------------------------------------------------------- |
+| Weight (dry, single serving) | 118 g                                                                  |
+| Big Pack weight (dry)        | 190 g                                                                  |
+| Calories (single serving)    | 624 kcal                                                               |
+| Calories (Big Pack)          | 1,005 kcal                                                             |
+| Water required               | 300 ml                                                                 |
+| Servings                     | 1 (per standard pouch)                                                 |
+| Shelf life                   | 7 years                                                                |
+| Main ingredients             | Diced potatoes, beef strips, carrots, green beans, onion, tomato puree |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="meal"
+/>
 
 ## Performance
 

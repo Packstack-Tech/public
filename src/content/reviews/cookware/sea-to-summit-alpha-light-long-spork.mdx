@@ -12,7 +12,7 @@ published_at: "2026-06-06"
 description: "A 14.2g hard-anodized aluminum spork built for deep freeze-dried bags and ultralight packs — excels at its niche but has real ergonomic trade-offs."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Sea to Summit Alpha Light Long Spork is a single-piece, hard-anodized alumin
 
 ## Key Specs
 
-| Spec                | Value                                                                                         |
-| ------------------- | --------------------------------------------------------------------------------------------- |
-| **Weight**          | 14.2 g (0.5 oz)                                                                               |
-| **Length**          | 8.5 in (21.5 cm)                                                                              |
-| **Material**        | Hard-anodized 7075-T6 aircraft-grade aluminum                                                 |
-| **Finish**          | Matte grey anodized                                                                           |
-| **Includes**        | Mini carabiner                                                                                |
-| **Dishwasher Safe** | No                                                                                            |
-| **Price**           | ~$11.95                                                                                       |
-| **Comparison**      | See how [Alpha Light Long Spork compares](/tools/ultralight-research/utensil) to similar gear |
+| Spec                | Value                                         |
+| ------------------- | --------------------------------------------- |
+| **Weight**          | 14.2 g (0.5 oz)                               |
+| **Length**          | 8.5 in (21.5 cm)                              |
+| **Material**        | Hard-anodized 7075-T6 aircraft-grade aluminum |
+| **Finish**          | Matte grey anodized                           |
+| **Includes**        | Mini carabiner                                |
+| **Dishwasher Safe** | No                                            |
+| **Price**           | ~$11.95                                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="utensil"
+/>
 
 ## Performance
 

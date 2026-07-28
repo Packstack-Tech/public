@@ -12,7 +12,7 @@ published_at: "2026-05-09"
 description: "The BIC Classic is a supremely reliable, affordable pocket lighter—but at 20.5g it carries a real weight penalty over the Mini BIC that most backpackers will struggle to justify."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The BIC Classic is the full-size version of arguably the most field-proven light
 
 ## Key Specs
 
-| Spec                   | Value                                                                                    |
-| ---------------------- | ---------------------------------------------------------------------------------------- |
-| **Weight**             | 20.5 g (0.72 oz)                                                                         |
-| **Fuel Type**          | Pure isobutane                                                                           |
-| **Lights per Lighter** | Up to 3,000                                                                              |
-| **Child-Resistant**    | Yes                                                                                      |
-| **Ignition Type**      | Flint wheel                                                                              |
-| **Refillable**         | No                                                                                       |
-| **Windproof**          | No                                                                                       |
-| **Price**              | ~$2–3 (single)                                                                           |
-| **Comparison**         | See how [BIC Classic Lighter compares](/tools/ultralight-research/fire) to similar gear |
+| Spec                   | Value            |
+| ---------------------- | ---------------- |
+| **Weight**             | 20.5 g (0.72 oz) |
+| **Fuel Type**          | Pure isobutane   |
+| **Lights per Lighter** | Up to 3,000      |
+| **Child-Resistant**    | Yes              |
+| **Ignition Type**      | Flint wheel      |
+| **Refillable**         | No               |
+| **Windproof**          | No               |
+| **Price**              | ~$2–3 (single)   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="fire"
+/>
 
 ## Performance
 

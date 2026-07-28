@@ -12,7 +12,7 @@ published_at: "2026-07-13"
 description: "The Petzl GRIGRI is the gold-standard assisted-braking belay device for gym and crag, packing cam-assisted fall arrest into a 175g body compatible with ropes from 8.5–11mm."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -36,19 +36,24 @@ is not a radical departure from the GriGri 2, but
 
 ## Key Specs
 
-| Spec                     | Detail                                                                         |
-| ------------------------ | ------------------------------------------------------------------------------ |
-| **Weight**               | 175 g (6.2 oz)                                                                 |
-| **Rope Compatibility**   | 8.5–11 mm single rope                                                          |
-| **Optimized Range**      | 8.9–10.5 mm                                                                    |
-| **Side Plates**          | Aluminum                                                                       |
-| **Cam & Friction Plate** | Stainless steel                                                                |
-| **Handle**               | Reinforced nylon                                                               |
-| **Certifications**       | CE EN 15151-1, UIAA                                                            |
-| **Best For**             | Sport, gym, trad, single-pitch multi-pitch                                     |
-| **Comparison**           | See how [GRIGRI compares](/tools/ultralight-research/hardware) to similar gear |
+| Spec                     | Detail                                     |
+| ------------------------ | ------------------------------------------ |
+| **Weight**               | 175 g (6.2 oz)                             |
+| **Rope Compatibility**   | 8.5–11 mm single rope                      |
+| **Optimized Range**      | 8.9–10.5 mm                                |
+| **Side Plates**          | Aluminum                                   |
+| **Cam & Friction Plate** | Stainless steel                            |
+| **Handle**               | Reinforced nylon                           |
+| **Certifications**       | CE EN 15151-1, UIAA                        |
+| **Best For**             | Sport, gym, trad, single-pitch multi-pitch |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hardware"
+/>
 
 ## Performance
 

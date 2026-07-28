@@ -12,7 +12,7 @@ published_at: "2026-07-12"
 description: "A lightweight, gluten-free freeze-dried beef and vegetable soup from Norwegian brand REAL Turmat — best suited as a warming midday break rather than a full trail dinner."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,24 +20,29 @@ The REAL Turmat Kjøttsuppe (Beef Soup) is a freeze-dried Norwegian beef, potato
 
 ## Key Specs
 
-| Spec                | Value                                                                          |
-| ------------------- | ------------------------------------------------------------------------------ |
-| Dry Weight          | 55g                                                                            |
-| Prepared Weight     | 370g                                                                           |
-| Calories (per pack) | 254 kcal                                                                       |
-| Caloric Density     | ~4.6 kcal/g                                                                    |
-| Protein             | 8g                                                                             |
-| Fat                 | 14g                                                                            |
-| Carbohydrates       | 23g                                                                            |
-| Salt                | 2.3g                                                                           |
-| Water Required      | 320ml                                                                          |
-| Preparation Time    | 8 minutes                                                                      |
-| Shelf Life          | 5 years                                                                        |
-| Allergens           | Celery                                                                         |
-| Dietary             | Gluten-free, Lactose-free                                                      |
-| **Comparison**      | See how [Kjøttsuppe compares](/tools/ultralight-research/meal) to similar gear |
+| Spec                | Value                     |
+| ------------------- | ------------------------- |
+| Dry Weight          | 55g                       |
+| Prepared Weight     | 370g                      |
+| Calories (per pack) | 254 kcal                  |
+| Caloric Density     | ~4.6 kcal/g               |
+| Protein             | 8g                        |
+| Fat                 | 14g                       |
+| Carbohydrates       | 23g                       |
+| Salt                | 2.3g                      |
+| Water Required      | 320ml                     |
+| Preparation Time    | 8 minutes                 |
+| Shelf Life          | 5 years                   |
+| Allergens           | Celery                    |
+| Dietary             | Gluten-free, Lactose-free |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="meal"
+/>
 
 ## Performance
 

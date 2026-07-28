@@ -12,7 +12,7 @@ published_at: "2026-07-05"
 description: "The Garmin Instinct 2S Solar is a compact, rugged GPS smartwatch with solar charging, built for multi-sport adventurers who want long battery life in a 43g package."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Garmin Instinct 2S Solar is the compact sibling of the Instinct 2 Solar — 
 
 ## Key Specs
 
-| Spec                        | Detail                                                                                           |
-| --------------------------- | ------------------------------------------------------------------------------------------------ |
-| **Weight**                  | 43 g                                                                                             |
-| **Case Size**               | 40 mm                                                                                            |
-| **Display**                 | Monochrome transflective MIP, 156 × 156 px (0.79" × 0.79")                                       |
-| **Battery — Smartwatch**    | Up to 21 days / 51 days with solar                                                               |
-| **Battery — GPS**           | Up to 22 hrs / 28 hrs with solar                                                                 |
-| **Battery — Battery Saver** | Up to 50 days / Unlimited with solar                                                             |
-| **Water Rating**            | 100 meters                                                                                       |
-| **Durability Standard**     | MIL-STD-810                                                                                      |
-| **Lens**                    | Corning Gorilla Glass (scratch-resistant)                                                        |
-| **Comparison**              | See how [Garmin Instinct 2S Solar compares](/tools/ultralight-research/wearable) to similar gear |
+| Spec                        | Detail                                                     |
+| --------------------------- | ---------------------------------------------------------- |
+| **Weight**                  | 43 g                                                       |
+| **Case Size**               | 40 mm                                                      |
+| **Display**                 | Monochrome transflective MIP, 156 × 156 px (0.79" × 0.79") |
+| **Battery — Smartwatch**    | Up to 21 days / 51 days with solar                         |
+| **Battery — GPS**           | Up to 22 hrs / 28 hrs with solar                           |
+| **Battery — Battery Saver** | Up to 50 days / Unlimited with solar                       |
+| **Water Rating**            | 100 meters                                                 |
+| **Durability Standard**     | MIL-STD-810                                                |
+| **Lens**                    | Corning Gorilla Glass (scratch-resistant)                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="wearable"
+/>
 
 ## Performance
 

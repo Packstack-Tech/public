@@ -12,7 +12,7 @@ published_at: "2026-05-20"
 description: "The NEMO Fillo is a hybrid air-and-foam camping pillow that prioritizes comfort over weight savings — a smart trade-off for most campers, a tougher sell for ounce-counters."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The NEMO Fillo is a hybrid camping pillow that pairs a baffled air bladder with 
 
 ## Key Specs
 
-| Spec                    | Detail                                                                           |
-| ----------------------- | -------------------------------------------------------------------------------- |
-| **Weight**              | 9.3 oz / 264 g                                                                   |
-| **Inflated Dimensions** | 17 × 11 × 4 in (43 × 27 × 10 cm)                                                 |
-| **Packed Size**         | ~6 × 4 in (approx. 1L Nalgene volume)                                            |
-| **Fill Type**           | Air + Luxury Foam                                                                |
-| **Baffle Depth**        | 3 in I-beam baffled air cell                                                     |
-| **Valve**               | Micro-adjustable                                                                 |
-| **Stuff Sack**          | Integrated                                                                       |
-| **Cover**               | Removable, machine-washable recycled fabric                                      |
-| **Warranty**            | NEMO Adventure Forever Guarantee™                                                |
-| **Comparison**          | See how [NEMO Fillo compares](/tools/ultralight-research/pillow) to similar gear |
+| Spec                    | Detail                                      |
+| ----------------------- | ------------------------------------------- |
+| **Weight**              | 9.3 oz / 264 g                              |
+| **Inflated Dimensions** | 17 × 11 × 4 in (43 × 27 × 10 cm)            |
+| **Packed Size**         | ~6 × 4 in (approx. 1L Nalgene volume)       |
+| **Fill Type**           | Air + Luxury Foam                           |
+| **Baffle Depth**        | 3 in I-beam baffled air cell                |
+| **Valve**               | Micro-adjustable                            |
+| **Stuff Sack**          | Integrated                                  |
+| **Cover**               | Removable, machine-washable recycled fabric |
+| **Warranty**            | NEMO Adventure Forever Guarantee™           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="pillow"
+/>
 
 ## Performance
 

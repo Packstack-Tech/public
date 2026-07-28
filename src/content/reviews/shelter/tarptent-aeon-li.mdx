@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The Tarptent Aeon Li is a 448g single-wall DCF solo shelter with patented PitchLoc corners. Here's what real-world use reveals about its weight, livability, and weather performance."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,24 +32,29 @@ genuinely clever engineering rather than just stripping features out.
 
 ## Key Specs
 
-| Spec                       | Value                                                                       |
-| -------------------------- | --------------------------------------------------------------------------- |
-| **Weight (body)**          | 448 g / 15.8 oz                                                             |
-| **Weight (stakes)**        | 48 g / 1.7 oz                                                               |
-| **Capacity**               | 1 person                                                                    |
-| **Floor Dimensions**       | 30 in × 88 in (76 × 224 cm)                                                 |
-| **Interior Height**        | 47 in (119 cm)                                                              |
-| **Packed Size**            | 14 in × 4 in (36 × 10 cm)                                                   |
-| **Fly Material**           | 0.55 oz/yd² Dyneema® CF CT1E.08                                             |
-| **Fly Hydrostatic Head**   | 15,000 mm                                                                   |
-| **Floor Material**         | 0.96 oz/yd² Dyneema® CF CT2K.18                                             |
-| **Floor Hydrostatic Head** | >20,000 mm                                                                  |
-| **Wall Type**              | Single-wall                                                                 |
-| **Seasons**                | 3-season                                                                    |
-| **Minimum Stakes**         | 6                                                                           |
-| **Comparison**             | See how [Aeon Li compares](/tools/ultralight-research/tent) to similar gear |
+| Spec                       | Value                           |
+| -------------------------- | ------------------------------- |
+| **Weight (body)**          | 448 g / 15.8 oz                 |
+| **Weight (stakes)**        | 48 g / 1.7 oz                   |
+| **Capacity**               | 1 person                        |
+| **Floor Dimensions**       | 30 in × 88 in (76 × 224 cm)     |
+| **Interior Height**        | 47 in (119 cm)                  |
+| **Packed Size**            | 14 in × 4 in (36 × 10 cm)       |
+| **Fly Material**           | 0.55 oz/yd² Dyneema® CF CT1E.08 |
+| **Fly Hydrostatic Head**   | 15,000 mm                       |
+| **Floor Material**         | 0.96 oz/yd² Dyneema® CF CT2K.18 |
+| **Floor Hydrostatic Head** | >20,000 mm                      |
+| **Wall Type**              | Single-wall                     |
+| **Seasons**                | 3-season                        |
+| **Minimum Stakes**         | 6                               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="tent"
+/>
 
 ## Performance
 

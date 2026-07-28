@@ -12,7 +12,7 @@ published_at: "2026-05-12"
 description: "A deep-dive review of the ULA Equipment Circuit 68L pack — a thru-hiker staple built around bomber Robic nylon, a smart suspension, and outstanding fit customization."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,24 +20,29 @@ The ULA Equipment Circuit is a 68L, internally framed pack made in Logan, Utah, 
 
 ## Key Specs
 
-| Spec                | Value                                                                                |
-| ------------------- | ------------------------------------------------------------------------------------ |
-| **Weight**          | 1092 g (38.5 oz)                                                                     |
-| **Volume**          | 68 L / 4,200 cu in                                                                   |
-| **Max Load**        | 35 lbs                                                                               |
-| **Material**        | ULA 400D Robic Nylon                                                                 |
-| **Frame**           | Carbon fiber + Delrin hoop, foam framesheet, single aluminum stay                    |
-| **Shoulder Straps** | J or S-shaped (choose at order)                                                      |
-| **Hip Belt**        | Replaceable; 6 sizes; dual-strap inward-pull adjustment                              |
-| **Side Pockets**    | 2 (each holds two 1L bottles)                                                        |
-| **Front Pocket**    | UltraStretch mesh (2024 update)                                                      |
-| **Closure**         | Roll-top with side compression straps                                                |
-| **Bear Can**        | Every canister on the market fits vertically                                         |
-| **Warranty**        | Lifetime                                                                             |
-| **Price**           | $300 (Robic)                                                                         |
-| **Comparison**      | See how [ULA Circuit compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                | Value                                                             |
+| ------------------- | ----------------------------------------------------------------- |
+| **Weight**          | 1092 g (38.5 oz)                                                  |
+| **Volume**          | 68 L / 4,200 cu in                                                |
+| **Max Load**        | 35 lbs                                                            |
+| **Material**        | ULA 400D Robic Nylon                                              |
+| **Frame**           | Carbon fiber + Delrin hoop, foam framesheet, single aluminum stay |
+| **Shoulder Straps** | J or S-shaped (choose at order)                                   |
+| **Hip Belt**        | Replaceable; 6 sizes; dual-strap inward-pull adjustment           |
+| **Side Pockets**    | 2 (each holds two 1L bottles)                                     |
+| **Front Pocket**    | UltraStretch mesh (2024 update)                                   |
+| **Closure**         | Roll-top with side compression straps                             |
+| **Bear Can**        | Every canister on the market fits vertically                      |
+| **Warranty**        | Lifetime                                                          |
+| **Price**           | $300 (Robic)                                                      |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

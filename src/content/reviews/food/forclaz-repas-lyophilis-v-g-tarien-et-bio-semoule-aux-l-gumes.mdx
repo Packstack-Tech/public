@@ -12,7 +12,7 @@ published_at: "2026-05-04"
 description: "A budget-friendly, organic vegetarian dehydrated trail meal from Decathlon's Forclaz line — solid value, but low caloric density warrants attention for hard days out."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,28 +20,33 @@ The Forclaz Semoule aux Légumes is <cite index="3-12,3-13">a semolina and organ
 
 ## Key Specs
 
-| Spec                          | Value                                                                                   |
-| ----------------------------- | --------------------------------------------------------------------------------------- |
-| **Total Weight (with pouch)** | 112g                                                                                    |
-| **Dry Weight**                | 100g                                                                                    |
-| **Rehydrated Weight**         | 350g                                                                                    |
-| **Calories**                  | 372 kcal                                                                                |
-| **Caloric Density (dry)**     | 3.72 kcal/g                                                                             |
-| **Protein**                   | 14g                                                                                     |
-| **Fat**                       | 9g                                                                                      |
-| **Carbohydrates**             | 55g                                                                                     |
-| **Fiber**                     | 9.5g                                                                                    |
-| **Salt**                      | 2.3g                                                                                    |
-| **Prep Time (hot water)**     | 9 min                                                                                   |
-| **Prep Time (cold water)**    | 45 min                                                                                  |
-| **Water Required**            | 250ml                                                                                   |
-| **Packed Size**               | 17.5 × 18.5 × 6.0 cm                                                                    |
-| **Dietary**                   | Vegetarian, Organic                                                                     |
-| **Contains**                  | Gluten                                                                                  |
-| **Origin**                    | Made in Poland                                                                          |
-| **Comparison**                | See how [Semoule aux Légumes compares](/tools/ultralight-research/meal) to similar gear |
+| Spec                          | Value                |
+| ----------------------------- | -------------------- |
+| **Total Weight (with pouch)** | 112g                 |
+| **Dry Weight**                | 100g                 |
+| **Rehydrated Weight**         | 350g                 |
+| **Calories**                  | 372 kcal             |
+| **Caloric Density (dry)**     | 3.72 kcal/g          |
+| **Protein**                   | 14g                  |
+| **Fat**                       | 9g                   |
+| **Carbohydrates**             | 55g                  |
+| **Fiber**                     | 9.5g                 |
+| **Salt**                      | 2.3g                 |
+| **Prep Time (hot water)**     | 9 min                |
+| **Prep Time (cold water)**    | 45 min               |
+| **Water Required**            | 250ml                |
+| **Packed Size**               | 17.5 × 18.5 × 6.0 cm |
+| **Dietary**                   | Vegetarian, Organic  |
+| **Contains**                  | Gluten               |
+| **Origin**                    | Made in Poland       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="meal"
+/>
 
 ## Performance
 

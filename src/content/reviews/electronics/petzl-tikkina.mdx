@@ -12,7 +12,7 @@ published_at: "2026-07-08"
 description: "The Petzl TIKKINA is a no-frills, 300-lumen flood headlamp for camp use and casual hiking — excellent value, but too basic for serious trail work."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -33,19 +33,24 @@ leave you wanting more.
 
 ## Key Specs
 
-| Spec              | Value                                                                           |
-| ----------------- | ------------------------------------------------------------------------------- |
-| Weight            | 92 g (3.25 oz) with batteries                                                   |
-| Max Output        | 300 lumens (ANSI/PLATO FL 1)                                                    |
-| Beam Pattern      | Flood                                                                           |
-| Max Beam Distance | 65 m                                                                            |
-| Lighting Modes    | 3 (Max Burn Time, Standard, Max Power)                                          |
-| Waterproofing     | IPX4 (splash-resistant)                                                         |
-| Battery           | 3× AAA/LR03 (included); CORE rechargeable (sold separately)                     |
-| Price             | ~$20–25                                                                         |
-| **Comparison**    | See how [TIKKINA compares](/tools/ultralight-research/lighting) to similar gear |
+| Spec              | Value                                                       |
+| ----------------- | ----------------------------------------------------------- |
+| Weight            | 92 g (3.25 oz) with batteries                               |
+| Max Output        | 300 lumens (ANSI/PLATO FL 1)                                |
+| Beam Pattern      | Flood                                                       |
+| Max Beam Distance | 65 m                                                        |
+| Lighting Modes    | 3 (Max Burn Time, Standard, Max Power)                      |
+| Waterproofing     | IPX4 (splash-resistant)                                     |
+| Battery           | 3× AAA/LR03 (included); CORE rechargeable (sold separately) |
+| Price             | ~$20–25                                                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="lighting"
+/>
 
 ## Performance
 

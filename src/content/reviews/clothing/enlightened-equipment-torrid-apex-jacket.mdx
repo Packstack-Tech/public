@@ -12,7 +12,7 @@ published_at: "2026-06-03"
 description: "The EE Torrid Apex is a 215g synthetic insulated jacket built for ultralight backpackers and thru-hikers who need reliable warmth in damp, unpredictable conditions."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,19 +32,24 @@ keeps coming back to.
 
 ## Key Specs
 
-| Spec               | Detail                                                                                           |
-| ------------------ | ------------------------------------------------------------------------------------------------ |
-| **Weight**         | 215g / 7.6 oz (7D, starting weight)                                                              |
-| **Insulation**     | 2oz/yd² CLIMASHIELD™ APEX synthetic                                                              |
-| **Fabric Options** | 7D, 10D, or 20D ultralight nylon                                                                 |
-| **DWR**            | C0 DWR, PFC-Free                                                                                 |
-| **Hood**           | Optional; shock cord adjustable, insulated                                                       |
-| **Pockets**        | 2 zippered insulated handwarmer pockets                                                          |
-| **Sizing**         | XS–3XL; tall option available (+2" torso, +1" sleeve)                                            |
-| **MSRP**           | ~$170 (stock) / ~$180 (custom)                                                                   |
-| **Comparison**     | See how the [Torrid Apex Jacket compares](/tools/ultralight-research/insulation) to similar gear |
+| Spec               | Detail                                                |
+| ------------------ | ----------------------------------------------------- |
+| **Weight**         | 215g / 7.6 oz (7D, starting weight)                   |
+| **Insulation**     | 2oz/yd² CLIMASHIELD™ APEX synthetic                   |
+| **Fabric Options** | 7D, 10D, or 20D ultralight nylon                      |
+| **DWR**            | C0 DWR, PFC-Free                                      |
+| **Hood**           | Optional; shock cord adjustable, insulated            |
+| **Pockets**        | 2 zippered insulated handwarmer pockets               |
+| **Sizing**         | XS–3XL; tall option available (+2" torso, +1" sleeve) |
+| **MSRP**           | ~$170 (stock) / ~$180 (custom)                        |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="insulation"
+/>
 
 ## Performance
 

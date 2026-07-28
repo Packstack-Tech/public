@@ -12,7 +12,7 @@ published_at: "2026-04-27"
 description: "The Zpacks Mini-D Carabiner is a 2.8g anodized aluminum snap-gate clip sold in 4-packs, built for ultralight pack organization and light-duty food hanging."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The Zpacks Mini-D Carabiner is a small, anodized aluminum snap-gate clip aimed s
 
 ## Key Specs
 
-| Spec              | Detail                                                                                               |
-| ----------------- | ---------------------------------------------------------------------------------------------------- |
-| **Weight**        | 2.8 g / 0.1 oz per unit                                                                              |
-| **Sold As**       | 4-pack                                                                                               |
-| **Material**      | Anodized aluminum                                                                                    |
-| **Dimensions**    | 1 5/8" L × 1" W × 1/8" thick                                                                         |
-| **Gate Type**     | Snap gate (spring latch)                                                                             |
-| **Not Rated For** | Human body weight                                                                                    |
-| **Comparison**    | See how [Zpacks Mini-D Carabiner compares](/tools/ultralight-research/hardware) to similar gear |
+| Spec              | Detail                       |
+| ----------------- | ---------------------------- |
+| **Weight**        | 2.8 g / 0.1 oz per unit      |
+| **Sold As**       | 4-pack                       |
+| **Material**      | Anodized aluminum            |
+| **Dimensions**    | 1 5/8" L × 1" W × 1/8" thick |
+| **Gate Type**     | Snap gate (spring latch)     |
+| **Not Rated For** | Human body weight            |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hardware"
+/>
 
 ## Performance
 

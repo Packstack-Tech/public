@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "A 65g minimalist fanny pack from LiteAF that trades padding for pure gram-shaving efficiency—here's how it holds up on trail."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The LiteAF Feather Weight Fanny Pack is about as no-frills as hip storage gets: 
 
 ## Key Specs
 
-| Spec           | Detail                                                                                           |
-| -------------- | ------------------------------------------------------------------------------------------------ |
-| Weight         | 65g (2.3 oz) Dyneema version; 68g (2.4 oz) Ultra200 version                                      |
-| Capacity       | 1.5 L                                                                                            |
-| Dimensions     | 8" x 4" x 2.75"                                                                                  |
-| Hip belt range | Up to 46" / 117 cm                                                                               |
-| Materials      | Ultra200, EPLX (ECOPAK™), or 2.92 oz Dyneema Composite Fabric                                    |
-| Pockets        | 3 (main compartment, front zip pocket, stretch front pouch on some builds)                       |
-| Made in        | USA                                                                                              |
-| Price          | $50–$55                                                                                          |
-| **Comparison** | See how [Feather Weight Fanny Pack compares](/tools/ultralight-research/daypack) to similar gear |
+| Spec           | Detail                                                                     |
+| -------------- | -------------------------------------------------------------------------- |
+| Weight         | 65g (2.3 oz) Dyneema version; 68g (2.4 oz) Ultra200 version                |
+| Capacity       | 1.5 L                                                                      |
+| Dimensions     | 8" x 4" x 2.75"                                                            |
+| Hip belt range | Up to 46" / 117 cm                                                         |
+| Materials      | Ultra200, EPLX (ECOPAK™), or 2.92 oz Dyneema Composite Fabric              |
+| Pockets        | 3 (main compartment, front zip pocket, stretch front pouch on some builds) |
+| Made in        | USA                                                                        |
+| Price          | $50–$55                                                                    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="daypack"
+/>
 
 ## Performance
 

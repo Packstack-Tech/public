@@ -12,7 +12,7 @@ published_at: "2026-07-13"
 description: "A balanced review of the Primus LiTech Trek Kettle — a 270g hard-anodized aluminum 1L pot with non-stick coating and a lid that doubles as a frying pan."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Primus LiTech Trek Kettle is a 1-liter hard-anodized aluminum pot that ships
 
 ## Key Specs
 
-| Spec              | Value                                                                                     |
-| ----------------- | ----------------------------------------------------------------------------------------- |
-| Weight (full set) | 270g (9.5 oz)                                                                             |
-| Capacity          | 1.0L                                                                                      |
-| Height            | 135mm                                                                                     |
-| Diameter          | 125mm                                                                                     |
-| Material          | Hard-anodized aluminum                                                                    |
-| Inner Coating     | PTFE non-stick (multilayer)                                                               |
-| Includes          | 1L pot, fry pan lid, net stuff sack                                                       |
-| Item #            | P731722                                                                                   |
-| **Comparison**    | See how [LiTech Trek Kettle compares](/tools/ultralight-research/pot-pan) to similar gear |
+| Spec              | Value                               |
+| ----------------- | ----------------------------------- |
+| Weight (full set) | 270g (9.5 oz)                       |
+| Capacity          | 1.0L                                |
+| Height            | 135mm                               |
+| Diameter          | 125mm                               |
+| Material          | Hard-anodized aluminum              |
+| Inner Coating     | PTFE non-stick (multilayer)         |
+| Includes          | 1L pot, fry pan lid, net stuff sack |
+| Item #            | P731722                             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="pot-pan"
+/>
 
 ## Performance
 

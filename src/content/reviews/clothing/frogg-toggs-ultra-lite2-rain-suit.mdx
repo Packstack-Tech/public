@@ -12,7 +12,7 @@ published_at: "2026-06-01"
 description: "The Frogg Toggs Ultra-Lite2 Rain Suit delivers genuine waterproof protection at 295g and roughly $20—an unbeatable emergency layer, but with real durability trade-offs you need to know about."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The Frogg Toggs Ultra-Lite2 Rain Suit is a two-piece jacket-and-pants set aimed 
 
 ## Key Specs
 
-| Spec                  | Detail                                                                                                     |
-| --------------------- | ---------------------------------------------------------------------------------------------------------- |
-| **Weight**            | 295g (10.4 oz) — jacket + pants                                                                            |
-| **Material**          | Non-woven polypropylene (DriPore Gen 2 bi-laminate)                                                        |
-| **Seam Construction** | Welded (pressure-sealed, not sewn)                                                                         |
-| **Waterproof Rating** | ASTM F1695 / ASTM F1670 certified                                                                          |
-| **Includes**          | Jacket, pants, stuff sack                                                                                  |
-| **Jacket Features**   | Adjustable hood with cord locks, full-length front zipper with storm flap, elastic cuffs                   |
-| **Pant Features**     | Elastic waist, straight-leg design, wide cuff openings                                                     |
-| **Pockets**           | None                                                                                                       |
-| **Price**             | ~$20–25                                                                                                    |
-| **Warranty**          | 60 days against manufacturer defects                                                                       |
-| **Comparison**        | See how [Frogg Toggs Ultra-Lite2 Rain Suit compares](/tools/ultralight-research/rain-gear) to similar gear |
+| Spec                  | Detail                                                                                   |
+| --------------------- | ---------------------------------------------------------------------------------------- |
+| **Weight**            | 295g (10.4 oz) — jacket + pants                                                          |
+| **Material**          | Non-woven polypropylene (DriPore Gen 2 bi-laminate)                                      |
+| **Seam Construction** | Welded (pressure-sealed, not sewn)                                                       |
+| **Waterproof Rating** | ASTM F1695 / ASTM F1670 certified                                                        |
+| **Includes**          | Jacket, pants, stuff sack                                                                |
+| **Jacket Features**   | Adjustable hood with cord locks, full-length front zipper with storm flap, elastic cuffs |
+| **Pant Features**     | Elastic waist, straight-leg design, wide cuff openings                                   |
+| **Pockets**           | None                                                                                     |
+| **Price**             | ~$20–25                                                                                  |
+| **Warranty**          | 60 days against manufacturer defects                                                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="rain-gear"
+/>
 
 ## Performance
 

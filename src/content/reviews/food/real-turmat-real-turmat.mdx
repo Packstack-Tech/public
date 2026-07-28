@@ -12,7 +12,7 @@ published_at: "2026-07-12"
 description: "REAL Turmat is a Norwegian freeze-dried meal line made in Tromsø for backpackers and expeditions — strong on taste and variety, but it'll cost you."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ REAL Turmat is a Norwegian freeze-dried meal line produced by Drytech in Tromsø
 
 ## Key Specs
 
-| Spec                            | Details                                                                         |
-| ------------------------------- | ------------------------------------------------------------------------------- |
-| **Dry weight**                  | ~130 g (varies by meal)                                                         |
-| **Rehydrated weight**           | ~500 g                                                                          |
-| **Calories (standard range)**   | ~500–650 kcal per pouch                                                         |
-| **Calories (Field Meal range)** | ~700 kcal per pouch                                                             |
-| **Prep time**                   | 8–10 minutes                                                                    |
-| **Water required**              | ~350–400 ml boiling water                                                       |
-| **Shelf life**                  | 5 years (longer if properly stored)                                             |
-| **Packaging**                   | Vacuum-sealed, eat-from-pouch                                                   |
-| **Dietary options**             | Vegan, vegetarian, gluten-free, lactose-free available                          |
-| **Origin**                      | Tromsø, Norway                                                                  |
-| **Comparison**                  | See how [REAL Turmat compares](/tools/ultralight-research/meal) to similar gear |
+| Spec                            | Details                                                |
+| ------------------------------- | ------------------------------------------------------ |
+| **Dry weight**                  | ~130 g (varies by meal)                                |
+| **Rehydrated weight**           | ~500 g                                                 |
+| **Calories (standard range)**   | ~500–650 kcal per pouch                                |
+| **Calories (Field Meal range)** | ~700 kcal per pouch                                    |
+| **Prep time**                   | 8–10 minutes                                           |
+| **Water required**              | ~350–400 ml boiling water                              |
+| **Shelf life**                  | 5 years (longer if properly stored)                    |
+| **Packaging**                   | Vacuum-sealed, eat-from-pouch                          |
+| **Dietary options**             | Vegan, vegetarian, gluten-free, lactose-free available |
+| **Origin**                      | Tromsø, Norway                                         |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="meal"
+/>
 
 ## Performance
 

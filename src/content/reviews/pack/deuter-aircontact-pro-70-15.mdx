@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A heavy-duty, adjustable-back expedition pack built to haul serious weight in comfort — reviewed for durability, fit, and organization."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Aircontact PRO 70 + 15 is Deuter's flagship load-hauler — a burly, contact
 
 ## Key Specs
 
-| Spec              | Detail                                                                                          |
-| ----------------- | ----------------------------------------------------------------------------------------------- |
-| Weight            | 3500 g (~7 lb 11 oz)                                                                            |
-| Volume            | 70 + 15 L (main body + lid extension)                                                           |
-| Dimensions        | 90 x 36 x 28 cm (L x W x D)                                                                     |
-| Back length range | 44–56 cm, adjustable                                                                            |
-| Frame             | Internal aluminum V-frame, contact-style back panel                                             |
-| Hipbelt           | VariFlex pivoting fins                                                                          |
-| Main fabric       | 600D polyester (base) / 330D polyamide-nylon 6.6 ripstop (body), PU coated                      |
-| Extras            | Removable rain cover, detachable floating lid, side compression straps                          |
-| **Comparison**    | See how [Aircontact PRO 70 + 15 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec              | Detail                                                                     |
+| ----------------- | -------------------------------------------------------------------------- |
+| Weight            | 3500 g (~7 lb 11 oz)                                                       |
+| Volume            | 70 + 15 L (main body + lid extension)                                      |
+| Dimensions        | 90 x 36 x 28 cm (L x W x D)                                                |
+| Back length range | 44–56 cm, adjustable                                                       |
+| Frame             | Internal aluminum V-frame, contact-style back panel                        |
+| Hipbelt           | VariFlex pivoting fins                                                     |
+| Main fabric       | 600D polyester (base) / 330D polyamide-nylon 6.6 ripstop (body), PU coated |
+| Extras            | Removable rain cover, detachable floating lid, side compression straps     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

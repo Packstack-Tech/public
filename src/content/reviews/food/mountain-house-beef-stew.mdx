@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "A classic 30-year-shelf-life freeze-dried backpacking stew that's easy to make but light on meat and heavy on sodium."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ Mountain House's Beef Stew is one of the brand's original just-add-water pouch m
 
 ## Key Specs
 
-| Spec               | Detail                                                                        |
-| ------------------ | ----------------------------------------------------------------------------- |
-| Weight (pouch)     | 122 g (4.3 oz)                                                                |
-| Servings per pouch | 2                                                                             |
-| Serving size       | 1 cup (46 g dry mix)                                                          |
-| Calories per pouch | ~420 kcal total (210 kcal per serving)                                        |
-| Protein            | ~12 g per serving (~20 g per pouch)                                           |
-| Sodium             | ~850 mg per serving (~1,700 mg per pouch)                                     |
-| Prep time          | 10 minutes                                                                    |
-| Gluten-free        | Yes                                                                           |
-| Shelf life         | 30 years                                                                      |
-| **Comparison**     | See how [Beef Stew compares](/tools/ultralight-research/meal) to similar gear |
+| Spec               | Detail                                    |
+| ------------------ | ----------------------------------------- |
+| Weight (pouch)     | 122 g (4.3 oz)                            |
+| Servings per pouch | 2                                         |
+| Serving size       | 1 cup (46 g dry mix)                      |
+| Calories per pouch | ~420 kcal total (210 kcal per serving)    |
+| Protein            | ~12 g per serving (~20 g per pouch)       |
+| Sodium             | ~850 mg per serving (~1,700 mg per pouch) |
+| Prep time          | 10 minutes                                |
+| Gluten-free        | Yes                                       |
+| Shelf life         | 30 years                                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="meal"
+/>
 
 ## Performance
 

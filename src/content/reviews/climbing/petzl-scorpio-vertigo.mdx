@@ -12,7 +12,7 @@ published_at: "2026-07-05"
 description: "The Petzl SCORPIO VERTIGO is a lightweight 365g via ferrata Y-lanyard with elastic arms, VERTIGO WIRE-LOCK carabiners, and a progressive-tearing energy absorber."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Petzl SCORPIO VERTIGO is a Y-shaped via ferrata lanyard built around a progr
 
 ## Key Specs
 
-| Spec                           | Value                                                                                    |
-| ------------------------------ | ---------------------------------------------------------------------------------------- |
-| **Weight**                     | 365 g                                                                                    |
-| **Lanyard Length (retracted)** | 68 cm                                                                                    |
-| **Lanyard Length (extended)**  | 106 cm                                                                                   |
-| **Short Arm Length**           | 22 cm (without carabiner)                                                                |
-| **User Weight Range**          | 40–120 kg                                                                                |
-| **Materials**                  | High-modulus polyethylene, polyester, aluminum                                           |
-| **Certifications**             | CE EN 958, UIAA                                                                          |
-| **Storage Pouch**              | Included (100% recycled polyester)                                                       |
-| **Comparison**                 | See how [SCORPIO VERTIGO compares](/tools/ultralight-research/soft-good) to similar gear |
+| Spec                           | Value                                          |
+| ------------------------------ | ---------------------------------------------- |
+| **Weight**                     | 365 g                                          |
+| **Lanyard Length (retracted)** | 68 cm                                          |
+| **Lanyard Length (extended)**  | 106 cm                                         |
+| **Short Arm Length**           | 22 cm (without carabiner)                      |
+| **User Weight Range**          | 40–120 kg                                      |
+| **Materials**                  | High-modulus polyethylene, polyester, aluminum |
+| **Certifications**             | CE EN 958, UIAA                                |
+| **Storage Pouch**              | Included (100% recycled polyester)             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="soft-good"
+/>
 
 ## Performance
 

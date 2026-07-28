@@ -12,7 +12,7 @@ published_at: "2026-07-15"
 description: "The Optimus Titanium Spork is a no-frills CP titanium utensil for weight-conscious hikers, but it faces stiff competition from more established rivals at a similar price."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The Optimus Titanium Spork is a straightforward, one-piece CP titanium utensil a
 
 ## Key Specs
 
-| Spec                  | Value                                                                                 |
-| --------------------- | ------------------------------------------------------------------------------------- |
-| Weight                | 17 g (0.6 oz)                                                                         |
-| Length                | 165 mm (6.5 in)                                                                       |
-| Material              | CP (Commercially Pure) Titanium                                                       |
-| Handle Finish         | Matte                                                                                 |
-| Eating Surface Finish | Polished                                                                              |
-| Attachment Point      | End eyelet                                                                            |
-| **Comparison**        | See how [Titanium Spork compares](/tools/ultralight-research/utensil) to similar gear |
+| Spec                  | Value                           |
+| --------------------- | ------------------------------- |
+| Weight                | 17 g (0.6 oz)                   |
+| Length                | 165 mm (6.5 in)                 |
+| Material              | CP (Commercially Pure) Titanium |
+| Handle Finish         | Matte                           |
+| Eating Surface Finish | Polished                        |
+| Attachment Point      | End eyelet                      |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="utensil"
+/>
 
 ## Performance
 

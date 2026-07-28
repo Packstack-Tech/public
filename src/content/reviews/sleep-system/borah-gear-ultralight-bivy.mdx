@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A minimalist, made-in-Montana bivy that shaves weight to the bone — here's how the Argon fabric and DIY-style customization hold up in the field."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Borah Gear Ultralight Bivy is a no-frills, made-to-order bivy sack aimed at 
 
 ## Key Specs
 
-| Spec                  | Detail                                                                              |
-| --------------------- | ----------------------------------------------------------------------------------- |
-| Weight (chest zipper) | 5.0 oz (~142 g)                                                                     |
-| Weight (side zipper)  | 5.3 oz (~150 g)                                                                     |
-| Fabric options        | Argon67 or Argon90 DWR-coated ripstop nylon                                         |
-| Zipper options        | Chest zipper or side zipper                                                         |
-| Size options          | Standard or Long length; Standard or Wide width                                     |
-| Custom sizing         | Available on request                                                                |
-| Made in               | Montana, USA                                                                        |
-| **Comparison**        | See how [Ultralight Bivy compares](/tools/ultralight-research/bivy) to similar gear |
+| Spec                  | Detail                                          |
+| --------------------- | ----------------------------------------------- |
+| Weight (chest zipper) | 5.0 oz (~142 g)                                 |
+| Weight (side zipper)  | 5.3 oz (~150 g)                                 |
+| Fabric options        | Argon67 or Argon90 DWR-coated ripstop nylon     |
+| Zipper options        | Chest zipper or side zipper                     |
+| Size options          | Standard or Long length; Standard or Wide width |
+| Custom sizing         | Available on request                            |
+| Made in               | Montana, USA                                    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="bivy"
+/>
 
 ## Performance
 

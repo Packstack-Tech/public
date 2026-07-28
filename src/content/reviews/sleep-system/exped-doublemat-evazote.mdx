@@ -12,7 +12,7 @@ published_at: "2026-07-01"
 description: "The Exped Doublemat Evazote is a 260g closed-cell EVA foam pad that unfolds to a generous 200x100cm — reviewed as a standalone and supplemental sleep system option."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Exped Doublemat Evazote is a large-format, closed-cell EVA foam pad that doe
 
 ## Key Specs
 
-| Spec                     | Value                                                                                               |
-| ------------------------ | --------------------------------------------------------------------------------------------------- |
-| **Weight**               | 260g (9.2 oz)                                                                                       |
-| **Dimensions (flat)**    | 200 x 100 cm                                                                                        |
-| **Thickness (unfolded)** | 4 mm                                                                                                |
-| **Thickness (folded)**   | 8 mm                                                                                                |
-| **R-Value (folded)**     | 1.2                                                                                                 |
-| **R-Value (unfolded)**   | 0.6                                                                                                 |
-| **Packed Size**          | 51 x 15 cm                                                                                          |
-| **Material**             | Evazote closed-cell EVA foam                                                                        |
-| **Includes**             | Stuff sack                                                                                          |
-| **Comparison**           | See how [Exped Doublemat Evazote compares](/tools/ultralight-research/sleeping-pad) to similar gear |
+| Spec                     | Value                        |
+| ------------------------ | ---------------------------- |
+| **Weight**               | 260g (9.2 oz)                |
+| **Dimensions (flat)**    | 200 x 100 cm                 |
+| **Thickness (unfolded)** | 4 mm                         |
+| **Thickness (folded)**   | 8 mm                         |
+| **R-Value (folded)**     | 1.2                          |
+| **R-Value (unfolded)**   | 0.6                          |
+| **Packed Size**          | 51 x 15 cm                   |
+| **Material**             | Evazote closed-cell EVA foam |
+| **Includes**             | Stuff sack                   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sleeping-pad"
+/>
 
 ## Performance
 

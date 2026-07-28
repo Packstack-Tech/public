@@ -12,7 +12,7 @@ published_at: "2026-05-07"
 description: "A super-concentrated, fragrance-free, all-purpose biodegradable camp soap that handles skin, hair, dishes, laundry, and technical fabrics from one small bottle."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -33,19 +33,24 @@ Bronner's.
 
 ## Key Specs
 
-| Spec                | Detail                                                                                 |
-| ------------------- | -------------------------------------------------------------------------------------- |
-| **Weight (40ml)**   | 55.4g (1.95 oz)                                                                        |
-| **Weight (89ml)**   | 110g (3.9 oz)                                                                          |
-| **Weight (250ml)**  | 295.4g (10.4 oz)                                                                       |
-| **Formula**         | Super-concentrated, biodegradable                                                      |
-| **Free of**         | Phosphate, paraben, fragrance                                                          |
-| **Compatible with** | Skin, hair, fabrics, wool, DWR technical fabrics, pots/pans                            |
-| **TSA Compliant**   | Yes (40ml and 89ml sizes)                                                              |
-| **Guarantee**       | Lifetime                                                                               |
-| **Comparison**      | See how [Wilderness Wash compares](/tools/ultralight-research/hygiene) to similar gear |
+| Spec                | Detail                                                      |
+| ------------------- | ----------------------------------------------------------- |
+| **Weight (40ml)**   | 55.4g (1.95 oz)                                             |
+| **Weight (89ml)**   | 110g (3.9 oz)                                               |
+| **Weight (250ml)**  | 295.4g (10.4 oz)                                            |
+| **Formula**         | Super-concentrated, biodegradable                           |
+| **Free of**         | Phosphate, paraben, fragrance                               |
+| **Compatible with** | Skin, hair, fabrics, wool, DWR technical fabrics, pots/pans |
+| **TSA Compliant**   | Yes (40ml and 89ml sizes)                                   |
+| **Guarantee**       | Lifetime                                                    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hygiene"
+/>
 
 ## Performance
 

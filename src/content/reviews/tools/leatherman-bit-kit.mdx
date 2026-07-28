@@ -12,7 +12,7 @@ published_at: "2026-07-15"
 description: "The Leatherman Bit Kit packs 42 driver tips into two slim plastic sleeves at 113.4g — a logical companion for any Leatherman-toting backpacker who actually needs to fix things on trail."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Leatherman Bit Kit is the full-coverage accessory for any Leatherman multi-t
 
 ## Key Specs
 
-| Spec                       | Value                                                                         |
-| -------------------------- | ----------------------------------------------------------------------------- |
-| Weight                     | 113.4g (4.0 oz)                                                               |
-| Total Bits                 | 21 double-ended                                                               |
-| Total Driver Tips          | 42                                                                            |
-| Bit Types                  | Hex, Phillips, Robertson (Square), Pozi, Torx, Flathead, Eyeglass             |
-| Compatibility              | All Leatherman tools/knives with bit drivers; Removable Bit Driver accessory  |
-| Eyeglass Bit Compatibility | Arc, Wave, and Charge models only                                             |
-| Includes                   | Two bit sleeves, nylon sheath                                                 |
-| Price                      | ~$25                                                                          |
-| **Comparison**             | See how [Bit Kit compares](/tools/ultralight-research/repair) to similar gear |
+| Spec                       | Value                                                                        |
+| -------------------------- | ---------------------------------------------------------------------------- |
+| Weight                     | 113.4g (4.0 oz)                                                              |
+| Total Bits                 | 21 double-ended                                                              |
+| Total Driver Tips          | 42                                                                           |
+| Bit Types                  | Hex, Phillips, Robertson (Square), Pozi, Torx, Flathead, Eyeglass            |
+| Compatibility              | All Leatherman tools/knives with bit drivers; Removable Bit Driver accessory |
+| Eyeglass Bit Compatibility | Arc, Wave, and Charge models only                                            |
+| Includes                   | Two bit sleeves, nylon sheath                                                |
+| Price                      | ~$25                                                                         |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="repair"
+/>
 
 ## Performance
 

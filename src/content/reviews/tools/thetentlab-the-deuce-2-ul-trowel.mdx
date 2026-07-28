@@ -12,7 +12,7 @@ published_at: "2026-04-27"
 description: "A 17g, 7075-T6 aluminum cathole trowel that's earned its place in thousands of packs — if you're willing to learn how to use it properly."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The TheTentLab Deuce #2 is a backcountry latrine trowel that weighs just 17g and
 
 ## Key Specs
 
-| Spec           | Detail                                                                                           |
-| -------------- | ------------------------------------------------------------------------------------------------ |
-| **Weight**     | 17g / 0.6 oz                                                                                     |
-| **Dimensions** | 2.5" wide × 6.8" long                                                                            |
-| **Material**   | 7075-T6 aerospace-grade aluminum                                                                 |
-| **Price**      | ~$20.95 (DirtSaw version)                                                                        |
-| **Warranty**   | Lifetime (replace for cost of postage)                                                           |
-| **Made In**    | USA and South Korea (by DAC)                                                                     |
-| **Comparison** | See how the [Deuce #2 UL Trowel compares](/tools/ultralight-research/processing) to similar gear |
+| Spec           | Detail                                 |
+| -------------- | -------------------------------------- |
+| **Weight**     | 17g / 0.6 oz                           |
+| **Dimensions** | 2.5" wide × 6.8" long                  |
+| **Material**   | 7075-T6 aerospace-grade aluminum       |
+| **Price**      | ~$20.95 (DirtSaw version)              |
+| **Warranty**   | Lifetime (replace for cost of postage) |
+| **Made In**    | USA and South Korea (by DAC)           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="processing"
+/>
 
 ## Performance
 

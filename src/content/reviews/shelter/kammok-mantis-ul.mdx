@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "Kammok's all-in-one ultralight hammock tent packs a hammock, bugnet, tarp, and suspension into one 2 lb system."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,9 +32,14 @@ The Mantis UL is Kammok's ultralight take on the all-in-one hammock tent: hammoc
 | Suspension         | (2) Python 10 ft UL straps                                                                                        |
 | Setup time         | ~60 seconds                                                                                                       |
 | Includes           | Hammock body, mesh canopy, structural ridgeline, (2) Kanga Claws, rainfly w/ 6 guy-outs, (2) Python 10' UL straps |
-| **Comparison**     | See how [Mantis UL compares](/tools/ultralight-research/hammock) to similar gear                                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hammock"
+/>
 
 ## Performance
 

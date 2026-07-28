@@ -12,7 +12,7 @@ published_at: "2026-05-29"
 description: "A deep-dive review of the ULA UltraGrid CDT — a 50L frameless pack built for ultralight thru-hikers who have their base weight dialed well below 12 lbs."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,22 +31,27 @@ work of dialing in your kit before you clip the hip belt.
 
 ## Key Specs
 
-| Spec                     | Value                                                                                          |
-| ------------------------ | ---------------------------------------------------------------------------------------------- |
-| **Weight**               | 27.1 oz / 768 g (with hip belt)                                                                |
-| **Stripped Weight**      | 15.3 oz (hip belt, foam panel, sternum strap, shock cord removed)                              |
-| **Volume**               | 50 L / 3,051 cu in                                                                             |
-| **Closed Storage**       | 29.1 L (main bag + extension collar)                                                           |
-| **Max Recommended Load** | 25 lbs / 11.3 kg                                                                               |
-| **Frame Type**           | Frameless (removable foam back panel)                                                          |
-| **Material**             | UltraGrid — 200D recycled nylon with UHMWPE grid                                               |
-| **Closure**              | Roll-top with sewn-in Y-strap                                                                  |
-| **Shoulder Straps**      | J-shaped or S-shaped (gender-specific)                                                         |
-| **Hip Belt**             | Replaceable, Velcro-attached, two-tier adjustment                                              |
-| **Made In**              | Logan, Utah, USA                                                                               |
-| **Comparison**           | See how the [ULA UltraGrid CDT compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                     | Value                                                             |
+| ------------------------ | ----------------------------------------------------------------- |
+| **Weight**               | 27.1 oz / 768 g (with hip belt)                                   |
+| **Stripped Weight**      | 15.3 oz (hip belt, foam panel, sternum strap, shock cord removed) |
+| **Volume**               | 50 L / 3,051 cu in                                                |
+| **Closed Storage**       | 29.1 L (main bag + extension collar)                              |
+| **Max Recommended Load** | 25 lbs / 11.3 kg                                                  |
+| **Frame Type**           | Frameless (removable foam back panel)                             |
+| **Material**             | UltraGrid — 200D recycled nylon with UHMWPE grid                  |
+| **Closure**              | Roll-top with sewn-in Y-strap                                     |
+| **Shoulder Straps**      | J-shaped or S-shaped (gender-specific)                            |
+| **Hip Belt**             | Replaceable, Velcro-attached, two-tier adjustment                 |
+| **Made In**              | Logan, Utah, USA                                                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

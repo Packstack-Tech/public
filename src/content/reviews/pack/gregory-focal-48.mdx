@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A comfortable, well-ventilated lightweight backpack for weekend-to-week-long trips, though not quite in true ultralight territory."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Gregory Focal 48 is a lightweight (not ultralight) backpacking pack built ar
 
 ## Key Specs
 
-| Spec                 | Value                                                                             |
-| -------------------- | --------------------------------------------------------------------------------- |
-| Weight               | 1,220 g (2.69 lb), size M                                                         |
-| Volume               | 48L (44L S / 48L M / 52L L)                                                       |
-| Max recommended load | 30 lb (14 kg)                                                                     |
-| Frame                | Ultralight perimeter aluminum wire + fiberglass anti-barreling cross-stay         |
-| Back panel           | Tensioned mesh, fully ventilated                                                  |
-| Sizes                | S, M, L (fixed torso length per size)                                             |
-| Hydration compatible | Yes (SpeedClip hanger, sleeve in main compartment)                                |
-| Gender               | Men's (women's version: Facet 48)                                                 |
-| Access               | Top-loading, removable lid, weather flap for lidless use                          |
-| **Comparison**       | See how [Focal 48 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                 | Value                                                                     |
+| -------------------- | ------------------------------------------------------------------------- |
+| Weight               | 1,220 g (2.69 lb), size M                                                 |
+| Volume               | 48L (44L S / 48L M / 52L L)                                               |
+| Max recommended load | 30 lb (14 kg)                                                             |
+| Frame                | Ultralight perimeter aluminum wire + fiberglass anti-barreling cross-stay |
+| Back panel           | Tensioned mesh, fully ventilated                                          |
+| Sizes                | S, M, L (fixed torso length per size)                                     |
+| Hydration compatible | Yes (SpeedClip hanger, sleeve in main compartment)                        |
+| Gender               | Men's (women's version: Facet 48)                                         |
+| Access               | Top-loading, removable lid, weather flap for lidless use                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A tiny, 23.3g translucent silnylon pouch that clips into six spots on the K4 pack system — simple organization done right."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -28,9 +28,14 @@ The K4 Stash Pocket is Exo Mtn Gear's answer to the age-old backcountry problem 
 | Compatibility     | K4 3600, K4 5000, K4 7200                                                                      |
 | Attachment points | 6 quick-release connections per bag (2 main bag, 1 per side pocket, 1 hydration sleeve, 1 lid) |
 | Closure           | Zippered                                                                                       |
-| **Comparison**    | See how [K4 Stash Pocket compares](/tools/ultralight-research/organization) to similar gear    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="organization"
+/>
 
 ## Performance
 

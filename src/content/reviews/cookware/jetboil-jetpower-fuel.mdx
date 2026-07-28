@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "Jetboil JetPower is a propane/isobutane canister fuel available in 100g, 230g, and 450g sizes. Solid four-season performance with broad compatibility — but some trade-offs worth knowing before you buy."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,24 +20,29 @@ Jetboil JetPower is the brand's own propane/isobutane canister fuel, designed to
 
 ## Key Specs
 
-| Spec                    | Detail                                                                            |
-| ----------------------- | --------------------------------------------------------------------------------- |
-| **Fuel Blend**          | 80% Isobutane / 20% Propane                                                       |
-| **Available Sizes**     | 100g, 230g, 450g                                                                  |
-| **Gross Weight (100g)** | 199g / 7.01 oz                                                                    |
-| **Gross Weight (230g)** | 380g / 13.40 oz                                                                   |
-| **Gross Weight (450g)** | 666g / 23.50 oz                                                                   |
-| **Dimensions (100g)**   | 9 cm dia × 7 cm tall                                                              |
-| **Dimensions (230g)**   | 11 cm dia × 10 cm tall                                                            |
-| **Dimensions (450g)**   | 11 cm dia × 15 cm tall                                                            |
-| **Boil Yield (100g)**   | ~12L (manufacturer, ideal conditions)                                             |
-| **Boil Yield (230g)**   | ~24L (manufacturer, ideal conditions)                                             |
-| **Boil Yield (450g)**   | ~48L (manufacturer, ideal conditions)                                             |
-| **Valve Standard**      | EN417 (Lindal valve)                                                              |
-| **Recyclable**          | Yes, with Jetboil CrunchIt tool (sold separately)                                 |
-| **Comparison**          | See how [JetPower Fuel compares](/tools/ultralight-research/fuel) to similar gear |
+| Spec                    | Detail                                            |
+| ----------------------- | ------------------------------------------------- |
+| **Fuel Blend**          | 80% Isobutane / 20% Propane                       |
+| **Available Sizes**     | 100g, 230g, 450g                                  |
+| **Gross Weight (100g)** | 199g / 7.01 oz                                    |
+| **Gross Weight (230g)** | 380g / 13.40 oz                                   |
+| **Gross Weight (450g)** | 666g / 23.50 oz                                   |
+| **Dimensions (100g)**   | 9 cm dia × 7 cm tall                              |
+| **Dimensions (230g)**   | 11 cm dia × 10 cm tall                            |
+| **Dimensions (450g)**   | 11 cm dia × 15 cm tall                            |
+| **Boil Yield (100g)**   | ~12L (manufacturer, ideal conditions)             |
+| **Boil Yield (230g)**   | ~24L (manufacturer, ideal conditions)             |
+| **Boil Yield (450g)**   | ~48L (manufacturer, ideal conditions)             |
+| **Valve Standard**      | EN417 (Lindal valve)                              |
+| **Recyclable**          | Yes, with Jetboil CrunchIt tool (sold separately) |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="fuel"
+/>
 
 ## Performance
 

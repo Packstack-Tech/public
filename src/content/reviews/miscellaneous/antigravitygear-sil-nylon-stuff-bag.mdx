@@ -12,7 +12,7 @@ published_at: "2026-06-26"
 description: "A budget-friendly, featherlight silnylon stuff sack for ultralight backpackers — versatile organizer, honest trade-offs, hard to beat at $10–$12."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,19 +30,24 @@ fabric.
 
 ## Key Specs
 
-| Spec                             | Detail                                                                                                           |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **Weight (manufacturer, large)** | 0.6 oz / 18g                                                                                                     |
-| **Weight (user-reported)**       | 48.2g — see note below                                                                                           |
-| **Volume**                       | 10.2L (large)                                                                                                    |
-| **Dimensions**                   | 11" D × 15" H (large)                                                                                            |
-| **Material**                     | 1.1 oz sil-nylon                                                                                                 |
-| **Closure**                      | Drawstring with cord lock                                                                                        |
-| **Sizes Available**              | Small (2.25L), Medium (4.5L), Large (10.2L)                                                                      |
-| **Price**                        | $10–$12                                                                                                          |
-| **Comparison**                   | See how [AntiGravityGear Sil-Nylon Stuff Bag compares](/tools/ultralight-research/organization) to similar gear |
+| Spec                             | Detail                                      |
+| -------------------------------- | ------------------------------------------- |
+| **Weight (manufacturer, large)** | 0.6 oz / 18g                                |
+| **Weight (user-reported)**       | 48.2g — see note below                      |
+| **Volume**                       | 10.2L (large)                               |
+| **Dimensions**                   | 11" D × 15" H (large)                       |
+| **Material**                     | 1.1 oz sil-nylon                            |
+| **Closure**                      | Drawstring with cord lock                   |
+| **Sizes Available**              | Small (2.25L), Medium (4.5L), Large (10.2L) |
+| **Price**                        | $10–$12                                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="organization"
+/>
 
 **A note on weight:** <cite index="10-4">The manufacturer lists the large at 0.6 oz / 18g, the medium at 0.4 oz / 12g, and the small at 0.2 oz / 6g.</cite> The 48.2g figure provided with this listing doesn't align with any of those official specs for the large (10.2L) variant — it's possible it reflects a different size variant, a measured weight with additional components, or a discrepancy in the product database. I'd treat the manufacturer's 18g figure as the more reliable reference for the large, but if you're building a spreadsheet baseweight, it's worth putting it on your own scale.
 

@@ -12,7 +12,7 @@ published_at: "2026-05-14"
 description: "The Katadyn BeFree 0.6L is a ultralight squeeze-style filter bottle built for on-the-move hydration. Blazing flow rate, easy cleaning — but the included flask has a durability problem."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Katadyn BeFree 0.6L is a hollow-fiber squeeze filter fused with a collapsibl
 
 ## Key Specs
 
-| Spec                 | Value                                                                                         |
-| -------------------- | --------------------------------------------------------------------------------------------- |
-| **Weight**           | 59g (2.1 oz)                                                                                  |
-| **Capacity**         | 0.6L                                                                                          |
-| **Filter Type**      | EZ-Clean Membrane™ hollow fiber                                                               |
-| **Flask Material**   | Hydrapak® SoftFlask™ TPU, BPA & PVC free                                                      |
-| **Pore Size**        | 0.1 micron                                                                                    |
-| **Flow Rate**        | Up to 2L/min                                                                                  |
-| **Filter Capacity**  | 1,000L                                                                                        |
-| **Dimensions**       | 8.0 × 6.5 × 27.5 cm                                                                           |
-| **Virus Protection** | No                                                                                            |
-| **Comparison**       | See how [Katadyn BeFree 0.6L compares](/tools/ultralight-research/filtration) to similar gear |
+| Spec                 | Value                                    |
+| -------------------- | ---------------------------------------- |
+| **Weight**           | 59g (2.1 oz)                             |
+| **Capacity**         | 0.6L                                     |
+| **Filter Type**      | EZ-Clean Membrane™ hollow fiber          |
+| **Flask Material**   | Hydrapak® SoftFlask™ TPU, BPA & PVC free |
+| **Pore Size**        | 0.1 micron                               |
+| **Flow Rate**        | Up to 2L/min                             |
+| **Filter Capacity**  | 1,000L                                   |
+| **Dimensions**       | 8.0 × 6.5 × 27.5 cm                      |
+| **Virus Protection** | No                                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="filtration"
+/>
 
 ## Performance
 

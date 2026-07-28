@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A hands-on look at the rectangular, full-width version of Therm-a-Rest's flagship winter pad — is the R-7.3 warmth and extra elbow room worth the weight and price?"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The NeoAir XTherm NXT MAX is Therm-a-Rest's warmest three-season-plus pad, resha
 
 ## Key Specs
 
-| Spec              | Detail                                                                                            |
-| ----------------- | ------------------------------------------------------------------------------------------------- |
-| R-value           | 7.3                                                                                               |
-| Weight (Reg-Wide) | 652 g / 23 oz                                                                                     |
-| Weight (Large)    | 680 g / 24 oz                                                                                     |
-| Thickness         | 7.6 cm / 3 in                                                                                     |
-| Shape             | Full-rectangular (MAX)                                                                            |
-| Top fabric        | 30D ripstop nylon                                                                                 |
-| Bottom fabric     | 70D nylon                                                                                         |
-| Valve             | WingLock                                                                                          |
-| Includes          | Pump sack, stuff sack, field repair kit                                                           |
-| **Comparison**    | See how [NeoAir XTherm NXT MAX compares](/tools/ultralight-research/sleeping-pad) to similar gear |
+| Spec              | Detail                                  |
+| ----------------- | --------------------------------------- |
+| R-value           | 7.3                                     |
+| Weight (Reg-Wide) | 652 g / 23 oz                           |
+| Weight (Large)    | 680 g / 24 oz                           |
+| Thickness         | 7.6 cm / 3 in                           |
+| Shape             | Full-rectangular (MAX)                  |
+| Top fabric        | 30D ripstop nylon                       |
+| Bottom fabric     | 70D nylon                               |
+| Valve             | WingLock                                |
+| Includes          | Pump sack, stuff sack, field repair kit |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sleeping-pad"
+/>
 
 ## Performance
 

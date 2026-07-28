@@ -12,7 +12,7 @@ published_at: "2026-04-24"
 description: "The MSR Mini-Groundhog is a 9.4g Y-beam aluminum stake that punches well above its weight class on firm soils — with one meaningful caveat."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -28,19 +28,24 @@ the full-sized version.
 
 ## Key Specs
 
-| Spec                      | Value                                                                                      |
-| ------------------------- | ------------------------------------------------------------------------------------------ |
-| **Weight (per stake)**    | 9.4g / 0.33 oz                                                                             |
-| **Total weight (6-pack)** | 56.4g / 2.0 oz                                                                             |
-| **Length**                | 6" / 15 cm                                                                                 |
-| **Diameter**              | 8 mm                                                                                       |
-| **Material**              | 7000-series aluminum                                                                       |
-| **Design**                | Y-beam                                                                                     |
-| **Best Soil**             | Medium to firm                                                                             |
-| **Quantity**              | 6                                                                                          |
-| **Comparison**            | See how [Mini-Groundhog Stakes compare](/tools/ultralight-research/hardware) to similar gear |
+| Spec                      | Value                |
+| ------------------------- | -------------------- |
+| **Weight (per stake)**    | 9.4g / 0.33 oz       |
+| **Total weight (6-pack)** | 56.4g / 2.0 oz       |
+| **Length**                | 6" / 15 cm           |
+| **Diameter**              | 8 mm                 |
+| **Material**              | 7000-series aluminum |
+| **Design**                | Y-beam               |
+| **Best Soil**             | Medium to firm       |
+| **Quantity**              | 6                    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hardware"
+/>
 
 ## Performance
 

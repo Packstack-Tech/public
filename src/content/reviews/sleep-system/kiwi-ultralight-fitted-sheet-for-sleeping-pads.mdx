@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A featherweight, elasticized ripstop liner that turns any inflatable sleeping pad into a fitted-sheet bed for quilt users."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The Kiwi Ultralight Fitted Sheet is exactly what it sounds like: a mini fitted s
 
 ## Key Specs
 
-| Spec           | Detail                                                                                              |
-| -------------- | --------------------------------------------------------------------------------------------------- |
-| Weight         | 105 g (including stuff sack)                                                                        |
-| Packed size    | 12 cm H x 7 cm diameter (roughly the size of a can of soda)                                         |
-| Material       | Uncalendered 20D nylon diamond ripstop, 35 g/m²                                                     |
-| Includes       | Attached stuff sack                                                                                 |
-| Color          | Black                                                                                               |
-| Sizing options | Regular (~52 x 183 cm pads) and Long/Wide (~65 x 197 cm pads), sold separately                      |
-| **Comparison** | See how [Fitted Sheet for Sleeping Pads compares](/tools/ultralight-research/liner) to similar gear |
+| Spec           | Detail                                                                         |
+| -------------- | ------------------------------------------------------------------------------ |
+| Weight         | 105 g (including stuff sack)                                                   |
+| Packed size    | 12 cm H x 7 cm diameter (roughly the size of a can of soda)                    |
+| Material       | Uncalendered 20D nylon diamond ripstop, 35 g/m²                                |
+| Includes       | Attached stuff sack                                                            |
+| Color          | Black                                                                          |
+| Sizing options | Regular (~52 x 183 cm pads) and Long/Wide (~65 x 197 cm pads), sold separately |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="liner"
+/>
 
 ## Performance
 

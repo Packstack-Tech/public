@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The CTUG 4L Fanny Pack is a bomber, ultralight hip pack built from X-Pac VX-21 — a solid choice for thru-hikers wanting front-access storage without the weight penalty."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ Chicken Tramper Ultralight Gear (CTUG) is a small Michigan-based cottage brand b
 
 ## Key Specs
 
-| Spec                 | Detail                                                                                    |
-| -------------------- | ----------------------------------------------------------------------------------------- |
-| **Weight**           | 68g (2.4 oz)                                                                              |
-| **Volume**           | 4L                                                                                        |
-| **Material**         | X-Pac VX-21                                                                               |
-| **Back Panel**       | 3D Spacer Mesh                                                                            |
-| **Zipper**           | YKK Water Resistant #5 Uretek                                                             |
-| **Water Resistance** | Water resistant (seams not sealed; not waterproof)                                        |
-| **Interior Pocket**  | Lycra 4-way stretch mesh                                                                  |
-| **Strap Length**     | ~55 in. (adjustable; crossbody-capable)                                                   |
-| **Customization**    | 169 possible two-color combinations                                                       |
-| **Comparison**       | See how [CTUG 4L Fanny Pack compares](/tools/ultralight-research/daypack) to similar gear |
+| Spec                 | Detail                                             |
+| -------------------- | -------------------------------------------------- |
+| **Weight**           | 68g (2.4 oz)                                       |
+| **Volume**           | 4L                                                 |
+| **Material**         | X-Pac VX-21                                        |
+| **Back Panel**       | 3D Spacer Mesh                                     |
+| **Zipper**           | YKK Water Resistant #5 Uretek                      |
+| **Water Resistance** | Water resistant (seams not sealed; not waterproof) |
+| **Interior Pocket**  | Lycra 4-way stretch mesh                           |
+| **Strap Length**     | ~55 in. (adjustable; crossbody-capable)            |
+| **Customization**    | 169 possible two-color combinations                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="daypack"
+/>
 
 ## Performance
 

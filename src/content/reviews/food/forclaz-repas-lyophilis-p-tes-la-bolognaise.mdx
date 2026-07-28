@@ -12,7 +12,7 @@ published_at: "2026-05-04"
 description: "A budget-friendly freeze-dried bolognese pasta from Decathlon's Forclaz line — fast prep, clean ingredients, but light on calories for hungry trekkers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,25 +20,30 @@ The Forclaz Repas Lyophilisé Pâtes à la Bolognaise is Decathlon's own-brand f
 
 ## Key Specs
 
-| Spec                           | Value                                                                                  |
-| ------------------------------ | -------------------------------------------------------------------------------------- |
-| **Total Weight (with bag)**    | 140 g                                                                                  |
-| **Dry Food Weight**            | 120 g                                                                                  |
-| **Rehydrated Weight**          | 400 g                                                                                  |
-| **Energy Density**             | 381 kcal / 100 g                                                                       |
-| **Total Calories (per pouch)** | 457 kcal                                                                               |
-| **Protein**                    | 23 g per pouch                                                                         |
-| **Fat**                        | 10 g per pouch                                                                         |
-| **Carbohydrates**              | 67 g per pouch                                                                         |
-| **Salt**                       | 3.5 g per pouch                                                                        |
-| **Water Required**             | 280 ml                                                                                 |
-| **Prep Time**                  | 5–8 min                                                                                |
-| **Packed Size**                | 17.5 × 18.5 × 5.5 cm                                                                   |
-| **Resealable Pouch**           | Yes                                                                                    |
-| **Price (FR)**                 | ~€8.49                                                                                 |
-| **Comparison**                 | See how [Forclaz Bolognaise compares](/tools/ultralight-research/meal) to similar gear |
+| Spec                           | Value                |
+| ------------------------------ | -------------------- |
+| **Total Weight (with bag)**    | 140 g                |
+| **Dry Food Weight**            | 120 g                |
+| **Rehydrated Weight**          | 400 g                |
+| **Energy Density**             | 381 kcal / 100 g     |
+| **Total Calories (per pouch)** | 457 kcal             |
+| **Protein**                    | 23 g per pouch       |
+| **Fat**                        | 10 g per pouch       |
+| **Carbohydrates**              | 67 g per pouch       |
+| **Salt**                       | 3.5 g per pouch      |
+| **Water Required**             | 280 ml               |
+| **Prep Time**                  | 5–8 min              |
+| **Packed Size**                | 17.5 × 18.5 × 5.5 cm |
+| **Resealable Pouch**           | Yes                  |
+| **Price (FR)**                 | ~€8.49               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="meal"
+/>
 
 ## Performance
 

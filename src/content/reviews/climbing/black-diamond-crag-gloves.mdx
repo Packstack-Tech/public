@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The Black Diamond Crag Gloves are lightweight, CE-certified full-finger belay and via ferrata gloves with a breathable mesh back and synthetic leather palm."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,17 +30,22 @@ cragging.
 
 ## Key Specs
 
-| Spec                 | Detail                                                                             |
-| -------------------- | ---------------------------------------------------------------------------------- |
-| **Weight**           | 93.4 g (pair)                                                                      |
-| **Palm Material**    | Synthetic leather                                                                  |
-| **Back Material**    | Breathable stretch mesh                                                            |
-| **Closure**          | Hook-and-loop Velcro wrist strap                                                   |
-| **Notable Features** | Knuckle padding, reinforced index finger and thumb crotch, pull-on/clip-in loop    |
-| **Certifications**   | CE EN 420, CE EN 388 (2131)                                                        |
-| **Comparison**       | See how [Crag Gloves compare](/tools/ultralight-research/personal) to similar gear |
+| Spec                 | Detail                                                                          |
+| -------------------- | ------------------------------------------------------------------------------- |
+| **Weight**           | 93.4 g (pair)                                                                   |
+| **Palm Material**    | Synthetic leather                                                               |
+| **Back Material**    | Breathable stretch mesh                                                         |
+| **Closure**          | Hook-and-loop Velcro wrist strap                                                |
+| **Notable Features** | Knuckle padding, reinforced index finger and thumb crotch, pull-on/clip-in loop |
+| **Certifications**   | CE EN 420, CE EN 388 (2131)                                                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="personal"
+/>
 
 ## Performance
 

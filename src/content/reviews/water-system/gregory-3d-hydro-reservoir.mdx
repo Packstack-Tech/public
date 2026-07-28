@@ -12,7 +12,7 @@ published_at: "2026-07-13"
 description: "The Gregory 3D Hydro 3L is a feature-rich hydration reservoir with a standout drying system and solid construction, but its 7 oz weight puts it squarely outside ultralight territory."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,16 +20,21 @@ The Gregory 3D Hydro is a feature-packed 3-liter hydration reservoir built aroun
 
 ## Key Specs
 
-| Spec            | Value                                                                                       |
-| --------------- | ------------------------------------------------------------------------------------------- |
-| Weight          | 198 g (7 oz)                                                                                |
-| Capacity        | 3L / 101.4 fl oz                                                                            |
-| Dimensions      | 17.25 × 7 × 3 in                                                                            |
-| Materials       | Metallocene PE Film, BPA & PVC Free                                                         |
-| Sizes Available | 2L, 3L                                                                                      |
-| **Comparison**  | See how [3D Hydro Reservoir compares](/tools/ultralight-research/hydration) to similar gear |
+| Spec            | Value                               |
+| --------------- | ----------------------------------- |
+| Weight          | 198 g (7 oz)                        |
+| Capacity        | 3L / 101.4 fl oz                    |
+| Dimensions      | 17.25 × 7 × 3 in                    |
+| Materials       | Metallocene PE Film, BPA & PVC Free |
+| Sizes Available | 2L, 3L                              |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hydration"
+/>
 
 ## Performance
 

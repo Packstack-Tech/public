@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "A deep dive into the Buff CoolNet UV neck gaiter — 34g of UPF 50+ sun protection with HeiQ cooling and Polygiene odor control for hot-weather hiking and thru-hiking."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Buff CoolNet UV is the brand's flagship warm-weather neck gaiter, engineered
 
 ## Key Specs
 
-| Spec              | Detail                                                                                  |
-| ----------------- | --------------------------------------------------------------------------------------- |
-| **Weight**        | 34 g (1.2 oz)                                                                           |
-| **Material**      | 95% REPREVE Recycled Polyester, 5% Elastane                                             |
-| **UPF Rating**    | UPF 50+                                                                                 |
-| **Wear Styles**   | 12+                                                                                     |
-| **Cooling Tech**  | HeiQ Smart Temp                                                                         |
-| **Odor Control**  | Polygiene (silver-ion)                                                                  |
-| **Construction**  | 100% seamless tubular                                                                   |
-| **Certification** | Skin Cancer Foundation approved                                                         |
-| **Comparison**    | See how [Buff CoolNet UV compares](/tools/ultralight-research/headwear) to similar gear |
+| Spec              | Detail                                      |
+| ----------------- | ------------------------------------------- |
+| **Weight**        | 34 g (1.2 oz)                               |
+| **Material**      | 95% REPREVE Recycled Polyester, 5% Elastane |
+| **UPF Rating**    | UPF 50+                                     |
+| **Wear Styles**   | 12+                                         |
+| **Cooling Tech**  | HeiQ Smart Temp                             |
+| **Odor Control**  | Polygiene (silver-ion)                      |
+| **Construction**  | 100% seamless tubular                       |
+| **Certification** | Skin Cancer Foundation approved             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="headwear"
+/>
 
 ## Performance
 

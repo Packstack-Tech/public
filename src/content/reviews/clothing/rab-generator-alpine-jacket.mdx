@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "A deep dive into Rab's Aerogel-infused PrimaLoft belay jacket — how it performs on cold summits, frigid belays, and everything in between."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Generator Alpine is Rab's flagship synthetic belay jacket, built for winter 
 
 ## Key Specs
 
-| Spec             | Detail                                                                                            |
-| ---------------- | ------------------------------------------------------------------------------------------------- |
-| Weight           | 540 g (size S, per manufacturer)                                                                  |
-| Insulation       | PrimaLoft® Gold Insulation with Cross Core™ Technology                                            |
-| Body fill weight | 133 gsm                                                                                           |
-| Hood fill weight | 80 gsm                                                                                            |
-| Outer fabric     | Pertex® Quantum Pro Diamond Fuse (2×20D)                                                          |
-| Lining           | Recycled 15D Atmos (31 gsm)                                                                       |
-| Zip              | 2-way YKK® VISLON® front zip                                                                      |
-| Best use         | Belay jacket / static winter layer                                                                |
-| **Comparison**   | See how [Generator Alpine Jacket compares](/tools/ultralight-research/insulation) to similar gear |
+| Spec             | Detail                                                 |
+| ---------------- | ------------------------------------------------------ |
+| Weight           | 540 g (size S, per manufacturer)                       |
+| Insulation       | PrimaLoft® Gold Insulation with Cross Core™ Technology |
+| Body fill weight | 133 gsm                                                |
+| Hood fill weight | 80 gsm                                                 |
+| Outer fabric     | Pertex® Quantum Pro Diamond Fuse (2×20D)               |
+| Lining           | Recycled 15D Atmos (31 gsm)                            |
+| Zip              | 2-way YKK® VISLON® front zip                           |
+| Best use         | Belay jacket / static winter layer                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="insulation"
+/>
 
 ## Performance
 

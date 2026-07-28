@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "A durable, near-waterproof Dyneema pack for minimalist overnight to multi-day trips — bombproof off-trail, but not built for heavy loads or plush comfort."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Southwest 40 is Hyperlite Mountain Gear's smallest overnight pack, built fro
 
 ## Key Specs
 
-| Spec            | Detail                                                                                |
-| --------------- | ------------------------------------------------------------------------------------- |
-| Internal Volume | 40L / 2,400 cu in                                                                     |
-| External Volume | 9.8L / 600 cu in (front + 2 side pockets)                                             |
-| Weight (White)  | 853g / 30.1 oz                                                                        |
-| Weight (Black)  | 916g / 32.3 oz                                                                        |
-| Material        | Dyneema® Woven Composite 3.9 (200-denier)                                             |
-| Load Capacity   | Up to 40 lbs                                                                          |
-| Closure         | Roll-top with side compression straps                                                 |
-| Frame           | Aluminum stay                                                                         |
-| **Comparison**  | See how [Southwest 40 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec            | Detail                                    |
+| --------------- | ----------------------------------------- |
+| Internal Volume | 40L / 2,400 cu in                         |
+| External Volume | 9.8L / 600 cu in (front + 2 side pockets) |
+| Weight (White)  | 853g / 30.1 oz                            |
+| Weight (Black)  | 916g / 32.3 oz                            |
+| Material        | Dyneema® Woven Composite 3.9 (200-denier) |
+| Load Capacity   | Up to 40 lbs                              |
+| Closure         | Roll-top with side compression straps     |
+| Frame           | Aluminum stay                             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

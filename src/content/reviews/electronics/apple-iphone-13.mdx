@@ -12,7 +12,7 @@ published_at: "2026-05-21"
 description: "The iPhone 13 is a capable trail companion with solid battery life and an excellent camera, but the lack of satellite SOS and imperfect GPS under canopy are real trade-offs to weigh."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,24 +20,29 @@ The iPhone 13 is Apple's 2021 mainstream flagship — a 6.1-inch OLED smartphone
 
 ## Key Specs
 
-| Spec                     | Value                                                                                    |
-| ------------------------ | ---------------------------------------------------------------------------------------- |
-| **Weight**               | 174 g (6.1 oz)                                                                           |
-| **Dimensions**           | 146.7 × 71.5 × 7.7 mm                                                                    |
-| **Display**              | 6.1-in Super Retina XDR OLED, 460 ppi                                                    |
-| **Chipset**              | Apple A15 Bionic                                                                         |
-| **Battery Capacity**     | 3,227 mAh                                                                                |
-| **Claimed Battery Life** | Up to 19 hrs video playback                                                              |
-| **Water Resistance**     | IP68 (6 m / 30 min)                                                                      |
-| **Camera (Rear)**        | Dual 12 MP — wide f/1.6 (OIS) + ultrawide f/2.4                                          |
-| **Camera (Front)**       | 12 MP f/2.2                                                                              |
-| **Storage Options**      | 128 / 256 / 512 GB                                                                       |
-| **Connectivity**         | 5G, Wi-Fi 6, Bluetooth 5.0, GPS/GLONASS/Galileo/BeiDou                                   |
-| **Charging**             | Lightning (up to 20W wired); MagSafe / Qi wireless                                       |
-| **Satellite SOS**        | None                                                                                     |
-| **Comparison**           | See how [iPhone 13 compares](/tools/ultralight-research/navigationcomm) to similar gear |
+| Spec                     | Value                                                  |
+| ------------------------ | ------------------------------------------------------ |
+| **Weight**               | 174 g (6.1 oz)                                         |
+| **Dimensions**           | 146.7 × 71.5 × 7.7 mm                                  |
+| **Display**              | 6.1-in Super Retina XDR OLED, 460 ppi                  |
+| **Chipset**              | Apple A15 Bionic                                       |
+| **Battery Capacity**     | 3,227 mAh                                              |
+| **Claimed Battery Life** | Up to 19 hrs video playback                            |
+| **Water Resistance**     | IP68 (6 m / 30 min)                                    |
+| **Camera (Rear)**        | Dual 12 MP — wide f/1.6 (OIS) + ultrawide f/2.4        |
+| **Camera (Front)**       | 12 MP f/2.2                                            |
+| **Storage Options**      | 128 / 256 / 512 GB                                     |
+| **Connectivity**         | 5G, Wi-Fi 6, Bluetooth 5.0, GPS/GLONASS/Galileo/BeiDou |
+| **Charging**             | Lightning (up to 20W wired); MagSafe / Qi wireless     |
+| **Satellite SOS**        | None                                                   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="navigationcomm"
+/>
 
 ## Performance
 

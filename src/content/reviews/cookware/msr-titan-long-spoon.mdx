@@ -12,7 +12,7 @@ published_at: "2026-05-26"
 description: "The MSR Titan Long Spoon is a 19g titanium utensil built for freeze-dried bag meals. Solid quality, but pricey compared to near-identical competitors."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,16 +20,21 @@ The MSR Titan Long Spoon is a single-purpose titanium utensil designed for one j
 
 ## Key Specs
 
-| Spec           | Detail                                                                                      |
-| -------------- | ------------------------------------------------------------------------------------------- |
-| **Weight**     | 19g (0.7 oz)                                                                                |
-| **Length**     | ~21.2 cm (8.35 in)                                                                          |
-| **Material**   | Titanium                                                                                    |
-| **Carry Loop** | Yes — carabiner-compatible hole at handle end                                               |
-| **Price**      | ~$17.95                                                                                     |
-| **Comparison** | See how [MSR Titan Long Spoon compares](/tools/ultralight-research/utensil) to similar gear |
+| Spec           | Detail                                        |
+| -------------- | --------------------------------------------- |
+| **Weight**     | 19g (0.7 oz)                                  |
+| **Length**     | ~21.2 cm (8.35 in)                            |
+| **Material**   | Titanium                                      |
+| **Carry Loop** | Yes — carabiner-compatible hole at handle end |
+| **Price**      | ~$17.95                                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="utensil"
+/>
 
 ## Performance
 

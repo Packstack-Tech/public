@@ -12,7 +12,7 @@ published_at: "2026-05-07"
 description: "A purpose-built 250ml polyurethane fuel bottle for alcohol stove users, weighing just 28g with a flip-top cap and oz measuring marks."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Vargo Alcohol Fuel Bottle is a 250ml (8.5 fl oz) polyurethane squeeze bottle
 
 ## Key Specs
 
-| Spec                | Value                                                                                         |
-| ------------------- | --------------------------------------------------------------------------------------------- |
-| **Weight**          | 28g (1 oz)                                                                                    |
-| **Capacity**        | 250ml / 8.5 fl oz                                                                             |
-| **Material**        | Polyurethane                                                                                  |
-| **Height**          | 165mm (6.5 in)                                                                                |
-| **Diameter**        | 51mm (2 in)                                                                                   |
-| **Cap Type**        | Flip-top (leak-proof)                                                                         |
-| **Measuring Marks** | Yes — oz and half-oz increments                                                               |
-| **Made In**         | China                                                                                         |
-| **Comparison**      | See how [Vargo Alcohol Fuel Bottle compares](/tools/ultralight-research/fuel) to similar gear |
+| Spec                | Value                           |
+| ------------------- | ------------------------------- |
+| **Weight**          | 28g (1 oz)                      |
+| **Capacity**        | 250ml / 8.5 fl oz               |
+| **Material**        | Polyurethane                    |
+| **Height**          | 165mm (6.5 in)                  |
+| **Diameter**        | 51mm (2 in)                     |
+| **Cap Type**        | Flip-top (leak-proof)           |
+| **Measuring Marks** | Yes — oz and half-oz increments |
+| **Made In**         | China                           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="fuel"
+/>
 
 ## Performance
 

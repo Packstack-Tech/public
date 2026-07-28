@@ -12,7 +12,7 @@ published_at: "2026-06-26"
 description: "The Anker PowerPort III Nano (A2633) is a 20W GaN USB-C wall charger weighing just 30g — a near-perfect town-stop charger for ultralight hikers with one well-known caveat."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The Anker PowerPort III Nano (model A2633) is a single-port, 20W USB-C GaN wall 
 
 ## Key Specs
 
-| Spec              | Detail                                                                                              |
-| ----------------- | --------------------------------------------------------------------------------------------------- |
-| **Model**         | A2633                                                                                               |
-| **Weight**        | 30g (1.06 oz)                                                                                       |
-| **Dimensions**    | 1.81 × 1.08 × 1.08 in                                                                               |
-| **Wattage**       | 20W (max)                                                                                           |
-| **Ports**         | 1× USB-C                                                                                            |
-| **Output**        | 5V/3A · 9V/2.22A                                                                                    |
-| **Input**         | 100–240V, 0.6A, 50–60Hz                                                                             |
-| **Charging Tech** | PowerIQ 3.0 / USB-PD 3.0 / QC 3.0                                                                   |
-| **Prongs**        | Fixed (non-folding)                                                                                 |
-| **Warranty**      | 18 months                                                                                           |
-| **Comparison**    | See how [Anker PowerPort III Nano compares](/tools/ultralight-research/power-cable) to similar gear |
+| Spec              | Detail                            |
+| ----------------- | --------------------------------- |
+| **Model**         | A2633                             |
+| **Weight**        | 30g (1.06 oz)                     |
+| **Dimensions**    | 1.81 × 1.08 × 1.08 in             |
+| **Wattage**       | 20W (max)                         |
+| **Ports**         | 1× USB-C                          |
+| **Output**        | 5V/3A · 9V/2.22A                  |
+| **Input**         | 100–240V, 0.6A, 50–60Hz           |
+| **Charging Tech** | PowerIQ 3.0 / USB-PD 3.0 / QC 3.0 |
+| **Prongs**        | Fixed (non-folding)               |
+| **Warranty**      | 18 months                         |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="power-cable"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-06"
 description: "A review of the Opinel N°08 Olive Wood folding knife — a French icon with a stunning handle, razor-sharp Sandvik 12C27 blade, and real-world limitations for wet-weather backpacking."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -34,19 +34,24 @@ worrying about.
 
 ## Key Specs
 
-| Spec              | Value                                                                                |
-| ----------------- | ------------------------------------------------------------------------------------ |
-| Weight            | 50 g (1.76 oz)                                                                       |
-| Blade Length      | 8.5 cm (3.35 in)                                                                     |
-| Overall Length    | 19.5 cm (7.68 in)                                                                    |
-| Blade Steel       | Sandvik 12C27 stainless                                                              |
-| Blade Hardness    | 55–57 HRC                                                                            |
-| Handle Material   | Olive wood (varnished)                                                               |
-| Locking Mechanism | Virobloc® safety ring                                                                |
-| Country of Origin | France                                                                               |
-| **Comparison**    | See how [N°08 Olive Wood compares](/tools/ultralight-research/knife) to similar gear |
+| Spec              | Value                   |
+| ----------------- | ----------------------- |
+| Weight            | 50 g (1.76 oz)          |
+| Blade Length      | 8.5 cm (3.35 in)        |
+| Overall Length    | 19.5 cm (7.68 in)       |
+| Blade Steel       | Sandvik 12C27 stainless |
+| Blade Hardness    | 55–57 HRC               |
+| Handle Material   | Olive wood (varnished)  |
+| Locking Mechanism | Virobloc® safety ring   |
+| Country of Origin | France                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="knife"
+/>
 
 ## Performance
 

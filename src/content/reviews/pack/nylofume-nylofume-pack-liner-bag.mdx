@@ -12,7 +12,7 @@ published_at: "2026-06-03"
 description: "A 25.9g nylon polymer pack liner that's waterproof, surprisingly durable, and costs about as much as a candy bar — the ultralight community's favorite trash-bag replacement."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Nylofume Pack Liner is a clear nylon polymer bag that started its life prote
 
 ## Key Specs
 
-| Spec                  | Value                                                                                         |
-| --------------------- | --------------------------------------------------------------------------------------------- |
-| **Weight**            | 25.9 g / 0.91 oz                                                                              |
-| **Dimensions (flat)** | 20" × 36" (50.8 × 91.4 cm)                                                                    |
-| **Volume (usable)**   | ~42.5 L                                                                                       |
-| **Material**          | Nylon polymer film                                                                            |
-| **Waterproof**        | Yes (100%)                                                                                    |
-| **Closure**           | Twist & fold, rubber band optional                                                            |
-| **Price**             | ~$1–4 per bag                                                                                 |
-| **Comparison**        | See how [Nylofume Pack Liner compares](/tools/ultralight-research/protection) to similar gear |
+| Spec                  | Value                              |
+| --------------------- | ---------------------------------- |
+| **Weight**            | 25.9 g / 0.91 oz                   |
+| **Dimensions (flat)** | 20" × 36" (50.8 × 91.4 cm)         |
+| **Volume (usable)**   | ~42.5 L                            |
+| **Material**          | Nylon polymer film                 |
+| **Waterproof**        | Yes (100%)                         |
+| **Closure**           | Twist & fold, rubber band optional |
+| **Price**             | ~$1–4 per bag                      |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="protection"
+/>
 
 ## Performance
 

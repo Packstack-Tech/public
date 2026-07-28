@@ -12,7 +12,7 @@ published_at: "2026-07-01"
 description: "A deep dive into the Atom Packs Atom+ 40L — a highly customizable, carbon-framed ultralight pack handmade in the UK's Lake District."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -38,22 +38,27 @@ DNA, new badge.
 
 ## Key Specs
 
-| Spec                    | Detail                                                                                    |
-| ----------------------- | ----------------------------------------------------------------------------------------- |
-| **Weight**              | 640g (22.6 oz)                                                                            |
-| **Volume**              | 40L main + front stretch pocket                                                           |
-| **Load Capacity**       | 13.5 kg / 30 lbs                                                                          |
-| **Torso Range**         | 15"–23"                                                                                   |
-| **Hip Belt Range**      | 30"–38"                                                                                   |
-| **Frame**               | Removable carbon fibre hoop                                                               |
-| **Main Fabric Options** | VX21, VX07, LS21, 210D Robic Extreema                                                     |
-| **High-Wear Fabrics**   | Robic Extreema (shoulder straps, side pockets, hip belt), Bullet Mesh, Spacer Mesh        |
-| **Closure**             | Roll-top with snap buttons                                                                |
-| **Pockets**             | 2 side, front stretch, bottom (with trash port), shoulder strap pockets                   |
-| **Origin**              | Handmade in Keswick, Lake District, UK                                                    |
-| **Comparison**          | See how [Atom Packs Atom+ compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                    | Detail                                                                             |
+| ----------------------- | ---------------------------------------------------------------------------------- |
+| **Weight**              | 640g (22.6 oz)                                                                     |
+| **Volume**              | 40L main + front stretch pocket                                                    |
+| **Load Capacity**       | 13.5 kg / 30 lbs                                                                   |
+| **Torso Range**         | 15"–23"                                                                            |
+| **Hip Belt Range**      | 30"–38"                                                                            |
+| **Frame**               | Removable carbon fibre hoop                                                        |
+| **Main Fabric Options** | VX21, VX07, LS21, 210D Robic Extreema                                              |
+| **High-Wear Fabrics**   | Robic Extreema (shoulder straps, side pockets, hip belt), Bullet Mesh, Spacer Mesh |
+| **Closure**             | Roll-top with snap buttons                                                         |
+| **Pockets**             | 2 side, front stretch, bottom (with trash port), shoulder strap pockets            |
+| **Origin**              | Handmade in Keswick, Lake District, UK                                             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

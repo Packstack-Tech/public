@@ -12,7 +12,7 @@ published_at: "2026-04-15"
 description: "The DMM Wallnut is a feature-rich wired nut that excels in textured rock, offering stable placements across 11 sizes — but its groove comes at a cleaning cost."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,24 +30,29 @@ reputation holds up.
 
 ## Key Specs
 
-| Size           | Weight                                                                            | Strength | Dimensions (mm) | Color     |
-| -------------- | --------------------------------------------------------------------------------- | -------- | --------------- | --------- |
-| 1              | 15 g                                                                              | 4 kN     | —               | Pink      |
-| 2              | 26 g                                                                              | 9 kN     | —               | Green     |
-| 3              | 28 g                                                                              | 11 kN    | —               | Silver    |
-| 4              | 30 g                                                                              | 12 kN    | —               | Gold      |
-| 5              | 32 g                                                                              | 12 kN    | —               | Blue      |
-| 6              | 39 g                                                                              | 12 kN    | —               | Red       |
-| 7              | 40 g                                                                              | 12 kN    | —               | Grey      |
-| 8              | 45 g                                                                              | 12 kN    | —               | Turquoise |
-| 9              | 50 g                                                                              | 12 kN    | —               | Gold      |
-| 10             | 56 g                                                                              | 12 kN    | 28.8 × 32.6     | Silver    |
-| 11             | 68 g                                                                              | 12 kN    | 33.1 × 37.4     | Green     |
-| **Comparison** | See how [Wallnut compares](/tools/ultralight-research/protection) to similar gear |
+| Size | Weight | Strength | Dimensions (mm) | Color     |
+| ---- | ------ | -------- | --------------- | --------- |
+| 1    | 15 g   | 4 kN     | —               | Pink      |
+| 2    | 26 g   | 9 kN     | —               | Green     |
+| 3    | 28 g   | 11 kN    | —               | Silver    |
+| 4    | 30 g   | 12 kN    | —               | Gold      |
+| 5    | 32 g   | 12 kN    | —               | Blue      |
+| 6    | 39 g   | 12 kN    | —               | Red       |
+| 7    | 40 g   | 12 kN    | —               | Grey      |
+| 8    | 45 g   | 12 kN    | —               | Turquoise |
+| 9    | 50 g   | 12 kN    | —               | Gold      |
+| 10   | 56 g   | 12 kN    | 28.8 × 32.6     | Silver    |
+| 11   | 68 g   | 12 kN    | 33.1 × 37.4     | Green     |
 
 _Sizes available individually or as sets (1–6, 3–8, 7–11, or 1–11). Specs for size 10 are provided above as reference; the full 1–11 set totals approximately 429 g._
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="protection"
+/>
 
 ## Performance
 

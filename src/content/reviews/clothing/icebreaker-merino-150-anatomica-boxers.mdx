@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A lightweight 150gsm merino boxer built for daily wear and warm-weather backpacking — comfortable and odor-resistant, but thin fabric raises durability questions."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The Merino 150 Anatomica Boxers are Icebreaker's lightest-weight underwear, buil
 
 ## Key Specs
 
-| Spec           | Detail                                                                                               |
-| -------------- | ---------------------------------------------------------------------------------------------------- |
-| Weight         | 70.0 g (size M)                                                                                      |
-| Fabric weight  | 150 gsm                                                                                              |
-| Fabric content | 83% Merino Wool, 12% Nylon, 5% Elastane                                                              |
-| Warmth system  | 150 Ultralight                                                                                       |
-| Style          | Slim-fit boxer, no fly                                                                               |
-| Care           | Machine wash cold, line dry in shade, no bleach/softener/tumble dry                                  |
-| **Comparison** | See how [Merino 150 Anatomica Boxers compares](/tools/ultralight-research/underwear) to similar gear |
+| Spec           | Detail                                                              |
+| -------------- | ------------------------------------------------------------------- |
+| Weight         | 70.0 g (size M)                                                     |
+| Fabric weight  | 150 gsm                                                             |
+| Fabric content | 83% Merino Wool, 12% Nylon, 5% Elastane                             |
+| Warmth system  | 150 Ultralight                                                      |
+| Style          | Slim-fit boxer, no fly                                              |
+| Care           | Machine wash cold, line dry in shade, no bleach/softener/tumble dry |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="underwear"
+/>
 
 ## Performance
 

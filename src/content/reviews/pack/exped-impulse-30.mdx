@@ -12,7 +12,7 @@ published_at: "2026-05-26"
 description: "The Exped Impulse 30 is a 30L technical daypack built for alpine touring and day hikes, blending durable construction, thoughtful organization, and alpine-ready features in a close-fitting profile."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Exped Impulse 30 is a 30-liter technical daypack aimed squarely at mountaine
 
 ## Key Specs
 
-| Spec                   | Value                                                                                   |
-| ---------------------- | --------------------------------------------------------------------------------------- |
-| **Volume**             | 30 L                                                                                    |
-| **Weight (max / min)** | 1010 g / 720 g (hip belt removed)                                                       |
-| **Dimensions**         | 55 × 30 × 21 cm                                                                         |
-| **Back Length**        | 45–51 cm (adjustable)                                                                   |
-| **Max Load**           | 13 kg                                                                                   |
-| **Material**           | 210D Robic HD Ripstop Nylon                                                             |
-| **Water Column**       | 2500 mm                                                                                 |
-| **Hip Belt Size**      | 62–134 cm                                                                               |
-| **Comparison**         | See how [Exped Impulse 30 compares](/tools/ultralight-research/daypack) to similar gear |
+| Spec                   | Value                             |
+| ---------------------- | --------------------------------- |
+| **Volume**             | 30 L                              |
+| **Weight (max / min)** | 1010 g / 720 g (hip belt removed) |
+| **Dimensions**         | 55 × 30 × 21 cm                   |
+| **Back Length**        | 45–51 cm (adjustable)             |
+| **Max Load**           | 13 kg                             |
+| **Material**           | 210D Robic HD Ripstop Nylon       |
+| **Water Column**       | 2500 mm                           |
+| **Hip Belt Size**      | 62–134 cm                         |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="daypack"
+/>
 
 ## Performance
 

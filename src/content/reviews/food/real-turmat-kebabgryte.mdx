@@ -12,7 +12,7 @@ published_at: "2026-07-12"
 description: "A freeze-dried Norwegian chicken kebab stew with rice — bold spicing, easy prep, but modest calories for hard-working thru-hikers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -33,24 +33,29 @@ punches above the usual freeze-dried average.
 
 ## Key Specs
 
-| Spec             | Value                                                                          |
-| ---------------- | ------------------------------------------------------------------------------ |
-| Dry Weight       | 138 g (4.9 oz)                                                                 |
-| Prepared Weight  | 500 g                                                                          |
-| Calories         | 597 kcal                                                                       |
-| Calorie Density  | ~4.3 kcal/g (dry)                                                              |
-| Protein          | 17 g                                                                           |
-| Carbohydrates    | 76 g                                                                           |
-| Fat              | 23 g                                                                           |
-| Salt             | 3.9 g                                                                          |
-| Water Required   | 360 ml                                                                         |
-| Rehydration Time | 8 minutes                                                                      |
-| Gluten Free      | Yes                                                                            |
-| Allergens        | Lactose, Milk                                                                  |
-| Dietary          | Not vegetarian (chicken)                                                       |
-| **Comparison**   | See how [Kebabgryte compares](/tools/ultralight-research/meal) to similar gear |
+| Spec             | Value                    |
+| ---------------- | ------------------------ |
+| Dry Weight       | 138 g (4.9 oz)           |
+| Prepared Weight  | 500 g                    |
+| Calories         | 597 kcal                 |
+| Calorie Density  | ~4.3 kcal/g (dry)        |
+| Protein          | 17 g                     |
+| Carbohydrates    | 76 g                     |
+| Fat              | 23 g                     |
+| Salt             | 3.9 g                    |
+| Water Required   | 360 ml                   |
+| Rehydration Time | 8 minutes                |
+| Gluten Free      | Yes                      |
+| Allergens        | Lactose, Milk            |
+| Dietary          | Not vegetarian (chicken) |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="meal"
+/>
 
 ## Performance
 

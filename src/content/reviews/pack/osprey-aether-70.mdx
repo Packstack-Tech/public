@@ -12,7 +12,7 @@ published_at: "2026-05-10"
 description: "The Osprey Aether 70 is a fully-featured, 70L heavy-hauler built for traditional backpackers who prioritize comfort and fit under substantial loads."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,23 +20,28 @@ The Osprey Aether 70 is a purpose-built heavy hauler in a category the brand has
 
 ## Key Specs
 
-| Spec                         | Detail                                                                                        |
-| ---------------------------- | --------------------------------------------------------------------------------------------- |
-| **Volume**                   | 70L                                                                                           |
-| **Weight**                   | 2,200 g (4 lbs 13.5 oz) — Medium                                                              |
-| **Load Range**               | 35–60 lbs                                                                                     |
-| **Back Panel**               | AirScape foam/mesh with LightWire peripheral frame                                            |
-| **Hipbelt**                  | IsoForm (heat-moldable)                                                                       |
-| **Fit**                      | Adjustable torso length; interchangeable harness/hipbelt components                           |
-| **Main Access**              | Top-loading with J-panel front zip                                                            |
-| **Sleeping Bag Compartment** | Yes, with removable divider                                                                   |
-| **Hydration Compatible**     | Yes (reservoir sold separately)                                                               |
-| **Rain Cover**               | Included                                                                                      |
-| **Materials**                | High-tenacity nylon, PFC-free DWR                                                             |
-| **Women's Version**          | Osprey Ariel 65                                                                               |
-| **Comparison**               | See how the [Osprey Aether 70 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                         | Detail                                                              |
+| ---------------------------- | ------------------------------------------------------------------- |
+| **Volume**                   | 70L                                                                 |
+| **Weight**                   | 2,200 g (4 lbs 13.5 oz) — Medium                                    |
+| **Load Range**               | 35–60 lbs                                                           |
+| **Back Panel**               | AirScape foam/mesh with LightWire peripheral frame                  |
+| **Hipbelt**                  | IsoForm (heat-moldable)                                             |
+| **Fit**                      | Adjustable torso length; interchangeable harness/hipbelt components |
+| **Main Access**              | Top-loading with J-panel front zip                                  |
+| **Sleeping Bag Compartment** | Yes, with removable divider                                         |
+| **Hydration Compatible**     | Yes (reservoir sold separately)                                     |
+| **Rain Cover**               | Included                                                            |
+| **Materials**                | High-tenacity nylon, PFC-free DWR                                   |
+| **Women's Version**          | Osprey Ariel 65                                                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

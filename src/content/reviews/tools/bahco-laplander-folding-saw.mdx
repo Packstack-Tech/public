@@ -12,7 +12,7 @@ published_at: "2026-07-06"
 description: "The Bahco Laplander is a 200g folding saw with bi-directional XT hardpoint teeth that punches well above its price class for camping, bushcraft, and trail work."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The Bahco Laplander (model 396-LAP) is a folding camp saw from Swedish hand-tool
 
 ## Key Specs
 
-| Spec                  | Value                                                                                           |
-| --------------------- | ----------------------------------------------------------------------------------------------- |
-| **SKU**               | 396-LAP                                                                                         |
-| **Weight**            | 200 g (7.1 oz)                                                                                  |
-| **Blade Length**      | 190 mm (7.5 in)                                                                                 |
-| **Folded Length**     | 230 mm (9 in)                                                                                   |
-| **Teeth Per Inch**    | 7 TPI                                                                                           |
-| **Blade Coating**     | XT hardpoint, rust-resistant low-friction coating                                               |
-| **Handle**            | Two-component plastic with rubber overmold + leather strap                                      |
-| **Locking Mechanism** | Safety lock — locks in both open and folded positions                                           |
-| **Blade Material**    | Swedish Sandvik steel                                                                           |
-| **Blade Replaceable** | Yes (Phillips/flathead screw pivot)                                                             |
-| **Comparison**        | See how [Laplander Folding Saw compares](/tools/ultralight-research/processing) to similar gear |
+| Spec                  | Value                                                      |
+| --------------------- | ---------------------------------------------------------- |
+| **SKU**               | 396-LAP                                                    |
+| **Weight**            | 200 g (7.1 oz)                                             |
+| **Blade Length**      | 190 mm (7.5 in)                                            |
+| **Folded Length**     | 230 mm (9 in)                                              |
+| **Teeth Per Inch**    | 7 TPI                                                      |
+| **Blade Coating**     | XT hardpoint, rust-resistant low-friction coating          |
+| **Handle**            | Two-component plastic with rubber overmold + leather strap |
+| **Locking Mechanism** | Safety lock — locks in both open and folded positions      |
+| **Blade Material**    | Swedish Sandvik steel                                      |
+| **Blade Replaceable** | Yes (Phillips/flathead screw pivot)                        |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="processing"
+/>
 
 ## Performance
 

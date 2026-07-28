@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A budget-friendly 155 g/m² merino beanie from Decathlon that punches above its $25 price tag for cold-weather hikes and camp use."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Forclaz MT500 Merino Wool Beanie is Decathlon's entry-level wool hat, built 
 
 ## Key Specs
 
-| Spec                | Detail                                                                                                 |
-| ------------------- | ------------------------------------------------------------------------------------------------------ |
-| Weight              | 34.0 g                                                                                                 |
-| Fabric weight       | 155 g/m² (5.5 oz/m²)                                                                                   |
-| Fiber diameter      | 18.5 microns (superfine merino)                                                                        |
-| Material            | Merino wool with polyamide yarn wrapped around the fiber                                               |
-| Fit                 | One size                                                                                               |
-| Price               | $24.99                                                                                                 |
-| Manufacturer rating | 4.7 / 5 (2,909 reviews on Decathlon.com)                                                               |
-| **Comparison**      | See how [Adult MT500 Merino Wool Beanie compares](/tools/ultralight-research/headwear) to similar gear |
+| Spec                | Detail                                                   |
+| ------------------- | -------------------------------------------------------- |
+| Weight              | 34.0 g                                                   |
+| Fabric weight       | 155 g/m² (5.5 oz/m²)                                     |
+| Fiber diameter      | 18.5 microns (superfine merino)                          |
+| Material            | Merino wool with polyamide yarn wrapped around the fiber |
+| Fit                 | One size                                                 |
+| Price               | $24.99                                                   |
+| Manufacturer rating | 4.7 / 5 (2,909 reviews on Decathlon.com)                 |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="headwear"
+/>
 
 ## Performance
 

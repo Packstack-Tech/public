@@ -12,7 +12,7 @@ published_at: "2026-05-14"
 description: "A comfortable, feature-rich 55L ventilated pack for multi-day trips—but its 1,910g weight means it's built for loaded comfort, not gram-counting."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,22 +32,27 @@ week fighting an uncomfortable hipbelt.
 
 ## Key Specs
 
-| Spec                     | Detail                                                                           |
-| ------------------------ | -------------------------------------------------------------------------------- |
-| **Weight**               | 1,910 g (4 lbs 3 oz)                                                             |
-| **Volume**               | 55L (M/L) / 53L (S/M)                                                            |
-| **Torso Adjustment**     | 3.5 inches                                                                       |
-| **Torso Fit Range**      | S/M: 15–19 in / M/L: 18–22 in                                                    |
-| **Suspension**           | FreeFloat dynamic hipbelt                                                        |
-| **Frame**                | Perimeter spring steel + fiberglass anti-barreling cross-stay                    |
-| **Rain Cover**           | Included                                                                         |
-| **Reservoir Compatible** | Yes (Gregory 3D Hydro SpeedClip hanger)                                          |
-| **Sizes**                | S/M, M/L                                                                         |
-| **Max Carry**            | 50 lbs                                                                           |
-| **Warranty**             | Limited lifetime                                                                 |
-| **Comparison**           | See how [Zulu 55 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                     | Detail                                                        |
+| ------------------------ | ------------------------------------------------------------- |
+| **Weight**               | 1,910 g (4 lbs 3 oz)                                          |
+| **Volume**               | 55L (M/L) / 53L (S/M)                                         |
+| **Torso Adjustment**     | 3.5 inches                                                    |
+| **Torso Fit Range**      | S/M: 15–19 in / M/L: 18–22 in                                 |
+| **Suspension**           | FreeFloat dynamic hipbelt                                     |
+| **Frame**                | Perimeter spring steel + fiberglass anti-barreling cross-stay |
+| **Rain Cover**           | Included                                                      |
+| **Reservoir Compatible** | Yes (Gregory 3D Hydro SpeedClip hanger)                       |
+| **Sizes**                | S/M, M/L                                                      |
+| **Max Carry**            | 50 lbs                                                        |
+| **Warranty**             | Limited lifetime                                              |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

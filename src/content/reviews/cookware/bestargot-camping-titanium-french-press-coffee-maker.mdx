@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A 200g titanium French press that doubles as a camp pot — solid build, real coffee, but the filter has one annoying quirk."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Bestargot Titanium French Press is a 750ml TA1 titanium pot with a 304 stain
 
 ## Key Specs
 
-| Spec                    | Value                                                                                                               |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Brand                   | Bestargot                                                                                                           |
-| Total weight            | 200 g (7.1 oz)                                                                                                      |
-| Pot only weight         | 150 g (5.3 oz)                                                                                                      |
-| Capacity                | 750 ml (~25.4 fl oz)                                                                                                |
-| Pot material            | TA1 pure titanium                                                                                                   |
-| Filter/plunger material | 304 stainless steel                                                                                                 |
-| Heat source compatible  | Direct flame, gas stove, alcohol burner, campfire                                                                   |
-| Markings                | oz/ml gradations stamped on exterior                                                                                |
-| **Comparison**          | See how [Camping Titanium French Press Coffee Maker compares](/tools/ultralight-research/coffeetea) to similar gear |
+| Spec                    | Value                                             |
+| ----------------------- | ------------------------------------------------- |
+| Brand                   | Bestargot                                         |
+| Total weight            | 200 g (7.1 oz)                                    |
+| Pot only weight         | 150 g (5.3 oz)                                    |
+| Capacity                | 750 ml (~25.4 fl oz)                              |
+| Pot material            | TA1 pure titanium                                 |
+| Filter/plunger material | 304 stainless steel                               |
+| Heat source compatible  | Direct flame, gas stove, alcohol burner, campfire |
+| Markings                | oz/ml gradations stamped on exterior              |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="coffeetea"
+/>
 
 ## Performance
 

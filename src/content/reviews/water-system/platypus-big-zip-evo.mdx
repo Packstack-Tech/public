@@ -12,7 +12,7 @@ published_at: "2026-07-06"
 description: "The Platypus Big Zip EVO 3L offers best-in-class flow rate and clever QD hose design, but recurring QC complaints around leaks and component durability temper the enthusiasm."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Platypus Big Zip EVO is the brand's top-of-the-line hydration reservoir, ava
 
 ## Key Specs
 
-| Spec                       | Value                                                                                |
-| -------------------------- | ------------------------------------------------------------------------------------ |
-| Weight                     | 180 g (6.3 oz)                                                                       |
-| Volume                     | 3.0 L                                                                                |
-| Dimensions                 | 43.7 × 22.9 cm                                                                       |
-| Material                   | Polyurethane / Polyethylene                                                          |
-| Drink Tube Diameter        | 5/16 in                                                                              |
-| Bite Valve Material        | Silicone                                                                             |
-| BPA / BPS / Phthalate Free | Yes                                                                                  |
-| Country of Origin          | USA                                                                                  |
-| **Comparison**             | See how [Big Zip EVO compares](/tools/ultralight-research/hydration) to similar gear |
+| Spec                       | Value                       |
+| -------------------------- | --------------------------- |
+| Weight                     | 180 g (6.3 oz)              |
+| Volume                     | 3.0 L                       |
+| Dimensions                 | 43.7 × 22.9 cm              |
+| Material                   | Polyurethane / Polyethylene |
+| Drink Tube Diameter        | 5/16 in                     |
+| Bite Valve Material        | Silicone                    |
+| BPA / BPS / Phthalate Free | Yes                         |
+| Country of Origin          | USA                         |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hydration"
+/>
 
 ## Performance
 

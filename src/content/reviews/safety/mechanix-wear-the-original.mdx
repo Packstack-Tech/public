@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "A hands-on look at Mechanix Wear's classic work glove for bushwhacking, camp chores, and cold-weather layering on trail."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Original isn't a backpacking product — it's a mechanic's glove that's been
 
 ## Key Specs
 
-| Spec             | Detail                                                                                  |
-| ---------------- | --------------------------------------------------------------------------------------- |
-| Weight           | 76.0 g (pair, size M)                                                                   |
-| Palm material    | Carbon-infused touchscreen-capable synthetic leather                                    |
-| Back of hand     | TrekDry® / CoolPlus® woven-mesh                                                         |
-| Closure          | Thermoplastic Rubber (TPR) hook and loop                                                |
-| Cuff             | Freedom-Flex stitched cuff                                                              |
-| Key features     | Welded Lock Ring™ thumb panel, abrasion-resistant fingertip coverings                   |
-| Machine washable | Yes                                                                                     |
-| Sizes            | XXS–3XL                                                                                 |
-| SKU              | MG-05                                                                                   |
-| **Comparison**   | See how [The Original® compares](/tools/ultralight-research/protection) to similar gear |
+| Spec             | Detail                                                                |
+| ---------------- | --------------------------------------------------------------------- |
+| Weight           | 76.0 g (pair, size M)                                                 |
+| Palm material    | Carbon-infused touchscreen-capable synthetic leather                  |
+| Back of hand     | TrekDry® / CoolPlus® woven-mesh                                       |
+| Closure          | Thermoplastic Rubber (TPR) hook and loop                              |
+| Cuff             | Freedom-Flex stitched cuff                                            |
+| Key features     | Welded Lock Ring™ thumb panel, abrasion-resistant fingertip coverings |
+| Machine washable | Yes                                                                   |
+| Sizes            | XXS–3XL                                                               |
+| SKU              | MG-05                                                                 |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="protection"
+/>
 
 ## Performance
 

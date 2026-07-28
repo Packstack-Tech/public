@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "A breathable, fast-drying boxer brief built for hiking and travel — here's how it holds up on trail."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The SAXX Quest Quick-Dry Mesh Boxer Brief is a synthetic, mesh-paneled underwear
 
 ## Key Specs
 
-| Spec            | Detail                                                                                                    |
-| --------------- | --------------------------------------------------------------------------------------------------------- |
-| Weight          | 75.0 g (~2.6 oz)                                                                                          |
-| Shell material  | Nylon (77%), Elastane (14%), Polyester (9%)                                                               |
-| Pouch lining    | TENCEL™ Lyocell (64%), Polyester (31%), Spandex (5%)                                                      |
-| Support         | BallPark Pouch®                                                                                           |
-| Temp regulation | DropTemp® Cooling Technology                                                                              |
-| Anti-chafe      | Stop Drop Technology™, No-RideUp Leg™                                                                     |
-| Style           | Boxer brief, mid-length leg                                                                               |
-| Manufacturer    | SAXX                                                                                                      |
-| **Comparison**  | See how [Quest Quick-Dry Mesh Boxer Brief compares](/tools/ultralight-research/underwear) to similar gear |
+| Spec            | Detail                                               |
+| --------------- | ---------------------------------------------------- |
+| Weight          | 75.0 g (~2.6 oz)                                     |
+| Shell material  | Nylon (77%), Elastane (14%), Polyester (9%)          |
+| Pouch lining    | TENCEL™ Lyocell (64%), Polyester (31%), Spandex (5%) |
+| Support         | BallPark Pouch®                                      |
+| Temp regulation | DropTemp® Cooling Technology                         |
+| Anti-chafe      | Stop Drop Technology™, No-RideUp Leg™                |
+| Style           | Boxer brief, mid-length leg                          |
+| Manufacturer    | SAXX                                                 |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="underwear"
+/>
 
 ## Performance
 

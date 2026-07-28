@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The 3F UL Gear Qidian Pro is a budget-friendly, frameless 46+10L UHMWPE pack with a clever sleeping-pad back panel — compelling on paper, but limited by comfort trade-offs."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The 3F UL Gear Qidian Pro is a frameless, 46+10L UHMWPE-blend backpack aimed squ
 
 ## Key Specs
 
-| Spec           | Details                                                                             |
-| -------------- | ----------------------------------------------------------------------------------- |
-| **Weight**     | 880g / 31 oz / 1.94 lb                                                              |
-| **Capacity**   | 46L main + 10L external pockets (advertised); ~53L measured internally              |
-| **Dimensions** | 80cm × 30cm × 22cm (fully extended)                                                 |
-| **Material**   | UHMWPE blended ripstop / 210D Nylon                                                 |
-| **Zipper**     | YKK                                                                                 |
-| **Buckle**     | DURAFLEX                                                                            |
-| **Frame**      | Frameless (foam pad used as back panel — not included)                              |
-| **Fit Range**  | Height 160–190cm / Waist >79cm                                                      |
-| **Colors**     | Blue, Gray, Khaki, Black                                                            |
-| **Comparison** | See how [Qidian Pro compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec           | Details                                                                |
+| -------------- | ---------------------------------------------------------------------- |
+| **Weight**     | 880g / 31 oz / 1.94 lb                                                 |
+| **Capacity**   | 46L main + 10L external pockets (advertised); ~53L measured internally |
+| **Dimensions** | 80cm × 30cm × 22cm (fully extended)                                    |
+| **Material**   | UHMWPE blended ripstop / 210D Nylon                                    |
+| **Zipper**     | YKK                                                                    |
+| **Buckle**     | DURAFLEX                                                               |
+| **Frame**      | Frameless (foam pad used as back panel — not included)                 |
+| **Fit Range**  | Height 160–190cm / Waist >79cm                                         |
+| **Colors**     | Blue, Gray, Khaki, Black                                               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

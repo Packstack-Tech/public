@@ -12,7 +12,7 @@ published_at: "2026-06-09"
 description: "The Atom Packs Roo is a 70g ultralight hip pack/bum bag made from production offcuts, offering weather resistance and trail-ready organisation in 1.5L and 2.5L sizes."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Roo is a lightweight hip pack (or "bum bag," as Atom Packs proudly calls it)
 
 ## Key Specs
 
-| Spec                        | Detail                                                                        |
-| --------------------------- | ----------------------------------------------------------------------------- |
-| **Weight**                  | 70g (2.5 oz)                                                                  |
-| **Volume**                  | 1.5L / 2.5L (two sizes)                                                       |
-| **Max Waist Circumference** | 120cm / 48 in                                                                 |
-| **Main Zip**                | 5mm YKK AquaGuard                                                             |
-| **Water Resistance**        | Water-resistant fabrics + AquaGuard zip; not seam-sealed                      |
-| **Strap**                   | 20mm soft-feel nylon with side-release buckle                                 |
-| **Side Panel Depth**        | 5cm / 2"                                                                      |
-| **Fabric**                  | EcoPak / XPac production offcuts (Zero Waste) or all-black RE version         |
-| **Comparison**              | See how [The Roo compares](/tools/ultralight-research/add-on) to similar gear |
+| Spec                        | Detail                                                                |
+| --------------------------- | --------------------------------------------------------------------- |
+| **Weight**                  | 70g (2.5 oz)                                                          |
+| **Volume**                  | 1.5L / 2.5L (two sizes)                                               |
+| **Max Waist Circumference** | 120cm / 48 in                                                         |
+| **Main Zip**                | 5mm YKK AquaGuard                                                     |
+| **Water Resistance**        | Water-resistant fabrics + AquaGuard zip; not seam-sealed              |
+| **Strap**                   | 20mm soft-feel nylon with side-release buckle                         |
+| **Side Panel Depth**        | 5cm / 2"                                                              |
+| **Fabric**                  | EcoPak / XPac production offcuts (Zero Waste) or all-black RE version |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="add-on"
+/>
 
 ## Performance
 

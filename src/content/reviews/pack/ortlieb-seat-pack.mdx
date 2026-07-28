@@ -12,7 +12,7 @@ published_at: "2026-07-01"
 description: "The Ortlieb Seat-Pack is a waterproof, PVC-free bikepacking saddle bag in 11L and 16.5L sizes, built for riders who refuse to compromise on weather protection."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,22 +20,27 @@ The Ortlieb Seat-Pack is the German brand's core bikepacking saddle bag — a ro
 
 ## Key Specs
 
-| Spec                          | Detail                                                                                  |
-| ----------------------------- | --------------------------------------------------------------------------------------- |
-| **Sizes**                     | 11L, 16.5L                                                                              |
-| **Volume Range (11L)**        | 4.5–11L (adjustable)                                                                    |
-| **Volume Range (16.5L)**      | 8–16.5L (adjustable)                                                                    |
-| **Weight (11L)**              | 325g                                                                                    |
-| **Weight (16.5L)**            | 456g                                                                                    |
-| **Waterproof Rating**         | IP64                                                                                    |
-| **Max Load**                  | 5kg                                                                                     |
-| **Material**                  | PU-coated ripstop nylon, PVC-free                                                       |
-| **Seatpost Required (11L)**   | ~6cm exposed                                                                            |
-| **Seatpost Required (16.5L)** | ~15cm exposed                                                                           |
-| **Price**                     | ~$140 (11L) / ~$150 (16.5L)                                                             |
-| **Comparison**                | See how [Ortlieb Seat-Pack compares](/tools/ultralight-research/add-on) to similar gear |
+| Spec                          | Detail                            |
+| ----------------------------- | --------------------------------- |
+| **Sizes**                     | 11L, 16.5L                        |
+| **Volume Range (11L)**        | 4.5–11L (adjustable)              |
+| **Volume Range (16.5L)**      | 8–16.5L (adjustable)              |
+| **Weight (11L)**              | 325g                              |
+| **Weight (16.5L)**            | 456g                              |
+| **Waterproof Rating**         | IP64                              |
+| **Max Load**                  | 5kg                               |
+| **Material**                  | PU-coated ripstop nylon, PVC-free |
+| **Seatpost Required (11L)**   | ~6cm exposed                      |
+| **Seatpost Required (16.5L)** | ~15cm exposed                     |
+| **Price**                     | ~$140 (11L) / ~$150 (16.5L)       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="add-on"
+/>
 
 ## Performance
 

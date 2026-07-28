@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "A wind-proof, fast-boiling stove system built for two — heavy and pricey for solo ultralight use, but a genuine workhorse for duos and bad weather."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The WindBurner Duo is MSR's scaled-up version of its enclosed, radiant-burner ca
 
 ## Key Specs
 
-| Spec                        | Value                                                                                            |
-| --------------------------- | ------------------------------------------------------------------------------------------------ |
-| Weight                      | 595 g (21 oz)                                                                                    |
-| Packed size                 | 12.5 × 12.5 × 20.5 cm                                                                            |
-| Pot volume                  | 1.8 L                                                                                            |
-| Fuel type                   | Isobutane/propane canister (MSR IsoPro)                                                          |
-| Burn time per 227g canister | ~95 min                                                                                          |
-| Boil time per liter         | ~4.5 min                                                                                         |
-| MSRP                        | ~$200–230                                                                                        |
-| **Comparison**              | See how [WindBurner Duo Stove System compares](/tools/ultralight-research/stove) to similar gear |
+| Spec                        | Value                                   |
+| --------------------------- | --------------------------------------- |
+| Weight                      | 595 g (21 oz)                           |
+| Packed size                 | 12.5 × 12.5 × 20.5 cm                   |
+| Pot volume                  | 1.8 L                                   |
+| Fuel type                   | Isobutane/propane canister (MSR IsoPro) |
+| Burn time per 227g canister | ~95 min                                 |
+| Boil time per liter         | ~4.5 min                                |
+| MSRP                        | ~$200–230                               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-01"
 description: "A feature-rich, 709g frameless pack for ultralight thru-hikers — generous pockets, roll-top convenience, and strong value at ~$205."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,19 +31,24 @@ frameless packs available without demanding a boutique price tag.
 
 ## Key Specs
 
-| Spec                 | Detail                                                                         |
-| -------------------- | ------------------------------------------------------------------------------ |
-| **Total Volume**     | 42L (30L main + 12L pockets)                                                   |
-| **Weight (S/M/L)**   | 658g / 709g / 740g                                                             |
-| **Material**         | 70D & 100D Recycled Robic Nylon, DWR, PFAS-free                                |
-| **Frame**            | Frameless (removable molded sitpad)                                            |
-| **Max Load**         | 30 lbs (20–25 lbs recommended)                                                 |
-| **External Pockets** | 6                                                                              |
-| **Sizes**            | Small, Medium, Large                                                           |
-| **Price**            | ~$205                                                                          |
-| **Comparison**       | See how [G4-20 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                 | Detail                                          |
+| -------------------- | ----------------------------------------------- |
+| **Total Volume**     | 42L (30L main + 12L pockets)                    |
+| **Weight (S/M/L)**   | 658g / 709g / 740g                              |
+| **Material**         | 70D & 100D Recycled Robic Nylon, DWR, PFAS-free |
+| **Frame**            | Frameless (removable molded sitpad)             |
+| **Max Load**         | 30 lbs (20–25 lbs recommended)                  |
+| **External Pockets** | 6                                               |
+| **Sizes**            | Small, Medium, Large                            |
+| **Price**            | ~$205                                           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

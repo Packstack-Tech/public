@@ -12,7 +12,7 @@ published_at: "2026-07-15"
 description: "The Cumulus Quilt 150 is a 380g summer ultralight down quilt using 850-fill Polish goose down — a serious weight-saver for warm-weather trips."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,23 +20,28 @@ The Cumulus Quilt 150 is the lightest member of the Polish brand's quilt lineup 
 
 ## Key Specs
 
-| Spec                 | Value                                                                          |
-| -------------------- | ------------------------------------------------------------------------------ |
-| Weight               | 380g (13.4 oz)                                                                 |
-| Down Fill Weight     | 150g                                                                           |
-| Fill Power           | 850                                                                            |
-| Fill Material        | Polish goose down                                                              |
-| Shell Fabric         | Pertex® Quantum DWR, 29 g/m²                                                   |
-| Comfort Temp         | 9°C (48°F)                                                                     |
-| Limit Temp           | 4°C (39°F)                                                                     |
-| Length               | 195 cm (76.8 in)                                                               |
-| Width (Top / Bottom) | 65 cm / 50 cm (25.6 in / 19.7 in)                                              |
-| Max User Height      | 185 cm (6 ft 1 in)                                                             |
-| Packed Volume        | 1.5L                                                                           |
-| Down Chambers        | 15                                                                             |
-| **Comparison**       | See how [Quilt 150 compares](/tools/ultralight-research/quilt) to similar gear |
+| Spec                 | Value                             |
+| -------------------- | --------------------------------- |
+| Weight               | 380g (13.4 oz)                    |
+| Down Fill Weight     | 150g                              |
+| Fill Power           | 850                               |
+| Fill Material        | Polish goose down                 |
+| Shell Fabric         | Pertex® Quantum DWR, 29 g/m²      |
+| Comfort Temp         | 9°C (48°F)                        |
+| Limit Temp           | 4°C (39°F)                        |
+| Length               | 195 cm (76.8 in)                  |
+| Width (Top / Bottom) | 65 cm / 50 cm (25.6 in / 19.7 in) |
+| Max User Height      | 185 cm (6 ft 1 in)                |
+| Packed Volume        | 1.5L                              |
+| Down Chambers        | 15                                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="quilt"
+/>
 
 ## Performance
 

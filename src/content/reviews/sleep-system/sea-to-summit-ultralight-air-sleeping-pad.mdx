@@ -12,7 +12,7 @@ published_at: "2026-06-06"
 description: "The Sea to Summit UltraLight Air is a supremely comfortable, ultra-compact summer sleeping pad — but its R-value 1.1 rating makes it a warm-weather specialist, not a do-it-all pad."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The Sea to Summit UltraLight Air is the brand's stripped-down, non-insulated ent
 
 ## Key Specs
 
-| Spec                 | Value                                                                                          |
-| -------------------- | ---------------------------------------------------------------------------------------------- |
-| **Weight (Regular)** | 394 g / 13.9 oz                                                                                |
-| **R-Value**          | 1.1 (ASTM standard)                                                                            |
-| **Thickness**        | 2 in (5 cm)                                                                                    |
-| **Face Fabric**      | 30D (top) / 40D (bottom) ripstop nylon                                                         |
-| **Insulation**       | None                                                                                           |
-| **Season**           | Summer / warm-weather                                                                          |
-| **Sizes**            | X-Small, Small, Regular, Large                                                                 |
-| **Inflation**        | Airstream Pumpsack (integrated into stuff sack)                                                |
-| **Valve**            | Multifunction flat valve                                                                       |
-| **Extras**           | Pillow Lock patches, patch kit included                                                        |
-| **Comparison**       | See how the [UltraLight Air compares](/tools/ultralight-research/sleeping-pad) to similar gear |
+| Spec                 | Value                                           |
+| -------------------- | ----------------------------------------------- |
+| **Weight (Regular)** | 394 g / 13.9 oz                                 |
+| **R-Value**          | 1.1 (ASTM standard)                             |
+| **Thickness**        | 2 in (5 cm)                                     |
+| **Face Fabric**      | 30D (top) / 40D (bottom) ripstop nylon          |
+| **Insulation**       | None                                            |
+| **Season**           | Summer / warm-weather                           |
+| **Sizes**            | X-Small, Small, Regular, Large                  |
+| **Inflation**        | Airstream Pumpsack (integrated into stuff sack) |
+| **Valve**            | Multifunction flat valve                        |
+| **Extras**           | Pillow Lock patches, patch kit included         |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sleeping-pad"
+/>
 
 ## Performance
 

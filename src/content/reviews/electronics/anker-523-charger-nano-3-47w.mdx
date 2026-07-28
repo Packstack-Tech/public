@@ -12,7 +12,7 @@ published_at: "2026-06-01"
 description: "A compact, dual-port GaN wall charger delivering 47W in a 2.86 oz body — a smart town-stop tool for hikers juggling multiple USB-C devices."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -29,22 +29,27 @@ communicator, and headlamp in one outlet visit — all for around $20.
 
 ## Key Specs
 
-| Spec                 | Detail                                                                                      |
-| -------------------- | ------------------------------------------------------------------------------------------- |
-| **Weight**           | 81 g (2.86 oz)                                                                              |
-| **Dimensions**       | 1.36 × 1.36 × 2.05 in                                                                       |
-| **Total Output**     | 47W                                                                                         |
-| **Single-Port Max**  | 45W (either USB-C port)                                                                     |
-| **Dual-Port Output** | USB-C1: 27W + USB-C2: 20W                                                                   |
-| **Technology**       | GaN (Gallium Nitride)                                                                       |
-| **Ports**            | 2× USB-C                                                                                    |
-| **Safety**           | ActiveShield 2.0 temperature monitoring                                                     |
-| **Warranty**         | 18 months                                                                                   |
-| **Price**            | ~$25.99 (often ~$19.99 on sale)                                                             |
-| **Cable Included**   | No                                                                                          |
-| **Comparison**       | See how [Anker 523 Nano 3 compares](/tools/ultralight-research/power-cable) to similar gear |
+| Spec                 | Detail                                  |
+| -------------------- | --------------------------------------- |
+| **Weight**           | 81 g (2.86 oz)                          |
+| **Dimensions**       | 1.36 × 1.36 × 2.05 in                   |
+| **Total Output**     | 47W                                     |
+| **Single-Port Max**  | 45W (either USB-C port)                 |
+| **Dual-Port Output** | USB-C1: 27W + USB-C2: 20W               |
+| **Technology**       | GaN (Gallium Nitride)                   |
+| **Ports**            | 2× USB-C                                |
+| **Safety**           | ActiveShield 2.0 temperature monitoring |
+| **Warranty**         | 18 months                               |
+| **Price**            | ~$25.99 (often ~$19.99 on sale)         |
+| **Cable Included**   | No                                      |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="power-cable"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-06-30"
 description: "The Petzl REACTIK+ is a 300-lumen, Bluetooth-enabled headlamp with auto-adjusting Reactive Lighting — a capable trail runner's light that's now discontinued but still worth knowing."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,22 +20,27 @@ The Petzl REACTIK+ is a 300-lumen rechargeable headlamp built around two headlin
 
 ## Key Specs
 
-| Spec                  | Value                                                                            |
-| --------------------- | -------------------------------------------------------------------------------- |
-| **Weight**            | 110 g (3.9 oz)                                                                   |
-| **Max Lumens**        | 300 lm                                                                           |
-| **Max Beam Distance** | 110 m                                                                            |
-| **Battery**           | 1800 mAh rechargeable Li-ion (micro USB)                                         |
-| **Backup Battery**    | Optional AAA adapter (sold separately)                                           |
-| **Charge Time**       | ~4.5 hours                                                                       |
-| **Max Burn Time**     | 10 hours                                                                         |
-| **Light Modes**       | 6 white (3 Reactive, 3 Constant) + 2 red                                         |
-| **Water Resistance**  | IPX4 (splash-proof)                                                              |
-| **Connectivity**      | Bluetooth Smart / MyPetzl Light app                                              |
-| **Status**            | Discontinued                                                                     |
-| **Comparison**        | See how [REACTIK+ compares](/tools/ultralight-research/lighting) to similar gear |
+| Spec                  | Value                                    |
+| --------------------- | ---------------------------------------- |
+| **Weight**            | 110 g (3.9 oz)                           |
+| **Max Lumens**        | 300 lm                                   |
+| **Max Beam Distance** | 110 m                                    |
+| **Battery**           | 1800 mAh rechargeable Li-ion (micro USB) |
+| **Backup Battery**    | Optional AAA adapter (sold separately)   |
+| **Charge Time**       | ~4.5 hours                               |
+| **Max Burn Time**     | 10 hours                                 |
+| **Light Modes**       | 6 white (3 Reactive, 3 Constant) + 2 red |
+| **Water Resistance**  | IPX4 (splash-proof)                      |
+| **Connectivity**      | Bluetooth Smart / MyPetzl Light app      |
+| **Status**            | Discontinued                             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="lighting"
+/>
 
 ## Performance
 

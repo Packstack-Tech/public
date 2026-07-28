@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A budget-friendly 117g TPU air pillow from Cotswold Outdoor's house brand — decent for casual travel, but thin on independent testing."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Ayacucho Travel Square Air Pillow is a compact inflatable pillow from Cotswo
 
 ## Key Specs
 
-| Spec           | Detail                                                                                         |
-| -------------- | ---------------------------------------------------------------------------------------------- |
-| Weight         | 117 g                                                                                          |
-| Material       | TPU elastic composite fabric                                                                   |
-| Shape          | Square                                                                                         |
-| Inflation      | Manual (blow-up valve)                                                                         |
-| Sustainability | Made from recycled/organic/alternative materials                                               |
-| SKU            | G4HX3C0031                                                                                     |
-| Brand          | Ayacucho (Cotswold Outdoor / Snow+Rock house brand)                                            |
-| **Comparison** | See how [Travel Square Air Pillow compares](/tools/ultralight-research/pillow) to similar gear |
+| Spec           | Detail                                              |
+| -------------- | --------------------------------------------------- |
+| Weight         | 117 g                                               |
+| Material       | TPU elastic composite fabric                        |
+| Shape          | Square                                              |
+| Inflation      | Manual (blow-up valve)                              |
+| Sustainability | Made from recycled/organic/alternative materials    |
+| SKU            | G4HX3C0031                                          |
+| Brand          | Ayacucho (Cotswold Outdoor / Snow+Rock house brand) |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="pillow"
+/>
 
 ## Performance
 

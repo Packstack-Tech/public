@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A 2.25L Dyneema fanny pack that doubles as a sling and backpack accessory pouch—here's how it holds up on trail."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Versa is Hyperlite Mountain Gear's answer to the "hip pack" trend that's tak
 
 ## Key Specs
 
-| Spec                    | Detail                                                                      |
-| ----------------------- | --------------------------------------------------------------------------- |
-| Weight (bag only)       | 83 g (2.9 oz)                                                               |
-| Weight w/ waist strap   | 121 g (4.3 oz)                                                              |
-| Volume                  | 2.25 L                                                                      |
-| Dimensions              | 9 x 6 x 2.25 in (L x W x H)                                                 |
-| Material                | Dyneema Composite Fabric (DCH50)                                            |
-| Max waist circumference | 52 in                                                                       |
-| Zippers                 | YKK Aquaguard (water-resistant)                                             |
-| Carry modes             | Waist pack, sling, backpack hip belt/sternum attachment                     |
-| **Comparison**          | See how [Versa compares](/tools/ultralight-research/add-on) to similar gear |
+| Spec                    | Detail                                                  |
+| ----------------------- | ------------------------------------------------------- |
+| Weight (bag only)       | 83 g (2.9 oz)                                           |
+| Weight w/ waist strap   | 121 g (4.3 oz)                                          |
+| Volume                  | 2.25 L                                                  |
+| Dimensions              | 9 x 6 x 2.25 in (L x W x H)                             |
+| Material                | Dyneema Composite Fabric (DCH50)                        |
+| Max waist circumference | 52 in                                                   |
+| Zippers                 | YKK Aquaguard (water-resistant)                         |
+| Carry modes             | Waist pack, sling, backpack hip belt/sternum attachment |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="add-on"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-08"
 description: "A freeze-dried Norwegian clipfish stew inspired by Portuguese tradition — real flavor ambition, but 405 kcal keeps it from being a full-dinner workhorse."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,24 +20,29 @@ The REAL Turmat Bacalao is a freeze-dried clipfish-and-potato stew with a Portug
 
 ## Key Specs
 
-| Spec                   | Value                                                                       |
-| ---------------------- | --------------------------------------------------------------------------- |
-| Dry Weight             | 85 g                                                                        |
-| Prepared Weight        | 440 g                                                                       |
-| Calories               | 405 kcal                                                                    |
-| Calorie Density        | ~4.8 kcal/g                                                                 |
-| Protein                | 15.5 g                                                                      |
-| Carbohydrates          | 31.4 g                                                                      |
-| Fat                    | 23 g                                                                        |
-| Sodium                 | ~1,200 mg (3 g salt)                                                        |
-| Shelf Life             | 5 years                                                                     |
-| Allergens              | Fish, Soy                                                                   |
-| Dietary                | Gluten-free, Lactose-free, Milk-free                                        |
-| Prep Time (hot water)  | 8–10 min                                                                    |
-| Prep Time (cold water) | 30+ min                                                                     |
-| **Comparison**         | See how [Bacalao compares](/tools/ultralight-research/meal) to similar gear |
+| Spec                   | Value                                |
+| ---------------------- | ------------------------------------ |
+| Dry Weight             | 85 g                                 |
+| Prepared Weight        | 440 g                                |
+| Calories               | 405 kcal                             |
+| Calorie Density        | ~4.8 kcal/g                          |
+| Protein                | 15.5 g                               |
+| Carbohydrates          | 31.4 g                               |
+| Fat                    | 23 g                                 |
+| Sodium                 | ~1,200 mg (3 g salt)                 |
+| Shelf Life             | 5 years                              |
+| Allergens              | Fish, Soy                            |
+| Dietary                | Gluten-free, Lactose-free, Milk-free |
+| Prep Time (hot water)  | 8–10 min                             |
+| Prep Time (cold water) | 30+ min                              |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="meal"
+/>
 
 ## Performance
 

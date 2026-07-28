@@ -12,7 +12,7 @@ published_at: "2026-07-17"
 description: "The Kelty Circuit 2 is a budget-friendly, freestanding 3-season dome tent aimed at beginner backpackers and casual campers who want reliable shelter without a steep price tag."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,23 +20,28 @@ The Kelty Circuit 2 is a freestanding, 3-season dome tent marketed to entry-leve
 
 ## Key Specs
 
-| Spec            | Value                                                                         |
-| --------------- | ----------------------------------------------------------------------------- |
-| Trail Weight    | 4 lbs 2 oz (1,871 g)                                                          |
-| Packaged Weight | 4 lbs 12 oz (2,155 g)                                                         |
-| Packed Size     | 8 × 25 in                                                                     |
-| Capacity        | 2-person                                                                      |
-| Seasons         | 3-season                                                                      |
-| Floor Area      | 33 sq ft                                                                      |
-| Vestibule Area  | 4.5 sq ft                                                                     |
-| Peak Height     | 42 in                                                                         |
-| Number of Doors | 1                                                                             |
-| Number of Poles | 2                                                                             |
-| Pole Material   | 7000-series aluminum                                                          |
-| Pole Diameter   | 9 mm                                                                          |
-| **Comparison**  | See how [Circuit 2 compares](/tools/ultralight-research/tent) to similar gear |
+| Spec            | Value                 |
+| --------------- | --------------------- |
+| Trail Weight    | 4 lbs 2 oz (1,871 g)  |
+| Packaged Weight | 4 lbs 12 oz (2,155 g) |
+| Packed Size     | 8 × 25 in             |
+| Capacity        | 2-person              |
+| Seasons         | 3-season              |
+| Floor Area      | 33 sq ft              |
+| Vestibule Area  | 4.5 sq ft             |
+| Peak Height     | 42 in                 |
+| Number of Doors | 1                     |
+| Number of Poles | 2                     |
+| Pole Material   | 7000-series aluminum  |
+| Pole Diameter   | 9 mm                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="tent"
+/>
 
 ## Performance
 

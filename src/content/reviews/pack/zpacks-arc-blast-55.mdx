@@ -12,7 +12,7 @@ published_at: "2026-07-12"
 description: "A deep dive into the discontinued Zpacks Arc Blast 55 — one of the lightest framed packs ever made, built for ultralight hikers who keep loads under ~25 lbs."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Zpacks Arc Blast 55 is a DCF roll-top pack built around a patented carbon fi
 
 ## Key Specs
 
-| Spec                      | Value                                                                                 |
-| ------------------------- | ------------------------------------------------------------------------------------- |
-| **Weight**                | 565 g / 19.9 oz                                                                       |
-| **Total Volume**          | 55 L                                                                                  |
-| **Volume Breakdown**      | 42 L main body + 2× 2.5 L side pockets + 8 L front mesh pocket                        |
-| **Body Material**         | 3.1 oz/sqyd Dyneema Composite Fabric Hybrid                                           |
-| **Strap / Belt Material** | Black Ultra 200 fabric                                                                |
-| **Frame**                 | Patented 5-piece carbon fiber Arc Frame                                               |
-| **Closure**               | Roll-top with buckle                                                                  |
-| **Recommended Max Load**  | ~30 lbs                                                                               |
-| **Status**                | Discontinued — replaced by Arc Haul Ultra                                             |
-| **Comparison**            | See how [Arc Blast 55 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                      | Value                                                          |
+| ------------------------- | -------------------------------------------------------------- |
+| **Weight**                | 565 g / 19.9 oz                                                |
+| **Total Volume**          | 55 L                                                           |
+| **Volume Breakdown**      | 42 L main body + 2× 2.5 L side pockets + 8 L front mesh pocket |
+| **Body Material**         | 3.1 oz/sqyd Dyneema Composite Fabric Hybrid                    |
+| **Strap / Belt Material** | Black Ultra 200 fabric                                         |
+| **Frame**                 | Patented 5-piece carbon fiber Arc Frame                        |
+| **Closure**               | Roll-top with buckle                                           |
+| **Recommended Max Load**  | ~30 lbs                                                        |
+| **Status**                | Discontinued — replaced by Arc Haul Ultra                      |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

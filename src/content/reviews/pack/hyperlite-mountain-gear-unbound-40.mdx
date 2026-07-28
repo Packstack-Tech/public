@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A deep dive into HMG's Unbound 40, the brand's redesigned Dyneema thru-hiking pack with oversized pockets and a new single-stay suspension."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,22 +20,27 @@ The Unbound 40 is Hyperlite Mountain Gear's redesigned flagship pack, built for 
 
 ## Key Specs
 
-| Spec                  | Detail                                                                              |
-| --------------------- | ----------------------------------------------------------------------------------- |
-| Weight                | 853 g (30.1 oz), size M                                                             |
-| Internal volume       | 40 L                                                                                |
-| External volume       | 9 L                                                                                 |
-| Total volume          | 49 L                                                                                |
-| Max recommended load  | 40 lbs                                                                              |
-| Main body material    | DCH50                                                                               |
-| Bottom panel material | DCH150                                                                              |
-| Frame                 | Single contoured aluminum stay                                                      |
-| Available sizes       | S, M, L, Tall                                                                       |
-| Closure               | Roll-top, buckles on top or sides                                                   |
-| Hip belt              | Removable                                                                           |
-| **Comparison**        | See how [Unbound 40 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                  | Detail                            |
+| --------------------- | --------------------------------- |
+| Weight                | 853 g (30.1 oz), size M           |
+| Internal volume       | 40 L                              |
+| External volume       | 9 L                               |
+| Total volume          | 49 L                              |
+| Max recommended load  | 40 lbs                            |
+| Main body material    | DCH50                             |
+| Bottom panel material | DCH150                            |
+| Frame                 | Single contoured aluminum stay    |
+| Available sizes       | S, M, L, Tall                     |
+| Closure               | Roll-top, buckles on top or sides |
+| Hip belt              | Removable                         |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

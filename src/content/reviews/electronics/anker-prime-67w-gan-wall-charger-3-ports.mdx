@@ -12,7 +12,7 @@ published_at: "2026-07-19"
 description: "The Anker Prime 67W GaN Wall Charger (A2669) packs three ports and laptop-capable power into a compact block. Here's how it holds up for backpackers and travelers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,22 +20,27 @@ The Anker Prime 67W GaN Wall Charger (model A2669) is a three-port wall charger 
 
 ## Key Specs
 
-| Spec                   | Value                                                                                                           |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------- |
-| Model                  | A2669                                                                                                           |
-| Weight                 | 167.3 g (5.9 oz)                                                                                                |
-| Ports                  | 2x USB-C, 1x USB-A                                                                                              |
-| Max Output (1 device)  | 67W                                                                                                             |
-| Max Output (2 devices) | 65W                                                                                                             |
-| Max Output (3 devices) | 64.5W                                                                                                           |
-| USB-C Max Output       | 67W per port                                                                                                    |
-| USB-A Max Output       | 22.5W                                                                                                           |
-| Fast Charge Protocols  | PD 3.0, PPS, QC                                                                                                 |
-| Technology             | GaNPrime, PowerIQ 4.0, ActiveShield 2.0                                                                         |
-| Warranty               | 24 months                                                                                                       |
-| **Comparison**         | See how [Prime 67W GaN Wall Charger (3 Ports) compares](/tools/ultralight-research/power-cable) to similar gear |
+| Spec                   | Value                                   |
+| ---------------------- | --------------------------------------- |
+| Model                  | A2669                                   |
+| Weight                 | 167.3 g (5.9 oz)                        |
+| Ports                  | 2x USB-C, 1x USB-A                      |
+| Max Output (1 device)  | 67W                                     |
+| Max Output (2 devices) | 65W                                     |
+| Max Output (3 devices) | 64.5W                                   |
+| USB-C Max Output       | 67W per port                            |
+| USB-A Max Output       | 22.5W                                   |
+| Fast Charge Protocols  | PD 3.0, PPS, QC                         |
+| Technology             | GaNPrime, PowerIQ 4.0, ActiveShield 2.0 |
+| Warranty               | 24 months                               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="power-cable"
+/>
 
 ## Performance
 

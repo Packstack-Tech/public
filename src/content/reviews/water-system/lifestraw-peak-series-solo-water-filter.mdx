@@ -12,7 +12,7 @@ published_at: "2026-07-05"
 description: "The LifeStraw Peak Series Solo is a 1.7 oz squeeze filter for ultralight hikers and trail runners. Compact and fast, but bottle compatibility is trickier than it looks."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,22 +31,27 @@ filter itself.
 
 ## Key Specs
 
-| Spec                | Value                                                                                                |
-| ------------------- | ---------------------------------------------------------------------------------------------------- |
-| **Weight**          | 48g (1.7 oz)                                                                                         |
-| **Height**          | 5.1 in (12.9 cm)                                                                                     |
-| **Thread Size**     | 28mm                                                                                                 |
-| **Filter Type**     | 0.2-micron hollow fiber membrane                                                                     |
-| **Flow Rate**       | 3L/min (claimed)                                                                                     |
-| **Filter Life**     | 2,000 liters (500 gal)                                                                               |
-| **Removes**         | Bacteria (99.999999%), Giardia/Crypto (99.999%), microplastics (99.999%)                             |
-| **Does Not Remove** | Viruses, dissolved chemicals, heavy metals, salt                                                     |
-| **Includes**        | Backwash syringe, leak-proof end caps                                                                |
-| **Material**        | 50% post-consumer recycled BPA-free plastic                                                          |
-| **Price**           | $29.95                                                                                               |
-| **Comparison**      | See how [LifeStraw Peak Series Solo compares](/tools/ultralight-research/filtration) to similar gear |
+| Spec                | Value                                                                    |
+| ------------------- | ------------------------------------------------------------------------ |
+| **Weight**          | 48g (1.7 oz)                                                             |
+| **Height**          | 5.1 in (12.9 cm)                                                         |
+| **Thread Size**     | 28mm                                                                     |
+| **Filter Type**     | 0.2-micron hollow fiber membrane                                         |
+| **Flow Rate**       | 3L/min (claimed)                                                         |
+| **Filter Life**     | 2,000 liters (500 gal)                                                   |
+| **Removes**         | Bacteria (99.999999%), Giardia/Crypto (99.999%), microplastics (99.999%) |
+| **Does Not Remove** | Viruses, dissolved chemicals, heavy metals, salt                         |
+| **Includes**        | Backwash syringe, leak-proof end caps                                    |
+| **Material**        | 50% post-consumer recycled BPA-free plastic                              |
+| **Price**           | $29.95                                                                   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="filtration"
+/>
 
 ## Performance
 

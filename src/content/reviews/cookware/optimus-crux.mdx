@@ -12,7 +12,7 @@ published_at: "2026-07-08"
 description: "The Optimus Crux is an 83g foldable canister stove with a 3000W burner and piezo ignitor — a serious packability contender for warm-weather ultralight backpacking."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Optimus Crux is a foldable-burner canister stove built around one obsession:
 
 ## Key Specs
 
-| Spec                      | Value                                                                     |
-| ------------------------- | ------------------------------------------------------------------------- |
-| Weight                    | 83 g (2.9 oz)                                                             |
-| Packed Size               | 3.3 × 2.2 × 1.3 in                                                        |
-| Power Output              | 3,000 W (10,200 BTU)                                                      |
-| Boil Time (1L, calm)      | ~3 min                                                                    |
-| Fuel Type                 | Butane / Isobutane / Propane                                              |
-| Ignition                  | Piezo auto-ignitor                                                        |
-| Burn Time (220g canister) | Up to 60 min at max output                                                |
-| **Comparison**            | See how [Crux compares](/tools/ultralight-research/stove) to similar gear |
+| Spec                      | Value                        |
+| ------------------------- | ---------------------------- |
+| Weight                    | 83 g (2.9 oz)                |
+| Packed Size               | 3.3 × 2.2 × 1.3 in           |
+| Power Output              | 3,000 W (10,200 BTU)         |
+| Boil Time (1L, calm)      | ~3 min                       |
+| Fuel Type                 | Butane / Isobutane / Propane |
+| Ignition                  | Piezo auto-ignitor           |
+| Burn Time (220g canister) | Up to 60 min at max output   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

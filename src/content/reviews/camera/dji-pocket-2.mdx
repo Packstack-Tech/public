@@ -12,7 +12,7 @@ published_at: "2026-06-03"
 description: "The DJI Pocket 2 is a 117g 3-axis gimbal camera with 4K/60fps video and 64MP stills — the gold standard for pocketable stabilized video, with real trade-offs in low light and battery life."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,26 +20,31 @@ The DJI Pocket 2 is a compact, handheld 3-axis gimbal camera aimed squarely at v
 
 ## Key Specs
 
-| Spec                     | Detail                                                                            |
-| ------------------------ | --------------------------------------------------------------------------------- |
-| **Weight**               | 117g                                                                              |
-| **Dimensions**           | 125 × 38 × 30 mm                                                                  |
-| **Sensor**               | 1/1.7" CMOS                                                                       |
-| **Max Photo Resolution** | 64MP                                                                              |
-| **Max Video Resolution** | 4K/60fps @ 100Mbps                                                                |
-| **Lens**                 | 20mm f/1.8                                                                        |
-| **Field of View**        | 93°                                                                               |
-| **Stabilization**        | 3-axis motorized gimbal                                                           |
-| **Battery Life**         | ~140 min (1080p); ~60 min continuous 4K                                           |
-| **Battery Capacity**     | 875mAh (non-removable)                                                            |
-| **Microphones**          | 4 (Matrix Stereo)                                                                 |
-| **Zoom**                 | Up to 8x digital (64MP mode)                                                      |
-| **Storage**              | microSD up to 256GB                                                               |
-| **Photo Formats**        | JPEG / RAW (DNG)                                                                  |
-| **Slow Motion**          | 1080p @ 240fps                                                                    |
-| **Comparison**           | See how [Pocket 2 compares](/tools/ultralight-research/body-lens) to similar gear |
+| Spec                     | Detail                                  |
+| ------------------------ | --------------------------------------- |
+| **Weight**               | 117g                                    |
+| **Dimensions**           | 125 × 38 × 30 mm                        |
+| **Sensor**               | 1/1.7" CMOS                             |
+| **Max Photo Resolution** | 64MP                                    |
+| **Max Video Resolution** | 4K/60fps @ 100Mbps                      |
+| **Lens**                 | 20mm f/1.8                              |
+| **Field of View**        | 93°                                     |
+| **Stabilization**        | 3-axis motorized gimbal                 |
+| **Battery Life**         | ~140 min (1080p); ~60 min continuous 4K |
+| **Battery Capacity**     | 875mAh (non-removable)                  |
+| **Microphones**          | 4 (Matrix Stereo)                       |
+| **Zoom**                 | Up to 8x digital (64MP mode)            |
+| **Storage**              | microSD up to 256GB                     |
+| **Photo Formats**        | JPEG / RAW (DNG)                        |
+| **Slow Motion**          | 1080p @ 240fps                          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="body-lens"
+/>
 
 ## Performance
 

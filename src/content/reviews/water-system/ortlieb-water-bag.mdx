@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A compact, 80g collapsible water bag that beats rigid bottles for packability — here's how it holds up on trail."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Ortlieb Water-Bag 2L is a soft-sided, roll-up water container aimed at anyon
 
 ## Key Specs
 
-| Spec                 | Value                                                                            |
-| -------------------- | -------------------------------------------------------------------------------- |
-| Brand                | Ortlieb                                                                          |
-| Volume               | 2 L                                                                              |
-| Weight               | 80 g                                                                             |
-| Dimensions           | 30 x 20 cm                                                                       |
-| Material             | PS17L (tear-resistant, food-grade coated fabric)                                 |
-| Max fill temperature | 60°C                                                                             |
-| Warranty             | 5 years                                                                          |
-| **Comparison**       | See how [Water-Bag compares](/tools/ultralight-research/storage) to similar gear |
+| Spec                 | Value                                            |
+| -------------------- | ------------------------------------------------ |
+| Brand                | Ortlieb                                          |
+| Volume               | 2 L                                              |
+| Weight               | 80 g                                             |
+| Dimensions           | 30 x 20 cm                                       |
+| Material             | PS17L (tear-resistant, food-grade coated fabric) |
+| Max fill temperature | 60°C                                             |
+| Warranty             | 5 years                                          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="storage"
+/>
 
 ## Performance
 

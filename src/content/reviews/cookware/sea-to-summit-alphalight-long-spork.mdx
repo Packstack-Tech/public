@@ -12,7 +12,7 @@ published_at: "2026-05-18"
 description: "The Sea to Summit AlphaLight Long Spork weighs just 12g and stretches 21.5 cm — the go-to utensil for freeze-dried meal hikers who hate dirty knuckles."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,16 +20,21 @@ The Sea to Summit AlphaLight Long Spork is a single-piece, hard-anodized aluminu
 
 ## Key Specs
 
-| Spec                | Details                                                                                      |
-| ------------------- | -------------------------------------------------------------------------------------------- |
-| **Weight**          | 12g (0.42 oz)                                                                                |
-| **Material**        | Hard Anodized 7075-T6 Aircraft Aluminum Alloy                                                |
-| **Length**          | 21.5 cm (8.5 in)                                                                             |
-| **Includes**        | Mini carabiner                                                                               |
-| **Dishwasher Safe** | No                                                                                           |
-| **Comparison**      | See how [AlphaLight Long Spork compares](/tools/ultralight-research/utensil) to similar gear |
+| Spec                | Details                                       |
+| ------------------- | --------------------------------------------- |
+| **Weight**          | 12g (0.42 oz)                                 |
+| **Material**        | Hard Anodized 7075-T6 Aircraft Aluminum Alloy |
+| **Length**          | 21.5 cm (8.5 in)                              |
+| **Includes**        | Mini carabiner                                |
+| **Dishwasher Safe** | No                                            |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="utensil"
+/>
 
 ## Performance
 

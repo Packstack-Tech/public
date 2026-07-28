@@ -12,7 +12,7 @@ published_at: "2026-07-15"
 description: "Pika Outdoors Summit Suds is a pH-neutral, SLS-free powdered backpacking soap that consolidates your hygiene kit into 28g. Here's how it performs on trail."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ Summit Suds is a fine powdered soap from Utah-based Pika Outdoors, <cite index="
 
 ## Key Specs
 
-| Spec                        | Detail                                                                              |
-| --------------------------- | ----------------------------------------------------------------------------------- |
-| Net Weight                  | 28g / 1 oz (1oz bottle); 85g / 3oz (refill pouch)                                   |
-| Total Weight (w/ packaging) | 40g / 1.4 oz (bottle); 91g / 3.2 oz (pouch)                                         |
-| pH                          | 7.0 (neutral)                                                                       |
-| Biodegradable               | Yes                                                                                 |
-| Fragrance-Free              | Yes                                                                                 |
-| SLS / SLES                  | None                                                                                |
-| Packaging                   | Compostable pouch                                                                   |
-| Use Cases                   | Hands, body, hair, dishes, clothes                                                  |
-| Origin                      | Made in USA                                                                         |
-| Approx. Price (1oz)         | ~$5.99                                                                              |
-| **Comparison**              | See how [Summit Suds™ compares](/tools/ultralight-research/hygiene) to similar gear |
+| Spec                        | Detail                                            |
+| --------------------------- | ------------------------------------------------- |
+| Net Weight                  | 28g / 1 oz (1oz bottle); 85g / 3oz (refill pouch) |
+| Total Weight (w/ packaging) | 40g / 1.4 oz (bottle); 91g / 3.2 oz (pouch)       |
+| pH                          | 7.0 (neutral)                                     |
+| Biodegradable               | Yes                                               |
+| Fragrance-Free              | Yes                                               |
+| SLS / SLES                  | None                                              |
+| Packaging                   | Compostable pouch                                 |
+| Use Cases                   | Hands, body, hair, dishes, clothes                |
+| Origin                      | Made in USA                                       |
+| Approx. Price (1oz)         | ~$5.99                                            |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hygiene"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-05"
 description: "A 53g, 100% Dyneema sewn runner with a uniquely low-profile seam — consistently rated the best climbing sling for alpine draws and multipitch rack management."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Mammut Contact Sling 8.0 is a 100% Dyneema sewn runner built around one genu
 
 ## Key Specs
 
-| Spec                  | Value                                                                                      |
-| --------------------- | ------------------------------------------------------------------------------------------ |
-| **Weight**            | 53 g                                                                                       |
-| **Length**            | 120 cm                                                                                     |
-| **Width**             | 8 mm                                                                                       |
-| **Material**          | 100% Dyneema                                                                               |
-| **Breaking Load**     | 22 kN                                                                                      |
-| **Certifications**    | UIAA, CE                                                                                   |
-| **Available Lengths** | 30, 60, 120, 180, 240 cm                                                                   |
-| **Comparison**        | See how [Contact Sling 8.0 compares](/tools/ultralight-research/soft-good) to similar gear |
+| Spec                  | Value                    |
+| --------------------- | ------------------------ |
+| **Weight**            | 53 g                     |
+| **Length**            | 120 cm                   |
+| **Width**             | 8 mm                     |
+| **Material**          | 100% Dyneema             |
+| **Breaking Load**     | 22 kN                    |
+| **Certifications**    | UIAA, CE                 |
+| **Available Lengths** | 30, 60, 120, 180, 240 cm |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="soft-good"
+/>
 
 ## Performance
 

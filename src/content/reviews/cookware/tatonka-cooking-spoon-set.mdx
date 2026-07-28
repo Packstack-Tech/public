@@ -12,7 +12,7 @@ published_at: "2026-05-29"
 description: "The Tatonka Cooking Spoon Set pairs a cooking spoon and spatula in coconut wood — a natural, non-scratch option for camp chefs who cook on non-stick cookware."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,16 +27,21 @@ scratch the coating, this set has a genuine reason to exist in your kit.
 
 ## Key Specs
 
-| Spec           | Detail                                                                                           |
-| -------------- | ------------------------------------------------------------------------------------------------ |
-| **Weight**     | 45 g (set)                                                                                       |
-| **Dimensions** | 21 × 5 × 0.5 cm                                                                                  |
-| **Material**   | Coconut wood                                                                                     |
-| **Includes**   | 1× cooking spoon, 1× spatula                                                                     |
-| **Handle**     | Hole for hanging                                                                                 |
-| **Comparison** | See how [Tatonka Cooking Spoon Set compares](/tools/ultralight-research/utensil) to similar gear |
+| Spec           | Detail                       |
+| -------------- | ---------------------------- |
+| **Weight**     | 45 g (set)                   |
+| **Dimensions** | 21 × 5 × 0.5 cm              |
+| **Material**   | Coconut wood                 |
+| **Includes**   | 1× cooking spoon, 1× spatula |
+| **Handle**     | Hole for hanging             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="utensil"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-06-09"
 description: "A 2.5 oz upgrade over cheap mylar: SOL's vacuum-metalized polyethylene Emergency Blanket is quieter, tougher, and more reusable than anything from the dollar-store first-aid aisle."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The SOL Emergency Blanket is a single-person emergency shelter made from vacuum-
 
 ## Key Specs
 
-| Spec                  | Details                                                                                           |
-| --------------------- | ------------------------------------------------------------------------------------------------- |
-| **Weight**            | 70.9 g / 2.5 oz                                                                                   |
-| **Dimensions (open)** | 56" × 84"                                                                                         |
-| **Packed Size**       | 5" × 3" × 4"                                                                                      |
-| **Material**          | Vacuum-metalized polyethylene                                                                     |
-| **Heat Reflectivity** | 90%                                                                                               |
-| **Waterproof**        | Yes                                                                                               |
-| **Windproof**         | Yes                                                                                               |
-| **Exterior Color**    | Blaze orange / silver reflective                                                                  |
-| **Comparison**        | See how the [SOL Emergency Blanket compares](/tools/ultralight-research/survival) to similar gear |
+| Spec                  | Details                          |
+| --------------------- | -------------------------------- |
+| **Weight**            | 70.9 g / 2.5 oz                  |
+| **Dimensions (open)** | 56" × 84"                        |
+| **Packed Size**       | 5" × 3" × 4"                     |
+| **Material**          | Vacuum-metalized polyethylene    |
+| **Heat Reflectivity** | 90%                              |
+| **Waterproof**        | Yes                              |
+| **Windproof**         | Yes                              |
+| **Exterior Color**    | Blaze orange / silver reflective |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="survival"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-06-08"
 description: "A full review of the Osprey Aether 65 — a beefy, feature-rich heavy hauler built for 30–60 lb loads on multi-day trips and expeditions."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Osprey Aether 65 is a purpose-built heavy hauler aimed at backpackers who ne
 
 ## Key Specs
 
-| Spec           | Value                                                                                     |
-| -------------- | ----------------------------------------------------------------------------------------- |
-| **Weight**     | 2,231g (4 lbs 14.7 oz)                                                                    |
-| **Volume**     | 65L                                                                                       |
-| **Load Range** | 30–60 lbs                                                                                 |
-| **Fabric**     | 210D & 420D Nylon (bluesign® approved)                                                    |
-| **Frame**      | LightWire aluminum alloy peripheral frame                                                 |
-| **Back Panel** | AirScape injected-foam with mesh                                                          |
-| **Sizes**      | S/M, L/XL                                                                                 |
-| **Rain Cover** | Included                                                                                  |
-| **Price**      | ~$370                                                                                     |
-| **Comparison** | See how [Osprey Aether 65 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec           | Value                                     |
+| -------------- | ----------------------------------------- |
+| **Weight**     | 2,231g (4 lbs 14.7 oz)                    |
+| **Volume**     | 65L                                       |
+| **Load Range** | 30–60 lbs                                 |
+| **Fabric**     | 210D & 420D Nylon (bluesign® approved)    |
+| **Frame**      | LightWire aluminum alloy peripheral frame |
+| **Back Panel** | AirScape injected-foam with mesh          |
+| **Sizes**      | S/M, L/XL                                 |
+| **Rain Cover** | Included                                  |
+| **Price**      | ~$370                                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A deep dive into Osprey's women's Aura AG 50 — a comfort-first 50L backpacking pack built around the AntiGravity suspension, for hikers who'd rather carry a bit more weight than sacrifice fit."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,9 +32,14 @@ The Aura AG 50 is Osprey's women's-specific, comfort-oriented backpacking pack, 
 | Access            | Top-load, curved side zip, bottom sleeping bag compartment                                                  |
 | Included features | Integrated rain cover, removable floating top lid, hipbelt pockets, Stow-on-the-Go trekking pole attachment |
 | Warranty          | Osprey "All Mighty Guarantee" (lifetime repair/replacement)                                                 |
-| **Comparison**    | See how [Aura AG 50 compares](/tools/ultralight-research/main-pack) to similar gear                         |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

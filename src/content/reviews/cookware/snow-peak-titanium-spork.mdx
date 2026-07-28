@@ -12,7 +12,7 @@ published_at: "2026-06-06"
 description: "The Snow Peak Titanium Spork is a 16g, Japan-made backcountry classic — nearly indestructible, easy to clean, and comfortable to use, with a short handle that limits deep-pouch eating."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The Snow Peak Titanium Spork is one of the most recognized utensils in backpacki
 
 ## Key Specs
 
-| Spec                | Detail                                                                                          |
-| ------------------- | ----------------------------------------------------------------------------------------------- |
-| **Weight**          | 16g (0.56 oz)                                                                                   |
-| **Dimensions**      | 16.5cm x 4.1cm (6.5" x 1.6")                                                                    |
-| **Material**        | Titanium                                                                                        |
-| **Color Options**   | Silver, Blue, Purple, Green (anodized)                                                          |
-| **Origin**          | Tsubame-Sanjo, Niigata, Japan                                                                   |
-| **Dishwasher Safe** | Yes                                                                                             |
-| **Comparison**      | See how [Snow Peak Titanium Spork compares](/tools/ultralight-research/utensil) to similar gear |
+| Spec                | Detail                                 |
+| ------------------- | -------------------------------------- |
+| **Weight**          | 16g (0.56 oz)                          |
+| **Dimensions**      | 16.5cm x 4.1cm (6.5" x 1.6")           |
+| **Material**        | Titanium                               |
+| **Color Options**   | Silver, Blue, Purple, Green (anodized) |
+| **Origin**          | Tsubame-Sanjo, Niigata, Japan          |
+| **Dishwasher Safe** | Yes                                    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="utensil"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-05"
 description: "The Buff Original is a 37g seamless neck gaiter with UPF 50 and 12+ wearing configurations — an ultralight trail staple with a few real-world caveats worth knowing."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -29,18 +29,23 @@ a few honest caveats.
 
 ## Key Specs
 
-| Spec             | Detail                                                                                                         |
-| ---------------- | -------------------------------------------------------------------------------------------------------------- |
-| **Weight**       | 37.0 g (1.3 oz)                                                                                                |
-| **Dimensions**   | 20.5" L × 9" W                                                                                                 |
-| **Material**     | 95% Recycled REPREVE® Polyester, 5% Elastane                                                                   |
-| **UPF Rating**   | UPF 50                                                                                                         |
-| **Ways to Wear** | 12+                                                                                                            |
-| **Construction** | Seamless, 4-way stretch                                                                                        |
-| **Sizing**       | One size fits most adults                                                                                      |
-| **Comparison**   | See how [Buff Original Multifunctional Headwear compares](/tools/ultralight-research/headwear) to similar gear |
+| Spec             | Detail                                       |
+| ---------------- | -------------------------------------------- |
+| **Weight**       | 37.0 g (1.3 oz)                              |
+| **Dimensions**   | 20.5" L × 9" W                               |
+| **Material**     | 95% Recycled REPREVE® Polyester, 5% Elastane |
+| **UPF Rating**   | UPF 50                                       |
+| **Ways to Wear** | 12+                                          |
+| **Construction** | Seamless, 4-way stretch                      |
+| **Sizing**       | One size fits most adults                    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="headwear"
+/>
 
 ## Performance
 

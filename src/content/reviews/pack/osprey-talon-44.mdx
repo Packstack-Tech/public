@@ -12,7 +12,7 @@ published_at: "2026-05-04"
 description: "A feature-rich, adjustable-fit framed pack at ~2 lb 15 oz — a practical sweet spot for lightweight weekend trips and technical day hikes."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,22 +30,27 @@ territory.
 
 ## Key Specs
 
-| Spec                    | Value                                                                                    |
-| ----------------------- | ---------------------------------------------------------------------------------------- |
-| **Weight**              | 1,330 g (2 lb 15 oz) — M/L                                                               |
-| **Volume**              | 44L (M/L) / 42L (S/M)                                                                    |
-| **Load Range**          | 15–35 lbs                                                                                |
-| **Frame**               | LightWire peripheral aluminum frame                                                      |
-| **Back Panel**          | Injection-molded AirScape™                                                               |
-| **Dimensions (M/L)**    | 28.3" × 12.2" × 13.4" (H×W×D)                                                            |
-| **Dimensions (S/M)**    | 26" × 12" × 11" (H×W×D)                                                                  |
-| **Sizes**               | S/M (42L), M/L (44L)                                                                     |
-| **Main Fabric**         | 100D recycled HT nylon ripstop, DWR (PFAS-free)                                          |
-| **Bottom Fabric**       | 420D recycled nylon, DWR (PFAS-free)                                                     |
-| **Rain Cover Included** | No                                                                                       |
-| **Comparison**          | See how [Osprey Talon 44 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                    | Value                                           |
+| ----------------------- | ----------------------------------------------- |
+| **Weight**              | 1,330 g (2 lb 15 oz) — M/L                      |
+| **Volume**              | 44L (M/L) / 42L (S/M)                           |
+| **Load Range**          | 15–35 lbs                                       |
+| **Frame**               | LightWire peripheral aluminum frame             |
+| **Back Panel**          | Injection-molded AirScape™                      |
+| **Dimensions (M/L)**    | 28.3" × 12.2" × 13.4" (H×W×D)                   |
+| **Dimensions (S/M)**    | 26" × 12" × 11" (H×W×D)                         |
+| **Sizes**               | S/M (42L), M/L (44L)                            |
+| **Main Fabric**         | 100D recycled HT nylon ripstop, DWR (PFAS-free) |
+| **Bottom Fabric**       | 420D recycled nylon, DWR (PFAS-free)            |
+| **Rain Cover Included** | No                                              |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

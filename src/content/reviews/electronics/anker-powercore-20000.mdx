@@ -12,7 +12,7 @@ published_at: "2026-05-18"
 description: "A capable, durable 20,000 mAh power bank held back by USB-A-only outputs, slow recharge times, and a 369g weight penalty."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Anker 325 Power Bank (also sold as the PowerCore 20K, model A1268) is a 20,0
 
 ## Key Specs
 
-| Spec                     | Value                                                                                            |
-| ------------------------ | ------------------------------------------------------------------------------------------------ |
-| **Capacity**             | 20,000 mAh                                                                                       |
-| **Weight**               | 369 g (13 oz)                                                                                    |
-| **Dimensions**           | 166 × 62 × 22 mm                                                                                 |
-| **Output Ports**         | 2× USB-A (5V⎓2.4A each; 5V⎓3A total)                                                             |
-| **Input Ports**          | 1× Micro-USB (5V⎓2A), 1× USB-C (5V⎓2A, input only)                                               |
-| **Max Output**           | 15W per port                                                                                     |
-| **Laptop Charging**      | No                                                                                               |
-| **Included Accessories** | Micro-USB cable, mesh carry pouch                                                                |
-| **Safety**               | Anker MultiProtect (overcharge, short circuit, temp control)                                     |
-| **Comparison**           | See how [Anker 325 PowerCore 20000 compares](/tools/ultralight-research/battery) to similar gear |
+| Spec                     | Value                                                        |
+| ------------------------ | ------------------------------------------------------------ |
+| **Capacity**             | 20,000 mAh                                                   |
+| **Weight**               | 369 g (13 oz)                                                |
+| **Dimensions**           | 166 × 62 × 22 mm                                             |
+| **Output Ports**         | 2× USB-A (5V⎓2.4A each; 5V⎓3A total)                         |
+| **Input Ports**          | 1× Micro-USB (5V⎓2A), 1× USB-C (5V⎓2A, input only)           |
+| **Max Output**           | 15W per port                                                 |
+| **Laptop Charging**      | No                                                           |
+| **Included Accessories** | Micro-USB cable, mesh carry pouch                            |
+| **Safety**               | Anker MultiProtect (overcharge, short circuit, temp control) |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="battery"
+/>
 
 ## Performance
 

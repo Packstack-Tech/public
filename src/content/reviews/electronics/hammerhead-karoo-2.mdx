@@ -12,7 +12,7 @@ published_at: "2026-06-08"
 description: "The Hammerhead Karoo 2 is a discontinued Android-based cycling computer with a standout touchscreen, excellent navigation, and a frustrating battery ceiling."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,26 +20,31 @@ The Hammerhead Karoo 2 is a full-featured cycling head unit built on a customize
 
 ## Key Specs
 
-| Spec                  | Value                                                                                  |
-| --------------------- | -------------------------------------------------------------------------------------- |
-| **Weight**            | 130.8 g                                                                                |
-| **Dimensions**        | 100.45 × 60.25 × 19.5 mm                                                               |
-| **Screen Size**       | 3.2 in                                                                                 |
-| **Screen Resolution** | 480 × 800 px                                                                           |
-| **CPU**               | Quad-core 1.1 GHz                                                                      |
-| **RAM**               | 2 GB                                                                                   |
-| **Storage**           | 32 GB                                                                                  |
-| **GPS**               | Single-band                                                                            |
-| **Water Resistance**  | IP67                                                                                   |
-| **Operating Temp**    | −15°C to 55°C                                                                          |
-| **Operating System**  | Karoo OS (Android 8)                                                                   |
-| **Connectivity**      | ANT+, Bluetooth Smart, Wi-Fi, optional 4G SIM                                          |
-| **Battery Life**      | Up to 12 hrs (claimed)                                                                 |
-| **Charging**          | USB-C                                                                                  |
-| **Status**            | Discontinued                                                                           |
-| **Comparison**        | See how [Karoo 2 compares](/tools/ultralight-research/navigationcomm) to similar gear |
+| Spec                  | Value                                         |
+| --------------------- | --------------------------------------------- |
+| **Weight**            | 130.8 g                                       |
+| **Dimensions**        | 100.45 × 60.25 × 19.5 mm                      |
+| **Screen Size**       | 3.2 in                                        |
+| **Screen Resolution** | 480 × 800 px                                  |
+| **CPU**               | Quad-core 1.1 GHz                             |
+| **RAM**               | 2 GB                                          |
+| **Storage**           | 32 GB                                         |
+| **GPS**               | Single-band                                   |
+| **Water Resistance**  | IP67                                          |
+| **Operating Temp**    | −15°C to 55°C                                 |
+| **Operating System**  | Karoo OS (Android 8)                          |
+| **Connectivity**      | ANT+, Bluetooth Smart, Wi-Fi, optional 4G SIM |
+| **Battery Life**      | Up to 12 hrs (claimed)                        |
+| **Charging**          | USB-C                                         |
+| **Status**            | Discontinued                                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="navigationcomm"
+/>
 
 ## Performance
 

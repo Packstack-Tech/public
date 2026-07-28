@@ -12,7 +12,7 @@ published_at: "2026-07-01"
 description: "A trail-tested look at Banana Boat Sport Ultra SPF 30 Lotion — a budget-friendly, oxybenzone-free sunscreen that earns its place in a backpacker's kit, with some ingredient caveats worth knowing."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ Banana Boat Sport Ultra SPF 30 is a chemical-filter sunscreen lotion aimed at ac
 
 ## Key Specs
 
-| Spec                   | Detail                                                                                                |
-| ---------------------- | ----------------------------------------------------------------------------------------------------- |
-| **SPF**                | 30                                                                                                    |
-| **Protection Type**    | Broad Spectrum UVA/UVB                                                                                |
-| **Water Resistance**   | 80 minutes                                                                                            |
-| **Formula Type**       | Lotion                                                                                                |
-| **Active Ingredients** | Avobenzone 2.0%, Homosalate 4.0%, Octisalate 4.0%, Octocrylene 3.0%                                   |
-| **Oxybenzone-Free**    | Yes                                                                                                   |
-| **Octinoxate-Free**    | Yes                                                                                                   |
-| **Weight (1 oz tube)** | 28.3 g (1.0 oz)                                                                                       |
-| **Comparison**         | See how [Banana Boat Sport Ultra SPF 30 compares](/tools/ultralight-research/sun-bug) to similar gear |
+| Spec                   | Detail                                                              |
+| ---------------------- | ------------------------------------------------------------------- |
+| **SPF**                | 30                                                                  |
+| **Protection Type**    | Broad Spectrum UVA/UVB                                              |
+| **Water Resistance**   | 80 minutes                                                          |
+| **Formula Type**       | Lotion                                                              |
+| **Active Ingredients** | Avobenzone 2.0%, Homosalate 4.0%, Octisalate 4.0%, Octocrylene 3.0% |
+| **Oxybenzone-Free**    | Yes                                                                 |
+| **Octinoxate-Free**    | Yes                                                                 |
+| **Weight (1 oz tube)** | 28.3 g (1.0 oz)                                                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sun-bug"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-08"
 description: "A classic, BPA-free HDPE bottle in sizes from 30ml to 1000ml — versatile, leak-proof, and a reliable trail staple, though not the lightest option available."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Nalgene Wide Mouth Round Bottle has been a trail fixture since the 1970s, an
 
 ## Key Specs
 
-| Spec                | Detail                                                                                        |
-| ------------------- | --------------------------------------------------------------------------------------------- |
-| **Weight**          | 25g (varies by size)                                                                          |
-| **Available Sizes** | 30ml – 1000ml                                                                                 |
-| **Material**        | HDPE (High-Density Polyethylene)                                                              |
-| **BPA-Free**        | Yes                                                                                           |
-| **Closure**         | Leakproof screw cap                                                                           |
-| **Opacity**         | Translucent white                                                                             |
-| **Dishwasher Safe** | Yes                                                                                           |
-| **Article Number**  | 0760                                                                                          |
-| **Comparison**      | See how [Wide Mouth Round Bottle compares](/tools/ultralight-research/bottle) to similar gear |
+| Spec                | Detail                           |
+| ------------------- | -------------------------------- |
+| **Weight**          | 25g (varies by size)             |
+| **Available Sizes** | 30ml – 1000ml                    |
+| **Material**        | HDPE (High-Density Polyethylene) |
+| **BPA-Free**        | Yes                              |
+| **Closure**         | Leakproof screw cap              |
+| **Opacity**         | Translucent white                |
+| **Dishwasher Safe** | Yes                              |
+| **Article Number**  | 0760                             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="bottle"
+/>
 
 ## Performance
 

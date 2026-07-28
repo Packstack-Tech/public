@@ -12,7 +12,7 @@ published_at: "2026-05-11"
 description: "A deep dive into the Warbonnet Blackbird XLC: the larger, convertible sibling of the legendary Blackbird, built for taller sleepers and four-season versatility."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -48,9 +48,14 @@ import PackstackCTA from "../../../components/PackstackCTA.astro"
 | **Fabric Options**                        | 40D Nylon Single, 40D/15D Lightweight Double, 70D Heavyweight Single, 40D Heavyweight Double |
 | **Suspension**                            | Sold separately (Continuous Loops, Webbing/Buckles, Whoopies, or Becket)                     |
 | **Made In**                               | Evergreen, Colorado, USA                                                                     |
-| **Comparison**                            | See how [Blackbird XLC compares](/tools/ultralight-research/hammock) to similar gear         |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hammock"
+/>
 
 ## Performance
 

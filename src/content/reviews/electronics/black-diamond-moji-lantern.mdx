@@ -12,7 +12,7 @@ published_at: "2026-06-08"
 description: "The Black Diamond Moji Lantern is a compact, 200-lumen camp lantern with Dual-Fuel flexibility and IPX4 weather resistance — a no-frills workhorse at $25."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,20 +31,25 @@ territory, and that's exactly the niche it owns.
 
 ## Key Specs
 
-| Spec                           | Value                                                                                |
-| ------------------------------ | ------------------------------------------------------------------------------------ |
-| **Weight (with batteries)**    | 105.5g / 3.7 oz                                                                      |
-| **Weight (without batteries)** | 72.5g / 2.6 oz                                                                       |
-| **Max Output**                 | 200 lumens                                                                           |
-| **Battery Type**               | 3x AAA alkaline or BD 1500 Li-ion (sold separately)                                  |
-| **IPX Rating**                 | IPX4 (stormproof)                                                                    |
-| **Light Modes**                | Continuous dimming + strobe                                                          |
-| **Hang System**                | Collapsible double-hook loop                                                         |
-| **Warranty**                   | 3 years                                                                              |
-| **Price**                      | ~$25                                                                                 |
-| **Comparison**                 | See how [Moji Lantern compares](/tools/ultralight-research/lighting) to similar gear |
+| Spec                           | Value                                               |
+| ------------------------------ | --------------------------------------------------- |
+| **Weight (with batteries)**    | 105.5g / 3.7 oz                                     |
+| **Weight (without batteries)** | 72.5g / 2.6 oz                                      |
+| **Max Output**                 | 200 lumens                                          |
+| **Battery Type**               | 3x AAA alkaline or BD 1500 Li-ion (sold separately) |
+| **IPX Rating**                 | IPX4 (stormproof)                                   |
+| **Light Modes**                | Continuous dimming + strobe                         |
+| **Hang System**                | Collapsible double-hook loop                        |
+| **Warranty**                   | 3 years                                             |
+| **Price**                      | ~$25                                                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="lighting"
+/>
 
 ## Performance
 

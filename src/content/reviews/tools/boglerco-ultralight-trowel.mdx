@@ -12,7 +12,7 @@ published_at: "2026-04-30"
 description: "A 13.5g aircraft-grade aluminum cathole trowel from a US cottage maker, with a standout ergonomic end cap that sets it apart from the flat-handled competition."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The BoglerCo Ultralight Trowel is a handmade, 13.5g aircraft-grade aluminum cath
 
 ## Key Specs
 
-| Spec           | Detail                                                                                               |
-| -------------- | ---------------------------------------------------------------------------------------------------- |
-| **Weight**     | 13.5g (0.48 oz)                                                                                      |
-| **Length**     | 7.25 in                                                                                              |
-| **Dimensions** | 7.25 x 2.25 x 0.5 in                                                                                 |
-| **Material**   | Aircraft-grade aluminum                                                                              |
-| **End Cap**    | UV-resistant plastic, attached with 2 stainless steel screws                                         |
-| **Finish**     | Natural oil treatment (not anodized)                                                                 |
-| **Warranty**   | Lifetime against breakage under normal use                                                           |
-| **Made In**    | USA                                                                                                  |
-| **Colors**     | 9 options                                                                                            |
-| **Comparison** | See how [BoglerCo Ultralight Trowel compares](/tools/ultralight-research/processing) to similar gear |
+| Spec           | Detail                                                       |
+| -------------- | ------------------------------------------------------------ |
+| **Weight**     | 13.5g (0.48 oz)                                              |
+| **Length**     | 7.25 in                                                      |
+| **Dimensions** | 7.25 x 2.25 x 0.5 in                                         |
+| **Material**   | Aircraft-grade aluminum                                      |
+| **End Cap**    | UV-resistant plastic, attached with 2 stainless steel screws |
+| **Finish**     | Natural oil treatment (not anodized)                         |
+| **Warranty**   | Lifetime against breakage under normal use                   |
+| **Made In**    | USA                                                          |
+| **Colors**     | 9 options                                                    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="processing"
+/>
 
 ## Performance
 

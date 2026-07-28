@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A midweight merino base layer built for daily wear and mild-condition hiking — soft and odor-resistant, but with a few fit and durability quirks worth knowing about."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The Merino 175 Everyday is Icebreaker's do-everything base layer — a 175gsm 10
 
 ## Key Specs
 
-| Spec             | Value                                                                                         |
-| ---------------- | --------------------------------------------------------------------------------------------- |
-| Weight           | 165 g (5.8 oz)                                                                                |
-| Fabric weight    | 175 gsm                                                                                       |
-| Material         | 100% Merino Wool                                                                              |
-| Fit              | Slim                                                                                          |
-| Styles available | Short Sleeve Crew, Long Sleeve Crew, Long Sleeve Half Zip, Leggings                           |
-| Care             | Machine wash cold, line dry, no tumble dry                                                    |
-| **Comparison**   | See how [Merino 175 Everyday compares](/tools/ultralight-research/base-layer) to similar gear |
+| Spec             | Value                                                               |
+| ---------------- | ------------------------------------------------------------------- |
+| Weight           | 165 g (5.8 oz)                                                      |
+| Fabric weight    | 175 gsm                                                             |
+| Material         | 100% Merino Wool                                                    |
+| Fit              | Slim                                                                |
+| Styles available | Short Sleeve Crew, Long Sleeve Crew, Long Sleeve Half Zip, Leggings |
+| Care             | Machine wash cold, line dry, no tumble dry                          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="base-layer"
+/>
 
 ## Performance
 

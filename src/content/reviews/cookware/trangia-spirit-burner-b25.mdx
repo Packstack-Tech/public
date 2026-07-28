@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A deep dive into Trangia's legendary brass alcohol burner — bombproof, silent, and simple, but not for speed demons."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Trangia B25 is the brass alcohol burner that's been sitting inside every Tra
 
 ## Key Specs
 
-| Spec                  | Value                                                                                  |
-| --------------------- | -------------------------------------------------------------------------------------- |
-| Weight                | 110 g (3.9 oz)                                                                         |
-| Material              | Brass                                                                                  |
-| Output                | 1,000 W / 3,500 BTU                                                                    |
-| Fuel capacity         | 100 ml                                                                                 |
-| Burn time (full tank) | ~25 min                                                                                |
-| Boil time (1L)        | ~10 min (claimed)                                                                      |
-| Dimensions            | Ø75 x 42 mm                                                                            |
-| Includes              | Burner, simmer ring, cap with O-ring, yellow storage bag                               |
-| **Comparison**        | See how [Spirit Burner B25 compares](/tools/ultralight-research/stove) to similar gear |
+| Spec                  | Value                                                    |
+| --------------------- | -------------------------------------------------------- |
+| Weight                | 110 g (3.9 oz)                                           |
+| Material              | Brass                                                    |
+| Output                | 1,000 W / 3,500 BTU                                      |
+| Fuel capacity         | 100 ml                                                   |
+| Burn time (full tank) | ~25 min                                                  |
+| Boil time (1L)        | ~10 min (claimed)                                        |
+| Dimensions            | Ø75 x 42 mm                                              |
+| Includes              | Burner, simmer ring, cap with O-ring, yellow storage bag |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

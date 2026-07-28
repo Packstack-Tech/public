@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A breathable, heat-reflective emergency bivy that trades a little weight for a lot less condensation than the classic space-blanket bivvy."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The SOL Escape Bivvy is a step up from the disposable mylar emergency bags you s
 
 ## Key Specs
 
-| Spec              | Detail                                                                           |
-| ----------------- | -------------------------------------------------------------------------------- |
-| Weight (Regular)  | 8.5 oz / 241 g                                                                   |
-| Weight (XL)       | 9.5 oz / 269 g                                                                   |
-| Dimensions        | 84 x 31 in                                                                       |
-| Heat reflectivity | 70% of radiated body heat                                                        |
-| Material          | Escape ThermaShell (spunbonded olefin, metalized coating)                        |
-| Closure           | Full hood with draw cord, 23-in side zipper                                      |
-| Foot box          | Fully formed                                                                     |
-| Colors            | Orange, OD Green                                                                 |
-| Reusable          | Yes                                                                              |
-| **Comparison**    | See how [Escape Bivvy compares](/tools/ultralight-research/bivy) to similar gear |
+| Spec              | Detail                                                    |
+| ----------------- | --------------------------------------------------------- |
+| Weight (Regular)  | 8.5 oz / 241 g                                            |
+| Weight (XL)       | 9.5 oz / 269 g                                            |
+| Dimensions        | 84 x 31 in                                                |
+| Heat reflectivity | 70% of radiated body heat                                 |
+| Material          | Escape ThermaShell (spunbonded olefin, metalized coating) |
+| Closure           | Full hood with draw cord, 23-in side zipper               |
+| Foot box          | Fully formed                                              |
+| Colors            | Orange, OD Green                                          |
+| Reusable          | Yes                                                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="bivy"
+/>
 
 ## Performance
 

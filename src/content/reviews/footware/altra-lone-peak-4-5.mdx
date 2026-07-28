@@ -12,7 +12,7 @@ published_at: "2026-06-26"
 description: "An honest look at the Altra Lone Peak 4.5 — a zero-drop trail shoe beloved by thru-hikers, with updated midsole foam and a snugger fit that divides long-time fans."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Altra Lone Peak 4.5 is arguably the most recognizable name in zero-drop trai
 
 ## Key Specs
 
-| Spec                     | Value                                                                                |
-| ------------------------ | ------------------------------------------------------------------------------------ |
-| **Weight**               | 298 g (Men's US 9)                                                                   |
-| **Drop**                 | 0 mm                                                                                 |
-| **Stack Height**         | 25 mm                                                                                |
-| **Midsole**              | Dual Layer EVA/A-Bound with StoneGuard rock plate                                    |
-| **Outsole**              | MaxTrac Rubber with TrailClaw lugs                                                   |
-| **Insole**               | 5 mm Contour Footbed                                                                 |
-| **Upper**                | Durable Quick-Dry Air Mesh                                                           |
-| **Cushion Level**        | Moderate                                                                             |
-| **Gaiter Compatibility** | Yes (built-in attachment points)                                                     |
-| **Comparison**           | See how [Lone Peak 4.5 compares](/tools/ultralight-research/primary) to similar gear |
+| Spec                     | Value                                             |
+| ------------------------ | ------------------------------------------------- |
+| **Weight**               | 298 g (Men's US 9)                                |
+| **Drop**                 | 0 mm                                              |
+| **Stack Height**         | 25 mm                                             |
+| **Midsole**              | Dual Layer EVA/A-Bound with StoneGuard rock plate |
+| **Outsole**              | MaxTrac Rubber with TrailClaw lugs                |
+| **Insole**               | 5 mm Contour Footbed                              |
+| **Upper**                | Durable Quick-Dry Air Mesh                        |
+| **Cushion Level**        | Moderate                                          |
+| **Gaiter Compatibility** | Yes (built-in attachment points)                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="primary"
+/>
 
 ## Performance
 

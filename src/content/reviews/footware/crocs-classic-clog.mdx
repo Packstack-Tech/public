@@ -12,7 +12,7 @@ published_at: "2026-05-04"
 description: "The Crocs Classic Clog: a cult-status camp shoe beloved by backpackers for its cushioned Croslite foam, quick-dry performance, and sub-$55 price — but its loose, binary fit has real limits."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,17 +30,22 @@ the trail.
 
 ## Key Specs
 
-| Spec               | Detail                                                                                          |
-| ------------------ | ----------------------------------------------------------------------------------------------- |
-| **Weight**         | ~318g (11.2 oz) per pair (size M6/W8)                                                           |
-| **Material**       | Croslite™ closed-cell foam resin                                                                |
-| **Fit**            | Roomy (widest Crocs fit category)                                                               |
-| **Heel**           | Pivoting heel strap (sport mode or mule mode)                                                   |
-| **Sustainability** | 25% plant-based material, ISCC PLUS certified                                                   |
-| **Price**          | ~$50                                                                                            |
-| **Comparison**     | See how the [Crocs Classic Clog compares](/tools/ultralight-research/camp-shoe) to similar gear |
+| Spec               | Detail                                        |
+| ------------------ | --------------------------------------------- |
+| **Weight**         | ~318g (11.2 oz) per pair (size M6/W8)         |
+| **Material**       | Croslite™ closed-cell foam resin              |
+| **Fit**            | Roomy (widest Crocs fit category)             |
+| **Heel**           | Pivoting heel strap (sport mode or mule mode) |
+| **Sustainability** | 25% plant-based material, ISCC PLUS certified |
+| **Price**          | ~$50                                          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="camp-shoe"
+/>
 
 ## Performance
 

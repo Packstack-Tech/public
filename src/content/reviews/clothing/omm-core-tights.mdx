@@ -12,7 +12,7 @@ published_at: "2026-07-19"
 description: "The OMM Core Tights are 130g insulated running tights built from PrimaLoft® ACTIVE 75g/m², designed for high-output winter runs and cold-weather fastpacking when paired with a shell."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,20 +32,25 @@ that traditional fleece tights tend to produce.
 
 ## Key Specs
 
-| Spec               | Detail                                                                                |
-| ------------------ | ------------------------------------------------------------------------------------- |
-| Weight             | 130g                                                                                  |
-| Fabric             | PrimaLoft® ACTIVE 75g/m²                                                              |
-| Recycled Content   | 58% post-consumer recycled                                                            |
-| Knee Panels        | Stretch nylon (Flexile)                                                               |
-| Waistband          | Wide elasticated                                                                      |
-| Seams              | Flatlock                                                                              |
-| Reflective Details | Yes                                                                                   |
-| Certifications     | bluesign®, Oeko-Tex                                                                   |
-| Fit                | Slim/Fitted                                                                           |
-| **Comparison**     | See how [Core Tights compares](/tools/ultralight-research/insulation) to similar gear |
+| Spec               | Detail                     |
+| ------------------ | -------------------------- |
+| Weight             | 130g                       |
+| Fabric             | PrimaLoft® ACTIVE 75g/m²   |
+| Recycled Content   | 58% post-consumer recycled |
+| Knee Panels        | Stretch nylon (Flexile)    |
+| Waistband          | Wide elasticated           |
+| Seams              | Flatlock                   |
+| Reflective Details | Yes                        |
+| Certifications     | bluesign®, Oeko-Tex        |
+| Fit                | Slim/Fitted                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="insulation"
+/>
 
 ## Performance
 

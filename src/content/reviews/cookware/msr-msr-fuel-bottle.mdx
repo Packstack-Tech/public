@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "A durable, no-frills aluminum fuel bottle built to pair with MSR's liquid-fuel stoves — reliable, but the child-resistant cap draws mixed reviews."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The MSR Fuel Bottle is the standard container for anyone running a Whisperlite, 
 
 ## Key Specs
 
-| Spec                  | Detail                                                                              |
-| --------------------- | ----------------------------------------------------------------------------------- |
-| Weight                | 130 g (4.6 oz)                                                                      |
-| Capacity              | 325 ml / 11 fl oz                                                                   |
-| Material              | Single-piece, impact-extruded aluminum                                              |
-| Cap                   | Child-resistant push-and-twist                                                      |
-| Compatibility         | All MSR liquid-fuel stoves/pumps (threaded neck)                                    |
-| Other sizes available | 22 oz / 650 ml, 30 oz / 975 ml                                                      |
-| **Comparison**        | See how [MSR Fuel Bottle compares](/tools/ultralight-research/fuel) to similar gear |
+| Spec                  | Detail                                           |
+| --------------------- | ------------------------------------------------ |
+| Weight                | 130 g (4.6 oz)                                   |
+| Capacity              | 325 ml / 11 fl oz                                |
+| Material              | Single-piece, impact-extruded aluminum           |
+| Cap                   | Child-resistant push-and-twist                   |
+| Compatibility         | All MSR liquid-fuel stoves/pumps (threaded neck) |
+| Other sizes available | 22 oz / 650 ml, 30 oz / 975 ml                   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="fuel"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-06-08"
 description: "The DJI Mini 2 SE is a beginner-friendly, sub-249g drone with OcuSync 2.0 transmission, a 3-axis gimbal, and 2.7K video — DJI's most affordable way to get in the air."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,24 +20,29 @@ The DJI Mini 2 SE is DJI's entry-level answer to the question: "How little can I
 
 ## Key Specs
 
-| Spec                       | Value                                                                                  |
-| -------------------------- | -------------------------------------------------------------------------------------- |
-| **Weight**                 | 246 g                                                                                  |
-| **Folded Dimensions**      | 138 × 81 × 58 mm                                                                       |
-| **Unfolded Dimensions**    | 245 × 289 × 56 mm                                                                      |
-| **Camera Sensor**          | 1/2.3-inch CMOS                                                                        |
-| **Photo Resolution**       | 12MP (4000 × 3000)                                                                     |
-| **Max Video Resolution**   | 2.7K (2720 × 1530) @ 30fps / 1080p @ 60fps                                             |
-| **Max Transmission Range** | 10 km (FCC, unobstructed)                                                              |
-| **Max Flight Time**        | 31 min (rated); ~19–25 min real-world                                                  |
-| **Wind Resistance**        | Level 5 / 38 kph (10.7 m/s)                                                            |
-| **Max Horizontal Speed**   | 16 m/s (Sport mode)                                                                    |
-| **Max Takeoff Altitude**   | 4,000 m                                                                                |
-| **Controller**             | DJI RC-N1                                                                              |
-| **Charging**               | USB-C, up to 29W fast charge                                                           |
-| **Comparison**             | See how [DJI Mini 2 SE compares](/tools/ultralight-research/body-lens) to similar gear |
+| Spec                       | Value                                      |
+| -------------------------- | ------------------------------------------ |
+| **Weight**                 | 246 g                                      |
+| **Folded Dimensions**      | 138 × 81 × 58 mm                           |
+| **Unfolded Dimensions**    | 245 × 289 × 56 mm                          |
+| **Camera Sensor**          | 1/2.3-inch CMOS                            |
+| **Photo Resolution**       | 12MP (4000 × 3000)                         |
+| **Max Video Resolution**   | 2.7K (2720 × 1530) @ 30fps / 1080p @ 60fps |
+| **Max Transmission Range** | 10 km (FCC, unobstructed)                  |
+| **Max Flight Time**        | 31 min (rated); ~19–25 min real-world      |
+| **Wind Resistance**        | Level 5 / 38 kph (10.7 m/s)                |
+| **Max Horizontal Speed**   | 16 m/s (Sport mode)                        |
+| **Max Takeoff Altitude**   | 4,000 m                                    |
+| **Controller**             | DJI RC-N1                                  |
+| **Charging**               | USB-C, up to 29W fast charge               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="body-lens"
+/>
 
 ## Performance
 

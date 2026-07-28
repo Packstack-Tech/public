@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "A purpose-cut groundsheet for the Hilleberg Akto (and Enan) that protects the tub floor and keeps the vestibule dry — is the extra 240g worth it?"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -28,9 +28,14 @@ The Akto Footprint is Hilleberg's factory-matched groundsheet for the Akto (it a
 | Coverage         | Full outer tent footprint, including the vestibule                                                      |
 | Material         | Coated, abrasion-resistant fabric (Hilleberg does not publish detailed fabric specs for this accessory) |
 | Packed           | Compact enough to fit inside the Akto's stock stuff sack alongside the tent                             |
-| **Comparison**   | See how [Akto Footprint compares](/tools/ultralight-research/hardware) to similar gear                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hardware"
+/>
 
 ## Performance
 

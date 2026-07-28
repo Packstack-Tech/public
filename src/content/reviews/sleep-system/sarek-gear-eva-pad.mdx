@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A 118g, 3mm Evazote foam pad from Sweden's Sarek Gear — a minimalist supplement pad, not a standalone sleep system, reviewed for ultralight use."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The Sarek Gear EVA Pad is a bare-bones closed-cell foam pad made from 3mm Evazot
 
 ## Key Specs
 
-| Spec                   | Detail                                                                              |
-| ---------------------- | ----------------------------------------------------------------------------------- |
-| Weight                 | 118.0 g                                                                             |
-| Thickness              | 3 mm                                                                                |
-| Dimensions             | 48 x 190 cm                                                                         |
-| R-value                | 0.5                                                                                 |
-| Material               | Evazote foam                                                                        |
-| Country of manufacture | Sweden                                                                              |
-| **Comparison**         | See how [EVA Pad compares](/tools/ultralight-research/sleeping-pad) to similar gear |
+| Spec                   | Detail       |
+| ---------------------- | ------------ |
+| Weight                 | 118.0 g      |
+| Thickness              | 3 mm         |
+| Dimensions             | 48 x 190 cm  |
+| R-value                | 0.5          |
+| Material               | Evazote foam |
+| Country of manufacture | Sweden       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sleeping-pad"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-05-13"
 description: "A deep dive into the Wildo Fold-A-Cup: the 25g Swedish classic that folds to 2.5cm and has been a staple of ultralight kits for over 35 years."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,20 +30,25 @@ drink at camp.
 
 ## Key Specs
 
-| Spec                    | Value                                                                               |
-| ----------------------- | ----------------------------------------------------------------------------------- |
-| **Weight**              | 25g / 0.9 oz                                                                        |
-| **Volume**              | 250ml / 8 fl oz                                                                     |
-| **Folded Height**       | 2.5 cm                                                                              |
-| **Dimensions (folded)** | 9.5 × 7 × 2.5 cm                                                                    |
-| **Material**            | TPE (50% plant-based)                                                               |
-| **BPA-Free**            | Yes                                                                                 |
-| **Max Temp**            | +100°C / -20°C                                                                      |
-| **Dishwasher Safe**     | Yes (up to 70°C)                                                                    |
-| **Made In**             | Borås, Sweden                                                                       |
-| **Comparison**          | See how [Fold-A-Cup compares](/tools/ultralight-research/drinkware) to similar gear |
+| Spec                    | Value                 |
+| ----------------------- | --------------------- |
+| **Weight**              | 25g / 0.9 oz          |
+| **Volume**              | 250ml / 8 fl oz       |
+| **Folded Height**       | 2.5 cm                |
+| **Dimensions (folded)** | 9.5 × 7 × 2.5 cm      |
+| **Material**            | TPE (50% plant-based) |
+| **BPA-Free**            | Yes                   |
+| **Max Temp**            | +100°C / -20°C        |
+| **Dishwasher Safe**     | Yes (up to 70°C)      |
+| **Made In**             | Borås, Sweden         |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="drinkware"
+/>
 
 ## Performance
 

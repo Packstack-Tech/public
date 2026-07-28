@@ -12,7 +12,7 @@ published_at: "2026-03-24"
 description: "A 36g, seamless, UPF 50 neck gaiter made from 95% recycled REPREVE® microfiber — versatile enough to wear 12+ ways and priced well under $30."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,20 +32,25 @@ same day.
 
 ## Key Specs
 
-| Spec                 | Detail                                                                                                               |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **Weight**           | 36g (1.27 oz)                                                                                                        |
-| **Dimensions**       | 52cm × 24.5cm (20.5" × 9")                                                                                           |
-| **Material**         | 95% recycled REPREVE® Performance Microfiber, 5% Elastane                                                            |
-| **Construction**     | 4-Way UltraStretch, seamless                                                                                         |
-| **UPF Rating**       | UPF 50 (tested to AS/NZS 4399)                                                                                       |
-| **Wearing Styles**   | 12+                                                                                                                  |
-| **Rated Temp Range** | 32–68°F (0–20°C)                                                                                                     |
-| **Sustainability**   | Certified B Corp; ~2 recycled plastic bottles per unit                                                               |
-| **Price (MSRP)**     | ~$20–$25 USD                                                                                                         |
-| **Comparison**       | See how [Original EcoStretch Multifunctional Neckwear compares](/tools/ultralight-research/headwear) to similar gear |
+| Spec                 | Detail                                                    |
+| -------------------- | --------------------------------------------------------- |
+| **Weight**           | 36g (1.27 oz)                                             |
+| **Dimensions**       | 52cm × 24.5cm (20.5" × 9")                                |
+| **Material**         | 95% recycled REPREVE® Performance Microfiber, 5% Elastane |
+| **Construction**     | 4-Way UltraStretch, seamless                              |
+| **UPF Rating**       | UPF 50 (tested to AS/NZS 4399)                            |
+| **Wearing Styles**   | 12+                                                       |
+| **Rated Temp Range** | 32–68°F (0–20°C)                                          |
+| **Sustainability**   | Certified B Corp; ~2 recycled plastic bottles per unit    |
+| **Price (MSRP)**     | ~$20–$25 USD                                              |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="headwear"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-05-21"
 description: "The Forclaz MT100 packs 800-fill RDS-certified duck down into a sub-$100, 10.2 oz package — an almost unfair value proposition for budget-conscious backpackers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The Forclaz MT100 is Decathlon's entry-level hooded down jacket, built for three
 
 ## Key Specs
 
-| Spec                     | Detail                                                                                  |
-| ------------------------ | --------------------------------------------------------------------------------------- |
-| **Weight**               | 289 g (10.2 oz, size M)                                                                 |
-| **Fill Power**           | 800 CUIN                                                                                |
-| **Fill Composition**     | 90% Grey Duck Down, 10% Grey Duck Feather                                               |
-| **Fill Weight**          | ~88 g / 3.1 oz (size L)                                                                 |
-| **Temp Rating (Active)** | 23°F / -5°C                                                                             |
-| **Temp Rating (Static)** | 41°F / 5°C                                                                              |
-| **Outer Fabric**         | 100% Polyamide (15D)                                                                    |
-| **Certification**        | RDS (Responsible Down Standard)                                                         |
-| **Packable**             | Yes — stuffs into left hand pocket                                                      |
-| **Price**                | ~$99                                                                                    |
-| **Comparison**           | See how [Forclaz MT100 compares](/tools/ultralight-research/insulation) to similar gear |
+| Spec                     | Detail                                    |
+| ------------------------ | ----------------------------------------- |
+| **Weight**               | 289 g (10.2 oz, size M)                   |
+| **Fill Power**           | 800 CUIN                                  |
+| **Fill Composition**     | 90% Grey Duck Down, 10% Grey Duck Feather |
+| **Fill Weight**          | ~88 g / 3.1 oz (size L)                   |
+| **Temp Rating (Active)** | 23°F / -5°C                               |
+| **Temp Rating (Static)** | 41°F / 5°C                                |
+| **Outer Fabric**         | 100% Polyamide (15D)                      |
+| **Certification**        | RDS (Responsible Down Standard)           |
+| **Packable**             | Yes — stuffs into left hand pocket        |
+| **Price**                | ~$99                                      |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="insulation"
+/>
 
 ## Performance
 

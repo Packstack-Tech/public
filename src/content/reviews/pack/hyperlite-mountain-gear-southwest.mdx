@@ -12,7 +12,7 @@ published_at: "2026-06-08"
 description: "The HMG Southwest 55 is a bombproof ultralight pack now built with Dyneema Woven Composite 3.9 — a proven thru-hiker favorite with real trade-offs worth knowing."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The Hyperlite Mountain Gear Southwest 55 is the pack that put Dyneema on every s
 
 ## Key Specs
 
-| Spec                | Value                                                                                  |
-| ------------------- | -------------------------------------------------------------------------------------- |
-| **Weight**          | 896g / 31.6 oz (White, Medium); 979g / 34.5 oz (Black, Medium)                         |
-| **Internal Volume** | 55L (3,400 cu in)                                                                      |
-| **External Volume** | 9.8L (600 cu in)                                                                       |
-| **Total Volume**    | ~64.8L                                                                                 |
-| **Material**        | Dyneema® Woven Composite 3.9 (200-denier)                                              |
-| **Frame**           | Two removable aluminum stays                                                           |
-| **Back Panel**      | 1/4" foam, sewn-through (2025)                                                         |
-| **Load Capacity**   | Up to 40 lbs (recommended)                                                             |
-| **Sizes**           | S, M, L, Tall (torso-fit)                                                              |
-| **Price**           | $399                                                                                   |
-| **Comparison**      | See how [HMG Southwest compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                | Value                                                          |
+| ------------------- | -------------------------------------------------------------- |
+| **Weight**          | 896g / 31.6 oz (White, Medium); 979g / 34.5 oz (Black, Medium) |
+| **Internal Volume** | 55L (3,400 cu in)                                              |
+| **External Volume** | 9.8L (600 cu in)                                               |
+| **Total Volume**    | ~64.8L                                                         |
+| **Material**        | Dyneema® Woven Composite 3.9 (200-denier)                      |
+| **Frame**           | Two removable aluminum stays                                   |
+| **Back Panel**      | 1/4" foam, sewn-through (2025)                                 |
+| **Load Capacity**   | Up to 40 lbs (recommended)                                     |
+| **Sizes**           | S, M, L, Tall (torso-fit)                                      |
+| **Price**           | $399                                                           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

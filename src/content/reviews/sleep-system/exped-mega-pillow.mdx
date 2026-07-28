@@ -12,7 +12,7 @@ published_at: "2026-06-09"
 description: "The Exped Mega Pillow is the most comfortable inflatable camp pillow we've tested, but its 6-oz weight and Nalgene-sized pack put it squarely in comfort-camper territory."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Exped Mega Pillow is a large-format inflatable camp pillow designed to mirro
 
 ## Key Specs
 
-| Spec                     | Value                                                                                   |
-| ------------------------ | --------------------------------------------------------------------------------------- |
-| **Weight (pillow only)** | 170 g / 6 oz                                                                            |
-| **Stuff sack weight**    | 0.4 oz / 11 g                                                                           |
-| **Inflated dimensions**  | 20.9 × 12.6 × 4.7 in                                                                    |
-| **Packed size**          | 5.1 × 3.9 in                                                                            |
-| **Fill type**            | Air bladder + microfiber insulation topper                                              |
-| **Face fabric**          | Recycled stretch tricot polyester                                                       |
-| **Valve**                | FlatValve (one-way flapper + drain pin)                                                 |
-| **Washable cover**       | Yes — bladder is removable                                                              |
-| **Pad attachment**       | Yes — fabric eyelets on sides                                                           |
-| **Comparison**           | See how [Exped Mega Pillow compares](/tools/ultralight-research/pillow) to similar gear |
+| Spec                     | Value                                      |
+| ------------------------ | ------------------------------------------ |
+| **Weight (pillow only)** | 170 g / 6 oz                               |
+| **Stuff sack weight**    | 0.4 oz / 11 g                              |
+| **Inflated dimensions**  | 20.9 × 12.6 × 4.7 in                       |
+| **Packed size**          | 5.1 × 3.9 in                               |
+| **Fill type**            | Air bladder + microfiber insulation topper |
+| **Face fabric**          | Recycled stretch tricot polyester          |
+| **Valve**                | FlatValve (one-way flapper + drain pin)    |
+| **Washable cover**       | Yes — bladder is removable                 |
+| **Pad attachment**       | Yes — fabric eyelets on sides              |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="pillow"
+/>
 
 ## Performance
 

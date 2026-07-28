@@ -12,7 +12,7 @@ published_at: "2026-07-06"
 description: "The Mountain Equipment Helium 600 is a 1030g, -10°C duck-down sleeping bag built for serious three-season and shoulder-season backpacking, with slant-baffle construction and DOWN CODEX® certified fill."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -29,22 +29,27 @@ the kind of kit that earns its place on a long trip and stays there for years.
 
 ## Key Specs
 
-| Spec               | Value                                                                                  |
-| ------------------ | -------------------------------------------------------------------------------------- |
-| Weight (Regular)   | 1,030g / 36.3 oz                                                                       |
-| Fill Weight        | 620g                                                                                   |
-| Fill Power         | 700+                                                                                   |
-| Down Type          | 90/10 Duck Down                                                                        |
-| Temperature Rating | -10°C / 14°F (Good Night's Sleep)                                                      |
-| Packed Size        | 25 × 23 × 20 cm                                                                        |
-| Shell Fabric       | Recycled Helium™ 20D (38gsm)                                                           |
-| Lining             | Supersoft™ 20D Recycled Nylon                                                          |
-| Down Certification | DOWN CODEX® / RDS 3.0                                                                  |
-| Sizes              | Regular, Long                                                                          |
-| Zip Options        | Left or Right                                                                          |
-| **Comparison**     | See how [Helium 600 compares](/tools/ultralight-research/sleeping-bag) to similar gear |
+| Spec               | Value                             |
+| ------------------ | --------------------------------- |
+| Weight (Regular)   | 1,030g / 36.3 oz                  |
+| Fill Weight        | 620g                              |
+| Fill Power         | 700+                              |
+| Down Type          | 90/10 Duck Down                   |
+| Temperature Rating | -10°C / 14°F (Good Night's Sleep) |
+| Packed Size        | 25 × 23 × 20 cm                   |
+| Shell Fabric       | Recycled Helium™ 20D (38gsm)      |
+| Lining             | Supersoft™ 20D Recycled Nylon     |
+| Down Certification | DOWN CODEX® / RDS 3.0             |
+| Sizes              | Regular, Long                     |
+| Zip Options        | Left or Right                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sleeping-bag"
+/>
 
 ## Performance
 

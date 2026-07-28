@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "The Salomon ADV Skin 12 is a bounce-free 12L running vest built for ultras and long training days, with soft flask storage and bladder compatibility."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Salomon ADV Skin 12 is a race-style running vest built for long trail days, 
 
 ## Key Specs
 
-| Spec                 | Detail                                                                             |
-| -------------------- | ---------------------------------------------------------------------------------- |
-| Weight               | 367 g (12.9 oz)                                                                    |
-| Volume               | 12 L                                                                               |
-| Included flasks      | 2x 500 ml soft flasks                                                              |
-| Flask capacity       | 500 ml each                                                                        |
-| Bladder compatible   | Yes                                                                                |
-| Bladder included     | No                                                                                 |
-| Recommended distance | 60 km+                                                                             |
-| Price                | ~$165                                                                              |
-| **Comparison**       | See how [ADV Skin 12 compares](/tools/ultralight-research/daypack) to similar gear |
+| Spec                 | Detail                |
+| -------------------- | --------------------- |
+| Weight               | 367 g (12.9 oz)       |
+| Volume               | 12 L                  |
+| Included flasks      | 2x 500 ml soft flasks |
+| Flask capacity       | 500 ml each           |
+| Bladder compatible   | Yes                   |
+| Bladder included     | No                    |
+| Recommended distance | 60 km+                |
+| Price                | ~$165                 |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="daypack"
+/>
 
 ## Performance
 

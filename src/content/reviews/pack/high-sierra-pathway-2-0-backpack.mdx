@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A budget-friendly, big-box hiking pack that trades ultralight weight for a low price and solid organization — here's how it holds up."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,22 +20,27 @@ The High Sierra Pathway 2.0 is a budget hiking and travel pack line sold in four
 
 ## Key Specs
 
-| Spec                  | Detail                                                                                        |
-| --------------------- | --------------------------------------------------------------------------------------------- |
-| Available sizes       | 30L, 45L, 60L, 75L                                                                            |
-| Weight (45L)          | 2.76 lbs / ~1252 g                                                                            |
-| Weight (60L)          | 4.0 lbs                                                                                       |
-| Weight (75L)          | 4.6 lbs                                                                                       |
-| Back panel            | EVA molded + Airmesh                                                                          |
-| Hydration compatible  | Yes (internal sleeve, hose pass-thru port)                                                    |
-| Reflectivity          | 360°                                                                                          |
-| Trekking pole storage | Yes                                                                                           |
-| Exterior              | Water-repellent coating                                                                       |
-| Access                | Wrap-around zip main compartment (lay-flat opening)                                           |
-| Price (MSRP)          | ~$70 (30L) to ~$120 (75L)                                                                     |
-| **Comparison**        | See how [Pathway 2.0 Backpack compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                  | Detail                                              |
+| --------------------- | --------------------------------------------------- |
+| Available sizes       | 30L, 45L, 60L, 75L                                  |
+| Weight (45L)          | 2.76 lbs / ~1252 g                                  |
+| Weight (60L)          | 4.0 lbs                                             |
+| Weight (75L)          | 4.6 lbs                                             |
+| Back panel            | EVA molded + Airmesh                                |
+| Hydration compatible  | Yes (internal sleeve, hose pass-thru port)          |
+| Reflectivity          | 360°                                                |
+| Trekking pole storage | Yes                                                 |
+| Exterior              | Water-repellent coating                             |
+| Access                | Wrap-around zip main compartment (lay-flat opening) |
+| Price (MSRP)          | ~$70 (30L) to ~$120 (75L)                           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

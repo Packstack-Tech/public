@@ -12,7 +12,7 @@ published_at: "2026-07-17"
 description: "A dual-action chlorine + silver ion purification liquid that treats 1,000 L per 100 ml bottle. Best for travel, water tanks, and as an ultralight backup purifier for clear backcountry water."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,22 +20,27 @@ The Katadyn Micropur Forte MF 1000F is a dual-action chemical purification liqui
 
 ## Key Specs
 
-| Spec                        | Value                                                                                               |
-| --------------------------- | --------------------------------------------------------------------------------------------------- |
-| Format                      | Liquid                                                                                              |
-| Volume                      | 100 ml                                                                                              |
-| Weight (trail portion)      | ~3 g                                                                                                |
-| Active Ingredients          | Sodium hypochlorite + silver ions                                                                   |
-| Dosage                      | 1 ml per 10 L                                                                                       |
-| Treats                      | 1,000 L total                                                                                       |
-| Bacteria & Virus Kill Time  | 30 min (clear water)                                                                                |
-| Protozoa Kill Time          | 120 min (clear water)                                                                               |
-| Post-Treatment Preservation | Up to 6 months                                                                                      |
-| Bottle Shelf Life           | 2 years                                                                                             |
-| Works On                    | Clear water only                                                                                    |
-| **Comparison**              | See how [Micropur Forte MF 1000F compares](/tools/ultralight-research/purification) to similar gear |
+| Spec                        | Value                             |
+| --------------------------- | --------------------------------- |
+| Format                      | Liquid                            |
+| Volume                      | 100 ml                            |
+| Weight (trail portion)      | ~3 g                              |
+| Active Ingredients          | Sodium hypochlorite + silver ions |
+| Dosage                      | 1 ml per 10 L                     |
+| Treats                      | 1,000 L total                     |
+| Bacteria & Virus Kill Time  | 30 min (clear water)              |
+| Protozoa Kill Time          | 120 min (clear water)             |
+| Post-Treatment Preservation | Up to 6 months                    |
+| Bottle Shelf Life           | 2 years                           |
+| Works On                    | Clear water only                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="purification"
+/>
 
 ## Performance
 

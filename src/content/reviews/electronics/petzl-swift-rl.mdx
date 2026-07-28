@@ -12,7 +12,7 @@ published_at: "2026-06-03"
 description: "The Petzl SWIFT RL is a 92g, 1200-lumen rechargeable headlamp with Reactive Lighting technology — a strong pick for trail runners, alpinists, and multi-sport adventurers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Petzl SWIFT RL is a compact, 92g rechargeable headlamp built around one sign
 
 ## Key Specs
 
-| Spec                 | Value                                                                            |
-| -------------------- | -------------------------------------------------------------------------------- |
-| **Weight**           | 92 g                                                                             |
-| **Max Lumens**       | 1200 lm                                                                          |
-| **Beam Distance**    | 168 m                                                                            |
-| **Battery**          | Lithium-ion 2350 mAh (proprietary)                                               |
-| **Charging**         | USB-C                                                                            |
-| **Min Burn Time**    | 5 hrs (max output)                                                               |
-| **Water Resistance** | IP54                                                                             |
-| **Lighting Modes**   | Reactive Lighting / Standard Lighting / Red (continuous & strobe)                |
-| **Comparison**       | See how [SWIFT RL compares](/tools/ultralight-research/lighting) to similar gear |
+| Spec                 | Value                                                             |
+| -------------------- | ----------------------------------------------------------------- |
+| **Weight**           | 92 g                                                              |
+| **Max Lumens**       | 1200 lm                                                           |
+| **Beam Distance**    | 168 m                                                             |
+| **Battery**          | Lithium-ion 2350 mAh (proprietary)                                |
+| **Charging**         | USB-C                                                             |
+| **Min Burn Time**    | 5 hrs (max output)                                                |
+| **Water Resistance** | IP54                                                              |
+| **Lighting Modes**   | Reactive Lighting / Standard Lighting / Red (continuous & strobe) |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="lighting"
+/>
 
 ## Performance
 

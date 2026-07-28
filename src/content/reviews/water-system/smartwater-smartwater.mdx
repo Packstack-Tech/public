@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The Smartwater 1500ml is the ultralight thru-hiker's workhorse bottle — featherlight, filter-ready, and absurdly cheap. Here's what you need to know before grabbing one."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The Smartwater 1500ml is arguably the most-carried water bottle on long-distance
 
 ## Key Specs
 
-| Spec                     | Value                                                                                   |
-| ------------------------ | --------------------------------------------------------------------------------------- |
-| **Weight**               | 38.9 g (1.37 oz)                                                                        |
-| **Volume**               | 1,500 ml (50.7 fl oz)                                                                   |
-| **Material**             | PET1 plastic, BPA-free                                                                  |
-| **Thread Size**          | 28mm (standard narrow-mouth)                                                            |
-| **Filter Compatibility** | Sawyer Squeeze, Sawyer Mini                                                             |
-| **Price**                | ~$2–3 (retail, filled)                                                                  |
-| **Comparison**           | See how [Smartwater 1500ml compares](/tools/ultralight-research/bottle) to similar gear |
+| Spec                     | Value                        |
+| ------------------------ | ---------------------------- |
+| **Weight**               | 38.9 g (1.37 oz)             |
+| **Volume**               | 1,500 ml (50.7 fl oz)        |
+| **Material**             | PET1 plastic, BPA-free       |
+| **Thread Size**          | 28mm (standard narrow-mouth) |
+| **Filter Compatibility** | Sawyer Squeeze, Sawyer Mini  |
+| **Price**                | ~$2–3 (retail, filled)       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="bottle"
+/>
 
 ## Performance
 

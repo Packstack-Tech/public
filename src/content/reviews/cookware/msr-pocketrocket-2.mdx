@@ -12,7 +12,7 @@ published_at: "2026-04-24"
 description: "The MSR PocketRocket 2 is a 73g canister stove that sets the benchmark for ultralight three-season cooking — fast-boiling, versatile, and trail-proven over decades."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -29,18 +29,23 @@ trips where simplicity and weight savings matter most.
 
 ## Key Specs
 
-| Spec               | Value                                                                               |
-| ------------------ | ----------------------------------------------------------------------------------- |
-| **Weight**         | 73 g (2.6 oz)                                                                       |
-| **Fuel Type**      | Canister (isobutane-propane, Lindal valve)                                          |
-| **Heat Output**    | 8,000 BTU/hr                                                                        |
-| **Boil Time (1L)** | 3.5 min                                                                             |
-| **Burn Time**      | ~60 min per 227g / 8-oz canister                                                    |
-| **Pot Supports**   | 3 dual-hinged folding arms                                                          |
-| **Includes**       | Stove + ultralight hard-shell carry case                                            |
-| **Comparison**     | See how [PocketRocket 2 compares](/tools/ultralight-research/stove) to similar gear |
+| Spec               | Value                                      |
+| ------------------ | ------------------------------------------ |
+| **Weight**         | 73 g (2.6 oz)                              |
+| **Fuel Type**      | Canister (isobutane-propane, Lindal valve) |
+| **Heat Output**    | 8,000 BTU/hr                               |
+| **Boil Time (1L)** | 3.5 min                                    |
+| **Burn Time**      | ~60 min per 227g / 8-oz canister           |
+| **Pot Supports**   | 3 dual-hinged folding arms                 |
+| **Includes**       | Stove + ultralight hard-shell carry case   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A deep dive into the Hilleberg Akto, the classic 4-season solo tunnel tent that's been a backpacker favorite since 1995."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,23 +20,28 @@ The Akto is Hilleberg's single-pole, single-person tunnel tent, and it's been in
 
 ## Key Specs
 
-| Spec                    | Value                                                                    |
-| ----------------------- | ------------------------------------------------------------------------ |
-| Minimum weight          | 1276 g (2 lb 13 oz)                                                      |
-| Packed weight           | 1701 g (3 lb 12 oz)                                                      |
-| Capacity                | 1 person                                                                 |
-| Season rating           | 4-season                                                                 |
-| Tent type               | Tunnel, single hoop pole                                                 |
-| Inner tent area         | 18.3 sq ft                                                               |
-| Vestibule area          | 8.6 sq ft                                                                |
-| Outer fabric            | Kerlon 1200 (silicone-coated nylon)                                      |
-| Outer waterproof rating | 5,000 mm                                                                 |
-| Floor waterproof rating | 15,000 mm                                                                |
-| Pole material/diameter  | DAC NSL aluminum, 9 mm                                                   |
-| Label                   | Red Label                                                                |
-| **Comparison**          | See how [Akto compares](/tools/ultralight-research/tent) to similar gear |
+| Spec                    | Value                               |
+| ----------------------- | ----------------------------------- |
+| Minimum weight          | 1276 g (2 lb 13 oz)                 |
+| Packed weight           | 1701 g (3 lb 12 oz)                 |
+| Capacity                | 1 person                            |
+| Season rating           | 4-season                            |
+| Tent type               | Tunnel, single hoop pole            |
+| Inner tent area         | 18.3 sq ft                          |
+| Vestibule area          | 8.6 sq ft                           |
+| Outer fabric            | Kerlon 1200 (silicone-coated nylon) |
+| Outer waterproof rating | 5,000 mm                            |
+| Floor waterproof rating | 15,000 mm                           |
+| Pole material/diameter  | DAC NSL aluminum, 9 mm              |
+| Label                   | Red Label                           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="tent"
+/>
 
 ## Performance
 

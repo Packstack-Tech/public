@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The Kovea Spider is a compact, affordable remote canister stove with inverted-canister cold-weather capability — a serious four-season option that punches above its price."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Kovea Spider (KB-1109) is a remote canister gas stove built in Korea — by 
 
 ## Key Specs
 
-| Spec                  | Value                                                                             |
-| --------------------- | --------------------------------------------------------------------------------- |
-| **Model**             | KB-1109                                                                           |
-| **Weight**            | 168g / 5.9 oz                                                                     |
-| **Packed Dimensions** | ~94 × 94 × 51 mm (3.7 × 3.7 × 2 in)                                               |
-| **Heat Output**       | ~6,100 BTU/h (1.79 kW)                                                            |
-| **Gas Consumption**   | ~130 g/h at max                                                                   |
-| **Fuel Type**         | Isobutane-propane, Lindal valve                                                   |
-| **Ignition**          | Manual (piezo igniter included)                                                   |
-| **Cold-Weather Mode** | Inverted canister / liquid-fuel operation                                         |
-| **Country of Origin** | South Korea                                                                       |
-| **Comparison**        | See how [Kovea Spider compares](/tools/ultralight-research/stove) to similar gear |
+| Spec                  | Value                                     |
+| --------------------- | ----------------------------------------- |
+| **Model**             | KB-1109                                   |
+| **Weight**            | 168g / 5.9 oz                             |
+| **Packed Dimensions** | ~94 × 94 × 51 mm (3.7 × 3.7 × 2 in)       |
+| **Heat Output**       | ~6,100 BTU/h (1.79 kW)                    |
+| **Gas Consumption**   | ~130 g/h at max                           |
+| **Fuel Type**         | Isobutane-propane, Lindal valve           |
+| **Ignition**          | Manual (piezo igniter included)           |
+| **Cold-Weather Mode** | Inverted canister / liquid-fuel operation |
+| **Country of Origin** | South Korea                               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

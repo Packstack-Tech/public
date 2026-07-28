@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "An honest review of the TOAKS CUP-375: a no-frills, 62g titanium cup for ultralight backpackers who want a durable, packable vessel without paying a premium."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The TOAKS Titanium 375ml Cup is about as simple as camp drinkware gets: a single
 
 ## Key Specs
 
-| Spec               | Detail                                                                                            |
-| ------------------ | ------------------------------------------------------------------------------------------------- |
-| **Weight**         | 62g (2.2 oz)                                                                                      |
-| **Capacity**       | 375ml (12.7 fl oz)                                                                                |
-| **Dimensions**     | 79mm Dia × 75mm H (internal); 87mm Dia folded                                                     |
-| **Wall Thickness** | 0.35mm                                                                                            |
-| **Material**       | Titanium, uncoated (Grade 1 or 2)                                                                 |
-| **Lid Included**   | No (available separately from TOAKS)                                                              |
-| **Nests Inside**   | TOAKS 550ml, 650ml, 750ml pots                                                                    |
-| **Includes**       | Mesh storage sack                                                                                 |
-| **Price**          | ~$20                                                                                              |
-| **Comparison**     | See how [TOAKS Titanium 375ml Cup compares](/tools/ultralight-research/drinkware) to similar gear |
+| Spec               | Detail                                        |
+| ------------------ | --------------------------------------------- |
+| **Weight**         | 62g (2.2 oz)                                  |
+| **Capacity**       | 375ml (12.7 fl oz)                            |
+| **Dimensions**     | 79mm Dia × 75mm H (internal); 87mm Dia folded |
+| **Wall Thickness** | 0.35mm                                        |
+| **Material**       | Titanium, uncoated (Grade 1 or 2)             |
+| **Lid Included**   | No (available separately from TOAKS)          |
+| **Nests Inside**   | TOAKS 550ml, 650ml, 750ml pots                |
+| **Includes**       | Mesh storage sack                             |
+| **Price**          | ~$20                                          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="drinkware"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A hands-on look at the CamelBak Crux 2L reservoir — the best-tasting hydration bladder on the market, but not the lightest or most packable."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The CamelBak Crux 2L is a mainstream hydration reservoir built for day hikes, ov
 
 ## Key Specs
 
-| Spec                    | Detail                                                                                      |
-| ----------------------- | ------------------------------------------------------------------------------------------- |
-| Capacity                | 2 liters / 70 oz                                                                            |
-| Weight                  | 211 g (7.4 oz)                                                                              |
-| Material                | Polyurethane, BPA/BPS/BPF-free                                                              |
-| Antimicrobial treatment | Hydroguard™                                                                                 |
-| Hose system             | Quicklink™ (quick-disconnect, auto shut-off)                                                |
-| Bite valve              | Big Bite valve with on/off lever                                                            |
-| Internal structure      | Center reservoir baffle (reduces sloshing)                                                  |
-| Fill opening            | Wide-mouth with ergonomic handle, quarter-turn cap                                          |
-| **Comparison**          | See how [Crux® 2L Reservoir compares](/tools/ultralight-research/hydration) to similar gear |
+| Spec                    | Detail                                             |
+| ----------------------- | -------------------------------------------------- |
+| Capacity                | 2 liters / 70 oz                                   |
+| Weight                  | 211 g (7.4 oz)                                     |
+| Material                | Polyurethane, BPA/BPS/BPF-free                     |
+| Antimicrobial treatment | Hydroguard™                                        |
+| Hose system             | Quicklink™ (quick-disconnect, auto shut-off)       |
+| Bite valve              | Big Bite valve with on/off lever                   |
+| Internal structure      | Center reservoir baffle (reduces sloshing)         |
+| Fill opening            | Wide-mouth with ergonomic handle, quarter-turn cap |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hydration"
+/>
 
 ## Performance
 

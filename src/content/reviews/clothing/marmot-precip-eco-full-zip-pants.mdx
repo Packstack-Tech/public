@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The Marmot PreCip Eco Full-Zip Pants deliver solid 10,000mm waterproofing and PFC-free DWR in a feature-rich, eco-conscious package — a strong mid-range pick for three-season hikers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The Marmot PreCip Eco Full-Zip Pants have been a staple of the mid-range rain ge
 
 ## Key Specs
 
-| Spec                  | Detail                                                                                             |
-| --------------------- | -------------------------------------------------------------------------------------------------- |
-| **Weight**            | 312g (11 oz)                                                                                       |
-| **Waterproof Rating** | 10,000mm HH                                                                                        |
-| **Breathability**     | 17,000 g/m²/24h                                                                                    |
-| **Fabric**            | NanoPro Eco recycled nylon ripstop (2.5L)                                                          |
-| **DWR**               | PFC-free                                                                                           |
-| **Seams**             | Fully taped                                                                                        |
-| **Entry System**      | Full-length dual-slider side zippers                                                               |
-| **Pockets**           | 2 zippered hand pockets + 1 zippered back pocket                                                   |
-| **Fit**               | Regular (also available Short and Long)                                                            |
-| **MSRP**              | ~$100                                                                                              |
-| **Comparison**        | See how [PreCip Eco Full-Zip Pants compares](/tools/ultralight-research/rain-gear) to similar gear |
+| Spec                  | Detail                                           |
+| --------------------- | ------------------------------------------------ |
+| **Weight**            | 312g (11 oz)                                     |
+| **Waterproof Rating** | 10,000mm HH                                      |
+| **Breathability**     | 17,000 g/m²/24h                                  |
+| **Fabric**            | NanoPro Eco recycled nylon ripstop (2.5L)        |
+| **DWR**               | PFC-free                                         |
+| **Seams**             | Fully taped                                      |
+| **Entry System**      | Full-length dual-slider side zippers             |
+| **Pockets**           | 2 zippered hand pockets + 1 zippered back pocket |
+| **Fit**               | Regular (also available Short and Long)          |
+| **MSRP**              | ~$100                                            |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="rain-gear"
+/>
 
 ## Performance
 

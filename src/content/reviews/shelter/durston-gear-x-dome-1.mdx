@@ -12,7 +12,7 @@ published_at: "2026-07-19"
 description: "The Durston X-Dome 1+ is a freestanding ultralight double-wall tent that transplants the X-Mid's geometry into a pole-supported dome — and largely delivers on that promise."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -33,23 +33,28 @@ shelter.
 
 ## Key Specs
 
-| Spec             | Value                                                                         |
-| ---------------- | ----------------------------------------------------------------------------- |
-| Weight (claimed) | 985 g / 35 oz                                                                 |
-| Floor Area       | 23 sq ft                                                                      |
-| Vestibule        | 9.2 sq ft                                                                     |
-| Inner Height     | 42 in (107 cm)                                                                |
-| Fly-Only Height  | 45 in (114 cm)                                                                |
-| Floor Dimensions | 27–50 in wide × 85 in long                                                    |
-| Fly Dimensions   | 56.5 × 88 in (1.45 × 2.25 m)                                                  |
-| Packed Size      | 18 × 4.5 in (45 × 12 cm)                                                      |
-| Fly/Floor Fabric | 15D high-tenacity silpoly                                                     |
-| Hydrostatic Head | 3,500 mm                                                                      |
-| Poles            | Easton Carbon                                                                 |
-| Price            | $349 USD                                                                      |
-| **Comparison**   | See how [X-Dome 1+ compares](/tools/ultralight-research/tent) to similar gear |
+| Spec             | Value                        |
+| ---------------- | ---------------------------- |
+| Weight (claimed) | 985 g / 35 oz                |
+| Floor Area       | 23 sq ft                     |
+| Vestibule        | 9.2 sq ft                    |
+| Inner Height     | 42 in (107 cm)               |
+| Fly-Only Height  | 45 in (114 cm)               |
+| Floor Dimensions | 27–50 in wide × 85 in long   |
+| Fly Dimensions   | 56.5 × 88 in (1.45 × 2.25 m) |
+| Packed Size      | 18 × 4.5 in (45 × 12 cm)     |
+| Fly/Floor Fabric | 15D high-tenacity silpoly    |
+| Hydrostatic Head | 3,500 mm                     |
+| Poles            | Easton Carbon                |
+| Price            | $349 USD                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="tent"
+/>
 
 ## Performance
 

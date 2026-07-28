@@ -12,7 +12,7 @@ published_at: "2026-07-01"
 description: "A detailed review of the prAna Stretch Zion Pant — a buttery-soft, feature-rich hiking pant beloved by hikers and climbers, but best suited for cool-weather use."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -33,19 +33,24 @@ import PackstackCTA from "../../../components/PackstackCTA.astro"
 
 ## Key Specs
 
-| Spec                 | Detail                                                                                            |
-| -------------------- | ------------------------------------------------------------------------------------------------- |
-| **Weight**           | 397 g (14 oz)                                                                                     |
-| **Material**         | 97% Nylon, 3% Elastane                                                                            |
-| **UPF Rating**       | UPF 50+                                                                                           |
-| **Water Resistance** | DWR finish                                                                                        |
-| **Fit**              | Relaxed-straight                                                                                  |
-| **Inseam Options**   | 30", 32", 34", 36"                                                                                |
-| **Key Features**     | Ventilated inseam gusset, integrated adjustable belt, roll-up leg snaps, dual-entry cargo pocket  |
-| **Price**            | ~$98                                                                                              |
-| **Comparison**       | See how [prAna Stretch Zion Pant compares](/tools/ultralight-research/pant-short) to similar gear |
+| Spec                 | Detail                                                                                           |
+| -------------------- | ------------------------------------------------------------------------------------------------ |
+| **Weight**           | 397 g (14 oz)                                                                                    |
+| **Material**         | 97% Nylon, 3% Elastane                                                                           |
+| **UPF Rating**       | UPF 50+                                                                                          |
+| **Water Resistance** | DWR finish                                                                                       |
+| **Fit**              | Relaxed-straight                                                                                 |
+| **Inseam Options**   | 30", 32", 34", 36"                                                                               |
+| **Key Features**     | Ventilated inseam gusset, integrated adjustable belt, roll-up leg snaps, dual-entry cargo pocket |
+| **Price**            | ~$98                                                                                             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="pant-short"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-04-22"
 description: "The NEMO Fillo Elite is a 3 oz hybrid inflatable pillow with PrimaLoft insulation and a jersey cover — strong on packability and comfort for back/stomach sleepers, weaker for side sleepers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The NEMO Fillo Elite is a hybrid backpacking pillow that pairs a baffled inflata
 
 ## Key Specs
 
-| Spec                | Value                                                                                                            |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Weight              | 85 g (3 oz)                                                                                                      |
-| Inflated Dimensions | 15 × 11 × 3 in                                                                                                   |
-| Packed Size         | Smaller than a soda can                                                                                          |
-| Baffle Depth        | 3 in I-beam                                                                                                      |
-| Insulation          | 100% post-consumer recycled Zerofiber™ (PrimaLoft®)                                                              |
-| Cover               | Removable, machine-washable recycled jersey fabric                                                               |
-| Valve               | Micro-adjustable twist-lock                                                                                      |
-| Stuff Sack          | Integrated                                                                                                       |
-| **Comparison**      | See how [Fillo™ Elite Ultralight Backpacking Pillow compares](/tools/ultralight-research/pillow) to similar gear |
+| Spec                | Value                                               |
+| ------------------- | --------------------------------------------------- |
+| Weight              | 85 g (3 oz)                                         |
+| Inflated Dimensions | 15 × 11 × 3 in                                      |
+| Packed Size         | Smaller than a soda can                             |
+| Baffle Depth        | 3 in I-beam                                         |
+| Insulation          | 100% post-consumer recycled Zerofiber™ (PrimaLoft®) |
+| Cover               | Removable, machine-washable recycled jersey fabric  |
+| Valve               | Micro-adjustable twist-lock                         |
+| Stuff Sack          | Integrated                                          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="pillow"
+/>
 
 ## Performance
 

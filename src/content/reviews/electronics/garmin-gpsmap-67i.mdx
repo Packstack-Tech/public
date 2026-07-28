@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A hands-on look at Garmin's flagship handheld GPS and inReach satellite communicator — is the 165-hour battery and full topo mapping worth $599?"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,25 +20,30 @@ The GPSMAP 67i is Garmin's top-of-the-line handheld GPS, combining a dedicated t
 
 ## Key Specs
 
-| Spec                            | Value                                                                                    |
-| ------------------------------- | ---------------------------------------------------------------------------------------- |
-| Weight                          | 230 g (8.1 oz)                                                                           |
-| Dimensions                      | 2.5 x 6.4 x 1.4 in (6.2 x 16.3 x 3.5 cm)                                                 |
-| Display                         | 3" transflective color TFT, 240x400px                                                    |
-| Battery type                    | Rechargeable internal lithium-ion                                                        |
-| Battery life (tracking, 10-min) | Up to 165 hours                                                                          |
-| Battery life (GPS mode)         | Up to 180 hours                                                                          |
-| Battery life (Expedition mode)  | Up to 425 hrs (inReach) / 840 hrs (GPS only)                                             |
-| Storage                         | 16 GB internal (expandable via microSD)                                                  |
-| Waterproof rating               | IPX7                                                                                     |
-| GNSS                            | Multi-band GPS, Galileo, QZSS                                                            |
-| Satellite network               | Iridium (100% global coverage)                                                           |
-| Sensors                         | Altimeter, barometer, 3-axis compass                                                     |
-| Connectivity                    | Wi-Fi, Bluetooth, ANT+                                                                   |
-| Charging                        | USB-C                                                                                    |
-| **Comparison**                  | See how [GPSMAP 67i compares](/tools/ultralight-research/navigationcomm) to similar gear |
+| Spec                            | Value                                        |
+| ------------------------------- | -------------------------------------------- |
+| Weight                          | 230 g (8.1 oz)                               |
+| Dimensions                      | 2.5 x 6.4 x 1.4 in (6.2 x 16.3 x 3.5 cm)     |
+| Display                         | 3" transflective color TFT, 240x400px        |
+| Battery type                    | Rechargeable internal lithium-ion            |
+| Battery life (tracking, 10-min) | Up to 165 hours                              |
+| Battery life (GPS mode)         | Up to 180 hours                              |
+| Battery life (Expedition mode)  | Up to 425 hrs (inReach) / 840 hrs (GPS only) |
+| Storage                         | 16 GB internal (expandable via microSD)      |
+| Waterproof rating               | IPX7                                         |
+| GNSS                            | Multi-band GPS, Galileo, QZSS                |
+| Satellite network               | Iridium (100% global coverage)               |
+| Sensors                         | Altimeter, barometer, 3-axis compass         |
+| Connectivity                    | Wi-Fi, Bluetooth, ANT+                       |
+| Charging                        | USB-C                                        |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="navigationcomm"
+/>
 
 ## Performance
 

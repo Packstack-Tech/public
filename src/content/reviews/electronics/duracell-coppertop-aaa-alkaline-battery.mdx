@@ -12,7 +12,7 @@ published_at: "2026-07-21"
 description: "An honest look at the Duracell Coppertop AAA for backpackers — solid shelf life and universal availability, but cold weather and weight are real trade-offs."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Duracell Coppertop AAA is the default alkaline battery you'll find in gas st
 
 ## Key Specs
 
-| Spec              | Value                                                                                                 |
-| ----------------- | ----------------------------------------------------------------------------------------------------- |
-| Chemistry         | Alkaline                                                                                              |
-| Size              | AAA                                                                                                   |
-| Voltage           | 1.5V                                                                                                  |
-| Weight            | 11.5g                                                                                                 |
-| Capacity          | ~850–1,000 mAh (typical alkaline AAA)                                                                 |
-| Shelf Life        | 10 years                                                                                              |
-| Storage Guarantee | 12 years (Duracell guarantee)                                                                         |
-| Built             | USA (with US & global parts)                                                                          |
-| **Comparison**    | See how [Coppertop AAA Alkaline Battery compares](/tools/ultralight-research/battery) to similar gear |
+| Spec              | Value                                 |
+| ----------------- | ------------------------------------- |
+| Chemistry         | Alkaline                              |
+| Size              | AAA                                   |
+| Voltage           | 1.5V                                  |
+| Weight            | 11.5g                                 |
+| Capacity          | ~850–1,000 mAh (typical alkaline AAA) |
+| Shelf Life        | 10 years                              |
+| Storage Guarantee | 12 years (Duracell guarantee)         |
+| Built             | USA (with US & global parts)          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="battery"
+/>
 
 ## Performance
 

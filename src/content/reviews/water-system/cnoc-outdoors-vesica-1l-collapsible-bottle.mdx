@@ -12,7 +12,7 @@ published_at: "2026-06-30"
 description: "The CNOC Vesica 1L is a 60g hybrid collapsible bottle with filter-compatible threads — a reusable alternative to disposable Smartwater bottles for ultralight hikers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The CNOC Outdoors Vesica is a 1-liter collapsible water bottle aimed squarely at
 
 ## Key Specs
 
-| Spec                   | Value                                                                               |
-| ---------------------- | ----------------------------------------------------------------------------------- |
-| **Weight**             | 60 g (2.1 oz)                                                                       |
-| **Capacity**           | 1 L (32 fl oz)                                                                      |
-| **Packed Size**        | 10 × 5 × 5 cm (4 × 2 × 2 in)                                                        |
-| **Trail Size**         | 25.5 × 5 × 5 cm (10 × 2 × 2 in)                                                     |
-| **Thread Options**     | 28 mm or 42 mm                                                                      |
-| **Material**           | FDA-approved TPU (BPA-, BPS-, BPF-free)                                             |
-| **Temperature Rating** | 20°F (−6°C) to 140°F (60°C)                                                         |
-| **Comparison**         | See how the [Vesica 1L compares](/tools/ultralight-research/bottle) to similar gear |
+| Spec                   | Value                                   |
+| ---------------------- | --------------------------------------- |
+| **Weight**             | 60 g (2.1 oz)                           |
+| **Capacity**           | 1 L (32 fl oz)                          |
+| **Packed Size**        | 10 × 5 × 5 cm (4 × 2 × 2 in)            |
+| **Trail Size**         | 25.5 × 5 × 5 cm (10 × 2 × 2 in)         |
+| **Thread Options**     | 28 mm or 42 mm                          |
+| **Material**           | FDA-approved TPU (BPA-, BPS-, BPF-free) |
+| **Temperature Rating** | 20°F (−6°C) to 140°F (60°C)             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="bottle"
+/>
 
 ## Performance
 

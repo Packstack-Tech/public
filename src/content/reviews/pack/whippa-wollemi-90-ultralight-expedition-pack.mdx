@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "An Australian-made 90L expedition pack that hits 1.16kg while rated to haul 30kg — we break down whether it lives up to that claim on trail."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,24 +20,29 @@ The Wollemi 90 is Whippa's flagship expedition hauler — a Dyneema-fabric (UHMW
 
 ## Key Specs
 
-| Spec                     | Detail                                                                                                         |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------- |
-| Weight                   | 1,160 g (1.16 kg)                                                                                              |
-| Main body volume         | ~82–83 L                                                                                                       |
-| Front stash pocket       | ~8 L                                                                                                           |
-| Optional Expedition Hood | +10 L                                                                                                          |
-| Total usable volume      | Up to 100 L with hood                                                                                          |
-| Max rated load           | 30 kg                                                                                                          |
-| Height range             | 60–90 cm (adjustable)                                                                                          |
-| Width / Depth            | 34 cm / 24 cm                                                                                                  |
-| Body fabric              | Ultra 200X (UHMWPE)                                                                                            |
-| Base fabric              | Ultra 800X UHMWPE                                                                                              |
-| Back panel               | UltraGrid (210D recycled yarn + Dyneema)                                                                       |
-| Closure                  | Roll-top                                                                                                       |
-| Made in                  | Katoomba, NSW, Australia                                                                                       |
-| **Comparison**           | See how [Wollemi 90 Ultralight Expedition Pack compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                     | Detail                                   |
+| ------------------------ | ---------------------------------------- |
+| Weight                   | 1,160 g (1.16 kg)                        |
+| Main body volume         | ~82–83 L                                 |
+| Front stash pocket       | ~8 L                                     |
+| Optional Expedition Hood | +10 L                                    |
+| Total usable volume      | Up to 100 L with hood                    |
+| Max rated load           | 30 kg                                    |
+| Height range             | 60–90 cm (adjustable)                    |
+| Width / Depth            | 34 cm / 24 cm                            |
+| Body fabric              | Ultra 200X (UHMWPE)                      |
+| Base fabric              | Ultra 800X UHMWPE                        |
+| Back panel               | UltraGrid (210D recycled yarn + Dyneema) |
+| Closure                  | Roll-top                                 |
+| Made in                  | Katoomba, NSW, Australia                 |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

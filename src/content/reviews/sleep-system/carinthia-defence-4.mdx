@@ -12,7 +12,7 @@ published_at: "2026-06-09"
 description: "A military-grade synthetic sleeping bag with a -15°C comfort rating, G-LOFT insulation, and near-waterproof construction — built for durability over gram-counting."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,23 +20,28 @@ The Carinthia Defence 4 is a military-spec, synthetic-fill mummy bag rated to a 
 
 ## Key Specs
 
-| Spec                  | Value                                                                                 |
-| --------------------- | ------------------------------------------------------------------------------------- |
-| **Weight**            | 1,850g / 65.3 oz (M), 2,000g / 70.6 oz (L)                                            |
-| **Comfort Temp**      | -15°C / 5°F                                                                           |
-| **Limit Temp**        | -35°C / -31°F                                                                         |
-| **Packed Size**       | 25×30 cm (M), 25×32 cm (L)                                                            |
-| **Outer Dimensions**  | 215×85×57 cm (M), 230×87×60 cm (L)                                                    |
-| **Insulation**        | G-LOFT® 100% Polyester                                                                |
-| **Outer Fabric**      | Shellproof 100% Polyamide (PU coated microfibre nylon)                                |
-| **Inner Lining**      | Shelltrans 100% Polyamide                                                             |
-| **Fill Construction** | Double-layer, offset quilting + loose outer shell                                     |
-| **Sizes**             | M (up to ~6 ft), L (over ~6 ft)                                                       |
-| **Available Colors**  | Olive, Multicam, Multicam Black, Woodland, 5-color                                    |
-| **Temp Standard**     | ISO 23537 / EN 13537                                                                  |
-| **Comparison**        | See how [Defence 4 compares](/tools/ultralight-research/sleeping-bag) to similar gear |
+| Spec                  | Value                                                  |
+| --------------------- | ------------------------------------------------------ |
+| **Weight**            | 1,850g / 65.3 oz (M), 2,000g / 70.6 oz (L)             |
+| **Comfort Temp**      | -15°C / 5°F                                            |
+| **Limit Temp**        | -35°C / -31°F                                          |
+| **Packed Size**       | 25×30 cm (M), 25×32 cm (L)                             |
+| **Outer Dimensions**  | 215×85×57 cm (M), 230×87×60 cm (L)                     |
+| **Insulation**        | G-LOFT® 100% Polyester                                 |
+| **Outer Fabric**      | Shellproof 100% Polyamide (PU coated microfibre nylon) |
+| **Inner Lining**      | Shelltrans 100% Polyamide                              |
+| **Fill Construction** | Double-layer, offset quilting + loose outer shell      |
+| **Sizes**             | M (up to ~6 ft), L (over ~6 ft)                        |
+| **Available Colors**  | Olive, Multicam, Multicam Black, Woodland, 5-color     |
+| **Temp Standard**     | ISO 23537 / EN 13537                                   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sleeping-bag"
+/>
 
 ## Performance
 

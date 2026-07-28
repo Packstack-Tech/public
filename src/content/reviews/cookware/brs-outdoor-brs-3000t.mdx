@@ -12,7 +12,7 @@ published_at: "2026-05-14"
 description: "The BRS-3000T is a 26g titanium canister stove beloved by gram-counters for its absurd weight-to-price ratio — with real trade-offs in wind performance and QC."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The BRS-3000T is a micro canister stove from Chinese manufacturer BRS Outdoor, c
 
 ## Key Specs
 
-| Spec                    | Value                                                                          |
-| ----------------------- | ------------------------------------------------------------------------------ |
-| **Weight**              | 26g (0.92 oz) stove only; ~40g (1.4 oz) with stuff sack                        |
-| **Output**              | 2700W (~9,212 BTU/hr)                                                          |
-| **Gas Consumption**     | ~140g/hr                                                                       |
-| **Fuel Type**           | Isobutane/Propane canister (EN417 threaded)                                    |
-| **Dimensions (In Use)** | 3.34" L × 3.34" W × 2.69" H                                                    |
-| **Dimensions (Packed)** | 1.45" L × 1.45" W × 2.04" H                                                    |
-| **Materials**           | Titanium Alloy, Copper, Stainless Steel                                        |
-| **Ignition**            | None — external lighter required                                               |
-| **Pressure Regulator**  | No                                                                             |
-| **Comparison**          | See how [BRS-3000T compares](/tools/ultralight-research/stove) to similar gear |
+| Spec                    | Value                                                   |
+| ----------------------- | ------------------------------------------------------- |
+| **Weight**              | 26g (0.92 oz) stove only; ~40g (1.4 oz) with stuff sack |
+| **Output**              | 2700W (~9,212 BTU/hr)                                   |
+| **Gas Consumption**     | ~140g/hr                                                |
+| **Fuel Type**           | Isobutane/Propane canister (EN417 threaded)             |
+| **Dimensions (In Use)** | 3.34" L × 3.34" W × 2.69" H                             |
+| **Dimensions (Packed)** | 1.45" L × 1.45" W × 2.04" H                             |
+| **Materials**           | Titanium Alloy, Copper, Stainless Steel                 |
+| **Ignition**            | None — external lighter required                        |
+| **Pressure Regulator**  | No                                                      |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-06-26"
 description: "The Marmot Sawtooth 15° is a feature-rich, genuinely warm down sleeping bag at a budget-friendly price — but its weight makes it a tough sell for ultralight backpackers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,21 +32,26 @@ three-season backpackers who prioritize warmth and livability over pack weight.
 
 ## Key Specs
 
-| Spec                     | Value                                                                                           |
-| ------------------------ | ----------------------------------------------------------------------------------------------- |
-| **Temperature Rating**   | 15°F / -9°C                                                                                     |
-| **Tested Comfort**       | 27°F / -3°C                                                                                     |
-| **Tested Limit**         | 15°F / -9°C                                                                                     |
-| **Fill Power**           | 650                                                                                             |
-| **Insulation**           | Duck Down (Down Defender treated)                                                               |
-| **Weight (Regular)**     | 2 lbs 14.2 oz (1,310g)                                                                          |
-| **Weight (Long)**        | 3 lbs 0.3 oz                                                                                    |
-| **Weight (Long X-Wide)** | 3 lbs 5.6 oz                                                                                    |
-| **Sizes**                | Regular, Long, Long X-Wide                                                                      |
-| **Rating Standard**      | ISO 23537                                                                                       |
-| **Comparison**           | See how [Marmot Sawtooth 15° compares](/tools/ultralight-research/sleeping-bag) to similar gear |
+| Spec                     | Value                             |
+| ------------------------ | --------------------------------- |
+| **Temperature Rating**   | 15°F / -9°C                       |
+| **Tested Comfort**       | 27°F / -3°C                       |
+| **Tested Limit**         | 15°F / -9°C                       |
+| **Fill Power**           | 650                               |
+| **Insulation**           | Duck Down (Down Defender treated) |
+| **Weight (Regular)**     | 2 lbs 14.2 oz (1,310g)            |
+| **Weight (Long)**        | 3 lbs 0.3 oz                      |
+| **Weight (Long X-Wide)** | 3 lbs 5.6 oz                      |
+| **Sizes**                | Regular, Long, Long X-Wide        |
+| **Rating Standard**      | ISO 23537                         |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sleeping-bag"
+/>
 
 ## Performance
 

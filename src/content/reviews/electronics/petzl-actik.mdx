@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The Petzl ACTIK is a 450-lumen, AAA-powered headlamp with mixed-beam lighting and hybrid battery compatibility — a reliable all-rounder for three-season backpacking."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Petzl ACTIK sits in the middle of Petzl's Active Series — above the simple
 
 ## Key Specs
 
-| Spec                 | Value                                                                         |
-| -------------------- | ----------------------------------------------------------------------------- |
-| **Max Output**       | 450 lumens                                                                    |
-| **Beam Distance**    | 100 m                                                                         |
-| **Weight**           | 98 g (with 3x AAA batteries)                                                  |
-| **Battery**          | 3x AAA (LR03) or CORE rechargeable (sold separately)                          |
-| **Lighting Modes**   | 3 white levels + red continuous + red strobe                                  |
-| **Max Burn Time**    | 100 hours (lowest setting)                                                    |
-| **Water Resistance** | IPX4                                                                          |
-| **Comparison**       | See how [ACTIK compares](/tools/ultralight-research/lighting) to similar gear |
+| Spec                 | Value                                                |
+| -------------------- | ---------------------------------------------------- |
+| **Max Output**       | 450 lumens                                           |
+| **Beam Distance**    | 100 m                                                |
+| **Weight**           | 98 g (with 3x AAA batteries)                         |
+| **Battery**          | 3x AAA (LR03) or CORE rechargeable (sold separately) |
+| **Lighting Modes**   | 3 white levels + red continuous + red strobe         |
+| **Max Burn Time**    | 100 hours (lowest setting)                           |
+| **Water Resistance** | IPX4                                                 |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="lighting"
+/>
 
 ## Performance
 

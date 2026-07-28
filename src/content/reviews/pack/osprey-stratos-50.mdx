@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A ventilated, 50L overnight pack built for weekend and multi-day trips up to about 35 lbs — comfortable and well-organized, but not the pack for ultralight base weights."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Stratos 50 is Osprey's mid-weight, ventilated backpacking pack, built around
 
 ## Key Specs
 
-| Spec                   | Value                                                                               |
-| ---------------------- | ----------------------------------------------------------------------------------- |
-| Weight                 | 1670 g (3 lb 11 oz), M/L size                                                       |
-| Volume                 | 50L (S/M size runs 47L)                                                             |
-| Main fabric            | 210D Nylon Crosshatch                                                               |
-| Accent/bottom fabric   | 420HD Nylon Packcloth                                                               |
-| Recommended load range | 20-40 lbs                                                                           |
-| Frame                  | LightWire alloy peripheral wire + 1 aluminum stay                                   |
-| Backpanel              | AirSpeed tensioned mesh suspension                                                  |
-| Sizes available        | S/M (47L, 1614g), M/L (50L, 1670g)                                                  |
-| Included               | Integrated rain cover, hipbelt pockets, hydration sleeve                            |
-| **Comparison**         | See how [Stratos 50 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                   | Value                                                    |
+| ---------------------- | -------------------------------------------------------- |
+| Weight                 | 1670 g (3 lb 11 oz), M/L size                            |
+| Volume                 | 50L (S/M size runs 47L)                                  |
+| Main fabric            | 210D Nylon Crosshatch                                    |
+| Accent/bottom fabric   | 420HD Nylon Packcloth                                    |
+| Recommended load range | 20-40 lbs                                                |
+| Frame                  | LightWire alloy peripheral wire + 1 aluminum stay        |
+| Backpanel              | AirSpeed tensioned mesh suspension                       |
+| Sizes available        | S/M (47L, 1614g), M/L (50L, 1670g)                       |
+| Included               | Integrated rain cover, hipbelt pockets, hydration sleeve |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

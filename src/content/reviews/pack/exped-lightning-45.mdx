@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The Exped Lightning 45 is a 1,150g roll-top pack built around the T-Rex frame system — a smart middle ground between true ultralight packs and traditional load-haulers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -33,21 +33,26 @@ import PackstackCTA from "../../../components/PackstackCTA.astro"
 
 ## Key Specs
 
-| Spec                   | Value                                                                                 |
-| ---------------------- | ------------------------------------------------------------------------------------- |
-| **Weight**             | 1,150g / 40.6 oz                                                                      |
-| **Volume**             | 45L                                                                                   |
-| **Dimensions (H×W×D)** | 72 × 32 × 25 cm                                                                       |
-| **Back Length Range**  | 41–58 cm                                                                              |
-| **Hipbelt Range**      | 84–142 cm                                                                             |
-| **Load Limit**         | 24 kg                                                                                 |
-| **Frame**              | T-Rex aluminum stay (partially external)                                              |
-| **Material**           | 210D HMPE Ripstop Nylon, PU coated                                                    |
-| **Certifications**     | Oeko-Tex 100                                                                          |
-| **Closure**            | Roll-top (drybag-style)                                                               |
-| **Comparison**         | See how [Lightning 45 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                   | Value                                    |
+| ---------------------- | ---------------------------------------- |
+| **Weight**             | 1,150g / 40.6 oz                         |
+| **Volume**             | 45L                                      |
+| **Dimensions (H×W×D)** | 72 × 32 × 25 cm                          |
+| **Back Length Range**  | 41–58 cm                                 |
+| **Hipbelt Range**      | 84–142 cm                                |
+| **Load Limit**         | 24 kg                                    |
+| **Frame**              | T-Rex aluminum stay (partially external) |
+| **Material**           | 210D HMPE Ripstop Nylon, PU coated       |
+| **Certifications**     | Oeko-Tex 100                             |
+| **Closure**            | Roll-top (drybag-style)                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

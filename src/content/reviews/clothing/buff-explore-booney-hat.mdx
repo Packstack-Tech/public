@@ -12,7 +12,7 @@ published_at: "2026-07-13"
 description: "The BUFF Explore Booney Hat is a 79g, UPF 50, self-storing sun hat built for hikers who prize packability over maximum sun coverage."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The BUFF Explore Booney Hat is a <cite index="2-7">wide-brimmed booney hat desig
 
 ## Key Specs
 
-| Spec            | Details                                                                                    |
-| --------------- | ------------------------------------------------------------------------------------------ |
-| Weight          | 79 g (2.79 oz)                                                                             |
-| UPF Rating      | UPF 50                                                                                     |
-| Material        | 100% Recycled Nylon (crown, brim) / Recycled Polyester (inner sweatband, upper strap)      |
-| Sizes           | S/M (53–57 cm), L/XL (57–61 cm)                                                            |
-| Water Repellent | Yes (DWR)                                                                                  |
-| Self-Storing    | Yes                                                                                        |
-| Brim Width      | ~2.75 in                                                                                   |
-| Price           | ~$45                                                                                       |
-| **Comparison**  | See how [Explore Booney Hat compares](/tools/ultralight-research/headwear) to similar gear |
+| Spec            | Details                                                                               |
+| --------------- | ------------------------------------------------------------------------------------- |
+| Weight          | 79 g (2.79 oz)                                                                        |
+| UPF Rating      | UPF 50                                                                                |
+| Material        | 100% Recycled Nylon (crown, brim) / Recycled Polyester (inner sweatband, upper strap) |
+| Sizes           | S/M (53–57 cm), L/XL (57–61 cm)                                                       |
+| Water Repellent | Yes (DWR)                                                                             |
+| Self-Storing    | Yes                                                                                   |
+| Brim Width      | ~2.75 in                                                                              |
+| Price           | ~$45                                                                                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="headwear"
+/>
 
 ## Performance
 

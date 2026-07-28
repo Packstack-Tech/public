@@ -12,7 +12,7 @@ published_at: "2026-03-11"
 description: "A thorough look at MSR's 8 oz IsoPro canister — its 80/20 isobutane/propane blend, cold-weather reliability, float gauge, and how it stacks up against competing brands."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The MSR IsoPro 227g (8 oz) canister is the workhorse size in MSR's three-caniste
 
 ## Key Specs
 
-| Spec                    | Value                                                                                    |
-| ----------------------- | ---------------------------------------------------------------------------------------- |
-| Fuel content            | 227 g / 8 oz                                                                             |
-| Canister weight (full)  | 371 g / 13.1 oz                                                                          |
-| Canister weight (empty) | ~144 g / ~5.1 oz                                                                         |
-| Fuel blend              | 80/20 isobutane/propane                                                                  |
-| N-butane content        | ≤5%                                                                                      |
-| Dimensions              | 4.3 × 4.3 × 3.7 in                                                                       |
-| Valve type              | Lindal (EN 417)                                                                          |
-| Fuel gauge              | Yes — printed float gauge                                                                |
-| Self-sealing valve      | Yes                                                                                      |
-| Recyclable              | Yes (conditions apply)                                                                   |
-| **Comparison**          | See how [IsoPro Fuel Canister compares](/tools/ultralight-research/fuel) to similar gear |
+| Spec                    | Value                     |
+| ----------------------- | ------------------------- |
+| Fuel content            | 227 g / 8 oz              |
+| Canister weight (full)  | 371 g / 13.1 oz           |
+| Canister weight (empty) | ~144 g / ~5.1 oz          |
+| Fuel blend              | 80/20 isobutane/propane   |
+| N-butane content        | ≤5%                       |
+| Dimensions              | 4.3 × 4.3 × 3.7 in        |
+| Valve type              | Lindal (EN 417)           |
+| Fuel gauge              | Yes — printed float gauge |
+| Self-sealing valve      | Yes                       |
+| Recyclable              | Yes (conditions apply)    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="fuel"
+/>
 
 ## Performance
 

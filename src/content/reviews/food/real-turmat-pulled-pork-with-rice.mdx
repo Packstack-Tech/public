@@ -12,7 +12,7 @@ published_at: "2026-07-12"
 description: "A freeze-dried Norwegian classic — the REAL Turmat Pulled Pork with Rice earns its best-seller status with genuine flavour and fast rehydration, at a premium price."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -28,26 +28,31 @@ kcal.
 
 ## Key Specs
 
-| Spec              | Value                                                                                     |
-| ----------------- | ----------------------------------------------------------------------------------------- |
-| Dry Weight        | 121 g                                                                                     |
-| Rehydrated Weight | 500 g                                                                                     |
-| Calories          | 547 kcal                                                                                  |
-| Protein           | 20.3 g                                                                                    |
-| Carbohydrates     | 59 g                                                                                      |
-| Fat               | 24 g                                                                                      |
-| Dietary Fibre     | 5.2 g                                                                                     |
-| Salt              | 4.2 g                                                                                     |
-| Calorie Density   | 4.52 kcal/g                                                                               |
-| Water to Add      | 380 ml                                                                                    |
-| Prep Time         | 8 minutes                                                                                 |
-| Dietary           | Gluten-free, Lactose-free                                                                 |
-| Allergens         | Soy                                                                                       |
-| Shelf Life        | 5 years from production date                                                              |
-| Country of Origin | Norway                                                                                    |
-| **Comparison**    | See how [Pulled Pork with Rice compares](/tools/ultralight-research/meal) to similar gear |
+| Spec              | Value                        |
+| ----------------- | ---------------------------- |
+| Dry Weight        | 121 g                        |
+| Rehydrated Weight | 500 g                        |
+| Calories          | 547 kcal                     |
+| Protein           | 20.3 g                       |
+| Carbohydrates     | 59 g                         |
+| Fat               | 24 g                         |
+| Dietary Fibre     | 5.2 g                        |
+| Salt              | 4.2 g                        |
+| Calorie Density   | 4.52 kcal/g                  |
+| Water to Add      | 380 ml                       |
+| Prep Time         | 8 minutes                    |
+| Dietary           | Gluten-free, Lactose-free    |
+| Allergens         | Soy                          |
+| Shelf Life        | 5 years from production date |
+| Country of Origin | Norway                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="meal"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-07"
 description: "A relaxed-fit, 100% mulesing-free merino wool tee from Scandinavian brand Urberg, built with pack-friendly raglan sleeves for three-season hiking."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,18 +31,23 @@ backpackers who want natural-fiber performance without a premium price tag.
 
 ## Key Specs
 
-| Spec           | Detail                                                                                              |
-| -------------- | --------------------------------------------------------------------------------------------------- |
-| Weight         | 202 g                                                                                               |
-| Material       | 100% Merino Wool                                                                                    |
-| Fiber Diameter | 18.5 micron                                                                                         |
-| Sleeve Type    | Raglan                                                                                              |
-| Fit            | Classic / Relaxed                                                                                   |
-| Mulesing-Free  | Yes                                                                                                 |
-| Sustainability | 1% for the Planet member                                                                            |
-| **Comparison** | See how [Lyngen Merino T-Shirt 2.0 compares](/tools/ultralight-research/base-layer) to similar gear |
+| Spec           | Detail                   |
+| -------------- | ------------------------ |
+| Weight         | 202 g                    |
+| Material       | 100% Merino Wool         |
+| Fiber Diameter | 18.5 micron              |
+| Sleeve Type    | Raglan                   |
+| Fit            | Classic / Relaxed        |
+| Mulesing-Free  | Yes                      |
+| Sustainability | 1% for the Planet member |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="base-layer"
+/>
 
 ## Performance
 

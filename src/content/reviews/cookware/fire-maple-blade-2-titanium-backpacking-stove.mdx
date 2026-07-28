@@ -12,7 +12,7 @@ published_at: "2026-07-07"
 description: "The Fire Maple Blade 2 (FMS-117H) is a 135g titanium remote-canister stove with an inverted-canister preheat tube — making it a rare ultralight option with genuine cold-weather capability."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,22 +20,27 @@ The Fire Maple Blade 2 (model FMS-117H) is a titanium remote-canister backpackin
 
 ## Key Specs
 
-| Spec                | Value                                                                                                   |
-| ------------------- | ------------------------------------------------------------------------------------------------------- |
-| Model               | FMS-117H                                                                                                |
-| Weight (advertised) | 135 g / 4.8 oz                                                                                          |
-| Power Output        | 2,800 W / 9,550 BTU/h                                                                                   |
-| Boil Time (500 ml)  | 3.42 min                                                                                                |
-| Max Pot Diameter    | 10 in (254 mm)                                                                                          |
-| Pot Support Spread  | 145 mm                                                                                                  |
-| Material            | Titanium (legs, frame, burner head)                                                                     |
-| Ignition            | Manual (no piezo)                                                                                       |
-| Inverted Canister   | Yes (preheat tube required & included)                                                                  |
-| Fuel Hose Length    | 315 mm braided                                                                                          |
-| Warranty            | 3 years                                                                                                 |
-| **Comparison**      | See how [Blade 2 Titanium Backpacking Stove compares](/tools/ultralight-research/stove) to similar gear |
+| Spec                | Value                                  |
+| ------------------- | -------------------------------------- |
+| Model               | FMS-117H                               |
+| Weight (advertised) | 135 g / 4.8 oz                         |
+| Power Output        | 2,800 W / 9,550 BTU/h                  |
+| Boil Time (500 ml)  | 3.42 min                               |
+| Max Pot Diameter    | 10 in (254 mm)                         |
+| Pot Support Spread  | 145 mm                                 |
+| Material            | Titanium (legs, frame, burner head)    |
+| Ignition            | Manual (no piezo)                      |
+| Inverted Canister   | Yes (preheat tube required & included) |
+| Fuel Hose Length    | 315 mm braided                         |
+| Warranty            | 3 years                                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

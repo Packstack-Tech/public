@@ -12,7 +12,7 @@ published_at: "2026-07-15"
 description: "The Katadyn BeFree 3.0L is a fast, lightweight hollow-fiber squeeze and gravity filter built for backpackers and small groups who want minimal wait time at the water source."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,22 +20,27 @@ The Katadyn BeFree 3.0L is a hollow-fiber squeeze filter paired with a collapsib
 
 ## Key Specs
 
-| Spec             | Value                                                                                                         |
-| ---------------- | ------------------------------------------------------------------------------------------------------------- |
-| Weight           | 100 g / 3.5 oz                                                                                                |
-| Capacity         | 3.0 L                                                                                                         |
-| Filter Type      | Hollow-fiber membrane                                                                                         |
-| Pore Size        | 0.1 micron                                                                                                    |
-| Flow Rate        | 2 L/min (claimed)                                                                                             |
-| Filter Life      | 1,000 L                                                                                                       |
-| Protozoa Removal | 99.99%                                                                                                        |
-| Bacteria Removal | 99.9999%                                                                                                      |
-| Virus Removal    | No                                                                                                            |
-| BPA Free         | Yes                                                                                                           |
-| Article Number   | 8019640                                                                                                       |
-| **Comparison**   | See how [BeFree Water Filtration System 3.0L compares](/tools/ultralight-research/filtration) to similar gear |
+| Spec             | Value                 |
+| ---------------- | --------------------- |
+| Weight           | 100 g / 3.5 oz        |
+| Capacity         | 3.0 L                 |
+| Filter Type      | Hollow-fiber membrane |
+| Pore Size        | 0.1 micron            |
+| Flow Rate        | 2 L/min (claimed)     |
+| Filter Life      | 1,000 L               |
+| Protozoa Removal | 99.99%                |
+| Bacteria Removal | 99.9999%              |
+| Virus Removal    | No                    |
+| BPA Free         | Yes                   |
+| Article Number   | 8019640               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="filtration"
+/>
 
 ## Performance
 

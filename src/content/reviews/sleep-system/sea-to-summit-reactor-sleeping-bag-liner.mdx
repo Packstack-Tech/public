@@ -12,7 +12,7 @@ published_at: "2026-06-02"
 description: "A detailed review of the Sea to Summit Reactor Sleeping Bag Liner — a 267g Thermolite Pro liner claiming +14°F of warmth for backpackers and travelers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The Sea to Summit Reactor is the brand's best-selling sleeping bag liner, built 
 
 ## Key Specs
 
-| Spec              | Detail                                                                                          |
-| ----------------- | ----------------------------------------------------------------------------------------------- |
-| **Weight**        | 267 g (9.4 oz)                                                                                  |
-| **Thermal Boost** | +14°F (+8°C)                                                                                    |
-| **Fabric**        | 50% Thermolite® Pro / 50% Thermolite® EcoMade                                                   |
-| **Fabric Weight** | 80 g/m²                                                                                         |
-| **Shape**         | Mummy                                                                                           |
-| **Packed Size**   | 7 × 15 cm (~2.8 × 5.9 in)                                                                       |
-| **Sizes**         | Compact (198 × 80 cm) / Standard (216 × 80 cm)                                                  |
-| **Styles**        | Classic Mummy / Mummy with Drawcord                                                             |
-| **Odor Control**  | HeiQ Fresh FFL                                                                                  |
-| **Includes**      | Ultra-Sil stuff sack                                                                            |
-| **Comparison**    | See how [Reactor Sleeping Bag Liner compares](/tools/ultralight-research/liner) to similar gear |
+| Spec              | Detail                                         |
+| ----------------- | ---------------------------------------------- |
+| **Weight**        | 267 g (9.4 oz)                                 |
+| **Thermal Boost** | +14°F (+8°C)                                   |
+| **Fabric**        | 50% Thermolite® Pro / 50% Thermolite® EcoMade  |
+| **Fabric Weight** | 80 g/m²                                        |
+| **Shape**         | Mummy                                          |
+| **Packed Size**   | 7 × 15 cm (~2.8 × 5.9 in)                      |
+| **Sizes**         | Compact (198 × 80 cm) / Standard (216 × 80 cm) |
+| **Styles**        | Classic Mummy / Mummy with Drawcord            |
+| **Odor Control**  | HeiQ Fresh FFL                                 |
+| **Includes**      | Ultra-Sil stuff sack                           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="liner"
+/>
 
 ## Performance
 

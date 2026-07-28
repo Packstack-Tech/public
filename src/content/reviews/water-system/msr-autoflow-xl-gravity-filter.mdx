@@ -12,7 +12,7 @@ published_at: "2026-07-19"
 description: "The MSR AutoFlow XL is a 10-liter hands-free gravity filter built for groups and basecamp use, delivering 1.75 L/min of clean water while you do something else entirely."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The MSR AutoFlow XL is a 10-liter gravity filtration system aimed squarely at gr
 
 ## Key Specs
 
-| Spec                   | Value                                                                                                |
-| ---------------------- | ---------------------------------------------------------------------------------------------------- |
-| Weight                 | 340g (12 oz)                                                                                         |
-| Capacity               | 10L                                                                                                  |
-| Flow Rate              | 1.75 L/min                                                                                           |
-| Filter Life            | 1,500 liters                                                                                         |
-| Filter Pore Size       | 0.2-micron hollow fiber                                                                              |
-| Filtration Standard    | NSF Protocol P231                                                                                    |
-| Effective Against      | Bacteria (99.9999%), Protozoa (99.9%), Particulate                                                   |
-| NOT Effective Against  | Viruses, heavy metals, pesticides, microplastics                                                     |
-| Reservoir Construction | 3D film, RF-welded seams, 1000-denier flat base                                                      |
-| **Comparison**         | See how [AutoFlow XL Gravity Filter compares](/tools/ultralight-research/filtration) to similar gear |
+| Spec                   | Value                                              |
+| ---------------------- | -------------------------------------------------- |
+| Weight                 | 340g (12 oz)                                       |
+| Capacity               | 10L                                                |
+| Flow Rate              | 1.75 L/min                                         |
+| Filter Life            | 1,500 liters                                       |
+| Filter Pore Size       | 0.2-micron hollow fiber                            |
+| Filtration Standard    | NSF Protocol P231                                  |
+| Effective Against      | Bacteria (99.9999%), Protozoa (99.9%), Particulate |
+| NOT Effective Against  | Viruses, heavy metals, pesticides, microplastics   |
+| Reservoir Construction | 3D film, RF-welded seams, 1000-denier flat base    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="filtration"
+/>
 
 ## Performance
 

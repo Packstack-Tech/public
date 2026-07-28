@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A long-term look at MSR's classic white gas stove — a fuel-efficient, field-repairable workhorse that trades convenience for versatility."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -28,9 +28,14 @@ The MSR WhisperLite is a liquid-fuel backpacking stove that's been in continuous
 | Boil time (1L)                                   | 3.9 min                                                                          |
 | Burn time (600ml fuel)                           | 136 min                                                                          |
 | Includes                                         | Fuel pump, windscreen, heat reflector, small-parts kit, instructions, stuff sack |
-| **Comparison**                                   | See how [WhisperLite compares](/tools/ultralight-research/stove) to similar gear |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

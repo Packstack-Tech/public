@@ -12,7 +12,7 @@ published_at: "2026-07-13"
 description: "A bombproof, feature-loaded pack for heavy haulers — the Aether 55 earns its Editors' Choice Gold, but its near-5 lb weight is a hard stop for ultralight hikers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Osprey Aether 55 is a full-featured, load-hauling backpack built for multi-d
 
 ## Key Specs
 
-| Spec            | Value                                                                              |
-| --------------- | ---------------------------------------------------------------------------------- |
-| Weight          | 4 lb 13 oz (2,190 g) — S/M                                                         |
-| Volume          | 55 L (S/M) / 58 L (L/XL)                                                           |
-| Load Range      | 30–60 lbs (14–27 kg)                                                               |
-| Frame           | LightWire aluminum alloy peripheral frame + injection-molded AirScape framesheet   |
-| Fabric          | 420HD / 210D bluesign®-approved nylon, PFC-free DWR                                |
-| Sizes           | S/M (torso 17–20.5"), L/XL (torso 19.5–23")                                        |
-| Hip / Waist Fit | 28–55 in (71–140 cm)                                                               |
-| Rain Cover      | Included                                                                           |
-| **Comparison**  | See how [Aether 55 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec            | Value                                                                            |
+| --------------- | -------------------------------------------------------------------------------- |
+| Weight          | 4 lb 13 oz (2,190 g) — S/M                                                       |
+| Volume          | 55 L (S/M) / 58 L (L/XL)                                                         |
+| Load Range      | 30–60 lbs (14–27 kg)                                                             |
+| Frame           | LightWire aluminum alloy peripheral frame + injection-molded AirScape framesheet |
+| Fabric          | 420HD / 210D bluesign®-approved nylon, PFC-free DWR                              |
+| Sizes           | S/M (torso 17–20.5"), L/XL (torso 19.5–23")                                      |
+| Hip / Waist Fit | 28–55 in (71–140 cm)                                                             |
+| Rain Cover      | Included                                                                         |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-05-09"
 description: "The Gossamer Gear Mariposa 60 is a 60L ultralight internal-frame pack beloved by thru-hikers for its comfort, pocket organization, and sub-2lb weight."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,23 +32,28 @@ category.
 
 ## Key Specs
 
-| Spec                         | Detail                                                                               |
-| ---------------------------- | ------------------------------------------------------------------------------------ |
-| **Weight**                   | 969g / ~34.2 oz (medium; varies by hipbelt config)                                   |
-| **Total Volume**             | 60L                                                                                  |
-| **Main Compartment**         | 36L                                                                                  |
-| **External Pockets**         | 24L                                                                                  |
-| **Material**                 | 100D & 210D Recycled Robic Nylon                                                     |
-| **Frame**                    | Aluminum closed-shape stay with PVT pivoting hipbelt                                 |
-| **Max Load**                 | 35 lbs                                                                               |
-| **Sizes Available**          | Small, Medium, Large                                                                 |
-| **Torso Range**              | 16–22 in. (across all sizes)                                                         |
-| **Hipbelt Range**            | 26–61.5 in.                                                                          |
-| **Bear Canister Compatible** | Yes (BV500 vertical; BV475 horizontal)                                               |
-| **MSRP**                     | $315                                                                                 |
-| **Comparison**               | See how [Mariposa 60 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                         | Detail                                               |
+| ---------------------------- | ---------------------------------------------------- |
+| **Weight**                   | 969g / ~34.2 oz (medium; varies by hipbelt config)   |
+| **Total Volume**             | 60L                                                  |
+| **Main Compartment**         | 36L                                                  |
+| **External Pockets**         | 24L                                                  |
+| **Material**                 | 100D & 210D Recycled Robic Nylon                     |
+| **Frame**                    | Aluminum closed-shape stay with PVT pivoting hipbelt |
+| **Max Load**                 | 35 lbs                                               |
+| **Sizes Available**          | Small, Medium, Large                                 |
+| **Torso Range**              | 16–22 in. (across all sizes)                         |
+| **Hipbelt Range**            | 26–61.5 in.                                          |
+| **Bear Canister Compatible** | Yes (BV500 vertical; BV475 horizontal)               |
+| **MSRP**                     | $315                                                 |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-06-03"
 description: "A durable, lightweight 3-season hiking pant built from TACTEL® nylon with CORDURA® reinforcements — an enduring UK classic that earns its reputation on technical terrain."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,20 +32,25 @@ durability and weather resistance without hauling softshell weight up the hill.
 
 ## Key Specs
 
-| Spec              | Detail                                                                                |
-| ----------------- | ------------------------------------------------------------------------------------- |
-| **Weight**        | 330g / 11.6 oz                                                                        |
-| **Main Fabric**   | TACTEL® nylon (110g/m²)                                                               |
-| **Reinforcement** | CORDURA® rip-stop (knees, seat, instep)                                               |
-| **DWR**           | PFC-free DWR                                                                          |
-| **Fit**           | Regular                                                                               |
-| **Leg Lengths**   | Short, Regular, Long                                                                  |
-| **Pockets**       | 2 zippered hand pockets + 1 zippered security pocket                                  |
-| **Ankle**         | Quarter-length zip + 2-position snap closure                                          |
-| **Price**         | $110 USD                                                                              |
-| **Comparison**    | See how [Terra Pants compares](/tools/ultralight-research/pant-short) to similar gear |
+| Spec              | Detail                                               |
+| ----------------- | ---------------------------------------------------- |
+| **Weight**        | 330g / 11.6 oz                                       |
+| **Main Fabric**   | TACTEL® nylon (110g/m²)                              |
+| **Reinforcement** | CORDURA® rip-stop (knees, seat, instep)              |
+| **DWR**           | PFC-free DWR                                         |
+| **Fit**           | Regular                                              |
+| **Leg Lengths**   | Short, Regular, Long                                 |
+| **Pockets**       | 2 zippered hand pockets + 1 zippered security pocket |
+| **Ankle**         | Quarter-length zip + 2-position snap closure         |
+| **Price**         | $110 USD                                             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="pant-short"
+/>
 
 ## Performance
 

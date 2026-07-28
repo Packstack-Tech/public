@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A 4-gram passive reflector that makes you findable by RECCO-equipped rescue teams — here's what it actually does (and doesn't) do for backpackers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The RECCO Backpack Rescue Reflector is a tiny, battery-free tag that clips to yo
 
 ## Key Specs
 
-| Spec             | Detail                                                                                            |
-| ---------------- | ------------------------------------------------------------------------------------------------- |
-| Weight           | 4.0 g                                                                                             |
-| Power source     | None — fully passive device                                                                       |
-| Battery required | No                                                                                                |
-| Technology       | Harmonic radar transponder                                                                        |
-| Detection range  | Up to 200 m (with professional RECCO detector)                                                    |
-| Intended use     | Summer and winter outdoor activities; avalanche and missing-person SAR                            |
-| Lifespan         | Effectively unlimited (no batteries or moving parts to degrade)                                   |
-| Attachment       | Elastic loop, designed for pack haul handle/straps                                                |
-| **Comparison**   | See how [Backpack Rescue Reflector compares](/tools/ultralight-research/survival) to similar gear |
+| Spec             | Detail                                                                 |
+| ---------------- | ---------------------------------------------------------------------- |
+| Weight           | 4.0 g                                                                  |
+| Power source     | None — fully passive device                                            |
+| Battery required | No                                                                     |
+| Technology       | Harmonic radar transponder                                             |
+| Detection range  | Up to 200 m (with professional RECCO detector)                         |
+| Intended use     | Summer and winter outdoor activities; avalanche and missing-person SAR |
+| Lifespan         | Effectively unlimited (no batteries or moving parts to degrade)        |
+| Attachment       | Elastic loop, designed for pack haul handle/straps                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="survival"
+/>
 
 ## Performance
 

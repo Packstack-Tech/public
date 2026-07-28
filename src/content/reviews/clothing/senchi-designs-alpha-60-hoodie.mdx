@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A 3.7 oz Polartec Alpha Direct fleece hoodie that punches way above its weight as an active-insulation midlayer."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Alpha 60 Hoodie (formerly the "Wren Hoodie") is Senchi Designs' entry-level 
 
 ## Key Specs
 
-| Spec                   | Detail                                                                                    |
-| ---------------------- | ----------------------------------------------------------------------------------------- |
-| Weight                 | 105 g (3.7 oz), size M                                                                    |
-| Fabric                 | Polartec® Alpha Direct 60 g/m²                                                            |
-| Material               | 78% Recycled Polyester (P.E.T.) / 22% Polyester                                           |
-| Fit                    | Unisex                                                                                    |
-| Construction           | Balaclava-style hood, raglan sleeves, elastic cuffs, pullover                             |
-| Certifications         | Oeko-Tex®, Bluesign®                                                                      |
-| Country of Manufacture | USA                                                                                       |
-| Price                  | $105                                                                                      |
-| **Comparison**         | See how [Alpha 60 Hoodie compares](/tools/ultralight-research/insulation) to similar gear |
+| Spec                   | Detail                                                        |
+| ---------------------- | ------------------------------------------------------------- |
+| Weight                 | 105 g (3.7 oz), size M                                        |
+| Fabric                 | Polartec® Alpha Direct 60 g/m²                                |
+| Material               | 78% Recycled Polyester (P.E.T.) / 22% Polyester               |
+| Fit                    | Unisex                                                        |
+| Construction           | Balaclava-style hood, raglan sleeves, elastic cuffs, pullover |
+| Certifications         | Oeko-Tex®, Bluesign®                                          |
+| Country of Manufacture | USA                                                           |
+| Price                  | $105                                                          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="insulation"
+/>
 
 ## Performance
 

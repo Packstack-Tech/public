@@ -12,7 +12,7 @@ published_at: "2026-07-19"
 description: "The Anker PowerCore 20100 packs serious capacity into a slim, durable form — but its dated port selection makes it a harder sell for modern hikers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The Anker PowerCore 20100 (model A1271) is a high-capacity USB-A power bank aime
 
 ## Key Specs
 
-| Spec                | Value                                                                                  |
-| ------------------- | -------------------------------------------------------------------------------------- |
-| Capacity            | 20,100 mAh / 72.36 Wh                                                                  |
-| Weight              | 354 g (12.5 oz)                                                                        |
-| Dimensions          | 6.6 × 2.3 × 0.9 in                                                                     |
-| Output Ports        | 2× USB-A (2.4A each, 4.8A total)                                                       |
-| Input Port          | 1× Micro-USB                                                                           |
-| Input Charging Rate | 5V / 2A (10–12 hrs to full)                                                            |
-| Charging Technology | PowerIQ + VoltageBoost                                                                 |
-| Quick Charge        | None (no Qualcomm QC)                                                                  |
-| Safety              | MultiProtect (surge, short-circuit, overcharge)                                        |
-| Warranty            | 18 months                                                                              |
-| **Comparison**      | See how [PowerCore 20100 compares](/tools/ultralight-research/battery) to similar gear |
+| Spec                | Value                                           |
+| ------------------- | ----------------------------------------------- |
+| Capacity            | 20,100 mAh / 72.36 Wh                           |
+| Weight              | 354 g (12.5 oz)                                 |
+| Dimensions          | 6.6 × 2.3 × 0.9 in                              |
+| Output Ports        | 2× USB-A (2.4A each, 4.8A total)                |
+| Input Port          | 1× Micro-USB                                    |
+| Input Charging Rate | 5V / 2A (10–12 hrs to full)                     |
+| Charging Technology | PowerIQ + VoltageBoost                          |
+| Quick Charge        | None (no Qualcomm QC)                           |
+| Safety              | MultiProtect (surge, short-circuit, overcharge) |
+| Warranty            | 18 months                                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="battery"
+/>
 
 ## Performance
 

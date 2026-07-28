@@ -12,7 +12,7 @@ published_at: "2026-07-21"
 description: "A purpose-built, 142g footprint for the Copper Spur UL2 with Fast Fly compatibility — but its $90 price tag invites serious scrutiny."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Big Agnes Copper Spur UL2 Footprint is a custom-cut groundsheet designed spe
 
 ## Key Specs
 
-| Spec                | Value                                                                                         |
-| ------------------- | --------------------------------------------------------------------------------------------- |
-| Weight              | 142g (5 oz)                                                                                   |
-| Dimensions          | 88 × 52/42 in (L × W head/foot)                                                               |
-| Material            | HyperBead™ 30D nylon ripstop                                                                  |
-| Waterproof Rating   | 1500mm (silicone + PU treatment)                                                              |
-| Seam Sealing        | Taped with waterproof, solvent-free PU tape                                                   |
-| Fast Fly Compatible | Yes (2020+ models with Tiplok™ Buckles)                                                       |
-| Compatible Tents    | Copper Spur UL2, Copper Spur UL2 mtnGLO (2020+)                                               |
-| PFAS                | No intentionally added PFAS                                                                   |
-| **Comparison**      | See how [Copper Spur UL2 Footprint compares](/tools/ultralight-research/tarp) to similar gear |
+| Spec                | Value                                           |
+| ------------------- | ----------------------------------------------- |
+| Weight              | 142g (5 oz)                                     |
+| Dimensions          | 88 × 52/42 in (L × W head/foot)                 |
+| Material            | HyperBead™ 30D nylon ripstop                    |
+| Waterproof Rating   | 1500mm (silicone + PU treatment)                |
+| Seam Sealing        | Taped with waterproof, solvent-free PU tape     |
+| Fast Fly Compatible | Yes (2020+ models with Tiplok™ Buckles)         |
+| Compatible Tents    | Copper Spur UL2, Copper Spur UL2 mtnGLO (2020+) |
+| PFAS                | No intentionally added PFAS                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="tarp"
+/>
 
 ## Performance
 

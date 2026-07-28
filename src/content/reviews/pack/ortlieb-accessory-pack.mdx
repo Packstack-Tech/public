@@ -12,7 +12,7 @@ published_at: "2026-07-01"
 description: "The Ortlieb Accessory-Pack is a 3.5L waterproof bikepacking pouch that clips onto the Ortlieb Handlebar-Pack or mounts solo on your bars — built like a tank, priced accordingly."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Ortlieb Accessory-Pack is a 3.5-liter, 206g waterproof pouch designed primar
 
 ## Key Specs
 
-| Spec              | Value                                                                                        |
-| ----------------- | -------------------------------------------------------------------------------------------- |
-| **Weight**        | 206g (7.3 oz)                                                                                |
-| **Volume**        | 3.5L                                                                                         |
-| **Dimensions**    | 17 × 30 × 5 cm                                                                               |
-| **Max Load**      | 1 kg (2.2 lbs)                                                                               |
-| **Material**      | PU-coated nylon, RF-welded seams                                                             |
-| **Waterproofing** | IP64 (dustproof, splash-proof from all directions)                                           |
-| **Closure**       | Roll-top with aluminum slide buckle                                                          |
-| **Warranty**      | 5 years (authorized retailers)                                                               |
-| **Price**         | ~$75 USD                                                                                     |
-| **Comparison**    | See how [Ortlieb Accessory-Pack compares](/tools/ultralight-research/add-on) to similar gear |
+| Spec              | Value                                              |
+| ----------------- | -------------------------------------------------- |
+| **Weight**        | 206g (7.3 oz)                                      |
+| **Volume**        | 3.5L                                               |
+| **Dimensions**    | 17 × 30 × 5 cm                                     |
+| **Max Load**      | 1 kg (2.2 lbs)                                     |
+| **Material**      | PU-coated nylon, RF-welded seams                   |
+| **Waterproofing** | IP64 (dustproof, splash-proof from all directions) |
+| **Closure**       | Roll-top with aluminum slide buckle                |
+| **Warranty**      | 5 years (authorized retailers)                     |
+| **Price**         | ~$75 USD                                           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="add-on"
+/>
 
 ## Performance
 

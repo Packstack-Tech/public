@@ -12,7 +12,7 @@ published_at: "2026-06-30"
 description: "The REI Co-op Helix Insulated Air offers a certified 4.9 R-value and a quiet, grippy feel at a competitive price — but its baffle design has real comfort trade-offs worth knowing before you buy."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The REI Co-op Helix Insulated Air is a three-season-plus backpacking pad built a
 
 ## Key Specs
 
-| Spec                | Value                                                                                           |
-| ------------------- | ----------------------------------------------------------------------------------------------- |
-| **Weight**          | 594 g / 1.31 lb (regular); up to 1.81 lb (large wide)                                           |
-| **Dimensions**      | 72 × 24 in. regular; wide (25 in.) and long sizes available                                     |
-| **Thickness**       | 3 in.                                                                                           |
-| **R-Value**         | 4.9 (ASTM F3340 standard)                                                                       |
-| **Insulation Type** | 2-layer reflective aluminum-coated PET film                                                     |
-| **Material**        | 30D ripstop polyester, TPU lamination                                                           |
-| **In the Box**      | Pump sack, stuff sack, Velcro strap, field repair kit                                           |
-| **Price**           | $169–$199                                                                                       |
-| **Comparison**      | See how [Helix Insulated Air compares](/tools/ultralight-research/sleeping-pad) to similar gear |
+| Spec                | Value                                                       |
+| ------------------- | ----------------------------------------------------------- |
+| **Weight**          | 594 g / 1.31 lb (regular); up to 1.81 lb (large wide)       |
+| **Dimensions**      | 72 × 24 in. regular; wide (25 in.) and long sizes available |
+| **Thickness**       | 3 in.                                                       |
+| **R-Value**         | 4.9 (ASTM F3340 standard)                                   |
+| **Insulation Type** | 2-layer reflective aluminum-coated PET film                 |
+| **Material**        | 30D ripstop polyester, TPU lamination                       |
+| **In the Box**      | Pump sack, stuff sack, Velcro strap, field repair kit       |
+| **Price**           | $169–$199                                                   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sleeping-pad"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-13"
 description: "The Garmin eTrex 32x is a rugged, button-operated handheld GPS with preloaded TopoActive maps, 25-hour AA battery life, and a tilt-compensated compass — a reliable backcountry navigator showing its age."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,22 +20,27 @@ The Garmin eTrex 32x is a compact, button-operated handheld GPS navigator aimed 
 
 ## Key Specs
 
-| Spec                 | Value                                                                                   |
-| -------------------- | --------------------------------------------------------------------------------------- |
-| Weight               | 141.7 g (5.0 oz) w/o batteries                                                          |
-| Dimensions           | 5.4 × 10.3 × 3.3 cm                                                                     |
-| Display              | 2.2 in (5.6 cm) diagonal, 240 × 320 px, 65K-color transflective TFT                     |
-| Satellite Systems    | GPS + GLONASS                                                                           |
-| Internal Memory      | 8 GB                                                                                    |
-| Memory Expansion     | microSD                                                                                 |
-| Battery              | 2 × AA, up to 25 hrs                                                                    |
-| Compass              | 3-axis tilt-compensated                                                                 |
-| Barometric Altimeter | Yes                                                                                     |
-| Wireless             | ANT+                                                                                    |
-| Water Rating         | IPX7                                                                                    |
-| **Comparison**       | See how [eTrex 32x compares](/tools/ultralight-research/navigationcomm) to similar gear |
+| Spec                 | Value                                                               |
+| -------------------- | ------------------------------------------------------------------- |
+| Weight               | 141.7 g (5.0 oz) w/o batteries                                      |
+| Dimensions           | 5.4 × 10.3 × 3.3 cm                                                 |
+| Display              | 2.2 in (5.6 cm) diagonal, 240 × 320 px, 65K-color transflective TFT |
+| Satellite Systems    | GPS + GLONASS                                                       |
+| Internal Memory      | 8 GB                                                                |
+| Memory Expansion     | microSD                                                             |
+| Battery              | 2 × AA, up to 25 hrs                                                |
+| Compass              | 3-axis tilt-compensated                                             |
+| Barometric Altimeter | Yes                                                                 |
+| Wireless             | ANT+                                                                |
+| Water Rating         | IPX7                                                                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="navigationcomm"
+/>
 
 ## Performance
 

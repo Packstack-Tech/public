@@ -12,7 +12,7 @@ published_at: "2026-06-30"
 description: "A budget-friendly, 110g mummy-style silk liner from Decathlon that handles hygiene and light temperature regulation well, but has fit limits for taller sleepers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Forclaz MT500 is Decathlon's entry into the silk sleeping bag liner market �
 
 ## Key Specs
 
-| Spec                    | Value                                                                                         |
-| ----------------------- | --------------------------------------------------------------------------------------------- |
-| **Weight**              | 110 g                                                                                         |
-| **Material**            | 100% silk                                                                                     |
-| **Shape**               | Mummy (sarcophage)                                                                            |
-| **Dimensions**          | 220 × 77 cm (head) / 54 cm (foot)                                                             |
-| **Packed Volume**       | 0.5 L                                                                                         |
-| **Includes**            | Attached stuff sack                                                                           |
-| **Care**                | Machine wash, max 30°C; no tumble dry, no iron                                                |
-| **Claimed Temp. Boost** | ~1.5–2°C                                                                                      |
-| **Comparison**          | See how [Forclaz MT500 Silk Liner compares](/tools/ultralight-research/liner) to similar gear |
+| Spec                    | Value                                          |
+| ----------------------- | ---------------------------------------------- |
+| **Weight**              | 110 g                                          |
+| **Material**            | 100% silk                                      |
+| **Shape**               | Mummy (sarcophage)                             |
+| **Dimensions**          | 220 × 77 cm (head) / 54 cm (foot)              |
+| **Packed Volume**       | 0.5 L                                          |
+| **Includes**            | Attached stuff sack                            |
+| **Care**                | Machine wash, max 30°C; no tumble dry, no iron |
+| **Claimed Temp. Boost** | ~1.5–2°C                                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="liner"
+/>
 
 ## Performance
 

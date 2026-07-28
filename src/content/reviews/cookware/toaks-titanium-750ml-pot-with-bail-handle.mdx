@@ -12,7 +12,7 @@ published_at: "2026-06-02"
 description: "The TOAKS POT-750-BH is a 93g Grade 1 titanium pot with a detachable bail handle — a capable, affordable solo cook vessel for backpackers and fire-camp cookers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,21 +32,26 @@ argue with.
 
 ## Key Specs
 
-| Spec                         | Value                                                                                   |
-| ---------------------------- | --------------------------------------------------------------------------------------- |
-| **SKU**                      | POT-750-BH                                                                              |
-| **Material**                 | Grade 1 Titanium (uncoated)                                                             |
-| **Pot Weight**               | 93g (3.3 oz)                                                                            |
-| **System Weight (with lid)** | ~133g (4.7 oz)                                                                          |
-| **Capacity**                 | 750ml (760ml to rim)                                                                    |
-| **Internal Dimensions**      | 94mm (D) × 110mm (H)                                                                    |
-| **External Dimensions**      | 115mm (D) × 112mm (H)                                                                   |
-| **Includes**                 | Lid with lockable grip, detachable bail handle, mesh stuff sack                         |
-| **Nesting (inside)**         | 110g isobutane canister, TOAKS 375/450ml cups, TOAKS STV-12 wood stove                  |
-| **Nesting (outside)**        | TOAKS POT-1100, CKW-1100, BWL-550-D103                                                  |
-| **Comparison**               | See how [TOAKS POT-750-BH compares](/tools/ultralight-research/pot-pan) to similar gear |
+| Spec                         | Value                                                                  |
+| ---------------------------- | ---------------------------------------------------------------------- |
+| **SKU**                      | POT-750-BH                                                             |
+| **Material**                 | Grade 1 Titanium (uncoated)                                            |
+| **Pot Weight**               | 93g (3.3 oz)                                                           |
+| **System Weight (with lid)** | ~133g (4.7 oz)                                                         |
+| **Capacity**                 | 750ml (760ml to rim)                                                   |
+| **Internal Dimensions**      | 94mm (D) × 110mm (H)                                                   |
+| **External Dimensions**      | 115mm (D) × 112mm (H)                                                  |
+| **Includes**                 | Lid with lockable grip, detachable bail handle, mesh stuff sack        |
+| **Nesting (inside)**         | 110g isobutane canister, TOAKS 375/450ml cups, TOAKS STV-12 wood stove |
+| **Nesting (outside)**        | TOAKS POT-1100, CKW-1100, BWL-550-D103                                 |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="pot-pan"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-05-29"
 description: "The Thermos Light & Compact 1L is a reliable, well-built insulated bottle for day hikes and commutes, but its 510g weight gives serious ultralight packers pause."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -34,9 +34,14 @@ The Thermos Light & Compact Beverage Bottle is a classically-styled, double-wall
 | **Leakproof**        | Yes                                                                                             |
 | **Includes Cup**     | Yes (lid doubles as drinking cup)                                                               |
 | **Warranty**         | 5 years                                                                                         |
-| **Comparison**       | See how [Thermos Light & Compact compares](/tools/ultralight-research/bottle) to similar gear   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="bottle"
+/>
 
 ## Performance
 

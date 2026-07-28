@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The Fjällräven Keb 72 is a bomber, four-season trekking pack built for durability and load comfort — but its 2,750g weight keeps it firmly out of ultralight territory."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,22 +31,27 @@ deserves a close look — just don't bring a gram scale to the party.
 
 ## Key Specs
 
-| Spec                       | Value                                                                           |
-| -------------------------- | ------------------------------------------------------------------------------- |
-| **Weight**                 | 2,750 g (6.1 lbs)                                                               |
-| **Volume**                 | 72 L                                                                            |
-| **Dimensions**             | 73 × 27 × 24 cm                                                                 |
-| **Adjustable Back Length** | Yes — 40 to 66 cm                                                               |
-| **Frame**                  | FSC-certified birch wood                                                        |
-| **Main Material**          | G-1000® HeavyDuty S (65% recycled polyester, 35% organic cotton)                |
-| **Base & Sides Material**  | Bergshell® 400D 100% recycled polyamide                                         |
-| **Rain Cover**             | Included                                                                        |
-| **PFAS-Free**              | Yes                                                                             |
-| **Pockets**                | 10 total                                                                        |
-| **Hydration Compatible**   | Yes                                                                             |
-| **Comparison**             | See how [Keb 72 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                       | Value                                                            |
+| -------------------------- | ---------------------------------------------------------------- |
+| **Weight**                 | 2,750 g (6.1 lbs)                                                |
+| **Volume**                 | 72 L                                                             |
+| **Dimensions**             | 73 × 27 × 24 cm                                                  |
+| **Adjustable Back Length** | Yes — 40 to 66 cm                                                |
+| **Frame**                  | FSC-certified birch wood                                         |
+| **Main Material**          | G-1000® HeavyDuty S (65% recycled polyester, 35% organic cotton) |
+| **Base & Sides Material**  | Bergshell® 400D 100% recycled polyamide                          |
+| **Rain Cover**             | Included                                                         |
+| **PFAS-Free**              | Yes                                                              |
+| **Pockets**                | 10 total                                                         |
+| **Hydration Compatible**   | Yes                                                              |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

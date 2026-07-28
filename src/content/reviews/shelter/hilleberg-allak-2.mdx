@@ -12,7 +12,7 @@ published_at: "2026-07-13"
 description: "The Hilleberg Allak 2 is a 4-season, fully freestanding, 2-person dome tent built for mountaineers, paddlers, and serious all-season backpackers who won't compromise on weather protection."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -34,26 +34,31 @@ rocky, and you need a shelter you can pitch fast and trust completely.
 
 ## Key Specs
 
-| Spec               | Value                                                                       |
-| ------------------ | --------------------------------------------------------------------------- |
-| Label              | Red Label                                                                   |
-| Season Rating      | 4-Season / All-Season                                                       |
-| Capacity           | 2 Person                                                                    |
-| Min Weight         | 2,778 g (6 lbs 2 oz)                                                        |
-| Packed Weight      | 3,300 g (7 lbs 4.5 oz)                                                      |
-| Floor Area         | 31.2 sq ft                                                                  |
-| Vestibule Area     | ~9.7 sq ft × 2                                                              |
-| Ceiling Height     | 41 in                                                                       |
-| Outer Fabric       | Kerlon 1200                                                                 |
-| Inner Fabric       | 30D DWR ripstop nylon                                                       |
-| Floor Fabric       | 70D triple-PU-coated nylon                                                  |
-| Pole Diameter      | 9 mm                                                                        |
-| Pole Material      | DAC Featherlite                                                             |
-| Packed Pole Length | 43 cm / 17 in                                                               |
-| Colors             | Red, Sand, Forest Green                                                     |
-| **Comparison**     | See how [Allak 2 compares](/tools/ultralight-research/tent) to similar gear |
+| Spec               | Value                      |
+| ------------------ | -------------------------- |
+| Label              | Red Label                  |
+| Season Rating      | 4-Season / All-Season      |
+| Capacity           | 2 Person                   |
+| Min Weight         | 2,778 g (6 lbs 2 oz)       |
+| Packed Weight      | 3,300 g (7 lbs 4.5 oz)     |
+| Floor Area         | 31.2 sq ft                 |
+| Vestibule Area     | ~9.7 sq ft × 2             |
+| Ceiling Height     | 41 in                      |
+| Outer Fabric       | Kerlon 1200                |
+| Inner Fabric       | 30D DWR ripstop nylon      |
+| Floor Fabric       | 70D triple-PU-coated nylon |
+| Pole Diameter      | 9 mm                       |
+| Pole Material      | DAC Featherlite            |
+| Packed Pole Length | 43 cm / 17 in              |
+| Colors             | Red, Sand, Forest Green    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="tent"
+/>
 
 ## Performance
 

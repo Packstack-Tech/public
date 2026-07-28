@@ -12,7 +12,7 @@ published_at: "2026-06-26"
 description: "A 9.5 g dual-purpose SPF 50+ stick for face and lips — ultralight, sweat-resistant, and reef-safe, with a lip balm tucked right into the cap."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ Décathlon's 2-in-1 Face & Lip Sunscreen Stick packs SPF 50+ broad-spectrum prot
 
 ## Key Specs
 
-| Spec                        | Value                                                                                                        |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| **Weight**                  | 9.5 g                                                                                                        |
-| **Dimensions**              | 6.8 × 4.2 × 2.0 cm                                                                                           |
-| **SPF**                     | 50+                                                                                                          |
-| **UVA/UVB Protection**      | Very High                                                                                                    |
-| **Lip Protection**          | Yes (integrated in cap)                                                                                      |
-| **Sweat Resistant**         | Yes                                                                                                          |
-| **Dermatologically Tested** | Yes                                                                                                          |
-| **Natural Origin Content**  | 77% (per ISO 16128)                                                                                          |
-| **Made In**                 | France                                                                                                       |
-| **Comparison**              | See how the [Décathlon 2-in-1 Face & Lip Stick compares](/tools/ultralight-research/sun-bug) to similar gear |
+| Spec                        | Value                   |
+| --------------------------- | ----------------------- |
+| **Weight**                  | 9.5 g                   |
+| **Dimensions**              | 6.8 × 4.2 × 2.0 cm      |
+| **SPF**                     | 50+                     |
+| **UVA/UVB Protection**      | Very High               |
+| **Lip Protection**          | Yes (integrated in cap) |
+| **Sweat Resistant**         | Yes                     |
+| **Dermatologically Tested** | Yes                     |
+| **Natural Origin Content**  | 77% (per ISO 16128)     |
+| **Made In**                 | France                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sun-bug"
+/>
 
 ## Performance
 

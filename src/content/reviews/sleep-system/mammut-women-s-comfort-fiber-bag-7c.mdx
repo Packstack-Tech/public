@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A synthetic, recycled-material mummy bag built for car camping comfort rather than ultralight backpacking — here's how it stacks up."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Women's Comfort Fiber Bag -7C is Mammut's entry-level synthetic mummy bag, p
 
 ## Key Specs
 
-| Spec               | Detail                                                                                                    |
-| ------------------ | --------------------------------------------------------------------------------------------------------- |
-| Weight             | 1,480 g (52.2 oz)                                                                                         |
-| Temperature Rating | -7°C / 19°F (ISO limit)                                                                                   |
-| Insulation         | Synthetic, 85% recycled fill                                                                              |
-| Shell              | 100% recycled fabrics                                                                                     |
-| Zipper             | Central 2-way YKK                                                                                         |
-| Shape              | Mummy                                                                                                     |
-| Certifications     | bluesign PRODUCT, PFC-free DWR, Fair Wear, Recycled                                                       |
-| Standard           | EN ISO 23537-1:2016                                                                                       |
-| **Comparison**     | See how [Women's Comfort Fiber Bag -7C compares](/tools/ultralight-research/sleeping-bag) to similar gear |
+| Spec               | Detail                                              |
+| ------------------ | --------------------------------------------------- |
+| Weight             | 1,480 g (52.2 oz)                                   |
+| Temperature Rating | -7°C / 19°F (ISO limit)                             |
+| Insulation         | Synthetic, 85% recycled fill                        |
+| Shell              | 100% recycled fabrics                               |
+| Zipper             | Central 2-way YKK                                   |
+| Shape              | Mummy                                               |
+| Certifications     | bluesign PRODUCT, PFC-free DWR, Fair Wear, Recycled |
+| Standard           | EN ISO 23537-1:2016                                 |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sleeping-bag"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-05-20"
 description: "The Sawyer Micro Squeeze is a 57g hollow-fiber filter that splits the difference between the Mini and full Squeeze — lighter than the Squeeze, faster than the Mini, and versatile enough for almost any setup."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The Sawyer Micro Squeeze is a 57g hollow-fiber membrane filter that occupies a d
 
 ## Key Specs
 
-| Spec                      | Value                                                                                          |
-| ------------------------- | ---------------------------------------------------------------------------------------------- |
-| **Weight**                | 57g (2 oz)                                                                                     |
-| **Filter Type**           | Hollow fiber membrane                                                                          |
-| **Pore Size**             | 0.1 micron absolute                                                                            |
-| **Bacteria Removal**      | 99.99999% (7-log)                                                                              |
-| **Protozoa Removal**      | 99.9999% (6-log)                                                                               |
-| **Microplastics Removal** | 100%                                                                                           |
-| **Virus Removal**         | None                                                                                           |
-| **Rated Capacity**        | 100,000 gallons                                                                                |
-| **Thread Size**           | 28mm                                                                                           |
-| **Includes**              | 32 oz squeeze pouch, drinking straw, cleaning coupling, spare gasket, cleaning plunger         |
-| **Comparison**            | See how [Sawyer Micro Squeeze compares](/tools/ultralight-research/filtration) to similar gear |
+| Spec                      | Value                                                                                  |
+| ------------------------- | -------------------------------------------------------------------------------------- |
+| **Weight**                | 57g (2 oz)                                                                             |
+| **Filter Type**           | Hollow fiber membrane                                                                  |
+| **Pore Size**             | 0.1 micron absolute                                                                    |
+| **Bacteria Removal**      | 99.99999% (7-log)                                                                      |
+| **Protozoa Removal**      | 99.9999% (6-log)                                                                       |
+| **Microplastics Removal** | 100%                                                                                   |
+| **Virus Removal**         | None                                                                                   |
+| **Rated Capacity**        | 100,000 gallons                                                                        |
+| **Thread Size**           | 28mm                                                                                   |
+| **Includes**              | 32 oz squeeze pouch, drinking straw, cleaning coupling, spare gasket, cleaning plunger |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="filtration"
+/>
 
 ## Performance
 

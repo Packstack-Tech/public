@@ -12,7 +12,7 @@ published_at: "2026-05-29"
 description: "The OR Helium II is a 180g ultralight rain shell built for thru-hikers and fastpackers who need reliable just-in-case storm protection without the weight penalty."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,21 +20,26 @@ The Outdoor Research Helium II is a 180g (6.4 oz) ultralight rain shell built ar
 
 ## Key Specs
 
-| Spec              | Detail                                                                                        |
-| ----------------- | --------------------------------------------------------------------------------------------- |
-| **Weight**        | 180g / 6.4 oz (men's medium)                                                                  |
-| **Material**      | 2.5-layer Pertex Shield DS Ripstop (30D nylon)                                                |
-| **Waterproofing** | Yes — DWR coated, fully seam-taped                                                            |
-| **Zippers**       | YKK AquaGuard water-resistant                                                                 |
-| **Pockets**       | 1 zip chest pocket (doubles as stuff sack) + internal mesh pocket                             |
-| **Hood**          | Adjustable with rear bungee, small bill                                                       |
-| **Cuffs**         | Half-elastic                                                                                  |
-| **Hem**           | Elastic drawcord (right-side adjustment)                                                      |
-| **Packed Size**   | ~Fist-sized (with carabiner loop)                                                             |
-| **Extra Details** | Reflective logos, carabiner loop                                                              |
-| **Comparison**    | See how the [Helium II Jacket compares](/tools/ultralight-research/rain-gear) to similar gear |
+| Spec              | Detail                                                            |
+| ----------------- | ----------------------------------------------------------------- |
+| **Weight**        | 180g / 6.4 oz (men's medium)                                      |
+| **Material**      | 2.5-layer Pertex Shield DS Ripstop (30D nylon)                    |
+| **Waterproofing** | Yes — DWR coated, fully seam-taped                                |
+| **Zippers**       | YKK AquaGuard water-resistant                                     |
+| **Pockets**       | 1 zip chest pocket (doubles as stuff sack) + internal mesh pocket |
+| **Hood**          | Adjustable with rear bungee, small bill                           |
+| **Cuffs**         | Half-elastic                                                      |
+| **Hem**           | Elastic drawcord (right-side adjustment)                          |
+| **Packed Size**   | ~Fist-sized (with carabiner loop)                                 |
+| **Extra Details** | Reflective logos, carabiner loop                                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="rain-gear"
+/>
 
 ## Performance
 

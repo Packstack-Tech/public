@@ -12,7 +12,7 @@ published_at: "2026-05-18"
 description: "The Gerber Dime is a 62g keychain multi-tool packing 12 functions into a 7cm frame — a solid budget-friendly EDC and trail companion for light-duty tasks."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The Gerber Dime is a keychain-sized folding multi-tool that squeezes 12 function
 
 ## Key Specs
 
-| Spec                | Value                                                                                |
-| ------------------- | ------------------------------------------------------------------------------------ |
-| **Weight**          | 62g (2.2 oz)                                                                         |
-| **Closed Length**   | 7 cm (2.75 in)                                                                       |
-| **Open Length**     | 10.8 cm (4.25 in)                                                                    |
-| **Number of Tools** | 12                                                                                   |
-| **Blade Steel**     | 3Cr13 stainless steel                                                                |
-| **Blade Style**     | Sheepsfoot / double-bevel                                                            |
-| **Pliers**          | Spring-loaded needle nose with wire cutter                                           |
-| **Carry**           | Keychain split ring + lanyard ring                                                   |
-| **Warranty**        | Limited lifetime                                                                     |
-| **Comparison**      | See how the [Gerber Dime compares](/tools/ultralight-research/knife) to similar gear |
+| Spec                | Value                                      |
+| ------------------- | ------------------------------------------ |
+| **Weight**          | 62g (2.2 oz)                               |
+| **Closed Length**   | 7 cm (2.75 in)                             |
+| **Open Length**     | 10.8 cm (4.25 in)                          |
+| **Number of Tools** | 12                                         |
+| **Blade Steel**     | 3Cr13 stainless steel                      |
+| **Blade Style**     | Sheepsfoot / double-bevel                  |
+| **Pliers**          | Spring-loaded needle nose with wire cutter |
+| **Carry**           | Keychain split ring + lanyard ring         |
+| **Warranty**        | Limited lifetime                           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="knife"
+/>
 
 ## Performance
 

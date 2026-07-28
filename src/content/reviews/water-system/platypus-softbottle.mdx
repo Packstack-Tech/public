@@ -12,7 +12,7 @@ published_at: "2026-05-04"
 description: "The Platypus SoftBottle 1L is a 34g collapsible water bottle built for ultralight backpackers. It threads onto Sawyer filters, rolls flat when empty, and costs under $12."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Platypus SoftBottle is a collapsible, flexible water bottle that's been a st
 
 ## Key Specs
 
-| Spec                           | Value                                                                                     |
-| ------------------------------ | ----------------------------------------------------------------------------------------- |
-| **Weight**                     | 34 g (1.2 oz)                                                                             |
-| **Capacity**                   | 1.0 L / 34 fl oz                                                                          |
-| **Dimensions (full)**          | 33 cm L × 15 cm W                                                                         |
-| **Body Material**              | Nylon/Polyethylene                                                                        |
-| **Cap Material**               | Polypropylene                                                                             |
-| **Cap Options**                | Closure Cap or Push-Pull Cap                                                              |
-| **BPA / BPS / Phthalate Free** | Yes                                                                                       |
-| **Country of Origin**          | USA                                                                                       |
-| **Comparison**                 | See how [Platypus SoftBottle compares](/tools/ultralight-research/bottle) to similar gear |
+| Spec                           | Value                        |
+| ------------------------------ | ---------------------------- |
+| **Weight**                     | 34 g (1.2 oz)                |
+| **Capacity**                   | 1.0 L / 34 fl oz             |
+| **Dimensions (full)**          | 33 cm L × 15 cm W            |
+| **Body Material**              | Nylon/Polyethylene           |
+| **Cap Material**               | Polypropylene                |
+| **Cap Options**                | Closure Cap or Push-Pull Cap |
+| **BPA / BPS / Phthalate Free** | Yes                          |
+| **Country of Origin**          | USA                          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="bottle"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-12"
 description: "A freeze-dried Norwegian cod curry from Drytech's Real Turmat line — mild, creamy, and hearty, but modest on calories for a demanding day out."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,22 +20,27 @@ The Torsk i Kremet Karrisaus — that's Cod in Creamy Curry Sauce for the rest o
 
 ## Key Specs
 
-| Spec              | Value                                                                                        |
-| ----------------- | -------------------------------------------------------------------------------------------- |
-| Dry Weight        | 96 g (3.4 oz)                                                                                |
-| Prepared Weight   | 500 g                                                                                        |
-| Calories          | 388 kcal                                                                                     |
-| Protein           | 19 g                                                                                         |
-| Carbohydrates     | 34 g                                                                                         |
-| Fat               | 19 g                                                                                         |
-| Water Required    | 370 ml                                                                                       |
-| Rehydration Time  | 8 minutes                                                                                    |
-| Allergens         | Fish, Gluten, Lactose, Milk, Celery                                                          |
-| Shelf Life        | 5 years                                                                                      |
-| Country of Origin | Norway                                                                                       |
-| **Comparison**    | See how [Torsk i Kremet Karrisaus compares](/tools/ultralight-research/meal) to similar gear |
+| Spec              | Value                               |
+| ----------------- | ----------------------------------- |
+| Dry Weight        | 96 g (3.4 oz)                       |
+| Prepared Weight   | 500 g                               |
+| Calories          | 388 kcal                            |
+| Protein           | 19 g                                |
+| Carbohydrates     | 34 g                                |
+| Fat               | 19 g                                |
+| Water Required    | 370 ml                              |
+| Rehydration Time  | 8 minutes                           |
+| Allergens         | Fish, Gluten, Lactose, Milk, Celery |
+| Shelf Life        | 5 years                             |
+| Country of Origin | Norway                              |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="meal"
+/>
 
 ## Performance
 

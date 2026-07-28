@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A budget-friendly, pack-down-small microfiber towel from Decathlon's Quechua line — here's how it holds up for backpacking and travel."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Quechua Microfiber Towel is Decathlon's entry-level travel towel, and the Me
 
 ## Key Specs
 
-| Spec                  | Detail                                                                                  |
-| --------------------- | --------------------------------------------------------------------------------------- |
-| Brand / Line          | Quechua (Decathlon)                                                                     |
-| Size (Medium)         | 31" x 23" (79 x 58 cm)                                                                  |
-| Material              | Microfiber (polyester/polyamide blend)                                                  |
-| Price                 | ~$8.99                                                                                  |
-| Other sizes available | Large (51"x31"), XL swimming towel (43"x68")                                            |
-| Care                  | Machine washable; pat dry, don't rub, for best results                                  |
-| Storage               | Compact fold, packs into small stuff sack/bag                                           |
-| **Comparison**        | See how [Microfiber Towel compares](/tools/ultralight-research/hygiene) to similar gear |
+| Spec                  | Detail                                                 |
+| --------------------- | ------------------------------------------------------ |
+| Brand / Line          | Quechua (Decathlon)                                    |
+| Size (Medium)         | 31" x 23" (79 x 58 cm)                                 |
+| Material              | Microfiber (polyester/polyamide blend)                 |
+| Price                 | ~$8.99                                                 |
+| Other sizes available | Large (51"x31"), XL swimming towel (43"x68")           |
+| Care                  | Machine washable; pat dry, don't rub, for best results |
+| Storage               | Compact fold, packs into small stuff sack/bag          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hygiene"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-05-12"
 description: "A deep-dive review of the Gregory Baltoro 75, Gregory's flagship heavy-hauler with FreeFloat A3 suspension, AirCushion back panel, and 75L of storage for serious backcountry loads."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,20 +31,25 @@ That said, if you're counting grams, stop reading now — this is not that pack.
 
 ## Key Specs
 
-| Spec               | Detail                                                                                      |
-| ------------------ | ------------------------------------------------------------------------------------------- |
-| **Weight**         | 2,260 g (5 lbs / ~4 lbs 15.7 oz, medium)                                                    |
-| **Volume**         | 71–79 L (size-dependent: S=71L, M=73L, L=75L)                                               |
-| **Fabric**         | 210D & 420D Nylon                                                                           |
-| **Suspension**     | FreeFloat A3, auto-rotating shoulder harness, dynamic hipbelt                               |
-| **Back Panel**     | AirCushion foamless, 90%+ open-air proprietary 3D mesh                                      |
-| **Frame**          | Perimeter alloy with fiberglass anti-barreling cross-stay                                   |
-| **Sizes**          | Small, Medium, Large (overlapping torso fit ranges)                                         |
-| **Max Rated Load** | 55 lbs                                                                                      |
-| **Price**          | $400                                                                                        |
-| **Comparison**     | See how [Gregory Baltoro 75 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec               | Detail                                                        |
+| ------------------ | ------------------------------------------------------------- |
+| **Weight**         | 2,260 g (5 lbs / ~4 lbs 15.7 oz, medium)                      |
+| **Volume**         | 71–79 L (size-dependent: S=71L, M=73L, L=75L)                 |
+| **Fabric**         | 210D & 420D Nylon                                             |
+| **Suspension**     | FreeFloat A3, auto-rotating shoulder harness, dynamic hipbelt |
+| **Back Panel**     | AirCushion foamless, 90%+ open-air proprietary 3D mesh        |
+| **Frame**          | Perimeter alloy with fiberglass anti-barreling cross-stay     |
+| **Sizes**          | Small, Medium, Large (overlapping torso fit ranges)           |
+| **Max Rated Load** | 55 lbs                                                        |
+| **Price**          | $400                                                          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

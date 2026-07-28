@@ -12,7 +12,7 @@ published_at: "2026-05-12"
 description: "A 44g seamless merino tube that earns its place on every trip. Honest review of BUFF's Merino Lightweight Neckwear for ultralight and thru-hiking use."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The BUFF Merino Lightweight Neckwear is a seamless, single-layer tube of 125 g/m
 
 ## Key Specs
 
-| Spec              | Value                                                                                                    |
-| ----------------- | -------------------------------------------------------------------------------------------------------- |
-| **Weight**        | 44 g (1.55 oz)                                                                                           |
-| **Material**      | 100% Merino Wool                                                                                         |
-| **Fabric Weight** | 125 g/m²                                                                                                 |
-| **Ways to Wear**  | 12+                                                                                                      |
-| **Wool Source**   | Ethically sourced, mulesing-free, Australia                                                              |
-| **Construction**  | Seamless tubular                                                                                         |
-| **Fit**           | One size fits most adults                                                                                |
-| **Comparison**    | See how [BUFF Merino Lightweight Neckwear compares](/tools/ultralight-research/headwear) to similar gear |
+| Spec              | Value                                       |
+| ----------------- | ------------------------------------------- |
+| **Weight**        | 44 g (1.55 oz)                              |
+| **Material**      | 100% Merino Wool                            |
+| **Fabric Weight** | 125 g/m²                                    |
+| **Ways to Wear**  | 12+                                         |
+| **Wool Source**   | Ethically sourced, mulesing-free, Australia |
+| **Construction**  | Seamless tubular                            |
+| **Fit**           | One size fits most adults                   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="headwear"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-04-27"
 description: "A 14.3g zipper-pull thermometer with NIST-traceable accuracy, IP67 waterproofing, and max/min logging — built for backcountry data nerds."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,21 +31,26 @@ This is a tool for hikers who want real numbers, not guesswork.
 
 ## Key Specs
 
-| Spec                   | Value                                                                              |
-| ---------------------- | ---------------------------------------------------------------------------------- |
-| **Weight**             | 14.3 g (0.5 oz)                                                                    |
-| **Dimensions**         | 49 × 33 × 12.5 mm                                                                  |
-| **Temperature Range**  | -13°F to 122°F (-25°C to 50°C)                                                     |
-| **Accuracy**           | ±1.8°F (±1°C)                                                                      |
-| **Resolution**         | 1° over full range                                                                 |
-| **IP Rating**          | IP67                                                                               |
-| **Battery**            | CR2025 lithium coin cell (~4,000 hrs)                                              |
-| **Backlight Duration** | 10 seconds                                                                         |
-| **NIST Calibration**   | Yes, included                                                                      |
-| **Colors Available**   | 9                                                                                  |
-| **Comparison**         | See how [ThermoDrop compares](/tools/ultralight-research/wearable) to similar gear |
+| Spec                   | Value                                 |
+| ---------------------- | ------------------------------------- |
+| **Weight**             | 14.3 g (0.5 oz)                       |
+| **Dimensions**         | 49 × 33 × 12.5 mm                     |
+| **Temperature Range**  | -13°F to 122°F (-25°C to 50°C)        |
+| **Accuracy**           | ±1.8°F (±1°C)                         |
+| **Resolution**         | 1° over full range                    |
+| **IP Rating**          | IP67                                  |
+| **Battery**            | CR2025 lithium coin cell (~4,000 hrs) |
+| **Backlight Duration** | 10 seconds                            |
+| **NIST Calibration**   | Yes, included                         |
+| **Colors Available**   | 9                                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="wearable"
+/>
 
 ## Performance
 

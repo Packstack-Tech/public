@@ -12,7 +12,7 @@ published_at: "2026-07-13"
 description: "The Trail Designs Inferno is a titanium gasifier insert that upgrades any Ti-Tri system into a true afterburner wood stove — for 40g and $40 extra."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Trail Designs Inferno is an optional add-on insert for the company's Ti-Tri 
 
 ## Key Specs
 
-| Spec           | Value                                                                        |
-| -------------- | ---------------------------------------------------------------------------- |
-| Weight         | ~40g (1.4 oz) — varies by pot size                                           |
-| Material       | Titanium                                                                     |
-| Includes       | Inverted Ti Inferno Insert + lower grate system                              |
-| Price          | $45 standalone / $40 when ordered with a Ti-Tri                              |
-| Compatibility  | Classic, Sidewinder, Fissure, Fusion Ti-Tri systems                          |
-| Note           | Not available for the 400ml pot configuration                                |
-| Origin         | USA-made                                                                     |
-| **Comparison** | See how [Inferno compares](/tools/ultralight-research/stove) to similar gear |
+| Spec          | Value                                               |
+| ------------- | --------------------------------------------------- |
+| Weight        | ~40g (1.4 oz) — varies by pot size                  |
+| Material      | Titanium                                            |
+| Includes      | Inverted Ti Inferno Insert + lower grate system     |
+| Price         | $45 standalone / $40 when ordered with a Ti-Tri     |
+| Compatibility | Classic, Sidewinder, Fissure, Fusion Ti-Tri systems |
+| Note          | Not available for the 400ml pot configuration       |
+| Origin        | USA-made                                            |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

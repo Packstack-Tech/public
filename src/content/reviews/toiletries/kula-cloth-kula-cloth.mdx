@@ -12,7 +12,7 @@ published_at: "2026-07-01"
 description: "A purpose-built antimicrobial pee cloth for backcountry hygiene — lightweight, odor-resistant, and a genuine upgrade over the classic bandana rag."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -38,9 +38,14 @@ burying used paper in the backcountry.
 | **Features**   | Retro-reflective thread stripe, waterproof exterior, antimicrobial absorbent interior |
 | **Made In**    | USA                                                                                   |
 | **Price**      | ~$20                                                                                  |
-| **Comparison** | See how [Kula Cloth compares](/tools/ultralight-research/bathroom) to similar gear    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="bathroom"
+/>
 
 ## Performance
 

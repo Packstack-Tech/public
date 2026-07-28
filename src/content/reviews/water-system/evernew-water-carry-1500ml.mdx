@@ -12,7 +12,7 @@ published_at: "2026-06-03"
 description: "A 36g collapsible soft bottle made in Japan with Sawyer-compatible threads, an attached cap, and a gusseted base — reviewed for ultralight and thru-hiking use."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,9 +31,14 @@ The EVERNEW Water Carry 1500ML (EBY207) is a collapsible polyethylene soft bottl
 | **Pressure Capacity** | 80kgf (784N)                                                                                                           |
 | **Country of Origin** | Japan                                                                                                                  |
 | **Street Price**      | ~$12 USD                                                                                                               |
-| **Comparison**        | See how [EVERNEW Water Carry 1500ML compares](/tools/ultralight-research/storage) to similar gear                      |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="storage"
+/>
 
 ## Performance
 

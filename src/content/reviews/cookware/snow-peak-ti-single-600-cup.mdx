@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A titanium 600ml single-wall cup/pot from Snow Peak that doubles as ultralight cookware — here's how it holds up on trail."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,19 +20,24 @@ The Ti-Single 600 is Snow Peak's large-format titanium cup — really more of a 
 
 ## Key Specs
 
-| Spec           | Detail                                                                                     |
-| -------------- | ------------------------------------------------------------------------------------------ |
-| SKU            | MG-044R                                                                                    |
-| Weight         | 88.0 g (2.8 oz)                                                                            |
-| Capacity       | 600 ml / 20.3 fl oz                                                                        |
-| Dimensions     | 3.8" D x 4" H                                                                              |
-| Material       | Titanium (single-wall)                                                                     |
-| Handles        | Foldable                                                                                   |
-| Lid            | Not included                                                                               |
-| Price          | ~$37.95                                                                                    |
-| **Comparison** | See how [Ti-Single 600 Cup compares](/tools/ultralight-research/drinkware) to similar gear |
+| Spec       | Detail                 |
+| ---------- | ---------------------- |
+| SKU        | MG-044R                |
+| Weight     | 88.0 g (2.8 oz)        |
+| Capacity   | 600 ml / 20.3 fl oz    |
+| Dimensions | 3.8" D x 4" H          |
+| Material   | Titanium (single-wall) |
+| Handles    | Foldable               |
+| Lid        | Not included           |
+| Price      | ~$37.95                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="drinkware"
+/>
 
 ## Performance
 

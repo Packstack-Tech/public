@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A carbon-fiber-shelled 20,000mAh power bank that's light for its capacity class, with 45W output and IPX5 protection — here's how it holds up on trail."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The NB20000 Gen2 is Nitecore's mid-generation take on a 20,000mAh power bank, bu
 
 ## Key Specs
 
-| Spec                | Value                                                                                   |
-| ------------------- | --------------------------------------------------------------------------------------- |
-| Weight              | 324.5 g (11.45 oz)                                                                      |
-| Capacity            | 20,000 mAh / 77 Wh                                                                      |
-| Rated usable energy | 13,500 mAh @ 5V                                                                         |
-| Max output          | 45W                                                                                     |
-| Max input           | 30W                                                                                     |
-| Ports               | USB-C (IN), USB-C (IN/OUT1), USB-A (OUT2), USB-A (OUT3)                                 |
-| IP Rating           | IPX5                                                                                    |
-| Cell type           | Li-ion                                                                                  |
-| Dimensions          | 136.3 x 60 x 21.4 mm                                                                    |
-| **Comparison**      | See how [NB20000 Gen2 compares](/tools/ultralight-research/power-cable) to similar gear |
+| Spec                | Value                                                   |
+| ------------------- | ------------------------------------------------------- |
+| Weight              | 324.5 g (11.45 oz)                                      |
+| Capacity            | 20,000 mAh / 77 Wh                                      |
+| Rated usable energy | 13,500 mAh @ 5V                                         |
+| Max output          | 45W                                                     |
+| Max input           | 30W                                                     |
+| Ports               | USB-C (IN), USB-C (IN/OUT1), USB-A (OUT2), USB-A (OUT3) |
+| IP Rating           | IPX5                                                    |
+| Cell type           | Li-ion                                                  |
+| Dimensions          | 136.3 x 60 x 21.4 mm                                    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="power-cable"
+/>
 
 ## Performance
 

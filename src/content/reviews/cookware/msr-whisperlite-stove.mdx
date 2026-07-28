@@ -12,7 +12,7 @@ published_at: "2026-06-06"
 description: "The MSR WhisperLite is a legendary white-gas stove built for cold weather, high altitude, and expedition use — but it demands respect and a real learning curve."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,20 +20,25 @@ The MSR WhisperLite has been a fixture in the backcountry since the early 1980s,
 
 ## Key Specs
 
-| Spec                               | Value                                                                                |
-| ---------------------------------- | ------------------------------------------------------------------------------------ |
-| **Stove Body Weight**              | 312 g / 11.0 oz                                                                      |
-| **Packed Weight (w/ accessories)** | 14.5 oz                                                                              |
-| **Fuel Type**                      | White gas (naphtha)                                                                  |
-| **Boil Time, 1L (manufacturer)**   | 3.9 min                                                                              |
-| **Boil Time, 1L (real-world)**     | ~5:50 min                                                                            |
-| **Heat Output**                    | ~8,200 BTU/hr                                                                        |
-| **Field Maintainable**             | Yes — Shaker Jet technology                                                          |
-| **Includes**                       | Fuel pump, windscreen, heat reflector, small-parts kit, stuff sack                   |
-| **Made In**                        | USA                                                                                  |
-| **Comparison**                     | See how [MSR WhisperLite compares](/tools/ultralight-research/stove) to similar gear |
+| Spec                               | Value                                                              |
+| ---------------------------------- | ------------------------------------------------------------------ |
+| **Stove Body Weight**              | 312 g / 11.0 oz                                                    |
+| **Packed Weight (w/ accessories)** | 14.5 oz                                                            |
+| **Fuel Type**                      | White gas (naphtha)                                                |
+| **Boil Time, 1L (manufacturer)**   | 3.9 min                                                            |
+| **Boil Time, 1L (real-world)**     | ~5:50 min                                                          |
+| **Heat Output**                    | ~8,200 BTU/hr                                                      |
+| **Field Maintainable**             | Yes — Shaker Jet technology                                        |
+| **Includes**                       | Fuel pump, windscreen, heat reflector, small-parts kit, stuff sack |
+| **Made In**                        | USA                                                                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

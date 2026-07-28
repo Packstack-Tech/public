@@ -12,7 +12,7 @@ published_at: "2026-03-13"
 description: "The Nitecore NU25 UL packs 400 lumens, dual-beam optics, IP66 weatherproofing, and USB-C charging into a 45g headlamp that's become the de facto standard for ultralight hikers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -22,22 +22,27 @@ The Nitecore NU25 UL is a dual-beam, USB-C rechargeable headlamp that has carved
 
 ## Key Specs
 
-| Spec               | Value                                                                           |
-| ------------------ | ------------------------------------------------------------------------------- |
-| Weight             | 45 g (1.59 oz)                                                                  |
-| Dimensions         | 60.1 × 33 × 25.5 mm                                                             |
-| Max Output         | 400 lumens                                                                      |
-| Max Beam Distance  | 64 m                                                                            |
-| Max Beam Intensity | 1,029 cd                                                                        |
-| Max Runtime        | 45 hours (ultralow)                                                             |
-| Battery            | Built-in 650 mAh Li-ion                                                         |
-| Charging           | USB-C (~1.5 hrs to full)                                                        |
-| IP Rating          | IP66                                                                            |
-| Impact Resistance  | 1 m                                                                             |
-| Special Modes      | Red Light, Location Beacon, SOS                                                 |
-| **Comparison**     | See how [NU25 UL compares](/tools/ultralight-research/lighting) to similar gear |
+| Spec               | Value                           |
+| ------------------ | ------------------------------- |
+| Weight             | 45 g (1.59 oz)                  |
+| Dimensions         | 60.1 × 33 × 25.5 mm             |
+| Max Output         | 400 lumens                      |
+| Max Beam Distance  | 64 m                            |
+| Max Beam Intensity | 1,029 cd                        |
+| Max Runtime        | 45 hours (ultralow)             |
+| Battery            | Built-in 650 mAh Li-ion         |
+| Charging           | USB-C (~1.5 hrs to full)        |
+| IP Rating          | IP66                            |
+| Impact Resistance  | 1 m                             |
+| Special Modes      | Red Light, Location Beacon, SOS |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="lighting"
+/>
 
 ## Performance
 

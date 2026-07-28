@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The Osprey Farpoint 40 is a rugged, carry-on-compliant travel pack with a hiking-grade suspension system — comfortable, durable, and not pretending to be anything it's not."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,21 +32,26 @@ little extra heft, this is one of the most proven options on the market.
 
 ## Key Specs
 
-| Spec                   | Value                                                                                       |
-| ---------------------- | ------------------------------------------------------------------------------------------- |
-| **Weight**             | 1,587 g (3 lb 8 oz)                                                                         |
-| **Volume**             | 40 L                                                                                        |
-| **Dimensions**         | 22 × 14 × 9 in                                                                              |
-| **Material**           | 450D Recycled Twist Dobby Polyester                                                         |
-| **Frame**              | 4 mm LightWire peripheral frame + Atilon framesheet                                         |
-| **Back Panel**         | AirScape mesh-covered ridged foam                                                           |
-| **Laptop Sleeve**      | Up to 16 inches                                                                             |
-| **Carry-On Compliant** | Yes (most domestic airlines)                                                                |
-| **Harness**            | Stowaway, adjustable torso fit                                                              |
-| **MSRP**               | $185                                                                                        |
-| **Comparison**         | See how [Osprey Farpoint 40 compares](/tools/ultralight-research/main-pack) to similar gear |
+| Spec                   | Value                                               |
+| ---------------------- | --------------------------------------------------- |
+| **Weight**             | 1,587 g (3 lb 8 oz)                                 |
+| **Volume**             | 40 L                                                |
+| **Dimensions**         | 22 × 14 × 9 in                                      |
+| **Material**           | 450D Recycled Twist Dobby Polyester                 |
+| **Frame**              | 4 mm LightWire peripheral frame + Atilon framesheet |
+| **Back Panel**         | AirScape mesh-covered ridged foam                   |
+| **Laptop Sleeve**      | Up to 16 inches                                     |
+| **Carry-On Compliant** | Yes (most domestic airlines)                        |
+| **Harness**            | Stowaway, adjustable torso fit                      |
+| **MSRP**               | $185                                                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

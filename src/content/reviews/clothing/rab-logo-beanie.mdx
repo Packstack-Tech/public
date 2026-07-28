@@ -12,7 +12,7 @@ published_at: "2026-07-08"
 description: "A no-frills 62g knitted beanie in 100% recycled polyester with a fleece headband — honest warmth for hikers who don't need anything fancy."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Rab Logo Beanie (QAB-39) is exactly what it advertises: a simple, <cite inde
 
 ## Key Specs
 
-| Spec           | Detail                                                                              |
-| -------------- | ----------------------------------------------------------------------------------- |
-| Weight         | 62g / 2.2oz                                                                         |
-| Product Code   | QAB-39                                                                              |
-| Material       | 100% Recycled Polyester                                                             |
-| Construction   | Fine gauge knit                                                                     |
-| Headband       | Recycled internal fleece headband                                                   |
-| Fit            | Unisex, one size                                                                    |
-| Price (US)     | ~$25                                                                                |
-| **Comparison** | See how [Logo Beanie compares](/tools/ultralight-research/headwear) to similar gear |
+| Spec         | Detail                            |
+| ------------ | --------------------------------- |
+| Weight       | 62g / 2.2oz                       |
+| Product Code | QAB-39                            |
+| Material     | 100% Recycled Polyester           |
+| Construction | Fine gauge knit                   |
+| Headband     | Recycled internal fleece headband |
+| Fit          | Unisex, one size                  |
+| Price (US)   | ~$25                              |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="headwear"
+/>
 
 ## Performance
 

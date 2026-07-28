@@ -12,7 +12,7 @@ published_at: "2026-06-02"
 description: "The Ocean Signal rescueME PLB1 is the world's most compact 406 MHz GPS PLB — a no-subscription SOS beacon that does one job and does it extremely well."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,23 +20,28 @@ The Ocean Signal rescueME PLB1 is a personal locator beacon that does exactly on
 
 ## Key Specs
 
-| Spec                      | Value                                                                                 |
-| ------------------------- | ------------------------------------------------------------------------------------- |
-| **Weight**                | 116 g (4.1 oz)                                                                        |
-| **Dimensions**            | 76 × 51 × 33 mm (3 × 2 × 1.3 in)                                                      |
-| **Frequency**             | 406 MHz                                                                               |
-| **GPS Channels**          | 66                                                                                    |
-| **Waterproof Depth**      | 15 m (49 ft)                                                                          |
-| **Battery Standby Life**  | 7 years                                                                               |
-| **Operational Life**      | 24+ hours                                                                             |
-| **Strobe Output**         | 1 candela                                                                             |
-| **Operating Temp**        | -20°C to +55°C                                                                        |
-| **Subscription Required** | No                                                                                    |
-| **Antenna**               | Retractable                                                                           |
-| **Warranty**              | 2 years (extendable to 5 years upon registration)                                     |
-| **Comparison**            | See how [rescueME PLB1 compares](/tools/ultralight-research/survival) to similar gear |
+| Spec                      | Value                                             |
+| ------------------------- | ------------------------------------------------- |
+| **Weight**                | 116 g (4.1 oz)                                    |
+| **Dimensions**            | 76 × 51 × 33 mm (3 × 2 × 1.3 in)                  |
+| **Frequency**             | 406 MHz                                           |
+| **GPS Channels**          | 66                                                |
+| **Waterproof Depth**      | 15 m (49 ft)                                      |
+| **Battery Standby Life**  | 7 years                                           |
+| **Operational Life**      | 24+ hours                                         |
+| **Strobe Output**         | 1 candela                                         |
+| **Operating Temp**        | -20°C to +55°C                                    |
+| **Subscription Required** | No                                                |
+| **Antenna**               | Retractable                                       |
+| **Warranty**              | 2 years (extendable to 5 years upon registration) |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="survival"
+/>
 
 ## Performance
 

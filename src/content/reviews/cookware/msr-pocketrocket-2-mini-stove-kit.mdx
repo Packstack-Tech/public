@@ -12,7 +12,7 @@ published_at: "2026-06-01"
 description: "The MSR PocketRocket 2 Mini Stove Kit is a compact, 278g all-in-one cook system for solo backpackers — fast, packable, and honestly pretty hard to argue with."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,9 +32,14 @@ The MSR PocketRocket 2 Mini Stove Kit is <cite index="2-1">a complete cook-and-e
 | **Water Boiled per 1 oz fuel**     | 2 L                                                                                                                          |
 | **Includes**                       | PocketRocket 2 stove, 0.75L hard-anodized aluminum pot, 16 oz BPA-free bowl, clear strainer lid, mini pot lifter, stuff sack |
 | **Country of Origin**              | South Korea                                                                                                                  |
-| **Comparison**                     | See how [PocketRocket 2 Mini Stove Kit compares](/tools/ultralight-research/stove) to similar gear                           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-06-03"
 description: "A budget-friendly titanium solo pot with foldable handles and a lid — solid value, but quality control and weight keep it from competing with TOAKS."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,16 +20,21 @@ The Lixada Ultralight Titanium Cup is a 650ml single-wall titanium pot aimed at 
 
 ## Key Specs
 
-| Spec           | Value                                                                                                 |
-| -------------- | ----------------------------------------------------------------------------------------------------- |
-| **Weight**     | 112g / 3.9oz                                                                                          |
-| **Capacity**   | 650ml                                                                                                 |
-| **Material**   | Titanium                                                                                              |
-| **Dimensions** | 96 × 100mm (H × D)                                                                                    |
-| **Includes**   | Lid, foldable handles, mesh storage sack                                                              |
-| **Comparison** | See how [Lixada Ultralight Titanium Cup compares](/tools/ultralight-research/pot-pan) to similar gear |
+| Spec           | Value                                    |
+| -------------- | ---------------------------------------- |
+| **Weight**     | 112g / 3.9oz                             |
+| **Capacity**   | 650ml                                    |
+| **Material**   | Titanium                                 |
+| **Dimensions** | 96 × 100mm (H × D)                       |
+| **Includes**   | Lid, foldable handles, mesh storage sack |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="pot-pan"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-06-01"
 description: "The Black Diamond Spot 400 is a reliable, dual-fuel headlamp delivering 400 lumens and IPX8 waterproofing — a top pick for backpackers who value versatility over sheer weight savings."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,22 +32,27 @@ lot of backpackers, with good reason.
 
 ## Key Specs
 
-| Spec                  | Value                                                                                          |
-| --------------------- | ---------------------------------------------------------------------------------------------- |
-| **Weight**            | 88 g / 3.1 oz (with 3× AAA)                                                                    |
-| **Max Lumens**        | 400                                                                                            |
-| **Max Beam Distance** | 100 m                                                                                          |
-| **Waterproof Rating** | IPX8 (1.1 m / 30 min)                                                                          |
-| **Battery**           | Dual Fuel: 3× AAA or BD 1500 Li-ion (sold separately)                                          |
-| **Run Time — High**   | 2.5 hrs (AAA) / 4 hrs (BD 1500)                                                                |
-| **Run Time — Medium** | 5 hrs (AAA) / 8 hrs (BD 1500)                                                                  |
-| **Run Time — Low**    | 200 hrs (AAA) / 225 hrs (BD 1500)                                                              |
-| **Lighting Modes**    | 7 (High, Medium, Low, Strobe, Red, Red Strobe, Proximity)                                      |
-| **Headband**          | Recycled Repreve elastic                                                                       |
-| **MSRP**              | ~$55                                                                                           |
-| **Comparison**        | See how [Black Diamond Spot 400 compares](/tools/ultralight-research/lighting) to similar gear |
+| Spec                  | Value                                                     |
+| --------------------- | --------------------------------------------------------- |
+| **Weight**            | 88 g / 3.1 oz (with 3× AAA)                               |
+| **Max Lumens**        | 400                                                       |
+| **Max Beam Distance** | 100 m                                                     |
+| **Waterproof Rating** | IPX8 (1.1 m / 30 min)                                     |
+| **Battery**           | Dual Fuel: 3× AAA or BD 1500 Li-ion (sold separately)     |
+| **Run Time — High**   | 2.5 hrs (AAA) / 4 hrs (BD 1500)                           |
+| **Run Time — Medium** | 5 hrs (AAA) / 8 hrs (BD 1500)                             |
+| **Run Time — Low**    | 200 hrs (AAA) / 225 hrs (BD 1500)                         |
+| **Lighting Modes**    | 7 (High, Medium, Low, Strobe, Red, Red Strobe, Proximity) |
+| **Headband**          | Recycled Repreve elastic                                  |
+| **MSRP**              | ~$55                                                      |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="lighting"
+/>
 
 ## Performance
 

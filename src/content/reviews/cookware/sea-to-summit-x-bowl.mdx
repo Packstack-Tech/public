@@ -12,7 +12,7 @@ published_at: "2026-05-13"
 description: "The Sea to Summit X-Bowl is a 650ml collapsible silicone camp bowl that packs flat to a 3/4-inch disc. Here's our full review of its real-world performance."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Sea to Summit X-Bowl is a 650ml collapsible silicone bowl aimed at backpacke
 
 ## Key Specs
 
-| Spec                   | Value                                                                         |
-| ---------------------- | ----------------------------------------------------------------------------- |
-| **Weight**             | 82g (2.9 oz)                                                                  |
-| **Volume**             | 650ml (22 fl oz)                                                              |
-| **Packed Size**        | 3/4 inch disc                                                                 |
-| **Material**           | Food-grade silicone + nylon base                                              |
-| **BPA Free**           | Yes                                                                           |
-| **Temperature Rating** | Up to 300°F (149°C)                                                           |
-| **Dishwasher Safe**    | Yes (top rack)                                                                |
-| **Comparison**         | See how [X-Bowl compares](/tools/ultralight-research/pot-pan) to similar gear |
+| Spec                   | Value                            |
+| ---------------------- | -------------------------------- |
+| **Weight**             | 82g (2.9 oz)                     |
+| **Volume**             | 650ml (22 fl oz)                 |
+| **Packed Size**        | 3/4 inch disc                    |
+| **Material**           | Food-grade silicone + nylon base |
+| **BPA Free**           | Yes                              |
+| **Temperature Rating** | Up to 300°F (149°C)              |
+| **Dishwasher Safe**    | Yes (top rack)                   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="pot-pan"
+/>
 
 ## Performance
 

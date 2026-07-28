@@ -12,7 +12,7 @@ published_at: "2026-06-02"
 description: "An honest look at Sealskinz's Aquasealz™ three-layer waterproof socks — genuinely waterproof, bulkier than you'd expect, and best suited for cold, wet conditions over high-output summer miles."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -28,19 +28,24 @@ everyday trail sock.
 
 ## Key Specs
 
-| Spec                     | Detail                                                                                        |
-| ------------------------ | --------------------------------------------------------------------------------------------- |
-| **Weight**               | 96.5 g (3.4 oz) per pair                                                                      |
-| **Construction**         | Three-layer: nylon-elastane outer / Aquasealz™ membrane / merino or bamboo inner              |
-| **Membrane**             | Aquasealz™ 100% waterproof hydrophilic membrane                                               |
-| **Available Lengths**    | Ankle, Mid, Knee                                                                              |
-| **Cuff Seal**            | Hydrostop™ silicone gripper (select models)                                                   |
-| **Waterproof Guarantee** | Lifetime                                                                                      |
-| **Care**                 | Machine wash 40°C / low tumble dry or drip dry; no re-waterproofing required                  |
-| **Price**                | ~$30–$50 USD (varies by model)                                                                |
-| **Comparison**           | See how [Sealskinz Waterproof Socks compare](/tools/ultralight-research/sock) to similar gear |
+| Spec                     | Detail                                                                           |
+| ------------------------ | -------------------------------------------------------------------------------- |
+| **Weight**               | 96.5 g (3.4 oz) per pair                                                         |
+| **Construction**         | Three-layer: nylon-elastane outer / Aquasealz™ membrane / merino or bamboo inner |
+| **Membrane**             | Aquasealz™ 100% waterproof hydrophilic membrane                                  |
+| **Available Lengths**    | Ankle, Mid, Knee                                                                 |
+| **Cuff Seal**            | Hydrostop™ silicone gripper (select models)                                      |
+| **Waterproof Guarantee** | Lifetime                                                                         |
+| **Care**                 | Machine wash 40°C / low tumble dry or drip dry; no re-waterproofing required     |
+| **Price**                | ~$30–$50 USD (varies by model)                                                   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sock"
+/>
 
 ## Performance
 

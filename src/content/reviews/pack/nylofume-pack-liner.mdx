@@ -12,7 +12,7 @@ published_at: "2026-04-27"
 description: "The Nylofume Pack Liner is a 26g nylon film bag that offers genuine waterproof protection and surprising durability — the best value rain defense for any ultralight pack."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,18 +20,23 @@ The Nylofume Pack Liner is a clear nylon polymer film bag that started its life 
 
 ## Key Specs
 
-| Spec                    | Detail                                                                                        |
-| ----------------------- | --------------------------------------------------------------------------------------------- |
-| **Weight**              | 26g / 0.91 oz                                                                                 |
-| **Material**            | Nylon Polymer Film                                                                            |
-| **Dimensions (flat)**   | 20" × 37" (50.8 × 94 cm)                                                                      |
-| **Usable Volume**       | 45L (top rolled 4")                                                                           |
-| **Volume (fully open)** | 52L                                                                                           |
-| **Seam**                | Straight seam, no gusset                                                                      |
-| **Color**               | Clear                                                                                         |
-| **Comparison**          | See how [Nylofume Pack Liner compares](/tools/ultralight-research/protection) to similar gear |
+| Spec                    | Detail                   |
+| ----------------------- | ------------------------ |
+| **Weight**              | 26g / 0.91 oz            |
+| **Material**            | Nylon Polymer Film       |
+| **Dimensions (flat)**   | 20" × 37" (50.8 × 94 cm) |
+| **Usable Volume**       | 45L (top rolled 4")      |
+| **Volume (fully open)** | 52L                      |
+| **Seam**                | Straight seam, no gusset |
+| **Color**               | Clear                    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="protection"
+/>
 
 ## Performance
 

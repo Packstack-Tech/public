@@ -12,7 +12,7 @@ published_at: "2026-06-24"
 description: "The Petzl RIDE is a 240g ultralight ice axe built for ski touring, freeriding, and alpine approaches — a capable, compact tool for non-technical snow and glacier terrain."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,20 +30,25 @@ is worth a close look.
 
 ## Key Specs
 
-| Spec               | Value                                                                              |
-| ------------------ | ---------------------------------------------------------------------------------- |
-| **Weight**         | 240g (8.5 oz)                                                                      |
-| **Length**         | 45 cm                                                                              |
-| **Pick Taper**     | 3mm at tip                                                                         |
-| **Head Material**  | Tempered steel                                                                     |
-| **Shaft Material** | 7075 aluminum                                                                      |
-| **Spike**          | Spikeless — beveled 45° cut with plastic plug                                      |
-| **Certifications** | CE, UIAA                                                                           |
-| **Warranty**       | 3 years                                                                            |
-| **Compatibility**  | Optional TrigRest, LINKIN leash, pick/spike protectors                             |
-| **Comparison**     | See how [Petzl RIDE compares](/tools/ultralight-research/hardware) to similar gear |
+| Spec               | Value                                                  |
+| ------------------ | ------------------------------------------------------ |
+| **Weight**         | 240g (8.5 oz)                                          |
+| **Length**         | 45 cm                                                  |
+| **Pick Taper**     | 3mm at tip                                             |
+| **Head Material**  | Tempered steel                                         |
+| **Shaft Material** | 7075 aluminum                                          |
+| **Spike**          | Spikeless — beveled 45° cut with plastic plug          |
+| **Certifications** | CE, UIAA                                               |
+| **Warranty**       | 3 years                                                |
+| **Compatibility**  | Optional TrigRest, LINKIN leash, pick/spike protectors |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hardware"
+/>
 
 ## Performance
 

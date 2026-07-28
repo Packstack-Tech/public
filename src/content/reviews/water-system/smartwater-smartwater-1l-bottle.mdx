@@ -12,7 +12,7 @@ published_at: "2026-06-26"
 description: "The smartwater 1L bottle is the ultralight backpacking community's worst-kept secret — a 34g, Sawyer-compatible vessel you can grab at any gas station for under $3."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,17 +30,22 @@ bottle.
 
 ## Key Specs
 
-| Spec                 | Value                                                                                          |
-| -------------------- | ---------------------------------------------------------------------------------------------- |
-| **Weight**           | 34 g (1.2 oz)                                                                                  |
-| **Capacity**         | 1,000 mL (1L)                                                                                  |
-| **Material**         | rPET (recycled PET), BPA-free                                                                  |
-| **Thread Standard**  | Standard 28 mm (Sawyer Squeeze / Sawyer MINI compatible)                                       |
-| **Hot Liquid Safe**  | No                                                                                             |
-| **Approximate Cost** | $2–3 (filled with water at retail)                                                             |
-| **Comparison**       | See how the [smartwater 1L Bottle compares](/tools/ultralight-research/bottle) to similar gear |
+| Spec                 | Value                                                    |
+| -------------------- | -------------------------------------------------------- |
+| **Weight**           | 34 g (1.2 oz)                                            |
+| **Capacity**         | 1,000 mL (1L)                                            |
+| **Material**         | rPET (recycled PET), BPA-free                            |
+| **Thread Standard**  | Standard 28 mm (Sawyer Squeeze / Sawyer MINI compatible) |
+| **Hot Liquid Safe**  | No                                                       |
+| **Approximate Cost** | $2–3 (filled with water at retail)                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="bottle"
+/>
 
 ## Performance
 

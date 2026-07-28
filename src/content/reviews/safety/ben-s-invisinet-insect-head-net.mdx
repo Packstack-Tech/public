@@ -12,7 +12,7 @@ published_at: "2026-07-01"
 description: "A thorough review of the Ben's InvisiNet Insect Head Net — an ultralight, high-visibility bug net for hikers and backpackers who refuse to trade their view for bug protection."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -29,20 +29,25 @@ bug-season gear you can throw in a pack.
 
 ## Key Specs
 
-| Spec              | Detail                                                                                    |
-| ----------------- | ----------------------------------------------------------------------------------------- |
-| **Weight**        | 20g (0.7 oz)                                                                              |
-| **Fabric**        | 20 Denier fiber knit                                                                      |
-| **Fabric Weight** | 14 gsm                                                                                    |
-| **Pore Size**     | 1.0 mm                                                                                    |
-| **Pore Shape**    | Rhombus                                                                                   |
-| **Closure**       | Drawcord elastic neck                                                                     |
-| **Crown**         | Elasticized                                                                               |
-| **Includes**      | Pull-string stuff sack                                                                    |
-| **Price**         | ~$15.99                                                                                   |
-| **Comparison**    | See how [Ben's InvisiNet compares](/tools/ultralight-research/protection) to similar gear |
+| Spec              | Detail                 |
+| ----------------- | ---------------------- |
+| **Weight**        | 20g (0.7 oz)           |
+| **Fabric**        | 20 Denier fiber knit   |
+| **Fabric Weight** | 14 gsm                 |
+| **Pore Size**     | 1.0 mm                 |
+| **Pore Shape**    | Rhombus                |
+| **Closure**       | Drawcord elastic neck  |
+| **Crown**         | Elasticized            |
+| **Includes**      | Pull-string stuff sack |
+| **Price**         | ~$15.99                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="protection"
+/>
 
 ## Performance
 
