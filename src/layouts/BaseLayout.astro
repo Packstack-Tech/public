@@ -6,12 +6,20 @@ interface Props {
   description?: string
 }
 
-const { title, description = "Plan your backpacking trips with Packstack, the packing list builder and gear tracker for ultralight hikers. Track every ounce, organize by category, and share your setup." } = Astro.props
+const { title, description = "Plan your backpacking trips with Packstack, the gear list builder and base weight tracker built for backpackers. Track every gram, organize by category, and share your setup." } = Astro.props
 ---
 
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <!-- Google tag (gtag.js) -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-18325743425"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-18325743425');
+    </script>
+    <meta charSet="utf-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
