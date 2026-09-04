@@ -7,6 +7,11 @@ import type { Pack, PackItem } from "../types/pack"
 import type { Unit } from "../types/item"
 import { DISTANCE_LABEL } from "../types/consts"
 import { convertWeight } from "../utils/weight"
+import {
+  displayDistance,
+  displayElevation,
+  displayTemperature,
+} from "../utils/tripUnits"
 import { WeightBreakdownDialog } from "./WeightBreakdownDialog"
 
 const TERRAIN_OPTIONS = [
@@ -87,6 +92,13 @@ export const TripSidebar: FC<Props> = ({
 }) => {
   const elevationLabel = user.unit_distance === "MI" ? "ft" : "m"
 
+  // Stored values are canonical metric (km, m, °C); convert to the owner's
+  // display units so this matches the editor rather than mislabeling raw metric.
+  const tempMin =
+    trip.temp_min != null ? displayTemperature(trip.temp_min, user) : "—"
+  const tempMax =
+    trip.temp_max != null ? displayTemperature(trip.temp_max, user) : "—"
+
   const detailRows = [
     { label: "Location", value: trip.location || null },
     {
@@ -96,20 +108,20 @@ export const TripSidebar: FC<Props> = ({
     {
       label: "Distance",
       value: trip.distance
-        ? `${trip.distance} ${DISTANCE_LABEL[user.unit_distance]}`
+        ? `${displayDistance(trip.distance, user)} ${DISTANCE_LABEL[user.unit_distance]}`
         : null,
     },
     {
       label: "Elevation",
       value: trip.daily_elevation_gain
-        ? `${trip.daily_elevation_gain} ${elevationLabel}/day`
+        ? `${displayElevation(trip.daily_elevation_gain, user)} ${elevationLabel}/day`
         : null,
     },
     {
       label: "Temperature",
       value:
         trip.temp_min != null || trip.temp_max != null
-          ? `${trip.temp_min ?? "—"}°${user.unit_temperature} – ${trip.temp_max ?? "—"}°${user.unit_temperature}`
+          ? `${tempMin}°${user.unit_temperature} – ${tempMax}°${user.unit_temperature}`
           : null,
     },
     { label: "Terrain", value: labelFor(trip.terrain, TERRAIN_OPTIONS) },
