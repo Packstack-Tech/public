@@ -19,6 +19,30 @@ const { title, description = "Plan your backpacking trips with Packstack, the ge
       gtag('js', new Date());
       gtag('config', 'AW-18325743425');
     </script>
+
+    <!-- Google Ads conversion tracking -->
+    <!-- Fires the sign-up conversion on clicks to the web app sign up and the App Store / Google Play links. -->
+    <script is:inline>
+      (function () {
+        var CONVERSION = 'AW-18325743425/eooSCJfu4vEcEMHOsqJE';
+        // Href fragments that count as a conversion click.
+        var MATCHERS = [
+          'app.packstack.io/auth/register', // Web app "Sign Up"
+          'apps.apple.com',                 // App Store download
+          'play.google.com/store/apps'      // Google Play download
+        ];
+        document.addEventListener('click', function (event) {
+          var link = event.target && event.target.closest && event.target.closest('a[href]');
+          if (!link) return;
+          var href = link.href || '';
+          if (!MATCHERS.some(function (f) { return href.indexOf(f) !== -1; })) return;
+          if (typeof gtag === 'function') {
+            gtag('event', 'conversion', { send_to: CONVERSION });
+          }
+          // Navigation proceeds normally; gtag sends the hit via a beacon.
+        });
+      })();
+    </script>
     <meta charSet="utf-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
