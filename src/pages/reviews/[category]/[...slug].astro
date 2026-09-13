@@ -3,8 +3,6 @@ import { getCollection, render } from "astro:content"
 import BaseLayout from "../../../layouts/BaseLayout.astro"
 import PageHeader from "../../../components/PageHeader.astro"
 import PageFooter from "../../../components/PageFooter.astro"
-import AffiliateDisclaimer from "../../../components/AffiliateDisclaimer.astro"
-import VigLinkScript from "../../../components/VigLinkScript.astro"
 
 export const prerender = true
 
@@ -41,7 +39,6 @@ const formattedDate = new Date(published_at).toLocaleDateString("en-US", { year:
         <header class="mb-8">
           <a href={`/reviews/${category}`} class="text-xs text-primary font-semibold uppercase tracking-wide no-underline hover:text-white transition-colors">{displayCategory}</a>
           <h1 class="text-3xl md:text-4xl font-bold mt-2 mb-3">{title}</h1>
-          <AffiliateDisclaimer />
           <p class="text-softwhite text-lg">{description}</p>
 
           <div class="flex flex-wrap items-center gap-4 mt-4 text-sm text-label">
@@ -94,5 +91,4 @@ const formattedDate = new Date(published_at).toLocaleDateString("en-US", { year:
 
     <PageFooter />
   </div>
-  <VigLinkScript slot="body-scripts" />
 </BaseLayout>
