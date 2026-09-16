@@ -54,59 +54,80 @@ export function PackingLists({ packs, aggregateUnit, itemUnit }: Props) {
       {packs.map((pack) => {
         const summary = computeWeightSummary(pack.items, aggregateUnit)
         return (
-          <div key={pack.id} className="mb-10">
-            <h2 className="border-b border-border pb-2">{pack.title}</h2>
-            {summary && (
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between py-3 text-xs gap-2">
-                <div className="flex flex-wrap items-center gap-x-6 gap-y-1">
-                  <span>
-                    <span className="text-label">Base</span>
-                    <span className="text-white font-semibold ml-1.5">
-                      {summary.base}
-                    </span>
-                  </span>
-                  <span>
-                    <span className="text-label">Worn</span>
-                    <span className="text-white font-semibold ml-1.5">
-                      {summary.worn}
-                    </span>
-                  </span>
-                  <span>
-                    <span className="text-label">Consumable</span>
-                    <span className="text-white font-semibold ml-1.5">
-                      {summary.consumable}
-                    </span>
-                  </span>
-                  <span>
-                    <span className="text-label">Total</span>
-                    <span className="text-primary font-bold ml-1.5">
-                      {summary.total}
-                    </span>
-                  </span>
-                  {summary.totalCalories > 0 && (
-                    <span className="inline-flex items-center gap-1">
-                      <Flame size={13} className="text-orange-400" />
-                      <span className="text-label">Calories</span>
-                      <span className="text-orange-400 font-bold ml-0.5">
-                        {summary.totalCalories.toLocaleString()} kcal
-                      </span>
-                    </span>
-                  )}
-                </div>
+          <section key={pack.id} className="mb-10">
+            <div className="flex items-center justify-between gap-3 border-b border-border pb-2">
+              <h2 className="mb-0 truncate">{pack.title}</h2>
+              {summary && (
                 <WeightBreakdownDialog
                   items={pack.items}
                   aggregateUnit={aggregateUnit}
                 />
+              )}
+            </div>
+
+            {summary && (
+              <div className="py-4">
+                <dl className="grid grid-cols-4 gap-2 sm:gap-3">
+                  <Stat label="Base" value={summary.base} />
+                  <Stat label="Worn" value={summary.worn} />
+                  <Stat label="Consumable" value={summary.consumable} />
+                  <Stat label="Total" value={summary.total} emphasis />
+                </dl>
+                {summary.totalCalories > 0 && (
+                  <p className="mt-2 inline-flex items-center gap-1.5 text-xs leading-none">
+                    <Flame size={13} className="text-orange-400" />
+                    <span className="text-label">Calories</span>
+                    <span className="text-orange-400 font-semibold tabular-nums">
+                      {summary.totalCalories.toLocaleString()} kcal
+                    </span>
+                  </p>
+                )}
               </div>
             )}
+
             <List
               items={pack.items}
               aggregateUnit={aggregateUnit}
               itemUnit={itemUnit}
             />
-          </div>
+          </section>
         )
       })}
+    </div>
+  )
+}
+
+/**
+ * One tile of the pack summary. The four tiles share a row on every width so
+ * the eye can compare them; on phones the value shrinks rather than wrapping.
+ */
+function Stat({
+  label,
+  value,
+  emphasis = false,
+}: {
+  label: string
+  value: string
+  emphasis?: boolean
+}) {
+  return (
+    <div
+      className={`rounded-md border px-2.5 py-2 sm:px-3 sm:py-2.5 min-w-0 ${
+        emphasis
+          ? "border-primary/40 bg-primary-glow"
+          : "border-border bg-surface"
+      }`}
+    >
+      <dt className="text-[10px] sm:text-xs uppercase tracking-wider text-label leading-none mb-1.5 truncate">
+        {label}
+      </dt>
+      <dd
+        className={`tabular-nums font-semibold leading-none text-sm sm:text-base truncate ${
+          emphasis ? "text-primary" : "text-white"
+        }`}
+      >
+        {value}
+      </dd>
     </div>
   )
 }

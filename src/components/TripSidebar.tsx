@@ -153,8 +153,15 @@ export const TripSidebar: FC<Props> = ({
         {trip.notes && <NotesField text={trip.notes} />}
       </div>
 
+      {/* With a single pack these totals repeat the pack's own summary tiles
+          directly below on phones, so show them there only for multi-pack
+          trips. The desktop sidebar always has them. */}
       {totals && (
-        <div className="px-5 py-4 border-b border-border">
+        <div
+          className={`px-5 py-4 border-b border-border ${
+            (packs?.length ?? 0) > 1 ? "" : "hidden lg:block"
+          }`}
+        >
           <div className="flex items-center justify-between mb-3">
             <h3 className="text-sm font-semibold inline-flex items-center gap-1.5">
               <Scale size={14} className="text-primary" />
@@ -199,10 +206,15 @@ export const TripSidebar: FC<Props> = ({
         </div>
       )}
 
+      {/* Two columns on phones so the trip facts don't push the gear list a
+          full screen down; single column in the desktop sidebar. */}
       {detailRows.length > 0 && (
-        <div className="px-5 py-4 border-b border-border space-y-3">
+        <div className="px-5 py-4 border-b border-border grid grid-cols-2 gap-x-4 gap-y-3 lg:grid-cols-1">
           {detailRows.map(({ label, value }) => (
-            <div key={label}>
+            <div
+              key={label}
+              className={label === "Location" ? "col-span-2 lg:col-span-1" : ""}
+            >
               <p className="text-label text-xs">{label}</p>
               <p className="text-softwhite text-sm font-medium">{value}</p>
             </div>

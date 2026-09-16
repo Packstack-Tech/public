@@ -1,70 +1,92 @@
 ---
 import googlePlayBadge from "../assets/GetItOnGooglePlay_Badge_Web_color_English.png"
+
+const year = new Date().getFullYear()
+
+// One place for the link columns so the layout stays uniform.
+const columns = [
+  {
+    title: "Reviews",
+    more: "/reviews",
+    links: [
+      { href: "/reviews/electronics/nitecore-nb10000", label: "Nitecore NB10000" },
+      { href: "/reviews/clothing/decathlon-mt500-2-in-1-zip-off-hiking-pants", label: "MT500 Zip-Off Hiking Pants" },
+      { href: "/reviews/pack/durston-gear-kakwa-55", label: "Durston Kakwa 55" },
+      { href: "/reviews/clothing/forclaz-mt500-merino-wool-long-sleeve-shirt", label: "MT500 Merino Wool Shirt" },
+    ],
+  },
+  {
+    title: "Tools",
+    more: "/tools",
+    links: [
+      { href: "/tools/ultralight-research", label: "Ultralight Gear Research" },
+      { href: "/tools/backpacking-calorie-calculator", label: "Calorie Calculator" },
+      { href: "/tools/water-carry-estimator", label: "Water Carry Estimator" },
+    ],
+  },
+  {
+    title: "Learn",
+    more: "/learn",
+    links: [
+      { href: "/learn/how-to-pack-a-backpacking-pack", label: "How to Pack a Backpack" },
+      { href: "/learn/ultralight-backpacking-overnight-hiking-essentials", label: "Ultralight Overnight Essentials" },
+      { href: "/learn/how-to-choose-hiking-boots-for-backpacking", label: "How to Choose Hiking Boots" },
+      { href: "/learn/packstack-the-modern-alternative-to-lighterpack", label: "Alternative to LighterPack" },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      { href: "https://app.packstack.io/auth/login", label: "Open the web app" },
+      { href: "/support", label: "Support" },
+      { href: "/privacy", label: "Privacy Policy" },
+      { href: "/terms", label: "Terms of Service" },
+    ],
+  },
+]
 ---
 
 <footer class="border-t border-border mt-8">
-  <div class="max-w-6xl mx-auto px-4 md:px-8 py-10">
-    <div class="flex flex-wrap items-center gap-6 mb-10">
-      <a href="/">
+  <div class="max-w-6xl mx-auto px-4 md:px-8 py-8 md:py-10">
+    <!-- Brand row: logo left, store badges right; badges wrap under the logo on narrow phones. -->
+    <div class="flex flex-wrap items-center justify-between gap-4 mb-8">
+      <a href="/" class="shrink-0">
         <img src="/packstack_logo_white.png" alt="Packstack" class="w-24" />
       </a>
-      <span class="text-label text-xs">&copy; {new Date().getFullYear()} Packstack</span>
-      <a href="https://apps.apple.com/us/app/packstack-app/id6760873801?itscg=30200&itsct=apps_box_badge&mttnsubad=6760873801" class="inline-block">
-        <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1774396800" alt="Download on the App Store" style="width: 140px; height: 47px; vertical-align: middle; object-fit: contain;" />
-      </a>
-      <a href="https://play.google.com/store/apps/details?id=io.packstack.mobile" class="inline-block">
-        <img src={googlePlayBadge.src} alt="Get it on Google Play" style="width: auto; height: 47px; vertical-align: middle; object-fit: contain;" />
-      </a>
+      <div class="flex items-center gap-2">
+        <a href="https://apps.apple.com/us/app/packstack-app/id6760873801?itscg=30200&itsct=apps_box_badge&mttnsubad=6760873801" class="inline-block" aria-label="Download on the App Store">
+          <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1774396800" alt="Download on the App Store" class="h-10 w-auto" />
+        </a>
+        <!-- Google's badge ships with built-in transparent padding; the negative margin trims it so the two badges read as one pair. -->
+        <a href="https://play.google.com/store/apps/details?id=io.packstack.mobile" class="inline-block -my-2" aria-label="Get it on Google Play">
+          <img src={googlePlayBadge.src} alt="Get it on Google Play" class="h-[52px] w-auto -mx-1.5" />
+        </a>
+      </div>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-      <div class="flex flex-col gap-3">
-        <div class="flex items-center gap-4">
-          <h4 class="text-white text-xs uppercase tracking-wider font-semibold">Reviews</h4>
-          <a href="/reviews" class="text-label text-xs hover:text-white transition-colors no-underline">See more &rarr;</a>
+    <nav class="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-7" aria-label="Footer">
+      {columns.map((col) => (
+        <div class="flex flex-col gap-2.5 min-w-0">
+          <div class="flex items-baseline justify-between gap-2">
+            <h4 class="text-white text-[11px] uppercase tracking-wider font-semibold mb-0">{col.title}</h4>
+            {col.more && (
+              <a href={col.more} class="text-label text-[11px] hover:text-white transition-colors no-underline whitespace-nowrap">All &rarr;</a>
+            )}
+          </div>
+          <ul class="flex flex-col gap-1.5 list-none m-0 p-0">
+            {col.links.map((l) => (
+              <li>
+                <a href={l.href} class="text-softwhite text-sm leading-snug hover:text-white transition-colors no-underline">{l.label}</a>
+              </li>
+            ))}
+          </ul>
         </div>
-        <div class="flex flex-col gap-2">
-          <a href="/reviews/electronics/nitecore-nb10000" class="text-softwhite text-sm hover:text-white transition-colors no-underline">Nitecore NB10000</a>
-          <a href="/reviews/clothing/decathlon-mt500-2-in-1-zip-off-hiking-pants" class="text-softwhite text-sm hover:text-white transition-colors no-underline">MT500 Zip-Off Hiking Pants</a>
-          <a href="/reviews/pack/durston-gear-kakwa-55" class="text-softwhite text-sm hover:text-white transition-colors no-underline">Durston Kakwa 55</a>
-          <a href="/reviews/clothing/forclaz-mt500-merino-wool-long-sleeve-shirt" class="text-softwhite text-sm hover:text-white transition-colors no-underline">MT500 Merino Wool Shirt</a>
-        </div>
-      </div>
+      ))}
+    </nav>
 
-      <div class="flex flex-col gap-3">
-        <div class="flex items-center gap-4">
-          <h4 class="text-white text-xs uppercase tracking-wider font-semibold">Tools</h4>
-          <a href="/tools" class="text-label text-xs hover:text-white transition-colors no-underline">See more &rarr;</a>
-        </div>
-        <div class="flex flex-col gap-2">
-          <a href="/tools/ultralight-research" class="text-softwhite text-sm hover:text-white transition-colors no-underline">Ultralight Gear Research</a>
-          <a href="/tools/backpacking-calorie-calculator" class="text-softwhite text-sm hover:text-white transition-colors no-underline">Calorie Calculator</a>
-          <a href="/tools/water-carry-estimator" class="text-softwhite text-sm hover:text-white transition-colors no-underline">Water Carry Estimator</a>
-        </div>
-      </div>
-
-      <div class="flex flex-col gap-3">
-        <div class="flex items-center gap-4">
-          <h4 class="text-white text-xs uppercase tracking-wider font-semibold">Learn</h4>
-          <a href="/learn" class="text-label text-xs hover:text-white transition-colors no-underline">See more &rarr;</a>
-        </div>
-        <div class="flex flex-col gap-2">
-          <a href="/learn/how-to-pack-a-backpacking-pack" class="text-softwhite text-sm hover:text-white transition-colors no-underline">How to Pack a Backpack</a>
-          <a href="/learn/ultralight-backpacking-overnight-hiking-essentials" class="text-softwhite text-sm hover:text-white transition-colors no-underline">Ultralight Overnight Essentials</a>
-          <a href="/learn/how-to-choose-hiking-boots-for-backpacking" class="text-softwhite text-sm hover:text-white transition-colors no-underline">How to Choose Hiking Boots</a>
-          <a href="/learn/packstack-the-modern-alternative-to-lighterpack" class="text-softwhite text-sm hover:text-white transition-colors no-underline">Alternative to Lighterpack</a>
-        </div>
-      </div>
-
-      <div class="flex flex-col gap-3">
-        <h4 class="text-white text-xs uppercase tracking-wider font-semibold">Company</h4>
-        <div class="flex flex-col gap-2">
-          <a href="/support" class="text-softwhite text-sm hover:text-white transition-colors no-underline">Support</a>
-          <a href="/privacy" class="text-softwhite text-sm hover:text-white transition-colors no-underline">Privacy Policy</a>
-          <a href="/terms" class="text-softwhite text-sm hover:text-white transition-colors no-underline">Terms of Service</a>
-          <a href="/tools/ultralight-research" class="text-softwhite text-sm hover:text-white transition-colors no-underline">Gear Research</a>
-        </div>
-      </div>
+    <div class="mt-8 pt-5 border-t border-border flex flex-wrap items-center justify-between gap-2 text-xs text-label">
+      <span>&copy; {year} Packstack</span>
+      <span>Gear inventory &amp; packing lists for backpackers</span>
     </div>
   </div>
 </footer>
