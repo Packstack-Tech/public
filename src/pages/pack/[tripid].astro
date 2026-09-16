@@ -3,15 +3,42 @@ import PackPageContent from "../../components/PackPageContent"
 import BaseLayout from "../../layouts/BaseLayout.astro"
 import PageHeader from "../../components/PageHeader.astro"
 import PageFooter from "../../components/PageFooter.astro"
+import type { TripInfo } from "../../types/trip"
+
 const { tripid } = Astro.params
-const resp = await fetch(`https://api.packstack.io/trip/meta/${tripid}`)
-const data = await resp.json()
+
+// One round trip for header, owner units and the packs, so the whole page
+// renders on the server. Previously the packs were fetched client-side after
+// hydration, which put a second API call behind the JS download.
+const resp = await fetch(`https://api.packstack.io/trip/public/${tripid}`)
+
+if (resp.status === 404) {
+  return new Response("Packing list not found", { status: 404 })
+}
+if (!resp.ok) {
+  return new Response("Packing list temporarily unavailable", { status: 502 })
+}
+
+const data: TripInfo = await resp.json()
+
+// Public, read-only content: let Vercel's edge serve repeat visits while a
+// fresh copy is fetched in the background. Owners refreshing right after an
+// edit may see up to a minute of staleness.
+Astro.response.headers.set(
+  "Cache-Control",
+  "public, s-maxage=60, stale-while-revalidate=600"
+)
 ---
 
 <BaseLayout title={`${data.trip.location || data.trip.title} :: Packstack`}>
   <div class="bg-background min-h-screen flex flex-col">
     <PageHeader maxWidth="full" />
-    <PackPageContent trip={data.trip} user={data.user} client:load />
+    <PackPageContent
+      trip={data.trip}
+      user={data.user}
+      packs={data.packs}
+      client:load
+    />
     <PageFooter />
   </div>
 </BaseLayout>

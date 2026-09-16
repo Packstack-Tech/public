@@ -1,42 +1,23 @@
-import { useEffect, useState } from "react"
-import { Loader2 } from "lucide-react"
 import type { Pack } from "../types/pack"
 import type { Trip } from "../types/trip"
 import type { UserInfo } from "../types/user"
 import { useUnitPreference } from "../hooks/useUnitPreference"
 import { TripSidebar } from "./TripSidebar"
 import { PackingLists } from "./PackingLists"
-import { CopyForAI } from "./CopyForAI"
 
 interface Props {
   trip: Trip
   user: UserInfo
+  /** Server-fetched; the component never loads data itself. */
+  packs: Pack[]
 }
 
-export default function PackPageContent({ trip, user }: Props) {
-  const { system, aggregateUnit, itemUnit, toggleSystem } = useUnitPreference()
-  const [packs, setPacks] = useState<Pack[] | null>(null)
-  const [error, setError] = useState(false)
-
-  const apiUrl = `https://api.packstack.io/pack/trip/${trip.id}/public`
-
-  useEffect(() => {
-    let cancelled = false
-    fetch(apiUrl)
-      .then((res) => {
-        if (!res.ok) throw new Error("Failed to load packs")
-        return res.json()
-      })
-      .then((data) => {
-        if (!cancelled) setPacks(data)
-      })
-      .catch(() => {
-        if (!cancelled) setError(true)
-      })
-    return () => {
-      cancelled = true
-    }
-  }, [apiUrl])
+export default function PackPageContent({ trip, user, packs }: Props) {
+  // Start from the owner's units so the server-rendered numbers match what
+  // they entered; the visitor's own saved choice is applied after mount.
+  const { system, aggregateUnit, itemUnit, toggleSystem } = useUnitPreference(
+    user.unit_weight === "IMPERIAL" ? "imperial" : "metric"
+  )
 
   return (
     <div className="flex flex-1 flex-col lg:flex-row">
@@ -75,28 +56,16 @@ export default function PackPageContent({ trip, user }: Props) {
           </div>
         </div>
 
-        {error && (
+        {packs.length === 0 ? (
           <p className="text-center text-label py-12">
-            Unable to load pack items. Please try refreshing the page.
+            This trip doesn't have any gear yet.
           </p>
-        )}
-
-        {!packs && !error && (
-          <div className="flex items-center justify-center py-16">
-            <Loader2 className="h-6 w-6 animate-spin text-primary" />
-          </div>
-        )}
-
-        {packs && (
-          <>
-            <PackingLists
-              packs={packs}
-              aggregateUnit={aggregateUnit}
-              itemUnit={itemUnit}
-            />
-
-            <CopyForAI tripKey={trip.uuid ?? trip.id} ready={packs.length > 0} />
-          </>
+        ) : (
+          <PackingLists
+            packs={packs}
+            aggregateUnit={aggregateUnit}
+            itemUnit={itemUnit}
+          />
         )}
       </main>
     </div>
