@@ -54,13 +54,13 @@ Packstack's approach is less database-dependent, which means more manual entry u
 
 ---
 
-## Planning Intelligence: Calorie Estimates, Hiker Profiles, and AI Trip Data
+## Planning Intelligence: Calorie Estimates and AI Trip Data
 
 This is where the two apps diverge most sharply in 2026. Packwizard is focused on helping you *research and buy* gear. Packstack has invested in helping you *plan and prepare* for a specific trip — and the difference shows.
 
-**Hiker profiles** let you store body stats — weight, height, age, sex, and body type — for yourself and any hiking partners. Each pack on a trip can be assigned to a different profile, which means a couple planning the same trip gets individualized numbers instead of sharing a generic average.
+Your **hiker profile** stores your body stats — weight, height, age, sex, and body type — once, so every trip you plan uses your numbers instead of a generic average.
 
-Those profiles feed directly into **Packstack's calorie calculator**, which uses the Pandolf load carriage equation and Mifflin-St Jeor BMR model to estimate daily calorie burn based on your body, pack weight, terrain, elevation, pace, and temperature. The calculator is available as a [free public tool](/tools/backpacking-calorie-calculator) for anyone to use, but inside the app it pulls inputs directly from your trip details and hiker profile — no re-entering numbers. The output tells you how many calories you need per day and for the full trip, with a macro breakdown and a practical food-weight estimate (~130 kcal per ounce of typical backpacking food). That's the kind of number that turns "I think four days of food is enough" into "I need 2.1 pounds of food per day."
+That profile feeds directly into **Packstack's calorie calculator**, which uses the Pandolf load carriage equation and Mifflin-St Jeor BMR model to estimate daily calorie burn based on your body, pack weight, terrain, elevation, pace, and temperature. The calculator is available as a [free public tool](/tools/backpacking-calorie-calculator) for anyone to use, but inside the app it pulls inputs directly from your trip details and hiker profile — no re-entering numbers. The output tells you how many calories you need per day and for the full trip, with a macro breakdown and a practical food-weight estimate (~130 kcal per ounce of typical backpacking food). That's the kind of number that turns "I think four days of food is enough" into "I need 2.1 pounds of food per day."
 
 The other piece is **AI-enhanced trip information**. When you create a trip and set a location — say "John Muir Trail" or "Roan Highlands" — Packstack automatically researches and fills in trail distance, daily elevation gain, terrain type, expected temperature ranges, and route notes. It uses web search to pull current data, and it only fills fields you haven't already set yourself. The practical effect is that your calorie estimates and water planning start with real numbers instead of guesses, without requiring you to spend twenty minutes on AllTrails first.
 
@@ -96,7 +96,7 @@ Both apps support LighterPack import, which is the thing most people care about 
 
 Here's where the comparison has become decisively one-sided.
 
-Packstack now has a **native iOS app** available on the App Store. It's not a wrapper around a web view — it's a full React Native app with gear inventory management, trip planning, calorie estimates, hiker profiles, and the same weight breakdown tools available on the web. The app feels fast, the interface is designed for a phone screen, and it syncs with your web account. For the core use case — checking your list while you're standing in your garage pulling gear, or making a last-minute adjustment at the trailhead — it's exactly what you want.
+Packstack now has a **native iOS app** available on the App Store. It's not a wrapper around a web view — it's a full React Native app with gear inventory management, trip planning, calorie estimates, and the same weight breakdown tools available on the web. The app feels fast, the interface is designed for a phone screen, and it syncs with your web account. For the core use case — checking your list while you're standing in your garage pulling gear, or making a last-minute adjustment at the trailhead — it's exactly what you want.
 
 Packwizard's mobile story remains a real problem. Multiple users across forums have flagged it explicitly. On mobile devices, Packwizard is quite lacking, with no apparent effort to adapt the UI to a smaller screen. On an iPhone, it's described as completely unusable — the UI suffers scaling issues and is incredibly tiny. On an iPad, it degrades quickly when the left-hand sidebar is displayed, with strange side-to-side scrolling and large blank sections.
 
@@ -133,7 +133,7 @@ Packstack's business model is straightforward: it's free to use with no credit c
 
 Both Packstack and Packwizard are real improvements over a spreadsheet, and both are free to use. But the gap between them has widened considerably.
 
-Packstack isn't just a packing list tool anymore. The calorie calculator, hiker profiles, and AI-powered trip research turn it into a genuine trip planning system — one that takes your body, your gear, and your route and gives you actionable numbers for food, water, and weight. The [ultralight gear research tool](/tools/ultralight-research) addresses gear discovery without affiliate incentives, letting you compare thousands of products by weight across every category. And the native iOS app closes the last significant gap that existed when we first compared these tools.
+Packstack isn't just a packing list tool anymore. The calorie calculator and AI-powered trip research turn it into a genuine trip planning system — one that takes your body, your gear, and your route and gives you actionable numbers for food, water, and weight. The [ultralight gear research tool](/tools/ultralight-research) addresses gear discovery without affiliate incentives, letting you compare thousands of products by weight across every category. And the native iOS app closes the last significant gap that existed when we first compared these tools.
 
 Packwizard's gear database and Pack Browser are still interesting features, but they haven't evolved to match. The mobile experience remains broken, there's no trip intelligence layer, and the affiliate model continues to shape which products get surfaced. For someone purely in the gear research phase, Packwizard has some value. For everyone else — anyone who has their gear and is planning actual trips — Packstack is the more complete, more capable tool.
 

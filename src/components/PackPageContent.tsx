@@ -1,11 +1,12 @@
-import { useEffect, useState, useCallback } from "react"
-import { Loader2, Copy, Check } from "lucide-react"
+import { useEffect, useState } from "react"
+import { Loader2 } from "lucide-react"
 import type { Pack } from "../types/pack"
 import type { Trip } from "../types/trip"
 import type { UserInfo } from "../types/user"
 import { useUnitPreference } from "../hooks/useUnitPreference"
 import { TripSidebar } from "./TripSidebar"
 import { PackingLists } from "./PackingLists"
+import { CopyForAI } from "./CopyForAI"
 
 interface Props {
   trip: Trip
@@ -16,16 +17,8 @@ export default function PackPageContent({ trip, user }: Props) {
   const { system, aggregateUnit, itemUnit, toggleSystem } = useUnitPreference()
   const [packs, setPacks] = useState<Pack[] | null>(null)
   const [error, setError] = useState(false)
-  const [copied, setCopied] = useState(false)
 
   const apiUrl = `https://api.packstack.io/pack/trip/${trip.id}/public`
-
-  const copyUrl = useCallback(() => {
-    navigator.clipboard.writeText(apiUrl).then(() => {
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
-    })
-  }, [apiUrl])
 
   useEffect(() => {
     let cancelled = false
@@ -102,31 +95,7 @@ export default function PackPageContent({ trip, user }: Props) {
               itemUnit={itemUnit}
             />
 
-            <div className="mt-4 border-t border-border pt-6 pb-2">
-              <p className="text-xs text-label mb-2">
-                Want the raw data? Retrieve this packing list from the
-                endpoint below.
-              </p>
-              <div className="flex items-stretch">
-                <input
-                  type="text"
-                  readOnly
-                  value={apiUrl}
-                  className="flex-1 bg-surface border border-border rounded-l-md px-3 py-2 text-xs text-softwhite font-mono select-all focus:outline-none"
-                />
-                <button
-                  onClick={copyUrl}
-                  className="flex items-center gap-1.5 bg-surface border border-l-0 border-border rounded-r-md px-3 text-xs text-label hover:text-white transition-colors cursor-pointer"
-                >
-                  {copied ? (
-                    <Check size={14} className="text-green-400" />
-                  ) : (
-                    <Copy size={14} />
-                  )}
-                  {copied ? "Copied!" : "Copy"}
-                </button>
-              </div>
-            </div>
+            <CopyForAI tripKey={trip.uuid ?? trip.id} ready={packs.length > 0} />
           </>
         )}
       </main>

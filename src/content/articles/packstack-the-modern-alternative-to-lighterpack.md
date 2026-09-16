@@ -70,17 +70,17 @@ Packstack lets you track the total value of your kit. This sounds like a minor f
 
 Packstack supports LighterPack & CSV import, metric and imperial units, and lets you export your gear as needed — no lock-in. This is a deliberate design choice and a meaningful one. You're not trapped. If you want to move back to LighterPack, a spreadsheet, or a future tool that doesn't exist yet, your data travels with you.
 
-### Trip Planning Intelligence: Calories, Profiles, and AI
+### Trip Planning Intelligence: Calories and AI
 
 This is the area where the gap between Packstack and LighterPack is widest — because LighterPack simply doesn't try to do any of it.
 
-Packstack lets you create **hiker profiles** with your body stats — weight, height, age, sex, and body type. Each pack on a trip can be assigned to a different profile, which is genuinely useful for couples or groups who plan together but need individualized numbers.
+Packstack stores a **hiker profile** with your body stats — weight, height, age, sex, and body type — so calorie numbers are yours, not a generic average.
 
-Those profiles feed into a **calorie calculator** that uses the Pandolf load carriage equation and Mifflin-St Jeor BMR model to estimate daily calorie burn based on your body, pack weight, terrain, elevation, pace, and temperature. The output gives you total daily calories, a macro breakdown, and a practical food-weight estimate (~130 kcal per ounce of typical backpacking food). That's the kind of number that turns vague food planning into a real weight calculation. The calculator is also available as a [free public tool](/tools/backpacking-calorie-calculator) even if you don't have an account.
+That profile feeds into a **calorie calculator** that uses the Pandolf load carriage equation and Mifflin-St Jeor BMR model to estimate daily calorie burn based on your body, pack weight, terrain, elevation, pace, and temperature. The output gives you total daily calories, a macro breakdown, and a practical food-weight estimate (~130 kcal per ounce of typical backpacking food). That's the kind of number that turns vague food planning into a real weight calculation. The calculator is also available as a [free public tool](/tools/backpacking-calorie-calculator) even if you don't have an account.
 
 The other piece is **AI-enhanced trip information**. When you create a trip and set a location — say "John Muir Trail" or "Roan Highlands" — Packstack automatically researches and fills in trail distance, daily elevation gain, terrain type, and expected temperature ranges for your trip dates. It only fills fields you haven't already set, so it won't overwrite your local knowledge. The practical effect is that your calorie and water estimates start with real data instead of guesses.
 
-LighterPack has no calorie estimation, no body profiles, and no trip intelligence. It's a packing list. That's fine if all you need is a packing list — but if you want your gear tool to actually help you plan the trip, Packstack operates on a different level.
+LighterPack has no calorie estimation and no trip intelligence. It's a packing list. That's fine if all you need is a packing list — but if you want your gear tool to actually help you plan the trip, Packstack operates on a different level.
 
 ### Ultralight Gear Research
 
@@ -92,7 +92,7 @@ The research tool also lives inside the mobile app as a dedicated **Research tab
 
 ### Native Mobile Apps
 
-One of LighterPack's most persistent complaints from users is its clunky mobile experience. Packstack has **native iOS and Android apps** — full mobile apps with your gear closet, gear lists, kits, calorie estimates, hiker profiles, gear research, and the same weight breakdown tools available on the web. They sync with your web account, they're fast, and the interface is built for a phone screen. Checklist mode turns any gear list into a tap-to-check packing checklist at the trailhead, and a **shareable trip summary card** — trip stats, weight breakdown, and category chart sized for Instagram Stories — exports straight from the app. For the many hikers who do last-minute gear checks and list tweaks on their phone, this is a major practical advantage.
+One of LighterPack's most persistent complaints from users is its clunky mobile experience. Packstack has **native iOS and Android apps** — full mobile apps with your gear closet, gear lists, kits, calorie estimates, gear research, and the same weight breakdown tools available on the web. They sync with your web account, they're fast, and the interface is built for a phone screen. Checklist mode turns any gear list into a tap-to-check packing checklist at the trailhead, and a **shareable trip summary card** — trip stats, weight breakdown, and category chart sized for Instagram Stories — exports straight from the app. For the many hikers who do last-minute gear checks and list tweaks on their phone, this is a major practical advantage.
 
 ---
 

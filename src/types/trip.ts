@@ -3,6 +3,7 @@ import type { UserInfo } from "./user"
 
 export type Trip = {
   id: number
+  uuid?: string
   title: string
   location: string
   start_date?: string
