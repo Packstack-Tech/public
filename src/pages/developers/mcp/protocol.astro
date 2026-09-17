@@ -1,0 +1,77 @@
+---
+import DocsLayout from "../../../layouts/DocsLayout.astro"
+import CopyField from "../../../components/CopyField.astro"
+
+export const prerender = true
+---
+
+<DocsLayout
+  title="For developers"
+  description="Protocol-level details for anyone building an MCP client or connector integration against Packstack."
+  path="/developers/mcp/protocol"
+>
+  <h2>Endpoints</h2>
+  <table>
+    <thead><tr><th>Purpose</th><th>URL</th></tr></thead>
+    <tbody>
+      <tr><td>MCP server (Streamable HTTP)</td><td><code>https://api.packstack.io/mcp</code></td></tr>
+      <tr><td>Protected resource metadata (RFC 9728)</td><td><code>https://api.packstack.io/.well-known/oauth-protected-resource/mcp</code></td></tr>
+      <tr><td>Authorization server metadata (RFC 8414)</td><td><code>https://api.packstack.io/.well-known/oauth-authorization-server</code></td></tr>
+      <tr><td>Authorize</td><td><code>https://api.packstack.io/oauth/authorize</code></td></tr>
+      <tr><td>Token</td><td><code>https://api.packstack.io/oauth/token</code></td></tr>
+      <tr><td>Revoke (RFC 7009)</td><td><code>https://api.packstack.io/oauth/revoke</code></td></tr>
+      <tr><td>Dynamic client registration (RFC 7591)</td><td><code>https://api.packstack.io/oauth/register</code></td></tr>
+    </tbody>
+  </table>
+  <p>The issuer is <code>https://api.packstack.io</code>. The canonical resource identifier — what you pass as <code>resource</code> (RFC 8707) and what every token is bound to — is exactly:</p>
+  <CopyField value="https://api.packstack.io/mcp" label="resource" />
+
+  <h2>Transport</h2>
+  <p>Streamable HTTP per the MCP specification (2025-11-25 and later). The server is stateless: each JSON-RPC request is one HTTP POST and returns JSON (<code>Accept: application/json, text/event-stream</code> is accepted; responses are JSON). There is no SSE-only legacy endpoint. Every request needs <code>Authorization: Bearer &lt;access_token&gt;</code>; tokens in the query string are rejected.</p>
+
+  <h2>Authorization</h2>
+  <p>OAuth 2.1 authorization-code flow with PKCE. Concretely:</p>
+  <ul>
+    <li>An unauthenticated request to <code>/mcp</code> returns <code>401</code> with <code>WWW-Authenticate: Bearer resource_metadata="…", scope="packstack:read packstack:write"</code>.</li>
+    <li><strong>Client registration:</strong> Client ID Metadata Documents are preferred (<code>client_id_metadata_document_supported: true</code>) — use your HTTPS metadata URL as <code>client_id</code>. Dynamic registration is available as a fallback. Only public clients (<code>token_endpoint_auth_method: none</code>) are issued tokens; ask us about pre-registered confidential clients.</li>
+    <li><strong>PKCE</strong> with <code>S256</code> is required; <code>plain</code> is rejected.</li>
+    <li><strong><code>resource</code></strong> is required on both the authorization and token requests and must equal the canonical resource above.</li>
+    <li>Redirect URIs must match a registered value exactly; loopback URIs (<code>http://127.0.0.1/…</code>, <code>http://localhost/…</code>) match with the port ignored, per RFC 8252.</li>
+    <li>Authorization responses include <code>iss</code> (RFC 9207); <code>state</code> is echoed unchanged.</li>
+    <li>The token endpoint takes <code>application/x-www-form-urlencoded</code> and returns RFC 6749 error codes (<code>invalid_grant</code>, <code>invalid_client</code>, <code>invalid_scope</code>, <code>invalid_target</code>, <code>unsupported_grant_type</code>).</li>
+  </ul>
+
+  <h3>Scopes</h3>
+  <table>
+    <thead><tr><th>Scope</th><th>Grants</th></tr></thead>
+    <tbody>
+      <tr><td><code>packstack:read</code></td><td>All read tools and prompts. Free for every account.</td></tr>
+      <tr><td><code>packstack:write</code></td><td>All write tools. Implies read. Calls additionally require the user to have an active subscription; otherwise the tool returns an <code>isError</code> result explaining that.</td></tr>
+      <tr><td><code>offline_access</code></td><td>A refresh token is issued.</td></tr>
+    </tbody>
+  </table>
+  <p>Request both <code>packstack:read</code> and <code>packstack:write</code> up front. Calling a write tool with a read-only token returns HTTP <code>403</code> with <code>WWW-Authenticate: Bearer error="insufficient_scope", scope="packstack:read packstack:write"</code>; clients that implement step-up can act on it, but most hosted assistants don't, and users then have to reconnect.</p>
+
+  <h3>Tokens</h3>
+  <p>Access tokens are opaque and live one hour. Refresh tokens rotate on every use and expire after 30 days idle or one year absolute; presenting a rotated-out refresh token revokes the whole token family. Refresh may narrow scope, never widen it. Users can revoke a client's grant at any time from Settings → Connected apps; the next request gets <code>401</code>.</p>
+
+  <h2>Tools</h2>
+  <p>Ten read tools (<code>get_me</code>, <code>list_trips</code>, <code>get_trip</code>, <code>search_gear</code>, <code>get_item</code>, <code>list_categories</code>, <code>list_kits</code>, <code>get_kit</code>, <code>search_catalog</code>, <code>list_hiker_profiles</code>) and sixteen write tools covering trips, packs, gear, kits and gear lifecycle. Every tool carries MCP annotations (<code>readOnlyHint</code>, <code>destructiveHint: false</code> throughout — there are no delete tools) and returns <code>structuredContent</code> alongside text. Weights always include <code>grams</code> and a <code>display</code> string in the user's unit; trip distances and temperatures likewise carry both systems. Call <code>tools/list</code> for the live schemas; descriptions are written for the model and are the source of truth.</p>
+  <p>Three prompts are exposed via <code>prompts/list</code>: <code>shakedown</code>, <code>plan_pack</code>, <code>lighten</code>, each taking a <code>trip</code> argument.</p>
+
+  <h2>Limits</h2>
+  <ul>
+    <li>Per IP: 30 requests/min to <code>/oauth/authorize</code>, 20/min to <code>/oauth/token</code> and <code>/oauth/revoke</code>, 10/min to <code>/oauth/register</code>. <code>429</code> with <code>Retry-After</code> when exceeded.</li>
+    <li>Tool results cap lists at 500 gear items and 100 catalog products per call.</li>
+    <li>The catalog search tool is read-only and public data; everything else is scoped to the authorizing user.</li>
+  </ul>
+
+  <h2>Changelog</h2>
+  <ul>
+    <li><strong>2026-09-17</strong> — Write tools (16) and the <code>packstack:write</code> scope. Both scopes now requested at first connection.</li>
+    <li><strong>2026-09-17</strong> — Initial release: OAuth 2.1 authorization server, read tools (10), prompts (3).</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Integration questions, pre-registered client requests, and security reports: <a href="mailto:support@packstack.io">support@packstack.io</a>.</p>
+</DocsLayout>

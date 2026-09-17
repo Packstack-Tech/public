@@ -1,0 +1,42 @@
+---
+import DocsLayout from "../../../layouts/DocsLayout.astro"
+
+export const prerender = true
+---
+
+<DocsLayout
+  title="Permissions and privacy"
+  description="What you're agreeing to on the consent screen, what your assistant can and can't see, and how to take access away."
+  path="/developers/mcp/permissions"
+>
+  <h2>The consent screen</h2>
+  <p>When an assistant connects, Packstack shows a page on <code>app.packstack.io</code> — never inside the assistant — naming the app that's asking and listing exactly two permissions:</p>
+  <ul>
+    <li><strong>Read your trips, packs and gear.</strong> See your trips, packing lists, gear closet, kits and categories. Never your email, payment details or hiker body measurements.</li>
+    <li><strong>Make changes on your behalf.</strong> Create and edit trips, packs, gear and kits, and archive or restore gear. It cannot delete anything. Requires a Packstack subscription.</li>
+  </ul>
+  <p>Some assistants also ask to "stay connected," which just means they'll refresh their access automatically rather than asking you to sign in again. You'll see the address the assistant will return to after you allow; for apps running on your own computer (like Claude Code) it will be a <code>localhost</code> address, and the page says so.</p>
+
+  <h2>Free accounts and the subscription gate</h2>
+  <p>You can grant both permissions on a free account. Reading works right away. When your assistant tries to change something, Packstack refuses and tells it that editing requires a subscription; the assistant will usually relay that and point you to <a href="https://app.packstack.io">app.packstack.io</a>. The check happens on every change, so upgrading takes effect immediately, and a lapsed subscription is cut off immediately too — no reconnecting either way.</p>
+
+  <h2>What your assistant never sees</h2>
+  <ul>
+    <li>Your email address, sign-in method, or anything about payment.</li>
+    <li>Body measurements on hiker profiles — only profile names, so it can tell whose pack is whose.</li>
+    <li>Other users' data. Everything is scoped to your account.</li>
+    <li>Your Packstack password or session. The connector uses its own short-lived tokens that are useless anywhere but the connector.</li>
+  </ul>
+
+  <h2>What's shared with the AI provider</h2>
+  <p>Whatever your assistant asks Packstack for — your gear list, a trip's details — goes to that assistant's provider (Anthropic, OpenAI, and so on) as part of your conversation, under <em>their</em> terms and retention rules, not ours. Packstack only answers the specific requests the assistant makes; nothing is pushed to them on its own. If that matters for a particular trip or item, don't ask the assistant about it.</p>
+
+  <h2>Taking access away</h2>
+  <p>Open the Packstack web app → <a href="https://app.packstack.io/settings">Settings</a> → <strong>Connected apps</strong>. Each connected assistant is listed with what it can do, when it connected and when it was last used. <strong>Disconnect</strong> revokes every token it holds, effective on its next request. Removing the connector inside the assistant also works, though Packstack won't know until the next attempt fails.</p>
+
+  <h2>How tokens work, briefly</h2>
+  <p>Access tokens last one hour and are stored only as hashes. Assistants renew them with a refresh token that rotates on every use; a reused old token revokes the whole chain. Nothing about your account is encoded in the token itself. The full technical detail is on the <a href="/developers/mcp/protocol">developer page</a>.</p>
+
+  <h2>Questions</h2>
+  <p>Email <a href="mailto:support@packstack.io">support@packstack.io</a>. Our <a href="/privacy">privacy policy</a> and <a href="/terms">terms</a> apply to the connector as they do to the rest of Packstack.</p>
+</DocsLayout>

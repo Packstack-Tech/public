@@ -1,0 +1,67 @@
+---
+import DocsLayout from "../../../layouts/DocsLayout.astro"
+import CopyField from "../../../components/CopyField.astro"
+
+export const prerender = true
+---
+
+<DocsLayout
+  title="Connect Packstack to your AI assistant"
+  description="Let Claude, ChatGPT or any MCP-compatible assistant read your real trips and gear — and, with a subscription, edit them — while you plan."
+  path="/developers/mcp"
+>
+  <p>
+    Packstack has an <strong>MCP server</strong>. MCP (Model Context Protocol) is the open standard AI assistants use to connect to apps. Once connected, your assistant can look at your actual gear closet, your trips and what's packed in each one, do the arithmetic with real weights, and — if you subscribe — make changes for you. No copying and pasting lists back and forth.
+  </p>
+
+  <h2>What it looks like</h2>
+  <blockquote>
+    <p><strong>You:</strong> Give my Isle Royale trip a shakedown.</p>
+    <p><strong>Assistant:</strong> Your base weight is 14.7 lb for Jerad and 17.3 lb for Anne. Three things first: you're each carrying a Half Dome 2 Plus — sharing one drops 5.3 lb from the group. Jerad has no sleeping pad or water treatment listed. And there are duplicate kettles in both packs — want me to remove them?</p>
+  </blockquote>
+
+  <h2>The server address</h2>
+  <p>Every assistant asks for this once. It's the same for everyone; there's nothing to configure.</p>
+  <CopyField value="https://api.packstack.io/mcp" label="Packstack MCP server URL" />
+
+  <h2>Connect from Claude</h2>
+  <p>Works on claude.ai, the desktop app and mobile — connect once and it's available everywhere.</p>
+  <ol>
+    <li>Open <strong>Settings → Connectors</strong>.</li>
+    <li>Choose <strong>Add custom connector</strong>, paste the server URL above, and confirm.</li>
+    <li>Claude opens a Packstack page. Sign in if asked, review what's being requested, and click <strong>Allow</strong>.</li>
+    <li>Back in Claude, start a chat and turn the Packstack connector on for that chat if it isn't already. Try "what are my trips?"</li>
+  </ol>
+  <p>In Claude, the three built-in reviews (<code>/shakedown</code>, <code>/plan_pack</code>, <code>/lighten</code>) appear as slash commands once the connector is on.</p>
+
+  <h2>Connect from Claude Code</h2>
+  <pre><code>claude mcp add --transport http packstack https://api.packstack.io/mcp</code></pre>
+  <p>The first call opens your browser for the same Packstack consent screen.</p>
+
+  <h2>Connect from ChatGPT</h2>
+  <ol>
+    <li>Turn on <strong>Developer mode</strong> under Settings → Connectors (Advanced), if you haven't.</li>
+    <li>Choose <strong>Create</strong>, give it a name ("Packstack"), paste the server URL, and pick <strong>OAuth</strong> for authentication.</li>
+    <li>Complete the Packstack consent screen when prompted.</li>
+  </ol>
+
+  <h2>Connect from Cursor, Windsurf and other MCP clients</h2>
+  <p>Add a remote (HTTP) MCP server with the URL above. Any client that supports OAuth for remote servers will walk you through the same consent screen; the flow is standard, so you don't need an API key.</p>
+
+  <h2>What it costs</h2>
+  <p>
+    <strong>Reading is free</strong> for every Packstack account. <strong>Making changes</strong> — adding gear, building packs, editing trips — is part of the Packstack subscription. If you're on the free plan, you can still connect: your assistant can review everything, and it will point you to <a href="https://app.packstack.io">app.packstack.io</a> if you ask it to edit.
+  </p>
+
+  <h2>Disconnecting</h2>
+  <p>
+    Go to <strong>Settings → Connected apps</strong> in the <a href="https://app.packstack.io/settings">Packstack web app</a> and choose Disconnect. Access is cut off immediately. You can also remove the connector from the assistant's side.
+  </p>
+
+  <h2>Next</h2>
+  <ul>
+    <li><a href="/developers/mcp/capabilities">What your assistant can do</a></li>
+    <li><a href="/developers/mcp/permissions">Permissions and privacy</a></li>
+    <li><a href="/developers/mcp/prompts">Example prompts</a></li>
+  </ul>
+</DocsLayout>

@@ -1,0 +1,51 @@
+---
+import DocsLayout from "../../../layouts/DocsLayout.astro"
+
+export const prerender = true
+---
+
+<DocsLayout
+  title="Example prompts"
+  description="Things to say once Packstack is connected. Swap in your own trip and gear names."
+  path="/developers/mcp/prompts"
+>
+  <h2>Reviewing a trip</h2>
+  <ul>
+    <li>"Give my Isle Royale trip a shakedown."</li>
+    <li>"Which of my trips has the heaviest pack, and why?"</li>
+    <li>"Is my sleep system warm enough for the low on my Wind River trip?"</li>
+    <li>"What in my Boulder pack is redundant?"</li>
+    <li>"How many nights is my next trip and what's the daily mileage?"</li>
+  </ul>
+
+  <h2>Working with your gear closet</h2>
+  <ul>
+    <li>"What's the heaviest thing I own?"</li>
+    <li>"Do I own anything I could use as a rain layer?"</li>
+    <li>"Is my headlamp in more than one pack?"</li>
+    <li>"List everything in my closet with no weight entered."</li>
+    <li>"What have I retired this year?"</li>
+  </ul>
+
+  <h2>Shopping and comparing</h2>
+  <ul>
+    <li>"Compare my sleeping bag's weight to a 30° quilt from the catalog."</li>
+    <li>"Find the lightest 1-person trekking-pole tent in the catalog under 20 oz."</li>
+    <li>"If I swapped my Half Dome for an X-Mid 2, how much would I save?"</li>
+  </ul>
+
+  <h2>Making changes <span class="text-label text-base font-normal">(subscribers)</span></h2>
+  <ul>
+    <li>"Set up a 5-night Wind River High Route trip starting August 10, lows around 28°F."</li>
+    <li>"Plan a pack for my Boulder trip from what I already own, then add it to the trip."</li>
+    <li>"Mark my rain jacket and trail runners as worn in the Isle Royale pack."</li>
+    <li>"Remove the duplicate tea kettle from Jerad's pack."</li>
+    <li>"Add a Nemo Tensor Regular Wide to my closet from the catalog, then put it in Anne's pack."</li>
+    <li>"The butane in my closet should be consumable — fix it."</li>
+    <li>"I retired the old headlamp — archive it and note it wore out."</li>
+    <li>"Make a 'Cook kit' from my stove, fuel, pot and spoon."</li>
+  </ul>
+
+  <h2>Tips</h2>
+  <p>Ask your assistant to <strong>read the trip first and confirm what it's about to change</strong> before editing — it will show you item names and ids, and it can't delete anything regardless. Weights come back in your preferred units and in grams; if you want the other system, just ask. If it says a trip or item wasn't found, it will usually list what it can see; use those names.</p>
+</DocsLayout>

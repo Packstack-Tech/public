@@ -1,0 +1,44 @@
+---
+import DocsLayout from "../../../layouts/DocsLayout.astro"
+
+export const prerender = true
+---
+
+<DocsLayout
+  title="Troubleshooting"
+  description="The connector problems people actually hit, and what fixes each one."
+  path="/developers/mcp/troubleshooting"
+>
+  <h2>"Couldn't reach the MCP server" when adding the connector</h2>
+  <p>Check the URL is exactly <code>https://api.packstack.io/mcp</code> — with <code>https</code>, no trailing slash, no <code>www</code>. If it's right, Packstack's API may be briefly unavailable; try again in a minute. You can confirm the server is up by opening <a href="https://api.packstack.io/.well-known/oauth-protected-resource/mcp">this address</a> in a browser — it should show a small block of text mentioning Packstack.</p>
+
+  <h2>The consent page says the request has expired</h2>
+  <p>Consent links are valid for ten minutes. Go back to your assistant and start the connection again; it will open a fresh page.</p>
+
+  <h2>I'm asked to sign in on the consent page</h2>
+  <p>That's expected if you weren't already signed in to the Packstack web app in that browser. Sign in with the same method you use for the app (email code, Google or Apple) and you'll return to the consent page automatically.</p>
+
+  <h2>"Insufficient scope" or "only has read access" when editing</h2>
+  <p>Your connection was made before editing was available, or you connected with a client that requested read-only access. Disconnect and reconnect: remove the Packstack connector in your assistant's settings, add it again, and allow both permissions on the consent screen. If you'd rather, disconnect from Packstack's side first under Settings → Connected apps.</p>
+
+  <h2>"Requires a Packstack subscription" when editing</h2>
+  <p>Reading is free; changes are part of the subscription. Upgrade at <a href="https://app.packstack.io">app.packstack.io</a>. The change takes effect on the assistant's next request — no need to reconnect.</p>
+
+  <h2>New features aren't showing up</h2>
+  <p>Assistants fetch the list of what Packstack can do when they connect and usually cache it. If we've added something and your assistant says it can't do it, disconnect and reconnect the connector. Starting a fresh conversation is sometimes enough.</p>
+
+  <h2>My assistant says a trip or item wasn't found</h2>
+  <p>It's looking at the account you connected. If you have more than one Packstack account, check which one you authorized (the consent page shows the username; so does Settings → Connected apps). Items that have been archived are excluded from ordinary searches — ask it to include archived gear.</p>
+
+  <h2>Weights look wrong</h2>
+  <p>Totals are computed from what's in your closet, so a wrong weight, a missing weight, or a consumable that isn't flagged as one shows up in the totals. Ask your assistant to list items with no weight entered, or to flag your fuel and food as consumable — with a subscription it can fix them directly.</p>
+
+  <h2>The assistant keeps asking me to re-approve</h2>
+  <p>Some clients don't store refresh tokens and re-run consent when the one-hour access token expires. Claude, Claude Code and ChatGPT all store them; if you're using another client, check whether it supports the <code>offline_access</code> scope.</p>
+
+  <h2>I want it gone</h2>
+  <p>Settings → Connected apps → <strong>Disconnect</strong> in the Packstack web app revokes access immediately. Then remove the connector from the assistant so it stops trying.</p>
+
+  <h2>Still stuck</h2>
+  <p>Email <a href="mailto:support@packstack.io">support@packstack.io</a> with the assistant you're using and the exact message you saw.</p>
+</DocsLayout>

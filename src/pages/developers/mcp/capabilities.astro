@@ -1,0 +1,47 @@
+---
+import DocsLayout from "../../../layouts/DocsLayout.astro"
+
+export const prerender = true
+---
+
+<DocsLayout
+  title="What your assistant can do"
+  description="Everything the Packstack connector exposes, in plain language. Reading is free; making changes requires a subscription."
+  path="/developers/mcp/capabilities"
+>
+  <h2>Your account</h2>
+  <p>Your assistant can see your username, your preferred units (pounds and ounces or kilograms and grams, miles or kilometers, °F or °C) and whether you have a subscription. It uses your units automatically, so you never have to ask for a conversion.</p>
+
+  <h2>Your trips</h2>
+  <p>It can list your trips with dates, location, distance, temperature range, how many packs are on each one and the base and total weight across all of them. It can filter to upcoming or past trips, or search by name or location.</p>
+  <p>For any single trip it can pull the full picture: the trip details (dates, nights, distance per day, daily elevation, low and high temperatures, terrain, pace, and your trail notes) and every pack on the trip with items grouped by category, quantities, which items are worn and which are consumable, per-item weights, and base / worn / consumable / total weight for each pack and for the trip as a whole.</p>
+
+  <h2>Your gear closet</h2>
+  <p>It can search everything you own — by name, brand or product, by category, by whether it's consumable, and by active or archived status — and sort by weight to find your heaviest items. For any one item it can show the full details plus every trip, pack and kit that item is currently in, and its history (when you got it, condition, whether it's been retired).</p>
+  <p>It can list your categories with an item count for each, and your kits (reusable bundles like a cook kit or first aid) with their contents and total weight.</p>
+
+  <h2>The Packstack gear catalog</h2>
+  <p>It can search Packstack's catalog of thousands of products with verified weights — not your gear, but what's out there. This is how it suggests lighter alternatives with real numbers, checks the weight of something you're considering, or compares two products.</p>
+
+  <h2>Built-in reviews</h2>
+  <p>Three ready-made prompts your assistant can run (in Claude they appear as slash commands once connected):</p>
+  <p><strong>Shakedown</strong> reviews one trip's gear list the way experienced backpackers do: headline weights against ultralight and lightweight thresholds, the handful of items driving your base weight with lighter catalog alternatives, redundant items, missing safety items (navigation, insulation, rain, first aid, repair, light, fire, water, sun, emergency shelter), and whether your sleep system and shelter fit the forecast low.</p>
+  <p><strong>Plan a pack</strong> proposes a complete pack for a trip using only gear you already own, organized by category with the reasoning for each choice and a list of gaps, then asks before changing anything.</p>
+  <p><strong>Lighten</strong> ranks the biggest weight savings available for a trip — items to swap (with real catalog replacements and grams saved) and items to leave behind — and shows your projected new base weight.</p>
+
+  <h2>Making changes <span class="text-label text-base font-normal">(subscribers)</span></h2>
+  <p>When you connect, Packstack asks you to allow both reading and "Make changes on your behalf." Free accounts can allow it too; edits simply ask you to upgrade until you subscribe. With a subscription your assistant can:</p>
+  <p><strong>Trips.</strong> Create a trip from a conversation ("set up a 5-night Wind River trip starting August 10"), fill in or fix dates, temperatures, distance, elevation, terrain and notes, and clone an existing trip as a starting point. Give it a location and Packstack researches the trail in the background.</p>
+  <p><strong>Packs.</strong> Add a second pack to a trip (one per person on a group trip), rename packs, add gear from your closet with quantities, mark items as worn so they leave your base weight, tick items as packed, take items out of a pack, and drop a whole kit in at once.</p>
+  <p><strong>Gear closet.</strong> Add new gear — preferably from the catalog, so the weight is verified and no duplicate product is created; if it looks like something you already own or something already in the catalog, it stops and asks you to choose. Edit an item's name, weight, category, consumable flag, calories, price, link or notes. Archive gear you no longer carry and restore it later. Record gear history: when you bought it, its condition, repairs, retirement.</p>
+  <p><strong>Kits.</strong> Create and edit reusable bundles.</p>
+  <p>Every change is reversible from the app, and nothing can be deleted through a connected app.</p>
+
+  <h2>What it can't do</h2>
+  <ul>
+    <li>Delete anything — trips, packs, kits, gear or your account. There is no plan to allow deletion through connected apps.</li>
+    <li>Change your account settings, units or subscription.</li>
+    <li>See your email, payment details, or the body measurements on hiker profiles — it sees hiker profile names only.</li>
+    <li>Make changes on a free account. Reading works everywhere; editing is part of the subscription.</li>
+  </ul>
+</DocsLayout>

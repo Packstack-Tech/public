@@ -1,0 +1,84 @@
+---
+/**
+ * Shared frame for the /developers/mcp documentation pages: page header,
+ * a left-hand section nav (top on phones), the site's prose styling, and the
+ * footer. Content pages are plain Astro/HTML so they can be edited without a
+ * content-collection round trip.
+ */
+import BaseLayout from "./BaseLayout.astro"
+import PageHeader from "../components/PageHeader.astro"
+import PageFooter from "../components/PageFooter.astro"
+
+interface Props {
+  title: string
+  description: string
+  /** Current page's path, used to highlight the nav entry. */
+  path: string
+}
+
+const { title, description, path } = Astro.props
+
+export const MCP_NAV = [
+  { href: "/developers/mcp", label: "Connect an AI assistant" },
+  { href: "/developers/mcp/capabilities", label: "What it can do" },
+  { href: "/developers/mcp/permissions", label: "Permissions & privacy" },
+  { href: "/developers/mcp/prompts", label: "Example prompts" },
+  { href: "/developers/mcp/troubleshooting", label: "Troubleshooting" },
+  { href: "/developers/mcp/protocol", label: "For developers" },
+]
+
+const prose = [
+  "prose prose-invert max-w-none",
+  "prose-headings:text-white prose-headings:font-bold prose-headings:scroll-mt-24",
+  "prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:text-primary",
+  "prose-h3:text-lg prose-h3:mt-8 prose-h3:mb-3",
+  "prose-p:text-softwhite prose-p:leading-7",
+  "prose-a:text-primary hover:prose-a:text-white",
+  "prose-strong:text-white",
+  "prose-li:text-softwhite prose-ul:text-softwhite prose-ol:text-softwhite",
+  "prose-blockquote:border-primary prose-blockquote:text-label",
+  "prose-code:text-accent-green prose-code:bg-surface prose-code:px-1 prose-code:rounded prose-code:before:content-none prose-code:after:content-none",
+  "prose-pre:bg-surface prose-pre:border prose-pre:border-border prose-pre:text-softwhite",
+  "prose-table:text-sm prose-th:text-label prose-th:font-medium prose-td:text-softwhite",
+].join(" ")
+---
+
+<BaseLayout title={`${title} | Packstack`} description={description}>
+  <div class="bg-background min-h-screen flex flex-col">
+    <PageHeader maxWidth="6xl" />
+
+    <div class="max-w-6xl mx-auto w-full px-4 md:px-8 py-10 flex-1 flex flex-col lg:flex-row gap-10">
+      <aside class="lg:w-56 shrink-0">
+        <p class="text-[11px] uppercase tracking-wider text-label font-semibold mb-3">AI assistants</p>
+        <nav class="flex flex-wrap gap-2 lg:flex-col lg:gap-0.5 lg:sticky lg:top-24" aria-label="MCP docs">
+          {MCP_NAV.map((item) => {
+            const active = item.href === path
+            return (
+              <a
+                href={item.href}
+                aria-current={active ? "page" : undefined}
+                class={`text-sm rounded-md px-3 py-1.5 no-underline transition-colors ${
+                  active
+                    ? "bg-surface text-white border border-border lg:border-transparent lg:bg-surface"
+                    : "text-softwhite hover:text-white hover:bg-surface/60"
+                }`}
+              >
+                {item.label}
+              </a>
+            )
+          })}
+        </nav>
+      </aside>
+
+      <main class="min-w-0 flex-1 max-w-3xl">
+        <h1 class="text-3xl md:text-4xl font-bold mb-3">{title}</h1>
+        <p class="text-lg text-softwhite mb-8">{description}</p>
+        <div class={prose}>
+          <slot />
+        </div>
+      </main>
+    </div>
+
+    <PageFooter />
+  </div>
+</BaseLayout>

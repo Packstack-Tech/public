@@ -1,0 +1,49 @@
+---
+/** A read-only value with a copy button. No framework; a few lines of inline JS. */
+interface Props {
+  value: string
+  label?: string
+}
+const { value, label } = Astro.props
+const id = `copy-${Math.random().toString(36).slice(2, 8)}`
+---
+
+<div class="not-prose my-4">
+  {label && <p class="text-xs text-label mb-1.5">{label}</p>}
+  <div class="flex items-stretch">
+    <input
+      id={id}
+      type="text"
+      readonly
+      value={value}
+      class="flex-1 min-w-0 bg-surface border border-border rounded-l-md px-3 py-2 text-sm text-softwhite font-mono select-all focus:outline-none"
+    />
+    <button
+      type="button"
+      data-copy-for={id}
+      class="inline-flex items-center gap-1.5 bg-surface border border-l-0 border-border rounded-r-md px-3 text-xs text-label hover:text-white transition-colors cursor-pointer"
+    >
+      <span data-copy-label>Copy</span>
+    </button>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>("button[data-copy-for]").forEach((btn) => {
+    if (btn.dataset.bound) return
+    btn.dataset.bound = "1"
+    btn.addEventListener("click", async () => {
+      const input = document.getElementById(btn.dataset.copyFor!) as HTMLInputElement | null
+      if (!input) return
+      const label = btn.querySelector("[data-copy-label]")!
+      try {
+        await navigator.clipboard.writeText(input.value)
+        label.textContent = "Copied!"
+      } catch {
+        input.select()
+        label.textContent = "Select & copy"
+      }
+      setTimeout(() => (label.textContent = "Copy"), 2000)
+    })
+  })
+</script>
