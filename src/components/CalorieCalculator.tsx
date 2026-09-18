@@ -258,7 +258,7 @@ export default function CalorieCalculator() {
           <button
             onClick={toggleSystem}
             className={`px-3 py-1.5 rounded-l-md transition-colors cursor-pointer ${
-              system === "imperial" ? "bg-primary text-white" : "text-label hover:text-white"
+              system === "imperial" ? "bg-primary text-on-primary" : "text-label hover:text-white"
             }`}
           >
             Imperial
@@ -266,7 +266,7 @@ export default function CalorieCalculator() {
           <button
             onClick={toggleSystem}
             className={`px-3 py-1.5 rounded-r-md transition-colors cursor-pointer ${
-              system === "metric" ? "bg-primary text-white" : "text-label hover:text-white"
+              system === "metric" ? "bg-primary text-on-primary" : "text-label hover:text-white"
             }`}
           >
             Metric

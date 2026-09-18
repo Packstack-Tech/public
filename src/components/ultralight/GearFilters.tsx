@@ -70,7 +70,7 @@ export const GearFilters: FC<Props> = ({
         >
           Brand
           {selectedBrands.size > 0 && (
-            <span className="bg-primary text-white rounded-full px-1.5 text-[10px] font-semibold">
+            <span className="bg-primary text-on-primary rounded-full px-1.5 text-[10px] font-semibold">
               {selectedBrands.size}
             </span>
           )}

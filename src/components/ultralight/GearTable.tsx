@@ -213,7 +213,7 @@ const GearTable: FC<Props> = ({ slug, subcategory, initialData }) => {
             onClick={toggleSystem}
             className={`flex-1 sm:flex-initial px-3 py-1.5 rounded-l-md transition-colors cursor-pointer ${
               system === "metric"
-                ? "bg-primary text-white"
+                ? "bg-primary text-on-primary"
                 : "text-label hover:text-white"
             }`}
           >
@@ -223,7 +223,7 @@ const GearTable: FC<Props> = ({ slug, subcategory, initialData }) => {
             onClick={toggleSystem}
             className={`flex-1 sm:flex-initial px-3 py-1.5 rounded-r-md transition-colors cursor-pointer ${
               system === "imperial"
-                ? "bg-primary text-white"
+                ? "bg-primary text-on-primary"
                 : "text-label hover:text-white"
             }`}
           >

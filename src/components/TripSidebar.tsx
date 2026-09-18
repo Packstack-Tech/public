@@ -196,9 +196,9 @@ export const TripSidebar: FC<Props> = ({
           </div>
           {totals.totalCalories > 0 && (
             <div className="flex items-center gap-1.5 mt-3 text-xs">
-              <Flame size={13} className="text-orange-400" />
+              <Flame size={13} className="text-accent-orange" />
               <span className="text-label">Calories</span>
-              <span className="text-orange-400 font-bold">
+              <span className="text-accent-orange font-bold">
                 {totals.totalCalories.toLocaleString()} kcal
               </span>
             </div>

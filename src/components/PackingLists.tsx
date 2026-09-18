@@ -75,9 +75,9 @@ export function PackingLists({ packs, aggregateUnit, itemUnit }: Props) {
                 </dl>
                 {summary.totalCalories > 0 && (
                   <p className="mt-2 inline-flex items-center gap-1.5 text-xs leading-none">
-                    <Flame size={13} className="text-orange-400" />
+                    <Flame size={13} className="text-accent-orange" />
                     <span className="text-label">Calories</span>
-                    <span className="text-orange-400 font-semibold tabular-nums">
+                    <span className="text-accent-orange font-semibold tabular-nums">
                       {summary.totalCalories.toLocaleString()} kcal
                     </span>
                   </p>

@@ -83,6 +83,11 @@ const faqs = [
     q: "What's the difference between base weight, worn weight, and consumables?",
     a: "Base weight is everything in your pack excluding food, water, and fuel. Worn weight covers items you wear or carry on your body, like shoes and trekking poles. Consumables are things you use up along the way. Packstack tracks all three separately so you know exactly what you're hauling.",
   },
+  {
+    q: "Can I connect Packstack to my AI assistant?",
+    a: "Yes. Packstack has an MCP server, the open standard assistants use to connect to apps, so Claude, ChatGPT, Claude Code, Cursor and any other MCP-compatible client can read your real gear closet, trips and packs while you plan — ask for a shakedown and it works from your actual base weight, not a pasted list. Connecting takes one sign-in, no API key. Reading is free on every account; making changes through your assistant (adding gear, building packs, editing trips) is part of Packstack Pro.",
+    link: { href: "/developers/mcp", label: "Connect an AI assistant" },
+  },
 ]
 
 const faqSchema = {
@@ -97,8 +102,8 @@ const faqSchema = {
 ---
 
 <BaseLayout
-  title="Packstack | Backpacking Gear List Builder & Pack Weight Tracker"
-  description="Build your backpacking gear list, track base weight down to the gram, and plan food and water with Packstack — the free gear list app for backpackers and ultralight hikers. Import from LighterPack in seconds."
+  title="Packstack | Backpacking Gear List Builder & Base Weight Tracker"
+  description="Build your backpacking gear list, track base weight down to the gram, and plan food and water with Packstack — the free gear list app for backpackers. Import from LighterPack in seconds."
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
@@ -136,25 +141,25 @@ const faqSchema = {
           iOS
           <span class="text-label">&middot;</span>
           Android
+          <span class="text-label">&middot;</span>
+          AI
         </p>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-          Your Backpacking Gear List,<br class="hidden sm:block" />
-          Down to the Gram
+          The Modern Packing App<br class="hidden sm:block" /> Built for Backpackers
         </h1>
         <p class="mt-6 text-lg md:text-xl max-w-xl mx-auto leading-relaxed">
-          Build your gear closet once, spin up a gear list for any trip in
-          minutes, and know exactly what your pack weighs. No spreadsheets required.
+          Packing for your backpacking trip shouldn't be as hard as the trail itself. Packstack makes it easy to build gear lists, track base weight, and a whole lot more.
         </p>
         <div class="mt-8 flex items-center justify-center">
           <a
             href="https://app.packstack.io/auth/register"
-            class="bg-primary hover:bg-primary-dark text-white rounded-md py-3 px-8 font-bold text-lg transition-colors no-underline w-full sm:w-auto text-center"
+            class="bg-primary hover:bg-primary-dark text-on-primary rounded-md py-3 px-8 font-bold text-lg transition-colors no-underline w-full sm:w-auto text-center"
           >
             Get Started
           </a>
         </div>
         <p class="mt-4 text-sm text-label">
-          Free to start &middot; No credit card required
+          Join 3,000+ backpackers already using Packstack.
         </p>
       </div>
 
@@ -186,17 +191,6 @@ const faqSchema = {
             />
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Social proof -->
-    <section class="py-8 md:py-10 px-4 border-y border-border/60 bg-surface/20">
-      <div class="max-w-3xl mx-auto text-center">
-        <p class="text-lg md:text-xl text-softwhite">
-          Trusted by <span class="text-white font-bold">3,000+ backpackers</span>,
-          from weekend warriors to thru-hikers, to plan lighter,
-          better-organized packs.
-        </p>
       </div>
     </section>
 
@@ -412,7 +406,7 @@ const faqSchema = {
           </p>
           <a
             href="https://app.packstack.io/auth/register"
-            class="inline-block bg-primary hover:bg-primary-dark text-white rounded-md py-3 px-8 font-bold transition-colors no-underline"
+            class="inline-block bg-primary hover:bg-primary-dark text-on-primary rounded-md py-3 px-8 font-bold transition-colors no-underline"
           >
             Start for Free
           </a>
@@ -538,7 +532,7 @@ const faqSchema = {
           <div class="flex flex-col gap-3 w-full md:w-auto shrink-0">
             <a
               href="https://app.packstack.io/auth/register"
-              class="bg-primary hover:bg-primary-dark text-white rounded-md py-2.5 px-6 font-bold transition-colors no-underline text-center"
+              class="bg-primary hover:bg-primary-dark text-on-primary rounded-md py-2.5 px-6 font-bold transition-colors no-underline text-center"
             >
               Import Your Gear List
             </a>
@@ -704,13 +698,18 @@ const faqSchema = {
       <div class="max-w-2xl mx-auto">
         <h2 class="text-center text-white text-2xl md:text-3xl font-bold mb-10">Frequently asked questions</h2>
         <div class="divide-y divide-border border-y border-border">
-          {faqs.map(({ q, a }) => (
+          {faqs.map(({ q, a, link }) => (
             <details class="group py-5">
               <summary class="cursor-pointer list-none flex items-center justify-between gap-4 text-white font-semibold [&::-webkit-details-marker]:hidden">
                 {q}
                 <svg class="w-4 h-4 shrink-0 text-label transition-transform group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9" /></svg>
               </summary>
               <p class="mt-3 text-sm leading-relaxed">{a}</p>
+              {link && (
+                <a href={link.href} class="mt-2 inline-block text-sm font-semibold no-underline hover:text-white">
+                  {link.label} &rarr;
+                </a>
+              )}
             </details>
           ))}
         </div>
@@ -727,7 +726,7 @@ const faqSchema = {
         </p>
         <a
           href="https://app.packstack.io/auth/register"
-          class="inline-block bg-primary hover:bg-primary-dark text-white rounded-md py-3 px-8 font-bold text-lg transition-colors no-underline"
+          class="inline-block bg-primary hover:bg-primary-dark text-on-primary rounded-md py-3 px-8 font-bold text-lg transition-colors no-underline"
         >
           Create Your Free Account
         </a>
