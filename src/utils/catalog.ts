@@ -27,7 +27,7 @@ export const SUBCATEGORIES: Record<string, string[]> = {
   Toiletries: ["Hygiene", "Bathroom", "Sun & Bug", "Personal Care"],
   "Water System": ["Filtration", "Purification", "Bottle", "Hydration", "Storage"],
   Food: ["Meal", "Snack", "Beverage", "Storage", "Hanging"],
-  Footware: ["Primary", "Camp Shoe", "Gaiter", "Traction"],
+  Footwear: ["Primary", "Camp Shoe", "Gaiter", "Traction"],
   Tools: ["Knife", "Repair", "Trekking Pole", "Processing"],
   "First Aid": ["Bandage", "Medication", "Blister Care", "Ointment"],
   Safety: ["Survival", "Fire", "Protection"],
