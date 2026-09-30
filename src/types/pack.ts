@@ -11,6 +11,8 @@ export type Pack = {
 export type PackItem = {
   quantity: number
   worn: boolean
+  /** Units worn (1 of 5 shirts). Missing from APIs that predate it. */
+  worn_quantity?: number
   checked: boolean
   sort_order: number
   item_id: number

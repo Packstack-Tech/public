@@ -4,6 +4,7 @@ import type { PackItem } from "../types/pack"
 import type { Unit } from "../types/item"
 import { useCategorizedPackItems } from "../hooks/useCategorizedPackItems"
 import { convertWeight, formatItemWeight } from "../utils/weight"
+import { wornQuantity } from "../utils/packWeight"
 import { ProductName } from "./ProductName"
 
 interface Props {
@@ -76,7 +77,9 @@ export const List: FC<Props> = ({ items, aggregateUnit, itemUnit }) => {
                 </tr>
               </thead>
               <tbody className="text-sm">
-                {items.map(({ item, item_id, quantity, worn }) => {
+                {items.map((packItem) => {
+                  const { item, item_id, quantity } = packItem
+                  const wornUnits = wornQuantity(packItem)
                   const rowCals = (item.calories || 0) * quantity
                   return (
                     <Fragment key={item_id}>
@@ -84,9 +87,17 @@ export const List: FC<Props> = ({ items, aggregateUnit, itemUnit }) => {
                         <td className="py-2.5 px-3 sm:py-3 sm:px-4 align-top">
                           <span className="inline-flex items-center gap-1.5 sm:gap-2">
                             <span className="text-white">{item.name}</span>
-                            {worn && (
-                              <span title="Worn" className="shrink-0">
+                            {wornUnits > 0 && (
+                              <span
+                                title={wornUnits >= quantity ? "Worn" : `${wornUnits} of ${quantity} worn`}
+                                className="inline-flex shrink-0 items-center gap-0.5"
+                              >
                                 <Shirt size={13} className="text-primary" />
+                                {wornUnits < quantity && (
+                                  <span className="text-[11px] leading-none text-primary tabular-nums">
+                                    {wornUnits}
+                                  </span>
+                                )}
                               </span>
                             )}
                             {item.consumable && (

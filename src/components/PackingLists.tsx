@@ -1,7 +1,7 @@
 import { Flame } from "lucide-react"
 import type { Pack, PackItem } from "../types/pack"
 import type { Unit } from "../types/item"
-import { convertWeight } from "../utils/weight"
+import { computePackWeights } from "../utils/packWeight"
 import { List } from "./List"
 import { WeightBreakdownDialog } from "./WeightBreakdownDialog"
 
@@ -14,29 +14,10 @@ interface Props {
 function computeWeightSummary(items: PackItem[], aggregateUnit: Unit) {
   if (items.length === 0) return null
 
-  let base = 0
-  let worn = 0
-  let consumable = 0
-  let total = 0
-
-  for (const { item, quantity, worn: isWorn } of items) {
-    const w =
-      convertWeight(item.weight || 0, item.unit, aggregateUnit).weight *
-      quantity
-    total += w
-    if (isWorn) {
-      worn += w
-    } else if (item.consumable) {
-      consumable += w
-    } else {
-      base += w
-    }
-  }
-
-  let totalCalories = 0
-  for (const { item, quantity } of items) {
-    totalCalories += (item.calories || 0) * quantity
-  }
+  const { base, worn, consumable, total, totalCalories } = computePackWeights(
+    items,
+    aggregateUnit,
+  )
 
   const fmt = (v: number) => `${v.toFixed(2)} ${aggregateUnit}`
   return {
@@ -44,7 +25,7 @@ function computeWeightSummary(items: PackItem[], aggregateUnit: Unit) {
     worn: fmt(worn),
     consumable: fmt(consumable),
     total: fmt(total),
-    totalCalories: Math.round(totalCalories),
+    totalCalories,
   }
 }
 

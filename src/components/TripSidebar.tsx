@@ -6,7 +6,7 @@ import type { UserInfo } from "../types/user"
 import type { Pack, PackItem } from "../types/pack"
 import type { Unit } from "../types/item"
 import { DISTANCE_LABEL } from "../types/consts"
-import { convertWeight } from "../utils/weight"
+import { computePackWeights } from "../utils/packWeight"
 import {
   displayDistance,
   displayElevation,
@@ -51,30 +51,7 @@ function formatDateRange(start?: string, end?: string) {
 }
 
 function computeAggregateSummary(items: PackItem[], aggregateUnit: Unit) {
-  let base = 0
-  let worn = 0
-  let consumable = 0
-  let total = 0
-  let totalCalories = 0
-
-  for (const { item, quantity, worn: isWorn } of items) {
-    const w =
-      convertWeight(item.weight || 0, item.unit, aggregateUnit).weight *
-      quantity
-    total += w
-    if (isWorn) worn += w
-    else if (item.consumable) consumable += w
-    else base += w
-    totalCalories += (item.calories || 0) * quantity
-  }
-
-  return {
-    base,
-    worn,
-    consumable,
-    total,
-    totalCalories: Math.round(totalCalories),
-  }
+  return computePackWeights(items, aggregateUnit)
 }
 
 interface Props {
