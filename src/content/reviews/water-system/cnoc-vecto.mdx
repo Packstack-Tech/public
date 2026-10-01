@@ -14,21 +14,24 @@ description: "The CNOC Vecto is a collapsible TPU water container with a wide sl
 variants:
   - name: "Water Container 2L"
     weight_grams: 74.0
+    image_url: "https://m.media-amazon.com/images/I/61-IJXIGH7L.jpg"
   - name: "28mm"
     weight_grams: 79.0
+    image_url: "https://outdoorvitals.com/cdn/shop/files/cnoc28mm_08380ac5-5360-4042-9347-01ef4e7781e4.png?v=1752176179"
   - name: "3L"
     weight_grams: 105.0
+    image_url: "https://cdn.shoplightspeed.com/shops/648895/files/41620296/1500x4000x3/cnoc-cnoc-vecto-3l-water-bag.jpg"
 covers:
-  - id: 46
-    label: "Water Container 2L"
   - id: 403
     label: "3L"
   - id: 749
     label: "28mm"
+  - id: 46
+    label: "Water Container 2L"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -36,21 +39,27 @@ The CNOC Vecto is a collapsible TPU water container with two openings: a wide, s
 
 ## Key Specs
 
-| Spec | Detail |
-| --- | --- |
-| Weight | 74–105 g depending on version |
-| Capacity | 2 L or 3 L |
-| Material | FDA-approved TPU, BPA, BPF and BPS free |
-| Thread options | 28 mm (Sawyer Squeeze/Mini/Micro, HydroBlu Versa Flow, LifeStraw Flex) or 42 mm (Katadyn BeFree) |
-| Packed size | About 7 × 2 × 1.5 in (2L); 7 × 2 × 2 in (3L) |
-| Breaking point | 220 lbs, per CNOC |
-| Operating temperature | 20°F to 120°F (-6°C to 49°C) |
-| Closure | Slider-sealed wide opening with built-in hanging loop; tethered cap and slider |
-| Price | About $21 |
+| Spec                  | Detail                                                                                           |
+| --------------------- | ------------------------------------------------------------------------------------------------ |
+| Weight                | 74–105 g depending on version                                                                    |
+| Capacity              | 2 L or 3 L                                                                                       |
+| Material              | FDA-approved TPU, BPA, BPF and BPS free                                                          |
+| Thread options        | 28 mm (Sawyer Squeeze/Mini/Micro, HydroBlu Versa Flow, LifeStraw Flex) or 42 mm (Katadyn BeFree) |
+| Packed size           | About 7 × 2 × 1.5 in (2L); 7 × 2 × 2 in (3L)                                                     |
+| Breaking point        | 220 lbs, per CNOC                                                                                |
+| Operating temperature | 20°F to 120°F (-6°C to 49°C)                                                                     |
+| Closure               | Slider-sealed wide opening with built-in hanging loop; tethered cap and slider                   |
+| Price                 | About $21                                                                                        |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="storage" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="storage"
+/>
 
 ## Performance
 

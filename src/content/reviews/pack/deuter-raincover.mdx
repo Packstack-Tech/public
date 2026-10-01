@@ -14,17 +14,19 @@ description: "Deuter's PU-coated, seam-taped Raincover comes in two sizes, 90 g 
 variants:
   - name: "II"
     weight_grams: 90.0
+    image_url: "http://www.outdoorsinc.com/cdn/shop/products/deuter_rain_cover_2_30_50_liters_cool_blue.jpg?v=1526693012"
   - name: "III"
     weight_grams: 130.0
+    image_url: "https://m.media-amazon.com/images/I/51nx4Doj6eL._AC_UY1000_.jpg"
 covers:
-  - id: 1009
-    label: "III"
   - id: 1677
     label: "II"
+  - id: 1009
+    label: "III"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -32,21 +34,27 @@ Deuter's Raincover is a plain, rectangular shell of 70D polyamide that stretches
 
 ## Key Specs
 
-| Spec | Detail |
-| --- | --- |
-| Weight | 90–130 g (3.2–4.6 oz) depending on size |
-| Compatible pack volume | 30–90 L across both sizes |
-| Dimensions | 69 x 30 x 27 cm (II) to 97 x 37 x 30 cm (III), H x W x D |
-| Material | 70D polyamide |
-| Waterproofing | PU coating, taped and welded seams |
-| Closure | Drawcord |
-| Visibility | Reflective detailing |
-| PFC/PFAS-free | Yes |
-| Price (Deuter US) | $30 (II), $35 (III) |
+| Spec                   | Detail                                                   |
+| ---------------------- | -------------------------------------------------------- |
+| Weight                 | 90–130 g (3.2–4.6 oz) depending on size                  |
+| Compatible pack volume | 30–90 L across both sizes                                |
+| Dimensions             | 69 x 30 x 27 cm (II) to 97 x 37 x 30 cm (III), H x W x D |
+| Material               | 70D polyamide                                            |
+| Waterproofing          | PU coating, taped and welded seams                       |
+| Closure                | Drawcord                                                 |
+| Visibility             | Reflective detailing                                     |
+| PFC/PFAS-free          | Yes                                                      |
+| Price (Deuter US)      | $30 (II), $35 (III)                                      |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="protection" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="protection"
+/>
 
 ## Performance
 

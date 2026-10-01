@@ -12,7 +12,7 @@ published_at: "2026-07-15"
 description: "A USA-made, ultralight DCF zipper pouch from Hartford Gear Co. — available in four sizes, with tape-sealed seams and a YKK #3 water-resistant zipper."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,7 +31,12 @@ The Hartford Gear Co. Trail Pouch is a small-batch, USA-made zipper pouch sewn f
 | **Size — Dollar Size** | 6.5" × 3.5" / weight not listed            |
 | **Made In**            | USA                                        |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

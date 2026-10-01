@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A 10-pocket ridgeline organizer that doubles as a stuff sack — Hammock Gear's redesigned take on keeping your phone, headlamp, and knick-knacks off your chest while you sleep."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,7 +31,12 @@ The Ridgeline Organizer Deluxe is Hammock Gear's updated version of a category s
 | Colors             | 12 fabric pocket color options                               |
 | Price              | $34.95                                                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A cheap, wide aluminum stake that works great as a snow deadman anchor but only shines when used correctly."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,7 +30,12 @@ The REI Co-op Snow Stake is a wide, concave aluminum stake designed for anchorin
 | Anchor method | Deadman burial or upright burial |
 | Price         | ~$7.95 (sold individually)       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

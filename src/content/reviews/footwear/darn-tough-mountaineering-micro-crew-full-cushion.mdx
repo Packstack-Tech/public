@@ -12,7 +12,7 @@ published_at: "2026-07-08"
 description: "A heavyweight, full-cushion merino wool sock built for cold-weather mountaineering and winter hiking — durable, warm, and odor-resistant, with a lifetime guarantee."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -33,7 +33,12 @@ The Darn Tough Mountaineering Micro Crew Full Cushion (Style 1953) is the Vermon
 | MSRP          | ~$35                                             |
 | Guarantee     | Unconditional lifetime replacement               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

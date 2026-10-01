@@ -19,7 +19,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,19 +27,25 @@ The Trekology ALUFT 2.0 is a larger-than-average, ergonomically shaped inflatabl
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| **Weight** | 120 g (4.2 oz) claimed |
-| **Inflated size** | 16 × 12 × 4 in (40.5 × 30.5 × 10.2 cm) |
-| **Packed size** | 5 × 2 in (12.7 × 5.08 cm) |
-| **Material** | Elastic TPU fabric |
-| **Inflation** | 3–5 breaths |
-| **Valve** | Proprietary click-button, double-decked design |
-| **Grip** | Rubber anti-slip dots, detachable elastic sleeping pad strap |
-| **Includes** | Stuff sack, pad strap |
-| **Price** | ~$18–20 USD |
+| Spec              | Value                                                        |
+| ----------------- | ------------------------------------------------------------ |
+| **Weight**        | 120 g (4.2 oz) claimed                                       |
+| **Inflated size** | 16 × 12 × 4 in (40.5 × 30.5 × 10.2 cm)                       |
+| **Packed size**   | 5 × 2 in (12.7 × 5.08 cm)                                    |
+| **Material**      | Elastic TPU fabric                                           |
+| **Inflation**     | 3–5 breaths                                                  |
+| **Valve**         | Proprietary click-button, double-decked design               |
+| **Grip**          | Rubber anti-slip dots, detachable elastic sleeping pad strap |
+| **Includes**      | Stuff sack, pad strap                                        |
+| **Price**         | ~$18–20 USD                                                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="pillow" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="pillow"
+/>
 
 ## Performance
 

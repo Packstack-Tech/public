@@ -19,7 +19,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,18 +27,24 @@ The Sea to Summit Camp is a self-inflating foam-and-air pad aimed at campers and
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 944.9 g (2.08 lb) |
-| Thickness | 4 cm (1.6 in) |
-| R-value | 4.2 |
-| Construction | Air Zone body-mapped |
-| Insulation | 100% polyurethane foam |
-| Face fabric | 75D recycled polyester with TPU lamination |
-| Valve | XPEL multifunction valve |
-| Inflation | Self-inflating, with top-off breaths |
+| Spec         | Value                                      |
+| ------------ | ------------------------------------------ |
+| Weight       | 944.9 g (2.08 lb)                          |
+| Thickness    | 4 cm (1.6 in)                              |
+| R-value      | 4.2                                        |
+| Construction | Air Zone body-mapped                       |
+| Insulation   | 100% polyurethane foam                     |
+| Face fabric  | 75D recycled polyester with TPU lamination |
+| Valve        | XPEL multifunction valve                   |
+| Inflation    | Self-inflating, with top-off breaths       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="sleeping-pad" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sleeping-pad"
+/>
 
 ## Performance
 

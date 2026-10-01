@@ -14,12 +14,16 @@ description: "Big Agnes's freestanding, two-door Copper Spur HV trades a little 
 variants:
   - name: "UL1"
     weight_grams: 964.0
+    image_url: "http://www.bigagnes.com/cdn/shop/products/Copper-Spur-HV-UL1-Bikepack-01.png?v=1662500345"
   - name: "UL1 With Footprint"
     weight_grams: 1193.0
+    image_url: "https://www.bigagnes.com/cdn/shop/files/Copper-Spur-UL-1-Tangelo-05_600x.png?v=1779224293"
   - name: "UL2"
     weight_grams: 1417.0
+    image_url: "https://www.bigagnes.com/cdn/shop/files/Copper-Spur-UL-2-Tangelo-05_600x.png?v=1734731410"
   - name: "UL3"
     weight_grams: 1620.0
+    image_url: "https://www.bigagnes.com/cdn/shop/files/Copper-Spur-UL-2-Tangelo-04_c776c31c-2621-4b29-9e07-303e98f85dbf_600x.png?v=1734462396"
 covers:
   - id: 19
     label: "UL2"
@@ -29,8 +33,8 @@ covers:
     label: "UL1"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -38,24 +42,30 @@ The Copper Spur has been the default ultralight freestanding tent on American lo
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 964–1,620 g depending on size (UL2: 1,417 g, 3 lb 2 oz) |
-| Capacity | 1, 2 or 3 person |
-| Seasons | 3-season |
-| Floor area | 20 sq ft (UL1), 29 sq ft (UL2), 41 sq ft (UL3) |
-| Floor dimensions (UL2) | 88 x 52/42 in, 40 in peak height |
-| Vestibule area | 9 sq ft (UL1); 18 sq ft total on UL2 and UL3 (9 sq ft per side) |
-| Doors | 1 (UL1); 2 (UL2, UL3) |
-| Packed size | 6 x 19.5 in (UL2) |
-| Waterproof rating | 1,200 mm fly and floor |
-| Poles | DAC Featherlite NFL, NSL and pressfit |
-| Fabric | Silicone-treated ultralight double ripstop mixed-denier nylon (fly and floor); solution-dyed ripstop grid |
-| Stakes included | 8 |
+| Spec                   | Value                                                                                                     |
+| ---------------------- | --------------------------------------------------------------------------------------------------------- |
+| Weight                 | 964–1,620 g depending on size (UL2: 1,417 g, 3 lb 2 oz)                                                   |
+| Capacity               | 1, 2 or 3 person                                                                                          |
+| Seasons                | 3-season                                                                                                  |
+| Floor area             | 20 sq ft (UL1), 29 sq ft (UL2), 41 sq ft (UL3)                                                            |
+| Floor dimensions (UL2) | 88 x 52/42 in, 40 in peak height                                                                          |
+| Vestibule area         | 9 sq ft (UL1); 18 sq ft total on UL2 and UL3 (9 sq ft per side)                                           |
+| Doors                  | 1 (UL1); 2 (UL2, UL3)                                                                                     |
+| Packed size            | 6 x 19.5 in (UL2)                                                                                         |
+| Waterproof rating      | 1,200 mm fly and floor                                                                                    |
+| Poles                  | DAC Featherlite NFL, NSL and pressfit                                                                     |
+| Fabric                 | Silicone-treated ultralight double ripstop mixed-denier nylon (fly and floor); solution-dyed ripstop grid |
+| Stakes included        | 8                                                                                                         |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="tent" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="tent"
+/>
 
 ## Performance
 

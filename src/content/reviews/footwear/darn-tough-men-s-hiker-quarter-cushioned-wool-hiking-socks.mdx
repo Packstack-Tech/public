@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "A midweight merino hiking sock with Darn Tough's legendary lifetime warranty — durable and comfortable, though not the lightest option for ultralight hikers."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,7 +32,12 @@ The Darn Tough Hiker Quarter (style 1959) is a midweight, cushioned merino wool 
 | Made in          | USA                                          |
 | Warranty         | Unconditional lifetime guarantee             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

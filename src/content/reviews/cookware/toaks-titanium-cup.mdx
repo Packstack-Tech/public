@@ -14,8 +14,10 @@ description: "TOAKS' single-wall titanium cup weighs 62–76 g in two sizes: a f
 variants:
   - name: "375ml"
     weight_grams: 62.0
+    image_url: "https://jhoutdoors.com/cdn/shop/files/CUP-375-01_1024x1024_67cb5f6e-ac0e-475d-bd45-c953e53bbe1e.jpg?v=1695312105"
   - name: "450ml"
     weight_grams: 76.0
+    image_url: "https://www.toaksoutdoor.com/cdn/shop/files/CUP-450-L-01_6a0d1636-d096-43fb-b12c-ff4529829eec.jpg?v=1757883124&width=1445"
 covers:
   - id: 514
     label: "375ml"
@@ -23,8 +25,8 @@ covers:
     label: "450ml"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -32,22 +34,28 @@ The TOAKS Titanium Cup is the default answer to "what do I drink coffee out of?"
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 62–76 g (2.2–2.7 oz) depending on size |
-| Capacity | 375 ml (12.7 fl oz) or 450 ml (15.2 fl oz) |
-| Material | Titanium Grade 1 or 2, no coating |
-| Wall thickness (450ml) | 0.5 mm |
-| Internal diameter | 79 mm (both sizes) |
-| Internal height | 75 mm (375ml) / 90 mm (450ml) |
-| Profile diameter, handles folded | 87 mm |
-| Graduations | oz and ml on the 450ml; none on the 375ml |
-| Includes | Mesh storage sack |
-| SKU | CUP-375 / CUP-450 |
+| Spec                             | Value                                      |
+| -------------------------------- | ------------------------------------------ |
+| Weight                           | 62–76 g (2.2–2.7 oz) depending on size     |
+| Capacity                         | 375 ml (12.7 fl oz) or 450 ml (15.2 fl oz) |
+| Material                         | Titanium Grade 1 or 2, no coating          |
+| Wall thickness (450ml)           | 0.5 mm                                     |
+| Internal diameter                | 79 mm (both sizes)                         |
+| Internal height                  | 75 mm (375ml) / 90 mm (450ml)              |
+| Profile diameter, handles folded | 87 mm                                      |
+| Graduations                      | oz and ml on the 450ml; none on the 375ml  |
+| Includes                         | Mesh storage sack                          |
+| SKU                              | CUP-375 / CUP-450                          |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="drinkware" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="drinkware"
+/>
 
 ## Performance
 

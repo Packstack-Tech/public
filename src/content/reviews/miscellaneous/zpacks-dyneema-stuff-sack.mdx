@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "A no-frills, ultralight DCF stuff sack from Zpacks that trades bombproof durability for weight savings and packability."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,7 +30,12 @@ Zpacks' Dyneema Stuff Sack is about as simple as gear gets: a drawcord bag made 
 | Available sizes  | Mini, Small, Small-Plus, Medium, Medium-Plus, Big, Large, Slim    |
 | Colors           | Blue, Olive Drab (White/Spruce Green on some sizes)               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

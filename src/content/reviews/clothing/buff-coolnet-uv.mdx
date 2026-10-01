@@ -19,7 +19,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,20 +27,26 @@ The Buff CoolNet UV is a seamless polyester tube that does the work of a bandana
 
 ## Key Specs
 
-| Spec | Detail |
-| --- | --- |
-| Weight | 34 g (1.2 oz) |
-| Dimensions | Approx. 20.5 x 9 in (flat) |
-| Material | 95% REPREVE recycled polyester, 5% elastane |
-| Sun protection | UPF 50+ (tested to AS/NZS 4399:2017) |
-| Treatments | HeiQ Smart Temp cooling, Polygiene odor control |
-| Construction | 100% seamless, 4-way ultra stretch |
-| Wear styles | 12+ |
-| Endorsement | Recommended by The Skin Cancer Foundation |
-| Care | Wash warm; no bleach, fabric softener, dryer or iron |
-| Price | About $25 |
+| Spec           | Detail                                               |
+| -------------- | ---------------------------------------------------- |
+| Weight         | 34 g (1.2 oz)                                        |
+| Dimensions     | Approx. 20.5 x 9 in (flat)                           |
+| Material       | 95% REPREVE recycled polyester, 5% elastane          |
+| Sun protection | UPF 50+ (tested to AS/NZS 4399:2017)                 |
+| Treatments     | HeiQ Smart Temp cooling, Polygiene odor control      |
+| Construction   | 100% seamless, 4-way ultra stretch                   |
+| Wear styles    | 12+                                                  |
+| Endorsement    | Recommended by The Skin Cancer Foundation            |
+| Care           | Wash warm; no bleach, fabric softener, dryer or iron |
+| Price          | About $25                                            |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="headwear" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="headwear"
+/>
 
 ## Performance
 

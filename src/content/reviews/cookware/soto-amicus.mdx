@@ -21,7 +21,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -29,20 +29,26 @@ The Soto Amicus with Stealth Igniter (model OD-1NVE) is an upright canister stov
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Model | OD-1NVE |
-| Weight | 81 g (2.9 oz) |
-| Output | 10,210 BTU / 2,800 kcal/h |
-| Burn time | ~1.5 hours on an 8 oz (250 g) canister |
-| Dimensions in use | 3.0 x 4.0 x 3.4 in (7.6 x 10.0 x 8.6 cm) |
-| Dimensions stowed | 1.7 x 1.6 x 3.0 in (4.3 x 4.0 x 7.5 cm) |
-| Fuel | Standard isobutane Lindal-valve canisters (Primus, Snow Peak, MSR, Jetboil) |
-| Valve | Triple O-ring, unregulated |
-| Ignition | Piezo "Stealth" igniter built into the burner post |
-| Pot supports | Four, spring-loaded and foldable |
+| Spec              | Value                                                                       |
+| ----------------- | --------------------------------------------------------------------------- |
+| Model             | OD-1NVE                                                                     |
+| Weight            | 81 g (2.9 oz)                                                               |
+| Output            | 10,210 BTU / 2,800 kcal/h                                                   |
+| Burn time         | ~1.5 hours on an 8 oz (250 g) canister                                      |
+| Dimensions in use | 3.0 x 4.0 x 3.4 in (7.6 x 10.0 x 8.6 cm)                                    |
+| Dimensions stowed | 1.7 x 1.6 x 3.0 in (4.3 x 4.0 x 7.5 cm)                                     |
+| Fuel              | Standard isobutane Lindal-valve canisters (Primus, Snow Peak, MSR, Jetboil) |
+| Valve             | Triple O-ring, unregulated                                                  |
+| Ignition          | Piezo "Stealth" igniter built into the burner post                          |
+| Pot supports      | Four, spring-loaded and foldable                                            |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="stove" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

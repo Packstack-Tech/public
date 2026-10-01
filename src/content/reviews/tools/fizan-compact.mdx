@@ -14,8 +14,10 @@ description: "Fizan's Italian-made Compact 3 aluminum trekking poles weigh 158 g
 variants:
   - name: "3"
     weight_grams: 158.0
+    image_url: "https://www.kaviso.com/cdn/shop/files/Fizan_Compact3_Green.webp?v=1774980926&width=720"
   - name: "Standard"
     weight_grams: 316.0
+    image_url: "https://m.media-amazon.com/images/I/51wLHryPOnL.jpg_BO30,255,255,255_UF750,750_SR1910,1000,0,C_QL100_.jpg"
 covers:
   - id: 79
     label: "3"
@@ -23,8 +25,8 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -32,23 +34,29 @@ Fizan has made poles in Veneto, Italy, since 1947, and the Compact 3 is the mode
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 158 g (5.6 oz) per pole claimed; 316 g (11.2 oz) per pair |
-| Shaft material | 7001 aluminum |
-| Sections | 3 (17, 16 and 14 mm diameters) |
-| Adjustment | Twist-lock (Fizan Flexy internal system) |
-| Length range | 58–132 cm (22.8–52 in) |
-| Packed length | 58 cm (22.8 in) |
-| Grip | EVA foam, unpadded adjustable strap |
-| Tips | Replaceable carbide, with rubber tip covers |
-| Baskets | 35 mm and 50 mm included |
-| Made in | Italy |
-| Price | About $70 per pair |
+| Spec           | Value                                                     |
+| -------------- | --------------------------------------------------------- |
+| Weight         | 158 g (5.6 oz) per pole claimed; 316 g (11.2 oz) per pair |
+| Shaft material | 7001 aluminum                                             |
+| Sections       | 3 (17, 16 and 14 mm diameters)                            |
+| Adjustment     | Twist-lock (Fizan Flexy internal system)                  |
+| Length range   | 58–132 cm (22.8–52 in)                                    |
+| Packed length  | 58 cm (22.8 in)                                           |
+| Grip           | EVA foam, unpadded adjustable strap                       |
+| Tips           | Replaceable carbide, with rubber tip covers               |
+| Baskets        | 35 mm and 50 mm included                                  |
+| Made in        | Italy                                                     |
+| Price          | About $70 per pair                                        |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="trekking-pole" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="trekking-pole"
+/>
 
 ## Performance
 

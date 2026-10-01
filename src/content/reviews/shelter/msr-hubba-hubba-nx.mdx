@@ -19,7 +19,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,22 +27,28 @@ The MSR Hubba Hubba NX is a freestanding, double-wall, 3-season two-person tent 
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Capacity | 2-person |
-| Seasons | 3-season |
-| Minimum weight | 1,540 g (3 lb 6 oz) |
-| Packaged weight | approx. 1,930 g (4 lb 4 oz) |
-| Floor area | 29 sq ft |
-| Peak height | 39 in (99 cm) |
-| Vestibule area | 8.75 sq ft per side |
-| Packed size | 18 x 6 in / 46 x 15 cm |
-| Poles | Easton Syclone, hubbed |
-| Rainfly | 20D ripstop nylon, Xtreme Shield coating, 1,200 mm |
-| Floor | 30D ripstop nylon, 3,000 mm |
-| Footprint | Sold separately |
+| Spec            | Value                                              |
+| --------------- | -------------------------------------------------- |
+| Capacity        | 2-person                                           |
+| Seasons         | 3-season                                           |
+| Minimum weight  | 1,540 g (3 lb 6 oz)                                |
+| Packaged weight | approx. 1,930 g (4 lb 4 oz)                        |
+| Floor area      | 29 sq ft                                           |
+| Peak height     | 39 in (99 cm)                                      |
+| Vestibule area  | 8.75 sq ft per side                                |
+| Packed size     | 18 x 6 in / 46 x 15 cm                             |
+| Poles           | Easton Syclone, hubbed                             |
+| Rainfly         | 20D ripstop nylon, Xtreme Shield coating, 1,200 mm |
+| Floor           | 30D ripstop nylon, 3,000 mm                        |
+| Footprint       | Sold separately                                    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="tent" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="tent"
+/>
 
 ## Performance
 

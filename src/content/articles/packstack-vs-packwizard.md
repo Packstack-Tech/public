@@ -56,7 +56,7 @@ Packstack's approach is less database-dependent, which means more manual entry u
 
 ## Planning Intelligence: Calorie Estimates and AI Trip Data
 
-This is where the two apps diverge most sharply in 2026. Packwizard is focused on helping you *research and buy* gear. Packstack has invested in helping you *plan and prepare* for a specific trip — and the difference shows.
+This is where the two apps diverge most sharply in 2026. Packwizard is focused on helping you _research and buy_ gear. Packstack has invested in helping you _plan and prepare_ for a specific trip — and the difference shows.
 
 Your **hiker profile** stores your body stats — weight, height, age, sex, and body type — once, so every trip you plan uses your numbers instead of a generic average.
 

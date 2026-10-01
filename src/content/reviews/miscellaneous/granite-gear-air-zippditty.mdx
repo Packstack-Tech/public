@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "A 0.56 oz zippered silnylon pouch for organizing small gear—here's how the 1L Air Zippditty holds up on trail."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -29,7 +29,12 @@ The Air Zippditty is Granite Gear's ultralight zippered pouch, sized here at 1 l
 | Closure    | Water-resistant zipper                              |
 | Sold as    | Set of 2 (same size) or set of 4 (one of each size) |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

@@ -14,21 +14,24 @@ description: "Cumulus's open-footbox down quilt comes in 150, 250 and 300 fills,
 variants:
   - name: "150"
     weight_grams: 380.0
+    image_url: "https://media.cumulus.equipment/media/volkanos/image/c8/e5/3ca4456de0259c1bc485015a4a33fc868e8411b37c22f961dd36f163e3ce.png"
   - name: "250"
     weight_grams: 480.0
+    image_url: "http://www.outdoorline.eu/cdn/shop/files/Cumulus_Quilt250_olive_5.jpg?crop=center&height=1200&v=1770808967&width=1200"
   - name: "300"
     weight_grams: 496.0
+    image_url: "https://cdn.pod7kilo.cz/files/photos/1600-1200/f/f54e13bf3adc0f19ed292aec6fa97fc60bd2c25b.webp"
 covers:
+  - id: 825
+    label: "150"
   - id: 1414
     label: "250"
   - id: 1479
     label: "300"
-  - id: 825
-    label: "150"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -36,24 +39,30 @@ The Cumulus Quilt is a Polish-made, hoodless down quilt with a zippered, fully o
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 380–496 g (13.4–17.5 oz) depending on version |
-| Down fill weight | 150 g, 250 g or 300 g |
-| Fill power (300) | 900 FP Polish goose down |
-| Comfort / limit (150) | 48°F (9°C) / 39°F (4°C) |
-| Comfort / limit (250) | 39°F (4°C) / 32°F (0°C) |
-| Comfort / limit (300) | 37°F (3°C) / 28°F (-2°C) |
-| Shell and lining (300) | Toray® Airtastic, 19 g/m² |
-| Baffles | H-shaped box baffles |
-| Footbox | Open, zippered, opens flat |
-| Length | 195 cm |
-| Flat width | 130 cm at the shoulders, 100 cm at the feet |
-| Origin | Poland |
+| Spec                   | Value                                         |
+| ---------------------- | --------------------------------------------- |
+| Weight                 | 380–496 g (13.4–17.5 oz) depending on version |
+| Down fill weight       | 150 g, 250 g or 300 g                         |
+| Fill power (300)       | 900 FP Polish goose down                      |
+| Comfort / limit (150)  | 48°F (9°C) / 39°F (4°C)                       |
+| Comfort / limit (250)  | 39°F (4°C) / 32°F (0°C)                       |
+| Comfort / limit (300)  | 37°F (3°C) / 28°F (-2°C)                      |
+| Shell and lining (300) | Toray® Airtastic, 19 g/m²                     |
+| Baffles                | H-shaped box baffles                          |
+| Footbox                | Open, zippered, opens flat                    |
+| Length                 | 195 cm                                        |
+| Flat width             | 130 cm at the shoulders, 100 cm at the feet   |
+| Origin                 | Poland                                        |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="quilt" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="quilt"
+/>
 
 ## Performance
 

@@ -14,21 +14,24 @@ description: "Osprey's Aether is a heavy-hauling, fully adjustable frame pack fo
 variants:
   - name: "55"
     weight_grams: 2190.0
+    image_url: "https://www.osprey.com/media/catalog/product/a/e/aether55f20_s21_side_black-resized_1_1.jpg"
   - name: "70"
     weight_grams: 2200.0
+    image_url: "https://ascentoutdoors.com/cdn/shop/files/81XFbD8mDpL._SY879_600x.jpg?v=1689968580"
   - name: "65"
     weight_grams: 2231.0
+    image_url: "https://pastoutdoors.com/cdn/shop/files/Osprey_Aether_65L_Men_s_Hiking_Backpack.webp?v=1769574488&width=694"
 covers:
   - id: 809
     label: "55"
-  - id: 128
-    label: "70"
   - id: 413
     label: "65"
+  - id: 128
+    label: "70"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -36,21 +39,27 @@ The Osprey Aether is a traditional load hauler for backpackers who carry 30 to 6
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 2,190–2,231 g depending on version |
-| Volume | 55 L, 65 L or 70 L |
-| Load range | 30–60 lbs (14–27 kg) |
-| Frame | LightWire aluminum alloy peripheral frame with injection-molded AirScape framesheet |
-| Fabric | bluesign®-approved 420HD and 210D nylon, PFC-free DWR |
-| Sizes | S/M (torso 17–20.5 in), L/XL (torso 19.5–23 in) |
-| Hipbelt fit | 28–55 in (71–140 cm) |
-| Adjustments | Fit-on-the-Fly torso, shoulder strap and hipbelt |
-| Rain cover | Included |
+| Spec        | Value                                                                               |
+| ----------- | ----------------------------------------------------------------------------------- |
+| Weight      | 2,190–2,231 g depending on version                                                  |
+| Volume      | 55 L, 65 L or 70 L                                                                  |
+| Load range  | 30–60 lbs (14–27 kg)                                                                |
+| Frame       | LightWire aluminum alloy peripheral frame with injection-molded AirScape framesheet |
+| Fabric      | bluesign®-approved 420HD and 210D nylon, PFC-free DWR                               |
+| Sizes       | S/M (torso 17–20.5 in), L/XL (torso 19.5–23 in)                                     |
+| Hipbelt fit | 28–55 in (71–140 cm)                                                                |
+| Adjustments | Fit-on-the-Fly torso, shoulder strap and hipbelt                                    |
+| Rain cover  | Included                                                                            |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="main-pack" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

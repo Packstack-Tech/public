@@ -14,8 +14,10 @@ description: "Snow Peak's one-piece Japanese titanium spork weighs 16 g (22.6 g 
 variants:
   - name: "Standard"
     weight_grams: 16.0
+    image_url: "https://goinggear.com/cdn/shop/products/sct-006_700x.jpg?v=1575443622"
   - name: "Long"
     weight_grams: 22.6
+    image_url: "https://tripleaughtdesign.com/cdn/shop/files/lightbox_60b22bab-74ee-4e5a-966f-83a7405e4230_grande.jpg?v=1767731304"
 covers:
   - id: 317
     label: "Long"
@@ -23,8 +25,8 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -32,19 +34,25 @@ The Snow Peak Titanium Spork is a one-piece, Japanese-made utensil that has spen
 
 ## Key Specs
 
-| Spec | Detail |
-| --- | --- |
-| Weight | 16–22.6 g (0.56–0.8 oz) depending on version |
-| Length | 16.5 cm (6.5 in) standard; 21.1 cm (8.3 in) Long |
-| Width | 4.1 cm standard; 3.8 cm Long |
-| Material | Titanium, one-piece construction |
-| Origin | Tsubame-Sanjo, Niigata, Japan |
-| Cleaning | Dishwasher safe |
-| Price | About $9 standard; $10.95 Long |
+| Spec     | Detail                                           |
+| -------- | ------------------------------------------------ |
+| Weight   | 16–22.6 g (0.56–0.8 oz) depending on version     |
+| Length   | 16.5 cm (6.5 in) standard; 21.1 cm (8.3 in) Long |
+| Width    | 4.1 cm standard; 3.8 cm Long                     |
+| Material | Titanium, one-piece construction                 |
+| Origin   | Tsubame-Sanjo, Niigata, Japan                    |
+| Cleaning | Dishwasher safe                                  |
+| Price    | About $9 standard; $10.95 Long                   |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="utensil" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="utensil"
+/>
 
 ## Performance
 

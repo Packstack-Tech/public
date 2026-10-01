@@ -14,8 +14,10 @@ description: "REI's roll-top Flash pack pairs an adjustable torso and modular Pa
 variants:
   - name: "55"
     weight_grams: 1276.0
+    image_url: "https://www.packwizard.com/reiflash.png"
   - name: "65"
     weight_grams: 1588.0
+    image_url: "https://content.whygo.com/wp-content/uploads/sites/11/2009/05/a319909f-211a-4b69-a128-84da7ccc95b6-300x300.jpg"
 covers:
   - id: 58
     label: "55"
@@ -23,8 +25,8 @@ covers:
     label: "65"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -32,24 +34,30 @@ REI's Flash is the pack that lets a hiker drop below three pounds without paying
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| **Price** | $229 |
-| **Weight** | 1,276–1,588 g depending on size (55 and 65) |
-| **Stripped weight (55, lid and extras removed)** | About 1,077 g (2 lb 6 oz) |
-| **Capacity** | 53–57 L in the 55; the 65 adds roughly 10 L (varies by torso size) |
-| **Max recommended load** | 30 lb |
-| **Frame** | Internal spring steel perimeter frame |
-| **Fabric** | Recycled Robic ripstop nylon, 100D body and 210D base |
-| **Closure** | Roll-top with optional removable lid |
-| **Torso length** | Adjustable (S/M/L) |
-| **Hydration** | 3 L reservoir sleeve with dual tube ports |
-| **Packmod system** | Yes: removable pockets, compression straps, lid |
-| **DWR** | PFC-free |
+| Spec                                             | Value                                                              |
+| ------------------------------------------------ | ------------------------------------------------------------------ |
+| **Price**                                        | $229                                                               |
+| **Weight**                                       | 1,276–1,588 g depending on size (55 and 65)                        |
+| **Stripped weight (55, lid and extras removed)** | About 1,077 g (2 lb 6 oz)                                          |
+| **Capacity**                                     | 53–57 L in the 55; the 65 adds roughly 10 L (varies by torso size) |
+| **Max recommended load**                         | 30 lb                                                              |
+| **Frame**                                        | Internal spring steel perimeter frame                              |
+| **Fabric**                                       | Recycled Robic ripstop nylon, 100D body and 210D base              |
+| **Closure**                                      | Roll-top with optional removable lid                               |
+| **Torso length**                                 | Adjustable (S/M/L)                                                 |
+| **Hydration**                                    | 3 L reservoir sleeve with dual tube ports                          |
+| **Packmod system**                               | Yes: removable pockets, compression straps, lid                    |
+| **DWR**                                          | PFC-free                                                           |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="main-pack" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

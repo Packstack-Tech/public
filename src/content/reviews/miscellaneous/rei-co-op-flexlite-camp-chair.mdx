@@ -12,7 +12,7 @@ published_at: "2026-05-13"
 description: "The REI Co-op Flexlite Camp Chair offers packable, hammock-like comfort at ~27 oz — a solid pick for short trips, but too heavy for strict ultralight lists."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,17 +20,22 @@ The REI Co-op Flexlite Camp Chair is a tent-pole-style packable seat that sits b
 
 ## Key Specs
 
-| Spec                    | Value                                                                                            |
-| ----------------------- | ------------------------------------------------------------------------------------------------ |
-| **Weight**              | 765g (27 oz / 1.7 lbs)                                                                           |
-| **Weight Capacity**     | 250 lbs                                                                                          |
-| **Seat Height**         | 11 in                                                                                            |
-| **Unfolded Dimensions** | 25 × 20 × 20 in (H × W × D)                                                                      |
-| **Frame Material**      | Aluminum (pole-and-hub)                                                                          |
-| **Seat Material**       | Ripstop polyester, DWR finish (PFAS-free, bluesign®)                                             |
-| **Price**               | ~$90                                                                                             |
+| Spec                    | Value                                                |
+| ----------------------- | ---------------------------------------------------- |
+| **Weight**              | 765g (27 oz / 1.7 lbs)                               |
+| **Weight Capacity**     | 250 lbs                                              |
+| **Seat Height**         | 11 in                                                |
+| **Unfolded Dimensions** | 25 × 20 × 20 in (H × W × D)                          |
+| **Frame Material**      | Aluminum (pole-and-hub)                              |
+| **Seat Material**       | Ripstop polyester, DWR finish (PFAS-free, bluesign®) |
+| **Price**               | ~$90                                                 |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

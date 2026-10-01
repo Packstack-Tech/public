@@ -19,7 +19,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,18 +27,24 @@ For years, the Outdoor Research Helium II was the default answer when a thru-hik
 
 ## Key Specs
 
-| Spec | Detail |
-| --- | --- |
-| Weight | 181 g (6.4 oz) |
-| Fabric | 2.5-layer 30D Pertex Shield DS ripstop, 100% nylon with clear laminate |
-| Waterproofing | Fully seam-taped |
-| Fit | Standard |
-| Center back length | 79 cm |
-| Pockets | Packable chest pocket with carabiner loop; no hand pockets |
-| Hood and cuffs | Adjustable hood, elastic cuffs |
-| Status | Discontinued |
+| Spec               | Detail                                                                 |
+| ------------------ | ---------------------------------------------------------------------- |
+| Weight             | 181 g (6.4 oz)                                                         |
+| Fabric             | 2.5-layer 30D Pertex Shield DS ripstop, 100% nylon with clear laminate |
+| Waterproofing      | Fully seam-taped                                                       |
+| Fit                | Standard                                                               |
+| Center back length | 79 cm                                                                  |
+| Pockets            | Packable chest pocket with carabiner loop; no hand pockets             |
+| Hood and cuffs     | Adjustable hood, elastic cuffs                                         |
+| Status             | Discontinued                                                           |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="rain-gear" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="rain-gear"
+/>
 
 ## Performance
 

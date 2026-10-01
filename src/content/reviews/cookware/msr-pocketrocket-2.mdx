@@ -21,7 +21,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -29,17 +29,23 @@ The MSR PocketRocket 2 is a 73 g canister stove with three folding pot supports,
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 73 g (2.6 oz) |
-| Fuel type | Canister (isobutane-propane, IsoPro, Lindal valve) |
-| Boil time (1 L) | 3.5 minutes |
-| Pot supports | Three folding arms |
-| Wind protection | WindClip |
-| Ignition | Manual (no built-in igniter) |
-| Includes | Ultralight hard-shell carry case |
+| Spec            | Value                                              |
+| --------------- | -------------------------------------------------- |
+| Weight          | 73 g (2.6 oz)                                      |
+| Fuel type       | Canister (isobutane-propane, IsoPro, Lindal valve) |
+| Boil time (1 L) | 3.5 minutes                                        |
+| Pot supports    | Three folding arms                                 |
+| Wind protection | WindClip                                           |
+| Ignition        | Manual (no built-in igniter)                       |
+| Includes        | Ultralight hard-shell carry case                   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="stove" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

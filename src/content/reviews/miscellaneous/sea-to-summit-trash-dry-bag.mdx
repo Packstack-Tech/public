@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A 99g roll-top dry bag built specifically for packing out trash — I look at whether the liner-securing design actually works and who it's worth the weight for."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,7 +30,12 @@ The Sea to Summit Trash Dry Bag is exactly what it sounds like: a 10L roll-top d
 | Attachment      | Daisy chain webbing + hypalon clip loops |
 | Fits liner size | Medium (~27L) trash bags                 |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

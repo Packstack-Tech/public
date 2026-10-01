@@ -12,7 +12,7 @@ published_at: "2026-07-21"
 description: "An honest look at Hilleberg's standard Black Label tent stake — 16g of hardened aluminum, built to handle anything from alpine tundra to compacted Scottish hillside."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,7 +31,12 @@ The Hilleberg Y-Peg is the standard stake that ships with every Black Label and 
 | Cross-section      | Y-profile            |
 | Removal aid        | Attached string loop |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 
@@ -63,17 +68,15 @@ One honest caveat on the data: independent, controlled pull-force testing on the
 **Cons**
 
 - Price is steep — you're paying a Hilleberg brand premium; functionally comparable Y-section stakes cost less
-- 
-    At least one user notes these are expensive "compared to alternatives or to
-    buying the regular DAC versions"
-  
+- At least one user notes these are expensive "compared to alternatives or to
+  buying the regular DAC versions"
+
   — a fair point worth weighing
+
 - Y-profile grooves accumulate dirt and need cleaning
-- 
-    Pegs of this type can be hard on hands during insertion or removal, and in
-    frozen ground they offer no particular advantage over simpler nail-type
-    stakes
-  
+- Pegs of this type can be hard on hands during insertion or removal, and in
+  frozen ground they offer no particular advantage over simpler nail-type
+  stakes
 - Not ideal for deep snow or sand — you need specialized stakes for those conditions
 - No notch design on the head; guyline attachment relies entirely on the hook shape at the top
 

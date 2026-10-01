@@ -14,29 +14,34 @@ description: "Katadyn's BeFree pairs a 0.1-micron hollow-fiber filter with a col
 variants:
   - name: "Water Filtration System 0.6L"
     weight_grams: 59.0
+    image_url: "https://assets.trailspace.com/assets/1/b/a/9249210/image.jpg"
   - name: "Water Filtration System"
     weight_grams: 59.0
+    image_url: "https://sandsarchery.com/cdn/shop/products/Katadyn-BeFree-Filtration-System-1_0L-2.jpg?v=1679364184&width=800"
   - name: "1.0L Water Filtration System"
     weight_grams: 63.0
+    image_url: "https://altitudeoutdoors.com/cdn/shop/products/Untitled-1_8f505ad9-b5c3-40a4-a239-ed1f531951f9_1080x.jpg?v=1651614876"
   - name: "Water Filtration System 1.0L"
     weight_grams: 63.0
+    image_url: "https://zpacks.com/cdn/shop/products/BeFree1L1_2048x.jpg?v=1607632125"
   - name: "Water Filtration System 3.0L"
     weight_grams: 100.0
+    image_url: "https://zpacks.com/cdn/shop/products/BeFree3L1_2048x.jpg?v=1607632717"
 covers:
   - id: 16
     label: "1.0L Water Filtration System"
-  - id: 182
-    label: "Water Filtration System 0.6L"
-  - id: 62
-    label: "Water Filtration System"
   - id: 1444
     label: "Water Filtration System 1.0L"
   - id: 833
     label: "Water Filtration System 3.0L"
+  - id: 182
+    label: "Water Filtration System 0.6L"
+  - id: 62
+    label: "Water Filtration System"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -44,23 +49,29 @@ The Katadyn BeFree is a hollow-fiber filter that screws onto a collapsible Hydra
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 59–100 g depending on size (complete system with flask) |
-| Capacity | 0.6 L, 1.0 L or 3.0 L |
-| Filter type | EZ-Clean hollow-fiber membrane |
-| Pore size | 0.1 micron |
-| Flow rate | Up to 2 L/min |
-| Filter life | Up to 1,000 L, depending on water quality |
-| Removes | Bacteria (99.9999%), protozoa (99.99%), sediment |
-| Does not remove | Viruses |
-| Flask | Hydrapak SoftFlask, TPU, BPA- and PVC-free |
-| Threads | 42 mm Hydrapak |
-| Cleaning | Shake or swish in the field; no backflushing |
+| Spec            | Value                                                   |
+| --------------- | ------------------------------------------------------- |
+| Weight          | 59–100 g depending on size (complete system with flask) |
+| Capacity        | 0.6 L, 1.0 L or 3.0 L                                   |
+| Filter type     | EZ-Clean hollow-fiber membrane                          |
+| Pore size       | 0.1 micron                                              |
+| Flow rate       | Up to 2 L/min                                           |
+| Filter life     | Up to 1,000 L, depending on water quality               |
+| Removes         | Bacteria (99.9999%), protozoa (99.99%), sediment        |
+| Does not remove | Viruses                                                 |
+| Flask           | Hydrapak SoftFlask, TPU, BPA- and PVC-free              |
+| Threads         | 42 mm Hydrapak                                          |
+| Cleaning        | Shake or swish in the field; no backflushing            |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="filtration" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="filtration"
+/>
 
 ## Performance
 

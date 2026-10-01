@@ -14,17 +14,19 @@ description: "Gregory's Zulu pairs a pivoting FreeFloat hipbelt and trampoline m
 variants:
   - name: "40"
     weight_grams: 1330.0
+    image_url: "https://cdn.deporvillage.com/cdn-cgi/image/f=auto,q=75,fit=contain,background=white/product-vertical/grg-5400520199898-c_001.jpg"
   - name: "55"
     weight_grams: 1910.0
+    image_url: "https://www.enwild.com/mm5/graphics/00000001/gregory-zulu-55-2023-halo-blue.jpg"
 covers:
-  - id: 194
-    label: "55"
   - id: 1237
     label: "40"
+  - id: 194
+    label: "55"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -32,23 +34,29 @@ The Gregory Zulu is a ventilated, adjustable-torso backpack built around a hipbe
 
 ## Key Specs
 
-| Spec | Detail |
-| --- | --- |
-| Weight | 1,330–1,910 g depending on capacity |
-| Capacity | 40L or 55L (the 55 is 55L in M/L and 53L in S/M) |
-| Torso adjustment | 3.5 in |
-| Torso fit range (55) | S/M: 15–19 in; M/L: 18–22 in |
-| Suspension | FreeFloat dynamic hipbelt with tensioned mesh back panel |
-| Frame | Perimeter spring steel with fiberglass anti-barreling cross-stay |
-| Access | Top, front U-zip; sleeping bag compartment on the 55 |
-| Rain cover | Included |
-| Reservoir compatible | Yes |
-| Sizes | S/M, M/L |
-| Warranty | Limited lifetime |
+| Spec                 | Detail                                                           |
+| -------------------- | ---------------------------------------------------------------- |
+| Weight               | 1,330–1,910 g depending on capacity                              |
+| Capacity             | 40L or 55L (the 55 is 55L in M/L and 53L in S/M)                 |
+| Torso adjustment     | 3.5 in                                                           |
+| Torso fit range (55) | S/M: 15–19 in; M/L: 18–22 in                                     |
+| Suspension           | FreeFloat dynamic hipbelt with tensioned mesh back panel         |
+| Frame                | Perimeter spring steel with fiberglass anti-barreling cross-stay |
+| Access               | Top, front U-zip; sleeping bag compartment on the 55             |
+| Rain cover           | Included                                                         |
+| Reservoir compatible | Yes                                                              |
+| Sizes                | S/M, M/L                                                         |
+| Warranty             | Limited lifetime                                                 |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="main-pack" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

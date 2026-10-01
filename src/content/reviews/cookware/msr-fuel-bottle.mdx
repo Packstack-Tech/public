@@ -19,7 +19,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,18 +27,24 @@ The MSR Fuel Bottle is the fuel tank for MSR's pump-fed liquid-fuel stoves, incl
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 122–218 g (4.3–7.7 oz) depending on size |
-| Capacity | 325–887 ml (11–30 fl oz) |
-| Diameter | 2.5–3.1 in |
-| Height | about 7 in (11 oz) to 11.3 in (30 oz) |
-| Material | Impact-extruded aluminum |
-| Cap | Child-resistant push-and-twist, vented for controlled pouring |
-| Stove compatibility | Threads accept MSR fuel pumps |
-| Fuels | White gas, kerosene, unleaded gasoline |
+| Spec                | Value                                                         |
+| ------------------- | ------------------------------------------------------------- |
+| Weight              | 122–218 g (4.3–7.7 oz) depending on size                      |
+| Capacity            | 325–887 ml (11–30 fl oz)                                      |
+| Diameter            | 2.5–3.1 in                                                    |
+| Height              | about 7 in (11 oz) to 11.3 in (30 oz)                         |
+| Material            | Impact-extruded aluminum                                      |
+| Cap                 | Child-resistant push-and-twist, vented for controlled pouring |
+| Stove compatibility | Threads accept MSR fuel pumps                                 |
+| Fuels               | White gas, kerosene, unleaded gasoline                        |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="fuel" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="fuel"
+/>
 
 ## Performance
 

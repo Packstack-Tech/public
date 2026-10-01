@@ -14,8 +14,10 @@ description: "Gregory's Baltoro in 65L and 75L trades roughly five pounds of pac
 variants:
   - name: "65"
     weight_grams: 2050.0
+    image_url: "https://www.gregory.com/dw/image/v2/BBZB_PRD/on/demandware.static/-/Sites-product-catalog/default/dw8f205fc2/collections/_gregory/Baltoro/500x500/157937-9304-SQUARE-40.jpg?sw=3000&sh=3000"
   - name: "75"
     weight_grams: 2260.0
+    image_url: "https://www.gregory.com/on/demandware.static/-/Sites-product-catalog/default/dw7b746181/collections/_gregory/Baltoro/500x500/157945-E319-SQUARE-39.jpg"
 covers:
   - id: 151
     label: "75"
@@ -23,8 +25,8 @@ covers:
     label: "65"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -32,23 +34,29 @@ The Baltoro is Gregory's heavy-load expedition pack, built for week-long food ca
 
 ## Key Specs
 
-| Spec | Detail |
-| --- | --- |
-| Weight | 2,050–2,260 g depending on version |
-| Volume | 65 L or 75 L (stated volume shifts slightly with torso size) |
-| Recommended max load | 50 lb (about 22.7 kg) |
-| Fabric | 210D and 420D nylon |
-| Frame | Perimeter alloy frame with fiberglass anti-barreling cross-stay |
-| Suspension | FreeFloat A3, auto-rotating shoulder harness, dynamic hipbelt |
-| Back panel | AirCushion foamless, 90%+ open-air 3D mesh |
-| Access | Top drawcord, U-shaped front zip, bottom sleeping bag compartment with removable divider |
-| Sizes | Small, Medium, Large, with an adjustable torso |
-| Rain cover | Not included |
-| Price (75) | $400 |
+| Spec                 | Detail                                                                                   |
+| -------------------- | ---------------------------------------------------------------------------------------- |
+| Weight               | 2,050–2,260 g depending on version                                                       |
+| Volume               | 65 L or 75 L (stated volume shifts slightly with torso size)                             |
+| Recommended max load | 50 lb (about 22.7 kg)                                                                    |
+| Fabric               | 210D and 420D nylon                                                                      |
+| Frame                | Perimeter alloy frame with fiberglass anti-barreling cross-stay                          |
+| Suspension           | FreeFloat A3, auto-rotating shoulder harness, dynamic hipbelt                            |
+| Back panel           | AirCushion foamless, 90%+ open-air 3D mesh                                               |
+| Access               | Top drawcord, U-shaped front zip, bottom sleeping bag compartment with removable divider |
+| Sizes                | Small, Medium, Large, with an adjustable torso                                           |
+| Rain cover           | Not included                                                                             |
+| Price (75)           | $400                                                                                     |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="main-pack" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

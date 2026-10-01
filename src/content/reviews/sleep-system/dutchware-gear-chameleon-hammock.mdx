@@ -12,7 +12,7 @@ published_at: "2026-07-27"
 description: "A deep dive into Dutchware's modular Chameleon hammock — proprietary Hexon fabric, swappable bug nets and top covers, and a lay-direction trick few competitors offer."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -34,7 +34,12 @@ The Chameleon is Dutchware's flagship gathered-end hammock, and it's less a sing
 | Included                    | Continuous loops, structural ridgeline, tie-outs, double-ended stuff sack |
 | Suspension                  | Sold separately (e.g., Beetle Buckle) unless bundled in a package deal    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

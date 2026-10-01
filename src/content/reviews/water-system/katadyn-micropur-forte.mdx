@@ -21,7 +21,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -29,20 +29,26 @@ Katadyn's Micropur Forte MF is a 100 ml bottle of liquid disinfectant that pairs
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Format | Liquid |
-| Weight | 3 g (decanted trail portion); the full bottle is about 147 g |
-| Bottle volume | 100 ml |
-| Capacity | 1,000 L of clear water |
-| Dosage | 1 ml per 10 L |
-| Active ingredients | Chlorine (listed by retailers as sodium hypochlorite) + silver ions |
-| Bacteria and virus contact time | 30 minutes |
-| Amoeba and Giardia contact time | 120 minutes |
-| Storage protection after treatment | Up to 6 months |
-| Water quality | Clear water only |
+| Spec                               | Value                                                               |
+| ---------------------------------- | ------------------------------------------------------------------- |
+| Format                             | Liquid                                                              |
+| Weight                             | 3 g (decanted trail portion); the full bottle is about 147 g        |
+| Bottle volume                      | 100 ml                                                              |
+| Capacity                           | 1,000 L of clear water                                              |
+| Dosage                             | 1 ml per 10 L                                                       |
+| Active ingredients                 | Chlorine (listed by retailers as sodium hypochlorite) + silver ions |
+| Bacteria and virus contact time    | 30 minutes                                                          |
+| Amoeba and Giardia contact time    | 120 minutes                                                         |
+| Storage protection after treatment | Up to 6 months                                                      |
+| Water quality                      | Clear water only                                                    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="purification" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="purification"
+/>
 
 ## Performance
 

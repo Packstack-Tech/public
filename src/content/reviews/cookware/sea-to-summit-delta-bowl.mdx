@@ -19,7 +19,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,19 +27,25 @@ The Sea to Summit Delta Bowl is a rigid, 800 ml Nylon 66 bowl for backpackers wh
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 79 g / 2.8 oz (bowl only) |
-| Capacity | 800 ml / 27 fl oz |
-| Diameter | 16 cm / 6.25 in |
-| Depth | 5 cm / 2 in |
-| Material | BPA-free food-grade Nylon 66 |
-| Base | Patented Protex hex pattern |
-| Extras | Interior measurement increments, thumb grip that doubles as a hang loop |
-| Dishwasher safe | Yes |
-| BPA-free | Yes |
+| Spec            | Value                                                                   |
+| --------------- | ----------------------------------------------------------------------- |
+| Weight          | 79 g / 2.8 oz (bowl only)                                               |
+| Capacity        | 800 ml / 27 fl oz                                                       |
+| Diameter        | 16 cm / 6.25 in                                                         |
+| Depth           | 5 cm / 2 in                                                             |
+| Material        | BPA-free food-grade Nylon 66                                            |
+| Base            | Patented Protex hex pattern                                             |
+| Extras          | Interior measurement increments, thumb grip that doubles as a hang loop |
+| Dishwasher safe | Yes                                                                     |
+| BPA-free        | Yes                                                                     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="pot-pan" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="pot-pan"
+/>
 
 ## Performance
 

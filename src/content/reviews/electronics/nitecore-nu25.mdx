@@ -14,10 +14,13 @@ description: "The Nitecore NU25 packs 400 lumens, USB-C charging and IP66 protec
 variants:
   - name: "UL"
     weight_grams: 45.0
+    image_url: "https://cdn.rubbermonkey.com/ProductImage/840/337728.jpg/nitecore-nu25-ul-rechargeable-headlamp-with-paracord-headband.jpg"
   - name: "MCT UL"
     weight_grams: 47.0
+    image_url: "https://zpacks.com/cdn/shop/files/nu25mct_f1d8c75f-a67e-40ba-9dc0-72dfae9fbc69_2048x.png?v=1748628352"
   - name: "MCT"
     weight_grams: 50.0
+    image_url: "https://hyperlitemountaingear.com/cdn/shop/files/hyperlite-mountain-gear-accessories-nitecore-nu25-mct-ul-1190868730.jpg?v=1759477844&width=3000"
 covers:
   - id: 10
     label: null
@@ -29,8 +32,8 @@ covers:
     label: "UL"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -38,27 +41,33 @@ The Nitecore NU25 is the headlamp that thru-hikers have been buying for years, a
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 45–50 g depending on version |
-| Dimensions | 60.0 × 34.4 × 27.2 mm |
-| Max output | 400 lumens |
-| Output levels | Ultralow 6 lm / Low 60 lm / Mid 200 lm / High 400 lm |
-| Max beam distance | 132 m |
-| Max beam intensity | 4,351 cd |
-| Max runtime | 45 hours (ultralow) |
-| Runtime at high | About 2 hr 40 min |
-| Battery | Built-in 700 mAh Li-ion, USB-C, about 75 min full charge |
-| Beam colors | Warm (3000K), neutral white (4500K), cool white (6500K) on MCT versions |
-| Auxiliary light | Red, two levels |
-| Special modes | Location Beacon, SOS, Slow Flashing |
-| Water and dust resistance | IP66 |
-| Impact resistance | 1 m |
-| Price | About $36.95 MSRP |
+| Spec                      | Value                                                                   |
+| ------------------------- | ----------------------------------------------------------------------- |
+| Weight                    | 45–50 g depending on version                                            |
+| Dimensions                | 60.0 × 34.4 × 27.2 mm                                                   |
+| Max output                | 400 lumens                                                              |
+| Output levels             | Ultralow 6 lm / Low 60 lm / Mid 200 lm / High 400 lm                    |
+| Max beam distance         | 132 m                                                                   |
+| Max beam intensity        | 4,351 cd                                                                |
+| Max runtime               | 45 hours (ultralow)                                                     |
+| Runtime at high           | About 2 hr 40 min                                                       |
+| Battery                   | Built-in 700 mAh Li-ion, USB-C, about 75 min full charge                |
+| Beam colors               | Warm (3000K), neutral white (4500K), cool white (6500K) on MCT versions |
+| Auxiliary light           | Red, two levels                                                         |
+| Special modes             | Location Beacon, SOS, Slow Flashing                                     |
+| Water and dust resistance | IP66                                                                    |
+| Impact resistance         | 1 m                                                                     |
+| Price                     | About $36.95 MSRP                                                       |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="lighting" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="lighting"
+/>
 
 ## Performance
 

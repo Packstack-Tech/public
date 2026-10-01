@@ -21,7 +21,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -29,18 +29,24 @@ The Nylofume Pack Liner began life as a bag for protecting food and medicine dur
 
 ## Key Specs
 
-| Spec | Detail |
-| --- | --- |
-| Weight | 26 g (0.91 oz) |
-| Material | Nylon polymer film |
-| Dimensions (flat) | 20" x 37" (50.8 x 94 cm) |
-| Volume (top rolled) | 45 L |
-| Volume (fully open) | 52 L |
-| Construction | Straight seam, no gusset |
-| Finish | Clear |
-| Closure | None included |
+| Spec                | Detail                   |
+| ------------------- | ------------------------ |
+| Weight              | 26 g (0.91 oz)           |
+| Material            | Nylon polymer film       |
+| Dimensions (flat)   | 20" x 37" (50.8 x 94 cm) |
+| Volume (top rolled) | 45 L                     |
+| Volume (fully open) | 52 L                     |
+| Construction        | Straight seam, no gusset |
+| Finish              | Clear                    |
+| Closure             | None included            |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="protection" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="protection"
+/>
 
 ## Performance
 

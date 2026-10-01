@@ -19,7 +19,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,19 +27,25 @@ The MSR PocketRocket Deluxe is an 83 g upright canister stove that adds a pressu
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 83 g / 2.9 oz (stove only) |
-| Packed size | 1.5 x 2.2 x 3.3 in |
-| Boil time (1 L) | 3:30 (manufacturer) |
-| Output | ~10,400 BTU/hr |
-| Ignition | Push-start piezo |
-| Fuel type | Isobutane-propane canister (threaded) |
-| Max pot diameter | 8 in |
-| Pressure regulator | Yes |
-| MSRP | $69.95 |
+| Spec               | Value                                 |
+| ------------------ | ------------------------------------- |
+| Weight             | 83 g / 2.9 oz (stove only)            |
+| Packed size        | 1.5 x 2.2 x 3.3 in                    |
+| Boil time (1 L)    | 3:30 (manufacturer)                   |
+| Output             | ~10,400 BTU/hr                        |
+| Ignition           | Push-start piezo                      |
+| Fuel type          | Isobutane-propane canister (threaded) |
+| Max pot diameter   | 8 in                                  |
+| Pressure regulator | Yes                                   |
+| MSRP               | $69.95                                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="stove" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

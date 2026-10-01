@@ -19,7 +19,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,20 +27,26 @@ The Victorinox Classic SD is the smallest knife that still earns the Swiss Army 
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 21 g (0.74 oz) |
-| Length (closed) | 58 mm (2.25 in) |
-| Width | 18 mm |
-| Height | 9 mm |
-| Functions | 7: small blade, scissors, nail file, 2.5 mm screwdriver, tweezers, toothpick, key ring |
-| Blade lock | No |
-| One-hand opening | No |
-| Handle material | ABS/Cellidor |
-| Metal parts | Stainless steel |
-| Country of origin | Switzerland |
+| Spec              | Value                                                                                  |
+| ----------------- | -------------------------------------------------------------------------------------- |
+| Weight            | 21 g (0.74 oz)                                                                         |
+| Length (closed)   | 58 mm (2.25 in)                                                                        |
+| Width             | 18 mm                                                                                  |
+| Height            | 9 mm                                                                                   |
+| Functions         | 7: small blade, scissors, nail file, 2.5 mm screwdriver, tweezers, toothpick, key ring |
+| Blade lock        | No                                                                                     |
+| One-hand opening  | No                                                                                     |
+| Handle material   | ABS/Cellidor                                                                           |
+| Metal parts       | Stainless steel                                                                        |
+| Country of origin | Switzerland                                                                            |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="knife" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="knife"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "A closer look at the Amazonas Moskito-Traveller Extreme, a 500g bug-net hammock built from tougher 210D nylon for backpackers who want durability over grams."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,7 +31,12 @@ The Moskito-Traveller Extreme sits at the "durable" end of Amazonas's ultralight
 | Entry             | Side zip                                                                              |
 | Suspension        | Not included (sold separately)                                                        |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

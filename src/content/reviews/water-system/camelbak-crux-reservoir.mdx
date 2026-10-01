@@ -14,8 +14,10 @@ description: "The CamelBak Crux reservoir has a high-flow bite valve, a handle t
 variants:
   - name: "3L"
     weight_grams: 198.0
+    image_url: "https://vault.widen.net/content/vq18z4xnrt/webp?w=1500&h=1500"
   - name: "2L"
     weight_grams: 211.0
+    image_url: "https://vault.widen.net/content/uat4leztiv/webp?w=1500&h=1500"
 covers:
   - id: 534
     label: "3L"
@@ -23,8 +25,8 @@ covers:
     label: "2L"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -32,22 +34,28 @@ The CamelBak Crux is a full-featured hydration reservoir for hikers, mountain bi
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Capacity | 2 L (70 fl oz) or 3 L (101 fl oz) |
-| Weight | 198–211 g depending on size |
-| Dimensions | 15 x 7.5 x 2.5 in (38 x 19 x 6 cm) |
-| Material | Polyurethane; BPA-, BPS- and BPF-free |
-| Antimicrobial treatment | HydroGuard (reservoir and tube) |
-| Closure | Screw-top cap with ergonomic handle |
-| Hose connection | Quick Link quick-disconnect with auto shut-off port |
-| Bite valve | Big Bite with on/off lever |
-| Warranty | Lifetime ("Got Your Bak") |
-| Price | About $42 |
+| Spec                    | Value                                               |
+| ----------------------- | --------------------------------------------------- |
+| Capacity                | 2 L (70 fl oz) or 3 L (101 fl oz)                   |
+| Weight                  | 198–211 g depending on size                         |
+| Dimensions              | 15 x 7.5 x 2.5 in (38 x 19 x 6 cm)                  |
+| Material                | Polyurethane; BPA-, BPS- and BPF-free               |
+| Antimicrobial treatment | HydroGuard (reservoir and tube)                     |
+| Closure                 | Screw-top cap with ergonomic handle                 |
+| Hose connection         | Quick Link quick-disconnect with auto shut-off port |
+| Bite valve              | Big Bite with on/off lever                          |
+| Warranty                | Lifetime ("Got Your Bak")                           |
+| Price                   | About $42                                           |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="hydration" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hydration"
+/>
 
 ## Performance
 

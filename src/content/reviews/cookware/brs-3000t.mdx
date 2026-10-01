@@ -19,7 +19,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,20 +27,26 @@ The BRS-3000T is a titanium-alloy canister stove that weighs 26 g, just under an
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 26 g (0.92 oz) |
-| Dimensions (in use) | 8.5 × 8.5 × 7 cm |
-| Dimensions (stowed) | 4 × 4 × 5 cm |
-| Output | 2,700 W (about 9,200 BTU/hr) |
-| Gas consumption | About 140 g/hr |
-| Fuel type | Isobutane/propane canister (EN417) |
-| Materials | Titanium alloy, copper, stainless steel |
-| Ignition | None; external lighter required |
-| Pressure regulator | No |
-| Includes | Drawstring stuff sack, spare O-ring |
+| Spec                | Value                                   |
+| ------------------- | --------------------------------------- |
+| Weight              | 26 g (0.92 oz)                          |
+| Dimensions (in use) | 8.5 × 8.5 × 7 cm                        |
+| Dimensions (stowed) | 4 × 4 × 5 cm                            |
+| Output              | 2,700 W (about 9,200 BTU/hr)            |
+| Gas consumption     | About 140 g/hr                          |
+| Fuel type           | Isobutane/propane canister (EN417)      |
+| Materials           | Titanium alloy, copper, stainless steel |
+| Ignition            | None; external lighter required         |
+| Pressure regulator  | No                                      |
+| Includes            | Drawstring stuff sack, spare O-ring     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="stove" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

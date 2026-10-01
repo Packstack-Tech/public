@@ -14,21 +14,24 @@ description: "Osprey's Talon line pairs a stable AirScape back panel and torso-a
 variants:
   - name: "22"
     weight_grams: 1080.0
+    image_url: "https://www.osprey.com/media/catalog/product/cache/b2f1ce2dfe10d3d31bf2056bf6e0d10f/c/c/cclvjpew.jpg"
   - name: "33"
     weight_grams: 1262.0
+    image_url: "https://assets.trailspace.com/assets/f/3/2/15466290/4877.jpg"
   - name: "44"
     weight_grams: 1330.0
+    image_url: "https://www.osprey.com/media/catalog/product/T/a/Talon44_S25_Side_BlackCoalGrey-resized.jpg"
 covers:
   - id: 96
     label: "44"
-  - id: 524
-    label: "33"
   - id: 721
     label: "22"
+  - id: 524
+    label: "33"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -36,23 +39,29 @@ The Osprey Talon is a family of torso-adjustable, framed packs in 22, 33 and 44 
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 1,080–1,330 g depending on size |
-| Volume | 22 L, 33 L or 44 L (the 44 comes as S/M at 42 L and M/L at 44 L) |
-| Load range (44) | 15–35 lbs |
-| Frame | LightWire peripheral aluminum frame |
-| Back panel | Injection-molded AirScape |
-| Harness and hipbelt | BioStretch harness, continuous-wrap hipbelt |
-| Dimensions (44 S/M) | 26" x 12" x 11" (H x W x D) |
-| Dimensions (44 M/L) | 28.3" x 12.2" x 13.4" (H x W x D) |
-| Main fabric (44) | 100D recycled nylon ripstop, PFAS-free DWR |
-| Bottom fabric (44) | 420D recycled nylon, PFAS-free DWR |
-| Rain cover | Not included |
+| Spec                | Value                                                            |
+| ------------------- | ---------------------------------------------------------------- |
+| Weight              | 1,080–1,330 g depending on size                                  |
+| Volume              | 22 L, 33 L or 44 L (the 44 comes as S/M at 42 L and M/L at 44 L) |
+| Load range (44)     | 15–35 lbs                                                        |
+| Frame               | LightWire peripheral aluminum frame                              |
+| Back panel          | Injection-molded AirScape                                        |
+| Harness and hipbelt | BioStretch harness, continuous-wrap hipbelt                      |
+| Dimensions (44 S/M) | 26" x 12" x 11" (H x W x D)                                      |
+| Dimensions (44 M/L) | 28.3" x 12.2" x 13.4" (H x W x D)                                |
+| Main fabric (44)    | 100D recycled nylon ripstop, PFAS-free DWR                       |
+| Bottom fabric (44)  | 420D recycled nylon, PFAS-free DWR                               |
+| Rain cover          | Not included                                                     |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="main-pack" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

@@ -14,8 +14,10 @@ description: "The Fjällräven Keb is a wooden-framed, G-1000 trekking pack in 5
 variants:
   - name: "52"
     weight_grams: 2260.0
+    image_url: "https://www.fjallraven.com/49ad2d/globalassets/catalogs/fjallraven/f2/f273/f27342/f638-555/7323450489403_ss19_srrg_keb_52_fjaellraeven_21.jpg?width=1872&height=1872&rmode=BoxPad&bgcolor=fff&quality=100"
   - name: "72"
     weight_grams: 2750.0
+    image_url: "http://fjallraven.com.au/cdn/shop/files/Keb_72_27343-638-555_A_MAIN_FJR.png?v=1765841151"
 covers:
   - id: 1608
     label: "52"
@@ -23,8 +25,8 @@ covers:
     label: "72"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -32,24 +34,30 @@ The Keb is Fjällräven's all-season trekking pack, built around a linseed-treat
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 2,260–2,750 g depending on size |
-| Volume | 52 L or 72 L |
-| Dimensions (H × W × D) | 52: 67 × 26 × 30 cm; 72: 73 × 27 × 24 cm |
-| Adjustable back length | 52: 34–56 cm; 72: 40–66 cm |
-| Frame | FSC-certified birch |
-| Main fabric | G-1000® HeavyDuty S (65% recycled polyester, 35% organic cotton) |
-| Base and sides | Bergshell® 400D, 100% recycled polyamide |
-| Rain cover | Included |
-| Pockets | 10 |
-| Access | Top-loading, front zip, side zip, bottom zip |
-| Hydration compatible | Yes |
-| PFAS-free | Yes |
+| Spec                   | Value                                                            |
+| ---------------------- | ---------------------------------------------------------------- |
+| Weight                 | 2,260–2,750 g depending on size                                  |
+| Volume                 | 52 L or 72 L                                                     |
+| Dimensions (H × W × D) | 52: 67 × 26 × 30 cm; 72: 73 × 27 × 24 cm                         |
+| Adjustable back length | 52: 34–56 cm; 72: 40–66 cm                                       |
+| Frame                  | FSC-certified birch                                              |
+| Main fabric            | G-1000® HeavyDuty S (65% recycled polyester, 35% organic cotton) |
+| Base and sides         | Bergshell® 400D, 100% recycled polyamide                         |
+| Rain cover             | Included                                                         |
+| Pockets                | 10                                                               |
+| Access                 | Top-loading, front zip, side zip, bottom zip                     |
+| Hydration compatible   | Yes                                                              |
+| PFAS-free              | Yes                                                              |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="main-pack" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

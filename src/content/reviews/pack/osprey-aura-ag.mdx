@@ -14,8 +14,10 @@ description: "Osprey's women's Aura AG pairs a ventilated, highly adjustable Ant
 variants:
   - name: "50"
     weight_grams: 1947.0
+    image_url: "https://m.media-amazon.com/images/I/81dkrk+M62L.jpg"
   - name: "65"
     weight_grams: 2086.0
+    image_url: "https://cdn11.bigcommerce.com/s-sujbx482b/images/stencil/1280x1280/products/3825/6645/auraaglt65_side_antidotepurple__38713.1684340934.jpg?c=1"
 covers:
   - id: 500
     label: "65"
@@ -23,8 +25,8 @@ covers:
     label: "50"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -32,22 +34,28 @@ The Osprey Aura AG is a women's-specific backpacking pack built around AntiGravi
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 1,947–2,086 g depending on version |
-| Volume | 50L or 65L (47L and 62L in XS/S) |
-| Load range | 25–35 lbs (50L); 30–40 lbs (65L) |
-| Dimensions (M/L) | 50L: about 31.5 in tall; 65L: 32.28 in tall × 15.35 in wide |
-| Suspension | AntiGravity 3D-suspended mesh, 4 mm powder-coated full peripheral frame |
-| Torso adjustment | Cam-lock sliding torso; Fit-on-the-Fly harness and hipbelt |
-| Frame sizes | XS/S and M/L |
-| Fabric | Recycled main, accent and bottom fabrics (65L: 100×630D nylon body, 420D base) |
-| Included | Integrated rain cover, hydration sleeve, removable floating lid, Stow-on-the-Go pole attachment |
-| Warranty | Osprey All Mighty Guarantee (lifetime repair or replacement) |
+| Spec             | Value                                                                                           |
+| ---------------- | ----------------------------------------------------------------------------------------------- |
+| Weight           | 1,947–2,086 g depending on version                                                              |
+| Volume           | 50L or 65L (47L and 62L in XS/S)                                                                |
+| Load range       | 25–35 lbs (50L); 30–40 lbs (65L)                                                                |
+| Dimensions (M/L) | 50L: about 31.5 in tall; 65L: 32.28 in tall × 15.35 in wide                                     |
+| Suspension       | AntiGravity 3D-suspended mesh, 4 mm powder-coated full peripheral frame                         |
+| Torso adjustment | Cam-lock sliding torso; Fit-on-the-Fly harness and hipbelt                                      |
+| Frame sizes      | XS/S and M/L                                                                                    |
+| Fabric           | Recycled main, accent and bottom fabrics (65L: 100×630D nylon body, 420D base)                  |
+| Included         | Integrated rain cover, hydration sleeve, removable floating lid, Stow-on-the-Go pole attachment |
+| Warranty         | Osprey All Mighty Guarantee (lifetime repair or replacement)                                    |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="main-pack" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

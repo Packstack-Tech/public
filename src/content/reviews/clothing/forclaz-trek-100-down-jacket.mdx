@@ -19,7 +19,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,18 +27,24 @@ The Forclaz down jacket, sold as the Trek 100 and later rebranded MT100, is Deca
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 289 g (10.2 oz, men's medium) |
-| Comfort rating | 23°F–41°F |
-| Fill power | 800 cuin |
-| Fill material | 90% grey duck down, 10% grey duck feather |
-| Outer fabric | 100% polyamide, 15-denier, DWR-treated |
-| Certification | RDS (Responsible Down Standard) |
-| Packability | Stuffs into its left-hand pocket |
-| Price | About $80–$100 |
+| Spec           | Value                                     |
+| -------------- | ----------------------------------------- |
+| Weight         | 289 g (10.2 oz, men's medium)             |
+| Comfort rating | 23°F–41°F                                 |
+| Fill power     | 800 cuin                                  |
+| Fill material  | 90% grey duck down, 10% grey duck feather |
+| Outer fabric   | 100% polyamide, 15-denier, DWR-treated    |
+| Certification  | RDS (Responsible Down Standard)           |
+| Packability    | Stuffs into its left-hand pocket          |
+| Price          | About $80–$100                            |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="insulation" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="insulation"
+/>
 
 ## Performance
 

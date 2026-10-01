@@ -12,7 +12,7 @@ published_at: "2026-07-15"
 description: "A 43g DCF roll-top food bag designed for 5–6 day carries — ultralight, water-resistant, and a thru-hiker staple, with a few real-world caveats to know."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -33,7 +33,12 @@ The Zpacks Large Food Bag is a 14-liter, roll-top stuff sack made from 1.6 oz/sq
 | Includes        | Carabiner                                       |
 | Warranty        | 2-year limited                                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

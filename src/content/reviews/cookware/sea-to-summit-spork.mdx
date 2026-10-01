@@ -14,8 +14,10 @@ description: "Sea to Summit's hard-anodized aluminum spork weighs 9–12 g, unde
 variants:
   - name: "Alpha Light"
     weight_grams: 9.0
+    image_url: "https://shop.gohunt.com/cdn/shop/products/stslongspork_1200x.jpg?v=1613024645"
   - name: "AlphaLight Long"
     weight_grams: 12.0
+    image_url: "https://seatosummit.com/cdn/shop/products/Alpha_Light_Cutlery___Long_Spork_1.jpg?v=1571610194&width=1200"
 covers:
   - id: 1441
     label: "Alpha Light"
@@ -23,8 +25,8 @@ covers:
     label: "AlphaLight Long"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -32,19 +34,25 @@ Sea to Summit's Alpha Light spork is a single piece of hard-anodized 7075-T6 alu
 
 ## Key Specs
 
-| Spec | Detail |
-| --- | --- |
-| Weight | 9–12 g depending on length |
-| Length | 16.5 cm (6.5 in) standard; 21.5 cm (8.5 in) Long |
-| Material | Hard-anodized aircraft-grade 7075-T6 aluminum alloy |
-| Finish | Smooth matte |
-| Includes carabiner | Yes, mini carabiner through handle hole |
-| Dishwasher safe | No |
-| Food safety | Conforms to FDA food-safety standards |
+| Spec               | Detail                                              |
+| ------------------ | --------------------------------------------------- |
+| Weight             | 9–12 g depending on length                          |
+| Length             | 16.5 cm (6.5 in) standard; 21.5 cm (8.5 in) Long    |
+| Material           | Hard-anodized aircraft-grade 7075-T6 aluminum alloy |
+| Finish             | Smooth matte                                        |
+| Includes carabiner | Yes, mini carabiner through handle hole             |
+| Dishwasher safe    | No                                                  |
+| Food safety        | Conforms to FDA food-safety standards               |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="utensil" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="utensil"
+/>
 
 ## Performance
 

@@ -19,7 +19,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,20 +27,26 @@ The Jetboil Flash is an integrated canister stove: a 1.0L hard-anodized aluminum
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 371 g (13.1 oz), excluding fuel |
-| Capacity | 1.0L |
-| Boil time | 120 sec for 0.5L; about 4 min for 1.0L |
-| Output | 5,300 BTU/h (1.5 kW) |
-| Packed size | 10.8 x 19.1 cm (4.25 x 7.5 in) |
-| Fuel | Isobutane-propane canister (100 g fits inside the pot) |
-| Ignition | Turn-and-click piezo, built in |
-| Pressure regulator | No |
-| Fuel economy | Roughly 10 L boiled per 100 g canister |
-| MSRP | $129.99 |
+| Spec               | Value                                                  |
+| ------------------ | ------------------------------------------------------ |
+| Weight             | 371 g (13.1 oz), excluding fuel                        |
+| Capacity           | 1.0L                                                   |
+| Boil time          | 120 sec for 0.5L; about 4 min for 1.0L                 |
+| Output             | 5,300 BTU/h (1.5 kW)                                   |
+| Packed size        | 10.8 x 19.1 cm (4.25 x 7.5 in)                         |
+| Fuel               | Isobutane-propane canister (100 g fits inside the pot) |
+| Ignition           | Turn-and-click piezo, built in                         |
+| Pressure regulator | No                                                     |
+| Fuel economy       | Roughly 10 L boiled per 100 g canister                 |
+| MSRP               | $129.99                                                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="stove" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

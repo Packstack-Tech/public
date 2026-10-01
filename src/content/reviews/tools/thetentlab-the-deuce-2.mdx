@@ -19,7 +19,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,17 +27,23 @@ The Deuce #2 is TheTentLab's best-selling cathole trowel, sitting between the 13
 
 ## Key Specs
 
-| Spec | Detail |
-| --- | --- |
-| Weight | 17 g / 0.6 oz |
-| Dimensions | 2.5" wide × 6.8" long |
-| Material | 7075-T6 aluminum (aerospace grade, AMS4045) |
-| Edge | DirtSaw serrated leading edge |
-| Finish | Anodized, tumbled and deburred |
-| Price | $21.95 (DirtSaw version) |
-| Warranty | Lifetime; replacement for the cost of postage |
+| Spec       | Detail                                        |
+| ---------- | --------------------------------------------- |
+| Weight     | 17 g / 0.6 oz                                 |
+| Dimensions | 2.5" wide × 6.8" long                         |
+| Material   | 7075-T6 aluminum (aerospace grade, AMS4045)   |
+| Edge       | DirtSaw serrated leading edge                 |
+| Finish     | Anodized, tumbled and deburred                |
+| Price      | $21.95 (DirtSaw version)                      |
+| Warranty   | Lifetime; replacement for the cost of postage |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="processing" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="processing"
+/>
 
 ## Performance
 

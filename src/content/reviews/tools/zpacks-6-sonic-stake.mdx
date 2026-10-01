@@ -12,7 +12,7 @@ published_at: "2026-07-08"
 description: 'The Zpacks 6" Sonic Stake is a 9g aluminum Y-beam tent stake that delivers solid holding power for ultralight shelters — with one firm rule: don''t hammer it.'
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,7 +31,12 @@ The Zpacks 6" Sonic Stake is a high-grade aluminum Y-beam peg aimed squarely at 
 | Holding Power (Zpacks scale)   | Better                              |
 | Bend Resistance (Zpacks scale) | Good                                |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

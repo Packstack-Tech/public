@@ -19,7 +19,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,18 +27,24 @@ Body Glide Original is a twist-up stick of plant-based wax that lays down a dry,
 
 ## Key Specs
 
-| Spec | Detail |
-| --- | --- |
-| Weight | 40 g for the 1.5 oz stick (smaller and larger sticks scale accordingly) |
-| Format | Twist-up stick, deodorant-style |
-| Sizes | 0.35 oz pocket, 0.8 oz travel, 1.5 oz regular, 2.5 oz large |
-| Price (manufacturer) | $5.49 / $8.99 / $10.99 / $16.99, smallest to largest |
-| Ingredients | Caprylic/capric triglyceride, cetearyl alcohol, ozokerite wax, glyceryl behenate, stearyl alcohol, allantoin, tocopherol (vitamin E) |
-| Free of | Petroleum, lanolin, mineral oils, parabens, fragrance, sulfates |
-| Vegan | Yes; not tested on animals |
-| Storage | Best kept between 59 and 86°F (15–30°C) |
+| Spec                 | Detail                                                                                                                               |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Weight               | 40 g for the 1.5 oz stick (smaller and larger sticks scale accordingly)                                                              |
+| Format               | Twist-up stick, deodorant-style                                                                                                      |
+| Sizes                | 0.35 oz pocket, 0.8 oz travel, 1.5 oz regular, 2.5 oz large                                                                          |
+| Price (manufacturer) | $5.49 / $8.99 / $10.99 / $16.99, smallest to largest                                                                                 |
+| Ingredients          | Caprylic/capric triglyceride, cetearyl alcohol, ozokerite wax, glyceryl behenate, stearyl alcohol, allantoin, tocopherol (vitamin E) |
+| Free of              | Petroleum, lanolin, mineral oils, parabens, fragrance, sulfates                                                                      |
+| Vegan                | Yes; not tested on animals                                                                                                           |
+| Storage              | Best kept between 59 and 86°F (15–30°C)                                                                                              |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="personal-care" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="personal-care"
+/>
 
 ## Performance
 

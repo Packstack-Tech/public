@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A look at whether Oakley's iconic Holbrook sunglasses hold up as trail eyewear, not just a lifestyle accessory."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,7 +31,12 @@ The Holbrook is Oakley's flagship retro-square frame — the one you've seen on 
 | Style inspiration | 1940s–1960s screen heroes                                                    |
 | Fit               | Interchangeable lenses, three-point fit (contact at nose bridge and temples) |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

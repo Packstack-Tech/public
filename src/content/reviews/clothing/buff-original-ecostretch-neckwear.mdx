@@ -19,7 +19,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,17 +27,23 @@ The Original EcoStretch is a seamless tube of stretchy recycled microfiber, and 
 
 ## Key Specs
 
-| Spec | Detail |
-| --- | --- |
-| Weight | 34 g (1.2 oz) |
-| Material | 95% polyester (REPREVE® recycled), 5% elastane |
-| UPF rating | UPF 50 |
-| Dimensions | 20.5" L x 9" W |
-| Ways to wear | 12+ |
-| Construction | Seamless tube, 4-way stretch |
-| Price | Roughly $20–25 |
+| Spec         | Detail                                         |
+| ------------ | ---------------------------------------------- |
+| Weight       | 34 g (1.2 oz)                                  |
+| Material     | 95% polyester (REPREVE® recycled), 5% elastane |
+| UPF rating   | UPF 50                                         |
+| Dimensions   | 20.5" L x 9" W                                 |
+| Ways to wear | 12+                                            |
+| Construction | Seamless tube, 4-way stretch                   |
+| Price        | Roughly $20–25                                 |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="headwear" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="headwear"
+/>
 
 ## Performance
 

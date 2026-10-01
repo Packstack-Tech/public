@@ -21,7 +21,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -29,18 +29,24 @@ Tenacious Tape Patches are Gear Aid's pre-cut, outdoor-shaped take on its classi
 
 ## Key Specs
 
-| Spec | Detail |
-| --- | --- |
-| Weight | 70 g (per pack) |
-| Material | 70D nylon / 30D micro ripstop / clear vinyl (varies by color) |
-| Adhesive | Ultra-aggressive peel-and-stick |
-| Waterproof | Yes |
-| Machine washable | Yes, after a 24-hour cure |
-| Patches per pack | 3, assorted colors |
-| Shapes | Outdoor-inspired pre-cut shapes |
-| Application | Peel and stick; no sewing or heat |
+| Spec             | Detail                                                        |
+| ---------------- | ------------------------------------------------------------- |
+| Weight           | 70 g (per pack)                                               |
+| Material         | 70D nylon / 30D micro ripstop / clear vinyl (varies by color) |
+| Adhesive         | Ultra-aggressive peel-and-stick                               |
+| Waterproof       | Yes                                                           |
+| Machine washable | Yes, after a 24-hour cure                                     |
+| Patches per pack | 3, assorted colors                                            |
+| Shapes           | Outdoor-inspired pre-cut shapes                               |
+| Application      | Peel and stick; no sewing or heat                             |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="repair" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="repair"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "A single-pole ultralight bivy that trades interior space for a sub-pound weight — great for fair-weather fast-and-light trips, less so for extended foul-weather use."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -33,7 +33,12 @@ The Outdoor Research Helium Bivy is a minimalist, single-pole bivy sack built fo
 | Features          | Clamshell opening, 4 stake loops, 1 guy line loop, 2 internal fly fasteners, high-volume toe box, reflective trim |
 | SKU               | 322414                                                                                                            |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-13"
 description: "A thorough look at Sunnyside Denatured Alcohol as a backpacking stove fuel — covering burn performance, efficiency, safety, and where it fits in the alcohol-fuel landscape."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,7 +32,12 @@ Sunnyside Denatured Alcohol is a hardware-store staple that doubles as one of th
 | Fuel Weight (listed, per cook) | 22.7 g (~0.8 fl oz)                             |
 | California Availability        | Not for sale                                    |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

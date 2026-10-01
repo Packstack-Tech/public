@@ -14,27 +14,32 @@ description: "TOAKS' uncoated titanium pot line runs from a 72 g, 550 ml mug-pot
 variants:
   - name: "550ml"
     weight_grams: 72.0
+    image_url: "http://www.toaksoutdoor.com/cdn/shop/files/550-L_main.png?v=1747237577"
   - name: "550ml Standard (POT-550)"
     weight_grams: 99.2
+    image_url: "https://cdn11.bigcommerce.com/s-jmhyu0/images/stencil/1280x1280/products/292/1877/Toaks-550ml-Ultralight-Pot-Front-Angle__60305.1705818171.jpg?c=2"
   - name: "900ml D130mm"
     weight_grams: 104.0
+    image_url: "https://zpacks.com/cdn/shop/files/zpacks-toaks-900ml-130mm-01_2048x.webp?v=1745337641"
   - name: "900ml"
     weight_grams: 116.0
+    image_url: "https://www.toaksoutdoor.com/cdn/shop/files/900_main.png?v=1747238097&width=1920"
   - name: "1600ml"
     weight_grams: 158.0
+    image_url: "https://www.toaksoutdoor.com/cdn/shop/files/1600_main.png?v=1747237371&width=1946"
 covers:
+  - id: 507
+    label: "900ml"
   - id: 44
     label: "550ml"
   - id: 596
     label: "900ml D130mm"
   - id: 834
     label: "1600ml"
-  - id: 507
-    label: "900ml"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -42,20 +47,26 @@ TOAKS makes the pot that ultralight hikers tend to own before they know they wan
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 72–158 g depending on version (the 1600 ml figure is pot only; 194 g with lid) |
-| Capacity | 550–1,600 ml |
-| Material | Pure titanium, Grade 1/2, uncoated |
-| Wall thickness | 0.35 mm on the 900 ml D115 (0.3 mm on the 550 ml Ultralight) |
-| 900 ml D115 dimensions | 115 mm diameter × 92 mm tall; 92 g pot only, 116 g with lid |
-| Includes | Lockable-handled lid, mesh storage sack |
-| Gradations | Fluid ounces and milliliters, inside wall |
-| Handles | Fold-out, uninsulated titanium |
+| Spec                   | Value                                                                          |
+| ---------------------- | ------------------------------------------------------------------------------ |
+| Weight                 | 72–158 g depending on version (the 1600 ml figure is pot only; 194 g with lid) |
+| Capacity               | 550–1,600 ml                                                                   |
+| Material               | Pure titanium, Grade 1/2, uncoated                                             |
+| Wall thickness         | 0.35 mm on the 900 ml D115 (0.3 mm on the 550 ml Ultralight)                   |
+| 900 ml D115 dimensions | 115 mm diameter × 92 mm tall; 92 g pot only, 116 g with lid                    |
+| Includes               | Lockable-handled lid, mesh storage sack                                        |
+| Gradations             | Fluid ounces and milliliters, inside wall                                      |
+| Handles                | Fold-out, uninsulated titanium                                                 |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="pot-pan" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="pot-pan"
+/>
 
 ## Performance
 

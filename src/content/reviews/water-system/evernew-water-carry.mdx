@@ -14,8 +14,10 @@ description: "Evernew's 36–42 g collapsible Water Carry bottles pair a gussete
 variants:
   - name: "1500ML"
     weight_grams: 36.0
+    image_url: "https://i.ebayimg.com/images/g/j70AAOSwOmBenEaB/s-l1200.jpg"
   - name: "Standard"
     weight_grams: 42.0
+    image_url: "https://m.media-amazon.com/images/I/51ubz6iEGBL.jpg"
 covers:
   - id: 553
     label: null
@@ -23,8 +25,8 @@ covers:
     label: "1500ML"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -32,21 +34,27 @@ The Evernew Water Carry is a collapsible soft bottle that weighs less than a AA 
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 36–42 g (1.3–1.48 oz) depending on size |
-| Capacity | 1.5 L or 2.0 L (67 fl oz) |
-| Dimensions | Standard: 210 x 330 mm (8.26 x 12.99 in); 1500ML: about 13 x 6.7 in |
-| Temperature rating | -20 to 90°C (-4 to 194°F) |
-| Pressure capacity | 80 kgf (784 N) |
-| Material | Nylon, low-odor three-layer polyethylene body, antibacterial polypropylene cap |
-| Filter compatibility | Sawyer-compatible threads |
-| Origin (Standard) | Japan |
-| Warranty | One-year limited |
+| Spec                 | Value                                                                          |
+| -------------------- | ------------------------------------------------------------------------------ |
+| Weight               | 36–42 g (1.3–1.48 oz) depending on size                                        |
+| Capacity             | 1.5 L or 2.0 L (67 fl oz)                                                      |
+| Dimensions           | Standard: 210 x 330 mm (8.26 x 12.99 in); 1500ML: about 13 x 6.7 in            |
+| Temperature rating   | -20 to 90°C (-4 to 194°F)                                                      |
+| Pressure capacity    | 80 kgf (784 N)                                                                 |
+| Material             | Nylon, low-odor three-layer polyethylene body, antibacterial polypropylene cap |
+| Filter compatibility | Sawyer-compatible threads                                                      |
+| Origin (Standard)    | Japan                                                                          |
+| Warranty             | One-year limited                                                               |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="storage" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="storage"
+/>
 
 ## Performance
 

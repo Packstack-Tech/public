@@ -14,8 +14,10 @@ description: "The Naturehike Cloud UP is a low-cost, 20D silicone nylon backpack
 variants:
   - name: "2-Person Ultralight Backpacking Tent"
     weight_grams: 1380.0
+    image_url: "https://www.naturehike.com/cdn/shop/files/naturehike_cloud_up_2_person_ultralight_backpacking_tent_main_white.jpg?v=1764660123&width=1080"
   - name: "3"
     weight_grams: 1850.0
+    image_url: "https://www.naturehike.com/cdn/shop/files/cloud_up_3_p_green_main.jpg?v=1740109284&width=1080"
 covers:
   - id: 335
     label: "2-Person Ultralight Backpacking Tent"
@@ -23,8 +25,8 @@ covers:
     label: "3"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -32,23 +34,29 @@ The Naturehike Cloud UP is a double-wall, three-season backpacking tent built fr
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Capacity | 2 or 3 person |
-| Weight | 1,380–1,850 g minimum weight depending on size |
-| Packed weight | 1,800 g (2P); 2.4 kg (3P) |
-| Floor dimensions | 210 × 125 cm (2P); 215 × 180 cm (3P) |
-| Peak height | 105 cm (2P); 110 cm (3P) |
-| Packed size | Φ12 × 45 cm (2P); Φ18 × 51 cm (3P) |
-| Fly and floor | 20D nylon, silicone coated |
-| Poles | Aluminum alloy |
-| Doors / vestibules | 1 / 1 (front) |
-| Seasons | 3-season |
-| Footprint | Included |
+| Spec               | Value                                          |
+| ------------------ | ---------------------------------------------- |
+| Capacity           | 2 or 3 person                                  |
+| Weight             | 1,380–1,850 g minimum weight depending on size |
+| Packed weight      | 1,800 g (2P); 2.4 kg (3P)                      |
+| Floor dimensions   | 210 × 125 cm (2P); 215 × 180 cm (3P)           |
+| Peak height        | 105 cm (2P); 110 cm (3P)                       |
+| Packed size        | Φ12 × 45 cm (2P); Φ18 × 51 cm (3P)             |
+| Fly and floor      | 20D nylon, silicone coated                     |
+| Poles              | Aluminum alloy                                 |
+| Doors / vestibules | 1 / 1 (front)                                  |
+| Seasons            | 3-season                                       |
+| Footprint          | Included                                       |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="tent" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="tent"
+/>
 
 ## Performance
 

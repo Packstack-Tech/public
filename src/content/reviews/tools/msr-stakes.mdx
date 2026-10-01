@@ -14,12 +14,16 @@ description: "MSR's Y-beam Groundhog and Mini-Groundhog aluminum stakes hold wel
 variants:
   - name: "Mini-Groundhog Tent"
     weight_grams: 56.4
+    image_url: "https://cascadedesigns.com/cdn/shop/files/05808_msr_mini_groundhog_stakes_group1.jpg?v=1724820243&width=1946"
   - name: "Mini-Groundhog"
     weight_grams: 56.4
+    image_url: "https://cdn.shoplightspeed.com/shops/622237/files/44053327/768x1024x1/msr-msr-mini-groundhog-tent-stake-kit-v2.jpg"
   - name: "Groundhog Tent 6-Pack"
     weight_grams: 78.0
+    image_url: "https://cascadedesigns.com/cdn/shop/files/05807_msr_groundhog_tent_stakes_kit.jpg?v=1779819211&width=1946"
   - name: "Groundhog Tent"
     weight_grams: 83.7
+    image_url: "https://www.backcountry.com/images/items/1200/CAS/CAS007N/RD.jpg"
 covers:
   - id: 39
     label: "Groundhog Tent"
@@ -29,8 +33,8 @@ covers:
     label: "Mini-Groundhog"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -38,22 +42,27 @@ MSR's Groundhog line is the default Y-beam stake of the backpacking world: 7000-
 
 ## Key Specs
 
-| Spec | Detail |
-| --- | --- |
-| Weight | 56.4–83.7 g depending on version |
+| Spec             | Detail                                                 |
+| ---------------- | ------------------------------------------------------ |
+| Weight           | 56.4–83.7 g depending on version                       |
 | Per-stake weight | Mini: 9.4 g (0.33 oz); Groundhog: 0.46 oz (about 13 g) |
-| Length | Mini: 6 in (15 cm); Groundhog: 7.5 in |
-| Material | 7000-series aluminum |
-| Cross-section | Y-beam, three-sided |
-| Kit quantity | 6 stakes |
-| Removal aid | Pull loop |
-| Finish | Red anodized |
-| Origin | Made in South Korea (Mini) |
-| Warranty | 3-year limited |
+| Length           | Mini: 6 in (15 cm); Groundhog: 7.5 in                  |
+| Material         | 7000-series aluminum                                   |
+| Cross-section    | Y-beam, three-sided                                    |
+| Kit quantity     | 6 stakes                                               |
+| Removal aid      | Pull loop                                              |
+| Finish           | Red anodized                                           |
+| Origin           | Made in South Korea (Mini)                             |
+| Warranty         | 3-year limited                                         |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

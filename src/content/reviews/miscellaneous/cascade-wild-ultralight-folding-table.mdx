@@ -12,7 +12,7 @@ published_at: "2026-07-19"
 description: "A 62g corrugated polypropylene camp table that slips into a water bottle pocket — clever, useful for meal prep, and now discontinued after a beloved run."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,7 +31,12 @@ The Cascade Wild Ultralight Folding Table is a one-piece corrugated polypropylen
 | Melting Point      | 324°F / 162°C                      |
 | Discontinued       | Yes (2024)                         |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

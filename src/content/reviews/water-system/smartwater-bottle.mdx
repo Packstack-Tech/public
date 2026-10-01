@@ -23,7 +23,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -31,16 +31,22 @@ Walk through any trail town during hiker season and a grocery-store water bottle
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 34 g (1.2 oz) |
-| Capacity | 1,000 mL |
-| Material | rPET (recycled PET), BPA-free |
+| Spec            | Value                                       |
+| --------------- | ------------------------------------------- |
+| Weight          | 34 g (1.2 oz)                               |
+| Capacity        | 1,000 mL                                    |
+| Material        | rPET (recycled PET), BPA-free               |
 | Thread standard | 28 mm (fits Sawyer Squeeze and Sawyer MINI) |
-| Hot liquids | Not suitable |
-| Cost | A few dollars at retail, water included |
+| Hot liquids     | Not suitable                                |
+| Cost            | A few dollars at retail, water included     |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="bottle" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="bottle"
+/>
 
 ## Performance
 

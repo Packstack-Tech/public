@@ -12,7 +12,7 @@ published_at: "2026-07-24"
 description: "ENO's Atlas Hammock Straps are a no-fuss, no-stretch daisy-chain suspension system — durable and easy to use, but heavier than most backpackers want to carry."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -30,7 +30,12 @@ The ENO Atlas Hammock Straps are the standard-issue suspension system that ships
 | Attachment Points | 30 total (15 per strap)                    |
 | Sold As           | Pair                                       |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

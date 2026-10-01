@@ -14,17 +14,19 @@ description: "Salomon's collapsible TPU Soft Flask weighs 33–38 g, shrinks as 
 variants:
   - name: "Standard"
     weight_grams: 33.0
+    image_url: "https://cdn.dam.salomon.com/acd99c3e-98fb-4b65-87db-b2f400d7d4c7/LC2337700/PNG-2000px-max-72dpi.png"
   - name: "500ml/17oz Ultra 42"
     weight_grams: 38.0
+    image_url: "https://www.centurionultrarunningstore.com/cdn/shop/files/LC2337700_0_GHO_SOFTFLASK500ml_ClearBlue_2000x.png?v=1718798858"
 covers:
-  - id: 60
-    label: "500ml/17oz Ultra 42"
   - id: 59
     label: null
+  - id: 60
+    label: "500ml/17oz Ultra 42"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -32,21 +34,27 @@ The Salomon Soft Flask is the bottle that trail runners clip into a vest pocket 
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 33–38 g depending on version |
-| Capacity | Up to 500 ml / 17 oz (Ultra 42) |
-| Cap opening | 42 mm on the larger flasks; 28 mm on the 250 ml size |
-| Body material | TPU with RF-welded seams |
-| Cap and valve | High-flow bite valve, angled cap |
-| BPA / PVC | Free of both |
-| Collapsible | Yes |
+| Spec                 | Value                                                    |
+| -------------------- | -------------------------------------------------------- |
+| Weight               | 33–38 g depending on version                             |
+| Capacity             | Up to 500 ml / 17 oz (Ultra 42)                          |
+| Cap opening          | 42 mm on the larger flasks; 28 mm on the 250 ml size     |
+| Body material        | TPU with RF-welded seams                                 |
+| Cap and valve        | High-flow bite valve, angled cap                         |
+| BPA / PVC            | Free of both                                             |
+| Collapsible          | Yes                                                      |
 | Filter compatibility | Salomon XA Filter and Katadyn BeFree caps (42 mm flasks) |
-| Typical price | About $22–25 |
+| Typical price        | About $22–25                                             |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="hydration" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="hydration"
+/>
 
 ## Performance
 

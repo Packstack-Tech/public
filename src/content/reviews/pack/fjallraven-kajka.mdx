@@ -14,17 +14,19 @@ description: "Fjällräven's birch-framed Kajka hauls heavy loads in comfort and
 variants:
   - name: "65"
     weight_grams: 3150.0
+    image_url: "https://cdn.military.eu/int/media/catalog/product/2/8/2810283_fjallraven-kajka-m-l-backpack-65-l-green-557630.jpg"
   - name: "75"
     weight_grams: 3390.0
+    image_url: "https://www.jahipaun.ee/userfiles/image/products/kajka_75_27093-660_a_main_fjr.jpg"
 covers:
-  - id: 1141
-    label: "65"
   - id: 475
     label: "75"
+  - id: 1141
+    label: "65"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -32,22 +34,28 @@ The Fjällräven Kajka is a trekking pack built around a laminated birch-wood fr
 
 ## Key Specs
 
-| Spec | Detail |
-| --- | --- |
-| Weight | 3,150–3,390 g depending on version |
-| Volume | 65 L or 75 L |
-| Dimensions (75 L) | 88 × 54 × 28 cm |
-| Frame | FSC-certified birch wood |
-| Outer fabric | Vinylon / recycled 500D polyamide |
-| Lining | 210D polyamide |
-| PFAS-free | Yes |
-| Hydration compatible | Yes |
-| Rain cover | Included |
-| Torso sizing | S/M and M/L |
+| Spec                 | Detail                             |
+| -------------------- | ---------------------------------- |
+| Weight               | 3,150–3,390 g depending on version |
+| Volume               | 65 L or 75 L                       |
+| Dimensions (75 L)    | 88 × 54 × 28 cm                    |
+| Frame                | FSC-certified birch wood           |
+| Outer fabric         | Vinylon / recycled 500D polyamide  |
+| Lining               | 210D polyamide                     |
+| PFAS-free            | Yes                                |
+| Hydration compatible | Yes                                |
+| Rain cover           | Included                           |
+| Torso sizing         | S/M and M/L                        |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="main-pack" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

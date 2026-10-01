@@ -19,7 +19,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,21 +27,27 @@ The Trangia Spirit Burner (model B25) is the brass fuel cup that has sat at the 
 
 ## Key Specs
 
-| Spec | Detail |
-| --- | --- |
-| Model | B25 |
-| Weight | 110 g (3.9 oz) |
-| Fuel type | Alcohol-based fuels |
-| Output | ~1,000 W |
-| Boil time | ~10 min per liter |
-| Burn time | ~25 min per fill |
-| Fuel capacity | 70 ml |
-| Dimensions | Ø75 x 42 mm |
-| Material | Brass body, 100% cotton wick |
-| Includes | Burner, simmer ring, screw cap with O-ring |
-| Compatibility | All Trangia stove systems |
+| Spec          | Detail                                     |
+| ------------- | ------------------------------------------ |
+| Model         | B25                                        |
+| Weight        | 110 g (3.9 oz)                             |
+| Fuel type     | Alcohol-based fuels                        |
+| Output        | ~1,000 W                                   |
+| Boil time     | ~10 min per liter                          |
+| Burn time     | ~25 min per fill                           |
+| Fuel capacity | 70 ml                                      |
+| Dimensions    | Ø75 x 42 mm                                |
+| Material      | Brass body, 100% cotton wick               |
+| Includes      | Burner, simmer ring, screw cap with O-ring |
+| Compatibility | All Trangia stove systems                  |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="stove" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

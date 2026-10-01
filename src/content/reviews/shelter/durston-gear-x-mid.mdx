@@ -14,8 +14,10 @@ description: "The Durston X-Mid pairs a non-sagging silpoly fly, dual vestibules
 variants:
   - name: "1 1P"
     weight_grams: 720.0
+    image_url: "https://durstongear.com/cdn/shop/files/Durston-X-Mid-1-2025-Ultralight-Backpacking-Tent-Side-Viewb.jpg?v=1740597410&width=4000"
   - name: "2P Tent Designed by Dan Durston 2P"
     weight_grams: 1090.0
+    image_url: "http://durstongear.com/cdn/shop/files/durston-x-mid-pro-2-tent-backpacking-2_e4e38597-b496-4693-9d82-b5f230ab39f1.jpg?v=1702219199&width=2048"
 covers:
   - id: 72
     label: "1"
@@ -23,8 +25,8 @@ covers:
     label: "2P Tent Designed by Dan Durston"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -32,26 +34,32 @@ The Durston X-Mid is a double-wall, trekking-pole-supported tent built on a diag
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| **Capacity** | 1P or 2P |
-| **Weight** | 720–1,090 g depending on version |
-| **Design** | Double wall, trekking pole supported |
-| **Fly fabric** | 15D Sil/PE polyester, 3500 mm hydrostatic head (1P) |
-| **1P floor** | 93 in × 33 in, about 21 sq ft |
-| **1P fly coverage** | 45 sq ft |
-| **1P headroom** | 47 in |
-| **1P full kit** | About 28.9 oz (819 g) with eight stakes and stuff sacks |
-| **2P floor** | 92 in × 52 in, about 33.2 sq ft |
-| **2P vestibules** | Two, about 23 sq ft combined |
-| **2P peak height** | About 48 in |
-| **Doors** | Two side doors with water-resistant zippers |
-| **Generation** | Gen 3 |
-| **Price** | $239 (1P), about $319 (2P) |
+| Spec                | Value                                                   |
+| ------------------- | ------------------------------------------------------- |
+| **Capacity**        | 1P or 2P                                                |
+| **Weight**          | 720–1,090 g depending on version                        |
+| **Design**          | Double wall, trekking pole supported                    |
+| **Fly fabric**      | 15D Sil/PE polyester, 3500 mm hydrostatic head (1P)     |
+| **1P floor**        | 93 in × 33 in, about 21 sq ft                           |
+| **1P fly coverage** | 45 sq ft                                                |
+| **1P headroom**     | 47 in                                                   |
+| **1P full kit**     | About 28.9 oz (819 g) with eight stakes and stuff sacks |
+| **2P floor**        | 92 in × 52 in, about 33.2 sq ft                         |
+| **2P vestibules**   | Two, about 23 sq ft combined                            |
+| **2P peak height**  | About 48 in                                             |
+| **Doors**           | Two side doors with water-resistant zippers             |
+| **Generation**      | Gen 3                                                   |
+| **Price**           | $239 (1P), about $319 (2P)                              |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="tent" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="tent"
+/>
 
 ## Performance
 

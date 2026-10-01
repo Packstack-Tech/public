@@ -19,7 +19,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,19 +27,25 @@ The Peak Design Capture is a CNC-machined aluminum clip that bolts to a pack str
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Clip weight | 70 g (2.5 oz) |
-| Plate weight | 14 g (0.5 oz) |
-| Clip length | 8.4 cm (3.3 in) |
-| Max strap width | 6.4 cm (2.5 in) |
-| Max strap thickness | 1.5 cm (0.6 in) with thumb-drive bolts; 2.2 cm (0.88 in) with hex-drive bolts |
-| Max load | 90 kg (200 lb) |
-| Material | CNC-machined weatherproof anodized aluminum |
-| Arca-Swiss compatible | Yes |
-| Included hardware | Thumb-drive bolts, hex-drive bolts, hex key |
+| Spec                  | Value                                                                         |
+| --------------------- | ----------------------------------------------------------------------------- |
+| Clip weight           | 70 g (2.5 oz)                                                                 |
+| Plate weight          | 14 g (0.5 oz)                                                                 |
+| Clip length           | 8.4 cm (3.3 in)                                                               |
+| Max strap width       | 6.4 cm (2.5 in)                                                               |
+| Max strap thickness   | 1.5 cm (0.6 in) with thumb-drive bolts; 2.2 cm (0.88 in) with hex-drive bolts |
+| Max load              | 90 kg (200 lb)                                                                |
+| Material              | CNC-machined weatherproof anodized aluminum                                   |
+| Arca-Swiss compatible | Yes                                                                           |
+| Included hardware     | Thumb-drive bolts, hex-drive bolts, hex key                                   |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="support" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="support"
+/>
 
 ## Performance
 

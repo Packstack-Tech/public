@@ -14,8 +14,10 @@ description: "Osprey's Atmos AG pairs a trampoline-mesh back panel with a huggin
 variants:
   - name: "50"
     weight_grams: 1960.0
+    image_url: "https://www.osprey.com/media/catalog/product/a/t/atmosag50_s22_side_venturiblue.jpg"
   - name: "65 Men's"
     weight_grams: 2098.0
+    image_url: "https://www.osprey.com/media/catalog/product/A/t/AtmosAG65_S22_Side_Black-resized.jpg"
 covers:
   - id: 17
     label: "65"
@@ -23,8 +25,8 @@ covers:
     label: "50"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -32,21 +34,27 @@ The Osprey Atmos AG is the pack that made tensioned mesh back panels a fixture o
 
 ## Key Specs
 
-| Spec | Detail |
-| --- | --- |
-| Weight | 1,960–2,098 g depending on version |
-| Volume | 50 L (S/M) / 53 L (L/XL) in the 50; 65 L (S/M) / 68 L (L/XL) in the 65 |
-| Max recommended load | 40 lb (18 kg); Osprey lists an ideal range of 25–35 lb for the 50 |
-| Frame | Lightwire internal perimeter frame |
-| Suspension | AntiGravity 3D-suspended mesh across back panel and hipbelt |
-| Fit system | Fit-on-the-Fly harness and hipbelt |
-| Sizes | S/M, L/XL |
-| Fabrics | 100% recycled main, accent and bottom fabrics (210D nylon body, 500D nylon base) |
-| Rain cover | Included, integrated |
+| Spec                 | Detail                                                                           |
+| -------------------- | -------------------------------------------------------------------------------- |
+| Weight               | 1,960–2,098 g depending on version                                               |
+| Volume               | 50 L (S/M) / 53 L (L/XL) in the 50; 65 L (S/M) / 68 L (L/XL) in the 65           |
+| Max recommended load | 40 lb (18 kg); Osprey lists an ideal range of 25–35 lb for the 50                |
+| Frame                | Lightwire internal perimeter frame                                               |
+| Suspension           | AntiGravity 3D-suspended mesh across back panel and hipbelt                      |
+| Fit system           | Fit-on-the-Fly harness and hipbelt                                               |
+| Sizes                | S/M, L/XL                                                                        |
+| Fabrics              | 100% recycled main, accent and bottom fabrics (210D nylon body, 500D nylon base) |
+| Rain cover           | Included, integrated                                                             |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="main-pack" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

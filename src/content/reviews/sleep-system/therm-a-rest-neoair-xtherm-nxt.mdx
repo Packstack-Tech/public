@@ -14,8 +14,10 @@ description: "The NeoAir XTherm NXT packs a 7.3 R-value into 440 g, making it th
 variants:
   - name: "Standard"
     weight_grams: 440.0
+    image_url: "https://australianhiker.com.au/wp-content/uploads/2023/01/Thermarest-NeoAir-XTherm-NXT-Sleeping-Pad-1024x769.jpg"
   - name: "MAX"
     weight_grams: 652.0
+    image_url: "https://hyperlitemountaingear.com/cdn/shop/products/hyperlite-mountain-gear-accessories-therm-a-rest-neoair-xtherm-nxt-sleeping-pad-31918725824557.jpg?v=1724950861&width=3000"
 covers:
   - id: 282
     label: null
@@ -23,8 +25,8 @@ covers:
     label: "MAX"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -32,22 +34,28 @@ The Therm-a-Rest NeoAir XTherm NXT is a 3-inch inflatable pad rated R-7.3, built
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 440–652 g depending on version |
-| R-value | 7.3 (ASTM F3340-18) |
-| Thickness | 3 in (7.6 cm) |
-| Shape | Tapered mummy (Standard); rectangular (MAX) |
-| Dimensions | Standard Regular: 72 × 20 in (183 × 51 cm); MAX Regular Wide: 72 × 25 in (183 × 64 cm) |
-| Packed size | About 9 × 4.5 in (Standard); 11 × 5 in (MAX) |
-| Top fabric | 30D ripstop nylon |
-| Bottom fabric | 70D nylon |
-| Valve | WingLock |
-| Includes | Pump sack, stuff sack, field repair kit |
+| Spec          | Value                                                                                  |
+| ------------- | -------------------------------------------------------------------------------------- |
+| Weight        | 440–652 g depending on version                                                         |
+| R-value       | 7.3 (ASTM F3340-18)                                                                    |
+| Thickness     | 3 in (7.6 cm)                                                                          |
+| Shape         | Tapered mummy (Standard); rectangular (MAX)                                            |
+| Dimensions    | Standard Regular: 72 × 20 in (183 × 51 cm); MAX Regular Wide: 72 × 25 in (183 × 64 cm) |
+| Packed size   | About 9 × 4.5 in (Standard); 11 × 5 in (MAX)                                           |
+| Top fabric    | 30D ripstop nylon                                                                      |
+| Bottom fabric | 70D nylon                                                                              |
+| Valve         | WingLock                                                                               |
+| Includes      | Pump sack, stuff sack, field repair kit                                                |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="sleeping-pad" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sleeping-pad"
+/>
 
 ## Performance
 
@@ -88,6 +96,7 @@ The 70D bottom fabric is the sturdy part. It is built to handle sharp rocks and 
 ## Pros & Cons
 
 **Pros**
+
 - R-7.3 at 440 g is the best warmth-to-weight ratio in its class
 - Packs to roughly Nalgene size (Standard)
 - Much quieter on the sleeper than earlier NeoAir pads
@@ -96,6 +105,7 @@ The 70D bottom fabric is the sturdy part. It is built to handle sharp rocks and 
 - MAX adds a 25 in rectangular surface at the same R-value
 
 **Cons**
+
 - Slick top and horizontal baffles can send sleepers sliding
 - Firm when fully inflated
 - Still loud while inflating and packing

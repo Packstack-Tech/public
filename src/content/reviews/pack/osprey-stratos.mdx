@@ -14,10 +14,13 @@ description: "Osprey's Stratos trades grams for a trampoline-style mesh back pan
 variants:
   - name: "36"
     weight_grams: 1438.0
+    image_url: "https://assets.trailspace.com/assets/0/e/3/11362531/image.jpg"
   - name: "36 Men's"
     weight_grams: 1488.0
+    image_url: "https://d26ztvr3v93474.cloudfront.net/products/16507/bg_20220805-045745.jpg"
   - name: "50"
     weight_grams: 1670.0
+    image_url: "https://www.enwild.com/mm5/graphics/00000001/osprey-stratos-50-sungrazer-orange.jpg"
 covers:
   - id: 932
     label: "50"
@@ -25,8 +28,8 @@ covers:
     label: "36"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -34,22 +37,28 @@ The Stratos is Osprey's ventilated, top-loading workhorse: a tensioned-mesh AirS
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 1,438–1,670 g depending on version |
-| Volume | 36 L (36 and 36 Men's); 50 L (47 L in the S/M) |
-| Main fabric (50) | 210D Nylon Crosshatch |
-| Bottom fabric (50) | 420HD Nylon Packcloth |
-| Suspension | AirSpeed tensioned mesh back panel, LightWire alloy frame |
-| Recommended load | 20–40 lb (50); up to 30 lb (36) |
-| Torso adjustment | Yes; 36 Men's fits roughly 18–22 in |
-| Rain cover | Integrated, stored in a base pocket |
-| Hydration | Internal reservoir sleeve with hose port |
-| Hipbelt pockets | Two zippered |
+| Spec               | Value                                                     |
+| ------------------ | --------------------------------------------------------- |
+| Weight             | 1,438–1,670 g depending on version                        |
+| Volume             | 36 L (36 and 36 Men's); 50 L (47 L in the S/M)            |
+| Main fabric (50)   | 210D Nylon Crosshatch                                     |
+| Bottom fabric (50) | 420HD Nylon Packcloth                                     |
+| Suspension         | AirSpeed tensioned mesh back panel, LightWire alloy frame |
+| Recommended load   | 20–40 lb (50); up to 30 lb (36)                           |
+| Torso adjustment   | Yes; 36 Men's fits roughly 18–22 in                       |
+| Rain cover         | Integrated, stored in a base pocket                       |
+| Hydration          | Internal reservoir sleeve with hose port                  |
+| Hipbelt pockets    | Two zippered                                              |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="main-pack" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

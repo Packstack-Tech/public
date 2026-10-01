@@ -12,7 +12,7 @@ published_at: "2026-07-01"
 description: "The Litesmith QwikBack UL Chair delivers ground-level back support at just 2.65 oz — a genuine luxury item for weight-conscious backpackers who hate log-hunting."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -20,16 +20,21 @@ The Litesmith QwikBack UL Chair is a USA-made, ground-level back support built f
 
 ## Key Specs
 
-| Spec              | Detail                                                                                         |
-| ----------------- | ---------------------------------------------------------------------------------------------- |
-| **Weight**        | 2.65 oz (75 g)                                                                                 |
-| **Packed Size**   | 13.25 × 2.75 × 1.5 in (33.7 × 7 × 3.8 cm)                                                      |
-| **Seat Material** | 1.9 oz ripstop nylon, PU coated                                                                |
-| **Poles**         | Roll-wrapped twill carbon fiber                                                                |
-| **Load Capacity** | 250 lb (113 kg)                                                                                |
-| **Origin**        | Made in USA                                                                                    |
+| Spec              | Detail                                    |
+| ----------------- | ----------------------------------------- |
+| **Weight**        | 2.65 oz (75 g)                            |
+| **Packed Size**   | 13.25 × 2.75 × 1.5 in (33.7 × 7 × 3.8 cm) |
+| **Seat Material** | 1.9 oz ripstop nylon, PU coated           |
+| **Poles**         | Roll-wrapped twill carbon fiber           |
+| **Load Capacity** | 250 lb (113 kg)                           |
+| **Origin**        | Made in USA                               |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

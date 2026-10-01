@@ -14,17 +14,19 @@ description: "Garmin's Instinct Solar is a rugged, button-driven GPS watch that 
 variants:
   - name: "2S"
     weight_grams: 43.0
+    image_url: "https://res.garmin.com/en/products/010-02564-10/v/cf-lg-4aa507f1-2783-4b4e-b72d-df489cc6b3ad.jpg"
   - name: "2"
     weight_grams: 53.0
+    image_url: "https://res.garmin.com/transform/image/upload/b_rgb:FFFFFF,c_pad,dpr_2.0,f_auto,h_400,q_auto,w_400/c_pad,h_400,w_400/v1/Product_Images/en/products/010-02627-10/v/cf-xl-fe21049f-c973-4db7-a98e-61de8d61ee26?pgw=1"
 covers:
-  - id: 554
-    label: "2"
   - id: 640
     label: "2S"
+  - id: 554
+    label: "2"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -32,24 +34,30 @@ The Garmin Instinct Solar is a rugged, solar-charging GPS watch for people who w
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| **Weight** | 43–53 g depending on size |
-| **Case size** | 40 mm × 40 mm (2S) to 45 mm × 45 mm (2) |
-| **Thickness** | 13.3 mm (2S) to 14.5 mm (2) |
-| **Display** | Monochrome transflective MIP; 0.9 in (23 mm) on the 2, 0.79 in on the 2S |
+| Spec                         | Value                                                                          |
+| ---------------------------- | ------------------------------------------------------------------------------ |
+| **Weight**                   | 43–53 g depending on size                                                      |
+| **Case size**                | 40 mm × 40 mm (2S) to 45 mm × 45 mm (2)                                        |
+| **Thickness**                | 13.3 mm (2S) to 14.5 mm (2)                                                    |
+| **Display**                  | Monochrome transflective MIP; 0.9 in (23 mm) on the 2, 0.79 in on the 2S       |
 | **Battery, smartwatch mode** | Unlimited with solar (3 hrs/day at 50,000 lux); 28 days without solar on the 2 |
-| **Battery, GPS** | Up to 48 hrs with solar on the 2; 30 hrs without |
-| **Battery, UltraTrac** | Up to 370 hrs with solar on the 2 |
-| **Water rating** | 100 m (10 ATM) |
-| **GNSS** | GPS, GLONASS, Galileo |
-| **Sensors** | Barometric altimeter, 3-axis compass, Elevate Gen 4 optical heart rate |
-| **Build standard** | MIL-STD-810 |
-| **Connectivity** | Bluetooth, ANT+ |
+| **Battery, GPS**             | Up to 48 hrs with solar on the 2; 30 hrs without                               |
+| **Battery, UltraTrac**       | Up to 370 hrs with solar on the 2                                              |
+| **Water rating**             | 100 m (10 ATM)                                                                 |
+| **GNSS**                     | GPS, GLONASS, Galileo                                                          |
+| **Sensors**                  | Barometric altimeter, 3-axis compass, Elevate Gen 4 optical heart rate         |
+| **Build standard**           | MIL-STD-810                                                                    |
+| **Connectivity**             | Bluetooth, ANT+                                                                |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="wearable" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="wearable"
+/>
 
 ## Performance
 

@@ -12,7 +12,7 @@ published_at: "2026-07-23"
 description: "A 460g, 5-piece packraft paddle that packs to 49cm — great as an ultralight backup or lake paddle, but the flexy shaft has real limits."
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -32,7 +32,12 @@ The Anfibio Fly is a 5-piece breakdown paddle built for people counting grams on
 | Blade size        | 35 x 15 cm              |
 | Blade angle       | Adjustable (feathering) |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+/>
 
 ## Performance
 

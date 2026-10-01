@@ -19,7 +19,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -27,17 +27,23 @@ The MSR WhisperLite is a liquid-fuel backpacking stove that has been a fixture o
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight (stove) | 305 g (10.8 oz) |
-| Packed weight | 410 g (14.5 oz) |
-| Fuel type | White gas (Coleman fuel) |
-| Boil time (1 L) | 3.9 min |
-| Burn time (600 ml fuel) | 136 min |
-| Burner technology | Shaker Jet for field maintenance |
-| Includes | Fuel pump, windscreen, heat reflector, small-parts kit, instructions, stuff sack |
+| Spec                    | Value                                                                            |
+| ----------------------- | -------------------------------------------------------------------------------- |
+| Weight (stove)          | 305 g (10.8 oz)                                                                  |
+| Packed weight           | 410 g (14.5 oz)                                                                  |
+| Fuel type               | White gas (Coleman fuel)                                                         |
+| Boil time (1 L)         | 3.9 min                                                                          |
+| Burn time (600 ml fuel) | 136 min                                                                          |
+| Burner technology       | Shaker Jet for field maintenance                                                 |
+| Includes                | Fuel pump, windscreen, heat reflector, small-parts kit, instructions, stuff sack |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="stove" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="stove"
+/>
 
 ## Performance
 

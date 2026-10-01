@@ -14,8 +14,10 @@ description: "The Southwest pairs waterproof Dyneema Woven Composite 3.9 with to
 variants:
   - name: "40"
     weight_grams: 853.0
+    image_url: "https://hyperlitemountaingear.com/cdn/shop/files/hyperlite-mountain-gear-packs-junction-40l-small-white-1190868921.jpg?v=1759479404&width=1919"
   - name: "Standard"
     weight_grams: 896.0
+    image_url: "https://hyperlitemountaingear.com/cdn/shop/products/hyperlite-staging-unbound-40-31198433968173.jpg?v=1676397038&width=1200"
 covers:
   - id: 1060
     label: "40"
@@ -23,8 +25,8 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -32,22 +34,28 @@ The Hyperlite Mountain Gear Southwest is the brand's rough-country pack: a roll-
 
 ## Key Specs
 
-| Spec | Detail |
-| --- | --- |
-| Weight | 853–896 g depending on version (white, size Medium) |
-| Internal Volume | 40L (2,400 cu in) or 55L (3,400 cu in) |
-| External Volume | 9.8L (600 cu in), all versions |
-| Material | Dyneema® Woven Composite 3.9 (200-denier) |
-| Frame | Two removable, contoured aluminum stays |
-| Back Panel | 1/4" foam pad |
-| Hip Belt | Dual-density foam with spacer mesh; zippered hip belt pockets |
-| Closure | Roll-top with side compression straps and top Y-strap |
-| Recommended Load | Up to 40 lb |
-| Torso Sizes | Small, Medium, Large, Tall |
+| Spec             | Detail                                                        |
+| ---------------- | ------------------------------------------------------------- |
+| Weight           | 853–896 g depending on version (white, size Medium)           |
+| Internal Volume  | 40L (2,400 cu in) or 55L (3,400 cu in)                        |
+| External Volume  | 9.8L (600 cu in), all versions                                |
+| Material         | Dyneema® Woven Composite 3.9 (200-denier)                     |
+| Frame            | Two removable, contoured aluminum stays                       |
+| Back Panel       | 1/4" foam pad                                                 |
+| Hip Belt         | Dual-density foam with spacer mesh; zippered hip belt pockets |
+| Closure          | Roll-top with side compression straps and top Y-strap         |
+| Recommended Load | Up to 40 lb                                                   |
+| Torso Sizes      | Small, Medium, Large, Tall                                    |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="main-pack" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="main-pack"
+/>
 
 ## Performance
 

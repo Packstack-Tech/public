@@ -17,7 +17,7 @@ covers:
     label: null
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
 
 ## Overview
 
@@ -25,19 +25,25 @@ The Injinji Liner Mini-Crew is an ultra-thin, ankle-height toesock that wraps ea
 
 ## Key Specs
 
-| Spec | Detail |
-| --- | --- |
-| Weight | 31.2 g |
-| Height | Mini-Crew (ankle) |
-| Weight level | Liner baselayer, no cushioning |
-| Fiber content | 75% CoolMax EcoMade, 21% nylon, 4% Lycra |
-| Needle count | 200 |
-| Toe design | Patented five-toe sleeve |
-| Sizes | Small through X-Large |
-| Best use | Liner under a cushioned sock; solo in warm weather |
-| Care | Machine wash cold, gentle cycle; line dry |
+| Spec          | Detail                                             |
+| ------------- | -------------------------------------------------- |
+| Weight        | 31.2 g                                             |
+| Height        | Mini-Crew (ankle)                                  |
+| Weight level  | Liner baselayer, no cushioning                     |
+| Fiber content | 75% CoolMax EcoMade, 21% nylon, 4% Lycra           |
+| Needle count  | 200                                                |
+| Toe design    | Patented five-toe sleeve                           |
+| Sizes         | Small through X-Large                              |
+| Best use      | Liner under a cushioned sock; solo in warm weather |
+| Care          | Machine wash cold, gentle cycle; line dry          |
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="sock" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="sock"
+/>
 
 ## Performance
 
