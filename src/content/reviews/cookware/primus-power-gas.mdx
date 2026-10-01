@@ -1,5 +1,5 @@
 ---
-title: "Primus Power Gas 230g Review"
+title: "Primus Power Gas Review"
 brand: "Primus"
 product_name: "Power Gas"
 catalog_product_id: 56
@@ -9,27 +9,45 @@ product_url: "https://primus.us/products/power-gas-230g"
 image_url: "https://primus.us/cdn/shop/products/SIP_PowerGas230_1_34b9d884-55c6-4295-ae8c-fcc9fcd26be6_1800x1800.png?v=1714077163"
 rating: 6.5
 published_at: "2026-04-22"
-description: "A thorough look at the Primus Power Gas 230g canister — a reliable 3-season fuel with a butane-heavy blend that trails premium isobutane competitors in the cold."
+updated_at: "2026-10-01"
+description: "Primus Power Gas is a universal-thread, butane-heavy three-season canister in 100 g and 230 g sizes. It's dependable above freezing and fades faster than isobutane blends in the cold."
+variants:
+  - name: "230 g 100g Canister"
+    weight_grams: 198.0
+    image_url: "https://m.media-amazon.com/images/I/41QbP1WcrRL._AC_UF1000,1000_QL80_.jpg"
+  - name: "230 g"
+    weight_grams: 390.0
+    image_url: "https://primus.us/cdn/shop/products/SIP_PowerGas230_1_34b9d884-55c6-4295-ae8c-fcc9fcd26be6_1800x1800.png?v=1714077163"
+  - name: "390 g"
+    weight_grams: 390.0
+    image_url: "https://primus.us/cdn/shop/products/SIP_PowerGas230_1_34b9d884-55c6-4295-ae8c-fcc9fcd26be6_1080x.png?v=1714077163"
+covers:
+  - id: 56
+    label: "230 g"
+  - id: 5118
+    label: "390 g"
 ---
 
 import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
-The Primus Power Gas 230g is a self-sealing canister fuel designed for three-season backpacking and camping. Primus markets it as their "most versatile fuel blend, delivering trusted power from spring to fall" and says its versatility makes it suitable for situations where weather and temperature conditions are uncertain. It uses a standard Lindal valve, which means it'll work with virtually any canister-top stove on the market. That versatility is real — but the fuel blend introduces trade-offs worth understanding before you buy.
+Primus Power Gas is a threaded, self-sealing canister fuel built for spring-through-early-winter cooking, and it fits just about any screw-on backpacking stove. Primus calls it its most versatile blend, aimed at trips where the weather is hard to predict. The trade-off is chemistry: half the mix is n-butane, which gives up ground to isobutane-heavy canisters as soon as the thermometer nears freezing.
 
 ## Key Specs
 
-| Spec                   | Value                                  |
-| ---------------------- | -------------------------------------- |
-| Gas content            | 230g                                   |
-| Total weight (full)    | 390g (13.7 oz)                         |
-| Canister tare weight   | 160g                                   |
-| Dimensions             | 4.2" × 3.3"                            |
-| Fuel mix               | 25% isobutane, 50% butane, 25% propane |
-| Minimum operating temp | -15°C (5°F)                            |
-| Valve type             | Lindal (EN417 standard)                |
-| Available sizes        | 100g, 230g, 450g                       |
+| Spec                      | Value                                  |
+| ------------------------- | -------------------------------------- |
+| Fuel content              | 100 g or 230 g                         |
+| Weight, full              | 198–390 g depending on size            |
+| Fuel mix                  | 25% isobutane, 50% butane, 25% propane |
+| Rated minimum temperature | -15°C (5°F)                            |
+| 230 g dimensions          | 4.2" x 3.3"                            |
+| 100 g dimensions          | 3.5" x 2.6"                            |
+| Valve                     | Self-sealing, EN417 thread             |
+
+<VariantTable variants={frontmatter.variants} />
 
 <PackstackCTA
   product={frontmatter.product_name}
@@ -41,72 +59,49 @@ The Primus Power Gas 230g is a self-sealing canister fuel designed for three-sea
 
 ## Performance
 
-### Fuel Chemistry and What It Means in Practice
+**Fuel chemistry.** Butane and isobutane are the weak links in a cold canister. Isobutane boils at roughly 11°F (-12°C), while n-butane boils near 31°F (-1°C). Below that point it stops contributing, and the stove runs on whatever propane is left. Power Gas carries 25% propane for starting power, but 50% n-butane is a lot of dead weight on a frosty morning. A premium isobutane/propane canister such as MSR IsoPro holds pressure better as temperatures fall. The -15°C rating is the point at which the canister will still fire. It isn't the point at which it performs like it does at 10°C.
 
-This is where the Primus Power Gas earns some nuance. The blend is 50% butane, 25% isobutane, and 25% propane — a notably different recipe compared to premium competitors. MSR IsoPro, for example, is an 80/20 blend of isobutane and propane, which maintains higher internal pressure at lower temperatures than standard butane/propane mixtures, delivering superior cold-weather performance and more consistent output over the life of the canister.
+**Cold-weather numbers.** The gap depends heavily on how full the canister is. In a kitchen-freezer test at -20°C with full 230 g cans, UKClimbing's reviewer timed a litre of water to a boil in 9:35 on Power Gas and 9:06 on Winter Gas, a small difference. Primus's own freezer-room testing at the same temperature shows the picture changing as the can empties: Winter Gas, its VaporMesh-lined sibling, delivers about 9% more power after an hour of cooking and about 15% more after two. At -8°C with quarter-full canisters, a UKC-reported test timed Power Gas at 10:20 against 6:40 for Winter Gas. A JetPower canister in the same test hadn't boiled after 12 minutes. A half-empty Power Gas can in the cold is where the blend shows its limits.
 
-Why does that matter? Isobutane fails to vaporize below 11°F, and regular (n-)butane around 30°F. As ambient temperature drops below freezing, the butane in the fuel canister stops burning. With 50% of the Primus Power Gas blend consisting of n-butane, you'll feel this effect earlier and more pronounced than you would with a high-isobutane canister. The 25% propane (boiling point: -44°F) provides reliable cold-starts, but propane will burn off disproportionately in cold temperatures, eventually diminishing the internal pressure of the canister until it no longer works effectively.
+Owner reports match that. Trailspace reviewers praise it in warm weather and at altitude. One who used it on winter day hikes with a Jetboil Flash described erratic burning and hard lighting compared with Jetboil's own fuel.
 
-The claimed -15°C minimum operating temperature should be read with that in mind: the canister will technically fire at that temperature, but primarily on propane fumes. Real-world output at -10°C to -15°C will feel sluggish compared to how it performs at, say, +10°C.
+**Above freezing.** This is where Power Gas does its job. Prices run below those of many competing canisters, and the blend is well suited to spring-to-fall use. Primus says it still delivers enough power to run a stove below freezing. Expect that to be true for short boils, not for long melt sessions that chill the canister through evaporative cooling. In cold conditions, a canister kept in a jacket pocket or sleeping bag before use will vaporize more readily.
 
-For warm-weather and shoulder-season use — which is when most backpackers are out — the blend is perfectly adequate. Users in forum discussions have noted that MSR and Primus are roughly equal in practical performance and longevity for typical conditions.
+**Compatibility and fuel tracking.** The threaded, self-sealing valve means the canister can come off the stove mid-meal without leaking. Tare weight works out to about 160 g on the 230 g can and about 98 g on the 100 g can, so a pocket scale at camp tells a hiker how much remains. There's no other reliable way to check. The thread won't work with pierce-type stoves.
 
-### Cold Weather Realities
+**Environmental footprint.** Primus describes all of its fuel as climate-compensated through carbon offsets, and the SIP version sold in the US uses biogas made from food waste. Offsets remain a debated tool, but few canister brands make any claim at all.
 
-If you're planning shoulder-season trips where overnight lows dip into freezing territory, understand the physics. Isobutane suffers near freezing, especially when you use your stove for longer periods which cools the canister via evaporative cooling, resulting in a canister that is much colder than ambient temperature. This evaporative cooling effect can be significant with longer boil times. Power Gas's high butane fraction makes this effect worse, not better.
+## Choosing a Version
 
-A head-to-head test comparing standard Power Gas against Primus's own Winter Gas at -20°C illustrated the gap starkly: Winter Gas came in at 9 minutes 18 seconds, while the standard gas fizzled to the finish in an unimpressive 21 minutes 8 seconds. Power Gas is, by design, Primus's three-season product — not a winter canister. For true cold-weather use, Primus explicitly offers the Winter Gas with Vapor Mesh technology as the upgrade path.
+The three listings come down to two canister sizes.
 
-A simple workaround for chilly mornings: in cold temperatures, keep the canister in a jacket pocket or sleeping bag before use to improve vaporization. I do this as a matter of habit on any trip where overnight temps drop near freezing, regardless of canister brand.
-
-### Compatibility and Build
-
-Primus Power Gas canisters use a European Standard (EN417) thread and are
-compatible with essentially all gas-powered camping stoves. The self-sealing
-Lindal valve closes the canister to stop any gas leaking after use.
-
-That self-sealing valve is genuinely useful on the trail — you can unscrew
-mid-meal to stow the canister without losing any gas.
-
-The tare weight is 160g, which is worth knowing if you want to use kitchen
-scales to check how much fuel remains mid-trip.
-
-I weigh my canister at the trailhead and at camp each evening — it's the most
-reliable way to avoid a surprise empty can on day four.
-
-### Sustainability
-
-For over seven years, Primus fuel has been the only carbon dioxide-neutral
-camping fuel on the market; to compensate for the emissions and the metal
-container, Primus has invested in focused carbon-offsetting efforts across the
-globe.
-
-That's worth noting, though carbon offsets are a long-running debate in the
-outdoor community. It's a step, not a solution.
+- **100 g (198 g full):** The overnight and weekend size, and a good match for stoves and pot sets designed to nest a small canister. It weighs roughly 98 g empty, so the shell eats a bigger share of the weight than in the larger size. Best for solo trips of one or two nights.
+- **230 g (390 g full):** The standard backpacking size and the better value per gram of fuel. It suits solo hikers on trips of several days and pairs well with partners cooking together.
+- **390 g listing:** This is the 230 g canister under its full-weight designation. It carries the same fuel and the same 4.2" x 3.3" body, and it weighs the same 390 g. There is no separate product to weigh against it.
 
 ## Pros & Cons
 
 **Pros**
 
-- Universal Lindal valve compatibility — works with every major canister stove brand
-- Self-sealing valve allows mid-trip stove detachment without gas loss
-- 160g known tare weight makes fuel tracking easy with a small scale
-- 25% propane provides reliable ignition even near freezing
-- Carbon-offset program in place since 2015
-- Available in 100g, 230g, and 450g sizes for right-sizing to trip length
+- Fits virtually every threaded canister stove
+- Self-sealing valve allows mid-meal removal without leaks
+- Dependable above freezing, with enough propane for reliable lighting
+- Usually priced below premium isobutane blends
+- 100 g size is compact and light for short trips
+- Primus backs the fuel with carbon offsets
 
 **Cons**
 
-- 50% n-butane is a genuine liability below ~0°C; performance drops faster than high-isobutane blends
-- Primus Winter Gas or MSR IsoPro are clearly better choices for cold-shoulder or winter trips
-- 160g canister shell is on the heavier side — the 230g MSR IsoPro canister runs about 150g tare
-- Cannot gauge remaining fuel visually; a small scale is effectively required for accurate planning
-- Not suitable for use with bayonet or pierce-style stoves
+- 50% n-butane fades faster than isobutane blends near and below freezing
+- Output drops noticeably as the canister empties in the cold
+- Shell weight is high on the 100 g size, around 98 g of the 198 g total
+- No gauge; fuel tracking needs a scale
+- Won't work with pierce-style stoves
 
 ## Who Should Buy This
 
-This canister makes the most sense for spring-through-fall backpackers who want a reliable, universally compatible fuel from a reputable brand. Power Gas is designed for spring, summer, and autumn camping; the gas mixture of 50% butane, 25% isobutane, and 25% propane burns efficiently in a broad range of conditions and should provide enough pressure for a stove down to and below 0°C. If you're primarily a warm-weather hiker or your trips stay well above freezing, the blend distinction matters little in practice. It's also a solid choice if you're already deep in the Primus ecosystem — stoves, cooksets, and gas all sourced from the same brand. Serious cold-weather users, or anyone routinely cooking below -5°C, should step up to Primus Winter Gas or switch to a high-isobutane blend like MSR IsoPro.
+Spring-to-fall backpackers who want a dependable, widely available canister at a fair price will be well served, especially solo hikers who can match the 100 g or 230 g size to trip length. Anyone whose overnight lows regularly reach freezing, or who plans extended stove time for melting snow, should look at Primus Winter Gas or an isobutane/propane blend like MSR IsoPro instead.
 
 ## Verdict
 
-The Primus Power Gas 230g is a dependable, well-built 3-season canister that does exactly what it promises — as long as you're honest about what "3-season" means. For camping at altitude or in winter, a higher proportion of propane blended with isobutane rather than butane is what you want — and that's not what this canister offers. In moderate temperatures it's a solid, universally compatible option with a trusted self-sealing valve; push it into cold territory and the 50% butane blend will let you down before a premium isobutane canister would. **6.5/10** — reliable in its element, honest about its limits.
+Power Gas does what a three-season canister should: it lights, it burns, and it costs little. Push it toward winter conditions and the butane-heavy mix becomes the reason to buy something else. A solid default for warm and shoulder-season trips, and the wrong choice for cold ones.
