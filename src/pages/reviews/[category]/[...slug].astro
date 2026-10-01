@@ -20,8 +20,13 @@ export async function getStaticPaths() {
 const { category } = Astro.params
 const { review } = Astro.props
 const { Content } = await render(review)
-const { title, brand, product_name, category: displayCategory, weight_grams, product_url, image_url, rating, published_at, description } = review.data
-const formattedDate = new Date(published_at).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })
+const { title, brand, product_name, category: displayCategory, weight_grams, product_url, image_url, rating, published_at, updated_at, description, variants } = review.data
+const fmtDate = (d: string) => new Date(d).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })
+const formattedDate = updated_at ? `Updated ${fmtDate(updated_at)}` : fmtDate(published_at)
+const versionWeights = variants.map((v) => v.weight_grams).filter((g): g is number => g != null)
+const weightLabel = versionWeights.length > 1
+  ? `${Math.round(Math.min(...versionWeights))}–${Math.round(Math.max(...versionWeights))}g`
+  : weight_grams ? `${weight_grams}g` : null
 ---
 
 <BaseLayout title={`${title} | Packstack`} description={description}>
@@ -43,7 +48,7 @@ const formattedDate = new Date(published_at).toLocaleDateString("en-US", { year:
 
           <div class="flex flex-wrap items-center gap-4 mt-4 text-sm text-label">
             <span>{brand}</span>
-            {weight_grams && <span>{weight_grams}g</span>}
+            {weightLabel && <span>{weightLabel}</span>}
             {rating && <span>Rating: {rating}/10</span>}
             <span>{formattedDate}</span>
           </div>

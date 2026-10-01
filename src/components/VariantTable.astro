@@ -1,0 +1,60 @@
+---
+/**
+ * Version comparison for a review page (sizes, capacities, cuts, editions).
+ * Rows come from frontmatter `variants`, which workshop/catalog_reviews keeps
+ * in sync with the catalog — only weight-bearing versions, never colors.
+ * A thumbnail column appears when any row has its own image (the pipeline
+ * only writes images when at least one differs from the page's hero image).
+ */
+type Row = { name: string; weight_grams: number | null; image_url?: string | null };
+type Props = {
+  variants?: Row[];
+};
+
+const { variants = [] } = Astro.props;
+const rows = variants.filter((v) => v.weight_grams != null) as (Row & { weight_grams: number })[];
+const lightest = rows.length ? Math.min(...rows.map((r) => r.weight_grams)) : 0;
+const showImages = rows.some((r) => r.image_url);
+const oz = (g: number) => (g / 28.3495).toFixed(1);
+---
+
+{
+  rows.length > 1 && (
+    <div class="my-8">
+      <h3 class="!mt-0">Versions compared</h3>
+      <table>
+        <thead>
+          <tr>
+            {showImages && <th class="w-16"><span class="sr-only">Image</span></th>}
+            <th>Version</th>
+            <th>Weight</th>
+            <th>vs. lightest</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((r) => (
+            <tr>
+              {showImages && (
+                <td class="!py-2">
+                  {r.image_url && (
+                    <img
+                      src={r.image_url}
+                      alt={r.name}
+                      loading="lazy"
+                      class="!my-0 h-12 w-12 rounded bg-white object-contain p-0.5"
+                    />
+                  )}
+                </td>
+              )}
+              <td>{r.name}</td>
+              <td>
+                {Math.round(r.weight_grams)} g ({oz(r.weight_grams)} oz)
+              </td>
+              <td>{r.weight_grams === lightest ? "lightest" : `+${Math.round(r.weight_grams - lightest)} g`}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  )
+}

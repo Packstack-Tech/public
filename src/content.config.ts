@@ -14,7 +14,23 @@ const reviews = defineCollection({
     image_url: z.string().nullable(),
     rating: z.number().nullable(),
     published_at: z.string(),
+    updated_at: z.string().nullable().optional(),
     description: z.string(),
+    // Version comparison rows rendered by <VariantTable> — written by
+    // workshop/catalog_reviews from the catalog (weight-bearing versions only).
+    variants: z
+      .array(
+        z.object({
+          name: z.string(),
+          weight_grams: z.number().nullable(),
+          image_url: z.string().nullable().optional(),
+        }),
+      )
+      .default([]),
+    // Catalog products this page covers and their version labels (pipeline bookkeeping).
+    covers: z
+      .array(z.object({ id: z.number(), label: z.string().nullable() }))
+      .default([]),
   }),
 })
 
