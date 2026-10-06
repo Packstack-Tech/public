@@ -11,26 +11,13 @@ rating: 8
 published_at: "2026-03-03"
 updated_at: "2026-10-01"
 description: "The Platypus QuickDraw is a fast, easy-to-clean hollow-fiber squeeze filter with a field integrity check, held back by a 1,000-liter cartridge life."
-variants:
-  - name: "Microfilter"
-    weight_grams: 63.0
-    image_url: "https://cascadedesigns.com/cdn/shop/files/11695-platypus-quickdraw-filter-blue-connectcap.jpg?v=1728965761&width=1946"
-  - name: "Standard"
-    weight_grams: 83.0
-    image_url: "https://cascadedesigns.com/cdn/shop/files/11695-platypus-quickdraw-filter-blue-connectcap.jpg?v=1728965761&width=1445"
+variants: []
 covers:
   - id: 7
-    label: null
-  - id: 4459
-    label: "Microfilter"
-  - id: 218
-    label: null
-  - id: 5878
     label: null
 ---
 
 import PackstackCTA from "../../../components/PackstackCTA.astro";
-import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -50,8 +37,6 @@ The Platypus QuickDraw is a hollow-fiber squeeze filter for solo backpackers and
 | Does not remove      | Viruses, chemicals                                                                       |
 | Cleaning             | Shake-to-clean or tool-free backflush                                                    |
 | Bottle compatibility | Standard 28 mm threads, including Platypus soft bottles and Smartwater-style PET bottles |
-
-<VariantTable variants={frontmatter.variants} />
 
 <PackstackCTA
   product={frontmatter.product_name}
