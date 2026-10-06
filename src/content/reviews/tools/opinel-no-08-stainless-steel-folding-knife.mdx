@@ -11,13 +11,7 @@ rating: 8.5
 published_at: "2026-05-07"
 updated_at: "2026-10-01"
 description: "The Opinel No.08 Stainless weighs 43–45 g, slices like a much pricier knife, and costs about $23. It opens with two hands and dislikes soaking."
-variants:
-  - name: "Beech"
-    weight_grams: 43.0
-    image_url: "https://www.scoutshop.org/media/catalog/product/cache/2d930136879944f582dd3c1dba176abb/6/6/660520_knife_s3_opt.jpg"
-  - name: "Standard"
-    weight_grams: 45.0
-    image_url: "https://www.opinel-usa.com/cdn/shop/files/Warehouse-Sale-No_08-Effile-Stainless-Steel-Slim-Folding-Knife-Slim-6_2000x.jpg?v=1776372991"
+variants: []
 covers:
   - id: 659
     label: null
@@ -26,7 +20,6 @@ covers:
 ---
 
 import PackstackCTA from "../../../components/PackstackCTA.astro";
-import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -46,8 +39,6 @@ The Opinel No.08 has been made in the French Alps since 1890, when Joseph Opinel
 | Clip / lanyard hole   | None                                         |
 | Origin                | France                                       |
 | Price                 | From about $23                               |
-
-<VariantTable variants={frontmatter.variants} />
 
 <PackstackCTA
   product={frontmatter.product_name}
