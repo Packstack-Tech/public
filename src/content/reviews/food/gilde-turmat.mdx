@@ -1,5 +1,5 @@
 ---
-title: "Gilde Turmat Biffgryte Review"
+title: "Gilde Turmat Review"
 brand: "Gilde"
 product_name: "Turmat"
 catalog_product_id: 340
@@ -9,31 +9,47 @@ product_url: "https://www.gilde.no/produktserie/turmat"
 image_url: "https://api.susoft.com/images/aseninnkjopslag/product/14028/large/"
 rating: 6.5
 published_at: "2026-10-05"
-description: "Gilde's 100 g freeze-dried beef stew is a mild, easy-to-find Norwegian trail dinner built around potato, mushroom and root vegetables."
-variants: []
+updated_at: "2026-10-06"
+description: "Gilde Turmat is a Norwegian supermarket freeze-dried meal line in 86 g and 100 g pouches: light, mild and easy to find at home, but plain and hard to get abroad."
+variants:
+  - name: "86 g"
+    weight_grams: 86.0
+    image_url: "https://cdn.xxl.no/filespin/5aafd9fa404e4b2baa4e0c736df8a45c?quality=75&bgcolor=efefef&resize=3840%2C3840"
+  - name: "100 g"
+    weight_grams: 100.0
+    image_url: "https://api.susoft.com/images/aseninnkjopslag/product/14028/large/"
 covers:
   - id: 340
-    label: null
+    label: "100 g"
+  - id: 343
+    label: "86 g"
 ---
 
 import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
-Gilde Turmat Biffgryte is a freeze-dried beef stew from Nortura's Gilde brand, packed in a vacuum-sealed pouch that doubles as the cooking vessel. It is aimed at Norwegian weekend hikers, hunters and hut-to-hut walkers rather than ultralight gram-counters, and the trade-off is plain: a mild, family-friendly stew that is available at an ordinary supermarket, in exchange for flavor that plays it safe.
+Gilde Turmat is a line of freeze-dried dinners from Nortura's Gilde meat brand, vacuum-sealed in pouches that double as the bowl. It is aimed at Norwegian weekend hikers, hunters and hut-to-hut walkers who would rather pick up dinner at the Coop than order it online, not at gram-counting thru-hikers. The trade-off is plain: cheap, mild, widely stocked meals in exchange for flavor that plays it safe.
 
 ## Key Specs
 
-| Spec          | Detail                                                                                     |
-| ------------- | ------------------------------------------------------------------------------------------ |
-| Weight        | 100 g (dry)                                                                                |
-| Preparation   | Add boiling water directly to the pouch                                                    |
-| Water         | About 1.8 dl, to the fill line (per Gilde's series instructions)                           |
-| Wait time     | About 8–10 minutes                                                                         |
-| Main contents | Beef (17%), potato, button mushroom, carrot, onion, lentils, root vegetables               |
-| Allergens     | Gluten-free, soy-free, egg-free, lactose-free, dairy-free; celery is the declared allergen |
-| Shelf life    | Up to 2 years, vacuum-sealed                                                               |
-| Origin        | Norway, made in Otta in the Rondane region                                                 |
+| Spec                | Detail                                                                       |
+| ------------------- | ---------------------------------------------------------------------------- |
+| Weight              | 86–100 g dry, depending on the meal                                          |
+| Preparation         | Add boiling water directly to the pouch                                      |
+| Wait time           | About 8–10 minutes                                                           |
+| Water (Biffgryte)   | About 1.8 dl, to the fill line                                               |
+| Meals covered       | Biffgryte (beef stew, 100 g); Tacogryte (taco stew, 86 g)                    |
+| Biffgryte contents  | Beef (17%), potato, button mushroom, carrot, onion, lentils, root vegetables |
+| Biffgryte allergens | Gluten-free, soy-free, egg-free, lactose-free, dairy-free; declares celery   |
+| Tacogryte allergens | Declares milk protein including lactose, and celery                          |
+| Tacogryte energy    | 405 kcal per pouch                                                           |
+| Shelf life          | Up to 2 years, vacuum-sealed                                                 |
+| Storage             | 0–20°C                                                                       |
+| Origin              | Norway, made in Otta in the Gudbrandsdalen valley                            |
+
+<VariantTable variants={frontmatter.variants} />
 
 <PackstackCTA
   product={frontmatter.product_name}
@@ -45,42 +61,44 @@ Gilde Turmat Biffgryte is a freeze-dried beef stew from Nortura's Gilde brand, p
 
 ## Performance
 
-**Preparation.** The routine is the standard one for this kind of meal. Boiling water goes into the pouch up to the fill line, then a stir, a sealed bag and a wait of roughly 8–10 minutes. No pot is needed, so cleanup is a rinse-free fold of the empty pouch. One tip from Norwegian hikers who tried the first Gilde Turmat meals: the fill line is a small marking along one side of the back panel, not the white band that wraps the pouch. It is easy to miss with a hungry crowd around the stove.
+**Preparation.** The routine is the standard one for this kind of meal. Boiling water goes into the pouch up to the fill line, then a stir, a sealed bag and a wait of roughly ten minutes. No pot is needed, so cleanup amounts to folding up an empty pouch. Norwegian hikers who tried the first Gilde meals warn that the fill line is a small marking on the back panel, not the white band wrapping the pouch. It is easy to miss with a hungry group around the stove.
 
-**Flavor and ingredients.** Gilde has said it designed the range to be mild and suited to all ages, and the Biffgryte follows that brief. The recipe reads like a home-cooked Norwegian stew: potato leads the ingredient list, followed by beef at 17%, mushrooms, carrot, onion, lentils, celery root and parsley root, rounded out with garlic, leek, beef extract and red wine extract. There is no heat and no spice-rack ambition. That suits cold evenings and mixed groups, and it will bore anyone who wants the punch of a curry or taco meal.
+**Flavor.** Gilde developed the range with the Norwegian Trekking Association (DNT) and pitched the flavors as mild and suited to all ages. The Biffgryte follows that brief. Potato leads the ingredient list, followed by beef at 17%, mushrooms, carrot, onion, lentils, celery root and parsley root, with garlic, leek, beef extract and red wine extract in support. There is no heat and no spice-rack ambition. A Norwegian tester who tried the launch lineup gave the beef stew a 4 on the Scandinavian six-point die scale. He found the meat and potato pieces tiny, as freeze-dried pieces tend to be, and needed a pinch of salt to bring out a proper beef-stew flavor. His verdict was that all three launch meals were fine to carry. The Tacogryte is built on beans, tomato, onion, pepper and corn, with a cheese aroma and beef extract. Its description promises a mild taco flavor, which suits cold evenings and mixed groups and will bore anyone who wants the punch of a proper curry.
 
-**Origin and dependability.** The beef comes from Nortura's Norwegian farmer-owners, and the pouches are freeze-dried and packed at the Rondane Produksjon plant in Otta, at the foot of the Rondane mountains. Gilde developed the range with the Norwegian Trekking Association (DNT), which stocks it at some of its self-service cabins. The series launched in 2021 as a domestic rival to Real Turmat, the better-known Norwegian freeze-dried brand, and owners at the time noted that Gilde's pouches were cheaper and could be bought at the neighborhood Coop rather than ordered online.
+**Origin and availability.** The beef comes from Nortura's Norwegian farmer-owners. The pouches are freeze-dried and packed at the Rondane plant in Otta. DNT stocks the meals at some of its self-service cabins. The series launched in 2021 as a domestic rival to Real Turmat, and the pitch was convenience: Gilde's pouches sit on the dry-goods shelf of an ordinary grocery store. The Tacogryte retails for about 69 NOK at Felleskjøpet, and owners at launch noted that Gilde undercut Real Turmat on price.
 
-**Weight and packability.** At 100 g dry, the pouch is among the lighter single-serving dinners in Gilde's own range, and it flattens easily in a pack. Real Turmat's comparable beef stew weighs 128 g dry, though the two are not a like-for-like swap in portion size. The vacuum seal means no repackaging for most trips.
+**Weight and packability.** At 86 g and 100 g dry, both pouches are light and flatten easily in a pack. Real Turmat's comparable beef stew weighs 128 g dry, though the two are not a like-for-like swap in portion size. A 405 kcal Tacogryte is a modest dinner by thru-hiking standards, and big appetites will want a second pouch or a side. The vacuum seal means no repackaging for most trips.
 
-**Dietary profile.** The product is marketed as gluten-, soy-, egg-, lactose- and dairy-free, which makes it one of the few mainstream supermarket trail meals that works for hikers avoiding several of those at once. Celery is the allergen declared on the label. The ingredient list also includes a rapeseed, sunflower and soybean oil blend, so anyone with a serious soy allergy should read the pouch itself before packing it.
+**Dietary profile.** This is where the two meals diverge. The Biffgryte is marketed as free of gluten, soy, egg, lactose and dairy, which makes it one of the few supermarket trail dinners that works for hikers avoiding several of those at once. Celery is the declared allergen. The ingredient list also names a rapeseed, sunflower and soybean oil blend, so anyone with a serious soy allergy should read the pouch itself. The Tacogryte does not share that profile. Its label declares milk protein including lactose, from the cheese aroma, plus celery. Those avoiding dairy should pass on it.
 
-**Texture.** Reviews of the Gilde line are thinner than for Real Turmat, and the earliest hands-on write-up, of the Pasta Bolognese, found the texture softer than expected, with the flavor acceptable and the portion filling. The stew format, with potato and chunked vegetables, is a more forgiving fit for freeze-drying than pasta.
+## Choosing a Version
+
+The 100 g Biffgryte is the heavier, more filling pouch, with chunks of beef and potato in a brown, homestyle stew. It is also the only version that fits the lactose-free and dairy-free profile, so hikers with those restrictions should stick with it. The 86 g Tacogryte saves 14 g, runs on beans and vegetables, and has a mild taco seasoning. It suits hikers who want a change from beef stew and have no dairy restrictions. Neither is spicy.
 
 ## Pros & Cons
 
 **Pros**
 
-- 100 g dry weight keeps dinner light and compact
-- Mild, familiar beef-and-potato recipe that suits children and mixed groups
-- Free from gluten, soy, egg, lactose and dairy per the manufacturer's labeling
+- 86–100 g dry weight keeps dinner light and compact
+- Mild, familiar recipes that suit children and mixed groups
+- Biffgryte is free from gluten, lactose and dairy by the manufacturer's labeling
 - Eaten from the pouch, so no pot to clean
 - Sold in Norwegian supermarkets and some DNT cabins, generally cheaper than Real Turmat
 - Up to 2 years of shelf life
 
 **Cons**
 
-- Mild flavor with little punch
+- Mild flavor with little punch, and some salt may be needed
+- Small meat and vegetable pieces after rehydration
 - Shorter shelf life than Real Turmat's five years
 - Hard to find outside Norway
-- Contains celery, and the oil blend includes soybean oil
-- Fewer independent reviews than competing brands, so texture is less proven
+- Tacogryte contains lactose, and the Biffgryte oil blend includes soybean oil
 - The fill line is easy to overlook on the pouch
 
 ## Who Should Buy This
 
-This is a good fit for Norwegian weekend hikers, hunters and families heading to cabins, and for anyone who needs a dairy- and gluten-free hot dinner that can be picked up on the drive to the trailhead. It also suits cold-weather days when a bland, warming stew is exactly what is wanted. Thru-hikers resupplying outside Norway, and anyone chasing maximum flavor or a long shelf life for emergency stockpiling, should look at Real Turmat or one of the stronger-flavored freeze-dried brands.
+This suits Norwegian weekend hikers, hunters and families heading to cabins. It also suits anyone who needs a gluten- and dairy-free hot dinner that can be bought on the drive to the trailhead, provided they pick the Biffgryte. Thru-hikers resupplying outside Norway, and anyone chasing maximum flavor, bigger portions or a long shelf life for emergency stockpiles, should look at Real Turmat or one of the stronger-flavored freeze-dried brands.
 
 ## Verdict
 
-Gilde Turmat Biffgryte does what a trail dinner needs to do: it is light, simple to make and free from the common allergens, and it comes from a Norwegian plant that knows the terrain it is aimed at. It is a sensible, inexpensive staple for Norwegian trips and an unremarkable one everywhere else.
+Gilde Turmat does what a trail dinner needs to do: it is light, simple to make and cheap, and it comes from a Norwegian plant close to the terrain it targets. The Biffgryte is the better pick for its dietary range and heartier build. Both meals are sensible staples for Norwegian trips and unremarkable almost everywhere else.
