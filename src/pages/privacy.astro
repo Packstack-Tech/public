@@ -6,197 +6,259 @@ import PageFooter from "../components/PageFooter.astro"
 export const prerender = true
 ---
 
-<BaseLayout title="Privacy Policy | Packstack" description="Privacy Policy for Packstack — how we collect, use, and protect your information.">
+<BaseLayout title="Privacy Policy | Packstack" description="Privacy Policy for Packstack: what we collect, how we use it, who we share it with, and the choices you have.">
   <div class="bg-background min-h-screen">
     <PageHeader />
 
     <main class="max-w-3xl mx-auto px-4 md:px-8 py-12 prose prose-invert prose-sm">
       <h1 class="text-3xl font-bold mb-1">Privacy Policy</h1>
-      <p class="text-label text-sm mt-0 mb-10">Effective Date: July 13, 2026</p>
+      <p class="text-label text-sm mt-0 mb-10">Effective Date: October 9, 2026</p>
 
       <p>
         Packstack, LLC ("Packstack," "we," "us," or "our") operates the website
         <a href="https://www.packstack.io">www.packstack.io</a>, the web application at
-        <a href="https://app.packstack.io">app.packstack.io</a>, and the Packstack mobile
-        application (collectively, the "Service"). This Privacy Policy explains how we collect,
-        use, disclose, and safeguard your information when you use the Service.
+        <a href="https://app.packstack.io">app.packstack.io</a>, and the Packstack mobile apps
+        for iOS and Android (collectively, the "Service"). This Privacy Policy explains what
+        information we collect, how we use it, who we share it with, and the choices you have.
       </p>
 
       <p>
-        By accessing or using the Service, you agree to this Privacy Policy. If you do not agree
-        with the terms of this Privacy Policy, please do not use the Service.
+        By using the Service, you agree to this Privacy Policy. If you do not agree, please do not
+        use the Service.
       </p>
 
       <h2>1. Information We Collect</h2>
 
       <h3>Account Information</h3>
       <p>
-        When you create an account using a social login provider (such as Google or Apple), we
-        receive your <strong>name</strong> and <strong>email address</strong> from that provider.
-        We do not collect or store your social login password.
+        You can sign in with a one-time code sent to your email address, or with Google or Apple.
+        We collect your <strong>email address</strong>. If you sign in with Google or Apple, we
+        also receive the <strong>name</strong> you have on that account (Apple may give us a
+        private relay email address instead of your real one). We do not receive or store your
+        Google or Apple password.
       </p>
 
-      <h3>User-Generated Content</h3>
+      <h3>Profile Information (optional)</h3>
       <p>
-        We collect the packing lists, gear inventories, trip plans, and other content you create
-        within the Service. This data is stored to provide the core functionality of Packstack.
+        You can add a username, display name, bio, profile photo, and links to your social media
+        profiles. This information appears on your public profile.
       </p>
 
-      <h3>Purchase and Subscription Information</h3>
+      <h3>Hiker Profile (optional)</h3>
       <p>
-        If you purchase a Packstack subscription, the payment is processed by the platform you
-        purchase through — the Apple App Store, Google Play, or our web payment processor. We
-        never receive or store your full payment card details. We use
-        <strong>RevenueCat</strong> to manage subscriptions, which processes purchase receipts,
-        subscription status, and an anonymized identifier linked to your Packstack account so we
-        can unlock paid features across your devices.
+        To calculate calorie, food, and water estimates, you can enter your <strong>body weight,
+        height, year of birth, sex, and body type</strong>. We use this information only to
+        calculate those estimates for you. We do not make it public, use it for advertising, or
+        send it to the AI providers described below.
       </p>
 
-      <h3>Device and Usage Information</h3>
-      <p>We collect limited analytics data to understand how the Service is used:</p>
+      <h3>Content You Create</h3>
+      <p>
+        We store the gear in your gear closet (including weights, prices, quantities, notes, and
+        condition), your trips (including locations, dates, and notes), packing lists, kits,
+        photos you upload, and other content you create, so that we can provide the Service.
+      </p>
+
+      <h3>Purchase Information</h3>
+      <p>
+        Purchases of Packstack Pro are processed by the platform you buy through: the Apple App
+        Store, Google Play, or, on the web, Stripe through RevenueCat Web Billing. We never
+        receive or store your full payment card details. We use <strong>RevenueCat</strong> to
+        manage purchases. RevenueCat receives purchase receipts and history, subscription status,
+        and your Packstack account ID, so we can unlock Pro features on every device you use.
+      </p>
+
+      <h3>Usage and Diagnostic Information</h3>
+      <p>In our apps:</p>
       <ul>
         <li>
-          <strong>Plausible Analytics</strong> — a privacy-friendly, cookie-free analytics tool
-          that collects aggregate page view and visitor data without personally identifying you.
+          <strong>Mixpanel</strong> records which features you use (for example, creating a
+          packing list or sharing a trip). These events are linked to your account ID, and in the
+          web app also to your email address and username.
         </li>
         <li>
-          <strong>Ahrefs Web Analytics</strong> — collects aggregate website traffic data.
+          <strong>Sentry</strong> receives crash and error reports, including device or browser
+          details and your account ID, email address, and username, so we can find and fix bugs.
         </li>
         <li>
-          <strong>Mixpanel</strong> — used within the application to track feature usage events
-          (e.g., creating a packing list, sharing a trip). Events may be associated with your
-          account to help us improve the product.
+          <strong>Expo</strong> receives basic, non-identifying performance and usage data from
+          the mobile app, such as app version, platform, and launch counts.
+        </li>
+      </ul>
+      <p>On our website (www.packstack.io):</p>
+      <ul>
+        <li>
+          <strong>Plausible Analytics</strong> collects aggregate page view and visitor data
+          without cookies and without identifying you.
+        </li>
+        <li>
+          <strong>Ahrefs Web Analytics</strong> collects aggregate website traffic data.
+        </li>
+        <li>
+          <strong>Google Ads</strong> conversion tracking uses cookies to measure whether visitors
+          who arrive from our ads go on to sign up or download the app. See Section 3.
         </li>
       </ul>
 
       <h3>Mobile App Permissions</h3>
-      <p>The Packstack mobile app may request the following device permissions:</p>
-      <ul>
-        <li>
-          <strong>Camera</strong> — to photograph gear items for your inventory.
-        </li>
-        <li>
-          <strong>Photo Library / Storage</strong> — to select existing photos for gear items.
-        </li>
-        <li>
-          <strong>Push Notifications</strong> — to send you trip reminders and important updates.
-        </li>
-      </ul>
-      <p>You can revoke any of these permissions at any time through your device settings.</p>
+      <p>
+        The mobile app asks for one permission: <strong>Photo Library (add only)</strong>, used
+        only when you choose to save a trip summary image to your photos. You can change this at
+        any time in your device settings.
+      </p>
 
       <h2>2. How We Use Your Information</h2>
       <p>We use the information we collect to:</p>
       <ul>
-        <li>Provide, operate, and maintain the Service</li>
-        <li>Create and manage your account</li>
-        <li>Send transactional emails (e.g., account verification, password resets)</li>
-        <li>Analyze usage trends to improve and develop new features</li>
-        <li>Respond to your inquiries and support requests</li>
-        <li>Detect and prevent fraud, abuse, or security incidents</li>
+        <li>Provide, operate, and maintain the Service, including syncing across your devices</li>
+        <li>Create and manage your account and unlock the features you have purchased</li>
+        <li>Calculate weight totals, calorie, food, and water estimates, and over-packing warnings</li>
+        <li>Research trail details and product specifications to fill in your trips and gear</li>
+        <li>Send sign-in codes and other emails about your account</li>
+        <li>Send occasional product updates, which you can unsubscribe from at any time</li>
+        <li>Understand how the Service is used, fix bugs, and build new features</li>
+        <li>Measure the effectiveness of our advertising</li>
+        <li>Respond to your questions and support requests</li>
+        <li>Detect and prevent fraud, abuse, and security incidents</li>
       </ul>
 
-      <h2>3. Cookies and Tracking</h2>
+      <h2>3. Cookies and Similar Technologies</h2>
       <p>
-        We use <strong>session and authentication cookies only</strong>. These cookies are
-        strictly necessary to keep you logged in and to maintain your session. We do not use
-        advertising cookies, third-party tracking cookies, or cross-site tracking technologies.
+        <strong>Web app (app.packstack.io).</strong> We use cookies that are strictly necessary to
+        keep you signed in. The app also stores analytics identifiers in your browser's local
+        storage for Mixpanel.
+      </p>
+      <p>
+        <strong>Website (www.packstack.io).</strong> The Google Ads tag sets cookies so that
+        Google can tell us when a visit from one of our ads leads to a sign-up or app download.
+        Google may use these cookies under its own privacy policy. You can block or delete cookies
+        in your browser settings, and manage ad personalization at
+        <a href="https://adssettings.google.com">adssettings.google.com</a>. Plausible does not use
+        cookies.
       </p>
 
-      <h2>4. Data Sharing and Disclosure</h2>
+      <h2>4. How We Share Information</h2>
       <p>
-        <strong>We do not sell, rent, or share your personal information with third parties for
-        their marketing purposes.</strong>
+        We do not sell your personal information, and we do not share it with third parties for
+        their own marketing.
       </p>
-      <p>We may share information only in the following limited circumstances:</p>
+
+      <h3>Service Providers</h3>
+      <p>We use these providers to run the Service. They process data only to provide their services to us:</p>
       <ul>
+        <li><strong>DigitalOcean</strong>: hosting, database, and file storage for the apps</li>
+        <li><strong>Vercel</strong>: hosting for our website</li>
+        <li><strong>Resend</strong>: email delivery</li>
+        <li><strong>RevenueCat</strong> and <strong>Stripe</strong>: purchases and billing</li>
+        <li><strong>Apple</strong> and <strong>Google</strong>: sign-in, app distribution, and in-app purchases</li>
+        <li><strong>Mixpanel</strong>, <strong>Sentry</strong>, and <strong>Expo</strong>: product analytics, error reporting, and app diagnostics</li>
+        <li><strong>Plausible</strong>, <strong>Ahrefs</strong>, and <strong>Google Ads</strong>: website analytics and ad measurement</li>
         <li>
-          <strong>Service Providers</strong> — We use trusted third-party services to operate the
-          Service, including DigitalOcean (hosting and infrastructure), Resend (transactional
-          email delivery), and RevenueCat (subscription and in-app purchase management). These
-          providers only process data as necessary to provide their services to us.
-        </li>
-        <li>
-          <strong>Legal Requirements</strong> — We may disclose your information if required to do
-          so by law or in response to valid legal process (e.g., a court order or subpoena).
-        </li>
-        <li>
-          <strong>Business Transfers</strong> — If Packstack is involved in a merger, acquisition,
-          or sale of assets, your information may be transferred as part of that transaction.
+          <strong>Anthropic</strong> and <strong>Serper</strong>: to research trail details (such as
+          distance, elevation, and typical temperatures) and product specifications, we send trail
+          and location names, the month of your trip, and gear brand and product names. We do not
+          send your name, email address, or hiker profile.
         </li>
       </ul>
+
+      <h3>Content You Make Public</h3>
+      <p>
+        When you share a trip, anyone with its link can view the trip and its packing lists,
+        without an account. Trips you publish may also appear in public listings on our website
+        and be indexed by search engines. Your public profile (username, display name, bio, profile
+        photo, and social links) can be viewed by anyone. Think about what you include before you
+        share.
+      </p>
+
+      <h3>AI Assistants You Connect</h3>
+      <p>
+        If you connect an AI assistant such as Claude or ChatGPT to your Packstack account, we
+        share the data you authorize, such as your gear closet, trips, and packing lists, with that
+        assistant at your direction. What the assistant's provider does with that data is governed
+        by its own privacy policy. You can disconnect an assistant at any time in Settings under
+        Connected apps.
+      </p>
+
+      <h3>Legal Requirements and Business Transfers</h3>
+      <p>
+        We may disclose information if required by law or in response to valid legal process, such
+        as a court order or subpoena. If Packstack is involved in a merger, acquisition, or sale of
+        assets, your information may be transferred as part of that transaction.
+      </p>
 
       <h2>5. Data Storage and Security</h2>
       <p>
-        Your data is stored on servers hosted by DigitalOcean in the United States. We implement
-        industry-standard technical and organizational measures to protect your data, including
-        encryption in transit (TLS/SSL) and access controls. However, no method of transmission
-        over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute
-        security.
+        Your data is stored on servers hosted by DigitalOcean in the United States. We use
+        industry-standard measures to protect it, including encryption in transit (TLS) and access
+        controls. No method of transmission or storage is completely secure, so we cannot guarantee
+        absolute security.
       </p>
 
       <h2>6. Data Retention</h2>
       <p>
-        We retain your personal information for as long as your account is active or as needed to
-        provide the Service. If you request deletion of your account, we will delete your personal
-        data within 30 days, except where we are required to retain it by law.
+        We keep your information for as long as your account is active. When you delete your
+        account, we delete your account and its content from our systems right away. Copies in our
+        backups are removed as those backups expire. Our service providers keep analytics and error
+        data for their standard retention periods. We may keep some information longer where the
+        law requires it, such as purchase records.
       </p>
 
       <h2>7. Your Rights and Choices</h2>
-      <p>Depending on your jurisdiction, you may have the right to:</p>
+      <p>Depending on where you live, you may have the right to:</p>
       <ul>
         <li>Access the personal information we hold about you</li>
         <li>Correct inaccurate or incomplete information</li>
-        <li>Request deletion of your account and associated data</li>
+        <li>Delete your account and associated data</li>
         <li>Object to or restrict certain processing of your data</li>
-        <li>Request a portable copy of your data</li>
+        <li>Receive a portable copy of your data</li>
       </ul>
       <p>
-        To exercise any of these rights, please contact us at
+        You can edit most of your information directly in the Service, and export your gear closet
+        as a CSV file. For anything else, contact us at
         <a href="mailto:support@packstack.io">support@packstack.io</a>.
       </p>
 
-      <h3>Account Deletion</h3>
+      <h3>Deleting Your Account</h3>
       <p>
-        You may request deletion of your account and all associated data by emailing
-        <a href="mailto:support@packstack.io">support@packstack.io</a>. We will process your
-        request within 30 days.
+        You can delete your account and all of its data yourself at any time: in the mobile app,
+        open the menu and go to Account Details, then Permanently Delete Account; on the web, go to
+        Settings, then Delete account. You can also email
+        <a href="mailto:support@packstack.io">support@packstack.io</a> and we will delete it within
+        30 days. Deleting your account does not cancel a subscription bought through the App Store
+        or Google Play; cancel those in your store account settings.
       </p>
 
       <h2>8. Children's Privacy</h2>
       <p>
-        The Service is not intended for children under the age of 13. We do not knowingly collect
-        personal information from children under 13. If we learn that we have collected personal
-        information from a child under 13, we will take steps to delete that information promptly.
-        If you believe a child under 13 has provided us with personal information, please contact
-        us at <a href="mailto:support@packstack.io">support@packstack.io</a>.
+        The Service is not intended for children under 13. We do not knowingly collect personal
+        information from children under 13. If we learn that we have, we will delete it promptly.
+        If you believe a child under 13 has given us personal information, please contact us at
+        <a href="mailto:support@packstack.io">support@packstack.io</a>.
       </p>
 
       <h2>9. California Privacy Rights</h2>
       <p>
-        If you are a California resident, you have additional rights under the California Consumer
-        Privacy Act (CCPA), including the right to know what personal information we collect, the
-        right to request deletion, and the right to opt out of the sale of personal information.
-        As stated above, <strong>we do not sell your personal information</strong>.
-      </p>
-      <p>
-        To exercise your California privacy rights, contact us at
+        If you are a California resident, the California Consumer Privacy Act (CCPA) gives you the
+        right to know what personal information we collect, to request its deletion or correction,
+        and to opt out of its sale or sharing for cross-context behavioral advertising. We do not
+        sell personal information. Our website's Google Ads conversion tracking may be considered
+        "sharing" under the CCPA; you can opt out by blocking or deleting cookies in your browser,
+        or by contacting us. To exercise your rights, contact us at
         <a href="mailto:support@packstack.io">support@packstack.io</a>.
       </p>
 
       <h2>10. International Users</h2>
       <p>
-        If you are accessing the Service from outside the United States, please be aware that your
-        information is transferred to, stored, and processed in the United States. By using the
-        Service, you consent to the transfer of your information to the United States, which may
-        have different data protection laws than your country of residence.
+        If you use the Service from outside the United States, your information is transferred to,
+        stored, and processed in the United States, which may have different data protection laws
+        than your country.
       </p>
 
       <h2>11. Changes to This Privacy Policy</h2>
       <p>
         We may update this Privacy Policy from time to time. If we make material changes, we will
-        notify you by updating the "Effective Date" at the top of this page and, where appropriate,
-        through a notice within the Service. Your continued use of the Service after any changes
-        constitutes your acceptance of the updated Privacy Policy.
+        update the Effective Date above and, where appropriate, notify you in the Service. Your
+        continued use of the Service after a change means you accept the updated policy.
       </p>
 
       <h2>12. Contact Us</h2>

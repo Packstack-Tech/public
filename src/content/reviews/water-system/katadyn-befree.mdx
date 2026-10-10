@@ -29,10 +29,12 @@ covers:
     label: "Water Filtration System"
   - id: 3175
     label: "3.0L"
+  - id: 2372
+    label: "3.0L"
 ---
 
-import PackstackCTA from "../../../components/PackstackCTA.astro"
-import VariantTable from "../../../components/VariantTable.astro"
+import PackstackCTA from "../../../components/PackstackCTA.astro";
+import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -40,23 +42,29 @@ The Katadyn BeFree is a hollow-fiber filter that screws onto a collapsible Hydra
 
 ## Key Specs
 
-| Spec | Value |
-| --- | --- |
-| Weight | 59–100 g depending on size (complete system with flask) |
-| Capacity | 0.6 L, 1 L or 3 L |
-| Filter type | EZ-Clean hollow-fiber membrane |
-| Pore size | 0.1 micron |
-| Flow rate | Up to 2 L/min |
-| Filter life | Up to 1,000 L, depending on water quality |
-| Removes | Bacteria (99.9999%), protozoa (99.99%), sediment |
-| Does not remove | Viruses |
-| Flask | Hydrapak SoftFlask, TPU, BPA-free |
-| Threads | 42 mm Hydrapak |
-| Cleaning | Shake or swish in the field; no backflushing |
+| Spec            | Value                                                   |
+| --------------- | ------------------------------------------------------- |
+| Weight          | 59–100 g depending on size (complete system with flask) |
+| Capacity        | 0.6 L, 1 L or 3 L                                       |
+| Filter type     | EZ-Clean hollow-fiber membrane                          |
+| Pore size       | 0.1 micron                                              |
+| Flow rate       | Up to 2 L/min                                           |
+| Filter life     | Up to 1,000 L, depending on water quality               |
+| Removes         | Bacteria (99.9999%), protozoa (99.99%), sediment        |
+| Does not remove | Viruses                                                 |
+| Flask           | Hydrapak SoftFlask, TPU, BPA-free                       |
+| Threads         | 42 mm Hydrapak                                          |
+| Cleaning        | Shake or swish in the field; no backflushing            |
 
 <VariantTable variants={frontmatter.variants} />
 
-<PackstackCTA product={frontmatter.product_name} brand={frontmatter.brand} weightGrams={frontmatter.weight_grams} category={frontmatter.category} subcategorySlug="filtration" />
+<PackstackCTA
+  product={frontmatter.product_name}
+  brand={frontmatter.brand}
+  weightGrams={frontmatter.weight_grams}
+  category={frontmatter.category}
+  subcategorySlug="filtration"
+/>
 
 ## Performance
 

@@ -65,7 +65,7 @@ const ridgeLines = Array.from({ length: RIDGE_LINES }, (_, line) => {
 const faqs = [
   {
     q: "Is Packstack free?",
-    a: "Packstack is free to start. Create an account and begin building your gear closet and gear lists, no credit card required — including your first kit. Packstack Pro is a one-time purchase that unlocks unlimited gear lists and kits, multiple packs per trip, calorie and water planning, watermark-free trip summary cards, and editing through connected AI assistants like Claude and ChatGPT.",
+    a: "Packstack is free to start. Build your gear closet, three gear lists, and your first kit with no credit card required. Packstack Pro unlocks unlimited gear lists and kits, multiple packs per trip, calorie and water planning, watermark-free trip summary cards, and editing through connected AI assistants like Claude and ChatGPT. Pro is available as a monthly or annual subscription, or a one-time purchase.",
   },
   {
     q: "Can I import my gear list from LighterPack?",
@@ -81,11 +81,11 @@ const faqs = [
   },
   {
     q: "What's the difference between base weight, worn weight, and consumables?",
-    a: "Base weight is everything in your pack excluding food, water, and fuel. Worn weight covers items you wear or carry on your body, like shoes and trekking poles. Consumables are things you use up along the way. Packstack tracks all three separately so you know exactly what you're hauling.",
+    a: "Base weight is everything you carry except worn items and consumables. Worn weight covers what you wear or carry on your body, like shoes and trekking poles. Pack five shirts and wear one, and only that one counts as worn. Consumables are the food, water, and fuel you use up along the way. Packstack tracks all three separately so you know exactly what you're hauling.",
   },
   {
     q: "Can I connect Packstack to my AI assistant?",
-    a: "Yes. Packstack has an MCP server, the open standard assistants use to connect to apps, so Claude, ChatGPT, Claude Code, Cursor and any other MCP-compatible client can read your real gear closet, trips and packs while you plan — ask for a shakedown and it works from your actual base weight, not a pasted list. Connecting takes one sign-in, no API key. Reading is free on every account; making changes through your assistant (adding gear, building packs, editing trips) is part of Packstack Pro.",
+    a: "Yes. Packstack has an MCP server, the open standard assistants use to connect to apps, so Claude, ChatGPT, Claude Code, Cursor and any other MCP-compatible client can read your real gear closet, trips and packs while you plan. Ask for a shakedown and it works from your actual base weight, not a pasted list. Connecting takes one sign-in, no API key. Reading is free on every account; making changes through your assistant (adding gear, building packs, editing trips) is part of Packstack Pro.",
     link: { href: "/developers/mcp", label: "Connect an AI assistant" },
   },
 ]
@@ -103,7 +103,7 @@ const faqSchema = {
 
 <BaseLayout
   title="Packstack | Backpacking Gear List Builder & Base Weight Tracker"
-  description="Build your backpacking gear list, track base weight down to the gram, and plan food and water with Packstack — the free gear list app for backpackers. Import from LighterPack in seconds."
+  description="Build your backpacking gear list, track base weight down to the gram, and plan every trip with Packstack, the free gear list app for backpackers. Import from LighterPack in seconds."
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
@@ -225,6 +225,10 @@ const faqSchema = {
                 <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
                 Track the total value of your kit
               </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
+                Track how many of each item you own
+              </li>
             </ul>
           </div>
           <div class="md:w-7/12">
@@ -246,10 +250,11 @@ const faqSchema = {
             <p class="text-primary text-xs uppercase tracking-widest mb-3 font-semibold">Pack List Builder</p>
             <h2 class="text-white text-2xl md:text-3xl leading-snug mb-4">Build the perfect pack</h2>
             <p class="mb-5">
-              Ditch the spreadsheets. Drag items from your inventory, organize
+              Ditch the spreadsheets. Add items from your gear closet, organize
               by category, and fine-tune quantities, all in a clean,
-              purpose-built interface. Create multiple packs per trip for base
-              camp and day hike setups.
+              purpose-built interface. Packstack warns you when a trip packs
+              more of something than you own. With Pro, add multiple packs per
+              trip: one per person, or one per loadout.
             </p>
             <ul class="space-y-2.5 text-softwhite text-sm">
               <li class="flex items-start gap-2.5">
@@ -258,7 +263,7 @@ const faqSchema = {
               </li>
               <li class="flex items-start gap-2.5">
                 <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
-                Multiple packs per trip
+                Multiple packs per trip (Pro)
               </li>
               <li class="flex items-start gap-2.5">
                 <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
@@ -266,7 +271,7 @@ const faqSchema = {
               </li>
               <li class="flex items-start gap-2.5">
                 <span class="text-accent-green mt-0.5 text-xs">&#10003;</span>
-                Mark items as worn or consumable
+                Mark items worn or consumable
               </li>
             </ul>
           </div>
@@ -417,7 +422,7 @@ const faqSchema = {
       <section class="py-16 md:py-24 px-4 bg-surface/30">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
           <div class="md:w-5/12">
-            <p class="text-primary text-xs uppercase tracking-widest mb-3 font-semibold">Calorie Calculator</p>
+            <p class="text-primary text-xs uppercase tracking-widest mb-3 font-semibold">Calorie Calculator &middot; Pro</p>
             <h2 class="text-white text-2xl md:text-3xl leading-snug mb-4">Know how much fuel you need</h2>
             <p class="mb-5">
               Packstack estimates your daily calorie needs based on your body
@@ -579,7 +584,7 @@ const faqSchema = {
               <div class="w-10 h-10 mb-4 rounded-lg bg-primary/10 flex items-center justify-center">
                 <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22c4.4 0 8-3.1 8-7.5 0-3-1.5-5-3-7-.5 2-1.5 3-3 3.5.5-3-.5-6-3-8-.5 3.5-2.5 5-4.5 7.5C5 12 4 13.5 4 15c0 4 3.6 7 8 7z" /></svg>
               </div>
-              <h3 class="text-base">Calorie Estimates</h3>
+              <h3 class="text-base">Calorie Estimates (Pro)</h3>
               <p class="text-sm leading-relaxed">
                 Daily calorie, food weight, and water targets from your body
                 stats, pack weight, and trip conditions. No guesswork.
