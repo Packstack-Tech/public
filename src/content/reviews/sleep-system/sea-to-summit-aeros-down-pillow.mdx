@@ -4,24 +4,19 @@ brand: "Sea to Summit"
 product_name: "Aeros Down Pillow"
 catalog_product_id: 73
 category: "Sleep System"
-weight_grams: 85.0
+weight_grams: 70.0
 product_url: "https://seatosummit.com/products/aeros-down-pillow"
 image_url: "https://m.media-amazon.com/images/I/71L6Fl7bdHL.jpg"
 rating: 8
 published_at: "2026-10-05"
 description: "Sea to Summit's Aeros Down pillow packs a thin duck-down topper over an air bladder for 70–85 g, but slick nylon and a small Regular size limit it."
-variants:
-  - name: "Regular"
-    weight_grams: 70.0
-  - name: "Standard"
-    weight_grams: 85.0
+variants: []
 covers:
   - id: 73
     label: null
 ---
 
 import PackstackCTA from "../../../components/PackstackCTA.astro";
-import VariantTable from "../../../components/VariantTable.astro";
 
 ## Overview
 
@@ -42,8 +37,6 @@ The Aeros Down Pillow is Sea to Summit's air-supported camp pillow with a thin l
 | Stuff sack          | 100% nylon, included                                |
 | Pad attachment      | PillowLock compatible; 3M adhesive patches included |
 | Price               | From $64.95                                         |
-
-<VariantTable variants={frontmatter.variants} />
 
 <PackstackCTA
   product={frontmatter.product_name}
