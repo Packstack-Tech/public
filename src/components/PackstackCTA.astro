@@ -1,23 +1,51 @@
 ---
 /**
- * In-article CTA for reviews and learn articles — one pitch everywhere
- * ("Build your Gear Closet").
+ * In-article CTA for reviews and learn articles.
  *
- * Props are kept only so existing MDX keeps compiling; none are displayed.
- * (inject_cta_slug in workshop/catalog_reviews still adds subcategorySlug.)
+ * Review pages pass product context, and the copy continues the reader's
+ * purchase-research thought ("what does this item do to my pack?") instead of
+ * changing the subject. Learn articles (no props) get the generic Gear Closet
+ * pitch. The Oct 1, 2026 single-pitch version ("Build your Gear Closet" /
+ * "Get Started", no product context, no "Free" line) coincided with a ~50%
+ * drop in sign-ups; this restores the context and trust line and keeps the
+ * Oct 1 look (faint logo mark) and "Gear Closet" naming.
+ *
+ * Clicks fire a Plausible "CTA Click" event {variant, category} so the two
+ * versions can be compared; the gtag conversion in BaseLayout still fires on
+ * the register link as before.
  */
 type Props = {
   product?: string;
   brand?: string;
-  weightGrams?: number | null;
+  weightGrams?: number;
   category?: string;
   /** Ultralight-research subcategory slug for a direct comparison link. */
   subcategorySlug?: string;
 };
+
+const { product, brand, weightGrams, category, subcategorySlug } = Astro.props;
+
+const contextual = !!product;
+const fullName = brand && product && !product.toLowerCase().startsWith(brand.toLowerCase())
+  ? `${brand} ${product}`
+  : product;
+const weightLabel = weightGrams
+  ? `${Math.round(weightGrams)} g · ${(weightGrams / 28.3495).toFixed(1)} oz`
+  : null;
+const categoryLabel = category ? category.toLowerCase() : "gear";
+const compareHref = subcategorySlug
+  ? `/tools/ultralight-research/${subcategorySlug}`
+  : "/tools/ultralight-research";
+const compareLabel = subcategorySlug
+  ? `See how the ${product} compares`
+  : `Compare ${categoryLabel} by weight`;
+const variant = contextual ? "product" : "generic";
 ---
 
 <div
   class="not-prose relative my-8 overflow-hidden rounded-xl border border-primary/25 bg-primary/[0.06] px-6 py-5"
+  data-packstack-cta={variant}
+  data-cta-category={category ?? ""}
 >
   <img
     src="/images/packstack-logo-mark.png"
@@ -30,16 +58,79 @@ type Props = {
   />
 
   <div class="relative">
-    <p class="text-white font-semibold text-base mb-1">Build your Gear Closet</p>
-    <p class="text-softwhite text-sm leading-relaxed mb-4 max-w-xl">
-      View all of your gear in one place, create packing lists and hit the trail
-      with confidence. Available on iOS, Android and the web.
+    {
+      contextual ? (
+        <>
+          <div class="mb-1 flex items-start justify-between gap-4">
+            <p class="text-white font-semibold text-base">
+              Would the {product} earn its spot in your pack?
+            </p>
+            {weightLabel && (
+              <span class="shrink-0 whitespace-nowrap rounded-full border border-primary/40 bg-primary/10 px-2.5 py-1 text-[11px] font-semibold text-primary">
+                {weightLabel}
+              </span>
+            )}
+          </div>
+          <p class="text-softwhite text-sm leading-relaxed mb-4 max-w-xl">
+            Add the {fullName} to your Gear Closet and see exactly what it does to
+            your base weight, then build your next packing list around it. Free,
+            in about two minutes.
+          </p>
+          <div class="flex flex-wrap items-center gap-x-5 gap-y-3">
+            <a
+              href="https://app.packstack.io/auth/register"
+              data-cta-action="register"
+              class="inline-block bg-primary hover:bg-primary-dark text-on-primary text-sm font-semibold rounded-md py-2 px-5 no-underline transition-colors"
+            >
+              Add it to your Gear Closet
+            </a>
+            <a
+              href={compareHref}
+              data-cta-action="compare"
+              class="text-sm font-medium text-softwhite hover:text-white no-underline transition-colors"
+            >
+              {compareLabel} &rarr;
+            </a>
+          </div>
+        </>
+      ) : (
+        <>
+          <p class="text-white font-semibold text-base mb-1">Build your Gear Closet</p>
+          <p class="text-softwhite text-sm leading-relaxed mb-4 max-w-xl">
+            Know exactly what your pack weighs. View all of your gear in one place,
+            spin up a packing list for any trip in minutes and hit the trail with
+            confidence.
+          </p>
+          <a
+            href="https://app.packstack.io/auth/register"
+            data-cta-action="register"
+            class="inline-block bg-primary hover:bg-primary-dark text-on-primary text-sm font-semibold rounded-md py-2 px-5 no-underline transition-colors"
+          >
+            Start your free Gear Closet
+          </a>
+        </>
+      )
+    }
+    <p class="mt-3 text-xs text-label">
+      Free &middot; No credit card &middot; iOS, Android &amp; web &middot; Trusted by
+      3,000+ backpackers
     </p>
-    <a
-      href="https://app.packstack.io/auth/register"
-      class="inline-block bg-primary hover:bg-primary-dark text-on-primary text-sm font-semibold rounded-md py-2 px-5 no-underline transition-colors"
-    >
-      Get Started
-    </a>
   </div>
 </div>
+
+<script>
+  // Bundled once per page by Astro, however many CTAs the page has.
+  document.addEventListener("click", (event) => {
+    const link = (event.target as Element | null)?.closest?.("[data-cta-action]");
+    const box = link?.closest("[data-packstack-cta]") as HTMLElement | null;
+    if (!link || !box) return;
+    const w = window as unknown as { plausible?: (e: string, o?: object) => void };
+    w.plausible?.("CTA Click", {
+      props: {
+        variant: box.dataset.packstackCta,
+        action: (link as HTMLElement).dataset.ctaAction,
+        category: box.dataset.ctaCategory || "none",
+      },
+    });
+  });
+</script>
