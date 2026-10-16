@@ -20,8 +20,59 @@ const { title, description = "Plan your backpacking trips with Packstack, the ge
       gtag('config', 'AW-18325743425');
     </script>
 
+    <!-- Ad attribution: remember the ad click / UTM tags this visit landed with and carry them
+         to app.packstack.io, where registration sends them to the API. The API reports real
+         sign-ups and purchases to Google Ads; see app/src/lib/attribution.ts. -->
+    <script is:inline>
+      (function () {
+        var KEYS = ['gclid', 'gbraid', 'wbraid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+        var CLICK_IDS = ['gclid', 'gbraid', 'wbraid'];
+        var MAX_AGE_S = 90 * 24 * 60 * 60; // Google's longest click-conversion window
+        var onPackstack = /(^|\.)packstack\.io$/.test(location.hostname);
+        function hasClick(a) { return !!a && CLICK_IDS.some(function (k) { return !!a[k]; }); }
+        function read() {
+          try {
+            var m = document.cookie.match(/(?:^|; )ps_attr=([^;]*)/);
+            var a = m ? JSON.parse(decodeURIComponent(m[1])) : null;
+            return a && a.ts && Date.now() - a.ts < MAX_AGE_S * 1000 ? a : null;
+          } catch (e) { return null; }
+        }
+        var stored = read();
+        try {
+          var params = new URLSearchParams(location.search);
+          var found = {};
+          KEYS.forEach(function (k) { var v = params.get(k); if (v) found[k] = v.slice(0, 255); });
+          // A visit with only UTM tags never replaces a stored ad click.
+          if (Object.keys(found).length && (hasClick(found) || !hasClick(stored))) {
+            found.ts = Date.now();
+            found.landing = location.pathname.slice(0, 255);
+            document.cookie = 'ps_attr=' + encodeURIComponent(JSON.stringify(found)) +
+              '; path=/; max-age=' + MAX_AGE_S + '; SameSite=Lax; Secure' +
+              (onPackstack ? '; domain=.packstack.io' : '');
+            stored = found;
+          }
+        } catch (e) {}
+        if (!stored) return;
+        // Safari can cap script-set cookies at a day or a week, so also put the params on the
+        // link itself.
+        document.addEventListener('click', function (event) {
+          var link = event.target && event.target.closest && event.target.closest('a[href*="app.packstack.io"]');
+          if (!link) return;
+          try {
+            var url = new URL(link.href);
+            KEYS.forEach(function (k) { if (stored[k] && !url.searchParams.has(k)) url.searchParams.set(k, stored[k]); });
+            url.searchParams.set('ps_ts', String(stored.ts));
+            if (stored.landing) url.searchParams.set('ps_landing', stored.landing);
+            link.href = url.toString();
+          } catch (e) {}
+        }, true);
+      })();
+    </script>
+
     <!-- Google Ads conversion tracking -->
-    <!-- Fires the sign-up conversion on clicks to the web app sign up and the App Store / Google Play links. -->
+    <!-- Fires on clicks to the web app sign up and the App Store / Google Play links. These are
+         clicks, not sign-ups: keep this conversion action "secondary" in Google Ads. Real sign-ups
+         and purchases are uploaded by the API (api/app/utils/ad_conversions.py). -->
     <script is:inline>
       (function () {
         var CONVERSION = 'AW-18325743425/eooSCJfu4vEcEMHOsqJE';
