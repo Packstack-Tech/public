@@ -11,11 +11,67 @@ const { title, description = "Plan your backpacking trips with Packstack, the ge
 
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-18325743425"></script>
+    <!-- Consent for ad measurement (EEA, UK, Switzerland). Google Consent Mode v2: in those
+         countries the Google tag runs without cookies until the visitor accepts the banner at
+         the bottom of <body>. Elsewhere nothing changes. The choice is a `ps_consent` cookie on
+         .packstack.io, which app.packstack.io also reads (app/src/lib/attribution.ts).
+         Must run before the Google tag's config. -->
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      (function () {
+        // Google's own geo-IP decides for these countries (EEA + UK + CH).
+        var REGIONS = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT',
+          'LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH'];
+        // We have no geo-IP on cached pages, so the banner goes by time zone: every Europe/*
+        // zone plus the EU/EEA ones elsewhere. Errs toward asking.
+        var ZONES = ['Asia/Nicosia','Asia/Famagusta','Atlantic/Reykjavik','Atlantic/Canary',
+          'Atlantic/Madeira','Atlantic/Azores','Atlantic/Faroe','Arctic/Longyearbyen',
+          'Indian/Reunion','Indian/Mayotte','America/Guadeloupe','America/Martinique',
+          'America/Cayenne','America/Marigot'];
+        var COOKIE = 'ps_consent';
+        var MAX_AGE_S = 180 * 24 * 60 * 60;
+        var onPackstack = /(^|\.)packstack\.io$/.test(location.hostname);
+        var DENIED = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied' };
+        var GRANTED = { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted' };
+        function zoneNeedsConsent() {
+          try {
+            var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+            return tz.indexOf('Europe/') === 0 || ZONES.indexOf(tz) !== -1;
+          } catch (e) { return false; }
+        }
+        function readChoice() {
+          var m = document.cookie.match(/(?:^|; )ps_consent=(granted|denied)/);
+          return m ? m[1] : null;
+        }
+        var required = zoneNeedsConsent();
+        var choice = readChoice();
+        gtag('consent', 'default', Object.assign({ region: REGIONS, wait_for_update: 500 }, DENIED));
+        if (required && choice !== 'granted') gtag('consent', 'default', DENIED);
+        if (choice) gtag('consent', 'update', choice === 'granted' ? GRANTED : DENIED);
+        gtag('set', 'ads_data_redaction', true);
+        var listeners = [];
+        window.psConsent = {
+          required: required,
+          choice: choice,
+          // May we keep the ad click and send it on? Always outside the consent region.
+          allowsAds: function () { return !this.required || this.choice === 'granted'; },
+          onGrant: function (fn) { listeners.push(fn); },
+          set: function (value) {
+            this.choice = value;
+            document.cookie = COOKIE + '=' + value + '; path=/; max-age=' + MAX_AGE_S +
+              '; SameSite=Lax; Secure' + (onPackstack ? '; domain=.packstack.io' : '');
+            gtag('consent', 'update', value === 'granted' ? GRANTED : DENIED);
+            if (value === 'granted') listeners.forEach(function (fn) { try { fn(); } catch (e) {} });
+            else document.cookie = 'ps_attr=; path=/; max-age=0' + (onPackstack ? '; domain=.packstack.io' : '');
+          }
+        };
+      })();
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-18325743425"></script>
+    <script is:inline>
       gtag('js', new Date());
       gtag('config', 'AW-18325743425');
     </script>
@@ -29,6 +85,9 @@ const { title, description = "Plan your backpacking trips with Packstack, the ge
         var CLICK_IDS = ['gclid', 'gbraid', 'wbraid'];
         var MAX_AGE_S = 90 * 24 * 60 * 60; // Google's longest click-conversion window
         var onPackstack = /(^|\.)packstack\.io$/.test(location.hostname);
+        var consent = window.psConsent;
+        var stored = null;
+        var decorating = false;
         function hasClick(a) { return !!a && CLICK_IDS.some(function (k) { return !!a[k]; }); }
         function read() {
           try {
@@ -37,35 +96,46 @@ const { title, description = "Plan your backpacking trips with Packstack, the ge
             return a && a.ts && Date.now() - a.ts < MAX_AGE_S * 1000 ? a : null;
           } catch (e) { return null; }
         }
-        var stored = read();
-        try {
-          var params = new URLSearchParams(location.search);
-          var found = {};
-          KEYS.forEach(function (k) { var v = params.get(k); if (v) found[k] = v.slice(0, 255); });
-          // A visit with only UTM tags never replaces a stored ad click.
-          if (Object.keys(found).length && (hasClick(found) || !hasClick(stored))) {
-            found.ts = Date.now();
-            found.landing = location.pathname.slice(0, 255);
-            document.cookie = 'ps_attr=' + encodeURIComponent(JSON.stringify(found)) +
-              '; path=/; max-age=' + MAX_AGE_S + '; SameSite=Lax; Secure' +
-              (onPackstack ? '; domain=.packstack.io' : '');
-            stored = found;
-          }
-        } catch (e) {}
-        if (!stored) return;
-        // Safari can cap script-set cookies at a day or a week, so also put the params on the
-        // link itself.
-        document.addEventListener('click', function (event) {
-          var link = event.target && event.target.closest && event.target.closest('a[href*="app.packstack.io"]');
-          if (!link) return;
+        // Visitors in the consent region (EEA/UK/CH) only once they've accepted; the
+        // landing page's params are still in the URL when they do.
+        function capture() {
+          stored = read();
           try {
-            var url = new URL(link.href);
-            KEYS.forEach(function (k) { if (stored[k] && !url.searchParams.has(k)) url.searchParams.set(k, stored[k]); });
-            url.searchParams.set('ps_ts', String(stored.ts));
-            if (stored.landing) url.searchParams.set('ps_landing', stored.landing);
-            link.href = url.toString();
+            var params = new URLSearchParams(location.search);
+            var found = {};
+            KEYS.forEach(function (k) { var v = params.get(k); if (v) found[k] = v.slice(0, 255); });
+            // A visit with only UTM tags never replaces a stored ad click.
+            if (Object.keys(found).length && (hasClick(found) || !hasClick(stored))) {
+              found.ts = Date.now();
+              found.landing = location.pathname.slice(0, 255);
+              if (consent && consent.required) found.consent = 'granted';
+              document.cookie = 'ps_attr=' + encodeURIComponent(JSON.stringify(found)) +
+                '; path=/; max-age=' + MAX_AGE_S + '; SameSite=Lax; Secure' +
+                (onPackstack ? '; domain=.packstack.io' : '');
+              stored = found;
+            }
           } catch (e) {}
-        }, true);
+          if (!stored || decorating) return;
+          decorating = true;
+          // Safari can cap script-set cookies at a day or a week, so also put the params on the
+          // link itself.
+          document.addEventListener('click', function (event) {
+            var link = event.target && event.target.closest && event.target.closest('a[href*="app.packstack.io"]');
+            if (!link) return;
+            if (consent && !consent.allowsAds()) return;   // declined since
+
+            try {
+              var url = new URL(link.href);
+              KEYS.forEach(function (k) { if (stored[k] && !url.searchParams.has(k)) url.searchParams.set(k, stored[k]); });
+              url.searchParams.set('ps_ts', String(stored.ts));
+              if (stored.landing) url.searchParams.set('ps_landing', stored.landing);
+              if (stored.consent) url.searchParams.set('ps_consent', stored.consent);
+              link.href = url.toString();
+            } catch (e) {}
+          }, true);
+        }
+        if (!consent || consent.allowsAds()) capture();
+        else consent.onGrant(capture);
       })();
     </script>
 
@@ -126,5 +196,51 @@ const { title, description = "Plan your backpacking trips with Packstack, the ge
   <body>
     <slot />
     <slot name="body-scripts" />
+
+    <!-- Consent banner: shown only in the consent region (see psConsent in <head>) until the
+         visitor chooses. "Cookie settings" in the footer reopens it. -->
+    <div
+      id="ps-consent"
+      role="dialog"
+      aria-live="polite"
+      aria-label="Cookie consent"
+      hidden
+      class="fixed z-50 bottom-4 inset-x-4 md:left-auto md:right-6 md:bottom-6 md:max-w-sm rounded-xl border border-border bg-surface-light p-4 shadow-2xl shadow-black/40"
+    >
+      <p class="m-0 text-sm leading-relaxed text-softwhite">
+        Can we measure which ads bring people to Packstack? If you accept, Google Ads and
+        Packstack set cookies to credit the ad you came from. Nothing is set if you decline.
+        <a href="/privacy#cookies" class="text-primary hover:text-white underline underline-offset-2">Privacy Policy</a>
+      </p>
+      <div class="mt-3 grid grid-cols-2 gap-2">
+        <button type="button" data-consent="denied" class="cursor-pointer rounded-lg border border-border bg-surface px-3 py-2 text-sm font-semibold text-white hover:bg-background transition-colors">
+          Decline
+        </button>
+        <button type="button" data-consent="granted" class="cursor-pointer rounded-lg bg-primary px-3 py-2 text-sm font-semibold text-on-primary hover:bg-primary-dark transition-colors">
+          Accept
+        </button>
+      </div>
+    </div>
+    <script is:inline>
+      (function () {
+        var consent = window.psConsent;
+        var banner = document.getElementById('ps-consent');
+        if (!consent || !banner) return;
+        function show() { banner.hidden = false; }
+        if (consent.required && !consent.choice) show();
+        banner.addEventListener('click', function (event) {
+          var button = event.target.closest && event.target.closest('[data-consent]');
+          if (!button) return;
+          consent.set(button.getAttribute('data-consent'));
+          banner.hidden = true;
+        });
+        document.addEventListener('click', function (event) {
+          var link = event.target.closest && event.target.closest('a[href="#cookie-settings"]');
+          if (!link) return;
+          event.preventDefault();
+          show();
+        });
+      })();
+    </script>
   </body>
 </html>

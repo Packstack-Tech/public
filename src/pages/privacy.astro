@@ -12,7 +12,7 @@ export const prerender = true
 
     <main class="max-w-3xl mx-auto px-4 md:px-8 py-12 prose prose-invert prose-sm">
       <h1 class="text-3xl font-bold mb-1">Privacy Policy</h1>
-      <p class="text-label text-sm mt-0 mb-10">Effective Date: October 9, 2026</p>
+      <p class="text-label text-sm mt-0 mb-10">Effective Date: October 16, 2026</p>
 
       <p>
         Packstack, LLC ("Packstack," "we," "us," or "our") operates the website
@@ -81,6 +81,13 @@ export const prerender = true
           details and your account ID, email address, and username, so we can find and fix bugs.
         </li>
         <li>
+          <strong>Google Analytics for Firebase</strong> records app installs, sign-ups, and
+          purchases in the mobile app, linked to an app instance identifier and your account ID,
+          so we can measure our app ads. On iOS, it also checks whether a sign-up came from one of
+          our ads by comparing a one-way hash of your email address on your device; your email
+          address is not sent to Google for this.
+        </li>
+        <li>
           <strong>Expo</strong> receives basic, non-identifying performance and usage data from
           the mobile app, such as app version, platform, and launch counts.
         </li>
@@ -96,7 +103,10 @@ export const prerender = true
         </li>
         <li>
           <strong>Google Ads</strong> conversion tracking uses cookies to measure whether visitors
-          who arrive from our ads go on to sign up or download the app. See Section 3.
+          who arrive from our ads go on to sign up or download the app. When someone who arrived
+          from one of our ads creates an account, we send Google the ad click identifier and a
+          one-way hash of their email address to report the sign-up and any first purchase. See
+          Section 3.
         </li>
       </ul>
 
@@ -122,7 +132,7 @@ export const prerender = true
         <li>Detect and prevent fraud, abuse, and security incidents</li>
       </ul>
 
-      <h2>3. Cookies and Similar Technologies</h2>
+      <h2 id="cookies">3. Cookies and Similar Technologies</h2>
       <p>
         <strong>Web app (app.packstack.io).</strong> We use cookies that are strictly necessary to
         keep you signed in. The app also stores analytics identifiers in your browser's local
@@ -131,7 +141,10 @@ export const prerender = true
       <p>
         <strong>Website (www.packstack.io).</strong> The Google Ads tag sets cookies so that
         Google can tell us when a visit from one of our ads leads to a sign-up or app download.
-        Google may use these cookies under its own privacy policy. You can block or delete cookies
+        Google may use these cookies under its own privacy policy. If you visit from the European
+        Economic Area, the United Kingdom, or Switzerland, these cookies are set only if you accept
+        our cookie banner, and you can change your choice at any time under "Cookie settings" at
+        the bottom of any page. You can block or delete cookies
         in your browser settings, and manage ad personalization at
         <a href="https://adssettings.google.com">adssettings.google.com</a>. Plausible does not use
         cookies.
@@ -152,7 +165,7 @@ export const prerender = true
         <li><strong>RevenueCat</strong> and <strong>Stripe</strong>: purchases and billing</li>
         <li><strong>Apple</strong> and <strong>Google</strong>: sign-in, app distribution, and in-app purchases</li>
         <li><strong>Mixpanel</strong>, <strong>Sentry</strong>, and <strong>Expo</strong>: product analytics, error reporting, and app diagnostics</li>
-        <li><strong>Plausible</strong>, <strong>Ahrefs</strong>, and <strong>Google Ads</strong>: website analytics and ad measurement</li>
+        <li><strong>Plausible</strong>, <strong>Ahrefs</strong>, <strong>Google Ads</strong>, and <strong>Google Analytics for Firebase</strong>: website and app analytics and ad measurement</li>
         <li>
           <strong>Anthropic</strong> and <strong>Serper</strong>: to research trail details (such as
           distance, elevation, and typical temperatures) and product specifications, we send trail
